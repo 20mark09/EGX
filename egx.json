@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-10 06:25 UTC",
+  "lastUpdated": "2026-07-10 07:09 UTC",
   "indices": {
     "EGX30": {
       "date": "09/07/2026",
@@ -91,6 +91,111 @@
       "name": "Alexandria Mineral Oils Company",
       "price": 7.95,
       "change_pct": -2.21
+    }
+  ],
+  "marketSummary": {
+    "main_market": {
+      "listed_total": {
+        "no": 260,
+        "volume": 2727090193,
+        "value": 61986951457,
+        "trades": 190081
+      },
+      "listed_stocks": {
+        "no": 220,
+        "volume": 2721615471,
+        "value": 9452544746,
+        "trades": 189720
+      },
+      "listed_t_bonds_bills_sukuk": {
+        "no": 39,
+        "volume": 5474545,
+        "value": 52534388267,
+        "trades": 359
+      },
+      "listed_bonds": {
+        "no": 1,
+        "volume": 177,
+        "value": 18444,
+        "trades": 2
+      },
+      "listed_funds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "smes_stocks": {
+        "no": 15,
+        "volume": 39429091,
+        "value": 41416259,
+        "trades": 3034
+      },
+      "otc_total": {
+        "no": 23,
+        "volume": 2017943,
+        "value": 37752604,
+        "trades": 75
+      },
+      "otc_bonds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "otc_deals": {
+        "no": 23,
+        "volume": 2017943,
+        "value": 37752604,
+        "trades": 75
+      },
+      "otc_orders": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "total": {
+        "no": 298,
+        "volume": 2768537227,
+        "value": 62066120320,
+        "trades": 193190
+      },
+      "total_market_cap": 3811610818759
+    },
+    "breadth": {
+      "listed_stocks": {
+        "no": 221,
+        "volume": 2721615648,
+        "value": 9452563190,
+        "trades": 189722
+      },
+      "gainers": {
+        "no": 162,
+        "volume": 2499080743,
+        "value": 7446836508,
+        "trades": 144056
+      },
+      "decliners": {
+        "no": 45,
+        "volume": 209867139,
+        "value": 1953033910,
+        "trades": 43901
+      },
+      "unchanged": {
+        "no": 14,
+        "volume": 12667766,
+        "value": 52692772,
+        "trades": 1765
+      }
+    }
+  },
+  "news": [
+    {
+      "id": "289766",
+      "title": "Islamic New Year Holiday 1448",
+      "date": "11/06/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=289766"
     }
   ]
 }
