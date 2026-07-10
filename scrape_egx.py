@@ -1,10 +1,28 @@
 import json
 import re
 from datetime import datetime, timezone
+from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 OUTPUT_FILE = "egx.json"
+
+
+def safe_num(text):
+    """Parse a comma-formatted number string into int/float, or None."""
+    if text is None:
+        return None
+    text = text.replace(",", "").strip()
+    if text == "":
+        return None
+    try:
+        return float(text) if "." in text else int(text)
+    except ValueError:
+        return None
+
+
+def slugify(label):
+    return re.sub(r"[^a-z0-9]+", "_", label.lower()).strip("_")
 
 
 def now_utc():
@@ -75,10 +93,143 @@ def parse_gl_table(soup, table_id):
     return stocks
 
 
+def parse_market_summary(html_content):
+    """Parses MarketSummry.aspx: the two 'TableStatic' blocks -
+    main market activity (Listed / Stocks / Bonds / SMEs / OTC / Total)
+    and market breadth (Listed stocks / Gainers / Decliners / Unchanged).
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    tables = soup.find_all("table", class_="TableStatic")
+    result = {"main_market": {}, "breadth": {}}
+
+    # Rows under these labels start a new sub-section (e.g. everything
+    # after "OTC" until "Total" belongs to the OTC block: OTC/Bonds/Deals/Orders).
+    section_starts = {"Listed": "listed", "SMEs Market": "smes", "OTC": "otc"}
+
+    if len(tables) >= 1:
+        section = None
+        for row in tables[0].find_all("tr"):
+            cells = row.find_all("td")
+            if not cells:
+                continue
+            label = cells[0].get_text(strip=True)
+            if label == "No.":
+                continue
+            values = [c.get_text(strip=True) for c in cells[1:]]
+
+            if label in section_starts:
+                section = section_starts[label]
+                if any(values):
+                    result["main_market"][f"{section}_total"] = {
+                        "no": safe_num(values[0]),
+                        "volume": safe_num(values[1]),
+                        "value": safe_num(values[2]),
+                        "trades": safe_num(values[3]),
+                    }
+                continue
+
+            if label == "Total":
+                section = None
+                result["main_market"]["total"] = {
+                    "no": safe_num(values[0]),
+                    "volume": safe_num(values[1]),
+                    "value": safe_num(values[2]),
+                    "trades": safe_num(values[3]),
+                }
+                continue
+
+            if label == "Total Market Cap (LE)":
+                result["main_market"]["total_market_cap"] = safe_num(values[0]) if values else None
+                continue
+
+            if not any(values):
+                # section-header row with no data of its own (e.g. "SMEs Market")
+                continue
+
+            key = (f"{section}_" if section else "") + slugify(label)
+            if len(values) == 4:
+                result["main_market"][key] = {
+                    "no": safe_num(values[0]),
+                    "volume": safe_num(values[1]),
+                    "value": safe_num(values[2]),
+                    "trades": safe_num(values[3]),
+                }
+            else:
+                result["main_market"][key] = values
+
+    if len(tables) >= 2:
+        for row in tables[1].find_all("tr"):
+            cells = row.find_all("td")
+            if not cells:
+                continue
+            label = cells[0].get_text(strip=True)
+            if label == "No.":
+                continue
+            values = [c.get_text(strip=True) for c in cells[1:]]
+            if not any(values):
+                continue
+            key = slugify(label)
+            if len(values) == 4:
+                result["breadth"][key] = {
+                    "no": safe_num(values[0]),
+                    "volume": safe_num(values[1]),
+                    "value": safe_num(values[2]),
+                    "trades": safe_num(values[3]),
+                }
+            else:
+                result["breadth"][key] = values
+
+    return result
+
+
+def parse_news(html_content, base_url="https://www.egx.com.eg/en/"):
+    """Parses NewsList.aspx's GridView (ctl00_C_N_GridView1). Title and date
+    spans share the same repeater-item ID prefix (e.g. '..._ctl02'), so we
+    pair them by that prefix rather than by DOM position - more robust if
+    EGX ever tweaks the row markup.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": "ctl00_C_N_GridView1"})
+    items = []
+
+    if not table:
+        return items
+
+    title_spans = table.find_all("span", id=lambda x: x and x.endswith("_lblTitle"))
+    for title_span in title_spans:
+        try:
+            title = title_span.get_text(strip=True)
+            link_tag = title_span.find_parent("a")
+            href = link_tag["href"] if link_tag and link_tag.has_attr("href") else None
+            url = urljoin(base_url, href) if href else None
+
+            news_id = None
+            if href:
+                id_match = re.search(r"NewsID=(\d+)", href)
+                news_id = id_match.group(1) if id_match else None
+
+            prefix = title_span["id"].rsplit("_lblTitle", 1)[0]
+            date_span = soup.find("span", id=f"{prefix}_lblDate")
+            date_text = date_span.get_text(strip=True) if date_span else None
+
+            items.append({
+                "id": news_id,
+                "title": title,
+                "date": date_text,
+                "url": url,
+            })
+        except Exception:
+            continue
+
+    return items
+
+
 def main():
     indices_output = {}
     gainers = []
     losers = []
+    market_summary = {"main_market": {}, "breadth": {}}
+    news = []
 
     with sync_playwright() as p:
         print("Launching secure browser context...")
@@ -152,6 +303,36 @@ def main():
         except Exception as gl_error:
             print(f"[-] Failed to fetch Top Gainers/Losers: {gl_error}")
 
+        # --- PART 3: SCRAPE MARKET SUMMARY STATISTICS ---
+        print("\nNavigating to Market Summary...")
+        try:
+            ms_page = context.new_page()
+            ms_page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="commit", timeout=60000)
+            ms_page.wait_for_timeout(10000)  # Wait for JavaScript shield to settle
+
+            market_summary = parse_market_summary(ms_page.content())
+            print(f"[+] Successfully scraped market summary "
+                  f"({len(market_summary['main_market'])} main-market rows, "
+                  f"{len(market_summary['breadth'])} breadth rows).")
+            ms_page.close()
+
+        except Exception as ms_error:
+            print(f"[-] Failed to fetch Market Summary: {ms_error}")
+
+        # --- PART 4: SCRAPE NEWS ---
+        print("\nNavigating to News List...")
+        try:
+            news_page = context.new_page()
+            news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="commit", timeout=60000)
+            news_page.wait_for_timeout(10000)  # Wait for JavaScript shield to settle
+
+            news = parse_news(news_page.content())
+            print(f"[+] Successfully scraped {len(news)} news items.")
+            news_page.close()
+
+        except Exception as news_error:
+            print(f"[-] Failed to fetch News: {news_error}")
+
         context.close()
         browser.close()
 
@@ -161,7 +342,9 @@ def main():
         "lastUpdated": now_utc(),
         "indices": indices_output,
         "gainers": gainers,
-        "losers": losers
+        "losers": losers,
+        "marketSummary": market_summary,
+        "news": news
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
