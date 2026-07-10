@@ -1,0 +1,96 @@
+{
+  "source": "https://www.egx.com.eg",
+  "lastUpdated": "2026-07-10 06:25 UTC",
+  "indices": {
+    "EGX30": {
+      "date": "09/07/2026",
+      "value": 52311.51,
+      "open": 52028.37,
+      "high": 52359.99,
+      "low": 51917.15,
+      "change_pct": 0.54,
+      "ytd_pct": 25.06
+    },
+    "SHARIAH": {
+      "date": "09/07/2026",
+      "value": 52311.51,
+      "open": 52028.37,
+      "high": 52359.99,
+      "low": 51917.15,
+      "change_pct": 0.54,
+      "ytd_pct": 25.06
+    },
+    "EGX70": {
+      "date": "09/07/2026",
+      "value": 16281.62,
+      "open": 16004.93,
+      "high": 16281.62,
+      "low": 16004.93,
+      "change_pct": 1.73,
+      "ytd_pct": 24.05
+    },
+    "EGX100": {
+      "date": "09/07/2026",
+      "value": 22067.78,
+      "open": 21747.75,
+      "high": 22067.78,
+      "low": 21747.75,
+      "change_pct": 1.47,
+      "ytd_pct": 26.64
+    }
+  },
+  "gainers": [
+    {
+      "name": "United Housing & Development",
+      "price": 20.1,
+      "change_pct": 20.0
+    },
+    {
+      "name": "Naeem Real Estate Holding Group",
+      "price": 19.33,
+      "change_pct": 19.99
+    },
+    {
+      "name": "Gharbia Islamic Housing Development",
+      "price": 51.7,
+      "change_pct": 19.15
+    },
+    {
+      "name": "Golden Textiles & Clothes Wool",
+      "price": 114.0,
+      "change_pct": 13.21
+    },
+    {
+      "name": "El Kahera Housing",
+      "price": 1.57,
+      "change_pct": 10.56
+    }
+  ],
+  "losers": [
+    {
+      "name": "Saudi Egyptian Investment & Finance",
+      "price": 244.33,
+      "change_pct": -4.97
+    },
+    {
+      "name": "GMC GROUP FOR INDUSTRIAL COMMERCIAL & FINANCIAL INVESTMENTS",
+      "price": 2.08,
+      "change_pct": -4.59
+    },
+    {
+      "name": "Middle & West Delta Flour Mills",
+      "price": 507.67,
+      "change_pct": -3.05
+    },
+    {
+      "name": "Housing & Development Bank",
+      "price": 79.5,
+      "change_pct": -2.45
+    },
+    {
+      "name": "Alexandria Mineral Oils Company",
+      "price": 7.95,
+      "change_pct": -2.21
+    }
+  ]
+}
