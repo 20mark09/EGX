@@ -1,6 +1,10 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-10 07:09 UTC",
+  "lastUpdated": "2026-07-10 07:49 UTC",
+  "liveMarketStatus": {
+    "text_ar": "مغلق",
+    "color": "Red"
+  },
   "indices": {
     "EGX30": {
       "date": "09/07/2026",
@@ -22,12 +26,12 @@
     },
     "EGX70": {
       "date": "09/07/2026",
-      "value": 16281.62,
-      "open": 16004.93,
-      "high": 16281.62,
-      "low": 16004.93,
-      "change_pct": 1.73,
-      "ytd_pct": 24.05
+      "value": 52311.51,
+      "open": 52028.37,
+      "high": 52359.99,
+      "low": 51917.15,
+      "change_pct": 0.54,
+      "ytd_pct": 25.06
     },
     "EGX100": {
       "date": "09/07/2026",
@@ -190,6 +194,170 @@
       }
     }
   },
+  "sectors": [
+    {
+      "name": "Banks",
+      "value": 523324137,
+      "value_pct": 5.54,
+      "volume": 8879850,
+      "volume_pct": 0.33,
+      "market_cap": 893391436343,
+      "market_cap_pct": 24.17
+    },
+    {
+      "name": "Basic Resources",
+      "value": 606642156,
+      "value_pct": 6.42,
+      "volume": 27456037,
+      "volume_pct": 1.01,
+      "market_cap": 471076585883,
+      "market_cap_pct": 12.74
+    },
+    {
+      "name": "Health Care & Pharmaceuticals",
+      "value": 509206928,
+      "value_pct": 5.39,
+      "volume": 268517091,
+      "volume_pct": 9.87,
+      "market_cap": 131562946525,
+      "market_cap_pct": 3.56
+    },
+    {
+      "name": "Industrial Goods , Services and Automobiles",
+      "value": 136798260,
+      "value_pct": 1.45,
+      "volume": 22581160,
+      "volume_pct": 0.83,
+      "market_cap": 237551077106,
+      "market_cap_pct": 6.43
+    },
+    {
+      "name": "Real Estate",
+      "value": 3335136225,
+      "value_pct": 35.28,
+      "volume": 1193641243,
+      "volume_pct": 43.86,
+      "market_cap": 506126130215,
+      "market_cap_pct": 13.69
+    },
+    {
+      "name": "Travel & Leisure",
+      "value": 172032265,
+      "value_pct": 1.82,
+      "volume": 7993435,
+      "volume_pct": 0.29,
+      "market_cap": 84659269034,
+      "market_cap_pct": 2.29
+    },
+    {
+      "name": "Utilities",
+      "value": 44210982,
+      "value_pct": 0.47,
+      "volume": 2490205,
+      "volume_pct": 0.09,
+      "market_cap": 26688106222,
+      "market_cap_pct": 0.72
+    },
+    {
+      "name": "IT , Media & Communication Services",
+      "value": 271743305,
+      "value_pct": 2.88,
+      "volume": 34684999,
+      "volume_pct": 1.27,
+      "market_cap": 344509220984,
+      "market_cap_pct": 9.32
+    },
+    {
+      "name": "Food, Beverages and Tobacco",
+      "value": 666722381,
+      "value_pct": 7.05,
+      "volume": 180158689,
+      "volume_pct": 6.62,
+      "market_cap": 273133237974,
+      "market_cap_pct": 7.39
+    },
+    {
+      "name": "Energy & Support Services",
+      "value": 99810206,
+      "value_pct": 1.06,
+      "volume": 11847725,
+      "volume_pct": 0.44,
+      "market_cap": 22406531431,
+      "market_cap_pct": 0.61
+    },
+    {
+      "name": "Trade & Distributors",
+      "value": 67445482,
+      "value_pct": 0.71,
+      "volume": 5887494,
+      "volume_pct": 0.22,
+      "market_cap": 41572257587,
+      "market_cap_pct": 1.12
+    },
+    {
+      "name": "Shipping & Transportation Services",
+      "value": 130706340,
+      "value_pct": 1.38,
+      "volume": 10436239,
+      "volume_pct": 0.38,
+      "market_cap": 98233807296,
+      "market_cap_pct": 2.66
+    },
+    {
+      "name": "Education Services",
+      "value": 47938525,
+      "value_pct": 0.51,
+      "volume": 13669356,
+      "volume_pct": 0.5,
+      "market_cap": 85316953297,
+      "market_cap_pct": 2.31
+    },
+    {
+      "name": "Non-bank financial services",
+      "value": 1250904219,
+      "value_pct": 13.23,
+      "volume": 351574655,
+      "volume_pct": 12.92,
+      "market_cap": 252287163172,
+      "market_cap_pct": 6.82
+    },
+    {
+      "name": "Contracting & Construction Engineering",
+      "value": 933414302,
+      "value_pct": 9.88,
+      "volume": 455484708,
+      "volume_pct": 16.74,
+      "market_cap": 101903939078,
+      "market_cap_pct": 2.76
+    },
+    {
+      "name": "Textile & Durables",
+      "value": 354739736,
+      "value_pct": 3.75,
+      "volume": 14957689,
+      "volume_pct": 0.55,
+      "market_cap": 37433420742,
+      "market_cap_pct": 1.01
+    },
+    {
+      "name": "Building Materials",
+      "value": 281261150,
+      "value_pct": 2.98,
+      "volume": 53910465,
+      "volume_pct": 1.98,
+      "market_cap": 81682890347,
+      "market_cap_pct": 2.21
+    },
+    {
+      "name": "Paper & Packaging",
+      "value": 20508148,
+      "value_pct": 0.22,
+      "volume": 57444431,
+      "volume_pct": 2.11,
+      "market_cap": 7206015148,
+      "market_cap_pct": 0.2
+    }
+  ],
   "news": [
     {
       "id": "289766",
@@ -197,5 +365,68 @@
       "date": "11/06/2026",
       "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=289766"
     }
-  ]
+  ],
+  "disclosures": [
+    {
+      "id": "291148",
+      "title": "Lotus For Agricultural Investments And Development (LUTS.CA) Declares a Stock Dividends",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291148"
+    },
+    {
+      "id": "291146",
+      "title": "Six of October Development & Investment (SODIC) (OCDI.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291146"
+    },
+    {
+      "id": "291145",
+      "title": "Release from Gogreen for Agricultural Investment (GGRN.CA) Concerning Company's Projects",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291145"
+    },
+    {
+      "id": "291140",
+      "title": "Mena Touristic & Real Estate Investment (MENA.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291140"
+    },
+    {
+      "id": "291133",
+      "title": "El Arabia for Land Reclamation (EALR.CA) - Disclosure Form of the company for the Board of Directors and the Shareholders' Structure",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291133"
+    },
+    {
+      "id": "291132",
+      "title": "Al Ahly SUKUK 2nd Iss Mar 2031 (EGAHLSK2CV) Declares Bond Dividends for Coupon No. (9)",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291132"
+    },
+    {
+      "id": "291131",
+      "title": "Qatar National Bank (QNBE.CA) - Board of Directors' Decisions",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291131"
+    },
+    {
+      "id": "291130",
+      "title": "First Investment Company And Real Estate Development (FIRE.CA) - Release Regarding a Disclosure Form (SMEs Market)",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291130"
+    },
+    {
+      "id": "291129",
+      "title": "First Investment Company And Real Estate Development (FIRE.CA) - Release Regarding a Disclosure Form (SMEs Market)",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291129"
+    },
+    {
+      "id": "291128",
+      "title": "Arab Gathering Investment (AMIA.CA) - Disclosure Form of the Company for the Board of Directors and the Shareholders' Structure",
+      "date": "09/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291128"
+    }
+  ],
+  "bulletin": []
 }
