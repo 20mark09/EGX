@@ -1,6 +1,6 @@
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
@@ -182,14 +182,17 @@ def parse_market_summary(html_content):
     return result
 
 
-def parse_news(html_content, base_url="https://www.egx.com.eg/en/"):
-    """Parses NewsList.aspx's GridView (ctl00_C_N_GridView1). Title and date
-    spans share the same repeater-item ID prefix (e.g. '..._ctl02'), so we
-    pair them by that prefix rather than by DOM position - more robust if
-    EGX ever tweaks the row markup.
+def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/en/"):
+    """Parses any of EGX's News-style GridViews (News, Disclosures search
+    results, Bulletin) - they all share the same markup, just a different
+    table id. Title and date spans share the same repeater-item ID prefix
+    (e.g. '..._ctl02'), so we pair them by that prefix rather than by DOM
+    position - more robust if EGX ever tweaks the row markup. Returns an
+    empty list if the grid is empty (e.g. Bulletin with no session today,
+    which renders a 'No data' placeholder row with no matching spans).
     """
     soup = BeautifulSoup(html_content, "html.parser")
-    table = soup.find("table", {"id": "ctl00_C_N_GridView1"})
+    table = soup.find("table", {"id": table_id})
     items = []
 
     if not table:
@@ -224,12 +227,71 @@ def parse_news(html_content, base_url="https://www.egx.com.eg/en/"):
     return items
 
 
+def parse_sectors(html_content):
+    """Parses MarketWatchSectors.aspx's GridView (ctl00_C_M_GridView2).
+    Columns: Sector Name | (icon, empty) | Value(LE) | %Value |
+    Volume | %Volume | Market Cap(LE) | %Market Cap.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": "ctl00_C_M_GridView2"})
+    sectors = []
+
+    if not table:
+        return sectors
+
+    for row in table.find_all("tr"):
+        cells = row.find_all("td")
+        if len(cells) < 8:
+            continue  # skips the <th> header row, which has no <td>s
+        try:
+            name = cells[0].get_text(strip=True)
+            if not name:
+                continue
+            sectors.append({
+                "name": name,
+                "value": safe_num(cells[2].get_text(strip=True)),
+                "value_pct": safe_num(cells[3].get_text(strip=True)),
+                "volume": safe_num(cells[4].get_text(strip=True)),
+                "volume_pct": safe_num(cells[5].get_text(strip=True)),
+                "market_cap": safe_num(cells[6].get_text(strip=True)),
+                "market_cap_pct": safe_num(cells[7].get_text(strip=True)),
+            })
+        except Exception:
+            continue
+
+    return sectors
+
+
+def parse_live_market_status(html_content):
+    """Parses the live status badge on the Arabic homepage
+    (ctl00_C_lblMarketStatus). This reflects EGX's own real-time /
+    holiday-aware status, which is more reliable than computing it
+    from a fixed schedule.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    el = soup.find(id="ctl00_C_lblMarketStatus")
+    if not el:
+        return {"text_ar": None, "color": None}
+
+    style = el.get("style", "")
+    color_match = re.search(r"color\s*:\s*([A-Za-z]+)", style, re.IGNORECASE)
+
+    return {
+        "text_ar": el.get_text(strip=True),
+        "color": color_match.group(1) if color_match else None,
+    }
+
+
 def main():
     indices_output = {}
     gainers = []
     losers = []
     market_summary = {"main_market": {}, "breadth": {}}
     news = []
+    sectors = []
+    disclosures = []
+    bulletin = []
+    live_status = {"text_ar": None, "color": None}
 
     with sync_playwright() as p:
         print("Launching secure browser context...")
@@ -326,12 +388,80 @@ def main():
             news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="commit", timeout=60000)
             news_page.wait_for_timeout(10000)  # Wait for JavaScript shield to settle
 
-            news = parse_news(news_page.content())
+            news = parse_news_grid(news_page.content(), "ctl00_C_N_GridView1")
             print(f"[+] Successfully scraped {len(news)} news items.")
             news_page.close()
 
         except Exception as news_error:
             print(f"[-] Failed to fetch News: {news_error}")
+
+        # --- PART 5: SCRAPE SECTORS ---
+        print("\nNavigating to Market Watch - Sectors...")
+        try:
+            sectors_page = context.new_page()
+            sectors_page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="commit", timeout=60000)
+            sectors_page.wait_for_timeout(10000)
+
+            sectors = parse_sectors(sectors_page.content())
+            print(f"[+] Successfully scraped {len(sectors)} sectors.")
+            sectors_page.close()
+
+        except Exception as sectors_error:
+            print(f"[-] Failed to fetch Sectors: {sectors_error}")
+
+        # --- PART 6: SCRAPE DISCLOSURES (last 3 months, latest page only) ---
+        print("\nNavigating to Disclosures search...")
+        try:
+            today = datetime.now(timezone.utc)
+            three_months_ago = today - timedelta(days=90)
+            from_str = three_months_ago.strftime("%d/%m/%Y")
+            to_str = today.strftime("%d/%m/%Y")
+            disclosures_url = (
+                "https://www.egx.com.eg/en/NewsSearch.aspx"
+                f"?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
+            )
+
+            disc_page = context.new_page()
+            disc_page.goto(disclosures_url, wait_until="commit", timeout=60000)
+            disc_page.wait_for_timeout(10000)
+
+            disclosures = parse_news_grid(disc_page.content(), "ctl00_C_N_GVNews")
+            print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
+            disc_page.close()
+
+        except Exception as disc_error:
+            print(f"[-] Failed to fetch Disclosures: {disc_error}")
+
+        # --- PART 7: SCRAPE BULLETIN (Arabic - can be empty on non-session days) ---
+        print("\nNavigating to Bulletin News...")
+        try:
+            bulletin_page = context.new_page()
+            bulletin_page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="commit", timeout=60000)
+            bulletin_page.wait_for_timeout(10000)
+
+            bulletin = parse_news_grid(
+                bulletin_page.content(), "ctl00_C_BulletinNews1_GVNews",
+                base_url="https://www.egx.com.eg/ar/",
+            )
+            print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
+            bulletin_page.close()
+
+        except Exception as bulletin_error:
+            print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
+
+        # --- PART 8: SCRAPE LIVE MARKET STATUS (Arabic homepage badge) ---
+        print("\nNavigating to Homepage for live market status...")
+        try:
+            home_page = context.new_page()
+            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="commit", timeout=60000)
+            home_page.wait_for_timeout(10000)
+
+            live_status = parse_live_market_status(home_page.content())
+            print(f"[+] Live market status: {live_status}")
+            home_page.close()
+
+        except Exception as status_error:
+            print(f"[-] Failed to fetch live market status: {status_error}")
 
         context.close()
         browser.close()
@@ -340,11 +470,15 @@ def main():
     output = {
         "source": "https://www.egx.com.eg",
         "lastUpdated": now_utc(),
+        "liveMarketStatus": live_status,
         "indices": indices_output,
         "gainers": gainers,
         "losers": losers,
         "marketSummary": market_summary,
-        "news": news
+        "sectors": sectors,
+        "news": news,
+        "disclosures": disclosures,
+        "bulletin": bulletin
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
