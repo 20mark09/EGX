@@ -1,0 +1,39 @@
+name: EGX Page Inspector Round 3 - Investor AJAX (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run Inspector
+        run: python inspect_pages_3.py
+
+      - name: Upload JSON dumps
+        uses: actions/upload-artifact@v4
+        with:
+          name: egx-investor-json-dumps
+          path: |
+            investor_nat_column_chart.json
+            investor_indiv_inst_column_chart.json
+            indiv_by_nat_stack_chart_type1.json
+            indiv_by_nat_stack_chart_type2.json
+            inv_pie_charts_type1.json
+            inv_pie_charts_type2.json
+            get_investor_tables.json
+          retention-days: 3
