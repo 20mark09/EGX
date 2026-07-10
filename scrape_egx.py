@@ -282,6 +282,123 @@ def parse_live_market_status(html_content):
     }
 
 
+# Arabic label -> stable English key, for the investor-type endpoints.
+# Two spellings of "foreigners" show up in the wild (with/without hamza),
+# so both map to the same key.
+NATIONALITY_MAP = {
+    "مصريين": "egyptians",
+    "عرب": "arabs",
+    "أجانب": "foreigners",
+    "اجانب": "foreigners",
+}
+
+# GetInvestorTables groups: 1=Total, 2=Individuals, 3=Institutions
+# (verified: group2 buy + group3 buy ~= group1 buy on a real sample).
+INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
+
+
+def fetch_investor_json(context, url, referer):
+    """Fetches one WebService.asmx endpoint via the browser context's
+    request API - these are pure JSON/AJAX endpoints, no page rendering
+    needed. Returns raw response text, or None if the request itself
+    fails (network/timeout). Note: EGX's backend has been observed
+    returning a raw Oracle error string (e.g. 'ORA-12521: TNS:listener
+    does not currently know...') instead of JSON on some endpoints -
+    that's a transient server-side issue, not a scraping problem, and
+    the parse_* functions below handle it by returning empty results
+    rather than crashing.
+    """
+    try:
+        response = context.request.get(
+            url,
+            headers={
+                "Referer": referer,
+                "X-Requested-With": "XMLHttpRequest",
+                "Accept": "application/json, text/javascript, */*; q=0.01",
+            },
+            timeout=20000,
+        )
+        return response.text()
+    except Exception as e:
+        print(f"[-] Failed to fetch {url}: {e}")
+        return None
+
+
+def parse_investor_tables(raw_text):
+    """Parses GetInvestorTables: [{Group, Type, Buy, Sell, Net}, ...]
+    into {"total": {...}, "individuals": {...}, "institutions": {...}},
+    each keyed by nationality with buy/sell/net.
+    """
+    result = {}
+    if not raw_text:
+        return result
+    try:
+        rows = json.loads(raw_text)
+    except (json.JSONDecodeError, TypeError):
+        return result
+
+    for row in rows:
+        try:
+            group_key = INVESTOR_GROUP_MAP.get(str(row.get("Group")), str(row.get("Group")))
+            nat_key = NATIONALITY_MAP.get(row.get("Type"), row.get("Type"))
+            result.setdefault(group_key, {})[nat_key] = {
+                "buy": row.get("Buy"),
+                "sell": row.get("Sell"),
+                "net": row.get("Net"),
+            }
+        except Exception:
+            continue
+    return result
+
+
+def parse_pie_chart(raw_text):
+    """Parses InvPieCharts: [{Label, Value, Color}, ...]."""
+    items = []
+    if not raw_text:
+        return items
+    try:
+        rows = json.loads(raw_text)
+    except (json.JSONDecodeError, TypeError):
+        return items
+
+    for row in rows:
+        try:
+            items.append({
+                "label_ar": row.get("Label"),
+                "value": row.get("Value"),
+                "color": row.get("Color"),
+            })
+        except Exception:
+            continue
+    return items
+
+
+def parse_stack_chart(raw_text):
+    """Parses IndivByNatStackChart (and, best-effort, the similarly
+    shaped InvestorNatColumnChart / InvestorIndivInstColumnChart):
+    [{Type, Buy, Sell}, ...].
+    """
+    items = []
+    if not raw_text:
+        return items
+    try:
+        rows = json.loads(raw_text)
+    except (json.JSONDecodeError, TypeError):
+        return items
+
+    for row in rows:
+        try:
+            nat_key = NATIONALITY_MAP.get(row.get("Type"), row.get("Type"))
+            items.append({
+                "nationality": nat_key,
+                "buy": row.get("Buy"),
+                "sell": row.get("Sell"),
+            })
+        except Exception:
+            continue
+    return items
+
+
 def main():
     indices_output = {}
     gainers = []
@@ -292,6 +409,12 @@ def main():
     disclosures = []
     bulletin = []
     live_status = {"text_ar": None, "color": None}
+    investor_activity = {
+        "byGroup": {},
+        "nationalityBreakdownPct": [],
+        "individualsByNationality": [],
+        "institutionsByNationality": [],
+    }
 
     with sync_playwright() as p:
         print("Launching secure browser context...")
@@ -463,6 +586,52 @@ def main():
         except Exception as status_error:
             print(f"[-] Failed to fetch live market status: {status_error}")
 
+        # --- PART 9: SCRAPE INVESTOR ACTIVITY (Egyptian/Arab/Foreign, Individuals/Institutions) ---
+        print("\nFetching Investor Type data...")
+        try:
+            investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
+
+            # Visit the real page first so the context picks up cookies/session -
+            # these are AJAX endpoints the page's own JS calls after loading.
+            inv_page = context.new_page()
+            inv_page.goto(investor_referer, wait_until="commit", timeout=60000)
+            inv_page.wait_for_timeout(10000)
+            inv_page.close()
+
+            tables_raw = fetch_investor_json(
+                context,
+                "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1",
+                investor_referer,
+            )
+            investor_activity["byGroup"] = parse_investor_tables(tables_raw)
+
+            pie2_raw = fetch_investor_json(
+                context,
+                "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2",
+                investor_referer,
+            )
+            investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
+
+            indiv_raw = fetch_investor_json(
+                context,
+                "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1",
+                investor_referer,
+            )
+            investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
+
+            inst_raw = fetch_investor_json(
+                context,
+                "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2",
+                investor_referer,
+            )
+            investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
+
+            print(f"[+] Successfully scraped investor activity "
+                  f"({len(investor_activity['byGroup'])} groups).")
+
+        except Exception as inv_error:
+            print(f"[-] Failed to fetch Investor Type data: {inv_error}")
+
         context.close()
         browser.close()
 
@@ -478,7 +647,8 @@ def main():
         "sectors": sectors,
         "news": news,
         "disclosures": disclosures,
-        "bulletin": bulletin
+        "bulletin": bulletin,
+        "investorActivity": investor_activity
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
