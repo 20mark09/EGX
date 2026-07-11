@@ -33,7 +33,7 @@ def parse_panel_metrics(html_content):
     """Parses out numerical metrics from the actively visible tab panel."""
     text = BeautifulSoup(html_content, "html.parser").get_text("\n", strip=True)
 
-    date_match = re.search(r"Date\s*:\s*(\d{2}/\d{2}/\\d{4})", text, re.IGNORECASE)
+    date_match = re.search(r"Date\s*:\s*(\d{2}/\d{2}/\d{4})", text, re.IGNORECASE)
     value_match = re.search(r"Value\s*:\s*([\d,.]+)", text, re.IGNORECASE)
     open_match = re.search(r"Open\s*:\s*([\d,.]+)", text, re.IGNORECASE)
     high_match = re.search(r"High\s*:\s*([\d,.]+)", text, re.IGNORECASE)
@@ -460,7 +460,7 @@ def main():
             viewport={"width": 1280, "height": 720}
         )
 
-        # --- PART 1: SCRAPE INDICES (Safe tabs with standard network waiting) ---
+        # --- PART 1: SCRAPE INDICES ---
         postback_actions = {
             "EGX30": "ctl00$C$M$lnkEGX30",
             "SHARIAH": "ctl00$C$M$lnkSHARIAH",
@@ -472,11 +472,12 @@ def main():
             print(f"Opening fresh tab state for {tracking_name}...")
             try:
                 idx_page = context.new_page()
-                idx_page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="networkidle", timeout=60000)
-                idx_page.wait_for_timeout(4000)
+                # Fast DomContentLoaded tracking + safety pause protects against asset hangs
+                idx_page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="domcontentloaded", timeout=45000)
+                idx_page.wait_for_timeout(6000)
 
                 idx_page.evaluate(f"__doPostBack('{event_target}', '');")
-                idx_page.wait_for_timeout(4000)
+                idx_page.wait_for_timeout(6000)
 
                 updated_html = idx_page.content()
                 metrics = parse_panel_metrics(updated_html)
@@ -485,11 +486,11 @@ def main():
                     indices_output[tracking_name] = metrics
                     print(f"[+] Extracted values completely for {tracking_name}: {metrics['value']}")
                 else:
-                    print(f"[-] Received empty payload for {tracking_name}, running backup fallback...")
-                    idx_page.reload(wait_until="networkidle")
-                    idx_page.wait_for_timeout(4000)
+                    print(f"[-] Initial structural read returned empty for {tracking_name}, retrying execution profile...")
+                    idx_page.reload(wait_until="domcontentloaded")
+                    idx_page.wait_for_timeout(6000)
                     idx_page.evaluate(f"__doPostBack('{event_target}', '');")
-                    idx_page.wait_for_timeout(4000)
+                    idx_page.wait_for_timeout(6000)
                     indices_output[tracking_name] = parse_panel_metrics(idx_page.content())
 
                 idx_page.close()
@@ -502,8 +503,8 @@ def main():
         print("\nNavigating to Top Gainers/Losers Desk...")
         try:
             gl_page = context.new_page()
-            gl_page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="networkidle", timeout=60000)
-            gl_page.wait_for_timeout(4000)
+            gl_page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="domcontentloaded", timeout=45000)
+            gl_page.wait_for_timeout(6000)
 
             gl_soup = BeautifulSoup(gl_page.content(), "html.parser")
             gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
@@ -518,8 +519,8 @@ def main():
         print("\nNavigating to Market Summary...")
         try:
             ms_page = context.new_page()
-            ms_page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="networkidle", timeout=60000)
-            ms_page.wait_for_timeout(4000)
+            ms_page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="domcontentloaded", timeout=45000)
+            ms_page.wait_for_timeout(6000)
             market_summary = parse_market_summary(ms_page.content())
             print(f"[+] Successfully scraped market summary.")
             ms_page.close()
@@ -531,8 +532,8 @@ def main():
         print("\nNavigating to News List...")
         try:
             news_page = context.new_page()
-            news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="networkidle", timeout=60000)
-            news_page.wait_for_timeout(4000)
+            news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="domcontentloaded", timeout=45000)
+            news_page.wait_for_timeout(6000)
             news = parse_news_grid(news_page.content(), "ctl00_C_N_GridView1")
             print(f"[+] Successfully scraped {len(news)} news items.")
             news_page.close()
@@ -544,8 +545,8 @@ def main():
         print("\nNavigating to Market Watch - Sectors...")
         try:
             sectors_page = context.new_page()
-            sectors_page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="networkidle", timeout=60000)
-            sectors_page.wait_for_timeout(4000)
+            sectors_page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="domcontentloaded", timeout=45000)
+            sectors_page.wait_for_timeout(6000)
             sectors = parse_sectors(sectors_page.content())
             print(f"[+] Successfully scraped {len(sectors)} sectors.")
             sectors_page.close()
@@ -563,8 +564,8 @@ def main():
             disclosures_url = f"https://www.egx.com.eg/en/NewsSearch.aspx?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
 
             disc_page = context.new_page()
-            disc_page.goto(disclosures_url, wait_until="networkidle", timeout=60000)
-            disc_page.wait_for_timeout(4000)
+            disc_page.goto(disclosures_url, wait_until="domcontentloaded", timeout=45000)
+            disc_page.wait_for_timeout(6000)
             disclosures = parse_news_grid(disc_page.content(), "ctl00_C_N_GVNews")
             print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
             disc_page.close()
@@ -576,8 +577,8 @@ def main():
         print("\nNavigating to Bulletin News...")
         try:
             bulletin_page = context.new_page()
-            bulletin_page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="networkidle", timeout=60000)
-            bulletin_page.wait_for_timeout(4000)
+            bulletin_page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="domcontentloaded", timeout=45000)
+            bulletin_page.wait_for_timeout(6000)
             bulletin = parse_news_grid(bulletin_page.content(), "ctl00_C_BulletinNews1_GVNews", base_url="https://www.egx.com.eg/ar/")
             print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
             bulletin_page.close()
@@ -606,13 +607,12 @@ def main():
                     print(f"[-] Failed to parse a captured chart response: {capture_error}")
 
             home_page.on("response", handle_chart_response)
-            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="networkidle", timeout=60000)
-            home_page.wait_for_timeout(5000)
+            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="domcontentloaded", timeout=45000)
+            home_page.wait_for_timeout(8000)
 
             live_status = parse_live_market_status(home_page.content())
             print(f"[+] Live market status: {live_status}")
 
-            # Identifiers matching the div[dataindex] chart tabs
             chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
             
             for tab_value in chart_tabs:
@@ -620,8 +620,7 @@ def main():
                 if home_page.locator(selector).count() > 0:
                     print(f"[*] Switching chart workspace to: {tab_value}")
                     try:
-                        # Click explicitly using standard dispatch parameters
-                        home_page.locator(selector).click(force=True)
+                        home_page.locator(selector).evaluate("el => el.click()")
                         home_page.wait_for_timeout(4000)
                     except Exception as click_error:
                         print(f"[-] Interaction skipped on tab {tab_value}: {click_error}")
@@ -638,8 +637,8 @@ def main():
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
             inv_page = context.new_page()
-            inv_page.goto(investor_referer, wait_until="networkidle", timeout=60000)
-            inv_page.wait_for_timeout(4000)
+            inv_page.goto(investor_referer, wait_until="domcontentloaded", timeout=45000)
+            inv_page.wait_for_timeout(6000)
             inv_page.close()
 
             tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
@@ -662,8 +661,8 @@ def main():
         print("\nNavigating to EGX30 Constituents...")
         try:
             cic_page = context.new_page()
-            cic_page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="networkidle", timeout=60000)
-            cic_page.wait_for_timeout(5000)
+            cic_page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="domcontentloaded", timeout=45000)
+            cic_page.wait_for_timeout(6000)
             egx30_constituents = parse_index_constituents(cic_page.content())
             print(f"[+] Successfully scraped {len(egx30_constituents)} EGX30 constituents.")
             cic_page.close()
