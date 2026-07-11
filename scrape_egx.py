@@ -245,7 +245,7 @@ def fetch_investor_json(context, url, referer):
                 "X-Requested-With": "XMLHttpRequest",
                 "Accept": "application/json, text/javascript, */*; q=0.01",
             },
-            timeout=20000,
+            timeout=25000,  # Elevated to 25s to clear standard web-service slowdowns
         )
         return response.text()
     except Exception as e:
@@ -319,16 +319,14 @@ def parse_index_constituents(html_content):
         if len(cells) < 4:
             continue
         try:
-            # Drop empty metadata row artifacts or non-data cells
             isin = cells[0].get_text(strip=True)
             code = cells[1].get_text(strip=True)
-            name_ar = cells[2].get_text(strip=True)
+            name = cells[2].get_text(strip=True)
             weight = safe_num(cells[3].get_text(strip=True))
             
-            # Filter out invalid rows, pagination blocks or dummy indicators
-            if not name_ar or "No data" in name_ar or not code or not isin:
+            if not name or "No data" in name or not code or not isin:
                 continue
-            items.append({"isin": isin, "code": code, "name_ar": name_ar, "weight_pct": weight})
+            items.append({"isin": isin, "code": code, "name": name, "weight_pct": weight})
         except Exception:
             continue
     return items
@@ -370,7 +368,7 @@ def normalize_chart_index_name(raw_name):
 
 
 def human_delay():
-    time.sleep(random.uniform(3.5, 6.0))
+    time.sleep(random.uniform(4.0, 6.5))
 
 
 def main():
@@ -583,23 +581,23 @@ def main():
 
         human_delay()
 
-# --- PART 10: SCRAPE ALL CONSTITUENT TARGETS SEQUENTIALLY ON THE SAME PAGE ---
+        # --- PART 10: SCRAPE ALL CONSTITUENT TARGETS VIA ENGLISH URL ENDPOINTS ---
+        # Moving to English localization views locks in the session view state uniformly.
         constituent_targets = {
-            "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
-            "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
-            "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
-            "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
+            "EGX30": "https://www.egx.com.eg/en/currentindexconstituntes.aspx?type=1&nav=1",
+            "SHARIAH": "https://www.egx.com.eg/en/currentindexconstituntes.aspx?type=22&nav=22",
+            "EGX70": "https://www.egx.com.eg/en/currentindexconstituntes.aspx?type=16&nav=16",
+            "EGX100": "https://www.egx.com.eg/en/currentindexconstituntes.aspx?type=5&nav=4"
         }
 
         for index_name, target_url in constituent_targets.items():
-            print(f"\nNavigating to {index_name} Constituents Portal...")
+            print(f"\nNavigating to {index_name} Constituents Portal (English Context Mapping)...")
             try:
-                # Navigate using our master single-page instance to keep firewalls and sessions intact
                 page.goto(target_url, wait_until="domcontentloaded", timeout=45000)
                 
-                # Explicitly wait for the data table grid element to be attached to the DOM
-                page.wait_for_selector("#ctl00_C_CIC_GridView1", timeout=8000)
-                page.wait_for_timeout(3000) # Quick safety buffer for complete rendering
+                # Make sure the master grid block has popped into view
+                page.wait_for_selector("#ctl00_C_CIC_GridView1", timeout=12000)
+                page.wait_for_timeout(3500) 
                 
                 parsed_stocks = parse_index_constituents(page.content())
                 index_constituents[index_name] = parsed_stocks
@@ -610,6 +608,8 @@ def main():
             
             human_delay()
 
+        context.close()
+        browser.close()
 
     # --- SAVE STRUCTURED RESULTS ---
     output = {
