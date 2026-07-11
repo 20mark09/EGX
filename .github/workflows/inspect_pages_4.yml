@@ -1,0 +1,32 @@
+name: EGX Page Inspector Round 4 - Constituents (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run Inspector
+        run: python inspect_pages_4.py
+
+      - name: Upload HTML dumps
+        uses: actions/upload-artifact@v4
+        with:
+          name: egx-constituents-dumps
+          path: constituents_type*.html
+          retention-days: 3
