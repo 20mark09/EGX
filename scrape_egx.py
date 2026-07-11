@@ -609,11 +609,7 @@ def main():
                 index_constituents[index_name] = []
             
             human_delay()
-        except Exception as target_error:
-            print(f"[-] Blocked or structural failure on constituent traversal: {target_error}")
 
-        context.close()
-        browser.close()
 
     # --- SAVE STRUCTURED RESULTS ---
     output = {
