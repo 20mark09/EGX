@@ -1,7 +1,7 @@
 import json
 import re
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse, parse_qs
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
@@ -438,6 +438,35 @@ def parse_index_constituents(html_content):
     return items
 
 
+def parse_chart_data(raw_text):
+    """Parses getIndexChartData's response: [{"CDAY": "2026-07-11T09:58:00",
+    "INDEX_VALUE": 52028.37}, ...] - 5-minute intraday points. This is
+    NOT fetched by URL (its `gtk` query param is a rotating token tied to
+    the browser session, not safe to hardcode or regenerate ourselves).
+    Instead we capture whatever request EGX's own homepage JS fires on
+    its own when the page loads (see the response listener in main()),
+    so we never need to know how `gtk` is produced.
+    """
+    points = []
+    if not raw_text:
+        return points
+    try:
+        rows = json.loads(raw_text)
+    except (json.JSONDecodeError, TypeError):
+        return points
+
+    for row in rows:
+        try:
+            points.append({
+                "time": row.get("CDAY"),
+                "value": row.get("INDEX_VALUE"),
+            })
+        except Exception:
+            continue
+
+    return points
+
+
 def main():
     indices_output = {}
     gainers = []
@@ -455,6 +484,7 @@ def main():
         "institutionsByNationality": [],
     }
     egx30_constituents = []
+    index_charts = {}
 
     with sync_playwright() as p:
         print("Launching secure browser context...")
@@ -612,10 +642,30 @@ def main():
         except Exception as bulletin_error:
             print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
 
-        # --- PART 8: SCRAPE LIVE MARKET STATUS (Arabic homepage badge) ---
-        print("\nNavigating to Homepage for live market status...")
+        # --- PART 8: SCRAPE LIVE MARKET STATUS (Arabic homepage badge)
+        # + INDEX CHART DATA (intraday sparkline points, captured live) ---
+        print("\nNavigating to Homepage for live market status and chart data...")
         try:
             home_page = context.new_page()
+
+            def handle_chart_response(response):
+                # The homepage's own JS calls getIndexChartData to draw its
+                # mini index chart widget - we just listen for that request
+                # rather than building the URL (and its rotating `gtk`
+                # token) ourselves.
+                if "getIndexChartData" not in response.url:
+                    return
+                try:
+                    query = parse_qs(urlparse(response.url).query)
+                    index_name = query.get("index", ["UNKNOWN"])[0]
+                    index_charts[index_name] = parse_chart_data(response.text())
+                    print(f"[+] Captured chart data for {index_name} "
+                          f"({len(index_charts[index_name])} points)")
+                except Exception as capture_error:
+                    print(f"[-] Failed to parse a captured chart response: {capture_error}")
+
+            home_page.on("response", handle_chart_response)
+
             home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="commit", timeout=60000)
             home_page.wait_for_timeout(10000)
 
@@ -624,7 +674,7 @@ def main():
             home_page.close()
 
         except Exception as status_error:
-            print(f"[-] Failed to fetch live market status: {status_error}")
+            print(f"[-] Failed to fetch live market status/chart data: {status_error}")
 
         # --- PART 9: SCRAPE INVESTOR ACTIVITY (Egyptian/Arab/Foreign, Individuals/Institutions) ---
         print("\nFetching Investor Type data...")
@@ -708,7 +758,8 @@ def main():
         "investorActivity": investor_activity,
         "indexConstituents": {
             "EGX30": egx30_constituents
-        }
+        },
+        "indexCharts": index_charts
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
