@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-11 08:43 UTC",
+  "lastUpdated": "2026-07-11 09:00 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -35,12 +35,12 @@
     },
     "EGX100": {
       "date": "09/07/2026",
-      "value": 22067.78,
-      "open": 21747.75,
-      "high": 22067.78,
-      "low": 21747.75,
-      "change_pct": 1.47,
-      "ytd_pct": 26.64
+      "value": 16281.62,
+      "open": 16004.93,
+      "high": 16281.62,
+      "low": 16004.93,
+      "change_pct": 1.73,
+      "ytd_pct": 24.05
     }
   },
   "gainers": [
@@ -98,8 +98,101 @@
     }
   ],
   "marketSummary": {
-    "main_market": {},
-    "breadth": {}
+    "main_market": {
+      "listed_total": {
+        "no": 260,
+        "volume": 2727090193,
+        "value": 61986951457,
+        "trades": 190081
+      },
+      "listed_stocks": {
+        "no": 220,
+        "volume": 2721615471,
+        "value": 9452544746,
+        "trades": 189720
+      },
+      "listed_t_bonds_bills_sukuk": {
+        "no": 39,
+        "volume": 5474545,
+        "value": 52534388267,
+        "trades": 359
+      },
+      "listed_bonds": {
+        "no": 1,
+        "volume": 177,
+        "value": 18444,
+        "trades": 2
+      },
+      "listed_funds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "smes_stocks": {
+        "no": 15,
+        "volume": 39429091,
+        "value": 41416259,
+        "trades": 3034
+      },
+      "otc_total": {
+        "no": 23,
+        "volume": 2017943,
+        "value": 37752604,
+        "trades": 75
+      },
+      "otc_bonds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "otc_deals": {
+        "no": 23,
+        "volume": 2017943,
+        "value": 37752604,
+        "trades": 75
+      },
+      "otc_orders": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "total": {
+        "no": 298,
+        "volume": 2768537227,
+        "value": 62066120320,
+        "trades": 193190
+      },
+      "total_market_cap": 3811610818759
+    },
+    "breadth": {
+      "listed_stocks": {
+        "no": 221,
+        "volume": 2721615648,
+        "value": 9452563190,
+        "trades": 189722
+      },
+      "gainers": {
+        "no": 162,
+        "volume": 2499080743,
+        "value": 7446836508,
+        "trades": 144056
+      },
+      "decliners": {
+        "no": 45,
+        "volume": 209867139,
+        "value": 1953033910,
+        "trades": 43901
+      },
+      "unchanged": {
+        "no": 14,
+        "volume": 12667766,
+        "value": 52692772,
+        "trades": 1765
+      }
+    }
   },
   "sectors": [
     {
@@ -337,59 +430,7 @@
   ],
   "bulletin": [],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 42442049347.0,
-          "sell": 42118808735.0,
-          "net": 323240612.0
-        },
-        "arabs": {
-          "buy": 5900554224.0,
-          "sell": 4576996439.0,
-          "net": 1323557785.0
-        },
-        "foreigners": {
-          "buy": 13644347886.0,
-          "sell": 15291146283.0,
-          "net": -1646798397.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 7605862560.0,
-          "sell": 7500629251.0,
-          "net": 105233308.0
-        },
-        "foreigners": {
-          "buy": 3537794.0,
-          "sell": 5481448.0,
-          "net": -1943654.0
-        },
-        "arabs": {
-          "buy": 201711244.0,
-          "sell": 166574297.0,
-          "net": 35136947.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 34836186788.0,
-          "sell": 34618179484.0,
-          "net": 218007304.0
-        },
-        "foreigners": {
-          "buy": 13640810092.0,
-          "sell": 15285664835.0,
-          "net": -1644854743.0
-        },
-        "arabs": {
-          "buy": 5698842980.0,
-          "sell": 4410422142.0,
-          "net": 1288420838.0
-        }
-      }
-    },
+    "byGroup": {},
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
@@ -633,7 +674,7 @@
     ]
   },
   "indexCharts": {
-    "EGX_33_Shariah": [
+    "SHARIAH": [
       {
         "time": "2026-07-11T09:58:00",
         "value": 5845.63
