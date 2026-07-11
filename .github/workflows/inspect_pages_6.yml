@@ -1,0 +1,32 @@
+name: EGX Page Inspector Round 6 - Top GL (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run Inspector
+        run: python inspect_pages_6.py
+
+      - name: Upload HTML dump
+        uses: actions/upload-artifact@v4
+        with:
+          name: egx-top-gl-dump
+          path: top_gl.html
+          retention-days: 3
