@@ -33,7 +33,7 @@ def parse_panel_metrics(html_content):
     """Parses out numerical metrics from the actively visible tab panel."""
     text = BeautifulSoup(html_content, "html.parser").get_text("\n", strip=True)
 
-    date_match = re.search(r"Date\s*:\s*(\d{2}/\d{2}/\d{4})", text, re.IGNORECASE)
+    date_match = re.search(r"Date\s*:\s*(\d{2}/\d{2}/\\d{4})", text, re.IGNORECASE)
     value_match = re.search(r"Value\s*:\s*([\d,.]+)", text, re.IGNORECASE)
     open_match = re.search(r"Open\s*:\s*([\d,.]+)", text, re.IGNORECASE)
     high_match = re.search(r"High\s*:\s*([\d,.]+)", text, re.IGNORECASE)
@@ -44,7 +44,7 @@ def parse_panel_metrics(html_content):
     def safe_str(match):
         return match.group(1) if match else None
 
-    def safe_num(match):
+    def safe_num_match(match):
         if not match:
             return None
         try:
@@ -54,29 +54,26 @@ def parse_panel_metrics(html_content):
 
     return {
         "date": safe_str(date_match),
-        "value": safe_num(value_match),
-        "open": safe_num(open_match),
-        "high": safe_num(high_match),
-        "low": safe_num(low_match),
-        "change_pct": safe_num(change_match),
-        "ytd_pct": safe_num(ytd_match)
+        "value": safe_num_match(value_match),
+        "open": safe_num_match(open_match),
+        "high": safe_num_match(high_match),
+        "low": safe_num_match(low_match),
+        "change_pct": safe_num_match(change_match),
+        "ytd_pct": safe_num_match(ytd_match)
     }
 
 
 def parse_gl_table(soup, table_id):
-    """Finds tables on Top_GL.aspx using their precise client IDs and maps the 6 columns layout."""
+    """Finds tables on Top_GL.aspx using their precise client IDs and maps the columns."""
     table = soup.find("table", {"id": table_id})
     stocks = []
     
     if not table:
         return stocks
 
-    # Find all table rows, safely skipping the first row containing the headers
     rows = table.find_all("tr")[1:]
-    
     for row in rows:
         cols = row.find_all("td")
-        # Ensure we have the full 6 columns present (Company Name, Currency, Prev Close, Open, Close, %CHG)
         if len(cols) >= 6:
             try:
                 name_text = cols[0].get_text(strip=True)
@@ -85,8 +82,8 @@ def parse_gl_table(soup, table_id):
                     
                 stocks.append({
                     "name": name_text,
-                    "price": float(cols[4].get_text(strip=True).replace(",", "")),       # Close column
-                    "change_pct": float(cols[5].get_text(strip=True).replace(",", "").replace("%", ""))  # %CHG column
+                    "price": float(cols[4].get_text(strip=True).replace(",", "")),
+                    "change_pct": float(cols[5].get_text(strip=True).replace(",", "").replace("%", ""))
                 })
             except Exception:
                 continue
@@ -94,16 +91,10 @@ def parse_gl_table(soup, table_id):
 
 
 def parse_market_summary(html_content):
-    """Parses MarketSummry.aspx: the two 'TableStatic' blocks -
-    main market activity (Listed / Stocks / Bonds / SMEs / OTC / Total)
-    and market breadth (Listed stocks / Gainers / Decliners / Unchanged).
-    """
     soup = BeautifulSoup(html_content, "html.parser")
     tables = soup.find_all("table", class_="TableStatic")
     result = {"main_market": {}, "breadth": {}}
 
-    # Rows under these labels start a new sub-section (e.g. everything
-    # after "OTC" until "Total" belongs to the OTC block: OTC/Bonds/Deals/Orders).
     section_starts = {"Listed": "listed", "SMEs Market": "smes", "OTC": "otc"}
 
     if len(tables) >= 1:
@@ -143,7 +134,6 @@ def parse_market_summary(html_content):
                 continue
 
             if not any(values):
-                # section-header row with no data of its own (e.g. "SMEs Market")
                 continue
 
             key = (f"{section}_" if section else "") + slugify(label)
@@ -183,14 +173,6 @@ def parse_market_summary(html_content):
 
 
 def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/en/"):
-    """Parses any of EGX's News-style GridViews (News, Disclosures search
-    results, Bulletin) - they all share the same markup, just a different
-    table id. Title and date spans share the same repeater-item ID prefix
-    (e.g. '..._ctl02'), so we pair them by that prefix rather than by DOM
-    position - more robust if EGX ever tweaks the row markup. Returns an
-    empty list if the grid is empty (e.g. Bulletin with no session today,
-    which renders a 'No data' placeholder row with no matching spans).
-    """
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": table_id})
     items = []
@@ -228,10 +210,6 @@ def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/en/
 
 
 def parse_sectors(html_content):
-    """Parses MarketWatchSectors.aspx's GridView (ctl00_C_M_GridView2).
-    Columns: Sector Name | (icon, empty) | Value(LE) | %Value |
-    Volume | %Volume | Market Cap(LE) | %Market Cap.
-    """
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": "ctl00_C_M_GridView2"})
     sectors = []
@@ -242,7 +220,7 @@ def parse_sectors(html_content):
     for row in table.find_all("tr"):
         cells = row.find_all("td")
         if len(cells) < 8:
-            continue  # skips the <th> header row, which has no <td>s
+            continue
         try:
             name = cells[0].get_text(strip=True)
             if not name:
@@ -263,11 +241,6 @@ def parse_sectors(html_content):
 
 
 def parse_live_market_status(html_content):
-    """Parses the live status badge on the Arabic homepage
-    (ctl00_C_lblMarketStatus). This reflects EGX's own real-time /
-    holiday-aware status, which is more reliable than computing it
-    from a fixed schedule.
-    """
     soup = BeautifulSoup(html_content, "html.parser")
     el = soup.find(id="ctl00_C_lblMarketStatus")
     if not el:
@@ -282,9 +255,6 @@ def parse_live_market_status(html_content):
     }
 
 
-# Arabic label -> stable English key, for the investor-type endpoints.
-# Two spellings of "foreigners" show up in the wild (with/without hamza),
-# so both map to the same key.
 NATIONALITY_MAP = {
     "مصريين": "egyptians",
     "عرب": "arabs",
@@ -292,22 +262,10 @@ NATIONALITY_MAP = {
     "اجانب": "foreigners",
 }
 
-# GetInvestorTables groups: 1=Total, 2=Individuals, 3=Institutions
-# (verified: group2 buy + group3 buy ~= group1 buy on a real sample).
 INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
 
 
 def fetch_investor_json(context, url, referer):
-    """Fetches one WebService.asmx endpoint via the browser context's
-    request API - these are pure JSON/AJAX endpoints, no page rendering
-    needed. Returns raw response text, or None if the request itself
-    fails (network/timeout). Note: EGX's backend has been observed
-    returning a raw Oracle error string (e.g. 'ORA-12521: TNS:listener
-    does not currently know...') instead of JSON on some endpoints -
-    that's a transient server-side issue, not a scraping problem, and
-    the parse_* functions below handle it by returning empty results
-    rather than crashing.
-    """
     try:
         response = context.request.get(
             url,
@@ -325,10 +283,6 @@ def fetch_investor_json(context, url, referer):
 
 
 def parse_investor_tables(raw_text):
-    """Parses GetInvestorTables: [{Group, Type, Buy, Sell, Net}, ...]
-    into {"total": {...}, "individuals": {...}, "institutions": {...}},
-    each keyed by nationality with buy/sell/net.
-    """
     result = {}
     if not raw_text:
         return result
@@ -352,7 +306,6 @@ def parse_investor_tables(raw_text):
 
 
 def parse_pie_chart(raw_text):
-    """Parses InvPieCharts: [{Label, Value, Color}, ...]."""
     items = []
     if not raw_text:
         return items
@@ -374,10 +327,6 @@ def parse_pie_chart(raw_text):
 
 
 def parse_stack_chart(raw_text):
-    """Parses IndivByNatStackChart (and, best-effort, the similarly
-    shaped InvestorNatColumnChart / InvestorIndivInstColumnChart):
-    [{Type, Buy, Sell}, ...].
-    """
     items = []
     if not raw_text:
         return items
@@ -400,14 +349,6 @@ def parse_stack_chart(raw_text):
 
 
 def parse_index_constituents(html_content):
-    """Parses CurrentIndexConstituntes.aspx (ctl00_C_CIC_GridView1):
-    ISIN | Reuters code | Company name (Arabic) | Relative weight (%).
-    Confirmed: type=1 is EGX30 (31 constituents, weights sum to ~100%).
-    Other type values (2/4/5/6) redirected to a generic landing page
-    instead of rendering a constituents table when hit via plain
-    querystring - that index selector likely needs a dropdown postback
-    rather than a URL param, so only EGX30 is wired up for now.
-    """
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": "ctl00_C_CIC_GridView1"})
     items = []
@@ -439,14 +380,6 @@ def parse_index_constituents(html_content):
 
 
 def parse_chart_data(raw_text):
-    """Parses getIndexChartData's response: [{"CDAY": "2026-07-11T09:58:00",
-    "INDEX_VALUE": 52028.37}, ...] - 5-minute intraday points. This is
-    NOT fetched by URL (its `gtk` query param is a rotating token tied to
-    the browser session, not safe to hardcode or regenerate ourselves).
-    Instead we capture whatever request EGX's own homepage JS fires on
-    its own when the page loads (see the response listener in main()),
-    so we never need to know how `gtk` is produced.
-    """
     points = []
     if not raw_text:
         return points
@@ -467,14 +400,6 @@ def parse_chart_data(raw_text):
     return points
 
 
-# The homepage chart widget identifies indices with its own internal
-# names, which don't match the keys our `indices` dict uses (those come
-# from the postback-based Indices.aspx scrape in Part 1: EGX30, SHARIAH,
-# EGX70, EGX100). Observed so far: "EGX30" maps directly, but SHARIAH
-# showed up as "EGX_33_Shariah". Aliases here are exact matches we've
-# actually seen; the substring fallback below catches likely variants
-# for EGX70/EGX100 we haven't observed yet, so a chart doesn't silently
-# get dropped just because of a naming mismatch.
 _CHART_INDEX_ALIASES = {
     "EGX30": "EGX30",
     "EGX_33_SHARIAH": "SHARIAH",
@@ -494,12 +419,10 @@ def normalize_chart_index_name(raw_name):
     key = raw_name.upper()
     if key in _CHART_INDEX_ALIASES:
         return _CHART_INDEX_ALIASES[key]
-    # Fallback: substring match against our known index names, in case
-    # the widget uses some other variant we haven't seen yet.
     for known in ("EGX30", "SHARIAH", "EGX70", "EGX100"):
         if known in key:
             return known
-    return raw_name  # unrecognized - keep as-is rather than silently dropping it
+    return raw_name
 
 
 def main():
@@ -537,7 +460,7 @@ def main():
             viewport={"width": 1280, "height": 720}
         )
 
-        # --- PART 1: SCRAPE INDICES (Isolated tabs to prevent ViewState corruption) ---
+        # --- PART 1: SCRAPE INDICES (Safe tabs with standard network waiting) ---
         postback_actions = {
             "EGX30": "ctl00$C$M$lnkEGX30",
             "SHARIAH": "ctl00$C$M$lnkSHARIAH",
@@ -549,8 +472,8 @@ def main():
             print(f"Opening fresh tab state for {tracking_name}...")
             try:
                 idx_page = context.new_page()
-                idx_page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="commit", timeout=60000)
-                idx_page.wait_for_timeout(6000)  # Cloudflare shield pause
+                idx_page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="networkidle", timeout=60000)
+                idx_page.wait_for_timeout(4000)
 
                 idx_page.evaluate(f"__doPostBack('{event_target}', '');")
                 idx_page.wait_for_timeout(4000)
@@ -558,13 +481,12 @@ def main():
                 updated_html = idx_page.content()
                 metrics = parse_panel_metrics(updated_html)
                 
-                # Check if we got actual data or if the postback completely failed
                 if metrics.get("value") is not None:
                     indices_output[tracking_name] = metrics
                     print(f"[+] Extracted values completely for {tracking_name}: {metrics['value']}")
                 else:
-                    print(f"[-] Received empty payload for {tracking_name}, retrying once...")
-                    idx_page.reload()
+                    print(f"[-] Received empty payload for {tracking_name}, running backup fallback...")
+                    idx_page.reload(wait_until="networkidle")
                     idx_page.wait_for_timeout(4000)
                     idx_page.evaluate(f"__doPostBack('{event_target}', '');")
                     idx_page.wait_for_timeout(4000)
@@ -580,13 +502,8 @@ def main():
         print("\nNavigating to Top Gainers/Losers Desk...")
         try:
             gl_page = context.new_page()
-            gl_page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="commit", timeout=60000)
-            gl_page.wait_for_timeout(8000)
-
-            try:
-                gl_page.wait_for_selector("#ctl00_C_Top_GL1_GridView1", timeout=10000)
-            except Exception:
-                pass
+            gl_page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="networkidle", timeout=60000)
+            gl_page.wait_for_timeout(4000)
 
             gl_soup = BeautifulSoup(gl_page.content(), "html.parser")
             gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
@@ -601,8 +518,8 @@ def main():
         print("\nNavigating to Market Summary...")
         try:
             ms_page = context.new_page()
-            ms_page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="commit", timeout=60000)
-            ms_page.wait_for_timeout(8000)
+            ms_page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="networkidle", timeout=60000)
+            ms_page.wait_for_timeout(4000)
             market_summary = parse_market_summary(ms_page.content())
             print(f"[+] Successfully scraped market summary.")
             ms_page.close()
@@ -614,8 +531,8 @@ def main():
         print("\nNavigating to News List...")
         try:
             news_page = context.new_page()
-            news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="commit", timeout=60000)
-            news_page.wait_for_timeout(8000)
+            news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="networkidle", timeout=60000)
+            news_page.wait_for_timeout(4000)
             news = parse_news_grid(news_page.content(), "ctl00_C_N_GridView1")
             print(f"[+] Successfully scraped {len(news)} news items.")
             news_page.close()
@@ -627,8 +544,8 @@ def main():
         print("\nNavigating to Market Watch - Sectors...")
         try:
             sectors_page = context.new_page()
-            sectors_page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="commit", timeout=60000)
-            sectors_page.wait_for_timeout(8000)
+            sectors_page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="networkidle", timeout=60000)
+            sectors_page.wait_for_timeout(4000)
             sectors = parse_sectors(sectors_page.content())
             print(f"[+] Successfully scraped {len(sectors)} sectors.")
             sectors_page.close()
@@ -646,8 +563,8 @@ def main():
             disclosures_url = f"https://www.egx.com.eg/en/NewsSearch.aspx?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
 
             disc_page = context.new_page()
-            disc_page.goto(disclosures_url, wait_until="commit", timeout=60000)
-            disc_page.wait_for_timeout(8000)
+            disc_page.goto(disclosures_url, wait_until="networkidle", timeout=60000)
+            disc_page.wait_for_timeout(4000)
             disclosures = parse_news_grid(disc_page.content(), "ctl00_C_N_GVNews")
             print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
             disc_page.close()
@@ -659,8 +576,8 @@ def main():
         print("\nNavigating to Bulletin News...")
         try:
             bulletin_page = context.new_page()
-            bulletin_page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="commit", timeout=60000)
-            bulletin_page.wait_for_timeout(8000)
+            bulletin_page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="networkidle", timeout=60000)
+            bulletin_page.wait_for_timeout(4000)
             bulletin = parse_news_grid(bulletin_page.content(), "ctl00_C_BulletinNews1_GVNews", base_url="https://www.egx.com.eg/ar/")
             print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
             bulletin_page.close()
@@ -679,7 +596,7 @@ def main():
                 try:
                     query = parse_qs(urlparse(response.url).query)
                     raw_index_name = query.get("index", ["UNKNOWN"])[0]
-                    index_name = normalize_chart_index_name(raw_index_name)
+                    index_name = normalize_chart_index_name(raw_name=raw_index_name)
                     
                     data_points = parse_chart_data(response.text())
                     if data_points:
@@ -695,19 +612,19 @@ def main():
             live_status = parse_live_market_status(home_page.content())
             print(f"[+] Live market status: {live_status}")
 
-            # Precise tab identifiers matching the HTML structure
+            # Identifiers matching the div[dataindex] chart tabs
             chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
             
             for tab_value in chart_tabs:
                 selector = f'div[dataindex="{tab_value}"]'
                 if home_page.locator(selector).count() > 0:
-                    print(f"[*] Dispatching click event to chart tab: {tab_value}")
+                    print(f"[*] Switching chart workspace to: {tab_value}")
                     try:
-                        # Use evaluate to dispatch a native DOM element click event directly to bypass hit-box or overlay constraints
-                        home_page.locator(selector).evaluate("el => el.click()")
-                        home_page.wait_for_timeout(3000)  # Pause to let handle_chart_response intercept the async AJAX response
+                        # Click explicitly using standard dispatch parameters
+                        home_page.locator(selector).click(force=True)
+                        home_page.wait_for_timeout(4000)
                     except Exception as click_error:
-                        print(f"[-] Failed execution on tab {tab_value}: {click_error}")
+                        print(f"[-] Interaction skipped on tab {tab_value}: {click_error}")
                 else:
                     print(f"[-] Layout element missing for chart tab: {tab_value}")
 
@@ -721,8 +638,8 @@ def main():
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
             inv_page = context.new_page()
-            inv_page.goto(investor_referer, wait_until="commit", timeout=60000)
-            inv_page.wait_for_timeout(8000)
+            inv_page.goto(investor_referer, wait_until="networkidle", timeout=60000)
+            inv_page.wait_for_timeout(4000)
             inv_page.close()
 
             tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
@@ -745,8 +662,8 @@ def main():
         print("\nNavigating to EGX30 Constituents...")
         try:
             cic_page = context.new_page()
-            cic_page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="commit", timeout=60000)
-            cic_page.wait_for_timeout(8000)
+            cic_page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="networkidle", timeout=60000)
+            cic_page.wait_for_timeout(5000)
             egx30_constituents = parse_index_constituents(cic_page.content())
             print(f"[+] Successfully scraped {len(egx30_constituents)} EGX30 constituents.")
             cic_page.close()
@@ -780,6 +697,7 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     print(f"\nFinal run complete! Tracking metrics saved perfectly to {OUTPUT_FILE}")
+
 
 if __name__ == "__main__":
     main()
