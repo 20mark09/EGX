@@ -399,6 +399,45 @@ def parse_stack_chart(raw_text):
     return items
 
 
+def parse_index_constituents(html_content):
+    """Parses CurrentIndexConstituntes.aspx (ctl00_C_CIC_GridView1):
+    ISIN | Reuters code | Company name (Arabic) | Relative weight (%).
+    Confirmed: type=1 is EGX30 (31 constituents, weights sum to ~100%).
+    Other type values (2/4/5/6) redirected to a generic landing page
+    instead of rendering a constituents table when hit via plain
+    querystring - that index selector likely needs a dropdown postback
+    rather than a URL param, so only EGX30 is wired up for now.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": "ctl00_C_CIC_GridView1"})
+    items = []
+
+    if not table:
+        return items
+
+    for row in table.find_all("tr")[1:]:
+        cells = row.find_all("td")
+        if len(cells) < 4:
+            continue
+        try:
+            isin = cells[0].get_text(strip=True)
+            code = cells[1].get_text(strip=True)
+            name_ar = cells[2].get_text(strip=True)
+            weight = safe_num(cells[3].get_text(strip=True))
+            if not name_ar:
+                continue
+            items.append({
+                "isin": isin,
+                "code": code,
+                "name_ar": name_ar,
+                "weight_pct": weight,
+            })
+        except Exception:
+            continue
+
+    return items
+
+
 def main():
     indices_output = {}
     gainers = []
@@ -415,6 +454,7 @@ def main():
         "individualsByNationality": [],
         "institutionsByNationality": [],
     }
+    egx30_constituents = []
 
     with sync_playwright() as p:
         print("Launching secure browser context...")
@@ -632,6 +672,23 @@ def main():
         except Exception as inv_error:
             print(f"[-] Failed to fetch Investor Type data: {inv_error}")
 
+        # --- PART 10: SCRAPE EGX30 CONSTITUENTS & WEIGHTS ---
+        print("\nNavigating to EGX30 Constituents...")
+        try:
+            cic_page = context.new_page()
+            cic_page.goto(
+                "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
+                wait_until="commit", timeout=60000,
+            )
+            cic_page.wait_for_timeout(10000)
+
+            egx30_constituents = parse_index_constituents(cic_page.content())
+            print(f"[+] Successfully scraped {len(egx30_constituents)} EGX30 constituents.")
+            cic_page.close()
+
+        except Exception as cic_error:
+            print(f"[-] Failed to fetch EGX30 constituents: {cic_error}")
+
         context.close()
         browser.close()
 
@@ -648,7 +705,10 @@ def main():
         "news": news,
         "disclosures": disclosures,
         "bulletin": bulletin,
-        "investorActivity": investor_activity
+        "investorActivity": investor_activity,
+        "indexConstituents": {
+            "EGX30": egx30_constituents
+        }
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
