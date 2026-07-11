@@ -537,14 +537,7 @@ def main():
             viewport={"width": 1280, "height": 720}
         )
 
-        # --- PART 1: SCRAPE INDICES ---
-        page = context.new_page()
-        print("Navigating to Portal Landing View...")
-        page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="commit", timeout=60000)
-        
-        print("Pausing 10 seconds to let JavaScript firewall challenge pass...")
-        page.wait_for_timeout(10000)
-
+        # --- PART 1: SCRAPE INDICES (Isolated tabs to prevent ViewState corruption) ---
         postback_actions = {
             "EGX30": "ctl00$C$M$lnkEGX30",
             "SHARIAH": "ctl00$C$M$lnkSHARIAH",
@@ -553,245 +546,210 @@ def main():
         }
 
         for tracking_name, event_target in postback_actions.items():
-            print(f"Requesting data compilation state for {tracking_name}...")
+            print(f"Opening fresh tab state for {tracking_name}...")
             try:
-                page.evaluate(f"__doPostBack('{event_target}', '');")
-                page.wait_for_timeout(4000)
+                idx_page = context.new_page()
+                idx_page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="commit", timeout=60000)
+                idx_page.wait_for_timeout(6000)  # Cloudflare shield pause
 
-                updated_html = page.content()
-                indices_output[tracking_name] = parse_panel_metrics(updated_html)
-                print(f"[+] Extracted values completely for {tracking_name}")
+                idx_page.evaluate(f"__doPostBack('{event_target}', '');")
+                idx_page.wait_for_timeout(4000)
 
+                updated_html = idx_page.content()
+                metrics = parse_panel_metrics(updated_html)
+                
+                # Check if we got actual data or if the postback completely failed
+                if metrics.get("value") is not None:
+                    indices_output[tracking_name] = metrics
+                    print(f"[+] Extracted values completely for {tracking_name}: {metrics['value']}")
+                else:
+                    print(f"[-] Received empty payload for {tracking_name}, retrying once...")
+                    idx_page.reload()
+                    idx_page.wait_for_timeout(4000)
+                    idx_page.evaluate(f"__doPostBack('{event_target}', '');")
+                    idx_page.wait_for_timeout(4000)
+                    indices_output[tracking_name] = parse_panel_metrics(idx_page.content())
+
+                idx_page.close()
             except Exception as loop_error:
                 print(f"[-] Error on index loop {tracking_name}: {loop_error}")
                 indices_output[tracking_name] = {k: None for k in ["date", "value", "open", "high", "low", "change_pct", "ytd_pct"]}
 
-        page.close()
 
         # --- PART 2: SCRAPE TOP GAINERS & LOSERS ---
         print("\nNavigating to Top Gainers/Losers Desk...")
         try:
             gl_page = context.new_page()
             gl_page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="commit", timeout=60000)
-            gl_page.wait_for_timeout(10000)  # Wait for JavaScript shield to settle
+            gl_page.wait_for_timeout(8000)
 
-            # Wait for the specific GridView container element to ensure data has rendered
             try:
-                gl_page.wait_for_selector("#ctl00_C_Top_GL1_GridView1", timeout=15000)
+                gl_page.wait_for_selector("#ctl00_C_Top_GL1_GridView1", timeout=10000)
             except Exception:
                 pass
 
             gl_soup = BeautifulSoup(gl_page.content(), "html.parser")
-            
-            # Scrape using the specific IDs seen directly in your raw layout response
             gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
             losers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView2")
-            
             print(f"[+] Successfully scraped {len(gainers)} gainers and {len(losers)} losers.")
             gl_page.close()
-            
         except Exception as gl_error:
             print(f"[-] Failed to fetch Top Gainers/Losers: {gl_error}")
+
 
         # --- PART 3: SCRAPE MARKET SUMMARY STATISTICS ---
         print("\nNavigating to Market Summary...")
         try:
             ms_page = context.new_page()
             ms_page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="commit", timeout=60000)
-            ms_page.wait_for_timeout(10000)  # Wait for JavaScript shield to settle
-
+            ms_page.wait_for_timeout(8000)
             market_summary = parse_market_summary(ms_page.content())
-            print(f"[+] Successfully scraped market summary "
-                  f"({len(market_summary['main_market'])} main-market rows, "
-                  f"{len(market_summary['breadth'])} breadth rows).")
+            print(f"[+] Successfully scraped market summary.")
             ms_page.close()
-
         except Exception as ms_error:
             print(f"[-] Failed to fetch Market Summary: {ms_error}")
+
 
         # --- PART 4: SCRAPE NEWS ---
         print("\nNavigating to News List...")
         try:
             news_page = context.new_page()
             news_page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="commit", timeout=60000)
-            news_page.wait_for_timeout(10000)  # Wait for JavaScript shield to settle
-
+            news_page.wait_for_timeout(8000)
             news = parse_news_grid(news_page.content(), "ctl00_C_N_GridView1")
             print(f"[+] Successfully scraped {len(news)} news items.")
             news_page.close()
-
         except Exception as news_error:
             print(f"[-] Failed to fetch News: {news_error}")
+
 
         # --- PART 5: SCRAPE SECTORS ---
         print("\nNavigating to Market Watch - Sectors...")
         try:
             sectors_page = context.new_page()
             sectors_page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="commit", timeout=60000)
-            sectors_page.wait_for_timeout(10000)
-
+            sectors_page.wait_for_timeout(8000)
             sectors = parse_sectors(sectors_page.content())
             print(f"[+] Successfully scraped {len(sectors)} sectors.")
             sectors_page.close()
-
         except Exception as sectors_error:
             print(f"[-] Failed to fetch Sectors: {sectors_error}")
 
-        # --- PART 6: SCRAPE DISCLOSURES (last 3 months, latest page only) ---
+
+        # --- PART 6: SCRAPE DISCLOSURES ---
         print("\nNavigating to Disclosures search...")
         try:
             today = datetime.now(timezone.utc)
             three_months_ago = today - timedelta(days=90)
             from_str = three_months_ago.strftime("%d/%m/%Y")
             to_str = today.strftime("%d/%m/%Y")
-            disclosures_url = (
-                "https://www.egx.com.eg/en/NewsSearch.aspx"
-                f"?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
-            )
+            disclosures_url = f"https://www.egx.com.eg/en/NewsSearch.aspx?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
 
             disc_page = context.new_page()
             disc_page.goto(disclosures_url, wait_until="commit", timeout=60000)
-            disc_page.wait_for_timeout(10000)
-
+            disc_page.wait_for_timeout(8000)
             disclosures = parse_news_grid(disc_page.content(), "ctl00_C_N_GVNews")
             print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
             disc_page.close()
-
         except Exception as disc_error:
             print(f"[-] Failed to fetch Disclosures: {disc_error}")
 
-        # --- PART 7: SCRAPE BULLETIN (Arabic - can be empty on non-session days) ---
+
+        # --- PART 7: SCRAPE BULLETIN ---
         print("\nNavigating to Bulletin News...")
         try:
             bulletin_page = context.new_page()
             bulletin_page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="commit", timeout=60000)
-            bulletin_page.wait_for_timeout(10000)
-
-            bulletin = parse_news_grid(
-                bulletin_page.content(), "ctl00_C_BulletinNews1_GVNews",
-                base_url="https://www.egx.com.eg/ar/",
-            )
+            bulletin_page.wait_for_timeout(8000)
+            bulletin = parse_news_grid(bulletin_page.content(), "ctl00_C_BulletinNews1_GVNews", base_url="https://www.egx.com.eg/ar/")
             print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
             bulletin_page.close()
-
         except Exception as bulletin_error:
             print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
 
-        # --- PART 8: SCRAPE LIVE MARKET STATUS (Arabic homepage badge)
-        # + INDEX CHART DATA (intraday sparkline points, captured live) ---
+
+        # --- PART 8: SCRAPE LIVE MARKET STATUS & ALL INDEX GRAPH DATA ---
         print("\nNavigating to Homepage for live market status and chart data...")
         try:
             home_page = context.new_page()
 
             def handle_chart_response(response):
-                # The homepage's own JS calls getIndexChartData to draw its
-                # mini index chart widget - we just listen for that request
-                # rather than building the URL (and its rotating `gtk`
-                # token) ourselves.
                 if "getIndexChartData" not in response.url:
                     return
                 try:
                     query = parse_qs(urlparse(response.url).query)
                     raw_index_name = query.get("index", ["UNKNOWN"])[0]
                     index_name = normalize_chart_index_name(raw_index_name)
-                    index_charts[index_name] = parse_chart_data(response.text())
-                    print(f"[+] Captured chart data for {index_name} "
-                          f"(raw name: {raw_index_name}, {len(index_charts[index_name])} points)")
+                    
+                    data_points = parse_chart_data(response.text())
+                    if data_points:
+                        index_charts[index_name] = data_points
+                        print(f"[+] Captured chart data for {index_name} ({len(data_points)} points)")
                 except Exception as capture_error:
                     print(f"[-] Failed to parse a captured chart response: {capture_error}")
 
             home_page.on("response", handle_chart_response)
-
-            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="commit", timeout=60000)
-            home_page.wait_for_timeout(10000)  # captures whichever index is selected by default
+            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="networkidle", timeout=60000)
+            home_page.wait_for_timeout(5000)
 
             live_status = parse_live_market_status(home_page.content())
             print(f"[+] Live market status: {live_status}")
 
-            # The homepage has a tab menu (div.index-chart-menu) for
-            # switching which index's mini-chart is shown, keyed by a
-            # `dataindex` attribute - e.g. <div dataindex="EGX30">. We
-            # click through the four we care about so each one fires its
-            # own getIndexChartData request, which handle_chart_response
-            # captures above. (EGX35 LV / EGX30 Capped / EGX30 TR tabs
-            # also exist on this menu but aren't indices we track.)
+            # Precise tab identifiers matching the HTML structure
             chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
+            
             for tab_value in chart_tabs:
-                try:
-                    selector = f'div[dataindex="{tab_value}"]'
-                    if home_page.locator(selector).count() > 0:
-                        home_page.click(selector, timeout=5000)
-                        home_page.wait_for_timeout(4000)
-                    else:
-                        print(f"[-] Chart tab not found on page: {tab_value}")
-                except Exception as tab_error:
-                    print(f"[-] Failed to switch to chart tab {tab_value}: {tab_error}")
+                selector = f'div[dataindex="{tab_value}"]'
+                if home_page.locator(selector).count() > 0:
+                    print(f"[*] Dispatching click event to chart tab: {tab_value}")
+                    try:
+                        # Use evaluate to dispatch a native DOM element click event directly to bypass hit-box or overlay constraints
+                        home_page.locator(selector).evaluate("el => el.click()")
+                        home_page.wait_for_timeout(3000)  # Pause to let handle_chart_response intercept the async AJAX response
+                    except Exception as click_error:
+                        print(f"[-] Failed execution on tab {tab_value}: {click_error}")
+                else:
+                    print(f"[-] Layout element missing for chart tab: {tab_value}")
 
             home_page.close()
-
         except Exception as status_error:
             print(f"[-] Failed to fetch live market status/chart data: {status_error}")
 
-        # --- PART 9: SCRAPE INVESTOR ACTIVITY (Egyptian/Arab/Foreign, Individuals/Institutions) ---
+
+        # --- PART 9: SCRAPE INVESTOR ACTIVITY ---
         print("\nFetching Investor Type data...")
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
-
-            # Visit the real page first so the context picks up cookies/session -
-            # these are AJAX endpoints the page's own JS calls after loading.
             inv_page = context.new_page()
             inv_page.goto(investor_referer, wait_until="commit", timeout=60000)
-            inv_page.wait_for_timeout(10000)
+            inv_page.wait_for_timeout(8000)
             inv_page.close()
 
-            tables_raw = fetch_investor_json(
-                context,
-                "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1",
-                investor_referer,
-            )
+            tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
             investor_activity["byGroup"] = parse_investor_tables(tables_raw)
 
-            pie2_raw = fetch_investor_json(
-                context,
-                "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2",
-                investor_referer,
-            )
+            pie2_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
 
-            indiv_raw = fetch_investor_json(
-                context,
-                "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1",
-                investor_referer,
-            )
+            indiv_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
             investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
 
-            inst_raw = fetch_investor_json(
-                context,
-                "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2",
-                investor_referer,
-            )
+            inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
-
-            print(f"[+] Successfully scraped investor activity "
-                  f"({len(investor_activity['byGroup'])} groups).")
-
+            print(f"[+] Successfully scraped investor activity.")
         except Exception as inv_error:
             print(f"[-] Failed to fetch Investor Type data: {inv_error}")
 
-        # --- PART 10: SCRAPE EGX30 CONSTITUENTS & WEIGHTS ---
+
+        # --- PART 10: SCRAPE EGX30 CONSTITUENTS ---
         print("\nNavigating to EGX30 Constituents...")
         try:
             cic_page = context.new_page()
-            cic_page.goto(
-                "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
-                wait_until="commit", timeout=60000,
-            )
-            cic_page.wait_for_timeout(10000)
-
+            cic_page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="commit", timeout=60000)
+            cic_page.wait_for_timeout(8000)
             egx30_constituents = parse_index_constituents(cic_page.content())
             print(f"[+] Successfully scraped {len(egx30_constituents)} EGX30 constituents.")
             cic_page.close()
-
         except Exception as cic_error:
             print(f"[-] Failed to fetch EGX30 constituents: {cic_error}")
 
@@ -822,7 +780,6 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     print(f"\nFinal run complete! Tracking metrics saved perfectly to {OUTPUT_FILE}")
-
 
 if __name__ == "__main__":
     main()
