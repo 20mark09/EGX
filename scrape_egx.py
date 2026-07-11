@@ -381,7 +381,14 @@ def main():
         "byGroup": {}, "nationalityBreakdownPct": [],
         "individualsByNationality": [], "institutionsByNationality": []
     }
-    egx30_constituents = []
+    
+    # Store all index constituent lists here
+    index_constituents = {
+        "EGX30": [],
+        "SHARIAH": [],
+        "EGX70": [],
+        "EGX100": []
+    }
     index_charts = {}
 
     with sync_playwright() as p:
@@ -400,7 +407,6 @@ def main():
             viewport={"width": 1280, "height": 720}
         )
 
-        # CRITICAL FIX 1: We instantiate ONE single master scratchpad page across sequential executions
         page = context.new_page()
 
         # --- PART 1: SCRAPE ALL INDICES ON A SINGLE TAB ---
@@ -419,7 +425,7 @@ def main():
             for tracking_name, event_target in postback_actions.items():
                 print(f"[*] Processing panel view click for: {tracking_name}")
                 page.evaluate(f"__doPostBack('{event_target}', '');")
-                page.wait_for_timeout(5000)  # Wait for AJAX update context
+                page.wait_for_timeout(5000)
 
                 metrics = parse_panel_metrics(page.content())
                 if metrics.get("value") is not None:
@@ -576,15 +582,27 @@ def main():
 
         human_delay()
 
-        # --- PART 10: SCRAPE EGX30 CONSTITUENTS ---
-        print("\nNavigating to EGX30 Constituents...")
-        try:
-            page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
-            egx30_constituents = parse_index_constituents(page.content())
-            print(f"[+] Successfully scraped {len(egx30_constituents)} EGX30 constituents.")
-        except Exception as cic_error:
-            print(f"[-] Failed to fetch EGX30 constituents: {cic_error}")
+        # --- PART 10: SCRAPE ALL CONSTITUENT TARGETS SEQUENTIALLY ---
+        constituent_targets = {
+            "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
+            "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
+            "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
+            "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
+        }
+
+        for index_name, target_url in constituent_targets.items():
+            print(f"\nNavigating to {index_name} Constituents...")
+            try:
+                page.goto(target_url, wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_timeout(4000)
+                
+                parsed_stocks = parse_index_constituents(page.content())
+                index_constituents[index_name] = parsed_stocks
+                print(f"[+] Successfully scraped {len(parsed_stocks)} constituents for {index_name}.")
+            except Exception as cic_error:
+                print(f"[-] Failed to fetch constituents for {index_name}: {cic_error}")
+            
+            human_delay()  # Keep firewalls unaware between constituent checks
 
         context.close()
         browser.close()
@@ -603,9 +621,7 @@ def main():
         "disclosures": disclosures,
         "bulletin": bulletin,
         "investorActivity": investor_activity,
-        "indexConstituents": {
-            "EGX30": egx30_constituents
-        },
+        "indexConstituents": index_constituents,  # Contains arrays for EGX30, SHARIAH, EGX70, EGX100
         "indexCharts": index_charts
     }
 
