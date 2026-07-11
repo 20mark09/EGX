@@ -316,16 +316,23 @@ def parse_index_constituents(html_content):
         return items
     for row in table.find_all("tr")[1:]:
         cells = row.find_all("td")
-        if len(cells) < 4:
+        if len(cells) < 3:
             continue
         try:
             isin = cells[0].get_text(strip=True)
             code = cells[1].get_text(strip=True)
             name_ar = cells[2].get_text(strip=True)
-            weight = safe_num(cells[3].get_text(strip=True))
+            
+            # Safeguard if weight column is present (EGX30) or missing (other indexes)
+            weight = safe_num(cells[3].get_text(strip=True)) if len(cells) >= 4 else None
+            
             if not name_ar:
                 continue
-            items.append({"isin": isin, "code": code, "name_ar": name_ar, "weight_pct": weight})
+            
+            node = {"isin": isin, "code": code, "name_ar": name_ar}
+            if weight is not None:
+                node["weight_pct"] = weight
+            items.append(node)
         except Exception:
             continue
     return items
@@ -367,7 +374,6 @@ def normalize_chart_index_name(raw_name):
 
 
 def human_delay():
-    """Adds a humanized stagger window to prevent connection reset blocks."""
     time.sleep(random.uniform(3.5, 6.0))
 
 
@@ -381,7 +387,7 @@ def main():
         "byGroup": {}, "nationalityBreakdownPct": [],
         "individualsByNationality": [], "institutionsByNationality": []
     }
-    egx30_constituents = []
+    index_constituents = {"EGX30": [], "SHARIAH": [], "EGX70": [], "EGX100": []}
     index_charts = {}
 
     with sync_playwright() as p:
@@ -400,7 +406,6 @@ def main():
             viewport={"width": 1280, "height": 720}
         )
 
-        # CRITICAL FIX 1: We instantiate ONE single master scratchpad page across sequential executions
         page = context.new_page()
 
         # --- PART 1: SCRAPE ALL INDICES ON A SINGLE TAB ---
@@ -419,7 +424,7 @@ def main():
             for tracking_name, event_target in postback_actions.items():
                 print(f"[*] Processing panel view click for: {tracking_name}")
                 page.evaluate(f"__doPostBack('{event_target}', '');")
-                page.wait_for_timeout(5000)  # Wait for AJAX update context
+                page.wait_for_timeout(5000)
 
                 metrics = parse_panel_metrics(page.content())
                 if metrics.get("value") is not None:
@@ -576,15 +581,25 @@ def main():
 
         human_delay()
 
-        # --- PART 10: SCRAPE EGX30 CONSTITUENTS ---
-        print("\nNavigating to EGX30 Constituents...")
-        try:
-            page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
-            egx30_constituents = parse_index_constituents(page.content())
-            print(f"[+] Successfully scraped {len(egx30_constituents)} EGX30 constituents.")
-        except Exception as cic_error:
-            print(f"[-] Failed to fetch EGX30 constituents: {cic_error}")
+        # --- PART 10: SCRAPE ALL CONSTITUENT ENDPOINTS SEQUENTIALLY ---
+        constituent_endpoints = {
+            "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
+            "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
+            "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
+            "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
+        }
+
+        for index_name, endpoint_url in constituent_endpoints.items():
+            print(f"\nNavigating to {index_name} Constituents...")
+            try:
+                page.goto(endpoint_url, wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_timeout(4000)
+                
+                parsed_stocks = parse_index_constituents(page.content())
+                index_constituents[index_name] = parsed_stocks
+                print(f"[+] Successfully scraped {len(parsed_stocks)} {index_name} constituents.")
+            except Exception as cic_error:
+                print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
         context.close()
         browser.close()
@@ -603,9 +618,7 @@ def main():
         "disclosures": disclosures,
         "bulletin": bulletin,
         "investorActivity": investor_activity,
-        "indexConstituents": {
-            "EGX30": egx30_constituents
-        },
+        "indexConstituents": index_constituents,
         "indexCharts": index_charts
     }
 
