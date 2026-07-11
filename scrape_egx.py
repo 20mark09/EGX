@@ -236,21 +236,41 @@ NATIONALITY_MAP = {"مصريين": "egyptians", "عرب": "arabs", "أجانب":
 INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
 
 
-def fetch_investor_json(context, url, referer):
-    try:
-        response = context.request.get(
-            url,
-            headers={
-                "Referer": referer,
-                "X-Requested-With": "XMLHttpRequest",
-                "Accept": "application/json, text/javascript, */*; q=0.01",
-            },
-            timeout=20000,
-        )
-        return response.text()
-    except Exception as e:
-        print(f"[-] Failed to fetch {url}: {e}")
-        return None
+def fetch_investor_json(context, url, referer, retries=2, retry_delay=3):
+    """Fetches one investor-activity WebService.asmx endpoint. These have
+    been observed occasionally returning a raw backend error string
+    (e.g. 'ORA-12521: TNS:listener does not currently know...') instead
+    of JSON, or an empty response, even though the HTTP request itself
+    succeeds - that's EGX's own backend having a bad moment, not a
+    scraping problem. We retry a couple of times before giving up, and
+    log the actual bad response so a future empty result is diagnosable
+    straight from the Action log instead of needing another round of
+    "here's my JSON, something's missing".
+    """
+    for attempt in range(retries + 1):
+        try:
+            response = context.request.get(
+                url,
+                headers={
+                    "Referer": referer,
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                },
+                timeout=20000,
+            )
+            text = response.text()
+            stripped = text.strip() if text else ""
+            if stripped.startswith("[") or stripped.startswith("{"):
+                return text
+            print(f"[-] Non-JSON response from {url} "
+                  f"(attempt {attempt + 1}/{retries + 1}): {stripped[:150]!r}")
+        except Exception as e:
+            print(f"[-] Failed to fetch {url} (attempt {attempt + 1}/{retries + 1}): {e}")
+
+        if attempt < retries:
+            time.sleep(retry_delay)
+
+    return None
 
 
 def parse_investor_tables(raw_text):
@@ -562,7 +582,7 @@ def main():
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
             page.goto(investor_referer, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
+            page.wait_for_timeout(6000)  # bumped from 4000 - more time for the page's own session/token setup before the AJAX calls fire
 
             tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
             investor_activity["byGroup"] = parse_investor_tables(tables_raw)
@@ -575,7 +595,18 @@ def main():
 
             inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
-            print(f"[+] Successfully scraped investor activity.")
+
+            # Log what actually came back instead of a blanket success
+            # message that doesn't reflect whether any real data landed -
+            # that's what made last run's total silent failure invisible
+            # until someone manually inspected the JSON.
+            populated = {k: len(v) for k, v in investor_activity.items()}
+            print(f"[+] Investor activity fetch complete. Populated counts: {populated}")
+            if all(count == 0 for count in populated.values()):
+                print("[-] WARNING: all investor activity fields came back empty. "
+                      "This has happened before due to EGX's own backend erroring "
+                      "(e.g. a raw Oracle DB error instead of JSON) - check the "
+                      "'[-] Non-JSON response' lines above for the actual cause.")
         except Exception as inv_error:
             print(f"[-] Failed to fetch Investor Type data: {inv_error}")
 
