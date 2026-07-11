@@ -677,21 +677,23 @@ def main():
         except Exception as bulletin_error:
             print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
 
-       # --- PART 8: SCRAPE LIVE MARKET STATUS (Arabic homepage badge)
+        # --- PART 8: SCRAPE LIVE MARKET STATUS (Arabic homepage badge)
         # + INDEX CHART DATA (intraday sparkline points, captured live) ---
         print("\nNavigating to Homepage for live market status and chart data...")
         try:
             home_page = context.new_page()
 
             def handle_chart_response(response):
+                # The homepage's own JS calls getIndexChartData to draw its
+                # mini index chart widget - we just listen for that request
+                # rather than building the URL (and its rotating `gtk`
+                # token) ourselves.
                 if "getIndexChartData" not in response.url:
                     return
                 try:
                     query = parse_qs(urlparse(response.url).query)
                     raw_index_name = query.get("index", ["UNKNOWN"])[0]
                     index_name = normalize_chart_index_name(raw_index_name)
-                    
-                    # Read and parse JSON content safely
                     index_charts[index_name] = parse_chart_data(response.text())
                     print(f"[+] Captured chart data for {index_name} "
                           f"(raw name: {raw_index_name}, {len(index_charts[index_name])} points)")
@@ -700,34 +702,30 @@ def main():
 
             home_page.on("response", handle_chart_response)
 
-            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="networkidle", timeout=60000)
-            home_page.wait_for_timeout(5000)  # Let the default tab load cleanly
+            home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="commit", timeout=60000)
+            home_page.wait_for_timeout(10000)  # captures whichever index is selected by default
 
             live_status = parse_live_market_status(home_page.content())
             print(f"[+] Live market status: {live_status}")
 
-            # Ensure strict internal names as specified in the HTML markup attributes
+            # The homepage has a tab menu (div.index-chart-menu) for
+            # switching which index's mini-chart is shown, keyed by a
+            # `dataindex` attribute - e.g. <div dataindex="EGX30">. We
+            # click through the four we care about so each one fires its
+            # own getIndexChartData request, which handle_chart_response
+            # captures above. (EGX35 LV / EGX30 Capped / EGX30 TR tabs
+            # also exist on this menu but aren't indices we track.)
             chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
-            
             for tab_value in chart_tabs:
-                selector = f'div[dataindex="{tab_value}"]'
-                
-                if home_page.locator(selector).count() > 0:
-                    print(f"[*] Switching to chart tab: {tab_value}")
-                    try:
-                        # Scroll into view and force a real click dispatch
-                        home_page.locator(selector).scroll_into_view_if_needed()
-                        
-                        # Wait directly for the network response initiated by the click
-                        with home_page.expect_response(lambda response: "getIndexChartData" in response.url, timeout=10000):
-                            home_page.locator(selector).click(force=True)
-                        
-                        # Brief safety pause for internal state changes
-                        home_page.wait_for_timeout(2000)
-                    except Exception as click_error:
-                        print(f"[-] Network timeout or click failure on tab {tab_value}: {click_error}")
-                else:
-                    print(f"[-] Chart tab not visible or missing on page layout: {tab_value}")
+                try:
+                    selector = f'div[dataindex="{tab_value}"]'
+                    if home_page.locator(selector).count() > 0:
+                        home_page.click(selector, timeout=5000)
+                        home_page.wait_for_timeout(4000)
+                    else:
+                        print(f"[-] Chart tab not found on page: {tab_value}")
+                except Exception as tab_error:
+                    print(f"[-] Failed to switch to chart tab {tab_value}: {tab_error}")
 
             home_page.close()
 
