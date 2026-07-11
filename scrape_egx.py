@@ -319,11 +319,14 @@ def parse_index_constituents(html_content):
         if len(cells) < 4:
             continue
         try:
+            # Drop empty metadata row artifacts or non-data cells
             isin = cells[0].get_text(strip=True)
             code = cells[1].get_text(strip=True)
             name_ar = cells[2].get_text(strip=True)
             weight = safe_num(cells[3].get_text(strip=True))
-            if not name_ar:
+            
+            # Filter out invalid rows, pagination blocks or dummy indicators
+            if not name_ar or "No data" in name_ar or not code or not isin:
                 continue
             items.append({"isin": isin, "code": code, "name_ar": name_ar, "weight_pct": weight})
         except Exception:
@@ -367,7 +370,6 @@ def normalize_chart_index_name(raw_name):
 
 
 def human_delay():
-    """Adds a humanized stagger window to prevent connection reset blocks."""
     time.sleep(random.uniform(3.5, 6.0))
 
 
@@ -382,7 +384,6 @@ def main():
         "individualsByNationality": [], "institutionsByNationality": []
     }
     
-    # Store all index constituent lists here
     index_constituents = {
         "EGX30": [],
         "SHARIAH": [],
@@ -582,27 +583,42 @@ def main():
 
         human_delay()
 
-        # --- PART 10: SCRAPE ALL CONSTITUENT TARGETS SEQUENTIALLY ---
-        constituent_targets = {
-            "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
-            "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
-            "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
-            "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
+        # --- PART 10: FIX - SCRAPE ALL CONSTITUENTS VIA POSTBACKS ON THE SAME PAGE CONTEXT ---
+        # Instead of directly changing URLs, we load the base container index, then tap the dropdown form choices natively.
+        constituent_postbacks = {
+            "EGX30": "1",    # Value mapping option for EGX30
+            "SHARIAH": "22", # Value mapping option for Shariah Index
+            "EGX70": "16",   # Value mapping option for EGX70 EWI
+            "EGX100": "5"    # Value mapping option for EGX100 EWI
         }
 
-        for index_name, target_url in constituent_targets.items():
-            print(f"\nNavigating to {index_name} Constituents...")
-            try:
-                page.goto(target_url, wait_until="domcontentloaded", timeout=45000)
-                page.wait_for_timeout(4000)
+        print("\nNavigating to Initial Constituents Base Portal...")
+        try:
+            # We initialize on the base index configuration view
+            page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx", wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(5000)
+
+            for index_name, ddl_value in constituent_postbacks.items():
+                print(f"Selecting index profile view -> {index_name}")
+                
+                # We inject selection directly into the ASP dropdown element and invoke its selection event
+                page.evaluate(f"""
+                    const selectEl = document.getElementById('ctl00_C_CIC_DropDownList1');
+                    if(selectEl) {{
+                        selectEl.value = '{ddl_value}';
+                        {page.evaluate("() => typeof __doPostBack !== 'undefined'")}
+                        __doPostBack('ctl00$C$CIC$DropDownList1', '');
+                    }}
+                """)
+                page.wait_for_timeout(6000) # Give the ASP lifecycle time to switch viewstates and repaint the GridView
                 
                 parsed_stocks = parse_index_constituents(page.content())
                 index_constituents[index_name] = parsed_stocks
                 print(f"[+] Successfully scraped {len(parsed_stocks)} constituents for {index_name}.")
-            except Exception as cic_error:
-                print(f"[-] Failed to fetch constituents for {index_name}: {cic_error}")
-            
-            human_delay()  # Keep firewalls unaware between constituent checks
+                
+                human_delay()
+        except Exception as target_error:
+            print(f"[-] Blocked or structural failure on constituent traversal: {target_error}")
 
         context.close()
         browser.close()
@@ -621,7 +637,7 @@ def main():
         "disclosures": disclosures,
         "bulletin": bulletin,
         "investorActivity": investor_activity,
-        "indexConstituents": index_constituents,  # Contains arrays for EGX30, SHARIAH, EGX70, EGX100
+        "indexConstituents": index_constituents,
         "indexCharts": index_charts
     }
 
