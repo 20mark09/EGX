@@ -481,8 +481,10 @@ _CHART_INDEX_ALIASES = {
     "SHARIAH": "SHARIAH",
     "EGX70": "EGX70",
     "EGX70EWI": "EGX70",
+    "EGX70_EWI": "EGX70",
     "EGX100": "EGX100",
     "EGX100EWI": "EGX100",
+    "EGX100_EWI": "EGX100",
 }
 
 
@@ -701,10 +703,30 @@ def main():
             home_page.on("response", handle_chart_response)
 
             home_page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="commit", timeout=60000)
-            home_page.wait_for_timeout(10000)
+            home_page.wait_for_timeout(10000)  # captures whichever index is selected by default
 
             live_status = parse_live_market_status(home_page.content())
             print(f"[+] Live market status: {live_status}")
+
+            # The homepage has a tab menu (div.index-chart-menu) for
+            # switching which index's mini-chart is shown, keyed by a
+            # `dataindex` attribute - e.g. <div dataindex="EGX30">. We
+            # click through the four we care about so each one fires its
+            # own getIndexChartData request, which handle_chart_response
+            # captures above. (EGX35 LV / EGX30 Capped / EGX30 TR tabs
+            # also exist on this menu but aren't indices we track.)
+            chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
+            for tab_value in chart_tabs:
+                try:
+                    selector = f'div[dataindex="{tab_value}"]'
+                    if home_page.locator(selector).count() > 0:
+                        home_page.click(selector, timeout=5000)
+                        home_page.wait_for_timeout(4000)
+                    else:
+                        print(f"[-] Chart tab not found on page: {tab_value}")
+                except Exception as tab_error:
+                    print(f"[-] Failed to switch to chart tab {tab_value}: {tab_error}")
+
             home_page.close()
 
         except Exception as status_error:
