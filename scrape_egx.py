@@ -583,40 +583,32 @@ def main():
 
         human_delay()
 
-        # --- PART 10: FIX - SCRAPE ALL CONSTITUENTS VIA POSTBACKS ON THE SAME PAGE CONTEXT ---
-        # Instead of directly changing URLs, we load the base container index, then tap the dropdown form choices natively.
-        constituent_postbacks = {
-            "EGX30": "1",    # Value mapping option for EGX30
-            "SHARIAH": "22", # Value mapping option for Shariah Index
-            "EGX70": "16",   # Value mapping option for EGX70 EWI
-            "EGX100": "5"    # Value mapping option for EGX100 EWI
+# --- PART 10: SCRAPE ALL CONSTITUENT TARGETS SEQUENTIALLY ON THE SAME PAGE ---
+        constituent_targets = {
+            "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
+            "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
+            "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
+            "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
         }
 
-        print("\nNavigating to Initial Constituents Base Portal...")
-        try:
-            # We initialize on the base index configuration view
-            page.goto("https://www.egx.com.eg/ar/currentindexconstituntes.aspx", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(5000)
-
-            for index_name, ddl_value in constituent_postbacks.items():
-                print(f"Selecting index profile view -> {index_name}")
+        for index_name, target_url in constituent_targets.items():
+            print(f"\nNavigating to {index_name} Constituents Portal...")
+            try:
+                # Navigate using our master single-page instance to keep firewalls and sessions intact
+                page.goto(target_url, wait_until="domcontentloaded", timeout=45000)
                 
-                # We inject selection directly into the ASP dropdown element and invoke its selection event
-                page.evaluate(f"""
-                    const selectEl = document.getElementById('ctl00_C_CIC_DropDownList1');
-                    if(selectEl) {{
-                        selectEl.value = '{ddl_value}';
-                        {page.evaluate("() => typeof __doPostBack !== 'undefined'")}
-                        __doPostBack('ctl00$C$CIC$DropDownList1', '');
-                    }}
-                """)
-                page.wait_for_timeout(6000) # Give the ASP lifecycle time to switch viewstates and repaint the GridView
+                # Explicitly wait for the data table grid element to be attached to the DOM
+                page.wait_for_selector("#ctl00_C_CIC_GridView1", timeout=8000)
+                page.wait_for_timeout(3000) # Quick safety buffer for complete rendering
                 
                 parsed_stocks = parse_index_constituents(page.content())
                 index_constituents[index_name] = parsed_stocks
                 print(f"[+] Successfully scraped {len(parsed_stocks)} constituents for {index_name}.")
-                
-                human_delay()
+            except Exception as cic_error:
+                print(f"[-] Failed to fetch constituents for {index_name}: {cic_error}")
+                index_constituents[index_name] = []
+            
+            human_delay()
         except Exception as target_error:
             print(f"[-] Blocked or structural failure on constituent traversal: {target_error}")
 
