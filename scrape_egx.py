@@ -467,6 +467,39 @@ def parse_chart_data(raw_text):
     return points
 
 
+# The homepage chart widget identifies indices with its own internal
+# names, which don't match the keys our `indices` dict uses (those come
+# from the postback-based Indices.aspx scrape in Part 1: EGX30, SHARIAH,
+# EGX70, EGX100). Observed so far: "EGX30" maps directly, but SHARIAH
+# showed up as "EGX_33_Shariah". Aliases here are exact matches we've
+# actually seen; the substring fallback below catches likely variants
+# for EGX70/EGX100 we haven't observed yet, so a chart doesn't silently
+# get dropped just because of a naming mismatch.
+_CHART_INDEX_ALIASES = {
+    "EGX30": "EGX30",
+    "EGX_33_SHARIAH": "SHARIAH",
+    "SHARIAH": "SHARIAH",
+    "EGX70": "EGX70",
+    "EGX70EWI": "EGX70",
+    "EGX100": "EGX100",
+    "EGX100EWI": "EGX100",
+}
+
+
+def normalize_chart_index_name(raw_name):
+    if not raw_name:
+        return raw_name
+    key = raw_name.upper()
+    if key in _CHART_INDEX_ALIASES:
+        return _CHART_INDEX_ALIASES[key]
+    # Fallback: substring match against our known index names, in case
+    # the widget uses some other variant we haven't seen yet.
+    for known in ("EGX30", "SHARIAH", "EGX70", "EGX100"):
+        if known in key:
+            return known
+    return raw_name  # unrecognized - keep as-is rather than silently dropping it
+
+
 def main():
     indices_output = {}
     gainers = []
@@ -657,10 +690,11 @@ def main():
                     return
                 try:
                     query = parse_qs(urlparse(response.url).query)
-                    index_name = query.get("index", ["UNKNOWN"])[0]
+                    raw_index_name = query.get("index", ["UNKNOWN"])[0]
+                    index_name = normalize_chart_index_name(raw_index_name)
                     index_charts[index_name] = parse_chart_data(response.text())
                     print(f"[+] Captured chart data for {index_name} "
-                          f"({len(index_charts[index_name])} points)")
+                          f"(raw name: {raw_index_name}, {len(index_charts[index_name])} points)")
                 except Exception as capture_error:
                     print(f"[-] Failed to parse a captured chart response: {capture_error}")
 
