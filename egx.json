@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-11 09:00 UTC",
+  "lastUpdated": "2026-07-11 09:20 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -35,12 +35,12 @@
     },
     "EGX100": {
       "date": "09/07/2026",
-      "value": 16281.62,
-      "open": 16004.93,
-      "high": 16281.62,
-      "low": 16004.93,
-      "change_pct": 1.73,
-      "ytd_pct": 24.05
+      "value": 22067.78,
+      "open": 21747.75,
+      "high": 22067.78,
+      "low": 21747.75,
+      "change_pct": 1.47,
+      "ytd_pct": 26.64
     }
   },
   "gainers": [
@@ -366,312 +366,16 @@
       "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=289766"
     }
   ],
-  "disclosures": [
-    {
-      "id": "291148",
-      "title": "Lotus For Agricultural Investments And Development (LUTS.CA) Declares a Stock Dividends",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291148"
-    },
-    {
-      "id": "291146",
-      "title": "Six of October Development & Investment (SODIC) (OCDI.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291146"
-    },
-    {
-      "id": "291145",
-      "title": "Release from Gogreen for Agricultural Investment (GGRN.CA) Concerning Company's Projects",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291145"
-    },
-    {
-      "id": "291140",
-      "title": "Mena Touristic & Real Estate Investment (MENA.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291140"
-    },
-    {
-      "id": "291133",
-      "title": "El Arabia for Land Reclamation (EALR.CA) - Disclosure Form of the company for the Board of Directors and the Shareholders' Structure",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291133"
-    },
-    {
-      "id": "291132",
-      "title": "Al Ahly SUKUK 2nd Iss Mar 2031 (EGAHLSK2CV) Declares Bond Dividends for Coupon No. (9)",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291132"
-    },
-    {
-      "id": "291131",
-      "title": "Qatar National Bank (QNBE.CA) - Board of Directors' Decisions",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291131"
-    },
-    {
-      "id": "291130",
-      "title": "First Investment Company And Real Estate Development (FIRE.CA) - Release Regarding a Disclosure Form (SMEs Market)",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291130"
-    },
-    {
-      "id": "291129",
-      "title": "First Investment Company And Real Estate Development (FIRE.CA) - Release Regarding a Disclosure Form (SMEs Market)",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291129"
-    },
-    {
-      "id": "291128",
-      "title": "Arab Gathering Investment (AMIA.CA) - Disclosure Form of the Company for the Board of Directors and the Shareholders' Structure",
-      "date": "09/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291128"
-    }
-  ],
+  "disclosures": [],
   "bulletin": [],
   "investorActivity": {
     "byGroup": {},
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 68.21,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 8.45,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 23.34,
-        "color": "#bababa"
-      }
-    ],
-    "individualsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 7605862559.5442,
-        "sell": 7500629251.4379
-      },
-      {
-        "nationality": "arabs",
-        "buy": 201711244.158,
-        "sell": 166574296.8734
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 3537793.89,
-        "sell": 5481447.956
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 34836186787.8191,
-        "sell": 34618179484.0619
-      },
-      {
-        "nationality": "arabs",
-        "buy": 5698842979.87,
-        "sell": 4410422141.84
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 13640810091.8,
-        "sell": 15285664834.9121
-      }
-    ]
+    "nationalityBreakdownPct": [],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   },
   "indexConstituents": {
-    "EGX30": [
-      {
-        "isin": "EGS512O1C012",
-        "code": "ISPH.CA",
-        "name_ar": "ابن سينا فارما",
-        "weight_pct": 0.99
-      },
-      {
-        "isin": "EGS38191C010",
-        "code": "ABUK.CA",
-        "name_ar": "ابوقير للاسمدة والصناعات الكيماوية",
-        "weight_pct": 2.82
-      },
-      {
-        "isin": "EGS673Y1C015",
-        "code": "EMFD.CA",
-        "name_ar": "إعمار مصر للتنمية",
-        "weight_pct": 0.72
-      },
-      {
-        "isin": "EGS380P1C010",
-        "code": "AMOC.CA",
-        "name_ar": "الاسكندرية للزيوت المعدنية",
-        "weight_pct": 0.82
-      },
-      {
-        "isin": "EGS60121C018",
-        "code": "COMI.CA",
-        "name_ar": "البنك التجاري الدولي -مصر (سى اى بى )",
-        "weight_pct": 31.87
-      },
-      {
-        "isin": "EGS37091C013",
-        "code": "EAST.CA",
-        "name_ar": "الشرقية - ايسترن كومباني",
-        "weight_pct": 6.67
-      },
-      {
-        "isin": "EGS38201C017",
-        "code": "EGCH.CA",
-        "name_ar": "الصناعات الكيماوية المصرية - كيما",
-        "weight_pct": 0.31
-      },
-      {
-        "isin": "EGS381B1C015",
-        "code": "RMDA.CA",
-        "name_ar": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا",
-        "weight_pct": 0.68
-      },
-      {
-        "isin": "EGS3C0O1C016",
-        "code": "ARCC.CA",
-        "name_ar": "العربية للاسمنت",
-        "weight_pct": 0.38
-      },
-      {
-        "isin": "EGS73541C012",
-        "code": "CCAP.CA",
-        "name_ar": "القلعة للاستثمارات المالية",
-        "weight_pct": 1.81
-      },
-      {
-        "isin": "EGS48031C016",
-        "code": "ETEL.CA",
-        "name_ar": "المصرية للاتصالات",
-        "weight_pct": 6.05
-      },
-      {
-        "isin": "EGS33041C012",
-        "code": "ORWE.CA",
-        "name_ar": "النساجون الشرقيون للسجاد",
-        "weight_pct": 0.63
-      },
-      {
-        "isin": "EGS95001C011",
-        "code": "ORAS.CA",
-        "name_ar": "اوراسكوم كونستراكشون بي ال سي",
-        "weight_pct": 2.05
-      },
-      {
-        "isin": "EGS693V1C014",
-        "code": "OIH.CA",
-        "name_ar": "اوراسكوم للاستثمار القابضه",
-        "weight_pct": 0.42
-      },
-      {
-        "isin": "EGS70321C012",
-        "code": "ORHD.CA",
-        "name_ar": "اوراسكوم للتنمية مصر",
-        "weight_pct": 1.33
-      },
-      {
-        "isin": "EGS743O1C013",
-        "code": "EFIH.CA",
-        "name_ar": "اي فاينانس للاستثمارات المالية والرقمية",
-        "weight_pct": 4.8
-      },
-      {
-        "isin": "EGS305I1C011",
-        "code": "EFID.CA",
-        "name_ar": "ايديتا للصناعات الغذائية",
-        "weight_pct": 2.02
-      },
-      {
-        "isin": "EGS655L1C012",
-        "code": "PHDC.CA",
-        "name_ar": "بالم هيلز للتعمير",
-        "weight_pct": 1.79
-      },
-      {
-        "isin": "EGS691G1C015",
-        "code": "BTFH.CA",
-        "name_ar": "بلتون القابضة",
-        "weight_pct": 1.53
-      },
-      {
-        "isin": "EGS30901C010",
-        "code": "JUFO.CA",
-        "name_ar": "جهينة للصناعات الغذائية",
-        "weight_pct": 0.99
-      },
-      {
-        "isin": "EGS673T1C012",
-        "code": "GBCO.CA",
-        "name_ar": "جى بى كوربوريشن",
-        "weight_pct": 1.48
-      },
-      {
-        "isin": "EGS690C1C010",
-        "code": "RAYA.CA",
-        "name_ar": "راية القابضة للأستثمارات المالية",
-        "weight_pct": 0.87
-      },
-      {
-        "isin": "EGS69082C013",
-        "code": "VLMR.CA",
-        "name_ar": "فالمور القابضة للاستثمار",
-        "weight_pct": 1.59
-      },
-      {
-        "isin": "EGS69081C023",
-        "code": "VLMRA.CA",
-        "name_ar": "فالمور القابضة للاستثماربالجنية",
-        "weight_pct": 0.6
-      },
-      {
-        "isin": "EGS745L1C014",
-        "code": "FWRY.CA",
-        "name_ar": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية",
-        "weight_pct": 6.07
-      },
-      {
-        "isin": "EGS69101C011",
-        "code": "HRHO.CA",
-        "name_ar": "مجموعة اي اف جي القابضة",
-        "weight_pct": 3.25
-      },
-      {
-        "isin": "EGS691S1C011",
-        "code": "TMGH.CA",
-        "name_ar": "مجموعة طلعت مصطفى القابضة",
-        "weight_pct": 11.62
-      },
-      {
-        "isin": "EGS65591C017",
-        "code": "HELI.CA",
-        "name_ar": "مصر الجديدة للاسكان والتعمير",
-        "weight_pct": 0.93
-      },
-      {
-        "isin": "EGS3C391C017",
-        "code": "MCQE.CA",
-        "name_ar": "مصر للاسمنت - قنا",
-        "weight_pct": 0.93
-      },
-      {
-        "isin": "EGS3E181C010",
-        "code": "EGAL.CA",
-        "name_ar": "مصر للالومنيوم",
-        "weight_pct": 1.18
-      },
-      {
-        "isin": "EGS60111C019",
-        "code": "ADIB.CA",
-        "name_ar": "مصرف أبو ظبي الأسلامي- مصر",
-        "weight_pct": 2.82
-      }
-    ]
+    "EGX30": []
   },
   "indexCharts": {
     "SHARIAH": [
@@ -919,6 +623,253 @@
         "time": "2026-07-11T14:55:00",
         "value": 5876.53
       }
-    ]
+    ],
+    "EGX30": [
+      {
+        "time": "2026-07-11T09:58:00",
+        "value": 52028.37
+      },
+      {
+        "time": "2026-07-11T10:00:00",
+        "value": 52057.48
+      },
+      {
+        "time": "2026-07-11T10:05:00",
+        "value": 51944.85
+      },
+      {
+        "time": "2026-07-11T10:10:00",
+        "value": 51945.98
+      },
+      {
+        "time": "2026-07-11T10:15:00",
+        "value": 51947.77
+      },
+      {
+        "time": "2026-07-11T10:20:00",
+        "value": 52009.64
+      },
+      {
+        "time": "2026-07-11T10:25:00",
+        "value": 52119.23
+      },
+      {
+        "time": "2026-07-11T10:30:00",
+        "value": 52121.98
+      },
+      {
+        "time": "2026-07-11T10:35:00",
+        "value": 52150.15
+      },
+      {
+        "time": "2026-07-11T10:40:00",
+        "value": 52180.54
+      },
+      {
+        "time": "2026-07-11T10:45:00",
+        "value": 52171.89
+      },
+      {
+        "time": "2026-07-11T10:50:00",
+        "value": 52138.45
+      },
+      {
+        "time": "2026-07-11T10:55:00",
+        "value": 52154.38
+      },
+      {
+        "time": "2026-07-11T11:00:00",
+        "value": 52190.55
+      },
+      {
+        "time": "2026-07-11T11:05:00",
+        "value": 52279.32
+      },
+      {
+        "time": "2026-07-11T11:10:00",
+        "value": 52243.1
+      },
+      {
+        "time": "2026-07-11T11:15:00",
+        "value": 52236.21
+      },
+      {
+        "time": "2026-07-11T11:20:00",
+        "value": 52200.3
+      },
+      {
+        "time": "2026-07-11T11:25:00",
+        "value": 52197.68
+      },
+      {
+        "time": "2026-07-11T11:30:00",
+        "value": 52202.67
+      },
+      {
+        "time": "2026-07-11T11:35:00",
+        "value": 52263.34
+      },
+      {
+        "time": "2026-07-11T11:40:00",
+        "value": 52238.64
+      },
+      {
+        "time": "2026-07-11T11:45:00",
+        "value": 52229.43
+      },
+      {
+        "time": "2026-07-11T11:50:00",
+        "value": 52208.69
+      },
+      {
+        "time": "2026-07-11T11:55:00",
+        "value": 52207.41
+      },
+      {
+        "time": "2026-07-11T12:00:00",
+        "value": 52212.34
+      },
+      {
+        "time": "2026-07-11T12:05:00",
+        "value": 52206.83
+      },
+      {
+        "time": "2026-07-11T12:10:00",
+        "value": 52210.76
+      },
+      {
+        "time": "2026-07-11T12:15:00",
+        "value": 52213.08
+      },
+      {
+        "time": "2026-07-11T12:20:00",
+        "value": 52235.77
+      },
+      {
+        "time": "2026-07-11T12:25:00",
+        "value": 52221.14
+      },
+      {
+        "time": "2026-07-11T12:30:00",
+        "value": 52215.11
+      },
+      {
+        "time": "2026-07-11T12:35:00",
+        "value": 52185.86
+      },
+      {
+        "time": "2026-07-11T12:40:00",
+        "value": 52191.21
+      },
+      {
+        "time": "2026-07-11T12:45:00",
+        "value": 52195.44
+      },
+      {
+        "time": "2026-07-11T12:50:00",
+        "value": 52222.82
+      },
+      {
+        "time": "2026-07-11T12:55:00",
+        "value": 52210.08
+      },
+      {
+        "time": "2026-07-11T13:00:00",
+        "value": 52226.32
+      },
+      {
+        "time": "2026-07-11T13:05:00",
+        "value": 52240.14
+      },
+      {
+        "time": "2026-07-11T13:10:00",
+        "value": 52259.64
+      },
+      {
+        "time": "2026-07-11T13:15:00",
+        "value": 52252.49
+      },
+      {
+        "time": "2026-07-11T13:20:00",
+        "value": 52289.39
+      },
+      {
+        "time": "2026-07-11T13:25:00",
+        "value": 52300.5
+      },
+      {
+        "time": "2026-07-11T13:30:00",
+        "value": 52276.67
+      },
+      {
+        "time": "2026-07-11T13:35:00",
+        "value": 52282.89
+      },
+      {
+        "time": "2026-07-11T13:40:00",
+        "value": 52306.57
+      },
+      {
+        "time": "2026-07-11T13:45:00",
+        "value": 52282.63
+      },
+      {
+        "time": "2026-07-11T13:50:00",
+        "value": 52279.81
+      },
+      {
+        "time": "2026-07-11T13:55:00",
+        "value": 52283.2
+      },
+      {
+        "time": "2026-07-11T14:00:00",
+        "value": 52348.66
+      },
+      {
+        "time": "2026-07-11T14:05:00",
+        "value": 52355.83
+      },
+      {
+        "time": "2026-07-11T14:10:00",
+        "value": 52350.79
+      },
+      {
+        "time": "2026-07-11T14:15:00",
+        "value": 52335.18
+      },
+      {
+        "time": "2026-07-11T14:20:00",
+        "value": 52335.18
+      },
+      {
+        "time": "2026-07-11T14:25:00",
+        "value": 52335.18
+      },
+      {
+        "time": "2026-07-11T14:30:00",
+        "value": 52311.51
+      },
+      {
+        "time": "2026-07-11T14:35:00",
+        "value": 52311.51
+      },
+      {
+        "time": "2026-07-11T14:40:00",
+        "value": 52311.51
+      },
+      {
+        "time": "2026-07-11T14:45:00",
+        "value": 52311.51
+      },
+      {
+        "time": "2026-07-11T14:50:00",
+        "value": 52311.51
+      },
+      {
+        "time": "2026-07-11T14:55:00",
+        "value": 52311.51
+      }
+    ],
+    "UNKNOWN": []
   }
 }
