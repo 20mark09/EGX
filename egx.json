@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-12 13:54 UTC",
+  "lastUpdated": "2026-07-12 16:15 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -59,7 +59,8 @@
     {
       "name": "Engineering Industries (ICON)",
       "price": 42.61,
-      "change_pct": 9.79
+      "change_pct": 9.79,
+      "code": "ENGC"
     },
     {
       "name": "Cairo For Investment And Real Estate Developments-CIRA Edu",
@@ -78,8 +79,7 @@
     {
       "name": "GMC GROUP FOR INDUSTRIAL COMMERCIAL & FINANCIAL INVESTMENTS",
       "price": 1.99,
-      "change_pct": -4.33,
-      "code": "GMCI"
+      "change_pct": -4.33
     },
     {
       "name": "Sharkia National Food",
@@ -90,17 +90,20 @@
     {
       "name": "Ceramic & Porcelain",
       "price": 35.32,
-      "change_pct": -3.21
+      "change_pct": -3.21,
+      "code": "PRCL"
     },
     {
       "name": "Misr Duty Free Shops",
       "price": 45.67,
-      "change_pct": -3.18
+      "change_pct": -3.18,
+      "code": "MFSC"
     },
     {
       "name": "Act Financial",
       "price": 2.79,
-      "change_pct": -3.13
+      "change_pct": -3.13,
+      "code": "ACTF"
     }
   ],
   "marketSummary": {
@@ -557,59 +560,7 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 25119561305.0,
-          "sell": 22480061929.0,
-          "net": 2639499376.0
-        },
-        "arabs": {
-          "buy": 614191742.0,
-          "sell": 383159664.0,
-          "net": 231032078.0
-        },
-        "foreigners": {
-          "buy": 3530894008.0,
-          "sell": 6401425461.0,
-          "net": -2870531454.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 8850486320.0,
-          "sell": 8770322859.0,
-          "net": 80163461.0
-        },
-        "foreigners": {
-          "buy": 6887459.0,
-          "sell": 3416208.0,
-          "net": 3471251.0
-        },
-        "arabs": {
-          "buy": 246072228.0,
-          "sell": 214640516.0,
-          "net": 31431711.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 16269074984.0,
-          "sell": 13709739070.0,
-          "net": 2559335914.0
-        },
-        "foreigners": {
-          "buy": 3524006549.0,
-          "sell": 6398009254.0,
-          "net": -2874002705.0
-        },
-        "arabs": {
-          "buy": 368119514.0,
-          "sell": 168519147.0,
-          "net": 199600367.0
-        }
-      }
-    },
+    "byGroup": {},
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
