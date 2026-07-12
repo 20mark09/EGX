@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import time
 import random
@@ -8,6 +9,41 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 OUTPUT_FILE = "egx.json"
+
+# Top_GL.aspx (Top Gainers/Losers) has no ticker code or link anywhere in
+# its markup - confirmed by inspecting the raw HTML - so there's no way
+# to scrape a code for movers directly. company_codes.json (committed
+# alongside this script) is a hand-maintained name -> code lookup to
+# fill that gap. Missing/unmapped names just get no code, which the app
+# already handles gracefully (falls back to a generated avatar).
+COMPANY_CODES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "company_codes.json")
+
+
+def _normalize_company_name(name):
+    return re.sub(r"\s+", " ", name or "").strip().upper()
+
+
+def load_company_codes():
+    try:
+        with open(COMPANY_CODES_FILE, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"[-] Could not load {COMPANY_CODES_FILE}: {e} (movers will have no ticker codes)")
+        return {}
+
+    return {
+        _normalize_company_name(name): code.strip().upper()
+        for name, code in raw.items()
+        if name != "_readme" and code and code.strip()
+    }
+
+
+def attach_company_codes(movers, company_codes):
+    for m in movers:
+        code = company_codes.get(_normalize_company_name(m.get("name")))
+        if code:
+            m["code"] = code
+    return movers
 
 
 def safe_num(text):
@@ -466,7 +502,13 @@ def main():
             gl_soup = BeautifulSoup(page.content(), "html.parser")
             gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
             losers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView2")
-            print(f"[+] Successfully scraped {len(gainers)} gainers and {len(losers)} losers.")
+
+            company_codes = load_company_codes()
+            attach_company_codes(gainers, company_codes)
+            attach_company_codes(losers, company_codes)
+            matched = sum(1 for m in gainers + losers if "code" in m)
+            print(f"[+] Successfully scraped {len(gainers)} gainers and {len(losers)} losers "
+                  f"({matched}/{len(gainers) + len(losers)} matched to a ticker code).")
         except Exception as gl_error:
             print(f"[-] Failed to fetch Top Gainers/Losers: {gl_error}")
 
