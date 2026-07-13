@@ -433,6 +433,105 @@ def human_delay():
     time.sleep(random.uniform(3.5, 6.0))
 
 
+BULLETIN_STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bulletin_state.json")
+
+
+def load_bulletin_state():
+    """The set of bulletin item IDs seen as of the last run, so we only
+    notify on genuinely new items rather than re-notifying every run."""
+    try:
+        with open(BULLETIN_STATE_FILE, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return set()
+
+
+def save_bulletin_state(ids):
+    with open(BULLETIN_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(sorted(ids), f, indent=2)
+
+
+def get_fcm_access_token():
+    """Exchanges the FCM_SERVICE_ACCOUNT_JSON GitHub Actions secret (a
+    Firebase service account key) for a short-lived OAuth2 access token,
+    used to authenticate calls to FCM's HTTP v1 send API. Returns
+    (None, None) if the secret isn't configured, so this fails quietly
+    rather than crashing the whole scrape run.
+    """
+    sa_json = os.environ.get("FCM_SERVICE_ACCOUNT_JSON")
+    if not sa_json:
+        return None, None
+
+    try:
+        from google.oauth2 import service_account
+        from google.auth.transport.requests import Request
+
+        info = json.loads(sa_json)
+        credentials = service_account.Credentials.from_service_account_info(
+            info, scopes=["https://www.googleapis.com/auth/firebase.messaging"]
+        )
+        credentials.refresh(Request())
+        return credentials.token, info.get("project_id")
+    except Exception as e:
+        print(f"[-] Failed to get FCM access token: {e}")
+        return None, None
+
+
+def send_fcm_notification(title, body):
+    """Sends a push notification to every app instance subscribed to the
+    'egx_bulletins' topic, via FCM's HTTP v1 API.
+    """
+    import requests
+
+    token, project_id = get_fcm_access_token()
+    if not token or not project_id:
+        print("[-] FCM not configured (FCM_SERVICE_ACCOUNT_JSON secret missing) - skipping push notification.")
+        return
+
+    url = f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
+    payload = {
+        "message": {
+            "topic": "egx_bulletins",
+            "notification": {"title": title, "body": body},
+        }
+    }
+    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+
+    try:
+        response = requests.post(url, json=payload, headers=headers, timeout=15)
+        if response.status_code == 200:
+            print(f"[+] Push notification sent: {title}")
+        else:
+            print(f"[-] FCM send failed ({response.status_code}): {response.text[:200]}")
+    except Exception as e:
+        print(f"[-] FCM send error: {e}")
+
+
+def notify_new_bulletins(bulletin_items):
+    """Compares this run's bulletin IDs against the last known state
+    (bulletin_state.json, committed to the repo) and sends one push
+    notification per genuinely new item, so the app gets notified "as
+    soon as something new shows up" rather than re-notifying the same
+    items every single 10-minute run.
+    """
+    if not bulletin_items:
+        return
+
+    seen_ids = load_bulletin_state()
+    current_ids = {item.get("id") for item in bulletin_items if item.get("id")}
+    new_ids = current_ids - seen_ids
+
+    if new_ids:
+        new_items = [item for item in bulletin_items if item.get("id") in new_ids]
+        for item in new_items:
+            send_fcm_notification("EGX Bulletin", item.get("title", "New bulletin item"))
+        print(f"[+] {len(new_items)} new bulletin item(s) - notification(s) sent.")
+    else:
+        print("[+] No new bulletin items since last run - no notifications sent.")
+
+    save_bulletin_state(current_ids | seen_ids)
+
+
 def main():
     indices_output = {}
     gainers, losers = [], []
@@ -575,6 +674,7 @@ def main():
             page.wait_for_timeout(4000)
             bulletin = parse_news_grid(page.content(), "ctl00_C_BulletinNews1_GVNews", base_url="https://www.egx.com.eg/ar/")
             print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
+            notify_new_bulletins(bulletin)
         except Exception as bulletin_error:
             print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
 
