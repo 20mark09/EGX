@@ -202,8 +202,8 @@ def parse_market_summary(html_content):
 
 
 def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg"):
-    """Layout-driven parser that extracts news items structurally by locating 
-    relative anchor links regardless of language or backend identifier string updates.
+    """Hybrid bulletproof news grid parser. It targets both English and Arabic 
+    title elements directly, falling back to a case-insensitive URL pattern matching.
     """
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": table_id})
@@ -211,37 +211,60 @@ def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg"):
     if not table:
         return items
 
-    rows = table.find_all("tr")
-    for row in rows:
-        # Match any link containing the NewsID parameter string
-        link_tag = row.find("a", href=lambda x: x and "NewsID=" in x)
-        if not link_tag:
-            continue
+    # Step 1: Look for explicit ASP.NET Title wrappers (handles English '_lblTitle' and Arabic '_lblArTitle')
+    title_spans = table.find_all("span", id=lambda x: x and (x.endswith("_lblTitle") or x.endswith("_lblArTitle")))
+    
+    if title_spans:
+        for title_span in title_spans:
+            try:
+                title = title_span.get_text(strip=True)
+                link_tag = title_span.find_parent("a")
+                href = link_tag["href"] if link_tag and link_tag.has_attr("href") else None
+                url = urljoin(base_url, href) if href else None
+                
+                news_id = None
+                if href:
+                    id_match = re.search(r"newsid=(\d+)", href.lower())
+                    news_id = id_match.group(1) if id_match else None
+                
+                # Check for dynamic localized date containers
+                prefix = title_span["id"].rsplit("_lblTitle", 1)[0].rsplit("_lblArTitle", 1)[0]
+                date_span = soup.find("span", id=lambda x: x and (x == f"{prefix}_lblDate" or x == f"{prefix}_lblArDate"))
+                date_text = date_span.get_text(strip=True) if date_span else None
+                
+                # Regex fallback if date span is blank
+                if not date_text and link_tag:
+                    row_context = link_tag.find_parent("tr")
+                    if row_context:
+                        date_match = re.search(r"\d{2}/\d{2}/\d{4}", row_context.get_text())
+                        date_text = date_match.group(0) if date_match else None
 
-        try:
-            href = link_tag["href"]
-            # Ensure safe base combining layout behavior without nested double directories
-            url = urljoin("https://www.egx.com.eg", href)
-            
-            id_match = re.search(r"NewsID=(\d+)", href)
-            news_id = id_match.group(1) if id_match else None
-            
-            title = link_tag.get_text(strip=True)
-            
-            # Fallback regex scan to strip dates out cleanly (handles DD/MM/YYYY formatting footprints)
-            date_match = re.search(r"\d{2}/\d{2}/\d{4}", row.get_text())
-            date_text = date_match.group(0) if date_match else None
+                if news_id and title:
+                    items.append({"id": news_id, "title": title, "date": date_text, "url": url})
+            except Exception:
+                continue
 
-            if news_id and title:
-                items.append({
-                    "id": news_id, 
-                    "title": title, 
-                    "date": date_text, 
-                    "url": url
-                })
-        except Exception as e:
-            print(f"[-] Row parse error within bulletin table: {e}")
-            continue
+    # Step 2: Structural fallback if table elements are dynamically updated
+    if not items:
+        rows = table.find_all("tr")
+        for row in rows:
+            link_tag = row.find("a", href=lambda x: x and "newsid=" in x.lower())
+            if not link_tag:
+                continue
+            try:
+                href = link_tag["href"]
+                url = urljoin(base_url, href)
+                id_match = re.search(r"newsid=(\d+)", href.lower())
+                news_id = id_match.group(1) if id_match else None
+                title = link_tag.get_text(strip=True)
+                
+                date_match = re.search(r"\d{2}/\d{2}/\d{4}", row.get_text())
+                date_text = date_match.group(0) if date_match else None
+
+                if news_id and title:
+                    items.append({"id": news_id, "title": title, "date": date_text, "url": url})
+            except Exception:
+                continue
 
     return items
 
@@ -387,7 +410,6 @@ def parse_index_constituents(html_content):
             isin = cells[0].get_text(strip=True)
             code = cells[1].get_text(strip=True)
             name_ar = cells[2].get_text(strip=True)
-            
             weight = safe_num(cells[3].get_text(strip=True)) if len(cells) >= 4 else None
             
             if not name_ar:
@@ -461,11 +483,9 @@ def get_fcm_access_token():
     sa_json = os.environ.get("FCM_SERVICE_ACCOUNT_JSON")
     if not sa_json:
         return None, None
-
     try:
         from google.oauth2 import service_account
         from google.auth.transport.requests import Request
-
         info = json.loads(sa_json)
         credentials = service_account.Credentials.from_service_account_info(
             info, scopes=["https://www.googleapis.com/auth/firebase.messaging"]
@@ -479,48 +499,29 @@ def get_fcm_access_token():
 
 def send_fcm_notification(title, body):
     import requests
-
     token, project_id = get_fcm_access_token()
     if not token or not project_id:
-        print("[-] FCM not configured (FCM_SERVICE_ACCOUNT_JSON secret missing) - skipping push notification.")
         return
-
     url = f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
-    payload = {
-        "message": {
-            "topic": "egx_bulletins",
-            "notification": {"title": title, "body": body},
-        }
-    }
+    payload = {"message": {"topic": "egx_bulletins", "notification": {"title": title, "body": body}}}
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-
     try:
-        response = requests.post(url, json=payload, headers=headers, timeout=15)
-        if response.status_code == 200:
-            print(f"[+] Push notification sent: {title}")
-        else:
-            print(f"[-] FCM send failed ({response.status_code}): {response.text[:200]}")
-    except Exception as e:
-        print(f"[-] FCM send error: {e}")
+        requests.post(url, json=payload, headers=headers, timeout=15)
+    except Exception:
+        pass
 
 
 def notify_new_bulletins(bulletin_items):
     if not bulletin_items:
         return
-
     seen_ids = load_bulletin_state()
     current_ids = {item.get("id") for item in bulletin_items if item.get("id")}
     new_ids = current_ids - seen_ids
-
     if new_ids:
         new_items = [item for item in bulletin_items if item.get("id") in new_ids]
         for item in new_items:
             send_fcm_notification("EGX Bulletin", item.get("title", "New bulletin item"))
-            time.sleep(1.0)  # Throttling delay to space out multi-sends inside actions
-        print(f"[+] {len(new_items)} new bulletin item(s) - notification(s) sent.")
-    else:
-        print("[+] No new bulletin items since last run - no notifications sent.")
-
+            time.sleep(1.0)
     save_bulletin_state(current_ids | seen_ids)
 
 
@@ -541,51 +542,37 @@ def main():
         print("Launching secure browser context...")
         browser = p.chromium.launch(
             headless=True,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--no-sandbox",
-                "--disable-setuid-sandbox"
-            ]
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-setuid-sandbox"]
         )
-
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             viewport={"width": 1280, "height": 720}
         )
-
         page = context.new_page()
 
-        # --- PART 1: SCRAPE ALL INDICES ON A SINGLE TAB ---
+        # --- PART 1: INDICES ---
         postback_actions = {
-            "EGX30": "ctl00$C$M$lnkEGX30",
-            "SHARIAH": "ctl00$C$M$lnkSHARIAH",
-            "EGX70": "ctl00$C$M$lnkEGX70EWI",
-            "EGX100": "ctl00$C$M$lnkEGX100EWI"
+            "EGX30": "ctl00$C$M$lnkEGX30", "SHARIAH": "ctl00$C$M$lnkSHARIAH",
+            "EGX70": "ctl00$C$M$lnkEGX70EWI", "EGX100": "ctl00$C$M$lnkEGX100EWI"
         }
-
         print("Navigating to Indices Workspace...")
         try:
             page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-
             for tracking_name, event_target in postback_actions.items():
-                print(f"[*] Processing panel view click for: {tracking_name}")
                 page.evaluate(f"__doPostBack('{event_target}', '');")
                 page.wait_for_timeout(5000)
-
                 metrics = parse_panel_metrics(page.content())
                 if metrics.get("value") is not None:
                     indices_output[tracking_name] = metrics
-                    print(f"[+] Extracted panel data for {tracking_name}: {metrics['value']}")
                 else:
-                    print(f"[-] Structural parse returned empty for {tracking_name}")
                     indices_output[tracking_name] = {k: None for k in ["date", "value", "open", "high", "low", "change_pct", "ytd_pct"]}
-        except Exception as loop_error:
-            print(f"[-] Catastrophic stop on indices interface: {loop_error}")
+        except Exception as e:
+            print(f"[-] Indices interface issue: {e}")
 
         human_delay()
 
-        # --- PART 2: SCRAPE TOP GAINERS & LOSERS ---
+        # --- PART 2: GAINERS & LOSERS ---
         print("\nNavigating to Top Gainers/Losers Desk...")
         try:
             page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="domcontentloaded", timeout=45000)
@@ -593,87 +580,81 @@ def main():
             gl_soup = BeautifulSoup(page.content(), "html.parser")
             gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
             losers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView2")
-
             company_codes = load_company_codes()
             attach_company_codes(gainers, company_codes)
             attach_company_codes(losers, company_codes)
-            matched = sum(1 for m in gainers + losers if "code" in m)
-            print(f"[+] Successfully scraped {len(gainers)} gainers and {len(losers)} losers "
-                  f"({matched}/{len(gainers) + len(losers)} matched to a ticker code).")
-        except Exception as gl_error:
-            print(f"[-] Failed to fetch Top Gainers/Losers: {gl_error}")
+            print(f"[+] Successfully scraped {len(gainers)} gainers and {len(losers)} losers.")
+        except Exception as e:
+            print(f"[-] Top Gainers/Losers failed: {e}")
 
         human_delay()
 
-        # --- PART 3: SCRAPE MARKET SUMMARY STATISTICS ---
+        # --- PART 3: MARKET SUMMARY ---
         print("\nNavigating to Market Summary...")
         try:
             page.goto("https://www.egx.com.eg/en/MarketSummry.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
             market_summary = parse_market_summary(page.content())
             print(f"[+] Successfully scraped market summary.")
-        except Exception as ms_error:
-            print(f"[-] Failed to fetch Market Summary: {ms_error}")
+        except Exception as e:
+            print(f"[-] Market Summary failed: {e}")
 
         human_delay()
 
-# --- PART 4: SCRAPE NEWS ---
+        # --- PART 4: NEWS LIST ---
         print("\nNavigating to News List...")
         try:
             page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
             news = parse_news_grid(page.content(), "ctl00_C_N_GVNews")
             print(f"[+] Successfully scraped {len(news)} news items.")
-        except Exception as news_error:
-            print(f"[-] Failed to fetch News: {news_error}")
+        except Exception as e:
+            print(f"[-] News List failed: {e}")
 
         human_delay()
 
-        # --- PART 5: SCRAPE SECTORS ---
+        # --- PART 5: SECTORS ---
         print("\nNavigating to Market Watch - Sectors...")
         try:
             page.goto("https://www.egx.com.eg/en/MarketWatchSectors.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
             sectors = parse_sectors(page.content())
             print(f"[+] Successfully scraped {len(sectors)} sectors.")
-        except Exception as sectors_error:
-            print(f"[-] Failed to fetch Sectors: {sectors_error}")
+        except Exception as e:
+            print(f"[-] Sectors failed: {e}")
 
         human_delay()
 
-        # --- PART 6: SCRAPE DISCLOSURES ---
+        # --- PART 6: DISCLOSURES ---
         print("\nNavigating to Disclosures search...")
         try:
             today = datetime.now(timezone.utc)
             three_months_ago = today - timedelta(days=90)
-            from_str = three_months_ago.strftime("%d/%m/%Y")
-            to_str = today.strftime("%d/%m/%Y")
-            disclosures_url = f"https://www.egx.com.eg/en/NewsSearch.aspx?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
-
+            disclosures_url = f"https://www.egx.com.eg/en/NewsSearch.aspx?com=&word=&from={three_months_ago.strftime('%d/%m/%Y')}&to={today.strftime('%d/%m/%Y')}&isin=&sec_id=20"
             page.goto(disclosures_url, wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-            disclosures = parse_news_grid(page.content(), "ctl00_C_N_GVNews", base_url="https://www.egx.com.eg/en/")
+            disclosures = parse_news_grid(page.content(), "ctl00_C_N_GVNews")
             print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
-        except Exception as disc_error:
-            print(f"[-] Failed to fetch Disclosures: {disc_error}")
+        except Exception as e:
+            print(f"[-] Disclosures failed: {e}")
 
         human_delay()
 
-        # --- PART 7: SCRAPE BULLETIN (ARABIC MAIN ONLY) ---
+        # --- PART 7: BULLETIN NEWS ---
         print("\nNavigating to Bulletin News...")
         try:
             page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-            bulletin = parse_news_grid(page.content(), "ctl00_C_BulletinNews1_GVNews", base_url="https://www.egx.com.eg/ar/")
+            bulletin = parse_news_grid(page.content(), "ctl00_C_BulletinNews1_GVNews")
             print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
             notify_new_bulletins(bulletin)
-        except Exception as bulletin_error:
-            print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
+        except Exception as e:
+            print(f"[-] Bulletin failed: {e}")
 
         human_delay()
 
-        # --- PART 8: SCRAPE LIVE MARKET STATUS & ALL INDEX GRAPH DATA ---
-        print("\nNavigating to Homepage for live market status and chart data...")
+        # --- PART 8: LIVE STATUS & CHARTS ---
+        print("\nNavigating to Homepage for status and chart metrics...")
         try:
             def handle_chart_response(response):
                 if "getIndexChartData" not in response.url:
@@ -685,79 +666,57 @@ def main():
                     data_points = parse_chart_data(response.text())
                     if data_points:
                         index_charts[index_name] = data_points
-                        print(f"[+] Captured chart data for {index_name} ({len(data_points)} points)")
-                except Exception as capture_error:
-                    print(f"[-] Failed to parse a captured chart response: {capture_error}")
+                except Exception:
+                    pass
 
             page.on("response", handle_chart_response)
             page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(6000)
-
             live_status = parse_live_market_status(page.content())
-            print(f"[+] Live market status: {live_status}")
-
-            chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
-            for tab_value in chart_tabs:
+            
+            for tab_value in ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]:
                 selector = f'div[dataindex="{tab_value}"]'
                 if page.locator(selector).count() > 0:
-                    print(f"[*] Switching chart workspace to: {tab_value}")
-                    try:
-                        page.locator(selector).evaluate("el => el.click()")
-                        page.wait_for_timeout(3000)
-                    except Exception as click_error:
-                        print(f"[-] Interaction skipped on tab {tab_value}: {click_error}")
-        except Exception as status_error:
-            print(f"[-] Failed to fetch live market status/chart data: {status_error}")
+                    page.locator(selector).evaluate("el => el.click()")
+                    page.wait_for_timeout(3000)
+        except Exception as e:
+            print(f"[-] Homepage charts failed: {e}")
 
         human_delay()
 
-        # --- PART 9: SCRAPE INVESTOR ACTIVITY ---
+        # --- PART 9: INVESTOR TYPE ---
         print("\nFetching Investor Type data...")
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
             page.goto(investor_referer, wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(6000)
-
             tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
             investor_activity["byGroup"] = parse_investor_tables(tables_raw)
-
             pie2_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
-
             indiv_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
             investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
-
             inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
-
-            populated = {k: len(v) for k, v in investor_activity.items()}
-            print(f"[+] Investor activity fetch complete. Populated counts: {populated}")
-            if all(count == 0 for count in populated.values()):
-                print("[-] WARNING: all investor activity fields came back empty.")
-        except Exception as inv_error:
-            print(f"[-] Failed to fetch Investor Type data: {inv_error}")
+        except Exception as e:
+            print(f"[-] Investor fetch failed: {e}")
 
         human_delay()
 
-        # --- PART 10: SCRAPE ALL CONSTITUENT ENDPOINTS SEQUENTIALLY ---
+        # --- PART 10: CONSTITUENTS ---
         constituent_endpoints = {
             "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
             "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
             "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
             "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
         }
-
         for index_name, endpoint_url in constituent_endpoints.items():
-            print(f"\nNavigating to {index_name} Constituents...")
             try:
                 page.goto(endpoint_url, wait_until="domcontentloaded", timeout=45000)
                 page.wait_for_timeout(4000)
-                
-                parsed_stocks = parse_index_constituents(page.content())
-                index_constituents[index_name] = parsed_stocks
-                print(f"[+] Successfully scraped {len(parsed_stocks)} {index_name} constituents.")
-            except Exception as cic_error:
-                print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
+                index_constituents[index_name] = parse_index_constituents(page.content())
+            except Exception as e:
+                print(f"[-] {index_name} constituents failed: {e}")
 
         context.close()
         browser.close()
