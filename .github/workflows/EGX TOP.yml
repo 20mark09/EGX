@@ -16,7 +16,7 @@ on:
     #    Public repos get unlimited free Actions minutes, so this is
     #    free either way - but if this were a private repo, check your
     #    plan's monthly minutes quota before deploying this.
-    - cron: "*/10 6-15 * * 0-4"
+    - cron: "*/15 6-15 * * 0-4"
   workflow_dispatch:
 
 permissions:
