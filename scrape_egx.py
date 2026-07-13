@@ -614,12 +614,13 @@ def main():
 
         human_delay()
 
-        # --- PART 4: SCRAPE NEWS ---
+       # --- PART 4: SCRAPE NEWS ---
         print("\nNavigating to News List...")
         try:
             page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-            news = parse_news_grid(page.content(), "ctl00_C_N_GridView1", base_url="https://www.egx.com.eg/en/")
+            # CHANGE THE TABLE ID STRING HERE TO 'ctl00_C_N_GVNews'
+            news = parse_news_grid(page.content(), "ctl00_C_N_GVNews", base_url="https://www.egx.com.eg/en/")
             print(f"[+] Successfully scraped {len(news)} news items.")
         except Exception as news_error:
             print(f"[-] Failed to fetch News: {news_error}")
