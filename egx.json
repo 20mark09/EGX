@@ -1,32 +1,130 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-13 10:13 UTC",
+  "lastUpdated": "2026-07-13 10:22 UTC",
   "liveMarketStatus": {
     "text_ar": "مفتوح",
     "color": null
   },
-  "indices": {},
-  "gainers": [],
-  "losers": [],
+  "indices": {
+    "EGX30": {
+      "date": "13/07/2026",
+      "value": 52598.63,
+      "open": 52256.18,
+      "high": 52661.8,
+      "low": 52256.18,
+      "change_pct": 0.66,
+      "ytd_pct": 25.75
+    },
+    "SHARIAH": {
+      "date": "13/07/2026",
+      "value": 52598.63,
+      "open": 52256.18,
+      "high": 52661.8,
+      "low": 52256.18,
+      "change_pct": 0.66,
+      "ytd_pct": 25.75
+    },
+    "EGX70": {
+      "date": "13/07/2026",
+      "value": 16554.52,
+      "open": 16485.36,
+      "high": 16591.45,
+      "low": 16485.36,
+      "change_pct": 0.42,
+      "ytd_pct": 26.13
+    },
+    "EGX100": {
+      "date": "13/07/2026",
+      "value": 22345.76,
+      "open": 22266.39,
+      "high": 22396.36,
+      "low": 22266.39,
+      "change_pct": 0.36,
+      "ytd_pct": 28.23
+    }
+  },
+  "gainers": [
+    {
+      "name": "Cairo Pharmaceuticals",
+      "price": 477.5,
+      "change_pct": 18.84,
+      "code": "FERC"
+    },
+    {
+      "name": "Alexandria New Medical Center",
+      "price": 97.73,
+      "change_pct": 16.5,
+      "code": "AMES"
+    },
+    {
+      "name": "Tycoon Holding Company For Financial Investments",
+      "price": 23.14,
+      "change_pct": 9.05,
+      "code": "TYCN"
+    },
+    {
+      "name": "Misr Oils & Soap",
+      "price": 299.66,
+      "change_pct": 8.09,
+      "code": "MOSC"
+    },
+    {
+      "name": "Gulf Canadian Real Estate Investment Co.",
+      "price": 2.54,
+      "change_pct": 6.72,
+      "code": "CCRS"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Naeem Real Estate Holding Group",
+      "price": 19.8,
+      "change_pct": -3.18,
+      "code": "NARE"
+    },
+    {
+      "name": "Golden Textiles & Clothes Wool",
+      "price": 109.0,
+      "change_pct": -2.68,
+      "code": "GTWL"
+    },
+    {
+      "name": "Engineering Industries (ICON)",
+      "price": 41.5,
+      "change_pct": -2.61,
+      "code": "ENGC"
+    },
+    {
+      "name": "National Housing for Professional Syndicates",
+      "price": 79.15,
+      "change_pct": -2.44,
+      "code": "NHPS"
+    },
+    {
+      "name": "Rakta Paper Manufacturing",
+      "price": 22.55,
+      "change_pct": -2.38
+    }
+  ],
   "marketSummary": {
     "main_market": {
       "listed_total": {
         "no": 257,
-        "volume": 2435403104,
-        "value": 91194989220,
-        "trades": 147394
+        "volume": 2470842360,
+        "value": 92498393548,
+        "trades": 151194
       },
       "listed_stocks": {
         "no": 219,
-        "volume": 2431804944,
-        "value": 6514166399,
-        "trades": 147156
+        "volume": 2467193276,
+        "value": 6658993341,
+        "trades": 150948
       },
       "listed_t_bonds_bills_sukuk": {
         "no": 37,
-        "volume": 3597822,
-        "value": 84680787567,
-        "trades": 236
+        "volume": 3648746,
+        "value": 85839364953,
+        "trades": 244
       },
       "listed_bonds": {
         "no": 1,
@@ -42,15 +140,15 @@
       },
       "smes_stocks": {
         "no": 16,
-        "volume": 74256086,
-        "value": 53319449,
-        "trades": 4437
+        "volume": 74951112,
+        "value": 55063558,
+        "trades": 4562
       },
       "otc_total": {
-        "no": 28,
-        "volume": 14270568,
-        "value": 14958397,
-        "trades": 418
+        "no": 29,
+        "volume": 14271868,
+        "value": 15079397,
+        "trades": 421
       },
       "otc_bonds": {
         "no": 0,
@@ -59,10 +157,10 @@
         "trades": 0
       },
       "otc_deals": {
-        "no": 12,
-        "volume": 11038433,
-        "value": 9309522,
-        "trades": 37
+        "no": 13,
+        "volume": 11039733,
+        "value": 9430522,
+        "trades": 40
       },
       "otc_orders": {
         "no": 16,
@@ -71,201 +169,201 @@
         "trades": 381
       },
       "total": {
-        "no": 301,
-        "volume": 2523929758,
-        "value": 91263267065,
-        "trades": 152249
+        "no": 302,
+        "volume": 2560065340,
+        "value": 92568536503,
+        "trades": 156177
       },
-      "total_market_cap": 3834302907138
+      "total_market_cap": 3833081326535
     },
     "breadth": {
       "listed_stocks": {
         "no": 220,
-        "volume": 2432646313,
-        "value": 6516066606,
-        "trades": 147254
+        "volume": 2480457804,
+        "value": 6715914847,
+        "trades": 152225
       },
       "gainers": {
-        "no": 120,
-        "volume": 2083489746,
-        "value": 4671749885,
-        "trades": 98198
+        "no": 118,
+        "volume": 2088556609,
+        "value": 4762684371,
+        "trades": 100956
       },
       "decliners": {
-        "no": 80,
-        "volume": 243464080,
-        "value": 1681952533,
-        "trades": 45546
+        "no": 81,
+        "volume": 251065729,
+        "value": 1711443414,
+        "trades": 46217
       },
       "unchanged": {
-        "no": 20,
-        "volume": 105692487,
-        "value": 162364189,
-        "trades": 3510
+        "no": 21,
+        "volume": 140835466,
+        "value": 241787062,
+        "trades": 5052
       }
     }
   },
   "sectors": [
     {
       "name": "Banks",
-      "value": 319220178,
-      "value_pct": 4.88,
-      "volume": 3857379,
+      "value": 324368992,
+      "value_pct": 4.83,
+      "volume": 3946541,
       "volume_pct": 0.16,
-      "market_cap": 898696241699,
+      "market_cap": 898880328954,
       "market_cap_pct": 24.46
     },
     {
       "name": "Basic Resources",
-      "value": 307982914,
-      "value_pct": 4.7,
-      "volume": 15325243,
-      "volume_pct": 0.63,
-      "market_cap": 472160303752,
-      "market_cap_pct": 12.85
+      "value": 317671847,
+      "value_pct": 4.73,
+      "volume": 15792607,
+      "volume_pct": 0.64,
+      "market_cap": 471439517791,
+      "market_cap_pct": 12.83
     },
     {
       "name": "Health Care & Pharmaceuticals",
-      "value": 594712799,
-      "value_pct": 9.08,
-      "volume": 198592304,
-      "volume_pct": 8.14,
-      "market_cap": 135714031496,
-      "market_cap_pct": 3.69
+      "value": 646738531,
+      "value_pct": 9.63,
+      "volume": 203134688,
+      "volume_pct": 8.19,
+      "market_cap": 135932409050,
+      "market_cap_pct": 3.7
     },
     {
       "name": "Industrial Goods , Services and Automobiles",
-      "value": 290710456,
-      "value_pct": 4.44,
-      "volume": 166994416,
-      "volume_pct": 6.84,
-      "market_cap": 238229187958,
+      "value": 301720192,
+      "value_pct": 4.49,
+      "volume": 173460159,
+      "volume_pct": 6.99,
+      "market_cap": 238220856478,
       "market_cap_pct": 6.48
     },
     {
       "name": "Real Estate",
-      "value": 1569279696,
-      "value_pct": 23.97,
-      "volume": 977415017,
-      "volume_pct": 40.06,
-      "market_cap": 506694943737,
-      "market_cap_pct": 13.79
+      "value": 1601335182,
+      "value_pct": 23.84,
+      "volume": 985545942,
+      "volume_pct": 39.73,
+      "market_cap": 507578049366,
+      "market_cap_pct": 13.81
     },
     {
       "name": "Travel & Leisure",
-      "value": 27368891,
+      "value": 28393887,
       "value_pct": 0.42,
-      "volume": 2349362,
+      "volume": 2385201,
       "volume_pct": 0.1,
-      "market_cap": 44878139425,
+      "market_cap": 44849672118,
       "market_cap_pct": 1.22
     },
     {
       "name": "Utilities",
-      "value": 65090027,
+      "value": 66779932,
       "value_pct": 0.99,
-      "volume": 2030663,
+      "volume": 2118750,
       "volume_pct": 0.08,
-      "market_cap": 27438293857,
+      "market_cap": 27450730340,
       "market_cap_pct": 0.75
     },
     {
       "name": "IT , Media & Communication Services",
-      "value": 267508716,
-      "value_pct": 4.09,
-      "volume": 30397532,
-      "volume_pct": 1.25,
-      "market_cap": 345549782080,
+      "value": 272685814,
+      "value_pct": 4.06,
+      "volume": 32200582,
+      "volume_pct": 1.3,
+      "market_cap": 345337483551,
       "market_cap_pct": 9.4
     },
     {
       "name": "Food, Beverages and Tobacco",
-      "value": 550566955,
-      "value_pct": 8.41,
-      "volume": 196772037,
-      "volume_pct": 8.06,
-      "market_cap": 272745871998,
-      "market_cap_pct": 7.42
+      "value": 556184344,
+      "value_pct": 8.28,
+      "volume": 198058851,
+      "volume_pct": 7.98,
+      "market_cap": 272839349897,
+      "market_cap_pct": 7.43
     },
     {
       "name": "Energy & Support Services",
-      "value": 72248790,
+      "value": 73617484,
       "value_pct": 1.1,
-      "volume": 6116627,
+      "volume": 6244138,
       "volume_pct": 0.25,
-      "market_cap": 23076964532,
+      "market_cap": 23040571685,
       "market_cap_pct": 0.63
     },
     {
       "name": "Trade & Distributors",
-      "value": 61822007,
-      "value_pct": 0.94,
-      "volume": 5572745,
+      "value": 63755383,
+      "value_pct": 0.95,
+      "volume": 5723482,
       "volume_pct": 0.23,
-      "market_cap": 41856245649,
+      "market_cap": 41780246643,
       "market_cap_pct": 1.14
     },
     {
       "name": "Shipping & Transportation Services",
-      "value": 47666124,
+      "value": 48893507,
       "value_pct": 0.73,
-      "volume": 2094878,
+      "volume": 2137786,
       "volume_pct": 0.09,
-      "market_cap": 102165810874,
+      "market_cap": 102162810874,
       "market_cap_pct": 2.78
     },
     {
       "name": "Education Services",
-      "value": 89320023,
-      "value_pct": 1.36,
-      "volume": 60119676,
-      "volume_pct": 2.46,
-      "market_cap": 87149517638,
+      "value": 89855074,
+      "value_pct": 1.34,
+      "volume": 60739643,
+      "volume_pct": 2.45,
+      "market_cap": 87166236347,
       "market_cap_pct": 2.37
     },
     {
       "name": "Non-bank financial services",
-      "value": 1440641437,
-      "value_pct": 22.01,
-      "volume": 318651548,
-      "volume_pct": 13.06,
-      "market_cap": 249832096104,
+      "value": 1465999525,
+      "value_pct": 21.83,
+      "volume": 327905770,
+      "volume_pct": 13.22,
+      "market_cap": 249759128421,
       "market_cap_pct": 6.8
     },
     {
       "name": "Contracting & Construction Engineering",
-      "value": 539817934,
-      "value_pct": 8.25,
-      "volume": 379348313,
-      "volume_pct": 15.55,
-      "market_cap": 102060186840,
+      "value": 547312320,
+      "value_pct": 8.15,
+      "volume": 385427629,
+      "volume_pct": 15.54,
+      "market_cap": 102030815657,
       "market_cap_pct": 2.78
     },
     {
       "name": "Textile & Durables",
-      "value": 194344506,
-      "value_pct": 2.97,
-      "volume": 43164013,
-      "volume_pct": 1.77,
-      "market_cap": 37794828617,
+      "value": 200805886,
+      "value_pct": 2.99,
+      "volume": 44437846,
+      "volume_pct": 1.79,
+      "market_cap": 37823610848,
       "market_cap_pct": 1.03
     },
     {
       "name": "Building Materials",
-      "value": 99177384,
-      "value_pct": 1.52,
-      "volume": 9532841,
+      "value": 101349554,
+      "value_pct": 1.51,
+      "volume": 9644782,
       "volume_pct": 0.39,
-      "market_cap": 80760532478,
+      "market_cap": 80722106447,
       "market_cap_pct": 2.2
     },
     {
       "name": "Paper & Packaging",
-      "value": 8383768,
-      "value_pct": 0.13,
-      "volume": 21550669,
-      "volume_pct": 0.88,
-      "market_cap": 7249347494,
+      "value": 8412140,
+      "value_pct": 0.12,
+      "volume": 21553069,
+      "volume_pct": 0.87,
+      "market_cap": 7248765094,
       "market_cap_pct": 0.2
     }
   ],
@@ -455,108 +553,40 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 76280382064.0,
-          "sell": 34409761616.0,
-          "net": 41870620449.0
-        },
-        "arabs": {
-          "buy": 3184460232.0,
-          "sell": 5829823180.0,
-          "net": -2645362947.0
-        },
-        "foreigners": {
-          "buy": 11977476554.0,
-          "sell": 51202734056.0,
-          "net": -39225257501.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 5362112606.0,
-          "sell": 5319912821.0,
-          "net": 42199785.0
-        },
-        "foreigners": {
-          "buy": 8896005.0,
-          "sell": 8219826.0,
-          "net": 676179.0
-        },
-        "arabs": {
-          "buy": 181841988.0,
-          "sell": 218607622.0,
-          "net": -36765633.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 70918269458.0,
-          "sell": 29089848795.0,
-          "net": 41828420663.0
-        },
-        "foreigners": {
-          "buy": 11968580549.0,
-          "sell": 51194514229.0,
-          "net": -39225933680.0
-        },
-        "arabs": {
-          "buy": 3002618244.0,
-          "sell": 5611215558.0,
-          "net": -2608597314.0
-        }
-      }
-    },
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 60.52,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 4.93,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 34.55,
-        "color": "#bababa"
-      }
-    ],
+    "byGroup": {},
+    "nationalityBreakdownPct": [],
     "individualsByNationality": [
       {
         "nationality": "egyptians",
-        "buy": 5362112606.035,
-        "sell": 5319912820.7208
+        "buy": 5583404446.9721,
+        "sell": 5535915238.8129
       },
       {
         "nationality": "arabs",
-        "buy": 181841988.454,
-        "sell": 218607621.7437
+        "buy": 184933361.1938,
+        "sell": 222432643.6437
       },
       {
         "nationality": "foreigners",
-        "buy": 8896005.419,
+        "buy": 8904143.419,
         "sell": 8219826.4767
       }
     ],
     "institutionsByNationality": [
       {
         "nationality": "egyptians",
-        "buy": 70918269458.451,
-        "sell": 29089848795.0489
+        "buy": 73170085596.841,
+        "sell": 31350103255.2559
       },
       {
         "nationality": "arabs",
-        "buy": 3002618244.0036,
-        "sell": 5611215558.075
+        "buy": 3007386229.8749,
+        "sell": 5615392451.625
       },
       {
         "nationality": "foreigners",
-        "buy": 11968580549.0442,
-        "sell": 51194514229.3417
+        "buy": 11978075379.0653,
+        "sell": 51200725741.5519
       }
     ]
   },
@@ -1942,6 +1972,10 @@
       {
         "time": "2026-07-13T13:10:00",
         "value": 5887.28
+      },
+      {
+        "time": "2026-07-13T13:15:00",
+        "value": 5889.2
       }
     ],
     "EGX30": [
@@ -2104,6 +2138,10 @@
       {
         "time": "2026-07-13T13:10:00",
         "value": 52575.26
+      },
+      {
+        "time": "2026-07-13T13:15:00",
+        "value": 52572.79
       }
     ],
     "EGX70": [
@@ -2266,6 +2304,10 @@
       {
         "time": "2026-07-13T13:10:00",
         "value": 16548.96
+      },
+      {
+        "time": "2026-07-13T13:15:00",
+        "value": 16546.05
       }
     ],
     "EGX100": [
@@ -2428,6 +2470,10 @@
       {
         "time": "2026-07-13T13:10:00",
         "value": 22339.66
+      },
+      {
+        "time": "2026-07-13T13:15:00",
+        "value": 22337.21
       }
     ]
   }
