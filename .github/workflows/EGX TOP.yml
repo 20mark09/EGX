@@ -2,8 +2,21 @@ name: EGX Scraper
 
 on:
   schedule:
-    # Runs every 10 minutes between 07:30 UTC and 12:40 UTC, Sunday-Thursday
-    - cron: "*/5 7-12 * * 0-4"
+    # Every 10 minutes, 06:00-15:00 UTC (covers EGX's pre-open through
+    # after-close with buffer either side), Sunday-Thursday only (EGX's
+    # trading week - Friday/Saturday is the weekend, no point scraping
+    # a closed market every 10 minutes all day).
+    #
+    # Two things worth knowing:
+    # 1. GitHub doesn't guarantee scheduled workflows fire at the exact
+    #    minute - they can lag under high platform load, more so the
+    #    tighter the schedule. "Every ~10 minutes" is realistic, not a
+    #    hard guarantee.
+    # 2. This is roughly 54 runs/day (9 hours x 6/hour) instead of 2.
+    #    Public repos get unlimited free Actions minutes, so this is
+    #    free either way - but if this were a private repo, check your
+    #    plan's monthly minutes quota before deploying this.
+    - cron: "*/10 6-15 * * 0-4"
   workflow_dispatch:
 
 permissions:
@@ -15,8 +28,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Debug - list repo contents
-        run: ls -la
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -24,17 +36,19 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install beautifulsoup4 playwright
+          pip install beautifulsoup4 playwright requests google-auth
           playwright install chromium
           playwright install-deps chromium
 
       - name: Run Scraper
+        env:
+          FCM_SERVICE_ACCOUNT_JSON: ${{ secrets.FCM_SERVICE_ACCOUNT_JSON }}
         run: python scrape_egx.py
 
       - name: Commit JSON
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add egx.json
+          git add egx.json bulletin_state.json
           git diff --cached --quiet || git commit -m "Update EGX data"
           git push
