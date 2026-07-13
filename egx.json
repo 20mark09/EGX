@@ -1,48 +1,11 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-13 11:56 UTC",
+  "lastUpdated": "2026-07-13 12:08 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {
-    "EGX30": {
-      "date": "13/07/2026",
-      "value": 52608.28,
-      "open": 52256.18,
-      "high": 52661.8,
-      "low": 52256.18,
-      "change_pct": 0.67,
-      "ytd_pct": 25.77
-    },
-    "SHARIAH": {
-      "date": "13/07/2026",
-      "value": 52608.28,
-      "open": 52256.18,
-      "high": 52661.8,
-      "low": 52256.18,
-      "change_pct": 0.67,
-      "ytd_pct": 25.77
-    },
-    "EGX70": {
-      "date": "13/07/2026",
-      "value": 16563.19,
-      "open": 16485.36,
-      "high": 16591.45,
-      "low": 16485.36,
-      "change_pct": 0.47,
-      "ytd_pct": 26.19
-    },
-    "EGX100": {
-      "date": "13/07/2026",
-      "value": 22347.31,
-      "open": 22266.39,
-      "high": 22396.36,
-      "low": 22266.39,
-      "change_pct": 0.36,
-      "ytd_pct": 28.24
-    }
-  },
+  "indices": {},
   "gainers": [
     {
       "name": "Alexandria New Medical Center",
@@ -433,6 +396,18 @@
   "bulletin": [
     {
       "id": null,
+      "title": "المصرية العربية (ثمار) لتداول الاوراق المالية والسندات (EASB.CA) محضر إجتماع الجمعية العامة العادية و غير العادية التى انعقدت فى 2026/07/06 (غير موثق)",
+      "date": "13/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341003&All="
+    },
+    {
+      "id": null,
+      "title": "الصناعات الغذائية العربية-دومتى (DOMT.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
+      "date": "13/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341002&All="
+    },
+    {
+      "id": null,
       "title": "الوطنية للاسكان للنقابات المهنية (NHPS.CA) بيان",
       "date": "13/07/2026",
       "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341001&All="
@@ -538,18 +513,6 @@
       "title": "تم ايقاف الورقة المالية - EGS69261C013 -  جراند انفستمنت القابضة للاستثمارات المالية لمدة 10 دقائق لتجاوزها نسبة 10 %",
       "date": "13/07/2026",
       "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=340990&All="
-    },
-    {
-      "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS551D1C017 -  بى اى جى للتجارة والاستثمار لمدة 10 دقائق لتجاوزها نسبة 5%",
-      "date": "13/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=340989&All="
-    },
-    {
-      "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS72081C010 -  الاسكندرية للخدمات الطبية - المركز الطبى الجديد - الاسكندرية لمدة 10 دقائق لتجاوزها نسبة 10 %",
-      "date": "13/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=340988&All="
     }
   ],
   "investorActivity": {
@@ -2366,6 +2329,10 @@
       {
         "time": "2026-07-13T14:50:00",
         "value": 52608.28
+      },
+      {
+        "time": "2026-07-13T14:55:00",
+        "value": 52608.28
       }
     ],
     "EGX70": [
@@ -2608,6 +2575,10 @@
       {
         "time": "2026-07-13T14:50:00",
         "value": 16563.19
+      },
+      {
+        "time": "2026-07-13T14:55:00",
+        "value": 16563.19
       }
     ],
     "EGX100": [
@@ -2849,6 +2820,10 @@
       },
       {
         "time": "2026-07-13T14:50:00",
+        "value": 22347.31
+      },
+      {
+        "time": "2026-07-13T14:55:00",
         "value": 22347.31
       }
     ]
