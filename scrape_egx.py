@@ -201,9 +201,9 @@ def parse_market_summary(html_content):
     return result
 
 
-def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/ar/"):
-    """Layout-driven parser that matches elements structurally without relying on
-    volatile ASP.NET local identifiers like '_lblTitle' which change in Arabic view.
+def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg"):
+    """Layout-driven parser that extracts news items structurally by locating 
+    relative anchor links regardless of language or backend identifier string updates.
     """
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": table_id})
@@ -213,19 +213,22 @@ def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/ar/
 
     rows = table.find_all("tr")
     for row in rows:
+        # Match any link containing the NewsID parameter string
         link_tag = row.find("a", href=lambda x: x and "NewsID=" in x)
         if not link_tag:
             continue
 
         try:
             href = link_tag["href"]
-            url = urljoin(base_url, href)
+            # Ensure safe base combining layout behavior without nested double directories
+            url = urljoin("https://www.egx.com.eg", href)
             
             id_match = re.search(r"NewsID=(\d+)", href)
             news_id = id_match.group(1) if id_match else None
             
             title = link_tag.get_text(strip=True)
             
+            # Fallback regex scan to strip dates out cleanly (handles DD/MM/YYYY formatting footprints)
             date_match = re.search(r"\d{2}/\d{2}/\d{4}", row.get_text())
             date_text = date_match.group(0) if date_match else None
 
@@ -614,13 +617,12 @@ def main():
 
         human_delay()
 
-       # --- PART 4: SCRAPE NEWS ---
+# --- PART 4: SCRAPE NEWS ---
         print("\nNavigating to News List...")
         try:
             page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-            # CHANGE THE TABLE ID STRING HERE TO 'ctl00_C_N_GVNews'
-            news = parse_news_grid(page.content(), "ctl00_C_N_GVNews", base_url="https://www.egx.com.eg/en/")
+            news = parse_news_grid(page.content(), "ctl00_C_N_GVNews")
             print(f"[+] Successfully scraped {len(news)} news items.")
         except Exception as news_error:
             print(f"[-] Failed to fetch News: {news_error}")
