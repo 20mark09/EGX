@@ -201,29 +201,45 @@ def parse_market_summary(html_content):
     return result
 
 
-def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/en/"):
+def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/ar/"):
+    """Layout-driven parser that matches elements structurally without relying on
+    volatile ASP.NET local identifiers like '_lblTitle' which change in Arabic view.
+    """
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": table_id})
     items = []
     if not table:
         return items
-    title_spans = table.find_all("span", id=lambda x: x and x.endswith("_lblTitle"))
-    for title_span in title_spans:
-        try:
-            title = title_span.get_text(strip=True)
-            link_tag = title_span.find_parent("a")
-            href = link_tag["href"] if link_tag and link_tag.has_attr("href") else None
-            url = urljoin(base_url, href) if href else None
-            news_id = None
-            if href:
-                id_match = re.search(r"NewsID=(\d+)", href)
-                news_id = id_match.group(1) if id_match else None
-            prefix = title_span["id"].rsplit("_lblTitle", 1)[0]
-            date_span = soup.find("span", id=f"{prefix}_lblDate")
-            date_text = date_span.get_text(strip=True) if date_span else None
-            items.append({"id": news_id, "title": title, "date": date_text, "url": url})
-        except Exception:
+
+    rows = table.find_all("tr")
+    for row in rows:
+        link_tag = row.find("a", href=lambda x: x and "NewsID=" in x)
+        if not link_tag:
             continue
+
+        try:
+            href = link_tag["href"]
+            url = urljoin(base_url, href)
+            
+            id_match = re.search(r"NewsID=(\d+)", href)
+            news_id = id_match.group(1) if id_match else None
+            
+            title = link_tag.get_text(strip=True)
+            
+            date_match = re.search(r"\d{2}/\d{2}/\d{4}", row.get_text())
+            date_text = date_match.group(0) if date_match else None
+
+            if news_id and title:
+                items.append({
+                    "id": news_id, 
+                    "title": title, 
+                    "date": date_text, 
+                    "url": url
+                })
+        except Exception as e:
+            print(f"[-] Row parse error within bulletin table: {e}")
+            continue
+
     return items
 
 
@@ -273,16 +289,6 @@ INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
 
 
 def fetch_investor_json(context, url, referer, retries=2, retry_delay=3):
-    """Fetches one investor-activity WebService.asmx endpoint. These have
-    been observed occasionally returning a raw backend error string
-    (e.g. 'ORA-12521: TNS:listener does not currently know...') instead
-    of JSON, or an empty response, even though the HTTP request itself
-    succeeds - that's EGX's own backend having a bad moment, not a
-    scraping problem. We retry a couple of times before giving up, and
-    log the actual bad response so a future empty result is diagnosable
-    straight from the Action log instead of needing another round of
-    "here's my JSON, something's missing".
-    """
     for attempt in range(retries + 1):
         try:
             response = context.request.get(
@@ -379,7 +385,6 @@ def parse_index_constituents(html_content):
             code = cells[1].get_text(strip=True)
             name_ar = cells[2].get_text(strip=True)
             
-            # Safeguard if weight column is present (EGX30) or missing (other indexes)
             weight = safe_num(cells[3].get_text(strip=True)) if len(cells) >= 4 else None
             
             if not name_ar:
@@ -437,8 +442,6 @@ BULLETIN_STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "
 
 
 def load_bulletin_state():
-    """The set of bulletin item IDs seen as of the last run, so we only
-    notify on genuinely new items rather than re-notifying every run."""
     try:
         with open(BULLETIN_STATE_FILE, "r", encoding="utf-8") as f:
             return set(json.load(f))
@@ -452,12 +455,6 @@ def save_bulletin_state(ids):
 
 
 def get_fcm_access_token():
-    """Exchanges the FCM_SERVICE_ACCOUNT_JSON GitHub Actions secret (a
-    Firebase service account key) for a short-lived OAuth2 access token,
-    used to authenticate calls to FCM's HTTP v1 send API. Returns
-    (None, None) if the secret isn't configured, so this fails quietly
-    rather than crashing the whole scrape run.
-    """
     sa_json = os.environ.get("FCM_SERVICE_ACCOUNT_JSON")
     if not sa_json:
         return None, None
@@ -478,9 +475,6 @@ def get_fcm_access_token():
 
 
 def send_fcm_notification(title, body):
-    """Sends a push notification to every app instance subscribed to the
-    'egx_bulletins' topic, via FCM's HTTP v1 API.
-    """
     import requests
 
     token, project_id = get_fcm_access_token()
@@ -508,12 +502,6 @@ def send_fcm_notification(title, body):
 
 
 def notify_new_bulletins(bulletin_items):
-    """Compares this run's bulletin IDs against the last known state
-    (bulletin_state.json, committed to the repo) and sends one push
-    notification per genuinely new item, so the app gets notified "as
-    soon as something new shows up" rather than re-notifying the same
-    items every single 10-minute run.
-    """
     if not bulletin_items:
         return
 
@@ -525,6 +513,7 @@ def notify_new_bulletins(bulletin_items):
         new_items = [item for item in bulletin_items if item.get("id") in new_ids]
         for item in new_items:
             send_fcm_notification("EGX Bulletin", item.get("title", "New bulletin item"))
+            time.sleep(1.0)  # Throttling delay to space out multi-sends inside actions
         print(f"[+] {len(new_items)} new bulletin item(s) - notification(s) sent.")
     else:
         print("[+] No new bulletin items since last run - no notifications sent.")
@@ -630,7 +619,7 @@ def main():
         try:
             page.goto("https://www.egx.com.eg/en/NewsList.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-            news = parse_news_grid(page.content(), "ctl00_C_N_GridView1")
+            news = parse_news_grid(page.content(), "ctl00_C_N_GridView1", base_url="https://www.egx.com.eg/en/")
             print(f"[+] Successfully scraped {len(news)} news items.")
         except Exception as news_error:
             print(f"[-] Failed to fetch News: {news_error}")
@@ -660,14 +649,14 @@ def main():
 
             page.goto(disclosures_url, wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
-            disclosures = parse_news_grid(page.content(), "ctl00_C_N_GVNews")
+            disclosures = parse_news_grid(page.content(), "ctl00_C_N_GVNews", base_url="https://www.egx.com.eg/en/")
             print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
         except Exception as disc_error:
             print(f"[-] Failed to fetch Disclosures: {disc_error}")
 
         human_delay()
 
-        # --- PART 7: SCRAPE BULLETIN ---
+        # --- PART 7: SCRAPE BULLETIN (ARABIC MAIN ONLY) ---
         print("\nNavigating to Bulletin News...")
         try:
             page.goto("https://www.egx.com.eg/ar/BulletinNews.aspx", wait_until="domcontentloaded", timeout=45000)
@@ -724,7 +713,7 @@ def main():
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
             page.goto(investor_referer, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(6000)  # bumped from 4000 - more time for the page's own session/token setup before the AJAX calls fire
+            page.wait_for_timeout(6000)
 
             tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
             investor_activity["byGroup"] = parse_investor_tables(tables_raw)
@@ -738,17 +727,10 @@ def main():
             inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
 
-            # Log what actually came back instead of a blanket success
-            # message that doesn't reflect whether any real data landed -
-            # that's what made last run's total silent failure invisible
-            # until someone manually inspected the JSON.
             populated = {k: len(v) for k, v in investor_activity.items()}
             print(f"[+] Investor activity fetch complete. Populated counts: {populated}")
             if all(count == 0 for count in populated.values()):
-                print("[-] WARNING: all investor activity fields came back empty. "
-                      "This has happened before due to EGX's own backend erroring "
-                      "(e.g. a raw Oracle DB error instead of JSON) - check the "
-                      "'[-] Non-JSON response' lines above for the actual cause.")
+                print("[-] WARNING: all investor activity fields came back empty.")
         except Exception as inv_error:
             print(f"[-] Failed to fetch Investor Type data: {inv_error}")
 
