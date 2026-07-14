@@ -1,12 +1,55 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-14 11:23 UTC",
+  "lastUpdated": "2026-07-14 12:49 UTC",
   "liveMarketStatus": {
-    "text_ar": "مفتوح",
+    "text_ar": null,
     "color": null
   },
-  "indices": {},
+  "indices": {
+    "EGX30": {
+      "date": "14/07/2026",
+      "value": 52299.31,
+      "open": 52608.28,
+      "high": 52626.07,
+      "low": 52138.38,
+      "change_pct": -0.59,
+      "ytd_pct": 25.03
+    },
+    "SHARIAH": {
+      "date": "14/07/2026",
+      "value": 52299.31,
+      "open": 52608.28,
+      "high": 52626.07,
+      "low": 52138.38,
+      "change_pct": -0.59,
+      "ytd_pct": 25.03
+    },
+    "EGX70": {
+      "date": "14/07/2026",
+      "value": 16555.46,
+      "open": 16563.19,
+      "high": 16582.11,
+      "low": 16479.16,
+      "change_pct": -0.05,
+      "ytd_pct": 26.13
+    },
+    "EGX100": {
+      "date": "14/07/2026",
+      "value": 22340.68,
+      "open": 22347.31,
+      "high": 22376.86,
+      "low": 22261.71,
+      "change_pct": -0.03,
+      "ytd_pct": 28.2
+    }
+  },
   "gainers": [
+    {
+      "name": "Alexandria New Medical Center",
+      "price": 120.79,
+      "change_pct": 20.0,
+      "code": "AMES"
+    },
     {
       "name": "Samad Misr -EGYFERT",
       "price": 247.59,
@@ -20,75 +63,69 @@
       "code": "CAED"
     },
     {
-      "name": "Alexandria New Medical Center",
-      "price": 119.89,
-      "change_pct": 19.1,
-      "code": "AMES"
-    },
-    {
       "name": "Elsaeed Contracting& Real Estate Investment Company SCCD",
-      "price": 2.18,
-      "change_pct": 14.14,
+      "price": 2.15,
+      "change_pct": 12.57,
       "code": "UEGC"
     },
     {
-      "name": "El Kahera Housing",
-      "price": 1.77,
-      "change_pct": 7.93,
-      "code": "ELKA"
+      "name": "Pioneers Properties For Urban Development - PRE Group",
+      "price": 8.89,
+      "change_pct": 8.41,
+      "code": "PRDC"
     }
   ],
   "losers": [
     {
+      "name": "Misr Oils & Soap",
+      "price": 283.77,
+      "change_pct": -4.49,
+      "code": "MOSC"
+    },
+    {
       "name": "Cairo Pharmaceuticals",
-      "price": 430.14,
-      "change_pct": -4.38,
+      "price": 432.93,
+      "change_pct": -3.76,
       "code": "FERC"
     },
     {
       "name": "Ismailia National Food Industries",
-      "price": 99.22,
-      "change_pct": -4.26,
+      "price": 99.91,
+      "change_pct": -3.6,
       "code": "INFI"
     },
     {
-      "name": "Misr Oils & Soap",
-      "price": 284.87,
-      "change_pct": -4.12,
-      "code": "MOSC"
+      "name": "Ceramic & Porcelain",
+      "price": 33.71,
+      "change_pct": -3.41,
+      "code": "PRCL"
     },
     {
-      "name": "Golden Textiles & Clothes Wool",
-      "price": 108.83,
-      "change_pct": -3.68,
-      "code": "GTWL"
-    },
-    {
-      "name": "Saudi Egyptian Investment & Finance",
-      "price": 250.38,
-      "change_pct": -3.35,
-      "code": "SEIG"
+      "name": "Tycoon Holding Company For Financial Investments",
+      "price": 22.53,
+      "change_pct": -3.14,
+      "code": "TYCN"
     }
   ],
   "marketSummary": {
     "main_market": {
       "listed_total": {
-        "no": 261,
-        "volume": 3321265364,
-        "value": 213294454887,
-        "trades": 207045
+        "no": 264,
+        "volume": 3621306645,
+        "value": 255658908136,
+        "trades": 225141
       },
       "listed_stocks": {
-        "no": 217,
-        "volume": 3311296589,
-        "value": 9584484264,
-        "trades": 206184
+        "no": 218,
+        "volume": 3609493457,
+        "value": 10748397630,
+        "trades": 224173
       },
       "listed_t_bonds_bills_sukuk": {
-        "no": 43,
-        "volume": 9967649,
-        "value": 203709853036,
-        "trades": 859
+        "no": 45,
+        "volume": 11812062,
+        "value": 244910392920,
+        "trades": 966
       },
       "listed_bonds": {
         "no": 1,
@@ -104,9 +141,9 @@
       },
       "smes_stocks": {
         "no": 16,
-        "volume": 76742015,
-        "value": 83509281,
-        "trades": 5631
+        "volume": 78786178,
+        "value": 90640767,
+        "trades": 5987
       },
       "otc_total": {
         "no": 9,
@@ -133,206 +170,224 @@
         "trades": 0
       },
       "total": {
-        "no": 286,
-        "volume": 3398293818,
-        "value": 213407749469,
-        "trades": 212693
+        "no": 289,
+        "volume": 3700379262,
+        "value": 255779334203,
+        "trades": 231145
       },
-      "total_market_cap": 3834082313915
+      "total_market_cap": 3837024629136
     },
     "breadth": {
       "listed_stocks": {
-        "no": 218,
-        "volume": 3307898472,
-        "value": 9559857851,
-        "trades": 205758
+        "no": 219,
+        "volume": 3608885089,
+        "value": 10734676601,
+        "trades": 224062
       },
       "gainers": {
-        "no": 70,
-        "volume": 2068393683,
-        "value": 5470137544,
-        "trades": 104925
+        "no": 79,
+        "volume": 2321633283,
+        "value": 6158469649,
+        "trades": 117408
       },
       "decliners": {
-        "no": 131,
-        "volume": 1047572883,
-        "value": 3617057739,
-        "trades": 93135
+        "no": 125,
+        "volume": 1077079774,
+        "value": 4104504710,
+        "trades": 99025
       },
       "unchanged": {
-        "no": 17,
-        "volume": 191931906,
-        "value": 472662568,
-        "trades": 7698
+        "no": 15,
+        "volume": 210172032,
+        "value": 471702242,
+        "trades": 7629
       }
     }
   },
   "sectors": [
     {
       "name": "Banks",
-      "value": 476951391,
-      "value_pct": 4.94,
-      "volume": 7127719,
-      "volume_pct": 0.21,
-      "market_cap": 889435599819,
-      "market_cap_pct": 24.2
+      "value": 557478687,
+      "value_pct": 5.19,
+      "volume": 8049860,
+      "volume_pct": 0.22,
+      "market_cap": 891691339565,
+      "market_cap_pct": 24.23
     },
     {
       "name": "Basic Resources",
-      "value": 1135484457,
-      "value_pct": 11.76,
-      "volume": 40727881,
-      "volume_pct": 1.22,
-      "market_cap": 483857729958,
-      "market_cap_pct": 13.17
+      "value": 1256916288,
+      "value_pct": 11.71,
+      "volume": 44798221,
+      "volume_pct": 1.24,
+      "market_cap": 485052201379,
+      "market_cap_pct": 13.18
     },
     {
       "name": "Health Care & Pharmaceuticals",
-      "value": 817209571,
-      "value_pct": 8.46,
-      "volume": 232025321,
-      "volume_pct": 6.97,
-      "market_cap": 138166106029,
-      "market_cap_pct": 3.76
+      "value": 896384728,
+      "value_pct": 8.35,
+      "volume": 245884894,
+      "volume_pct": 6.81,
+      "market_cap": 138603052263,
+      "market_cap_pct": 3.77
     },
     {
       "name": "Industrial Goods , Services and Automobiles",
-      "value": 273087107,
+      "value": 303875189,
       "value_pct": 2.83,
-      "volume": 155058302,
-      "volume_pct": 4.66,
-      "market_cap": 238416019796,
-      "market_cap_pct": 6.49
+      "volume": 170023862,
+      "volume_pct": 4.71,
+      "market_cap": 238704640756,
+      "market_cap_pct": 6.48
     },
     {
       "name": "Real Estate",
-      "value": 2321066963,
-      "value_pct": 24.04,
-      "volume": 1365884103,
-      "volume_pct": 41.02,
-      "market_cap": 506459587591,
-      "market_cap_pct": 13.78
+      "value": 2638921693,
+      "value_pct": 24.58,
+      "volume": 1474250360,
+      "volume_pct": 40.85,
+      "market_cap": 508873464523,
+      "market_cap_pct": 13.83
     },
     {
       "name": "Travel & Leisure",
-      "value": 45548203,
-      "value_pct": 0.47,
-      "volume": 2922546,
-      "volume_pct": 0.09,
-      "market_cap": 44055055487,
+      "value": 53189802,
+      "value_pct": 0.5,
+      "volume": 3509489,
+      "volume_pct": 0.1,
+      "market_cap": 44298771844,
       "market_cap_pct": 1.2
     },
     {
       "name": "Utilities",
-      "value": 90269969,
-      "value_pct": 0.94,
-      "volume": 4613475,
+      "value": 97794111,
+      "value_pct": 0.91,
+      "volume": 4981218,
       "volume_pct": 0.14,
-      "market_cap": 27894644628,
+      "market_cap": 27788442074,
       "market_cap_pct": 0.76
     },
     {
       "name": "IT , Media & Communication Services",
-      "value": 232584746,
-      "value_pct": 2.41,
-      "volume": 33822329,
-      "volume_pct": 1.02,
-      "market_cap": 341187713865,
-      "market_cap_pct": 9.28
+      "value": 264035507,
+      "value_pct": 2.46,
+      "volume": 36164231,
+      "volume_pct": 1.0,
+      "market_cap": 340629099127,
+      "market_cap_pct": 9.26
     },
     {
       "name": "Food, Beverages and Tobacco",
-      "value": 826944913,
-      "value_pct": 8.56,
-      "volume": 431666587,
-      "volume_pct": 12.96,
-      "market_cap": 270538488254,
-      "market_cap_pct": 7.36
+      "value": 888694326,
+      "value_pct": 8.28,
+      "volume": 466220055,
+      "volume_pct": 12.92,
+      "market_cap": 270404957468,
+      "market_cap_pct": 7.35
     },
     {
       "name": "Energy & Support Services",
-      "value": 149480179,
-      "value_pct": 1.55,
-      "volume": 16713966,
+      "value": 159936487,
+      "value_pct": 1.49,
+      "volume": 17923452,
       "volume_pct": 0.5,
-      "market_cap": 23475395588,
+      "market_cap": 23539970588,
       "market_cap_pct": 0.64
     },
     {
       "name": "Trade & Distributors",
-      "value": 161844190,
-      "value_pct": 1.68,
-      "volume": 5545328,
-      "volume_pct": 0.17,
-      "market_cap": 41918573306,
+      "value": 171028388,
+      "value_pct": 1.59,
+      "volume": 6332699,
+      "volume_pct": 0.18,
+      "market_cap": 41991434182,
       "market_cap_pct": 1.14
     },
     {
       "name": "Shipping & Transportation Services",
-      "value": 56837863,
-      "value_pct": 0.59,
-      "volume": 2891606,
-      "volume_pct": 0.09,
-      "market_cap": 100605418758,
-      "market_cap_pct": 2.74
+      "value": 66963991,
+      "value_pct": 0.62,
+      "volume": 3596255,
+      "volume_pct": 0.1,
+      "market_cap": 100063653103,
+      "market_cap_pct": 2.72
     },
     {
       "name": "Education Services",
-      "value": 190204320,
-      "value_pct": 1.97,
-      "volume": 28727668,
+      "value": 200488657,
+      "value_pct": 1.87,
+      "volume": 30980850,
       "volume_pct": 0.86,
-      "market_cap": 87913328226,
-      "market_cap_pct": 2.39
+      "market_cap": 87667868386,
+      "market_cap_pct": 2.38
     },
     {
       "name": "Non-bank financial services",
-      "value": 1749886265,
-      "value_pct": 18.12,
-      "volume": 531524129,
-      "volume_pct": 15.96,
-      "market_cap": 254092666425,
-      "market_cap_pct": 6.92
+      "value": 1928182630,
+      "value_pct": 17.96,
+      "volume": 581663175,
+      "volume_pct": 16.12,
+      "market_cap": 253807959888,
+      "market_cap_pct": 6.9
     },
     {
       "name": "Contracting & Construction Engineering",
-      "value": 577607301,
-      "value_pct": 5.98,
-      "volume": 371695543,
-      "volume_pct": 11.16,
-      "market_cap": 102276621246,
+      "value": 634345518,
+      "value_pct": 5.91,
+      "volume": 403975041,
+      "volume_pct": 11.19,
+      "market_cap": 102273189511,
       "market_cap_pct": 2.78
     },
     {
       "name": "Textile & Durables",
-      "value": 196480009,
-      "value_pct": 2.04,
-      "volume": 39202278,
+      "value": 224513372,
+      "value_pct": 2.09,
+      "volume": 42648645,
       "volume_pct": 1.18,
-      "market_cap": 37061455996,
-      "market_cap_pct": 1.01
+      "market_cap": 37898407731,
+      "market_cap_pct": 1.03
     },
     {
       "name": "Building Materials",
-      "value": 340604195,
-      "value_pct": 3.53,
-      "volume": 25867447,
-      "volume_pct": 0.78,
-      "market_cap": 80037652887,
+      "value": 376525976,
+      "value_pct": 3.51,
+      "volume": 31197761,
+      "volume_pct": 0.86,
+      "market_cap": 80092031421,
       "market_cap_pct": 2.18
     },
     {
       "name": "Paper & Packaging",
-      "value": 13912385,
+      "value": 15283662,
       "value_pct": 0.14,
-      "volume": 33411548,
-      "volume_pct": 1.0,
-      "market_cap": 7202971827,
+      "volume": 36683895,
+      "volume_pct": 1.02,
+      "market_cap": 7214290984,
       "market_cap_pct": 0.2
     }
   ],
   "news": [],
   "disclosures": [
+    {
+      "id": "291363",
+      "title": "Correction from Alexandria Mineral Oils Company (AMOC.CA) Concerning the BoD & the Shareholders' Structure",
+      "date": "14/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291363"
+    },
+    {
+      "id": "291362",
+      "title": "Ismailia Misr Poultry (ISMA.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "14/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291362"
+    },
+    {
+      "id": "291361",
+      "title": "Northern Upper Egypt Development & Agricultural Production (NEDA.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "14/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291361"
+    },
     {
       "id": "291356",
       "title": "Subsequent Release from Ismailia National Food Industries (INFI.CA) Regarding the Board of Directors' Decisions",
@@ -374,201 +429,135 @@
       "title": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 08/07/2026",
       "date": "14/07/2026",
       "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291350"
-    },
-    {
-      "id": "291349",
-      "title": "Bonyan for Development and Trade (BONY.CA) - EGM Minutes (after Certification)",
-      "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291349"
-    },
-    {
-      "id": "291348",
-      "title": "Corporate Leaseing Company Egypt 1st Iss 1st Pro Nov 26 (EGBCORP1P1CF) Declares Bond Dividends for Coupon No. (3)",
-      "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291348"
-    },
-    {
-      "id": "291347",
-      "title": "Alkan Finance Sukkuk 1st Iss Feb 2030 VR (EGKALSK01CV) Declares Bond Dividends for Coupon No. (16)",
-      "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291347"
     }
   ],
   "bulletin": [
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS23OD1C015 -  هيبكو للاستثمارات التجارية والتنمية العقارية لمدة 10 دقائق لتجاوزها نسبة 5%",
+      "title": "جى. أم .سى للاستثمارات الصناعية والتجارية المالية (GMCI.CA) نموذج افصاح بخصوص مجلس الادارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341055&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341087&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS221U1C016 -  الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد لمدة 10 دقائق لتجاوزها نسبة 5%",
+      "title": "المالية والصناعية المصرية (EFIC.CA) نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341054&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341086&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS21FW1C015 -  بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "العالمية للاستثمار والتنمية (ICID.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341053&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341085&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS72201C014 -  القاهرة للخدمات التعليمية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات اى اف جى للحلول التمويلية الاصدار الثاني من البرنامج الاول اكتوبر 2029 (EGBHRSL2P1CV) يعلن عن توزيع كوبون السند رقم (19)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341052&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341084&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS38381C017 -  المالية و الصناعية المصرية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات الرحاب للتوريق الاصدار الثاني عشر الشريحة ج يوليو 2029 (EGBREHB12CCV) يعلن عن توزيع كوبون السند رقم (21)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341051&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341083&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS21531C016 -  الصعيد العامة للمقاولات والاستثمار العقاري SCCD لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات الرحاب للتوريق اصدار خامس البرنامج الاول شريحة ج يونيو 2028 (EGREHB5P1C=CA) يعلن عن توزيع كوبون السند رقم (24)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341050&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341082&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS02211C018 -  المصرية للدواجن لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات جلوبال كورب للتوريق الاصدارالاول البرنامج الثاني الشريحة د اغسطس 2030 (EGBGLSC1P2DCV) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341049&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341081&All="
     },
     {
       "id": null,
-      "title": "إعلان لجميع المتعاملين",
+      "title": "سندات جلوبال كورب للتوريق الاصدار الاول البرنامج الثاني الشريحة ج اغسطس 2029 (EGBGLSC1P2CCV) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62578&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341080&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS655Y1C017 -  يوتوبيا للاستثمار العقارى والسياحى لمدة 10 دقائق لتجاوزها نسبة 5%",
+      "title": "سندات جلوبال كورب للتوريق الاصدار الاول البرنامج  الثاني الشريحة ب اغسطس 2028 (EGBGLSC1P2BCV) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341048&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341079&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS51191C012 -  سماد مصر (ايجيفرت) لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات جلوبال كورب للتوريق الاصدار الاول  البرنامج الثاني  الشريحة أ اغسطس 2027 (EGBGLSC1P2ACV) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341047&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341078&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS65061C011 -  المتحدة للاسكان والتعمير لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "المشروعات الصناعية والهندسية (IEEC.CA) - بيان من الشركة",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341046&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341077&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS72081C010 -  الاسكندرية للخدمات الطبية - المركز الطبى الجديد - الاسكندرية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "لوتس للتنمية والاستثمار الزراعى (LUTS.CA)  نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341045&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341076&All="
     },
     {
       "id": null,
-      "title": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة بهم بالشركات المقيد لها اوراق مالية بجداول البورصة خلال جلسة 13/07/2026",
+      "title": "مستشفى النزهة الدولي (NINH.CA) استدراك",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62577&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341075&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS551D1C017 -  بى اى جى للتجارة والاستثمار لمدة 10 دقائق لتجاوزها نسبة 5%",
+      "title": "ايديتا للصناعات الغذائية (EFID.CA) بيان من الهيئة العامة للرقابة المالية",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341044&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341074&All="
     },
     {
       "id": null,
-      "title": "بنك قناة السويس (CANA.CA) بيان من البنك",
+      "title": "بنك قناة السويس (CANA.CA) نموذج افصاح بخصوص مجلس الادارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341043&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341073&All="
     },
     {
       "id": null,
-      "title": "اعادة فتح الاكتتاب في سندات الخزانة",
+      "title": "اودن للاستثمارات المالية (ODIN.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62576&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341072&All="
     },
     {
       "id": null,
-      "title": "قيد سندات الخزانة المصرية",
+      "title": "الاسكندرية لتداول الحاويات والبضائع (ALCN.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62575&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341071&All="
     },
     {
       "id": null,
-      "title": "سبأ الدولية للأدوية والصناعات الكيماوية (SIPC.CA) - محضر إجتماع الجمعية العامة العادية المنعقدة في 04/07/2026 (غير موثق)",
+      "title": "EAC المصرية العربية (ثمار) لتداول الاوراق المالية والسندات (EASB.CA) - محضر إجتماع الجمعية العامة العادية وغير العادية المنعقدة في 06/07/2026 (موثق)",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341042&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341070&All="
     },
     {
       "id": null,
-      "title": "اوراسكوم كونستراكشون بي ال سي (ORAS.CA) نموذج افصاح بخصوص مجلس الادارة وهيكل المساهمين",
+      "title": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية (FWRY.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341041&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341069&All="
     },
     {
       "id": null,
-      "title": "شطب قيد اذون الخزانة المصرية 14 يوليو 2026",
+      "title": "بى انفستمنتس القابضة (BINV.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 14/07/2026",
       "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62574&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341068&All="
     }
   ],
   "investorActivity": {
     "byGroup": {},
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 82.01,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 5.99,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 12.01,
-        "color": "#bababa"
-      }
-    ],
-    "individualsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 8242193542.4319,
-        "sell": 7948976341.3442
-      },
-      {
-        "nationality": "arabs",
-        "buy": 345092714.4139,
-        "sell": 251164220.2029
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 23276878.59,
-        "sell": 9270560.383
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 168155276162.4871,
-        "sell": 171415667866.5651
-      },
-      {
-        "nationality": "arabs",
-        "buy": 13432489698.7003,
-        "sell": 11921531715.89
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 26536838960.1478,
-        "sell": 25482613252.3858
-      }
-    ]
+    "nationalityBreakdownPct": [],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   },
   "indexConstituents": {
     "EGX30": [
@@ -1791,878 +1780,5 @@
       }
     ]
   },
-  "indexCharts": {
-    "SHARIAH": [
-      {
-        "time": "2026-07-14T09:58:00",
-        "value": 5888.94
-      },
-      {
-        "time": "2026-07-14T10:00:00",
-        "value": 5889.83
-      },
-      {
-        "time": "2026-07-14T10:05:00",
-        "value": 5869.06
-      },
-      {
-        "time": "2026-07-14T10:10:00",
-        "value": 5866.82
-      },
-      {
-        "time": "2026-07-14T10:15:00",
-        "value": 5867.67
-      },
-      {
-        "time": "2026-07-14T10:20:00",
-        "value": 5867.46
-      },
-      {
-        "time": "2026-07-14T10:25:00",
-        "value": 5869.48
-      },
-      {
-        "time": "2026-07-14T10:30:00",
-        "value": 5868.63
-      },
-      {
-        "time": "2026-07-14T10:35:00",
-        "value": 5867.97
-      },
-      {
-        "time": "2026-07-14T10:40:00",
-        "value": 5869.21
-      },
-      {
-        "time": "2026-07-14T10:45:00",
-        "value": 5875.15
-      },
-      {
-        "time": "2026-07-14T10:50:00",
-        "value": 5870.68
-      },
-      {
-        "time": "2026-07-14T10:55:00",
-        "value": 5872.67
-      },
-      {
-        "time": "2026-07-14T11:00:00",
-        "value": 5870.12
-      },
-      {
-        "time": "2026-07-14T11:05:00",
-        "value": 5871.13
-      },
-      {
-        "time": "2026-07-14T11:10:00",
-        "value": 5874.73
-      },
-      {
-        "time": "2026-07-14T11:15:00",
-        "value": 5873.83
-      },
-      {
-        "time": "2026-07-14T11:20:00",
-        "value": 5875.91
-      },
-      {
-        "time": "2026-07-14T11:25:00",
-        "value": 5878.85
-      },
-      {
-        "time": "2026-07-14T11:30:00",
-        "value": 5879.31
-      },
-      {
-        "time": "2026-07-14T11:35:00",
-        "value": 5879.75
-      },
-      {
-        "time": "2026-07-14T11:40:00",
-        "value": 5876.75
-      },
-      {
-        "time": "2026-07-14T11:45:00",
-        "value": 5878.7
-      },
-      {
-        "time": "2026-07-14T11:50:00",
-        "value": 5880.2
-      },
-      {
-        "time": "2026-07-14T11:55:00",
-        "value": 5881.31
-      },
-      {
-        "time": "2026-07-14T12:00:00",
-        "value": 5881.43
-      },
-      {
-        "time": "2026-07-14T12:05:00",
-        "value": 5878.57
-      },
-      {
-        "time": "2026-07-14T12:10:00",
-        "value": 5875.84
-      },
-      {
-        "time": "2026-07-14T12:15:00",
-        "value": 5869.28
-      },
-      {
-        "time": "2026-07-14T12:20:00",
-        "value": 5870.01
-      },
-      {
-        "time": "2026-07-14T12:25:00",
-        "value": 5871.78
-      },
-      {
-        "time": "2026-07-14T12:30:00",
-        "value": 5871.28
-      },
-      {
-        "time": "2026-07-14T12:35:00",
-        "value": 5871.3
-      },
-      {
-        "time": "2026-07-14T12:40:00",
-        "value": 5868.32
-      },
-      {
-        "time": "2026-07-14T12:45:00",
-        "value": 5864.66
-      },
-      {
-        "time": "2026-07-14T12:50:00",
-        "value": 5865.1
-      },
-      {
-        "time": "2026-07-14T12:55:00",
-        "value": 5862.23
-      },
-      {
-        "time": "2026-07-14T13:00:00",
-        "value": 5860.8
-      },
-      {
-        "time": "2026-07-14T13:05:00",
-        "value": 5858.0
-      },
-      {
-        "time": "2026-07-14T13:10:00",
-        "value": 5859.05
-      },
-      {
-        "time": "2026-07-14T13:15:00",
-        "value": 5861.02
-      },
-      {
-        "time": "2026-07-14T13:20:00",
-        "value": 5861.58
-      },
-      {
-        "time": "2026-07-14T13:25:00",
-        "value": 5863.18
-      },
-      {
-        "time": "2026-07-14T13:30:00",
-        "value": 5863.64
-      },
-      {
-        "time": "2026-07-14T13:35:00",
-        "value": 5865.84
-      },
-      {
-        "time": "2026-07-14T13:40:00",
-        "value": 5864.27
-      },
-      {
-        "time": "2026-07-14T13:45:00",
-        "value": 5868.79
-      },
-      {
-        "time": "2026-07-14T13:50:00",
-        "value": 5863.6
-      },
-      {
-        "time": "2026-07-14T13:55:00",
-        "value": 5864.98
-      },
-      {
-        "time": "2026-07-14T14:00:00",
-        "value": 5864.41
-      },
-      {
-        "time": "2026-07-14T14:05:00",
-        "value": 5859.36
-      },
-      {
-        "time": "2026-07-14T14:10:00",
-        "value": 5855.18
-      },
-      {
-        "time": "2026-07-14T14:15:00",
-        "value": 5867.23
-      },
-      {
-        "time": "2026-07-14T14:20:00",
-        "value": 5867.23
-      }
-    ],
-    "EGX30": [
-      {
-        "time": "2026-07-14T09:58:00",
-        "value": 52608.28
-      },
-      {
-        "time": "2026-07-14T10:00:00",
-        "value": 52608.28
-      },
-      {
-        "time": "2026-07-14T10:05:00",
-        "value": 52393.95
-      },
-      {
-        "time": "2026-07-14T10:10:00",
-        "value": 52363.75
-      },
-      {
-        "time": "2026-07-14T10:15:00",
-        "value": 52348.03
-      },
-      {
-        "time": "2026-07-14T10:20:00",
-        "value": 52363.43
-      },
-      {
-        "time": "2026-07-14T10:25:00",
-        "value": 52354.25
-      },
-      {
-        "time": "2026-07-14T10:30:00",
-        "value": 52355.44
-      },
-      {
-        "time": "2026-07-14T10:35:00",
-        "value": 52348.69
-      },
-      {
-        "time": "2026-07-14T10:40:00",
-        "value": 52357.56
-      },
-      {
-        "time": "2026-07-14T10:45:00",
-        "value": 52460.6
-      },
-      {
-        "time": "2026-07-14T10:50:00",
-        "value": 52451.69
-      },
-      {
-        "time": "2026-07-14T10:55:00",
-        "value": 52482.31
-      },
-      {
-        "time": "2026-07-14T11:00:00",
-        "value": 52519.02
-      },
-      {
-        "time": "2026-07-14T11:05:00",
-        "value": 52530.86
-      },
-      {
-        "time": "2026-07-14T11:10:00",
-        "value": 52597.01
-      },
-      {
-        "time": "2026-07-14T11:15:00",
-        "value": 52606.16
-      },
-      {
-        "time": "2026-07-14T11:20:00",
-        "value": 52570.1
-      },
-      {
-        "time": "2026-07-14T11:25:00",
-        "value": 52625.08
-      },
-      {
-        "time": "2026-07-14T11:30:00",
-        "value": 52606.53
-      },
-      {
-        "time": "2026-07-14T11:35:00",
-        "value": 52602.33
-      },
-      {
-        "time": "2026-07-14T11:40:00",
-        "value": 52567.43
-      },
-      {
-        "time": "2026-07-14T11:45:00",
-        "value": 52577.33
-      },
-      {
-        "time": "2026-07-14T11:50:00",
-        "value": 52569.1
-      },
-      {
-        "time": "2026-07-14T11:55:00",
-        "value": 52565.45
-      },
-      {
-        "time": "2026-07-14T12:00:00",
-        "value": 52544.89
-      },
-      {
-        "time": "2026-07-14T12:05:00",
-        "value": 52527.33
-      },
-      {
-        "time": "2026-07-14T12:10:00",
-        "value": 52457.82
-      },
-      {
-        "time": "2026-07-14T12:15:00",
-        "value": 52423.18
-      },
-      {
-        "time": "2026-07-14T12:20:00",
-        "value": 52431.71
-      },
-      {
-        "time": "2026-07-14T12:25:00",
-        "value": 52411.47
-      },
-      {
-        "time": "2026-07-14T12:30:00",
-        "value": 52426.38
-      },
-      {
-        "time": "2026-07-14T12:35:00",
-        "value": 52327.54
-      },
-      {
-        "time": "2026-07-14T12:40:00",
-        "value": 52294.0
-      },
-      {
-        "time": "2026-07-14T12:45:00",
-        "value": 52255.43
-      },
-      {
-        "time": "2026-07-14T12:50:00",
-        "value": 52244.59
-      },
-      {
-        "time": "2026-07-14T12:55:00",
-        "value": 52231.76
-      },
-      {
-        "time": "2026-07-14T13:00:00",
-        "value": 52177.57
-      },
-      {
-        "time": "2026-07-14T13:05:00",
-        "value": 52189.91
-      },
-      {
-        "time": "2026-07-14T13:10:00",
-        "value": 52208.49
-      },
-      {
-        "time": "2026-07-14T13:15:00",
-        "value": 52227.0
-      },
-      {
-        "time": "2026-07-14T13:20:00",
-        "value": 52253.76
-      },
-      {
-        "time": "2026-07-14T13:25:00",
-        "value": 52340.02
-      },
-      {
-        "time": "2026-07-14T13:30:00",
-        "value": 52321.11
-      },
-      {
-        "time": "2026-07-14T13:35:00",
-        "value": 52298.3
-      },
-      {
-        "time": "2026-07-14T13:40:00",
-        "value": 52284.91
-      },
-      {
-        "time": "2026-07-14T13:45:00",
-        "value": 52319.79
-      },
-      {
-        "time": "2026-07-14T13:50:00",
-        "value": 52280.29
-      },
-      {
-        "time": "2026-07-14T13:55:00",
-        "value": 52228.19
-      },
-      {
-        "time": "2026-07-14T14:00:00",
-        "value": 52224.96
-      },
-      {
-        "time": "2026-07-14T14:05:00",
-        "value": 52214.95
-      },
-      {
-        "time": "2026-07-14T14:10:00",
-        "value": 52182.45
-      },
-      {
-        "time": "2026-07-14T14:15:00",
-        "value": 52234.59
-      },
-      {
-        "time": "2026-07-14T14:20:00",
-        "value": 52234.59
-      }
-    ],
-    "EGX70": [
-      {
-        "time": "2026-07-14T09:58:00",
-        "value": 16563.19
-      },
-      {
-        "time": "2026-07-14T10:00:00",
-        "value": 16573.43
-      },
-      {
-        "time": "2026-07-14T10:05:00",
-        "value": 16525.11
-      },
-      {
-        "time": "2026-07-14T10:10:00",
-        "value": 16503.53
-      },
-      {
-        "time": "2026-07-14T10:15:00",
-        "value": 16500.04
-      },
-      {
-        "time": "2026-07-14T10:20:00",
-        "value": 16499.53
-      },
-      {
-        "time": "2026-07-14T10:25:00",
-        "value": 16487.48
-      },
-      {
-        "time": "2026-07-14T10:30:00",
-        "value": 16493.17
-      },
-      {
-        "time": "2026-07-14T10:35:00",
-        "value": 16488.4
-      },
-      {
-        "time": "2026-07-14T10:40:00",
-        "value": 16489.35
-      },
-      {
-        "time": "2026-07-14T10:45:00",
-        "value": 16501.72
-      },
-      {
-        "time": "2026-07-14T10:50:00",
-        "value": 16521.38
-      },
-      {
-        "time": "2026-07-14T10:55:00",
-        "value": 16529.92
-      },
-      {
-        "time": "2026-07-14T11:00:00",
-        "value": 16536.83
-      },
-      {
-        "time": "2026-07-14T11:05:00",
-        "value": 16533.21
-      },
-      {
-        "time": "2026-07-14T11:10:00",
-        "value": 16541.39
-      },
-      {
-        "time": "2026-07-14T11:15:00",
-        "value": 16539.88
-      },
-      {
-        "time": "2026-07-14T11:20:00",
-        "value": 16542.14
-      },
-      {
-        "time": "2026-07-14T11:25:00",
-        "value": 16545.71
-      },
-      {
-        "time": "2026-07-14T11:30:00",
-        "value": 16546.51
-      },
-      {
-        "time": "2026-07-14T11:35:00",
-        "value": 16548.7
-      },
-      {
-        "time": "2026-07-14T11:40:00",
-        "value": 16550.44
-      },
-      {
-        "time": "2026-07-14T11:45:00",
-        "value": 16555.12
-      },
-      {
-        "time": "2026-07-14T11:50:00",
-        "value": 16554.26
-      },
-      {
-        "time": "2026-07-14T11:55:00",
-        "value": 16568.42
-      },
-      {
-        "time": "2026-07-14T12:00:00",
-        "value": 16581.29
-      },
-      {
-        "time": "2026-07-14T12:05:00",
-        "value": 16574.04
-      },
-      {
-        "time": "2026-07-14T12:10:00",
-        "value": 16566.74
-      },
-      {
-        "time": "2026-07-14T12:15:00",
-        "value": 16576.1
-      },
-      {
-        "time": "2026-07-14T12:20:00",
-        "value": 16574.74
-      },
-      {
-        "time": "2026-07-14T12:25:00",
-        "value": 16573.01
-      },
-      {
-        "time": "2026-07-14T12:30:00",
-        "value": 16567.15
-      },
-      {
-        "time": "2026-07-14T12:35:00",
-        "value": 16561.01
-      },
-      {
-        "time": "2026-07-14T12:40:00",
-        "value": 16543.53
-      },
-      {
-        "time": "2026-07-14T12:45:00",
-        "value": 16528.21
-      },
-      {
-        "time": "2026-07-14T12:50:00",
-        "value": 16525.58
-      },
-      {
-        "time": "2026-07-14T12:55:00",
-        "value": 16521.98
-      },
-      {
-        "time": "2026-07-14T13:00:00",
-        "value": 16513.86
-      },
-      {
-        "time": "2026-07-14T13:05:00",
-        "value": 16515.13
-      },
-      {
-        "time": "2026-07-14T13:10:00",
-        "value": 16520.58
-      },
-      {
-        "time": "2026-07-14T13:15:00",
-        "value": 16525.52
-      },
-      {
-        "time": "2026-07-14T13:20:00",
-        "value": 16526.06
-      },
-      {
-        "time": "2026-07-14T13:25:00",
-        "value": 16529.26
-      },
-      {
-        "time": "2026-07-14T13:30:00",
-        "value": 16533.36
-      },
-      {
-        "time": "2026-07-14T13:35:00",
-        "value": 16538.91
-      },
-      {
-        "time": "2026-07-14T13:40:00",
-        "value": 16540.14
-      },
-      {
-        "time": "2026-07-14T13:45:00",
-        "value": 16547.85
-      },
-      {
-        "time": "2026-07-14T13:50:00",
-        "value": 16549.73
-      },
-      {
-        "time": "2026-07-14T13:55:00",
-        "value": 16560.73
-      },
-      {
-        "time": "2026-07-14T14:00:00",
-        "value": 16557.51
-      },
-      {
-        "time": "2026-07-14T14:05:00",
-        "value": 16554.12
-      },
-      {
-        "time": "2026-07-14T14:10:00",
-        "value": 16539.4
-      },
-      {
-        "time": "2026-07-14T14:15:00",
-        "value": 16540.0
-      },
-      {
-        "time": "2026-07-14T14:20:00",
-        "value": 16540.0
-      }
-    ],
-    "EGX100": [
-      {
-        "time": "2026-07-14T09:58:00",
-        "value": 22347.31
-      },
-      {
-        "time": "2026-07-14T10:00:00",
-        "value": 22368.29
-      },
-      {
-        "time": "2026-07-14T10:05:00",
-        "value": 22314.75
-      },
-      {
-        "time": "2026-07-14T10:10:00",
-        "value": 22283.56
-      },
-      {
-        "time": "2026-07-14T10:15:00",
-        "value": 22275.95
-      },
-      {
-        "time": "2026-07-14T10:20:00",
-        "value": 22279.12
-      },
-      {
-        "time": "2026-07-14T10:25:00",
-        "value": 22269.03
-      },
-      {
-        "time": "2026-07-14T10:30:00",
-        "value": 22278.29
-      },
-      {
-        "time": "2026-07-14T10:35:00",
-        "value": 22273.04
-      },
-      {
-        "time": "2026-07-14T10:40:00",
-        "value": 22275.28
-      },
-      {
-        "time": "2026-07-14T10:45:00",
-        "value": 22295.89
-      },
-      {
-        "time": "2026-07-14T10:50:00",
-        "value": 22315.0
-      },
-      {
-        "time": "2026-07-14T10:55:00",
-        "value": 22325.25
-      },
-      {
-        "time": "2026-07-14T11:00:00",
-        "value": 22330.77
-      },
-      {
-        "time": "2026-07-14T11:05:00",
-        "value": 22328.78
-      },
-      {
-        "time": "2026-07-14T11:10:00",
-        "value": 22338.85
-      },
-      {
-        "time": "2026-07-14T11:15:00",
-        "value": 22338.4
-      },
-      {
-        "time": "2026-07-14T11:20:00",
-        "value": 22339.25
-      },
-      {
-        "time": "2026-07-14T11:25:00",
-        "value": 22343.71
-      },
-      {
-        "time": "2026-07-14T11:30:00",
-        "value": 22345.26
-      },
-      {
-        "time": "2026-07-14T11:35:00",
-        "value": 22349.73
-      },
-      {
-        "time": "2026-07-14T11:40:00",
-        "value": 22346.56
-      },
-      {
-        "time": "2026-07-14T11:45:00",
-        "value": 22348.85
-      },
-      {
-        "time": "2026-07-14T11:50:00",
-        "value": 22347.78
-      },
-      {
-        "time": "2026-07-14T11:55:00",
-        "value": 22361.29
-      },
-      {
-        "time": "2026-07-14T12:00:00",
-        "value": 22375.88
-      },
-      {
-        "time": "2026-07-14T12:05:00",
-        "value": 22366.38
-      },
-      {
-        "time": "2026-07-14T12:10:00",
-        "value": 22355.77
-      },
-      {
-        "time": "2026-07-14T12:15:00",
-        "value": 22360.99
-      },
-      {
-        "time": "2026-07-14T12:20:00",
-        "value": 22359.48
-      },
-      {
-        "time": "2026-07-14T12:25:00",
-        "value": 22357.81
-      },
-      {
-        "time": "2026-07-14T12:30:00",
-        "value": 22351.6
-      },
-      {
-        "time": "2026-07-14T12:35:00",
-        "value": 22345.46
-      },
-      {
-        "time": "2026-07-14T12:40:00",
-        "value": 22324.74
-      },
-      {
-        "time": "2026-07-14T12:45:00",
-        "value": 22300.9
-      },
-      {
-        "time": "2026-07-14T12:50:00",
-        "value": 22294.75
-      },
-      {
-        "time": "2026-07-14T12:55:00",
-        "value": 22289.78
-      },
-      {
-        "time": "2026-07-14T13:00:00",
-        "value": 22282.28
-      },
-      {
-        "time": "2026-07-14T13:05:00",
-        "value": 22286.58
-      },
-      {
-        "time": "2026-07-14T13:10:00",
-        "value": 22293.24
-      },
-      {
-        "time": "2026-07-14T13:15:00",
-        "value": 22298.06
-      },
-      {
-        "time": "2026-07-14T13:20:00",
-        "value": 22299.49
-      },
-      {
-        "time": "2026-07-14T13:25:00",
-        "value": 22306.36
-      },
-      {
-        "time": "2026-07-14T13:30:00",
-        "value": 22312.09
-      },
-      {
-        "time": "2026-07-14T13:35:00",
-        "value": 22318.56
-      },
-      {
-        "time": "2026-07-14T13:40:00",
-        "value": 22321.15
-      },
-      {
-        "time": "2026-07-14T13:45:00",
-        "value": 22332.0
-      },
-      {
-        "time": "2026-07-14T13:50:00",
-        "value": 22334.15
-      },
-      {
-        "time": "2026-07-14T13:55:00",
-        "value": 22344.82
-      },
-      {
-        "time": "2026-07-14T14:00:00",
-        "value": 22337.96
-      },
-      {
-        "time": "2026-07-14T14:05:00",
-        "value": 22337.29
-      },
-      {
-        "time": "2026-07-14T14:10:00",
-        "value": 22322.39
-      },
-      {
-        "time": "2026-07-14T14:15:00",
-        "value": 22327.13
-      },
-      {
-        "time": "2026-07-14T14:20:00",
-        "value": 22327.13
-      }
-    ]
-  }
+  "indexCharts": {}
 }
