@@ -1,9 +1,9 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-15 06:40 UTC",
+  "lastUpdated": "2026-07-15 06:59 UTC",
   "liveMarketStatus": {
-    "text_ar": "مغلق",
-    "color": "Red"
+    "text_ar": null,
+    "color": null
   },
   "indices": {
     "EGX30": {
@@ -26,12 +26,12 @@
     },
     "EGX70": {
       "date": "14/07/2026",
-      "value": 52299.31,
-      "open": 52608.28,
-      "high": 52626.07,
-      "low": 52138.38,
-      "change_pct": -0.59,
-      "ytd_pct": 25.03
+      "value": 16555.46,
+      "open": 16563.19,
+      "high": 16582.11,
+      "low": 16479.16,
+      "change_pct": -0.05,
+      "ytd_pct": 26.13
     },
     "EGX100": {
       "date": "14/07/2026",
@@ -146,6 +146,48 @@
   "news": [],
   "disclosures": [
     {
+      "id": "291382",
+      "title": "Egyptian Financial & Industrial (EFIC.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291382"
+    },
+    {
+      "id": "291381",
+      "title": "EFG CorpSolutions 2nd Iss 1st Pro Oct 2029 VR (EGBHRSL2P1CV) Declares Bond Dividends for Coupon No. (19)",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291381"
+    },
+    {
+      "id": "291380",
+      "title": "Lotus For Agricultural Investments And Development (LUTS.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291380"
+    },
+    {
+      "id": "291379",
+      "title": "Correction from Nozha International Hospital (NINH.CA) Regarding the Periodic Disclosure to Shareholders",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291379"
+    },
+    {
+      "id": "291378",
+      "title": "Orascom Construction PLC (ORAS.CA) Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291378"
+    },
+    {
+      "id": "291377",
+      "title": "Global Corp Securitization 1st Iss 2nd Pro Tranche C Aug 29 (EGBGLSC1P2CCV) Declares Bond Dividends for Coupon No. (10)",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291377"
+    },
+    {
+      "id": "291376",
+      "title": "Global Corp Securitization 1st Iss 2nd Pro Tranche B Aug 28 (EGBGLSC1P2BCV) Declares Bond Dividends for Coupon No. (10)",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291376"
+    },
+    {
       "id": "291375",
       "title": "Global Corp Securitization 1st Iss 2nd Pro Tranche A Aug 27 (EGBGLSC1P2ACV) Declares Bond Dividends for Coupon No. (10)",
       "date": "15/07/2026",
@@ -162,51 +204,57 @@
       "title": "Fawry For Banking Technology And Electronic Payment (FWRY.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
       "date": "15/07/2026",
       "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291373"
-    },
-    {
-      "id": "291372",
-      "title": "Egyptian Satellites (NileSat) (EGSA.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "15/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291372"
-    },
-    {
-      "id": "291371",
-      "title": "Release from Alexandria New Medical Center (AMES.CA) Concerning the BoD's Meeting",
-      "date": "15/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291371"
-    },
-    {
-      "id": "291370",
-      "title": "Zahraa Maadi Investment & Development (ZMID.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "15/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291370"
-    },
-    {
-      "id": "291369",
-      "title": "Misr Cement (Qena) (MCQE.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "15/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291369"
-    },
-    {
-      "id": "291368",
-      "title": "Sues Canal Company For Technology Settling (SCTS.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "15/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291368"
-    },
-    {
-      "id": "291367",
-      "title": "Gadwa For Industrial Development (GDWA.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-      "date": "15/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291367"
-    },
-    {
-      "id": "291363",
-      "title": "Correction from Alexandria Mineral Oils Company (AMOC.CA) Concerning the BoD & the Shareholders' Structure",
-      "date": "14/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291363"
     }
   ],
   "bulletin": [
+    {
+      "id": null,
+      "title": "بي اي دي - البدر للاستثمار والتنمية (BIDI.CA) إعادة تعامل",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341112&All="
+    },
+    {
+      "id": null,
+      "title": "مدينة مصر للاسكان والتعمير (MASR.CA) - بيان من الشركة",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341111&All="
+    },
+    {
+      "id": null,
+      "title": "المجموعه المصريه العقاريه (AREH.CA) بيان من الشركة",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341110&All="
+    },
+    {
+      "id": null,
+      "title": "فتنس برايم للاندية الصحية (FTNS.CA) قرارات مجلس ادارة الشركة",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341109&All="
+    },
+    {
+      "id": null,
+      "title": "بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب (PRDC.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341108&All="
+    },
+    {
+      "id": null,
+      "title": "ام.ام جروب للصناعة والتجارة العالمية (MTIE.CA) - محضر إجتماع الجمعية العامة غير العادية المنعقدة في 16/05/2026 (موثق)",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341107&All="
+    },
+    {
+      "id": null,
+      "title": "الجيزة العامة للمقاولات والاستثمارالعقارى (GGCC.CA) بيان",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341106&All="
+    },
+    {
+      "id": null,
+      "title": "سبيد ميديكال (SPMD.CA) - ملخص قرارات الجمعية العامة غير العادية (إجتماع ثان)المنعقدة في 14/07/2026",
+      "date": "15/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341105&All="
+    },
     {
       "id": null,
       "title": "أو بى المالية القابضة (OFH.CA) نموذج افصاح بخصوص مجلس الادارة وهيكل المساهمين",
