@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-15 14:48 UTC",
+  "lastUpdated": "2026-07-15 16:12 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -554,8 +554,76 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {},
-    "nationalityBreakdownPct": [],
+    "byGroup": {
+      "total": {
+        "egyptians": {
+          "buy": 67059237833.0,
+          "sell": 56973430245.0,
+          "net": 10085807588.0
+        },
+        "arabs": {
+          "buy": 4196116465.0,
+          "sell": 3764943516.0,
+          "net": 431172949.0
+        },
+        "foreigners": {
+          "buy": 7417856358.0,
+          "sell": 17934836895.0,
+          "net": -10516980537.0
+        }
+      },
+      "individuals": {
+        "egyptians": {
+          "buy": 9792342508.0,
+          "sell": 9559804739.0,
+          "net": 232537768.0
+        },
+        "foreigners": {
+          "buy": 9113242.0,
+          "sell": 3877911.0,
+          "net": 5235332.0
+        },
+        "arabs": {
+          "buy": 282968883.0,
+          "sell": 382042196.0,
+          "net": -99073314.0
+        }
+      },
+      "institutions": {
+        "egyptians": {
+          "buy": 57266895325.0,
+          "sell": 47413625506.0,
+          "net": 9853269820.0
+        },
+        "foreigners": {
+          "buy": 7408743116.0,
+          "sell": 17930958985.0,
+          "net": -10522215869.0
+        },
+        "arabs": {
+          "buy": 3913147582.0,
+          "sell": 3382901320.0,
+          "net": 530246263.0
+        }
+      }
+    },
+    "nationalityBreakdownPct": [
+      {
+        "label_ar": "مصريين",
+        "value": 78.83,
+        "color": "#205d96"
+      },
+      {
+        "label_ar": "عرب",
+        "value": 5.06,
+        "color": "#9e8b2b"
+      },
+      {
+        "label_ar": "اجانب",
+        "value": 16.11,
+        "color": "#bababa"
+      }
+    ],
     "individualsByNationality": [
       {
         "nationality": "egyptians",
@@ -952,7 +1020,358 @@
         "name_ar": "مصرف أبو ظبي الأسلامي- مصر"
       }
     ],
-    "EGX70": [],
+    "EGX70": [
+      {
+        "isin": "EGS675S1C011",
+        "code": "AMER.CA",
+        "name_ar": "(مجموعة عامر القابضة (عامر جروب"
+      },
+      {
+        "isin": "EGS676N1C015",
+        "code": "ATLC.CA",
+        "name_ar": "A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس"
+      },
+      {
+        "isin": "EGS597R1C017",
+        "code": "TALM.CA",
+        "name_ar": "Taaleem Management Services تعليم لخدمات الإدارة"
+      },
+      {
+        "isin": "EGS21351C019",
+        "code": "AIHC.CA",
+        "name_ar": "ارابيا انفستمنتس هولدنج"
+      },
+      {
+        "isin": "EGS65R01C015",
+        "code": "AIDC.CA",
+        "name_ar": "ارابيا للاستثمار والتنمية"
+      },
+      {
+        "isin": "EGS691L1C018",
+        "code": "ASPI.CA",
+        "name_ar": "اسباير كابيتال القابضة للاستثمارات المالية"
+      },
+      {
+        "isin": "EGS3C401C014",
+        "code": "SCEM.CA",
+        "name_ar": "اسمنت سيناء"
+      },
+      {
+        "isin": "EGS10001C013",
+        "code": "ASCM.CA",
+        "name_ar": "اسيك للتعدين    -  اسكوم"
+      },
+      {
+        "isin": "EGS7D5P1C019",
+        "code": "ACTF.CA",
+        "name_ar": "اكت فاينانشال للاستشارات"
+      },
+      {
+        "isin": "EGS42111C012",
+        "code": "ALCN.CA",
+        "name_ar": "الاسكندرية لتداول الحاويات والبضائع"
+      },
+      {
+        "isin": "EGS214Q1C011",
+        "code": "IDRE.CA",
+        "name_ar": "الاسماعيلية الجديدة للتطوير والتنمية العمرانية-شركة منقسمة"
+      },
+      {
+        "isin": "EGS02021C011",
+        "code": "ISMA.CA",
+        "name_ar": "الاسماعيلية مصر للدواجن"
+      },
+      {
+        "isin": "EGS69021C011",
+        "code": "AFDI.CA",
+        "name_ar": "الاهلي للتنمية والاستثمار"
+      },
+      {
+        "isin": "EGS60241C014",
+        "code": "EXPA.CA",
+        "name_ar": "البنك المصري لتنمية الصادرات"
+      },
+      {
+        "isin": "EGS65081C019",
+        "code": "DAPH.CA",
+        "name_ar": "التعمير والاستشارات الهندسية"
+      },
+      {
+        "isin": "EGS102S1C014",
+        "code": "ISMQ.CA",
+        "name_ar": "الحديد والصلب للمناجم والمحاجر"
+      },
+      {
+        "isin": "EGS520D1C015",
+        "code": "ICFC.CA",
+        "name_ar": "الدولية للأسمدة والكيماويات"
+      },
+      {
+        "isin": "EGS07061C012",
+        "code": "IFAP.CA",
+        "name_ar": "الدوليه للمحاصيل الزراعيه"
+      },
+      {
+        "isin": "EGS38251C012",
+        "code": "ZEOT.CA",
+        "name_ar": "الزيوت المستخلصة ومنتجاتها"
+      },
+      {
+        "isin": "EGS65851C015",
+        "code": "OCDI.CA",
+        "name_ar": "السادس من اكتوبر للتنميه والاستثمار- سوديك"
+      },
+      {
+        "isin": "EGS3G0Z1C014",
+        "code": "SWDY.CA",
+        "name_ar": "السويدى اليكتريك"
+      },
+      {
+        "isin": "EGS65091C018",
+        "code": "ELSH.CA",
+        "name_ar": "الشمس للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS21531C016",
+        "code": "UEGC.CA",
+        "name_ar": "الصعيد العامة للمقاولات والاستثمار العقاري SCCD"
+      },
+      {
+        "isin": "EGS3F021C017",
+        "code": "ENGC.CA",
+        "name_ar": "الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون"
+      },
+      {
+        "isin": "EGS3C111C019",
+        "code": "PRCL.CA",
+        "name_ar": "العامة لمنتجات الخزف والصيني"
+      },
+      {
+        "isin": "EGS3C4L1C015",
+        "code": "MEPA.CA",
+        "name_ar": "العبوات الطبية"
+      },
+      {
+        "isin": "EGS65551C011",
+        "code": "OBRI.CA",
+        "name_ar": "العبور للاستثمار العقارى"
+      },
+      {
+        "isin": "EGS3C071C015",
+        "code": "ECAP.CA",
+        "name_ar": "العز للسيراميك و البورسلين - الجوهره"
+      },
+      {
+        "isin": "EGS02051C018",
+        "code": "POUL.CA",
+        "name_ar": "القاهرة للدواجن"
+      },
+      {
+        "isin": "EGS30581C010",
+        "code": "COSG.CA",
+        "name_ar": "القاهرة للزيوت والصابون"
+      },
+      {
+        "isin": "EGS44031C010",
+        "code": "CSAG.CA",
+        "name_ar": "القناة للتوكيلات الملاحية"
+      },
+      {
+        "isin": "EGS22171C010",
+        "code": "IEEC.CA",
+        "name_ar": "المشروعات الصناعية والهندسية"
+      },
+      {
+        "isin": "EGS38081C013",
+        "code": "PHAR.CA",
+        "name_ar": "المصرية الدولية للصناعات الدوائية - ايبيكو"
+      },
+      {
+        "isin": "EGS42051C010",
+        "code": "ETRS.CA",
+        "name_ar": "المصرية لخدمات النقل والتجارة ايجيترانس نوسكو"
+      },
+      {
+        "isin": "EGS70431C019",
+        "code": "EGTS.CA",
+        "name_ar": "المصرية للمنتجعات السياحية"
+      },
+      {
+        "isin": "EGS729F1C012",
+        "code": "MOED.CA",
+        "name_ar": "المصرية لنظم التعليم الحديثة"
+      },
+      {
+        "isin": "EGS78021C010",
+        "code": "MPRC.CA",
+        "name_ar": "المصريه لمدينة الانتاج الاعلامى"
+      },
+      {
+        "isin": "EGS65341C017",
+        "code": "EHDR.CA",
+        "name_ar": "المصريين للاسكان والتنمية والتعمير"
+      },
+      {
+        "isin": "EGS694A1C018",
+        "code": "ARAB.CA",
+        "name_ar": "المطورون العرب القابضة"
+      },
+      {
+        "isin": "EGS67221C019",
+        "code": "AMIA.CA",
+        "name_ar": "الملتقي العربي للاستثمارات"
+      },
+      {
+        "isin": "EGS02091C014",
+        "code": "MPCO.CA",
+        "name_ar": "المنصورة للدواجن"
+      },
+      {
+        "isin": "EGS33061C010",
+        "code": "KABO.CA",
+        "name_ar": "النصر للملابس والمنسوجات - كابو"
+      },
+      {
+        "isin": "EGS38331C012",
+        "code": "NIPH.CA",
+        "name_ar": "النيل للادوية والصناعات الكيماوية - النيل"
+      },
+      {
+        "isin": "EGS75011C014",
+        "code": "MTIE.CA",
+        "name_ar": "ام.ام جروب للصناعة والتجارة العالمية"
+      },
+      {
+        "isin": "EGS696S1C016",
+        "code": "OFH.CA",
+        "name_ar": "او بي المالية القابضة"
+      },
+      {
+        "isin": "EGS60301C016",
+        "code": "HDBK.CA",
+        "name_ar": "بنك التعمير والاسكان"
+      },
+      {
+        "isin": "EGS60041C018",
+        "code": "CIEB.CA",
+        "name_ar": "بنك كريدي اجريكول مصر"
+      },
+      {
+        "isin": "EGS21EB1C011",
+        "code": "TANM.CA",
+        "name_ar": "تنمية للاستثمار العقاري"
+      },
+      {
+        "isin": "EGS38171C012",
+        "code": "BIOC.CA",
+        "name_ar": "جلاكسو سميثكلاين"
+      },
+      {
+        "isin": "EGS3C351C011",
+        "code": "SVCE.CA",
+        "name_ar": "جنوب الوادى للاسمنت"
+      },
+      {
+        "isin": "EGS213S1C010",
+        "code": "GPIM.CA",
+        "name_ar": "جى بى اى للنمو العمرانى"
+      },
+      {
+        "isin": "EGS33321C018",
+        "code": "DSCW.CA",
+        "name_ar": "دايس للملابس الجاهزة"
+      },
+      {
+        "isin": "EGS74191C015",
+        "code": "RACC.CA",
+        "name_ar": "راية لخدمات مراكز الاتصالات"
+      },
+      {
+        "isin": "EGS21171C011",
+        "code": "ZMID.CA",
+        "name_ar": "زهراء المعادي للاستثمار والتعمير"
+      },
+      {
+        "isin": "EGS382M1C011",
+        "code": "SIPC.CA",
+        "name_ar": "سبأ الدولية للأدوية والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS380S1C017",
+        "code": "SKPC.CA",
+        "name_ar": "سيدى كرير للبتروكيماويات - سيدبك"
+      },
+      {
+        "isin": "EGS70571C012",
+        "code": "SDTI.CA",
+        "name_ar": "شارم دريمز للاستثمار السياحى"
+      },
+      {
+        "isin": "EGS23111C015",
+        "code": "NCCW.CA",
+        "name_ar": "شركة النصر للأعمال المدنية"
+      },
+      {
+        "isin": "EGS490S1C014",
+        "code": "TAQA.CA",
+        "name_ar": "طاقة عربية"
+      },
+      {
+        "isin": "EGS738I1C018",
+        "code": "CNFN.CA",
+        "name_ar": "كونتكت المالية القابضة"
+      },
+      {
+        "isin": "EGS3C161C014",
+        "code": "LCSW.CA",
+        "name_ar": "ليسيكو مصر"
+      },
+      {
+        "isin": "EGS7D971C011",
+        "code": "MCRO.CA",
+        "name_ar": "ماكرو جروب للمستحضرات الطبية-ماكرو كابيتال"
+      },
+      {
+        "isin": "EGS65571C019",
+        "code": "MASR.CA",
+        "name_ar": "مدينة مصر للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS3D0C1C018",
+        "code": "ATQA.CA",
+        "name_ar": "مصر الوطنية للصلب - عتاقة"
+      },
+      {
+        "isin": "EGS39061C014",
+        "code": "MFPC.CA",
+        "name_ar": "مصر لإنتاج الأسمدة - موبكو"
+      },
+      {
+        "isin": "EGS30471C014",
+        "code": "AFMC.CA",
+        "name_ar": "مطاحن ومخابز الاسكندرية"
+      },
+      {
+        "isin": "EGS38351C010",
+        "code": "MPCI.CA",
+        "name_ar": "ممفيس للادوية والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS02291C010",
+        "code": "KRDI.CA",
+        "name_ar": "نهر الخير للتنمية والأستثمار الزراعى والخدمات البيئية"
+      },
+      {
+        "isin": "EGS505Z1C018",
+        "code": "VALU.CA",
+        "name_ar": "يو للتمويل الاستهلاكى"
+      },
+      {
+        "isin": "EGS38161C013",
+        "code": "UNIP.CA",
+        "name_ar": "يونيفرسال لصناعة مواد التعبئة و التغليف و الورق - يونيباك"
+      }
+    ],
     "EGX100": [
       {
         "isin": "EGS675S1C011",
