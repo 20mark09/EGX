@@ -1,48 +1,11 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-19 12:15 UTC",
+  "lastUpdated": "2026-07-19 13:56 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {
-    "EGX30": {
-      "date": "19/07/2026",
-      "value": 52560.1,
-      "open": 52928.06,
-      "high": 52993.63,
-      "low": 52472.31,
-      "change_pct": -0.7,
-      "ytd_pct": 25.65
-    },
-    "SHARIAH": {
-      "date": "19/07/2026",
-      "value": 52560.1,
-      "open": 52928.06,
-      "high": 52993.63,
-      "low": 52472.31,
-      "change_pct": -0.7,
-      "ytd_pct": 25.65
-    },
-    "EGX70": {
-      "date": "19/07/2026",
-      "value": 17263.26,
-      "open": 17049.97,
-      "high": 17287.78,
-      "low": 17049.97,
-      "change_pct": 1.25,
-      "ytd_pct": 31.53
-    },
-    "EGX100": {
-      "date": "19/07/2026",
-      "value": 23081.76,
-      "open": 22887.36,
-      "high": 23116.64,
-      "low": 22887.36,
-      "change_pct": 0.85,
-      "ytd_pct": 32.46
-    }
-  },
+  "indices": {},
   "gainers": [
     {
       "name": "Glaxo Smith Kline",
@@ -371,186 +334,186 @@
   "news": [],
   "disclosures": [
     {
-      "id": "291563",
-      "title": "EFG Securitization 1st Iss 8th Pro Tranche B Jun 2027 (EGBEFGS1P8BCF) Declares Bond Dividends for Coupon No. (5)",
+      "id": "291589",
+      "title": "EFG Hermes Securitization The First Issuance - Fourth Program Tranche C December 2026 (EGFIGRSC1P4C=CA) Declares Bond Dividends for Coupon No. (46)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291563"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291589"
     },
     {
-      "id": "291562",
-      "title": "EFG Securitization 1st Iss 8th Pro Tranche A Dec 2026 (EGBEFGS1P8ACF) Declares Bond Dividends for Coupon No. (5)",
+      "id": "291588",
+      "title": "EFG Hermes Securitization The Second Issuance - Fourth Program Tranche C January 2028 (EGFIGRSC2P4C=CA) Declares Bond Dividends for Coupon No. (34)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291562"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291588"
     },
     {
-      "id": "291561",
-      "title": "EFG Securitization 2nd Iss 8th Pro Tranche B Sep 2027 FR (EGBEFGS2P8BCF) Declares Bond Dividends for Coupon No. (2)",
+      "id": "291587",
+      "title": "EFG Hermes Securitization The Third Issuance Tranche C February 2030 (EGFIGRSC03C=CA) Declares Bond Dividends for Coupon No. (32)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291561"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291587"
     },
     {
-      "id": "291560",
-      "title": "EFG Securitization 2nd Iss 8th Pro Tranche A Mar 2027 FR (EGBEFGS2P8ACF) Declares Bond Dividends for Coupon No. (2)",
+      "id": "291586",
+      "title": "Aman For Securitization 1st Iss 2nd Pro Tranche B Oct 2026 FR (EGBAMSC1P2BC) Declares Bond Dividends for Coupon No. (8)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291560"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291586"
     },
     {
-      "id": "291559",
-      "title": "EFG Securitization The Second Issuance - Fourth Program Tranche W November 2029 (EGHRSEC2P4W=CA) Declares Bond Dividends for Coupon No. (31)",
+      "id": "291585",
+      "title": "EFG Hermes Securitization 1st Iss 11th Pro Tranche D Feb2033 VR (EGBFGSC1P11DCV) Declares Bond Dividends for Coupon No. (3)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291559"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291585"
     },
     {
-      "id": "291558",
-      "title": "EFG Securitization The Second Issuance - Fourth Program Tranche C March 2030 (EGHRSEC2P4C=CA) Declares Bond Dividends for Coupon No. (31)",
+      "id": "291584",
+      "title": "EFG Hermes Securitization 1st Iss 11th Pro Tranche C Feb 2031 VR (EGBFGSC1P11CCV) Declares Bond Dividends for Coupon No. (3)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291558"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291584"
     },
     {
-      "id": "291557",
-      "title": "Middle Egypt Flour Mills (CEFM.CA) - BoD Decisions",
+      "id": "291583",
+      "title": "EFG Hermes Securitization 1st Iss 11th Pro Tranche B Feb 29 VR (EGBFGSC1P11BCV) Declares Bond Dividends for Coupon No. (3)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291557"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291583"
     },
     {
-      "id": "291556",
-      "title": "Release from Edita Food Industries S.A.E (EFID.CA) Concerning the EGM Invitation",
+      "id": "291582",
+      "title": "Release from Edita Food Industries S.A.E (EFID.CA) Concerning the Board of Directors & the Executive Managers",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291556"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291582"
     },
     {
-      "id": "291555",
-      "title": "Heliopolis Housing (HELI.CA) - Board of Directors' Decisions",
+      "id": "291581",
+      "title": "EFG Hermes Securitization 1st Iss 11th Pro Tranche A Mar 27 FR (EGBFGSC1P11ACF) Declares Bond Dividends for Coupon No. (3)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291555"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291581"
     },
     {
-      "id": "291554",
-      "title": "Release from El sewedy Electric (SWDY.CA) Concerning the Establishment of a Factory in Fayoum",
+      "id": "291580",
+      "title": "EFG Hermes Securitization 1st Iss 12th Pro Tranche D Jun 32 (EGBFGSC1P12DCV) Declares Bond Dividends for Coupon No. (6)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291554"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291580"
     }
   ],
   "bulletin": [
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الخامس برنامج السادس شريحة ب اغسطس 2028 ع.م (EGBCPSC5P6BCV) يعلن عن توزيع كوبون السند رقم (10)",
+      "title": "سندات اي اف جي للتوريق (EGHRSEC2P4C=CA  EGHRSEC2P4W=CA) استدراك من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341358&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341380&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الخامس برنامج السادس شريحة أ سبتمبر 2026 ع.م (EGBCPSC5P6ACV) يعلن عن توزيع كوبون السند رقم (10)",
+      "title": "سندات اي اف جي للتوريق (EGBEFGS2P8ACF) استدراك من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341357&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341379&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة د يناير 2033 (EGBCPSC6P6DCV) يعلن عن توزيع كوبون السند رقم (2)",
+      "title": "سندات اي اف جي للتوريق (EGBEFGS1P8ACF) استدراك من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341356&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341378&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ج ابريل 2031 (EGBCPSC6P6CCV) يعلن عن توزيع كوبون السند رقم (2)",
+      "title": "سندات اي اف جي للتوريق (EGBEFGS3P5ACF) استدراك من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341355&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341377&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ب ابريل 2029 (EGBCPSC6P6BCV) يعلن عن توزيع كوبون السند رقم (2)",
+      "title": "سندات اي اف جي للتوريق (EGBEFGS2P5ACF) استدراك من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341354&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341376&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة أ مايو 2027 (EGBCPSC6P6ACV) يعلن عن توزيع كوبون السند رقم (2)",
+      "title": "مصر للزيوت و الصابون (MOSC.CA) - محضر إجتماع الجمعية العامة العادية المنعقدة في 16/05/2026 (موثق)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341353&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341375&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول من البرنامج العاشر  الشريحة ج  اغسطس 2026 (EGBCPSC1P10CCV) يعلن عن توزيع كوبون السند رقم (18)",
+      "title": "مدينة مصر للاسكان والتعمير (MASR.CA) - بيان من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341352&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341374&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ج سبتمبر 2027 (EGBCPSC2P10CCF) يعلن عن توزيع كوبون السند رقم (6)",
+      "title": "بنك قناة السويس (CANA.CA) بيان من البنك",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341351&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341373&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ب ديسمبر 2026 (EGBCPSC2P10BCF) يعلن عن توزيع كوبون السند رقم (6)",
+      "title": "سندات اي اف جي للتوريق (EGBEFGS1P7CF) استدراك من الشركة",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341350&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341372&All="
     },
     {
       "id": null,
-      "title": "دلتا للطباعة والتغليف (DTPP.CA) دعوة الجمعية العامة غير العادية المقرر انعقادها في 12/08/2026 في تمام الساعة 09:00 صباحاً",
+      "title": "سندات كابيتال للتوريق الاصدار الثاني البرنامج الرابع عشر يناير 2027 (EGBCPSC2P14CF) يعلن عن توزيع كوبون السند رقم (7)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341349&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341371&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الثالث البرنامج الرابع عشر مارس2027 (EGBCPSC3P14CF) يعلن عن توزيع كوبون السند رقم (4)",
+      "title": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة د يوليو 2031 (EGBCPSC2P6DCV) يعلن عن توزيع كوبون السند رقم (21)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341348&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341370&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الرابع عشر أكتوبر 2026 (EGBCPSC1P14CF) يعلن عن توزيع كوبون السند رقم (10)",
+      "title": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ج اكتوبر 2029 (EGBCPSC2P6CCV) يعلن عن توزيع كوبون السند رقم (21)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341347&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341369&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الخامس عشر شريحة ج يوليو 2029 (EGBCPSC1P15CCV) يعلن عن توزيع كوبون السند رقم (9)",
+      "title": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ب اكتوبر 2027 (EGBCPSC2P6BCV) يعلن عن توزيع كوبون السند رقم (21)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341346&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341368&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الخامس عشر شريحة ب ديسمبر 2028 (EGBCPSC1P15BCV) يعلن عن توزيع كوبون السند رقم (9)",
+      "title": "سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة د سبتمبر 2031 (EGBCPSC3P6DCV) يعلن عن توزيع كوبون السند رقم (19)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341345&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341367&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الخامس عشر شريحة أ ديسمبر 2027 (EGBCPSC1P15ACV) يعلن عن توزيع كوبون السند رقم (9)",
+      "title": "سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة ج ديسمبر 2029 (EGBCPSC3P6CCV) يعلن عن توزيع كوبون السند رقم (19)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341344&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341366&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة د مايو 2030 (EGBCPSC1P6DCV) يعلن عن توزيع كوبون السند رقم (30)",
+      "title": "سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة ب ديسمبر 2027 (EGBCPSC3P6BCV) يعلن عن توزيع كوبون السند رقم (19)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341343&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341365&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ج ديسمبر 2028 (EGBCPSC1P6CCV) يعلن عن توزيع كوبون السند رقم (30)",
+      "title": "عبور لاند للصناعات الغذائية (OLFI.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341342&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341364&All="
     },
     {
       "id": null,
-      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ب يناير 2027 (EGBCPSC1P6BCV) يعلن عن توزيع كوبون السند رقم (30)",
+      "title": "سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة د ديسمبر 2031 (EGBCPSC4P6DCV) يعلن عن توزيع كوبون السند رقم (16)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341341&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341363&All="
     },
     {
       "id": null,
-      "title": "المصرية لخدمات النقل والتجارة ايجيترانس نوسكو (ETRS.CA) نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين",
+      "title": "سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة  ج مارس 2030 (EGBCPSC4P6CCV) يعلن عن توزيع كوبون السند رقم (16)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341340&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341362&All="
     },
     {
       "id": null,
-      "title": "بي اي دي - البدر للاستثمار والتنمية (BIDI.CA) بيان",
+      "title": "سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة ب مارس 2028 (EGBCPSC4P6BCV) يعلن عن توزيع كوبون السند رقم (16)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341339&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341361&All="
     }
   ],
   "investorActivity": {
