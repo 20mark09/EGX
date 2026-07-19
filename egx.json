@@ -1,46 +1,46 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-19 11:25 UTC",
+  "lastUpdated": "2026-07-19 12:15 UTC",
   "liveMarketStatus": {
-    "text_ar": "مفتوح",
-    "color": null
+    "text_ar": "مغلق",
+    "color": "Red"
   },
   "indices": {
     "EGX30": {
       "date": "19/07/2026",
-      "value": 52516.44,
+      "value": 52560.1,
       "open": 52928.06,
       "high": 52993.63,
       "low": 52472.31,
-      "change_pct": -0.78,
-      "ytd_pct": 25.55
+      "change_pct": -0.7,
+      "ytd_pct": 25.65
     },
     "SHARIAH": {
       "date": "19/07/2026",
-      "value": 52516.44,
+      "value": 52560.1,
       "open": 52928.06,
       "high": 52993.63,
       "low": 52472.31,
-      "change_pct": -0.78,
-      "ytd_pct": 25.55
+      "change_pct": -0.7,
+      "ytd_pct": 25.65
     },
     "EGX70": {
       "date": "19/07/2026",
-      "value": 17206.92,
+      "value": 17263.26,
       "open": 17049.97,
       "high": 17287.78,
       "low": 17049.97,
-      "change_pct": 0.92,
-      "ytd_pct": 31.1
+      "change_pct": 1.25,
+      "ytd_pct": 31.53
     },
     "EGX100": {
       "date": "19/07/2026",
-      "value": 23014.69,
+      "value": 23081.76,
       "open": 22887.36,
       "high": 23116.64,
       "low": 22887.36,
-      "change_pct": 0.56,
-      "ytd_pct": 32.07
+      "change_pct": 0.85,
+      "ytd_pct": 32.46
     }
   },
   "gainers": [
@@ -69,63 +69,63 @@
       "code": "AFMC"
     },
     {
-      "name": "Cairo Educational Services",
-      "price": 131.13,
-      "change_pct": 16.97,
-      "code": "CAED"
+      "name": "Middle & West Delta Flour Mills",
+      "price": 631.78,
+      "change_pct": 19.55,
+      "code": "WCDF"
     }
   ],
   "losers": [
     {
       "name": "Golden Textiles & Clothes Wool",
-      "price": 95.0,
-      "change_pct": -6.0,
+      "price": 95.02,
+      "change_pct": -5.98,
       "code": "GTWL"
     },
     {
       "name": "Egyptian for Tourism Resorts",
-      "price": 17.94,
-      "change_pct": -4.83,
+      "price": 17.97,
+      "change_pct": -4.67,
       "code": "EGTS"
     },
     {
       "name": "Egyptian Real Estate Group",
-      "price": 1.49,
-      "change_pct": -4.49,
+      "price": 1.5,
+      "change_pct": -3.85,
       "code": "AREH"
     },
     {
-      "name": "The Arab Ceramic CO.- Ceramica Remas",
-      "price": 1.36,
-      "change_pct": -4.23,
-      "code": "CERA"
+      "name": "TAWASOA For Factoring",
+      "price": 6.86,
+      "change_pct": -3.79,
+      "code": "TWSA"
     },
     {
-      "name": "Arab Developers Holding",
-      "price": 0.244,
-      "change_pct": -3.94,
-      "code": "ARAB"
+      "name": "The Arab Ceramic CO.- Ceramica Remas",
+      "price": 1.37,
+      "change_pct": -3.52,
+      "code": "CERA"
     }
   ],
   "marketSummary": {
     "main_market": {
       "listed_total": {
-        "no": 255,
-        "volume": 2776397431,
-        "value": 14726524289,
-        "trades": 230015
+        "no": 258,
+        "volume": 3364800760,
+        "value": 18874096624,
+        "trades": 253278
       },
       "listed_stocks": {
         "no": 221,
-        "volume": 2776154044,
-        "value": 9179595002,
-        "trades": 229857
+        "volume": 3363726113,
+        "value": 10570149286,
+        "trades": 253109
       },
       "listed_t_bonds_bills_sukuk": {
-        "no": 33,
-        "volume": 239795,
-        "value": 5546552674,
-        "trades": 156
+        "no": 36,
+        "volume": 1071055,
+        "value": 8303570726,
+        "trades": 167
       },
       "listed_bonds": {
         "no": 1,
@@ -141,9 +141,9 @@
       },
       "smes_stocks": {
         "no": 16,
-        "volume": 44996623,
-        "value": 78534880,
-        "trades": 5994
+        "volume": 72872105,
+        "value": 94888519,
+        "trades": 6938
       },
       "otc_total": {
         "no": 13,
@@ -170,492 +170,440 @@
         "trades": 0
       },
       "total": {
-        "no": 284,
-        "volume": 2823773857,
-        "value": 14829283534,
-        "trades": 236069
+        "no": 287,
+        "volume": 3440052668,
+        "value": 18993209508,
+        "trades": 260276
       },
-      "total_market_cap": 3882959258285
+      "total_market_cap": 3886049909251
     },
     "breadth": {
       "listed_stocks": {
         "no": 222,
-        "volume": 2962738312,
-        "value": 9561892786,
-        "trades": 237934
+        "volume": 3363729705,
+        "value": 10570525899,
+        "trades": 253111
       },
       "gainers": {
-        "no": 86,
-        "volume": 1434600447,
-        "value": 5828001655,
-        "trades": 129517
+        "no": 102,
+        "volume": 1616370664,
+        "value": 6638589203,
+        "trades": 148361
       },
       "decliners": {
-        "no": 123,
-        "volume": 1497621323,
-        "value": 3654875649,
-        "trades": 105966
+        "no": 104,
+        "volume": 1630767852,
+        "value": 3563152566,
+        "trades": 96064
       },
       "unchanged": {
-        "no": 13,
-        "volume": 30516542,
-        "value": 79015483,
-        "trades": 2451
+        "no": 16,
+        "volume": 116591189,
+        "value": 368784129,
+        "trades": 8686
       }
     }
   },
   "sectors": [
     {
       "name": "Banks",
-      "value": 397734453,
-      "value_pct": 4.12,
-      "volume": 7427614,
-      "volume_pct": 0.25,
-      "market_cap": 888422658483,
-      "market_cap_pct": 23.85
+      "value": 418302834,
+      "value_pct": 3.96,
+      "volume": 7878499,
+      "volume_pct": 0.23,
+      "market_cap": 889266624459,
+      "market_cap_pct": 23.84
     },
     {
       "name": "Basic Resources",
-      "value": 654722760,
-      "value_pct": 6.78,
-      "volume": 22485640,
-      "volume_pct": 0.75,
-      "market_cap": 487980447552,
-      "market_cap_pct": 13.1
+      "value": 710061305,
+      "value_pct": 6.72,
+      "volume": 24771236,
+      "volume_pct": 0.74,
+      "market_cap": 488064520534,
+      "market_cap_pct": 13.08
     },
     {
       "name": "Health Care & Pharmaceuticals",
-      "value": 1060550220,
-      "value_pct": 10.98,
-      "volume": 376345150,
-      "volume_pct": 12.6,
-      "market_cap": 149162710501,
+      "value": 1104912494,
+      "value_pct": 10.45,
+      "volume": 389583218,
+      "volume_pct": 11.58,
+      "market_cap": 149335360825,
       "market_cap_pct": 4.0
     },
     {
       "name": "Industrial Goods , Services and Automobiles",
-      "value": 531552765,
-      "value_pct": 5.5,
-      "volume": 163195000,
-      "volume_pct": 5.46,
-      "market_cap": 246588029700,
-      "market_cap_pct": 6.62
+      "value": 569973479,
+      "value_pct": 5.39,
+      "volume": 179051392,
+      "volume_pct": 5.32,
+      "market_cap": 248292604286,
+      "market_cap_pct": 6.66
     },
     {
       "name": "Real Estate",
-      "value": 2087058376,
-      "value_pct": 21.61,
-      "volume": 1032430158,
-      "volume_pct": 34.57,
-      "market_cap": 518351166968,
-      "market_cap_pct": 13.91
+      "value": 2401526111,
+      "value_pct": 22.72,
+      "volume": 1185929951,
+      "volume_pct": 35.26,
+      "market_cap": 520360822669,
+      "market_cap_pct": 13.95
     },
     {
       "name": "Travel & Leisure",
-      "value": 99782225,
+      "value": 109155518,
       "value_pct": 1.03,
-      "volume": 6426228,
-      "volume_pct": 0.22,
-      "market_cap": 44518584824,
-      "market_cap_pct": 1.2
+      "volume": 7006493,
+      "volume_pct": 0.21,
+      "market_cap": 44500137354,
+      "market_cap_pct": 1.19
     },
     {
       "name": "Utilities",
-      "value": 34297038,
+      "value": 38224964,
       "value_pct": 0.36,
-      "volume": 1820930,
+      "volume": 2041252,
       "volume_pct": 0.06,
-      "market_cap": 27070107073,
+      "market_cap": 27245369539,
       "market_cap_pct": 0.73
     },
     {
       "name": "IT , Media & Communication Services",
-      "value": 183099314,
-      "value_pct": 1.9,
-      "volume": 15545702,
-      "volume_pct": 0.52,
-      "market_cap": 344238823773,
-      "market_cap_pct": 9.24
+      "value": 282992358,
+      "value_pct": 2.68,
+      "volume": 77294528,
+      "volume_pct": 2.3,
+      "market_cap": 344174809050,
+      "market_cap_pct": 9.23
     },
     {
       "name": "Food, Beverages and Tobacco",
-      "value": 1143681454,
-      "value_pct": 11.84,
-      "volume": 457330068,
-      "volume_pct": 15.31,
-      "market_cap": 274117366832,
-      "market_cap_pct": 7.36
+      "value": 1206618286,
+      "value_pct": 11.42,
+      "volume": 487113538,
+      "volume_pct": 14.48,
+      "market_cap": 273846726971,
+      "market_cap_pct": 7.34
     },
     {
       "name": "Energy & Support Services",
-      "value": 63280619,
-      "value_pct": 0.66,
-      "volume": 7296860,
-      "volume_pct": 0.24,
-      "market_cap": 23881330217,
+      "value": 73016973,
+      "value_pct": 0.69,
+      "volume": 8368227,
+      "volume_pct": 0.25,
+      "market_cap": 23894245217,
       "market_cap_pct": 0.64
     },
     {
       "name": "Trade & Distributors",
-      "value": 125471320,
-      "value_pct": 1.3,
-      "volume": 6122709,
-      "volume_pct": 0.2,
-      "market_cap": 41590198358,
-      "market_cap_pct": 1.12
+      "value": 132183070,
+      "value_pct": 1.25,
+      "volume": 6466272,
+      "volume_pct": 0.19,
+      "market_cap": 41553705090,
+      "market_cap_pct": 1.11
     },
     {
       "name": "Shipping & Transportation Services",
-      "value": 46201339,
-      "value_pct": 0.48,
-      "volume": 1948378,
+      "value": 49333874,
+      "value_pct": 0.47,
+      "volume": 2123872,
       "volume_pct": 0.06,
-      "market_cap": 101546871709,
+      "market_cap": 101670960842,
       "market_cap_pct": 2.73
     },
     {
       "name": "Education Services",
-      "value": 254070995,
-      "value_pct": 2.63,
-      "volume": 27716640,
-      "volume_pct": 0.93,
-      "market_cap": 86969689006,
+      "value": 267531166,
+      "value_pct": 2.53,
+      "volume": 29556893,
+      "volume_pct": 0.88,
+      "market_cap": 87023664642,
       "market_cap_pct": 2.33
     },
     {
       "name": "Non-bank financial services",
-      "value": 1722390758,
-      "value_pct": 17.83,
-      "volume": 528604902,
-      "volume_pct": 17.7,
-      "market_cap": 255198158185,
+      "value": 1846896156,
+      "value_pct": 17.47,
+      "volume": 580792869,
+      "volume_pct": 17.27,
+      "market_cap": 255532167516,
       "market_cap_pct": 6.85
     },
     {
       "name": "Contracting & Construction Engineering",
-      "value": 354791039,
-      "value_pct": 3.67,
-      "volume": 176241132,
-      "volume_pct": 5.9,
-      "market_cap": 106160495749,
-      "market_cap_pct": 2.85
+      "value": 407638303,
+      "value_pct": 3.86,
+      "volume": 204522981,
+      "volume_pct": 6.08,
+      "market_cap": 105626476016,
+      "market_cap_pct": 2.83
     },
     {
       "name": "Textile & Durables",
-      "value": 394445750,
-      "value_pct": 4.08,
-      "volume": 83076228,
-      "volume_pct": 2.78,
-      "market_cap": 38477457269,
+      "value": 416517233,
+      "value_pct": 3.94,
+      "volume": 86446580,
+      "volume_pct": 2.57,
+      "market_cap": 38537062918,
       "market_cap_pct": 1.03
     },
     {
       "name": "Building Materials",
-      "value": 479692229,
-      "value_pct": 4.97,
-      "volume": 41089684,
-      "volume_pct": 1.38,
-      "market_cap": 83574837212,
+      "value": 506156509,
+      "value_pct": 4.79,
+      "volume": 43391526,
+      "volume_pct": 1.29,
+      "market_cap": 83455195565,
       "market_cap_pct": 2.24
     },
     {
       "name": "Paper & Packaging",
-      "value": 25040060,
-      "value_pct": 0.26,
-      "volume": 31489767,
-      "volume_pct": 1.05,
-      "market_cap": 7672465121,
+      "value": 29108654,
+      "value_pct": 0.28,
+      "volume": 41386786,
+      "volume_pct": 1.23,
+      "market_cap": 7686213776,
       "market_cap_pct": 0.21
     }
   ],
   "news": [],
   "disclosures": [
     {
-      "id": "291553",
-      "title": "El Ahram Co. For Printing And Packing (EPPK.CA) - Summary of the EGM Decisions",
+      "id": "291563",
+      "title": "EFG Securitization 1st Iss 8th Pro Tranche B Jun 2027 (EGBEFGS1P8BCF) Declares Bond Dividends for Coupon No. (5)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291553"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291563"
     },
     {
-      "id": "291552",
-      "title": "Aman For Securitization 2nd Iss 2nd Pro Tranche C Dec 2027 VR (EGBAMSC2P2CCV) Declares Bond Dividends for Coupon No. (6)",
+      "id": "291562",
+      "title": "EFG Securitization 1st Iss 8th Pro Tranche A Dec 2026 (EGBEFGS1P8ACF) Declares Bond Dividends for Coupon No. (5)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291552"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291562"
     },
     {
-      "id": "291551",
-      "title": "Aman For Securitization 2nd Iss 2nd Pro Tranche B Jan 2027 VR (EGBAMSC2P2BCV) Declares Bond Dividends for Coupon No. (6)",
+      "id": "291561",
+      "title": "EFG Securitization 2nd Iss 8th Pro Tranche B Sep 2027 FR (EGBEFGS2P8BCF) Declares Bond Dividends for Coupon No. (2)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291551"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291561"
     },
     {
-      "id": "291550",
-      "title": "Aman For Securitization 5th Iss 1st Prg Tranche W Aug 2029 (EGBAMSC5P1WCV) Declares Bond Dividends for Coupon No. (22)",
+      "id": "291560",
+      "title": "EFG Securitization 2nd Iss 8th Pro Tranche A Mar 2027 FR (EGBEFGS2P8ACF) Declares Bond Dividends for Coupon No. (2)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291550"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291560"
     },
     {
-      "id": "291549",
-      "title": "Aman For Securitization 5th Iss 1st Prg Tranche H Aug 2028 (EGBAMSC5P1HCV) Declares Bond Dividends for Coupon No. (22)",
+      "id": "291559",
+      "title": "EFG Securitization The Second Issuance - Fourth Program Tranche W November 2029 (EGHRSEC2P4W=CA) Declares Bond Dividends for Coupon No. (31)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291549"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291559"
     },
     {
-      "id": "291548",
-      "title": "Aman For Securitization 5th Iss 1st Prg Tranche D Aug 2027 (EGBAMSC5P1DCV) Declares Bond Dividends for Coupon No. (22)",
+      "id": "291558",
+      "title": "EFG Securitization The Second Issuance - Fourth Program Tranche C March 2030 (EGHRSEC2P4C=CA) Declares Bond Dividends for Coupon No. (31)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291548"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291558"
     },
     {
-      "id": "291547",
-      "title": "Pioneers Properties For Urban Development (PRE Group) (PRDC.CA) - Release Regarding a Disclosure Form",
+      "id": "291557",
+      "title": "Middle Egypt Flour Mills (CEFM.CA) - BoD Decisions",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291547"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291557"
     },
     {
-      "id": "291546",
-      "title": "Abu Dhabi Islamic Bank- Egypt (ADIB.CA) - Board of Directors' Decisions",
+      "id": "291556",
+      "title": "Release from Edita Food Industries S.A.E (EFID.CA) Concerning the EGM Invitation",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291546"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291556"
     },
     {
-      "id": "291545",
-      "title": "Aman For Securitization 5th Iss 1st Prg Tranche C Aug 2026 (EGBAMSC5P1CCV) Declares Bond Dividends for Coupon No. (22)",
+      "id": "291555",
+      "title": "Heliopolis Housing (HELI.CA) - Board of Directors' Decisions",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291545"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291555"
     },
     {
-      "id": "291544",
-      "title": "Aman For Securitization 3rd Issu Tranche C Apr 2027 V R (EGBAMSC3CCV) Declares Bond Dividends for Coupon No. (13)",
+      "id": "291554",
+      "title": "Release from El sewedy Electric (SWDY.CA) Concerning the Establishment of a Factory in Fayoum",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291544"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291554"
     }
   ],
   "bulletin": [
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS72201C014 -  القاهرة للخدمات التعليمية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الخامس برنامج السادس شريحة ب اغسطس 2028 ع.م (EGBCPSC5P6BCV) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341327&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341358&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS3I1D1C015 -  الاتحاد الصيدلي للخدمات الطبية والاستثمار لمدة 10 دقائق لتجاوزها نسبة 5%",
+      "title": "سندات كابيتال للتوريق الاصدار الخامس برنامج السادس شريحة أ سبتمبر 2026 ع.م (EGBCPSC5P6ACV) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341326&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341357&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS69261C013 -  جراند انفستمنت القابضة للاستثمارات المالية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة د يناير 2033 (EGBCPSC6P6DCV) يعلن عن توزيع كوبون السند رقم (2)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341325&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341356&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS21541C015 -  الجيزةالعامة للمقاولات والاستثمارالعقارى لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ج ابريل 2031 (EGBCPSC6P6CCV) يعلن عن توزيع كوبون السند رقم (2)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341324&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341355&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS65AN1C018 -  اراب للتنمية والاستثمار العقاري لمدة 10 دقائق لتجاوزها نسبة 5%",
+      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ب ابريل 2029 (EGBCPSC6P6BCV) يعلن عن توزيع كوبون السند رقم (2)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341323&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341354&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS65071C010 -  القاهرة للاسكان والتعمير لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة أ مايو 2027 (EGBCPSC6P6ACV) يعلن عن توزيع كوبون السند رقم (2)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341322&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341353&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30351C018 -  مطاحن شرق الدلتا لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الاول من البرنامج العاشر  الشريحة ج  اغسطس 2026 (EGBCPSC1P10CCV) يعلن عن توزيع كوبون السند رقم (18)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341321&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341352&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30451C016 -  مطاحن مصر العليا لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ج سبتمبر 2027 (EGBCPSC2P10CCF) يعلن عن توزيع كوبون السند رقم (6)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341320&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341351&All="
     },
     {
       "id": null,
-      "title": "جلاكسو سميثكلاين (BIOC.CA) بيان من الشركة",
+      "title": "سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ب ديسمبر 2026 (EGBCPSC2P10BCF) يعلن عن توزيع كوبون السند رقم (6)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341307&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341350&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30421C019 -  مطاحن وسط وغرب الدلتا لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "دلتا للطباعة والتغليف (DTPP.CA) دعوة الجمعية العامة غير العادية المقرر انعقادها في 12/08/2026 في تمام الساعة 09:00 صباحاً",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341319&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341349&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30361C017 -  مطاحن ومخابز شمال القاهرة لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الثالث البرنامج الرابع عشر مارس2027 (EGBCPSC3P14CF) يعلن عن توزيع كوبون السند رقم (4)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341318&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341348&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30401C011 -  مطاحن مصر الوسطي لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الرابع عشر أكتوبر 2026 (EGBCPSC1P14CF) يعلن عن توزيع كوبون السند رقم (10)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341317&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341347&All="
     },
     {
       "id": null,
-      "title": "كرستمارك للمقاولات والتطوير العقاري (CRST.CA) قرارات مجلس ادارة الشركة",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الخامس عشر شريحة ج يوليو 2029 (EGBCPSC1P15CCV) يعلن عن توزيع كوبون السند رقم (9)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341304&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341346&All="
     },
     {
       "id": null,
-      "title": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة بهم بالشركات المقيد لها اوراق مالية بجداول البورصة خلال جلسة 16/07/2026",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الخامس عشر شريحة ب ديسمبر 2028 (EGBCPSC1P15BCV) يعلن عن توزيع كوبون السند رقم (9)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62602&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341345&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30471C014 -  مطاحن ومخابز الاسكندرية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج الخامس عشر شريحة أ ديسمبر 2027 (EGBCPSC1P15ACV) يعلن عن توزيع كوبون السند رقم (9)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341316&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341344&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS30411C010 -  مطاحن ومخابز جنوب القاهرة والجيزة لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة د مايو 2030 (EGBCPSC1P6DCV) يعلن عن توزيع كوبون السند رقم (30)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341315&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341343&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS675S1C011 -  (مجموعة عامر القابضة (عامر جروب لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ج ديسمبر 2028 (EGBCPSC1P6CCV) يعلن عن توزيع كوبون السند رقم (30)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341314&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341342&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS51191C012 -  سماد مصر (ايجيفرت) لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ب يناير 2027 (EGBCPSC1P6BCV) يعلن عن توزيع كوبون السند رقم (30)",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341313&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341341&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS698X1C017 -  كاتليست بارتنرز ميديل ايست لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "المصرية لخدمات النقل والتجارة ايجيترانس نوسكو (ETRS.CA) نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341312&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341340&All="
     },
     {
       "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS370W1C013 -  دلتا للطباعة والتغليف لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "title": "بي اي دي - البدر للاستثمار والتنمية (BIDI.CA) بيان",
       "date": "19/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341311&All="
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341339&All="
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 12752623791.0,
-          "sell": 12961683686.0,
-          "net": -209059894.0
-        },
-        "arabs": {
-          "buy": 321920312.0,
-          "sell": 896770875.0,
-          "net": -574850563.0
-        },
-        "foreigners": {
-          "buy": 2099595644.0,
-          "sell": 1315685187.0,
-          "net": 783910457.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 8353832855.0,
-          "sell": 8168284899.0,
-          "net": 185547956.0
-        },
-        "foreigners": {
-          "buy": 5731165.0,
-          "sell": 6533964.0,
-          "net": -802800.0
-        },
-        "arabs": {
-          "buy": 265315546.0,
-          "sell": 332752666.0,
-          "net": -67437120.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 4398790936.0,
-          "sell": 4793398787.0,
-          "net": -394607850.0
-        },
-        "foreigners": {
-          "buy": 2093864479.0,
-          "sell": 1309151223.0,
-          "net": 784713256.0
-        },
-        "arabs": {
-          "buy": 56604766.0,
-          "sell": 564018208.0,
-          "net": -507413442.0
-        }
-      }
-    },
+    "byGroup": {},
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
-        "value": 84.73,
+        "value": 87.5,
         "color": "#205d96"
       },
       {
         "label_ar": "عرب",
-        "value": 4.02,
+        "value": 3.41,
         "color": "#9e8b2b"
       },
       {
         "label_ar": "اجانب",
-        "value": 11.25,
+        "value": 9.09,
         "color": "#bababa"
       }
     ],
     "individualsByNationality": [
       {
         "nationality": "egyptians",
-        "buy": 8353832855.0706,
-        "sell": 8168284898.895
+        "buy": 9070876629.7908,
+        "sell": 9010677307.2812
       },
       {
         "nationality": "arabs",
-        "buy": 265315546.0741,
-        "sell": 332752666.157
+        "buy": 298253616.4581,
+        "sell": 363532566.95
       },
       {
         "nationality": "foreigners",
-        "buy": 5731164.74,
-        "sell": 6533964.27
+        "buy": 6672261.39,
+        "sell": 6554740.13
       }
     ],
     "institutionsByNationality": [
       {
         "nationality": "egyptians",
-        "buy": 4473272688.4526,
-        "sell": 4805273288.8452
+        "buy": 7345805888.4735,
+        "sell": 7602221136.1092
       },
       {
         "nationality": "arabs",
-        "buy": 56604765.9655,
-        "sell": 564342458.458
+        "buy": 58467236.864,
+        "sell": 567034177.848
       },
       {
         "nationality": "foreigners",
-        "buy": 2093864479.15,
-        "sell": 1309295196.4567
+        "buy": 2094020991.15,
+        "sell": 1324076695.808
       }
     ]
   },
@@ -2097,6 +2045,34 @@
       {
         "time": "2026-07-19T14:20:00",
         "value": 5923.56
+      },
+      {
+        "time": "2026-07-19T14:25:00",
+        "value": 5923.56
+      },
+      {
+        "time": "2026-07-19T14:30:00",
+        "value": 5910.65
+      },
+      {
+        "time": "2026-07-19T14:35:00",
+        "value": 5910.65
+      },
+      {
+        "time": "2026-07-19T14:40:00",
+        "value": 5910.65
+      },
+      {
+        "time": "2026-07-19T14:45:00",
+        "value": 5910.65
+      },
+      {
+        "time": "2026-07-19T14:50:00",
+        "value": 5910.65
+      },
+      {
+        "time": "2026-07-19T14:55:00",
+        "value": 5910.65
       }
     ],
     "EGX30": [
@@ -2315,6 +2291,34 @@
       {
         "time": "2026-07-19T14:20:00",
         "value": 52609.25
+      },
+      {
+        "time": "2026-07-19T14:25:00",
+        "value": 52609.25
+      },
+      {
+        "time": "2026-07-19T14:30:00",
+        "value": 52560.1
+      },
+      {
+        "time": "2026-07-19T14:35:00",
+        "value": 52560.1
+      },
+      {
+        "time": "2026-07-19T14:40:00",
+        "value": 52560.1
+      },
+      {
+        "time": "2026-07-19T14:45:00",
+        "value": 52560.1
+      },
+      {
+        "time": "2026-07-19T14:50:00",
+        "value": 52560.1
+      },
+      {
+        "time": "2026-07-19T14:55:00",
+        "value": 52560.1
       }
     ],
     "EGX70": [
@@ -2533,6 +2537,34 @@
       {
         "time": "2026-07-19T14:20:00",
         "value": 17219.12
+      },
+      {
+        "time": "2026-07-19T14:25:00",
+        "value": 17263.26
+      },
+      {
+        "time": "2026-07-19T14:30:00",
+        "value": 17263.26
+      },
+      {
+        "time": "2026-07-19T14:35:00",
+        "value": 17263.26
+      },
+      {
+        "time": "2026-07-19T14:40:00",
+        "value": 17263.26
+      },
+      {
+        "time": "2026-07-19T14:45:00",
+        "value": 17263.26
+      },
+      {
+        "time": "2026-07-19T14:50:00",
+        "value": 17263.26
+      },
+      {
+        "time": "2026-07-19T14:55:00",
+        "value": 17263.26
       }
     ],
     "EGX100": [
@@ -2751,6 +2783,34 @@
       {
         "time": "2026-07-19T14:20:00",
         "value": 23041.47
+      },
+      {
+        "time": "2026-07-19T14:25:00",
+        "value": 23081.76
+      },
+      {
+        "time": "2026-07-19T14:30:00",
+        "value": 23081.76
+      },
+      {
+        "time": "2026-07-19T14:35:00",
+        "value": 23081.76
+      },
+      {
+        "time": "2026-07-19T14:40:00",
+        "value": 23081.76
+      },
+      {
+        "time": "2026-07-19T14:45:00",
+        "value": 23081.76
+      },
+      {
+        "time": "2026-07-19T14:50:00",
+        "value": 23081.76
+      },
+      {
+        "time": "2026-07-19T14:55:00",
+        "value": 23081.76
       }
     ]
   }
