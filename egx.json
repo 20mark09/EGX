@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-19 14:51 UTC",
+  "lastUpdated": "2026-07-19 15:54 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -554,59 +554,7 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 16416682518.0,
-          "sell": 16612898443.0,
-          "net": -196215925.0
-        },
-        "arabs": {
-          "buy": 356720853.0,
-          "sell": 930566745.0,
-          "net": -573845891.0
-        },
-        "foreigners": {
-          "buy": 2100693253.0,
-          "sell": 1330631436.0,
-          "net": 770061817.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 9070876630.0,
-          "sell": 9010677307.0,
-          "net": 60199323.0
-        },
-        "foreigners": {
-          "buy": 6672261.0,
-          "sell": 6554740.0,
-          "net": 117521.0
-        },
-        "arabs": {
-          "buy": 298253616.0,
-          "sell": 363532567.0,
-          "net": -65278950.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 7345805888.0,
-          "sell": 7602221136.0,
-          "net": -256415248.0
-        },
-        "foreigners": {
-          "buy": 2094020991.0,
-          "sell": 1324076696.0,
-          "net": 769944295.0
-        },
-        "arabs": {
-          "buy": 58467237.0,
-          "sell": 567034178.0,
-          "net": -508566941.0
-        }
-      }
-    },
+    "byGroup": {},
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
