@@ -1,11 +1,48 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-19 13:56 UTC",
+  "lastUpdated": "2026-07-19 14:51 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {},
+  "indices": {
+    "EGX30": {
+      "date": "19/07/2026",
+      "value": 52560.1,
+      "open": 52928.06,
+      "high": 52993.63,
+      "low": 52472.31,
+      "change_pct": -0.7,
+      "ytd_pct": 25.65
+    },
+    "SHARIAH": {
+      "date": "19/07/2026",
+      "value": 52560.1,
+      "open": 52928.06,
+      "high": 52993.63,
+      "low": 52472.31,
+      "change_pct": -0.7,
+      "ytd_pct": 25.65
+    },
+    "EGX70": {
+      "date": "19/07/2026",
+      "value": 17263.26,
+      "open": 17049.97,
+      "high": 17287.78,
+      "low": 17049.97,
+      "change_pct": 1.25,
+      "ytd_pct": 31.53
+    },
+    "EGX100": {
+      "date": "19/07/2026",
+      "value": 23081.76,
+      "open": 22887.36,
+      "high": 23116.64,
+      "low": 22887.36,
+      "change_pct": 0.85,
+      "ytd_pct": 32.46
+    }
+  },
   "gainers": [
     {
       "name": "Glaxo Smith Kline",
@@ -517,7 +554,59 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {},
+    "byGroup": {
+      "total": {
+        "egyptians": {
+          "buy": 16416682518.0,
+          "sell": 16612898443.0,
+          "net": -196215925.0
+        },
+        "arabs": {
+          "buy": 356720853.0,
+          "sell": 930566745.0,
+          "net": -573845891.0
+        },
+        "foreigners": {
+          "buy": 2100693253.0,
+          "sell": 1330631436.0,
+          "net": 770061817.0
+        }
+      },
+      "individuals": {
+        "egyptians": {
+          "buy": 9070876630.0,
+          "sell": 9010677307.0,
+          "net": 60199323.0
+        },
+        "foreigners": {
+          "buy": 6672261.0,
+          "sell": 6554740.0,
+          "net": 117521.0
+        },
+        "arabs": {
+          "buy": 298253616.0,
+          "sell": 363532567.0,
+          "net": -65278950.0
+        }
+      },
+      "institutions": {
+        "egyptians": {
+          "buy": 7345805888.0,
+          "sell": 7602221136.0,
+          "net": -256415248.0
+        },
+        "foreigners": {
+          "buy": 2094020991.0,
+          "sell": 1324076696.0,
+          "net": 769944295.0
+        },
+        "arabs": {
+          "buy": 58467237.0,
+          "sell": 567034178.0,
+          "net": -508566941.0
+        }
+      }
+    },
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
