@@ -1,137 +1,137 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-21 08:18 UTC",
+  "lastUpdated": "2026-07-21 10:36 UTC",
   "liveMarketStatus": {
-    "text_ar": null,
+    "text_ar": "مفتوح",
     "color": null
   },
   "indices": {
     "EGX30": {
       "date": "21/07/2026",
-      "value": 53814.9,
+      "value": 53866.73,
       "open": 53126.01,
-      "high": 53843.29,
+      "high": 54064.76,
       "low": 53126.01,
-      "change_pct": 1.3,
-      "ytd_pct": 28.65
+      "change_pct": 1.39,
+      "ytd_pct": 28.78
     },
     "SHARIAH": {
       "date": "21/07/2026",
-      "value": 53814.9,
+      "value": 53866.73,
       "open": 53126.01,
-      "high": 53843.29,
+      "high": 54064.76,
       "low": 53126.01,
-      "change_pct": 1.3,
-      "ytd_pct": 28.65
+      "change_pct": 1.39,
+      "ytd_pct": 28.78
     },
     "EGX70": {
       "date": "21/07/2026",
-      "value": 17639.0,
+      "value": 17569.6,
       "open": 17560.69,
       "high": 17685.61,
-      "low": 17560.69,
-      "change_pct": 0.45,
-      "ytd_pct": 34.39
+      "low": 17538.47,
+      "change_pct": 0.05,
+      "ytd_pct": 33.86
     },
     "EGX100": {
       "date": "21/07/2026",
-      "value": 23525.23,
+      "value": 23460.8,
       "open": 23397.83,
       "high": 23550.61,
       "low": 23397.83,
-      "change_pct": 0.54,
-      "ytd_pct": 35.0
+      "change_pct": 0.27,
+      "ytd_pct": 34.63
     }
   },
   "gainers": [
     {
-      "name": "October Pharma",
-      "price": 485.83,
-      "change_pct": 12.86,
-      "code": "OCPH"
+      "name": "Gharbia Islamic Housing Development",
+      "price": 59.72,
+      "change_pct": 16.41,
+      "code": "GIHD"
     },
     {
-      "name": "Development & Engineering Consultants",
-      "price": 96.0,
-      "change_pct": 10.13,
-      "code": "DAPH"
+      "name": "Medical Packaging Company",
+      "price": 2.0,
+      "change_pct": 12.36,
+      "code": "MEPA"
     },
     {
-      "name": "Golden Textiles & Clothes Wool",
-      "price": 110.24,
-      "change_pct": 8.18,
-      "code": "GTWL"
-    },
-    {
-      "name": "El Kahera El Watania Investment",
-      "price": 102.6,
-      "change_pct": 6.91,
-      "code": "KWIN"
+      "name": "Ismailia Development and Real Estate Co",
+      "price": 49.2,
+      "change_pct": 8.37,
+      "code": "IDRE"
     },
     {
       "name": "Industrial & Engineering Projects",
-      "price": 0.704,
-      "change_pct": 6.18,
+      "price": 0.712,
+      "change_pct": 7.39,
       "code": "IEEC"
+    },
+    {
+      "name": "October Pharma",
+      "price": 462.29,
+      "change_pct": 7.39,
+      "code": "OCPH"
     }
   ],
   "losers": [
     {
+      "name": "Middle Egypt Flour Mills",
+      "price": 124.81,
+      "change_pct": -10.22,
+      "code": "CEFM"
+    },
+    {
       "name": "North Cairo Mills",
-      "price": 175.67,
-      "change_pct": -8.5,
+      "price": 173.0,
+      "change_pct": -9.89,
       "code": "MILS"
     },
     {
       "name": "South Cairo & Giza Mills & Bakeries",
-      "price": 277.82,
-      "change_pct": -6.36,
+      "price": 273.22,
+      "change_pct": -7.91,
       "code": "SCFM"
     },
     {
-      "name": "Middle Egypt Flour Mills",
-      "price": 130.52,
-      "change_pct": -6.11,
-      "code": "CEFM"
+      "name": "Alexandria New Medical Center",
+      "price": 108.16,
+      "change_pct": -7.52,
+      "code": "AMES"
     },
     {
       "name": "Giza General Contracting",
-      "price": 0.83,
-      "change_pct": -5.36,
+      "price": 0.814,
+      "change_pct": -7.18,
       "code": "GGCC"
-    },
-    {
-      "name": "Middle & West Delta Flour Mills",
-      "price": 557.76,
-      "change_pct": -4.91,
-      "code": "WCDF"
     }
   ],
   "marketSummary": {
     "main_market": {
       "listed_total": {
-        "no": 235,
-        "volume": 1169217056,
-        "value": 22655400329,
-        "trades": 81459
+        "no": 258,
+        "volume": 2843933679,
+        "value": 236986285841,
+        "trades": 204988
       },
       "listed_stocks": {
-        "no": 219,
-        "volume": 1168357748,
-        "value": 4213608886,
-        "trades": 81338
+        "no": 221,
+        "volume": 2832446469,
+        "value": 10196815813,
+        "trades": 204107
       },
       "listed_t_bonds_bills_sukuk": {
-        "no": 16,
-        "volume": 859308,
-        "value": 18441791443,
-        "trades": 121
+        "no": 36,
+        "volume": 11487168,
+        "value": 226789465628,
+        "trades": 880
       },
       "listed_bonds": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 1,
+        "volume": 42,
+        "value": 4400,
+        "trades": 1
       },
       "listed_funds": {
         "no": 0,
@@ -141,15 +141,15 @@
       },
       "smes_stocks": {
         "no": 15,
-        "volume": 33947108,
-        "value": 29936544,
-        "trades": 1938
+        "volume": 73481847,
+        "value": 64882663,
+        "trades": 4092
       },
       "otc_total": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 11,
+        "volume": 3107346,
+        "value": 27537660,
+        "trades": 23
       },
       "otc_bonds": {
         "no": 0,
@@ -158,10 +158,10 @@
         "trades": 0
       },
       "otc_deals": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 11,
+        "volume": 3107346,
+        "value": 27537660,
+        "trades": 23
       },
       "otc_orders": {
         "no": 0,
@@ -170,268 +170,298 @@
         "trades": 0
       },
       "total": {
-        "no": 250,
-        "volume": 1203164164,
-        "value": 22685336873,
-        "trades": 83397
+        "no": 284,
+        "volume": 2920522872,
+        "value": 237078706164,
+        "trades": 209103
       },
-      "total_market_cap": 3945207471822
+      "total_market_cap": 3939247327386
     },
     "breadth": {
       "listed_stocks": {
-        "no": 219,
-        "volume": 967385291,
-        "value": 3887051181,
-        "trades": 83004
+        "no": 222,
+        "volume": 2627154221,
+        "value": 9682580653,
+        "trades": 205351
       },
       "gainers": {
-        "no": 119,
-        "volume": 796987939,
-        "value": 3108860813,
-        "trades": 57162
+        "no": 104,
+        "volume": 1961099138,
+        "value": 6495340464,
+        "trades": 120084
       },
       "decliners": {
-        "no": 70,
-        "volume": 120305837,
-        "value": 698347663,
-        "trades": 22944
+        "no": 96,
+        "volume": 409906299,
+        "value": 2807601759,
+        "trades": 78679
       },
       "unchanged": {
-        "no": 30,
-        "volume": 50091515,
-        "value": 79842705,
-        "trades": 2898
+        "no": 22,
+        "volume": 256148784,
+        "value": 379638430,
+        "trades": 6588
       }
     }
   },
   "sectors": [
     {
       "name": "Banks",
-      "value": 685883211,
-      "value_pct": 17.64,
-      "volume": 8857673,
-      "volume_pct": 0.92,
-      "market_cap": 919709424345,
-      "market_cap_pct": 24.42
+      "value": 1471965547,
+      "value_pct": 15.14,
+      "volume": 20936446,
+      "volume_pct": 0.79,
+      "market_cap": 925338218079,
+      "market_cap_pct": 24.46
     },
     {
       "name": "Basic Resources",
-      "value": 113302057,
-      "value_pct": 2.92,
-      "volume": 3707845,
-      "volume_pct": 0.38,
-      "market_cap": 482420114487,
-      "market_cap_pct": 12.81
+      "value": 328266928,
+      "value_pct": 3.38,
+      "volume": 11366913,
+      "volume_pct": 0.43,
+      "market_cap": 480386907410,
+      "market_cap_pct": 12.7
     },
     {
       "name": "Health Care & Pharmaceuticals",
-      "value": 440267322,
-      "value_pct": 11.33,
-      "volume": 127708110,
-      "volume_pct": 13.2,
-      "market_cap": 150881431632,
-      "market_cap_pct": 4.01
+      "value": 956765654,
+      "value_pct": 9.84,
+      "volume": 307969194,
+      "volume_pct": 11.67,
+      "market_cap": 148908130061,
+      "market_cap_pct": 3.94
     },
     {
       "name": "Industrial Goods , Services and Automobiles",
-      "value": 138131352,
-      "value_pct": 3.55,
-      "volume": 111586336,
-      "volume_pct": 11.54,
-      "market_cap": 246772490332,
-      "market_cap_pct": 6.55
+      "value": 415883625,
+      "value_pct": 4.28,
+      "volume": 313225263,
+      "volume_pct": 11.87,
+      "market_cap": 246001986901,
+      "market_cap_pct": 6.5
     },
     {
       "name": "Real Estate",
-      "value": 687566977,
-      "value_pct": 17.69,
-      "volume": 258813207,
-      "volume_pct": 26.75,
-      "market_cap": 526676734743,
-      "market_cap_pct": 13.99
+      "value": 2176501256,
+      "value_pct": 22.39,
+      "volume": 514447154,
+      "volume_pct": 19.5,
+      "market_cap": 523393691477,
+      "market_cap_pct": 13.84
     },
     {
       "name": "Travel & Leisure",
-      "value": 19961241,
-      "value_pct": 0.51,
-      "volume": 1417765,
-      "volume_pct": 0.15,
-      "market_cap": 44974192307,
-      "market_cap_pct": 1.19
+      "value": 66869797,
+      "value_pct": 0.69,
+      "volume": 4278745,
+      "volume_pct": 0.16,
+      "market_cap": 44664772498,
+      "market_cap_pct": 1.18
     },
     {
       "name": "Utilities",
-      "value": 8010572,
-      "value_pct": 0.21,
-      "volume": 438078,
+      "value": 21787096,
+      "value_pct": 0.22,
+      "volume": 1047025,
       "volume_pct": 0.04,
-      "market_cap": 27246435047,
+      "market_cap": 27217945748,
       "market_cap_pct": 0.72
     },
     {
       "name": "IT , Media & Communication Services",
-      "value": 251901642,
-      "value_pct": 6.48,
-      "volume": 28054215,
-      "volume_pct": 2.9,
-      "market_cap": 342307056213,
-      "market_cap_pct": 9.09
+      "value": 521733511,
+      "value_pct": 5.37,
+      "volume": 74096620,
+      "volume_pct": 2.81,
+      "market_cap": 359503441968,
+      "market_cap_pct": 9.5
     },
     {
       "name": "Food, Beverages and Tobacco",
-      "value": 447837491,
-      "value_pct": 11.52,
-      "volume": 106533056,
-      "volume_pct": 11.01,
-      "market_cap": 275493946426,
-      "market_cap_pct": 7.32
+      "value": 903937877,
+      "value_pct": 9.3,
+      "volume": 406693863,
+      "volume_pct": 15.41,
+      "market_cap": 274975105458,
+      "market_cap_pct": 7.27
     },
     {
       "name": "Energy & Support Services",
-      "value": 49568879,
-      "value_pct": 1.28,
-      "volume": 2931691,
-      "volume_pct": 0.3,
-      "market_cap": 24765214660,
-      "market_cap_pct": 0.66
+      "value": 110178612,
+      "value_pct": 1.13,
+      "volume": 7238635,
+      "volume_pct": 0.27,
+      "market_cap": 24755915230,
+      "market_cap_pct": 0.65
     },
     {
       "name": "Trade & Distributors",
-      "value": 20591434,
-      "value_pct": 0.53,
-      "volume": 1333586,
+      "value": 58508978,
+      "value_pct": 0.6,
+      "volume": 3695821,
       "volume_pct": 0.14,
-      "market_cap": 41615306811,
+      "market_cap": 41521052060,
       "market_cap_pct": 1.1
     },
     {
       "name": "Shipping & Transportation Services",
-      "value": 6615889,
-      "value_pct": 0.17,
-      "volume": 341849,
-      "volume_pct": 0.04,
-      "market_cap": 101393190434,
-      "market_cap_pct": 2.69
+      "value": 24574813,
+      "value_pct": 0.25,
+      "volume": 1311867,
+      "volume_pct": 0.05,
+      "market_cap": 100893014916,
+      "market_cap_pct": 2.67
     },
     {
       "name": "Education Services",
-      "value": 76930822,
-      "value_pct": 1.98,
-      "volume": 6758190,
-      "volume_pct": 0.7,
-      "market_cap": 88861576441,
-      "market_cap_pct": 2.36
+      "value": 131914565,
+      "value_pct": 1.36,
+      "volume": 17401787,
+      "volume_pct": 0.66,
+      "market_cap": 88238539712,
+      "market_cap_pct": 2.33
     },
     {
       "name": "Non-bank financial services",
-      "value": 393293156,
-      "value_pct": 10.12,
-      "volume": 116842848,
-      "volume_pct": 12.08,
-      "market_cap": 251621312901,
-      "market_cap_pct": 6.68
+      "value": 1227083115,
+      "value_pct": 12.62,
+      "volume": 337537531,
+      "volume_pct": 12.79,
+      "market_cap": 256842335996,
+      "market_cap_pct": 6.79
     },
     {
       "name": "Contracting & Construction Engineering",
-      "value": 156204530,
-      "value_pct": 4.02,
-      "volume": 140668742,
-      "volume_pct": 14.54,
-      "market_cap": 106227123620,
-      "market_cap_pct": 2.82
+      "value": 464363155,
+      "value_pct": 4.78,
+      "volume": 402193127,
+      "volume_pct": 15.24,
+      "market_cap": 105917835207,
+      "market_cap_pct": 2.8
     },
     {
       "name": "Textile & Durables",
-      "value": 178970178,
-      "value_pct": 4.6,
-      "volume": 19275540,
-      "volume_pct": 1.99,
-      "market_cap": 39143449557,
+      "value": 398419509,
+      "value_pct": 4.1,
+      "volume": 56334011,
+      "volume_pct": 2.14,
+      "market_cap": 39391262687,
       "market_cap_pct": 1.04
     },
     {
       "name": "Building Materials",
-      "value": 203031383,
-      "value_pct": 5.22,
-      "volume": 11041158,
-      "volume_pct": 1.14,
-      "market_cap": 87539941126,
-      "market_cap_pct": 2.32
+      "value": 382440970,
+      "value_pct": 3.94,
+      "volume": 23282426,
+      "volume_pct": 0.88,
+      "market_cap": 87264736806,
+      "market_cap_pct": 2.31
     },
     {
       "name": "Paper & Packaging",
-      "value": 8983045,
-      "value_pct": 0.23,
-      "volume": 21075402,
-      "volume_pct": 2.18,
-      "market_cap": 7831647586,
+      "value": 57923407,
+      "value_pct": 0.6,
+      "volume": 135635454,
+      "volume_pct": 5.14,
+      "market_cap": 7932139441,
       "market_cap_pct": 0.21
     }
   ],
   "news": [],
   "disclosures": [
     {
-      "id": "291715",
-      "title": "Commercial International Bank-Egypt (CIB) (COMI.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/06/2026",
+      "id": "291755",
+      "title": "El Obour Real Estate Investment (OBRI.CA) - Release Regarding a Disclosure Form",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291715"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291755"
     },
     {
-      "id": "291713",
-      "title": "International Agricultural Products (IFAP.CA) - AGM Invitation",
+      "id": "291754",
+      "title": "Correction from EFG Hermes Securitization (EGFIGRSC2P5C=CA)",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291713"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291754"
     },
     {
-      "id": "291712",
-      "title": "International Agricultural Products (IFAP.CA) - Decisions of the Board of Directors' Meeting",
+      "id": "291753",
+      "title": "ARAB Developers Holding (ARAB.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291712"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291753"
     },
     {
-      "id": "291711",
-      "title": "Commercial International Bank-Egypt (CIB) (COMI.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/06/2026",
+      "id": "291752",
+      "title": "Correction from EFG Hermes Securitization (EGBFGSC2P9BCV)",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291711"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291752"
     },
     {
-      "id": "291709",
-      "title": "Maridive & oil services (MOIL.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 31/03/2026",
+      "id": "291751",
+      "title": "Asec Company for Mining \"ASCOM\" (ASCM.CA) - Company's Response to the Auditors' Report on the Consolidated Financial Statements",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291709"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291751"
     },
     {
-      "id": "291707",
-      "title": "Release from Sabaa International Company For Pharmaceutical and Chemical (SIPC.CA) Regarding Changes to Company Data",
+      "id": "291750",
+      "title": "Correction from EFG Hermes Securitization (EGFIGRSC2P4C=CA)",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291707"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291750"
     },
     {
-      "id": "291706",
-      "title": "Commercial International Bank-Egypt (CIB) (COMI.CA) - Decisions of the Board of Directors' Meeting",
+      "id": "291749",
+      "title": "Correction from EFG Hermes Securitization (EGFIGRSC1P4C=CA)",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291706"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291749"
     },
     {
-      "id": "291705",
-      "title": "East Delta Flour Mills (EDFM.CA) - Decisions of the Board of Directors' Meeting",
+      "id": "291748",
+      "title": "Correction from EFG Hermes Securitization (EGFIGRSC1P3C=CA)",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291705"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291748"
     },
     {
-      "id": "291704",
-      "title": "Egyptians Real Estate Fund Certificates (EGREF.CA) - EGM Minutes",
+      "id": "291747",
+      "title": "El Ahram Co. For Printing And Packing (EPPK.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291704"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291747"
     },
     {
-      "id": "291703",
-      "title": "Gourmet Egypt.Com Foods (GOUR.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "id": "291746",
+      "title": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 15/07/2026",
       "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291703"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291746"
     }
   ],
   "bulletin": [
+    {
+      "id": null,
+      "title": "تم ايقاف الورقة المالية - EGS3C4L1C015 -  العبوات الطبية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "date": "21/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341499&All="
+    },
+    {
+      "id": null,
+      "title": "تم ايقاف الورقة المالية - EGS30401C011 -  مطاحن مصر الوسطي لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "date": "21/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341498&All="
+    },
+    {
+      "id": null,
+      "title": "تم ايقاف الورقة المالية - EGS681D1C010 -  EAC المصرية العربية (ثمار) لتداول الاوراق المالية والسندات لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "date": "21/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341497&All="
+    },
+    {
+      "id": null,
+      "title": "تم ايقاف الورقة المالية - EGS214Q1C011 -  الاسماعيلية الجديدة للتطوير والتنمية العمرانية-شركة منقسمة لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "date": "21/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341496&All="
+    },
+    {
+      "id": null,
+      "title": "تم ايقاف الورقة المالية - EGS65461C013 -  الغربية الاسلامية للتنمية العمرانية لمدة 10 دقائق لتجاوزها نسبة 10 %",
+      "date": "21/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341495&All="
+    },
     {
       "id": null,
       "title": "تم ايقاف الورقة المالية - EGS22171C010 -  المشروعات الصناعية والهندسية لمدة 10 دقائق لتجاوزها نسبة 10 %",
@@ -521,49 +551,2059 @@
       "title": "برايم القابضة للاستثمارات المالية (PRMH.CA) بيان من الشركة",
       "date": "21/07/2026",
       "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341484&All="
-    },
-    {
-      "id": null,
-      "title": "سندات الاهلى للتوريق الاصدار الاول  برنامج التاسع شريحة أ ابريل 2028 (EGBAHSC1P9ACV) يعلن عن توزيع كوبون السند رقم (4)",
-      "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341483&All="
-    },
-    {
-      "id": null,
-      "title": "سندات الاهلى للتوريق الاصدار الاول  برنامج التاسع شريحة  ب ابريل 2029 (EGBAHSC1P9BCV) يعلن عن توزيع كوبون السند رقم (4)",
-      "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341482&All="
-    },
-    {
-      "id": null,
-      "title": "سندات الاهلى للتوريق الاصدار الاول برنامج التاسع شريحة ج يونيو 2030 (EGBAHSC1P9CCV) يعلن عن توزيع كوبون السند رقم (4)",
-      "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341481&All="
-    },
-    {
-      "id": null,
-      "title": "دايس للملابس الجاهزة (DSCW.CA) - محضر إجتماع الجمعية العامة العادية المنعقدة في 18/06/2026 (موثق)",
-      "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341479&All="
-    },
-    {
-      "id": null,
-      "title": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة بهم بالشركات المقيد لها اوراق مالية بجداول البورصة خلال جلسة 20/07/2026",
-      "date": "21/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62615&All="
     }
   ],
   "investorActivity": {
-    "byGroup": {},
-    "nationalityBreakdownPct": [],
-    "individualsByNationality": [],
-    "institutionsByNationality": []
+    "byGroup": {
+      "total": {
+        "egyptians": {
+          "buy": 182424564573.0,
+          "sell": 164476267068.0,
+          "net": 17948297505.0
+        },
+        "arabs": {
+          "buy": 19141259371.0,
+          "sell": 31228388253.0,
+          "net": -12087128882.0
+        },
+        "foreigners": {
+          "buy": 35975663804.0,
+          "sell": 41836832427.0,
+          "net": -5861168623.0
+        }
+      },
+      "individuals": {
+        "egyptians": {
+          "buy": 8180027535.0,
+          "sell": 7935089154.0,
+          "net": 244938382.0
+        },
+        "foreigners": {
+          "buy": 9613009.0,
+          "sell": 10007405.0,
+          "net": -394396.0
+        },
+        "arabs": {
+          "buy": 1061388218.0,
+          "sell": 284442802.0,
+          "net": 776945416.0
+        }
+      },
+      "institutions": {
+        "egyptians": {
+          "buy": 174244537038.0,
+          "sell": 157042161114.0,
+          "net": 17202375924.0
+        },
+        "foreigners": {
+          "buy": 35966050795.0,
+          "sell": 41826825022.0,
+          "net": -5860774227.0
+        },
+        "arabs": {
+          "buy": 18079871153.0,
+          "sell": 30943945452.0,
+          "net": -12864074298.0
+        }
+      }
+    },
+    "nationalityBreakdownPct": [
+      {
+        "label_ar": "مصريين",
+        "value": 73.02,
+        "color": "#205d96"
+      },
+      {
+        "label_ar": "عرب",
+        "value": 10.6,
+        "color": "#9e8b2b"
+      },
+      {
+        "label_ar": "اجانب",
+        "value": 16.38,
+        "color": "#bababa"
+      }
+    ],
+    "individualsByNationality": [
+      {
+        "nationality": "egyptians",
+        "buy": 8180027535.4827,
+        "sell": 7935089153.7063
+      },
+      {
+        "nationality": "arabs",
+        "buy": 1061388217.578,
+        "sell": 284442801.6694
+      },
+      {
+        "nationality": "foreigners",
+        "buy": 9613009.05,
+        "sell": 10007404.8564
+      }
+    ],
+    "institutionsByNationality": [
+      {
+        "nationality": "egyptians",
+        "buy": 174244537037.6276,
+        "sell": 157042161113.992
+      },
+      {
+        "nationality": "arabs",
+        "buy": 18079871153.1214,
+        "sell": 30943945451.513
+      },
+      {
+        "nationality": "foreigners",
+        "buy": 35966050794.8834,
+        "sell": 41826825022.006
+      }
+    ]
   },
   "indexConstituents": {
-    "EGX30": [],
-    "SHARIAH": [],
-    "EGX70": [],
-    "EGX100": []
+    "EGX30": [
+      {
+        "isin": "EGS512O1C012",
+        "code": "ISPH.CA",
+        "name_ar": "ابن سينا فارما",
+        "weight_pct": 0.98
+      },
+      {
+        "isin": "EGS38191C010",
+        "code": "ABUK.CA",
+        "name_ar": "ابوقير للاسمدة والصناعات الكيماوية",
+        "weight_pct": 2.82
+      },
+      {
+        "isin": "EGS673Y1C015",
+        "code": "EMFD.CA",
+        "name_ar": "إعمار مصر للتنمية",
+        "weight_pct": 0.71
+      },
+      {
+        "isin": "EGS380P1C010",
+        "code": "AMOC.CA",
+        "name_ar": "الاسكندرية للزيوت المعدنية",
+        "weight_pct": 0.82
+      },
+      {
+        "isin": "EGS60121C018",
+        "code": "COMI.CA",
+        "name_ar": "البنك التجاري الدولي -مصر (سى اى بى )",
+        "weight_pct": 32.07
+      },
+      {
+        "isin": "EGS37091C013",
+        "code": "EAST.CA",
+        "name_ar": "الشرقية - ايسترن كومباني",
+        "weight_pct": 6.5
+      },
+      {
+        "isin": "EGS38201C017",
+        "code": "EGCH.CA",
+        "name_ar": "الصناعات الكيماوية المصرية - كيما",
+        "weight_pct": 0.31
+      },
+      {
+        "isin": "EGS381B1C015",
+        "code": "RMDA.CA",
+        "name_ar": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا",
+        "weight_pct": 0.66
+      },
+      {
+        "isin": "EGS3C0O1C016",
+        "code": "ARCC.CA",
+        "name_ar": "العربية للاسمنت",
+        "weight_pct": 0.38
+      },
+      {
+        "isin": "EGS73541C012",
+        "code": "CCAP.CA",
+        "name_ar": "القلعة للاستثمارات المالية",
+        "weight_pct": 1.84
+      },
+      {
+        "isin": "EGS48031C016",
+        "code": "ETEL.CA",
+        "name_ar": "المصرية للاتصالات",
+        "weight_pct": 6.12
+      },
+      {
+        "isin": "EGS33041C012",
+        "code": "ORWE.CA",
+        "name_ar": "النساجون الشرقيون للسجاد",
+        "weight_pct": 0.63
+      },
+      {
+        "isin": "EGS95001C011",
+        "code": "ORAS.CA",
+        "name_ar": "اوراسكوم كونستراكشون بي ال سي",
+        "weight_pct": 2.11
+      },
+      {
+        "isin": "EGS693V1C014",
+        "code": "OIH.CA",
+        "name_ar": "اوراسكوم للاستثمار القابضه",
+        "weight_pct": 0.43
+      },
+      {
+        "isin": "EGS70321C012",
+        "code": "ORHD.CA",
+        "name_ar": "اوراسكوم للتنمية مصر",
+        "weight_pct": 1.29
+      },
+      {
+        "isin": "EGS743O1C013",
+        "code": "EFIH.CA",
+        "name_ar": "اي فاينانس للاستثمارات المالية والرقمية",
+        "weight_pct": 4.67
+      },
+      {
+        "isin": "EGS305I1C011",
+        "code": "EFID.CA",
+        "name_ar": "ايديتا للصناعات الغذائية",
+        "weight_pct": 1.93
+      },
+      {
+        "isin": "EGS655L1C012",
+        "code": "PHDC.CA",
+        "name_ar": "بالم هيلز للتعمير",
+        "weight_pct": 1.74
+      },
+      {
+        "isin": "EGS691G1C015",
+        "code": "BTFH.CA",
+        "name_ar": "بلتون القابضة",
+        "weight_pct": 1.53
+      },
+      {
+        "isin": "EGS30901C010",
+        "code": "JUFO.CA",
+        "name_ar": "جهينة للصناعات الغذائية",
+        "weight_pct": 0.9
+      },
+      {
+        "isin": "EGS673T1C012",
+        "code": "GBCO.CA",
+        "name_ar": "جى بى كوربوريشن",
+        "weight_pct": 1.51
+      },
+      {
+        "isin": "EGS690C1C010",
+        "code": "RAYA.CA",
+        "name_ar": "راية القابضة للأستثمارات المالية",
+        "weight_pct": 0.85
+      },
+      {
+        "isin": "EGS69082C013",
+        "code": "VLMR.CA",
+        "name_ar": "فالمور القابضة للاستثمار",
+        "weight_pct": 1.6
+      },
+      {
+        "isin": "EGS69081C023",
+        "code": "VLMRA.CA",
+        "name_ar": "فالمور القابضة للاستثماربالجنية",
+        "weight_pct": 0.61
+      },
+      {
+        "isin": "EGS745L1C014",
+        "code": "FWRY.CA",
+        "name_ar": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية",
+        "weight_pct": 5.89
+      },
+      {
+        "isin": "EGS69101C011",
+        "code": "HRHO.CA",
+        "name_ar": "مجموعة اي اف جي القابضة",
+        "weight_pct": 3.19
+      },
+      {
+        "isin": "EGS691S1C011",
+        "code": "TMGH.CA",
+        "name_ar": "مجموعة طلعت مصطفى القابضة",
+        "weight_pct": 11.86
+      },
+      {
+        "isin": "EGS65591C017",
+        "code": "HELI.CA",
+        "name_ar": "مصر الجديدة للاسكان والتعمير",
+        "weight_pct": 1.08
+      },
+      {
+        "isin": "EGS3C391C017",
+        "code": "MCQE.CA",
+        "name_ar": "مصر للاسمنت - قنا",
+        "weight_pct": 0.98
+      },
+      {
+        "isin": "EGS3E181C010",
+        "code": "EGAL.CA",
+        "name_ar": "مصر للالومنيوم",
+        "weight_pct": 1.2
+      },
+      {
+        "isin": "EGS60111C019",
+        "code": "ADIB.CA",
+        "name_ar": "مصرف أبو ظبي الأسلامي- مصر",
+        "weight_pct": 2.8
+      }
+    ],
+    "SHARIAH": [
+      {
+        "isin": "EGS512O1C012",
+        "code": "ISPH.CA",
+        "name_ar": "ابن سينا فارما"
+      },
+      {
+        "isin": "EGS380P1C010",
+        "code": "AMOC.CA",
+        "name_ar": "الاسكندرية للزيوت المعدنية"
+      },
+      {
+        "isin": "EGS520D1C015",
+        "code": "ICFC.CA",
+        "name_ar": "الدولية للأسمدة والكيماويات"
+      },
+      {
+        "isin": "EGS07061C012",
+        "code": "IFAP.CA",
+        "name_ar": "الدوليه للمحاصيل الزراعيه"
+      },
+      {
+        "isin": "EGS65851C015",
+        "code": "OCDI.CA",
+        "name_ar": "السادس من اكتوبر للتنميه والاستثمار- سوديك"
+      },
+      {
+        "isin": "EGS381B1C015",
+        "code": "RMDA.CA",
+        "name_ar": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا"
+      },
+      {
+        "isin": "EGS32221C011",
+        "code": "ACGC.CA",
+        "name_ar": "العربية لحليج الأقطان"
+      },
+      {
+        "isin": "EGS3C0O1C016",
+        "code": "ARCC.CA",
+        "name_ar": "العربية للاسمنت"
+      },
+      {
+        "isin": "EGS65541C012",
+        "code": "CIRA.CA",
+        "name_ar": "القاهره للإستثمار و التنمية العقاريه سيرا للتعليم"
+      },
+      {
+        "isin": "EGS42051C010",
+        "code": "ETRS.CA",
+        "name_ar": "المصرية لخدمات النقل والتجارة ايجيترانس نوسكو"
+      },
+      {
+        "isin": "EGS48031C016",
+        "code": "ETEL.CA",
+        "name_ar": "المصرية للاتصالات"
+      },
+      {
+        "isin": "EGS02091C014",
+        "code": "MPCO.CA",
+        "name_ar": "المنصورة للدواجن"
+      },
+      {
+        "isin": "EGS33041C012",
+        "code": "ORWE.CA",
+        "name_ar": "النساجون الشرقيون للسجاد"
+      },
+      {
+        "isin": "EGS75011C014",
+        "code": "MTIE.CA",
+        "name_ar": "ام.ام جروب للصناعة والتجارة العالمية"
+      },
+      {
+        "isin": "EGS95001C011",
+        "code": "ORAS.CA",
+        "name_ar": "اوراسكوم كونستراكشون بي ال سي"
+      },
+      {
+        "isin": "EGS70321C012",
+        "code": "ORHD.CA",
+        "name_ar": "اوراسكوم للتنمية مصر"
+      },
+      {
+        "isin": "EGS743O1C013",
+        "code": "EFIH.CA",
+        "name_ar": "اي فاينانس للاستثمارات المالية والرقمية"
+      },
+      {
+        "isin": "EGS305I1C011",
+        "code": "EFID.CA",
+        "name_ar": "ايديتا للصناعات الغذائية"
+      },
+      {
+        "isin": "EGS655L1C012",
+        "code": "PHDC.CA",
+        "name_ar": "بالم هيلز للتعمير"
+      },
+      {
+        "isin": "EGS60101C010",
+        "code": "SAUD.CA",
+        "name_ar": "بنك البركة مصر"
+      },
+      {
+        "isin": "EGS60322C012",
+        "code": "FAITA.CA",
+        "name_ar": "بنك فيصل الاسلامي المصري - بالدولار"
+      },
+      {
+        "isin": "EGS60321C014",
+        "code": "FAIT.CA",
+        "name_ar": "بنك فيصل الاسلامي المصرية بالجنية"
+      },
+      {
+        "isin": "EGS30901C010",
+        "code": "JUFO.CA",
+        "name_ar": "جهينة للصناعات الغذائية"
+      },
+      {
+        "isin": "EGS74191C015",
+        "code": "RACC.CA",
+        "name_ar": "راية لخدمات مراكز الاتصالات"
+      },
+      {
+        "isin": "EGS380S1C017",
+        "code": "SKPC.CA",
+        "name_ar": "سيدى كرير للبتروكيماويات - سيدبك"
+      },
+      {
+        "isin": "EGS30AL1C012",
+        "code": "OLFI.CA",
+        "name_ar": "عبور لاند للصناعات الغذائية"
+      },
+      {
+        "isin": "EGS39011C019",
+        "code": "EGAS.CA",
+        "name_ar": "غاز مصر"
+      },
+      {
+        "isin": "EGS3C161C014",
+        "code": "LCSW.CA",
+        "name_ar": "ليسيكو مصر"
+      },
+      {
+        "isin": "EGS691S1C011",
+        "code": "TMGH.CA",
+        "name_ar": "مجموعة طلعت مصطفى القابضة"
+      },
+      {
+        "isin": "EGS65571C019",
+        "code": "MASR.CA",
+        "name_ar": "مدينة مصر للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS3D0C1C018",
+        "code": "ATQA.CA",
+        "name_ar": "مصر الوطنية للصلب - عتاقة"
+      },
+      {
+        "isin": "EGS3C391C017",
+        "code": "MCQE.CA",
+        "name_ar": "مصر للاسمنت - قنا"
+      },
+      {
+        "isin": "EGS3E181C010",
+        "code": "EGAL.CA",
+        "name_ar": "مصر للالومنيوم"
+      },
+      {
+        "isin": "EGS60111C019",
+        "code": "ADIB.CA",
+        "name_ar": "مصرف أبو ظبي الأسلامي- مصر"
+      }
+    ],
+    "EGX70": [
+      {
+        "isin": "EGS675S1C011",
+        "code": "AMER.CA",
+        "name_ar": "(مجموعة عامر القابضة (عامر جروب"
+      },
+      {
+        "isin": "EGS676N1C015",
+        "code": "ATLC.CA",
+        "name_ar": "A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس"
+      },
+      {
+        "isin": "EGS597R1C017",
+        "code": "TALM.CA",
+        "name_ar": "Taaleem Management Services تعليم لخدمات الإدارة"
+      },
+      {
+        "isin": "EGS21351C019",
+        "code": "AIHC.CA",
+        "name_ar": "ارابيا انفستمنتس هولدنج"
+      },
+      {
+        "isin": "EGS65R01C015",
+        "code": "AIDC.CA",
+        "name_ar": "ارابيا للاستثمار والتنمية"
+      },
+      {
+        "isin": "EGS691L1C018",
+        "code": "ASPI.CA",
+        "name_ar": "اسباير كابيتال القابضة للاستثمارات المالية"
+      },
+      {
+        "isin": "EGS3C401C014",
+        "code": "SCEM.CA",
+        "name_ar": "اسمنت سيناء"
+      },
+      {
+        "isin": "EGS10001C013",
+        "code": "ASCM.CA",
+        "name_ar": "اسيك للتعدين    -  اسكوم"
+      },
+      {
+        "isin": "EGS7D5P1C019",
+        "code": "ACTF.CA",
+        "name_ar": "اكت فاينانشال للاستشارات"
+      },
+      {
+        "isin": "EGS42111C012",
+        "code": "ALCN.CA",
+        "name_ar": "الاسكندرية لتداول الحاويات والبضائع"
+      },
+      {
+        "isin": "EGS214Q1C011",
+        "code": "IDRE.CA",
+        "name_ar": "الاسماعيلية الجديدة للتطوير والتنمية العمرانية-شركة منقسمة"
+      },
+      {
+        "isin": "EGS02021C011",
+        "code": "ISMA.CA",
+        "name_ar": "الاسماعيلية مصر للدواجن"
+      },
+      {
+        "isin": "EGS69021C011",
+        "code": "AFDI.CA",
+        "name_ar": "الاهلي للتنمية والاستثمار"
+      },
+      {
+        "isin": "EGS60241C014",
+        "code": "EXPA.CA",
+        "name_ar": "البنك المصري لتنمية الصادرات"
+      },
+      {
+        "isin": "EGS65081C019",
+        "code": "DAPH.CA",
+        "name_ar": "التعمير والاستشارات الهندسية"
+      },
+      {
+        "isin": "EGS102S1C014",
+        "code": "ISMQ.CA",
+        "name_ar": "الحديد والصلب للمناجم والمحاجر"
+      },
+      {
+        "isin": "EGS520D1C015",
+        "code": "ICFC.CA",
+        "name_ar": "الدولية للأسمدة والكيماويات"
+      },
+      {
+        "isin": "EGS07061C012",
+        "code": "IFAP.CA",
+        "name_ar": "الدوليه للمحاصيل الزراعيه"
+      },
+      {
+        "isin": "EGS38251C012",
+        "code": "ZEOT.CA",
+        "name_ar": "الزيوت المستخلصة ومنتجاتها"
+      },
+      {
+        "isin": "EGS65851C015",
+        "code": "OCDI.CA",
+        "name_ar": "السادس من اكتوبر للتنميه والاستثمار- سوديك"
+      },
+      {
+        "isin": "EGS3G0Z1C014",
+        "code": "SWDY.CA",
+        "name_ar": "السويدى اليكتريك"
+      },
+      {
+        "isin": "EGS65091C018",
+        "code": "ELSH.CA",
+        "name_ar": "الشمس للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS21531C016",
+        "code": "UEGC.CA",
+        "name_ar": "الصعيد العامة للمقاولات والاستثمار العقاري SCCD"
+      },
+      {
+        "isin": "EGS3F021C017",
+        "code": "ENGC.CA",
+        "name_ar": "الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون"
+      },
+      {
+        "isin": "EGS3C111C019",
+        "code": "PRCL.CA",
+        "name_ar": "العامة لمنتجات الخزف والصيني"
+      },
+      {
+        "isin": "EGS3C4L1C015",
+        "code": "MEPA.CA",
+        "name_ar": "العبوات الطبية"
+      },
+      {
+        "isin": "EGS65551C011",
+        "code": "OBRI.CA",
+        "name_ar": "العبور للاستثمار العقارى"
+      },
+      {
+        "isin": "EGS3C071C015",
+        "code": "ECAP.CA",
+        "name_ar": "العز للسيراميك و البورسلين - الجوهره"
+      },
+      {
+        "isin": "EGS02051C018",
+        "code": "POUL.CA",
+        "name_ar": "القاهرة للدواجن"
+      },
+      {
+        "isin": "EGS30581C010",
+        "code": "COSG.CA",
+        "name_ar": "القاهرة للزيوت والصابون"
+      },
+      {
+        "isin": "EGS44031C010",
+        "code": "CSAG.CA",
+        "name_ar": "القناة للتوكيلات الملاحية"
+      },
+      {
+        "isin": "EGS22171C010",
+        "code": "IEEC.CA",
+        "name_ar": "المشروعات الصناعية والهندسية"
+      },
+      {
+        "isin": "EGS38081C013",
+        "code": "PHAR.CA",
+        "name_ar": "المصرية الدولية للصناعات الدوائية - ايبيكو"
+      },
+      {
+        "isin": "EGS42051C010",
+        "code": "ETRS.CA",
+        "name_ar": "المصرية لخدمات النقل والتجارة ايجيترانس نوسكو"
+      },
+      {
+        "isin": "EGS70431C019",
+        "code": "EGTS.CA",
+        "name_ar": "المصرية للمنتجعات السياحية"
+      },
+      {
+        "isin": "EGS729F1C012",
+        "code": "MOED.CA",
+        "name_ar": "المصرية لنظم التعليم الحديثة"
+      },
+      {
+        "isin": "EGS78021C010",
+        "code": "MPRC.CA",
+        "name_ar": "المصريه لمدينة الانتاج الاعلامى"
+      },
+      {
+        "isin": "EGS65341C017",
+        "code": "EHDR.CA",
+        "name_ar": "المصريين للاسكان والتنمية والتعمير"
+      },
+      {
+        "isin": "EGS694A1C018",
+        "code": "ARAB.CA",
+        "name_ar": "المطورون العرب القابضة"
+      },
+      {
+        "isin": "EGS67221C019",
+        "code": "AMIA.CA",
+        "name_ar": "الملتقي العربي للاستثمارات"
+      },
+      {
+        "isin": "EGS02091C014",
+        "code": "MPCO.CA",
+        "name_ar": "المنصورة للدواجن"
+      },
+      {
+        "isin": "EGS33061C010",
+        "code": "KABO.CA",
+        "name_ar": "النصر للملابس والمنسوجات - كابو"
+      },
+      {
+        "isin": "EGS38331C012",
+        "code": "NIPH.CA",
+        "name_ar": "النيل للادوية والصناعات الكيماوية - النيل"
+      },
+      {
+        "isin": "EGS75011C014",
+        "code": "MTIE.CA",
+        "name_ar": "ام.ام جروب للصناعة والتجارة العالمية"
+      },
+      {
+        "isin": "EGS696S1C016",
+        "code": "OFH.CA",
+        "name_ar": "او بي المالية القابضة"
+      },
+      {
+        "isin": "EGS60301C016",
+        "code": "HDBK.CA",
+        "name_ar": "بنك التعمير والاسكان"
+      },
+      {
+        "isin": "EGS60041C018",
+        "code": "CIEB.CA",
+        "name_ar": "بنك كريدي اجريكول مصر"
+      },
+      {
+        "isin": "EGS21EB1C011",
+        "code": "TANM.CA",
+        "name_ar": "تنمية للاستثمار العقاري"
+      },
+      {
+        "isin": "EGS38171C012",
+        "code": "BIOC.CA",
+        "name_ar": "جلاكسو سميثكلاين"
+      },
+      {
+        "isin": "EGS3C351C011",
+        "code": "SVCE.CA",
+        "name_ar": "جنوب الوادى للاسمنت"
+      },
+      {
+        "isin": "EGS213S1C010",
+        "code": "GPIM.CA",
+        "name_ar": "جى بى اى للنمو العمرانى"
+      },
+      {
+        "isin": "EGS33321C018",
+        "code": "DSCW.CA",
+        "name_ar": "دايس للملابس الجاهزة"
+      },
+      {
+        "isin": "EGS74191C015",
+        "code": "RACC.CA",
+        "name_ar": "راية لخدمات مراكز الاتصالات"
+      },
+      {
+        "isin": "EGS21171C011",
+        "code": "ZMID.CA",
+        "name_ar": "زهراء المعادي للاستثمار والتعمير"
+      },
+      {
+        "isin": "EGS382M1C011",
+        "code": "SIPC.CA",
+        "name_ar": "سبأ الدولية للأدوية والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS380S1C017",
+        "code": "SKPC.CA",
+        "name_ar": "سيدى كرير للبتروكيماويات - سيدبك"
+      },
+      {
+        "isin": "EGS70571C012",
+        "code": "SDTI.CA",
+        "name_ar": "شارم دريمز للاستثمار السياحى"
+      },
+      {
+        "isin": "EGS23111C015",
+        "code": "NCCW.CA",
+        "name_ar": "شركة النصر للأعمال المدنية"
+      },
+      {
+        "isin": "EGS490S1C014",
+        "code": "TAQA.CA",
+        "name_ar": "طاقة عربية"
+      },
+      {
+        "isin": "EGS738I1C018",
+        "code": "CNFN.CA",
+        "name_ar": "كونتكت المالية القابضة"
+      },
+      {
+        "isin": "EGS3C161C014",
+        "code": "LCSW.CA",
+        "name_ar": "ليسيكو مصر"
+      },
+      {
+        "isin": "EGS7D971C011",
+        "code": "MCRO.CA",
+        "name_ar": "ماكرو جروب للمستحضرات الطبية-ماكرو كابيتال"
+      },
+      {
+        "isin": "EGS65571C019",
+        "code": "MASR.CA",
+        "name_ar": "مدينة مصر للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS3D0C1C018",
+        "code": "ATQA.CA",
+        "name_ar": "مصر الوطنية للصلب - عتاقة"
+      },
+      {
+        "isin": "EGS39061C014",
+        "code": "MFPC.CA",
+        "name_ar": "مصر لإنتاج الأسمدة - موبكو"
+      },
+      {
+        "isin": "EGS30471C014",
+        "code": "AFMC.CA",
+        "name_ar": "مطاحن ومخابز الاسكندرية"
+      },
+      {
+        "isin": "EGS38351C010",
+        "code": "MPCI.CA",
+        "name_ar": "ممفيس للادوية والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS02291C010",
+        "code": "KRDI.CA",
+        "name_ar": "نهر الخير للتنمية والأستثمار الزراعى والخدمات البيئية"
+      },
+      {
+        "isin": "EGS505Z1C018",
+        "code": "VALU.CA",
+        "name_ar": "يو للتمويل الاستهلاكى"
+      },
+      {
+        "isin": "EGS38161C013",
+        "code": "UNIP.CA",
+        "name_ar": "يونيفرسال لصناعة مواد التعبئة و التغليف و الورق - يونيباك"
+      }
+    ],
+    "EGX100": [
+      {
+        "isin": "EGS675S1C011",
+        "code": "AMER.CA",
+        "name_ar": "(مجموعة عامر القابضة (عامر جروب"
+      },
+      {
+        "isin": "EGS676N1C015",
+        "code": "ATLC.CA",
+        "name_ar": "A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس"
+      },
+      {
+        "isin": "EGS597R1C017",
+        "code": "TALM.CA",
+        "name_ar": "Taaleem Management Services تعليم لخدمات الإدارة"
+      },
+      {
+        "isin": "EGS512O1C012",
+        "code": "ISPH.CA",
+        "name_ar": "ابن سينا فارما"
+      },
+      {
+        "isin": "EGS38191C010",
+        "code": "ABUK.CA",
+        "name_ar": "ابوقير للاسمدة والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS21351C019",
+        "code": "AIHC.CA",
+        "name_ar": "ارابيا انفستمنتس هولدنج"
+      },
+      {
+        "isin": "EGS65R01C015",
+        "code": "AIDC.CA",
+        "name_ar": "ارابيا للاستثمار والتنمية"
+      },
+      {
+        "isin": "EGS691L1C018",
+        "code": "ASPI.CA",
+        "name_ar": "اسباير كابيتال القابضة للاستثمارات المالية"
+      },
+      {
+        "isin": "EGS3C401C014",
+        "code": "SCEM.CA",
+        "name_ar": "اسمنت سيناء"
+      },
+      {
+        "isin": "EGS10001C013",
+        "code": "ASCM.CA",
+        "name_ar": "اسيك للتعدين    -  اسكوم"
+      },
+      {
+        "isin": "EGS673Y1C015",
+        "code": "EMFD.CA",
+        "name_ar": "إعمار مصر للتنمية"
+      },
+      {
+        "isin": "EGS7D5P1C019",
+        "code": "ACTF.CA",
+        "name_ar": "اكت فاينانشال للاستشارات"
+      },
+      {
+        "isin": "EGS42111C012",
+        "code": "ALCN.CA",
+        "name_ar": "الاسكندرية لتداول الحاويات والبضائع"
+      },
+      {
+        "isin": "EGS380P1C010",
+        "code": "AMOC.CA",
+        "name_ar": "الاسكندرية للزيوت المعدنية"
+      },
+      {
+        "isin": "EGS214Q1C011",
+        "code": "IDRE.CA",
+        "name_ar": "الاسماعيلية الجديدة للتطوير والتنمية العمرانية-شركة منقسمة"
+      },
+      {
+        "isin": "EGS02021C011",
+        "code": "ISMA.CA",
+        "name_ar": "الاسماعيلية مصر للدواجن"
+      },
+      {
+        "isin": "EGS69021C011",
+        "code": "AFDI.CA",
+        "name_ar": "الاهلي للتنمية والاستثمار"
+      },
+      {
+        "isin": "EGS60121C018",
+        "code": "COMI.CA",
+        "name_ar": "البنك التجاري الدولي -مصر (سى اى بى )"
+      },
+      {
+        "isin": "EGS60241C014",
+        "code": "EXPA.CA",
+        "name_ar": "البنك المصري لتنمية الصادرات"
+      },
+      {
+        "isin": "EGS65081C019",
+        "code": "DAPH.CA",
+        "name_ar": "التعمير والاستشارات الهندسية"
+      },
+      {
+        "isin": "EGS102S1C014",
+        "code": "ISMQ.CA",
+        "name_ar": "الحديد والصلب للمناجم والمحاجر"
+      },
+      {
+        "isin": "EGS520D1C015",
+        "code": "ICFC.CA",
+        "name_ar": "الدولية للأسمدة والكيماويات"
+      },
+      {
+        "isin": "EGS07061C012",
+        "code": "IFAP.CA",
+        "name_ar": "الدوليه للمحاصيل الزراعيه"
+      },
+      {
+        "isin": "EGS38251C012",
+        "code": "ZEOT.CA",
+        "name_ar": "الزيوت المستخلصة ومنتجاتها"
+      },
+      {
+        "isin": "EGS65851C015",
+        "code": "OCDI.CA",
+        "name_ar": "السادس من اكتوبر للتنميه والاستثمار- سوديك"
+      },
+      {
+        "isin": "EGS3G0Z1C014",
+        "code": "SWDY.CA",
+        "name_ar": "السويدى اليكتريك"
+      },
+      {
+        "isin": "EGS37091C013",
+        "code": "EAST.CA",
+        "name_ar": "الشرقية - ايسترن كومباني"
+      },
+      {
+        "isin": "EGS65091C018",
+        "code": "ELSH.CA",
+        "name_ar": "الشمس للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS21531C016",
+        "code": "UEGC.CA",
+        "name_ar": "الصعيد العامة للمقاولات والاستثمار العقاري SCCD"
+      },
+      {
+        "isin": "EGS38201C017",
+        "code": "EGCH.CA",
+        "name_ar": "الصناعات الكيماوية المصرية - كيما"
+      },
+      {
+        "isin": "EGS3F021C017",
+        "code": "ENGC.CA",
+        "name_ar": "الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون"
+      },
+      {
+        "isin": "EGS381B1C015",
+        "code": "RMDA.CA",
+        "name_ar": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا"
+      },
+      {
+        "isin": "EGS3C111C019",
+        "code": "PRCL.CA",
+        "name_ar": "العامة لمنتجات الخزف والصيني"
+      },
+      {
+        "isin": "EGS3C4L1C015",
+        "code": "MEPA.CA",
+        "name_ar": "العبوات الطبية"
+      },
+      {
+        "isin": "EGS65551C011",
+        "code": "OBRI.CA",
+        "name_ar": "العبور للاستثمار العقارى"
+      },
+      {
+        "isin": "EGS3C0O1C016",
+        "code": "ARCC.CA",
+        "name_ar": "العربية للاسمنت"
+      },
+      {
+        "isin": "EGS3C071C015",
+        "code": "ECAP.CA",
+        "name_ar": "العز للسيراميك و البورسلين - الجوهره"
+      },
+      {
+        "isin": "EGS02051C018",
+        "code": "POUL.CA",
+        "name_ar": "القاهرة للدواجن"
+      },
+      {
+        "isin": "EGS30581C010",
+        "code": "COSG.CA",
+        "name_ar": "القاهرة للزيوت والصابون"
+      },
+      {
+        "isin": "EGS73541C012",
+        "code": "CCAP.CA",
+        "name_ar": "القلعة للاستثمارات المالية"
+      },
+      {
+        "isin": "EGS44031C010",
+        "code": "CSAG.CA",
+        "name_ar": "القناة للتوكيلات الملاحية"
+      },
+      {
+        "isin": "EGS22171C010",
+        "code": "IEEC.CA",
+        "name_ar": "المشروعات الصناعية والهندسية"
+      },
+      {
+        "isin": "EGS38081C013",
+        "code": "PHAR.CA",
+        "name_ar": "المصرية الدولية للصناعات الدوائية - ايبيكو"
+      },
+      {
+        "isin": "EGS42051C010",
+        "code": "ETRS.CA",
+        "name_ar": "المصرية لخدمات النقل والتجارة ايجيترانس نوسكو"
+      },
+      {
+        "isin": "EGS48031C016",
+        "code": "ETEL.CA",
+        "name_ar": "المصرية للاتصالات"
+      },
+      {
+        "isin": "EGS70431C019",
+        "code": "EGTS.CA",
+        "name_ar": "المصرية للمنتجعات السياحية"
+      },
+      {
+        "isin": "EGS729F1C012",
+        "code": "MOED.CA",
+        "name_ar": "المصرية لنظم التعليم الحديثة"
+      },
+      {
+        "isin": "EGS78021C010",
+        "code": "MPRC.CA",
+        "name_ar": "المصريه لمدينة الانتاج الاعلامى"
+      },
+      {
+        "isin": "EGS65341C017",
+        "code": "EHDR.CA",
+        "name_ar": "المصريين للاسكان والتنمية والتعمير"
+      },
+      {
+        "isin": "EGS694A1C018",
+        "code": "ARAB.CA",
+        "name_ar": "المطورون العرب القابضة"
+      },
+      {
+        "isin": "EGS67221C019",
+        "code": "AMIA.CA",
+        "name_ar": "الملتقي العربي للاستثمارات"
+      },
+      {
+        "isin": "EGS02091C014",
+        "code": "MPCO.CA",
+        "name_ar": "المنصورة للدواجن"
+      },
+      {
+        "isin": "EGS33041C012",
+        "code": "ORWE.CA",
+        "name_ar": "النساجون الشرقيون للسجاد"
+      },
+      {
+        "isin": "EGS33061C010",
+        "code": "KABO.CA",
+        "name_ar": "النصر للملابس والمنسوجات - كابو"
+      },
+      {
+        "isin": "EGS38331C012",
+        "code": "NIPH.CA",
+        "name_ar": "النيل للادوية والصناعات الكيماوية - النيل"
+      },
+      {
+        "isin": "EGS75011C014",
+        "code": "MTIE.CA",
+        "name_ar": "ام.ام جروب للصناعة والتجارة العالمية"
+      },
+      {
+        "isin": "EGS696S1C016",
+        "code": "OFH.CA",
+        "name_ar": "او بي المالية القابضة"
+      },
+      {
+        "isin": "EGS95001C011",
+        "code": "ORAS.CA",
+        "name_ar": "اوراسكوم كونستراكشون بي ال سي"
+      },
+      {
+        "isin": "EGS693V1C014",
+        "code": "OIH.CA",
+        "name_ar": "اوراسكوم للاستثمار القابضه"
+      },
+      {
+        "isin": "EGS70321C012",
+        "code": "ORHD.CA",
+        "name_ar": "اوراسكوم للتنمية مصر"
+      },
+      {
+        "isin": "EGS743O1C013",
+        "code": "EFIH.CA",
+        "name_ar": "اي فاينانس للاستثمارات المالية والرقمية"
+      },
+      {
+        "isin": "EGS305I1C011",
+        "code": "EFID.CA",
+        "name_ar": "ايديتا للصناعات الغذائية"
+      },
+      {
+        "isin": "EGS655L1C012",
+        "code": "PHDC.CA",
+        "name_ar": "بالم هيلز للتعمير"
+      },
+      {
+        "isin": "EGS691G1C015",
+        "code": "BTFH.CA",
+        "name_ar": "بلتون القابضة"
+      },
+      {
+        "isin": "EGS60301C016",
+        "code": "HDBK.CA",
+        "name_ar": "بنك التعمير والاسكان"
+      },
+      {
+        "isin": "EGS60041C018",
+        "code": "CIEB.CA",
+        "name_ar": "بنك كريدي اجريكول مصر"
+      },
+      {
+        "isin": "EGS21EB1C011",
+        "code": "TANM.CA",
+        "name_ar": "تنمية للاستثمار العقاري"
+      },
+      {
+        "isin": "EGS38171C012",
+        "code": "BIOC.CA",
+        "name_ar": "جلاكسو سميثكلاين"
+      },
+      {
+        "isin": "EGS3C351C011",
+        "code": "SVCE.CA",
+        "name_ar": "جنوب الوادى للاسمنت"
+      },
+      {
+        "isin": "EGS30901C010",
+        "code": "JUFO.CA",
+        "name_ar": "جهينة للصناعات الغذائية"
+      },
+      {
+        "isin": "EGS213S1C010",
+        "code": "GPIM.CA",
+        "name_ar": "جى بى اى للنمو العمرانى"
+      },
+      {
+        "isin": "EGS673T1C012",
+        "code": "GBCO.CA",
+        "name_ar": "جى بى كوربوريشن"
+      },
+      {
+        "isin": "EGS33321C018",
+        "code": "DSCW.CA",
+        "name_ar": "دايس للملابس الجاهزة"
+      },
+      {
+        "isin": "EGS690C1C010",
+        "code": "RAYA.CA",
+        "name_ar": "راية القابضة للأستثمارات المالية"
+      },
+      {
+        "isin": "EGS74191C015",
+        "code": "RACC.CA",
+        "name_ar": "راية لخدمات مراكز الاتصالات"
+      },
+      {
+        "isin": "EGS21171C011",
+        "code": "ZMID.CA",
+        "name_ar": "زهراء المعادي للاستثمار والتعمير"
+      },
+      {
+        "isin": "EGS382M1C011",
+        "code": "SIPC.CA",
+        "name_ar": "سبأ الدولية للأدوية والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS380S1C017",
+        "code": "SKPC.CA",
+        "name_ar": "سيدى كرير للبتروكيماويات - سيدبك"
+      },
+      {
+        "isin": "EGS70571C012",
+        "code": "SDTI.CA",
+        "name_ar": "شارم دريمز للاستثمار السياحى"
+      },
+      {
+        "isin": "EGS23111C015",
+        "code": "NCCW.CA",
+        "name_ar": "شركة النصر للأعمال المدنية"
+      },
+      {
+        "isin": "EGS490S1C014",
+        "code": "TAQA.CA",
+        "name_ar": "طاقة عربية"
+      },
+      {
+        "isin": "EGS69082C013",
+        "code": "VLMR.CA",
+        "name_ar": "فالمور القابضة للاستثمار"
+      },
+      {
+        "isin": "EGS69081C023",
+        "code": "VLMRA.CA",
+        "name_ar": "فالمور القابضة للاستثماربالجنية"
+      },
+      {
+        "isin": "EGS745L1C014",
+        "code": "FWRY.CA",
+        "name_ar": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية"
+      },
+      {
+        "isin": "EGS738I1C018",
+        "code": "CNFN.CA",
+        "name_ar": "كونتكت المالية القابضة"
+      },
+      {
+        "isin": "EGS3C161C014",
+        "code": "LCSW.CA",
+        "name_ar": "ليسيكو مصر"
+      },
+      {
+        "isin": "EGS7D971C011",
+        "code": "MCRO.CA",
+        "name_ar": "ماكرو جروب للمستحضرات الطبية-ماكرو كابيتال"
+      },
+      {
+        "isin": "EGS69101C011",
+        "code": "HRHO.CA",
+        "name_ar": "مجموعة اي اف جي القابضة"
+      },
+      {
+        "isin": "EGS691S1C011",
+        "code": "TMGH.CA",
+        "name_ar": "مجموعة طلعت مصطفى القابضة"
+      },
+      {
+        "isin": "EGS65571C019",
+        "code": "MASR.CA",
+        "name_ar": "مدينة مصر للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS65591C017",
+        "code": "HELI.CA",
+        "name_ar": "مصر الجديدة للاسكان والتعمير"
+      },
+      {
+        "isin": "EGS3D0C1C018",
+        "code": "ATQA.CA",
+        "name_ar": "مصر الوطنية للصلب - عتاقة"
+      },
+      {
+        "isin": "EGS39061C014",
+        "code": "MFPC.CA",
+        "name_ar": "مصر لإنتاج الأسمدة - موبكو"
+      },
+      {
+        "isin": "EGS3C391C017",
+        "code": "MCQE.CA",
+        "name_ar": "مصر للاسمنت - قنا"
+      },
+      {
+        "isin": "EGS3E181C010",
+        "code": "EGAL.CA",
+        "name_ar": "مصر للالومنيوم"
+      },
+      {
+        "isin": "EGS60111C019",
+        "code": "ADIB.CA",
+        "name_ar": "مصرف أبو ظبي الأسلامي- مصر"
+      },
+      {
+        "isin": "EGS30471C014",
+        "code": "AFMC.CA",
+        "name_ar": "مطاحن ومخابز الاسكندرية"
+      },
+      {
+        "isin": "EGS38351C010",
+        "code": "MPCI.CA",
+        "name_ar": "ممفيس للادوية والصناعات الكيماوية"
+      },
+      {
+        "isin": "EGS02291C010",
+        "code": "KRDI.CA",
+        "name_ar": "نهر الخير للتنمية والأستثمار الزراعى والخدمات البيئية"
+      },
+      {
+        "isin": "EGS505Z1C018",
+        "code": "VALU.CA",
+        "name_ar": "يو للتمويل الاستهلاكى"
+      },
+      {
+        "isin": "EGS38161C013",
+        "code": "UNIP.CA",
+        "name_ar": "يونيفرسال لصناعة مواد التعبئة و التغليف و الورق - يونيباك"
+      }
+    ]
   },
-  "indexCharts": {}
+  "indexCharts": {
+    "SHARIAH": [
+      {
+        "time": "2026-07-21T09:58:00",
+        "value": 5957.71
+      },
+      {
+        "time": "2026-07-21T10:00:00",
+        "value": 5972.67
+      },
+      {
+        "time": "2026-07-21T10:05:00",
+        "value": 5989.18
+      },
+      {
+        "time": "2026-07-21T10:10:00",
+        "value": 6001.93
+      },
+      {
+        "time": "2026-07-21T10:15:00",
+        "value": 6009.32
+      },
+      {
+        "time": "2026-07-21T10:20:00",
+        "value": 6014.16
+      },
+      {
+        "time": "2026-07-21T10:25:00",
+        "value": 6037.83
+      },
+      {
+        "time": "2026-07-21T10:30:00",
+        "value": 6030.68
+      },
+      {
+        "time": "2026-07-21T10:35:00",
+        "value": 6030.59
+      },
+      {
+        "time": "2026-07-21T10:40:00",
+        "value": 6033.23
+      },
+      {
+        "time": "2026-07-21T10:45:00",
+        "value": 6038.23
+      },
+      {
+        "time": "2026-07-21T10:50:00",
+        "value": 6039.88
+      },
+      {
+        "time": "2026-07-21T10:55:00",
+        "value": 6044.3
+      },
+      {
+        "time": "2026-07-21T11:00:00",
+        "value": 6053.25
+      },
+      {
+        "time": "2026-07-21T11:05:00",
+        "value": 6047.57
+      },
+      {
+        "time": "2026-07-21T11:10:00",
+        "value": 6052.46
+      },
+      {
+        "time": "2026-07-21T11:15:00",
+        "value": 6049.34
+      },
+      {
+        "time": "2026-07-21T11:20:00",
+        "value": 6050.48
+      },
+      {
+        "time": "2026-07-21T11:25:00",
+        "value": 6051.65
+      },
+      {
+        "time": "2026-07-21T11:30:00",
+        "value": 6051.57
+      },
+      {
+        "time": "2026-07-21T11:35:00",
+        "value": 6044.51
+      },
+      {
+        "time": "2026-07-21T11:40:00",
+        "value": 6047.95
+      },
+      {
+        "time": "2026-07-21T11:45:00",
+        "value": 6052.06
+      },
+      {
+        "time": "2026-07-21T11:50:00",
+        "value": 6048.01
+      },
+      {
+        "time": "2026-07-21T11:55:00",
+        "value": 6046.41
+      },
+      {
+        "time": "2026-07-21T12:00:00",
+        "value": 6043.21
+      },
+      {
+        "time": "2026-07-21T12:05:00",
+        "value": 6047.22
+      },
+      {
+        "time": "2026-07-21T12:10:00",
+        "value": 6046.67
+      },
+      {
+        "time": "2026-07-21T12:15:00",
+        "value": 6049.77
+      },
+      {
+        "time": "2026-07-21T12:20:00",
+        "value": 6046.36
+      },
+      {
+        "time": "2026-07-21T12:25:00",
+        "value": 6047.84
+      },
+      {
+        "time": "2026-07-21T12:30:00",
+        "value": 6042.02
+      },
+      {
+        "time": "2026-07-21T12:35:00",
+        "value": 6042.41
+      },
+      {
+        "time": "2026-07-21T12:40:00",
+        "value": 6040.22
+      },
+      {
+        "time": "2026-07-21T12:45:00",
+        "value": 6043.12
+      },
+      {
+        "time": "2026-07-21T12:50:00",
+        "value": 6050.85
+      },
+      {
+        "time": "2026-07-21T12:55:00",
+        "value": 6049.1
+      },
+      {
+        "time": "2026-07-21T13:00:00",
+        "value": 6044.17
+      },
+      {
+        "time": "2026-07-21T13:05:00",
+        "value": 6042.8
+      },
+      {
+        "time": "2026-07-21T13:10:00",
+        "value": 6046.08
+      },
+      {
+        "time": "2026-07-21T13:15:00",
+        "value": 6042.31
+      },
+      {
+        "time": "2026-07-21T13:20:00",
+        "value": 6043.09
+      },
+      {
+        "time": "2026-07-21T13:25:00",
+        "value": 6040.77
+      },
+      {
+        "time": "2026-07-21T13:30:00",
+        "value": 6040.97
+      }
+    ],
+    "EGX30": [
+      {
+        "time": "2026-07-21T09:58:00",
+        "value": 53126.01
+      },
+      {
+        "time": "2026-07-21T10:00:00",
+        "value": 53232.93
+      },
+      {
+        "time": "2026-07-21T10:05:00",
+        "value": 53391.73
+      },
+      {
+        "time": "2026-07-21T10:10:00",
+        "value": 53562.97
+      },
+      {
+        "time": "2026-07-21T10:15:00",
+        "value": 53620.2
+      },
+      {
+        "time": "2026-07-21T10:20:00",
+        "value": 53659.71
+      },
+      {
+        "time": "2026-07-21T10:25:00",
+        "value": 53765.66
+      },
+      {
+        "time": "2026-07-21T10:30:00",
+        "value": 53764.16
+      },
+      {
+        "time": "2026-07-21T10:35:00",
+        "value": 53821.25
+      },
+      {
+        "time": "2026-07-21T10:40:00",
+        "value": 53809.57
+      },
+      {
+        "time": "2026-07-21T10:45:00",
+        "value": 53794.31
+      },
+      {
+        "time": "2026-07-21T10:50:00",
+        "value": 53792.31
+      },
+      {
+        "time": "2026-07-21T10:55:00",
+        "value": 53810.83
+      },
+      {
+        "time": "2026-07-21T11:00:00",
+        "value": 53851.96
+      },
+      {
+        "time": "2026-07-21T11:05:00",
+        "value": 53836.46
+      },
+      {
+        "time": "2026-07-21T11:10:00",
+        "value": 53915.22
+      },
+      {
+        "time": "2026-07-21T11:15:00",
+        "value": 53889.82
+      },
+      {
+        "time": "2026-07-21T11:20:00",
+        "value": 54022.09
+      },
+      {
+        "time": "2026-07-21T11:25:00",
+        "value": 54015.97
+      },
+      {
+        "time": "2026-07-21T11:30:00",
+        "value": 54039.56
+      },
+      {
+        "time": "2026-07-21T11:35:00",
+        "value": 53981.91
+      },
+      {
+        "time": "2026-07-21T11:40:00",
+        "value": 53999.86
+      },
+      {
+        "time": "2026-07-21T11:45:00",
+        "value": 54020.87
+      },
+      {
+        "time": "2026-07-21T11:50:00",
+        "value": 54043.76
+      },
+      {
+        "time": "2026-07-21T11:55:00",
+        "value": 54062.39
+      },
+      {
+        "time": "2026-07-21T12:00:00",
+        "value": 54000.22
+      },
+      {
+        "time": "2026-07-21T12:05:00",
+        "value": 53989.56
+      },
+      {
+        "time": "2026-07-21T12:10:00",
+        "value": 53943.26
+      },
+      {
+        "time": "2026-07-21T12:15:00",
+        "value": 53942.99
+      },
+      {
+        "time": "2026-07-21T12:20:00",
+        "value": 53919.96
+      },
+      {
+        "time": "2026-07-21T12:25:00",
+        "value": 53914.78
+      },
+      {
+        "time": "2026-07-21T12:30:00",
+        "value": 53893.63
+      },
+      {
+        "time": "2026-07-21T12:35:00",
+        "value": 53905.37
+      },
+      {
+        "time": "2026-07-21T12:40:00",
+        "value": 53888.95
+      },
+      {
+        "time": "2026-07-21T12:45:00",
+        "value": 53938.03
+      },
+      {
+        "time": "2026-07-21T12:50:00",
+        "value": 53968.21
+      },
+      {
+        "time": "2026-07-21T12:55:00",
+        "value": 53960.77
+      },
+      {
+        "time": "2026-07-21T13:00:00",
+        "value": 53892.75
+      },
+      {
+        "time": "2026-07-21T13:05:00",
+        "value": 53907.75
+      },
+      {
+        "time": "2026-07-21T13:10:00",
+        "value": 53906.34
+      },
+      {
+        "time": "2026-07-21T13:15:00",
+        "value": 53868.97
+      },
+      {
+        "time": "2026-07-21T13:20:00",
+        "value": 53892.39
+      },
+      {
+        "time": "2026-07-21T13:25:00",
+        "value": 53887.18
+      },
+      {
+        "time": "2026-07-21T13:30:00",
+        "value": 53893.0
+      },
+      {
+        "time": "2026-07-21T13:35:00",
+        "value": 53872.41
+      }
+    ],
+    "EGX70": [
+      {
+        "time": "2026-07-21T09:58:00",
+        "value": 17560.69
+      },
+      {
+        "time": "2026-07-21T10:00:00",
+        "value": 17623.04
+      },
+      {
+        "time": "2026-07-21T10:05:00",
+        "value": 17633.02
+      },
+      {
+        "time": "2026-07-21T10:10:00",
+        "value": 17685.61
+      },
+      {
+        "time": "2026-07-21T10:15:00",
+        "value": 17658.45
+      },
+      {
+        "time": "2026-07-21T10:20:00",
+        "value": 17631.09
+      },
+      {
+        "time": "2026-07-21T10:25:00",
+        "value": 17616.24
+      },
+      {
+        "time": "2026-07-21T10:30:00",
+        "value": 17636.38
+      },
+      {
+        "time": "2026-07-21T10:35:00",
+        "value": 17642.32
+      },
+      {
+        "time": "2026-07-21T10:40:00",
+        "value": 17641.15
+      },
+      {
+        "time": "2026-07-21T10:45:00",
+        "value": 17637.5
+      },
+      {
+        "time": "2026-07-21T10:50:00",
+        "value": 17646.26
+      },
+      {
+        "time": "2026-07-21T10:55:00",
+        "value": 17639.35
+      },
+      {
+        "time": "2026-07-21T11:00:00",
+        "value": 17626.32
+      },
+      {
+        "time": "2026-07-21T11:05:00",
+        "value": 17623.73
+      },
+      {
+        "time": "2026-07-21T11:10:00",
+        "value": 17623.87
+      },
+      {
+        "time": "2026-07-21T11:15:00",
+        "value": 17625.45
+      },
+      {
+        "time": "2026-07-21T11:20:00",
+        "value": 17623.34
+      },
+      {
+        "time": "2026-07-21T11:25:00",
+        "value": 17612.23
+      },
+      {
+        "time": "2026-07-21T11:30:00",
+        "value": 17621.85
+      },
+      {
+        "time": "2026-07-21T11:35:00",
+        "value": 17611.91
+      },
+      {
+        "time": "2026-07-21T11:40:00",
+        "value": 17616.4
+      },
+      {
+        "time": "2026-07-21T11:45:00",
+        "value": 17620.65
+      },
+      {
+        "time": "2026-07-21T11:50:00",
+        "value": 17626.06
+      },
+      {
+        "time": "2026-07-21T11:55:00",
+        "value": 17634.7
+      },
+      {
+        "time": "2026-07-21T12:00:00",
+        "value": 17606.73
+      },
+      {
+        "time": "2026-07-21T12:05:00",
+        "value": 17597.02
+      },
+      {
+        "time": "2026-07-21T12:10:00",
+        "value": 17604.61
+      },
+      {
+        "time": "2026-07-21T12:15:00",
+        "value": 17587.53
+      },
+      {
+        "time": "2026-07-21T12:20:00",
+        "value": 17577.96
+      },
+      {
+        "time": "2026-07-21T12:25:00",
+        "value": 17585.53
+      },
+      {
+        "time": "2026-07-21T12:30:00",
+        "value": 17575.42
+      },
+      {
+        "time": "2026-07-21T12:35:00",
+        "value": 17574.82
+      },
+      {
+        "time": "2026-07-21T12:40:00",
+        "value": 17576.01
+      },
+      {
+        "time": "2026-07-21T12:45:00",
+        "value": 17562.9
+      },
+      {
+        "time": "2026-07-21T12:50:00",
+        "value": 17551.9
+      },
+      {
+        "time": "2026-07-21T12:55:00",
+        "value": 17558.66
+      },
+      {
+        "time": "2026-07-21T13:00:00",
+        "value": 17570.35
+      },
+      {
+        "time": "2026-07-21T13:05:00",
+        "value": 17564.3
+      },
+      {
+        "time": "2026-07-21T13:10:00",
+        "value": 17571.15
+      },
+      {
+        "time": "2026-07-21T13:15:00",
+        "value": 17574.99
+      },
+      {
+        "time": "2026-07-21T13:20:00",
+        "value": 17581.19
+      },
+      {
+        "time": "2026-07-21T13:25:00",
+        "value": 17542.99
+      },
+      {
+        "time": "2026-07-21T13:30:00",
+        "value": 17528.72
+      },
+      {
+        "time": "2026-07-21T13:35:00",
+        "value": 17521.21
+      }
+    ],
+    "EGX100": [
+      {
+        "time": "2026-07-21T09:58:00",
+        "value": 23397.83
+      },
+      {
+        "time": "2026-07-21T10:00:00",
+        "value": 23468.23
+      },
+      {
+        "time": "2026-07-21T10:05:00",
+        "value": 23492.73
+      },
+      {
+        "time": "2026-07-21T10:10:00",
+        "value": 23550.61
+      },
+      {
+        "time": "2026-07-21T10:15:00",
+        "value": 23530.36
+      },
+      {
+        "time": "2026-07-21T10:20:00",
+        "value": 23507.17
+      },
+      {
+        "time": "2026-07-21T10:25:00",
+        "value": 23503.77
+      },
+      {
+        "time": "2026-07-21T10:30:00",
+        "value": 23523.28
+      },
+      {
+        "time": "2026-07-21T10:35:00",
+        "value": 23529.92
+      },
+      {
+        "time": "2026-07-21T10:40:00",
+        "value": 23526.79
+      },
+      {
+        "time": "2026-07-21T10:45:00",
+        "value": 23526.19
+      },
+      {
+        "time": "2026-07-21T10:50:00",
+        "value": 23531.18
+      },
+      {
+        "time": "2026-07-21T10:55:00",
+        "value": 23525.24
+      },
+      {
+        "time": "2026-07-21T11:00:00",
+        "value": 23516.78
+      },
+      {
+        "time": "2026-07-21T11:05:00",
+        "value": 23510.86
+      },
+      {
+        "time": "2026-07-21T11:10:00",
+        "value": 23516.71
+      },
+      {
+        "time": "2026-07-21T11:15:00",
+        "value": 23516.5
+      },
+      {
+        "time": "2026-07-21T11:20:00",
+        "value": 23513.1
+      },
+      {
+        "time": "2026-07-21T11:25:00",
+        "value": 23507.08
+      },
+      {
+        "time": "2026-07-21T11:30:00",
+        "value": 23514.02
+      },
+      {
+        "time": "2026-07-21T11:35:00",
+        "value": 23503.92
+      },
+      {
+        "time": "2026-07-21T11:40:00",
+        "value": 23512.58
+      },
+      {
+        "time": "2026-07-21T11:45:00",
+        "value": 23518.95
+      },
+      {
+        "time": "2026-07-21T11:50:00",
+        "value": 23522.9
+      },
+      {
+        "time": "2026-07-21T11:55:00",
+        "value": 23530.86
+      },
+      {
+        "time": "2026-07-21T12:00:00",
+        "value": 23500.42
+      },
+      {
+        "time": "2026-07-21T12:05:00",
+        "value": 23494.55
+      },
+      {
+        "time": "2026-07-21T12:10:00",
+        "value": 23500.04
+      },
+      {
+        "time": "2026-07-21T12:15:00",
+        "value": 23481.93
+      },
+      {
+        "time": "2026-07-21T12:20:00",
+        "value": 23468.12
+      },
+      {
+        "time": "2026-07-21T12:25:00",
+        "value": 23475.37
+      },
+      {
+        "time": "2026-07-21T12:30:00",
+        "value": 23462.79
+      },
+      {
+        "time": "2026-07-21T12:35:00",
+        "value": 23461.83
+      },
+      {
+        "time": "2026-07-21T12:40:00",
+        "value": 23460.6
+      },
+      {
+        "time": "2026-07-21T12:45:00",
+        "value": 23450.04
+      },
+      {
+        "time": "2026-07-21T12:50:00",
+        "value": 23441.01
+      },
+      {
+        "time": "2026-07-21T12:55:00",
+        "value": 23451.92
+      },
+      {
+        "time": "2026-07-21T13:00:00",
+        "value": 23460.43
+      },
+      {
+        "time": "2026-07-21T13:05:00",
+        "value": 23456.69
+      },
+      {
+        "time": "2026-07-21T13:10:00",
+        "value": 23463.23
+      },
+      {
+        "time": "2026-07-21T13:15:00",
+        "value": 23466.27
+      },
+      {
+        "time": "2026-07-21T13:20:00",
+        "value": 23472.16
+      },
+      {
+        "time": "2026-07-21T13:25:00",
+        "value": 23432.66
+      },
+      {
+        "time": "2026-07-21T13:30:00",
+        "value": 23417.57
+      },
+      {
+        "time": "2026-07-21T13:35:00",
+        "value": 23405.85
+      }
+    ]
+  }
 }
