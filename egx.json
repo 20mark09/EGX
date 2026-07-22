@@ -1,74 +1,13 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-22 12:17 UTC",
+  "lastUpdated": "2026-07-22 14:27 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
   "indices": {},
-  "gainers": [
-    {
-      "name": "Catalyst Partners Middle East –CPME",
-      "price": 21.48,
-      "change_pct": 18.54,
-      "code": "CPME"
-    },
-    {
-      "name": "Alexandria New Medical Center",
-      "price": 121.0,
-      "change_pct": 12.1,
-      "code": "AMES"
-    },
-    {
-      "name": "Glaxo Smith Kline",
-      "price": 121.7,
-      "change_pct": 9.94,
-      "code": "BIOC"
-    },
-    {
-      "name": "Arab Cotton Ginning",
-      "price": 10.83,
-      "change_pct": 7.23,
-      "code": "ACGC"
-    },
-    {
-      "name": "El Shams Housing & Urbanization",
-      "price": 15.1,
-      "change_pct": 7.17,
-      "code": "ELSH"
-    }
-  ],
-  "losers": [
-    {
-      "name": "Naeem Real Estate Holding Group",
-      "price": 17.55,
-      "change_pct": -3.57,
-      "code": "NARE"
-    },
-    {
-      "name": "ARAB POLVARA SPINNING & WEAVING CO.",
-      "price": 8.91,
-      "change_pct": -3.47
-    },
-    {
-      "name": "Rubex International for Plastic and Acrylic Manufacturing",
-      "price": 13.2,
-      "change_pct": -3.37,
-      "code": "RUBX"
-    },
-    {
-      "name": "Universal For Paper and Packaging Materials (Unipack",
-      "price": 0.408,
-      "change_pct": -3.32,
-      "code": "UNIP"
-    },
-    {
-      "name": "Medical Packaging Company",
-      "price": 1.93,
-      "change_pct": -3.02,
-      "code": "MEPA"
-    }
-  ],
+  "gainers": [],
+  "losers": [],
   "marketSummary": {
     "main_market": {
       "listed_total": {
@@ -333,67 +272,175 @@
   "news": [],
   "disclosures": [
     {
-      "id": "291833",
-      "title": "Sinai Cement (SCEM.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "id": "291850",
+      "title": "Egyptian Satellites (NileSat) (EGSA.CA) - Release Concerning the Periodic Disclosure to Shareholders",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291833"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291850"
     },
     {
-      "id": "291829",
-      "title": "Musharaka Sukuks Al Ahly SUKUK 3rd Iss Sep 2032 (EGAHLSK3CV) Declares Bond Dividends for Coupon No. (8)",
+      "id": "291849",
+      "title": "Export Development Bank of Egypt (EXPA.CA) - Release Concerning the Periodic Disclosure to Shareholders",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291829"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291849"
     },
     {
-      "id": "291828",
-      "title": "Al Ahly SUKUK the First Issuance March 2032 (EGAHLSK01CV) Declares Bond Dividends for Coupon No. (13)",
+      "id": "291848",
+      "title": "E-Finance For Digital and Financial Investements SAE (EFIH.CA) - Release Concerning the Periodic Disclosure to Shareholders",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291828"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291848"
     },
     {
-      "id": "291827",
-      "title": "El-Nile Co. For Pharmaceuticals And Chemical Industries (NIPH.CA) - Board of Directors' Decisions",
+      "id": "291847",
+      "title": "Fawry For Banking Technology And Electronic Payment (FWRY.CA) - Release Regarding the Periodic Disclosure to Shareholders",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291827"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291847"
     },
     {
-      "id": "291826",
-      "title": "Release from Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda (RMDA.CA) Regarding the AGM Invitation",
+      "id": "291846",
+      "title": "Egyptian Media Production City (MPRC.CA) - Release Concerning the Periodic Disclosure to Shareholders",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291826"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291846"
     },
     {
-      "id": "291825",
-      "title": "Premium Healthcare Group (PHGC.CA) - Board of Directors' Decisions",
+      "id": "291844",
+      "title": "October Pharma (OCPH.CA) Declares a Stock Dividends",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291825"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291844"
     },
     {
-      "id": "291824",
-      "title": "Edita Food Industries S.A.E (EFID.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "id": "291843",
+      "title": "Nasr Company for Civil Works (NCCW.CA) Declares a Stock Dividends",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291824"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291843"
     },
     {
-      "id": "291823",
-      "title": "Release from Golden Textiles & Clothes Wool (GTWL.CA) Concerning the EGM Invitation",
+      "id": "291841",
+      "title": "Juhayna Food Industries (JUFO.CA) Declares a Stock Dividends",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291823"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291841"
     },
     {
-      "id": "291822",
-      "title": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 21/07/2026",
+      "id": "291840",
+      "title": "Bonyan for Development and Trade (BONY.CA) Declares a Stock Dividends",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291822"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291840"
     },
     {
-      "id": "291821",
-      "title": "Release from Al Khair River For Development Agricultural Investment&Envir (KRDI.CA) Regarding the AGM",
+      "id": "291838",
+      "title": "Arab Co. for Asset Management And Development (ACAMD.CA) Declares Cash Dividend",
       "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291821"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=291838"
     }
   ],
   "bulletin": [
+    {
+      "id": null,
+      "title": "ليسيكو مصر",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62644&All="
+    },
+    {
+      "id": null,
+      "title": "سندات جولدن بيراميدز بلازا- الدفعة الاولي-الاصدار الثاني2028 (EGGOSEA2=CA) يعلن عن توزيع كوبون السند رقم (23)",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341618&All="
+    },
+    {
+      "id": null,
+      "title": "الوطنية للاسكان للنقابات المهنية (NHPS.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341617&All="
+    },
+    {
+      "id": null,
+      "title": "كرستمارك للمقاولات والتطوير العقاري (CRST.CA) استدراك من الشركة",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341616&All="
+    },
+    {
+      "id": null,
+      "title": "سيدى كرير للبتروكيماويات (SKPC.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341615&All="
+    },
+    {
+      "id": null,
+      "title": "الاسكندرية للزيوت المعدنية - اموك (AMOC.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341614&All="
+    },
+    {
+      "id": null,
+      "title": "قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62643&All="
+    },
+    {
+      "id": null,
+      "title": "قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62642&All="
+    },
+    {
+      "id": null,
+      "title": "البنك المصري لتنمية الصادرات (EXPA.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341613&All="
+    },
+    {
+      "id": null,
+      "title": "المصرية للأقمار الصناعية (نايل سات) (EGSA.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341612&All="
+    },
+    {
+      "id": null,
+      "title": "قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62641&All="
+    },
+    {
+      "id": null,
+      "title": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية (FWRY.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341611&All="
+    },
+    {
+      "id": null,
+      "title": "قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62640&All="
+    },
+    {
+      "id": null,
+      "title": "اي فاينانس للاستثمارات المالية والرقمية (EFIH.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341610&All="
+    },
+    {
+      "id": null,
+      "title": "قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=62639&All="
+    },
+    {
+      "id": null,
+      "title": "الشركة العربية لادارة وتطوير الاصول (ACAMD.CA) تعلن عن توزيع نقدي",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341609&All="
+    },
+    {
+      "id": null,
+      "title": "المصريه لمدينة الانتاج الاعلامى (MPRC.CA) بيان",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341608&All="
+    },
+    {
+      "id": null,
+      "title": "المصرية لنظم التعليم الحديثة (MOED.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
+      "date": "22/07/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341607&All="
+    },
     {
       "id": null,
       "title": "الحفر الوطنية (NDRL.CA.) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
@@ -405,114 +452,6 @@
       "title": "سبأ الدولية للأدوية والصناعات الكيماوية (SIPC.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
       "date": "22/07/2026",
       "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341605&All="
-    },
-    {
-      "id": null,
-      "title": "فيوتشر كير للصناعات الطبية (FCMD.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341604&All="
-    },
-    {
-      "id": null,
-      "title": "انترناشيونال بزنيس كوربوريشن للتجارة والتوكيلات التجارية (IBCT.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341603&All="
-    },
-    {
-      "id": null,
-      "title": "الشركة العربية لادارة وتطوير الاصول (ACAMD.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341602&All="
-    },
-    {
-      "id": null,
-      "title": "فالمور القابضة للاستثمار (VLMRA.CA,VLMR.CA) - بيان من الشركة",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341601&All="
-    },
-    {
-      "id": null,
-      "title": "المصرية الكويتية للاستثمار والتجارة (MKIT.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341600&All="
-    },
-    {
-      "id": null,
-      "title": "جنوب الوادى للاسمنت (SVCE.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341599&All="
-    },
-    {
-      "id": null,
-      "title": "اجواء للصناعات الغذائية - مصر (AJWA.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341598&All="
-    },
-    {
-      "id": null,
-      "title": "الاهلي للتنمية والاستثمار (AFDI.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341597&All="
-    },
-    {
-      "id": null,
-      "title": "جولدن بيراميدز بلازا (GPPL.CA) محضر إجتماع الجمعية العامة غير العادية التى انعقدت فى 2026/07/09 (موثق)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341596&All="
-    },
-    {
-      "id": null,
-      "title": "مدينة مصر للاسكان والتعمير (MASR.CA) - بيان من الشركة",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341595&All="
-    },
-    {
-      "id": null,
-      "title": "ديجيتايز للاستثمار والتقنية (DGTZ.CA) قرار لجنة القيد بجلستها المنعقدة بتاريخ 22/07/2026",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341594&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الثالث شريحة ج يونيو 2027 (EGALTW03C=CA) يعلن عن توزيع كوبون السند رقم (50)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341593&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الرابع شريحة ب اكتوبر 2026 (EGALTW04B=CA) يعلن عن توزيع كوبون السند رقم (35)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341592&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الرابع  شريحة ج يناير 2028 (EGALTW04C=CA) يعلن عن توزيع كوبون السند رقم (35)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341591&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الخامس الشريحة أ يناير 2027 (EGBATSC5ACV) يعلن عن توزيع كوبون السند رقم (18)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341590&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الخامس الشريحة ب يناير 2028 (EGBATSC5BCV) يعلن عن توزيع كوبون السند رقم (18)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341589&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الخامس شريحة ج ديسمبر 2028 (EGBATSC5CCV) يعلن عن توزيع كوبون السند رقم (18)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341588&All="
-    },
-    {
-      "id": null,
-      "title": "سندات التوفيق للتوريق الاصدار الاول البرنامج الاول شريحة أ يناير 2028 (EGBATSC1P1ACV) يعلن عن توزيع كوبون السند رقم (7)",
-      "date": "22/07/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=341587&All="
     }
   ],
   "investorActivity": {
