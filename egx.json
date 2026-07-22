@@ -1,13 +1,111 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-22 14:27 UTC",
+  "lastUpdated": "2026-07-22 16:00 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {},
-  "gainers": [],
-  "losers": [],
+  "indices": {
+    "EGX30": {
+      "date": "22/07/2026",
+      "value": 53931.92,
+      "open": 53989.55,
+      "high": 54152.72,
+      "low": 53829.96,
+      "change_pct": -0.11,
+      "ytd_pct": 28.93
+    },
+    "SHARIAH": {
+      "date": "22/07/2026",
+      "value": 53931.92,
+      "open": 53989.55,
+      "high": 54152.72,
+      "low": 53829.96,
+      "change_pct": -0.11,
+      "ytd_pct": 28.93
+    },
+    "EGX70": {
+      "date": "22/07/2026",
+      "value": 17706.12,
+      "open": 17584.14,
+      "high": 17731.59,
+      "low": 17584.14,
+      "change_pct": 0.69,
+      "ytd_pct": 34.9
+    },
+    "EGX100": {
+      "date": "22/07/2026",
+      "value": 23597.48,
+      "open": 23482.05,
+      "high": 23634.75,
+      "low": 23482.05,
+      "change_pct": 0.49,
+      "ytd_pct": 35.42
+    }
+  },
+  "gainers": [
+    {
+      "name": "Catalyst Partners Middle East –CPME",
+      "price": 21.48,
+      "change_pct": 18.54,
+      "code": "CPME"
+    },
+    {
+      "name": "Alexandria New Medical Center",
+      "price": 121.0,
+      "change_pct": 12.1,
+      "code": "AMES"
+    },
+    {
+      "name": "Glaxo Smith Kline",
+      "price": 121.7,
+      "change_pct": 9.94,
+      "code": "BIOC"
+    },
+    {
+      "name": "Arab Cotton Ginning",
+      "price": 10.83,
+      "change_pct": 7.23,
+      "code": "ACGC"
+    },
+    {
+      "name": "El Shams Housing & Urbanization",
+      "price": 15.1,
+      "change_pct": 7.17,
+      "code": "ELSH"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Naeem Real Estate Holding Group",
+      "price": 17.55,
+      "change_pct": -3.57,
+      "code": "NARE"
+    },
+    {
+      "name": "ARAB POLVARA SPINNING & WEAVING CO.",
+      "price": 8.91,
+      "change_pct": -3.47
+    },
+    {
+      "name": "Rubex International for Plastic and Acrylic Manufacturing",
+      "price": 13.2,
+      "change_pct": -3.37,
+      "code": "RUBX"
+    },
+    {
+      "name": "Universal For Paper and Packaging Materials (Unipack",
+      "price": 0.408,
+      "change_pct": -3.32,
+      "code": "UNIP"
+    },
+    {
+      "name": "Medical Packaging Company",
+      "price": 1.93,
+      "change_pct": -3.02,
+      "code": "MEPA"
+    }
+  ],
   "marketSummary": {
     "main_market": {
       "listed_total": {
@@ -455,59 +553,7 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 86405717316.0,
-          "sell": 87131495435.0,
-          "net": -725778119.0
-        },
-        "arabs": {
-          "buy": 11867377700.0,
-          "sell": 15788140640.0,
-          "net": -3920762940.0
-        },
-        "foreigners": {
-          "buy": 24351617703.0,
-          "sell": 19705076645.0,
-          "net": 4646541058.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 9634703308.0,
-          "sell": 9440414111.0,
-          "net": 194289197.0
-        },
-        "foreigners": {
-          "buy": 21214475.0,
-          "sell": 3979449.0,
-          "net": 17235027.0
-        },
-        "arabs": {
-          "buy": 440693030.0,
-          "sell": 276245667.0,
-          "net": 164447363.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 76771014008.0,
-          "sell": 77691081323.0,
-          "net": -920067316.0
-        },
-        "foreigners": {
-          "buy": 24330403228.0,
-          "sell": 19701097196.0,
-          "net": 4629306032.0
-        },
-        "arabs": {
-          "buy": 11426684670.0,
-          "sell": 15511894973.0,
-          "net": -4085210303.0
-        }
-      }
-    },
+    "byGroup": {},
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
