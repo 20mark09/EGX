@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-23 10:42 UTC",
+  "lastUpdated": "2026-07-23 12:17 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -434,7 +434,23 @@
   "investorActivity": {
     "byGroup": {},
     "nationalityBreakdownPct": [],
-    "individualsByNationality": [],
+    "individualsByNationality": [
+      {
+        "nationality": "egyptians",
+        "buy": 9634703308.2908,
+        "sell": 9440414111.1024
+      },
+      {
+        "nationality": "arabs",
+        "buy": 440693030.0864,
+        "sell": 276245667.077
+      },
+      {
+        "nationality": "foreigners",
+        "buy": 21214475.4821,
+        "sell": 3979448.83
+      }
+    ],
     "institutionsByNationality": [
       {
         "nationality": "egyptians",
