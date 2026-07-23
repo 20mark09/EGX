@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-23 12:17 UTC",
+  "lastUpdated": "2026-07-23 14:35 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -8,21 +8,21 @@
   "indices": {
     "EGX30": {
       "date": "22/07/2026",
-      "value": 53931.92,
-      "open": 53989.55,
-      "high": 54152.72,
-      "low": 53829.96,
-      "change_pct": -0.11,
-      "ytd_pct": 28.93
+      "value": 6061.2,
+      "open": 6055.8,
+      "high": 6106.11,
+      "low": 6043.26,
+      "change_pct": 0.09,
+      "ytd_pct": 31.83
     },
     "SHARIAH": {
       "date": "22/07/2026",
-      "value": 53931.92,
-      "open": 53989.55,
-      "high": 54152.72,
-      "low": 53829.96,
-      "change_pct": -0.11,
-      "ytd_pct": 28.93
+      "value": 6061.2,
+      "open": 6055.8,
+      "high": 6106.11,
+      "low": 6043.26,
+      "change_pct": 0.09,
+      "ytd_pct": 31.83
     },
     "EGX70": {
       "date": "22/07/2026",
@@ -433,7 +433,23 @@
   "bulletin": [],
   "investorActivity": {
     "byGroup": {},
-    "nationalityBreakdownPct": [],
+    "nationalityBreakdownPct": [
+      {
+        "label_ar": "مصريين",
+        "value": 70.76,
+        "color": "#205d96"
+      },
+      {
+        "label_ar": "عرب",
+        "value": 11.28,
+        "color": "#9e8b2b"
+      },
+      {
+        "label_ar": "اجانب",
+        "value": 17.96,
+        "color": "#bababa"
+      }
+    ],
     "individualsByNationality": [
       {
         "nationality": "egyptians",
@@ -470,194 +486,7 @@
     ]
   },
   "indexConstituents": {
-    "EGX30": [
-      {
-        "isin": "EGS512O1C012",
-        "code": "ISPH.CA",
-        "name_ar": "ابن سينا فارما",
-        "weight_pct": 0.98
-      },
-      {
-        "isin": "EGS38191C010",
-        "code": "ABUK.CA",
-        "name_ar": "ابوقير للاسمدة والصناعات الكيماوية",
-        "weight_pct": 2.78
-      },
-      {
-        "isin": "EGS673Y1C015",
-        "code": "EMFD.CA",
-        "name_ar": "إعمار مصر للتنمية",
-        "weight_pct": 0.71
-      },
-      {
-        "isin": "EGS380P1C010",
-        "code": "AMOC.CA",
-        "name_ar": "الاسكندرية للزيوت المعدنية",
-        "weight_pct": 0.8
-      },
-      {
-        "isin": "EGS60121C018",
-        "code": "COMI.CA",
-        "name_ar": "البنك التجاري الدولي -مصر (سى اى بى )",
-        "weight_pct": 32.33
-      },
-      {
-        "isin": "EGS37091C013",
-        "code": "EAST.CA",
-        "name_ar": "الشرقية - ايسترن كومباني",
-        "weight_pct": 6.49
-      },
-      {
-        "isin": "EGS38201C017",
-        "code": "EGCH.CA",
-        "name_ar": "الصناعات الكيماوية المصرية - كيما",
-        "weight_pct": 0.3
-      },
-      {
-        "isin": "EGS381B1C015",
-        "code": "RMDA.CA",
-        "name_ar": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا",
-        "weight_pct": 0.65
-      },
-      {
-        "isin": "EGS3C0O1C016",
-        "code": "ARCC.CA",
-        "name_ar": "العربية للاسمنت",
-        "weight_pct": 0.37
-      },
-      {
-        "isin": "EGS73541C012",
-        "code": "CCAP.CA",
-        "name_ar": "القلعة للاستثمارات المالية",
-        "weight_pct": 1.83
-      },
-      {
-        "isin": "EGS48031C016",
-        "code": "ETEL.CA",
-        "name_ar": "المصرية للاتصالات",
-        "weight_pct": 6.24
-      },
-      {
-        "isin": "EGS33041C012",
-        "code": "ORWE.CA",
-        "name_ar": "النساجون الشرقيون للسجاد",
-        "weight_pct": 0.61
-      },
-      {
-        "isin": "EGS95001C011",
-        "code": "ORAS.CA",
-        "name_ar": "اوراسكوم كونستراكشون بي ال سي",
-        "weight_pct": 2.07
-      },
-      {
-        "isin": "EGS693V1C014",
-        "code": "OIH.CA",
-        "name_ar": "اوراسكوم للاستثمار القابضه",
-        "weight_pct": 0.43
-      },
-      {
-        "isin": "EGS70321C012",
-        "code": "ORHD.CA",
-        "name_ar": "اوراسكوم للتنمية مصر",
-        "weight_pct": 1.3
-      },
-      {
-        "isin": "EGS743O1C013",
-        "code": "EFIH.CA",
-        "name_ar": "اي فاينانس للاستثمارات المالية والرقمية",
-        "weight_pct": 4.79
-      },
-      {
-        "isin": "EGS305I1C011",
-        "code": "EFID.CA",
-        "name_ar": "ايديتا للصناعات الغذائية",
-        "weight_pct": 1.93
-      },
-      {
-        "isin": "EGS655L1C012",
-        "code": "PHDC.CA",
-        "name_ar": "بالم هيلز للتعمير",
-        "weight_pct": 1.76
-      },
-      {
-        "isin": "EGS691G1C015",
-        "code": "BTFH.CA",
-        "name_ar": "بلتون القابضة",
-        "weight_pct": 1.51
-      },
-      {
-        "isin": "EGS30901C010",
-        "code": "JUFO.CA",
-        "name_ar": "جهينة للصناعات الغذائية",
-        "weight_pct": 0.89
-      },
-      {
-        "isin": "EGS673T1C012",
-        "code": "GBCO.CA",
-        "name_ar": "جى بى كوربوريشن",
-        "weight_pct": 1.51
-      },
-      {
-        "isin": "EGS690C1C010",
-        "code": "RAYA.CA",
-        "name_ar": "راية القابضة للأستثمارات المالية",
-        "weight_pct": 0.81
-      },
-      {
-        "isin": "EGS69082C013",
-        "code": "VLMR.CA",
-        "name_ar": "فالمور القابضة للاستثمار",
-        "weight_pct": 1.56
-      },
-      {
-        "isin": "EGS69081C023",
-        "code": "VLMRA.CA",
-        "name_ar": "فالمور القابضة للاستثماربالجنية",
-        "weight_pct": 0.59
-      },
-      {
-        "isin": "EGS745L1C014",
-        "code": "FWRY.CA",
-        "name_ar": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية",
-        "weight_pct": 5.83
-      },
-      {
-        "isin": "EGS69101C011",
-        "code": "HRHO.CA",
-        "name_ar": "مجموعة اي اف جي القابضة",
-        "weight_pct": 3.17
-      },
-      {
-        "isin": "EGS691S1C011",
-        "code": "TMGH.CA",
-        "name_ar": "مجموعة طلعت مصطفى القابضة",
-        "weight_pct": 11.62
-      },
-      {
-        "isin": "EGS65591C017",
-        "code": "HELI.CA",
-        "name_ar": "مصر الجديدة للاسكان والتعمير",
-        "weight_pct": 1.09
-      },
-      {
-        "isin": "EGS3C391C017",
-        "code": "MCQE.CA",
-        "name_ar": "مصر للاسمنت - قنا",
-        "weight_pct": 0.96
-      },
-      {
-        "isin": "EGS3E181C010",
-        "code": "EGAL.CA",
-        "name_ar": "مصر للالومنيوم",
-        "weight_pct": 1.17
-      },
-      {
-        "isin": "EGS60111C019",
-        "code": "ADIB.CA",
-        "name_ar": "مصرف أبو ظبي الأسلامي- مصر",
-        "weight_pct": 2.9
-      }
-    ],
+    "EGX30": [],
     "SHARIAH": [
       {
         "isin": "EGS512O1C012",
