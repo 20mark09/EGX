@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-26 15:40 UTC",
+  "lastUpdated": "2026-07-26 16:37 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -554,110 +554,10 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 59780209740.0,
-          "sell": 60368117510.0,
-          "net": -587907770.0
-        },
-        "arabs": {
-          "buy": 1121074053.0,
-          "sell": 643528421.0,
-          "net": 477545632.0
-        },
-        "foreigners": {
-          "buy": 213401018.0,
-          "sell": 103038880.0,
-          "net": 110362138.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 8297032646.0,
-          "sell": 7724324433.0,
-          "net": 572708213.0
-        },
-        "foreigners": {
-          "buy": 1849695.0,
-          "sell": 1749538.0,
-          "net": 100157.0
-        },
-        "arabs": {
-          "buy": 230025524.0,
-          "sell": 187027571.0,
-          "net": 42997953.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 51483177094.0,
-          "sell": 52643793076.0,
-          "net": -1160615983.0
-        },
-        "foreigners": {
-          "buy": 211551323.0,
-          "sell": 101289342.0,
-          "net": 110261981.0
-        },
-        "arabs": {
-          "buy": 891048529.0,
-          "sell": 456500850.0,
-          "net": 434547679.0
-        }
-      }
-    },
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 98.3,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 1.44,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 0.26,
-        "color": "#bababa"
-      }
-    ],
-    "individualsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 8297032646.275,
-        "sell": 7724324433.2649
-      },
-      {
-        "nationality": "arabs",
-        "buy": 230025523.6722,
-        "sell": 187027570.8158
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 1849695.08,
-        "sell": 1749538.06
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 51483177093.7035,
-        "sell": 52643793076.3267
-      },
-      {
-        "nationality": "arabs",
-        "buy": 891048529.3407,
-        "sell": 456500850.3011
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 211551322.81,
-        "sell": 101289342.1129
-      }
-    ]
+    "byGroup": {},
+    "nationalityBreakdownPct": [],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   },
   "indexConstituents": {
     "EGX30": [
