@@ -859,71 +859,91 @@ def main():
             except Exception as cic_error:
                 print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
-# --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
-print("\nNavigating to Prices (Market Watch)...")
+        # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
+        print("\nNavigating to Prices (Market Watch)...")
 
-# Initialize outside try block so 'output' always has access to 'prices'
-prices = [] 
+        # Initialize outside try block so 'output' always has access to 'prices'
+        prices = []
 
-try:
-    PRICES_TABLE_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
+        try:
+            PRICES_TABLE_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
 
-    page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
-    page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
-    page.wait_for_timeout(1500)
+            page.goto(
+                "https://www.egx.com.eg/en/prices.aspx",
+                wait_until="domcontentloaded",
+                timeout=45000
+            )
+            page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
+            page.wait_for_timeout(1500)
 
-    pre_click_content = page.content()
+            pre_click_content = page.content()
 
-    print("[*] Switching grid to Market Segment view...")
-    
-    market_link_selector = "[id$='lkMarket']"
-    
-    # Trigger postback / AJAX update safely
-    try:
-        with page.expect_response(lambda response: "prices.aspx" in response.url and response.status == 200, timeout=15000):
-            page.click(market_link_selector)
-        page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=15000)
-        page.wait_for_timeout(1000)
-    except Exception as postback_err:
-        print(f"[!] Market segment click timed out or failed ({postback_err}). Parsing default loaded grid instead...")
+            print("[*] Switching grid to Market Segment view...")
 
-    prices = parse_prices_table(page.content())
-    if not prices:
-        print("[-] Market Segment view returned 0 rows - falling back to pre-click grid content.")
-        prices = parse_prices_table(pre_click_content)
+            market_link_selector = "[id$='lkMarket']"
 
-    company_codes = load_company_codes()
-    attach_company_codes(prices, company_codes)
-    matched = sum(1 for s in prices if "code" in s)
-    print(f"[+] Successfully scraped {len(prices)} stock prices "
-          f"({matched}/{len(prices)} matched to a ticker code).")
+            # Trigger postback / AJAX update safely
+            try:
+                with page.expect_response(
+                    lambda response: "prices.aspx" in response.url and response.status == 200,
+                    timeout=15000
+                ):
+                    page.click(market_link_selector)
 
-except Exception as prices_error:
-    print(f"[-] Failed to fetch full stock prices: {prices_error}")
+                page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=15000)
+                page.wait_for_timeout(1000)
 
-human_delay()
+            except Exception as postback_err:
+                print(
+                    f"[!] Market segment click timed out or failed "
+                    f"({postback_err}). Parsing default loaded grid instead..."
+                )
 
-context.close()
-browser.close()
+            prices = parse_prices_table(page.content())
 
-# --- SAVE STRUCTURED RESULTS ---
-output = {
-    "source": "https://www.egx.com.eg",
-    "lastUpdated": now_utc(),
-    "liveMarketStatus": live_status,
-    "indices": indices_output,
-    "gainers": gainers,
-    "losers": losers,
-    "marketSummary": market_summary,
-    "sectors": sectors,
-    "news": news,
-    "disclosures": disclosures,
-    "bulletin": bulletin,
-    "investorActivity": investor_activity,
-    "indexConstituents": index_constituents,
-    "indexCharts": index_charts,
-    "prices": prices  # Safe now even if Part 11 fails
-}
+            if not prices:
+                print(
+                    "[-] Market Segment view returned 0 rows - "
+                    "falling back to pre-click grid content."
+                )
+                prices = parse_prices_table(pre_click_content)
+
+            company_codes = load_company_codes()
+            attach_company_codes(prices, company_codes)
+
+            matched = sum(1 for s in prices if "code" in s)
+
+            print(
+                f"[+] Successfully scraped {len(prices)} stock prices "
+                f"({matched}/{len(prices)} matched to a ticker code)."
+            )
+
+        except Exception as prices_error:
+            print(f"[-] Failed to fetch full stock prices: {prices_error}")
+
+        human_delay()
+
+        context.close()
+        browser.close()
+
+        # --- SAVE STRUCTURED RESULTS ---
+        output = {
+        "source": "https://www.egx.com.eg",
+        "lastUpdated": now_utc(),
+        "liveMarketStatus": live_status,
+        "indices": indices_output,
+        "gainers": gainers,
+        "losers": losers,
+        "marketSummary": market_summary,
+        "sectors": sectors,
+        "news": news,
+        "disclosures": disclosures,
+        "bulletin": bulletin,
+        "investorActivity": investor_activity,
+        "indexConstituents": index_constituents,
+        "indexCharts": index_charts,
+        "prices": prices  # Safe now even if Part 11 fails
+        }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
