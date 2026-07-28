@@ -860,54 +860,47 @@ def main():
                 print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
         # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
-        print("\nNavigating to Prices (Market Watch)...")
-        try:
-            PRICES_TABLE_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
+print("\nNavigating to Prices (Market Watch)...")
+try:
+    PRICES_TABLE_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
 
-            page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
-            page.wait_for_timeout(1500)
+    page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
+    page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
+    page.wait_for_timeout(1500)
 
-            # Kept as a fallback - if the lkMarket postback below doesn't
-            # land the way expected, the grid on initial load already has
-            # every row/column we need, just without the currency-based
-            # GroupHeader_Default rows (parse_prices_table handles that
-            # fine, `currency` just stays None on every row).
-            pre_click_content = page.content()
+    pre_click_content = page.content()
 
-            print("[*] Switching grid to Market Segment view...")
-            page.evaluate("__doPostBack('ctl00$C$S$lkMarket', '');")
+    print("[*] Switching grid to Market Segment view...")
+    
+    # 1. Click the link natively instead of forcing a raw __doPostBack.
+    # This ensures Telerik/ASP.NET AJAX client-side bindings fire correctly.
+    market_link_selector = "[id$='lkMarket']"
+    
+    # 2. Use expect_response or a safe click-and-wait pattern instead of networkidle
+    with page.expect_response(lambda response: "prices.aspx" in response.url and response.status == 200, timeout=20000):
+        page.click(market_link_selector)
 
-            # RadGrid2 re-renders 222+ rows on this postback (vs the light
-            # panels on Indices.aspx), and whether that's a full navigation
-            # or an ajax-wrapped postback isn't guaranteed - wait on the
-            # network settling AND the table actually being present again,
-            # rather than a fixed sleep that may fire before the re-render
-            # (or re-navigation) has actually finished.
-            try:
-                page.wait_for_load_state("networkidle", timeout=20000)
-            except Exception:
-                pass
-            page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
-            page.wait_for_timeout(2000)
+    # 3. Wait for the RadGrid table to be fully present and populated again
+    page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
+    page.wait_for_timeout(1000) # Small buffer for DOM row population
 
-            prices = parse_prices_table(page.content())
-            if not prices:
-                print("[-] Market Segment view returned 0 rows - falling back to pre-click grid content.")
-                prices = parse_prices_table(pre_click_content)
+    prices = parse_prices_table(page.content())
+    if not prices:
+        print("[-] Market Segment view returned 0 rows - falling back to pre-click grid content.")
+        prices = parse_prices_table(pre_click_content)
 
-            company_codes = load_company_codes()
-            attach_company_codes(prices, company_codes)
-            matched = sum(1 for s in prices if "code" in s)
-            print(f"[+] Successfully scraped {len(prices)} stock prices "
-                  f"({matched}/{len(prices)} matched to a ticker code).")
-        except Exception as prices_error:
-            print(f"[-] Failed to fetch full stock prices: {prices_error}")
+    company_codes = load_company_codes()
+    attach_company_codes(prices, company_codes)
+    matched = sum(1 for s in prices if "code" in s)
+    print(f"[+] Successfully scraped {len(prices)} stock prices "
+          f"({matched}/{len(prices)} matched to a ticker code).")
+except Exception as prices_error:
+    print(f"[-] Failed to fetch full stock prices: {prices_error}")
 
-        human_delay()
+human_delay()
 
-        context.close()
-        browser.close()
+context.close()
+browser.close()
 
     # --- SAVE STRUCTURED RESULTS ---
     output = {
