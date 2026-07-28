@@ -859,8 +859,12 @@ def main():
             except Exception as cic_error:
                 print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
-        # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
+# --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
 print("\nNavigating to Prices (Market Watch)...")
+
+# Initialize outside try block so 'output' always has access to 'prices'
+prices = [] 
+
 try:
     PRICES_TABLE_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
 
@@ -872,17 +876,16 @@ try:
 
     print("[*] Switching grid to Market Segment view...")
     
-    # 1. Click the link natively instead of forcing a raw __doPostBack.
-    # This ensures Telerik/ASP.NET AJAX client-side bindings fire correctly.
     market_link_selector = "[id$='lkMarket']"
     
-    # 2. Use expect_response or a safe click-and-wait pattern instead of networkidle
-    with page.expect_response(lambda response: "prices.aspx" in response.url and response.status == 200, timeout=20000):
-        page.click(market_link_selector)
-
-    # 3. Wait for the RadGrid table to be fully present and populated again
-    page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
-    page.wait_for_timeout(1000) # Small buffer for DOM row population
+    # Trigger postback / AJAX update safely
+    try:
+        with page.expect_response(lambda response: "prices.aspx" in response.url and response.status == 200, timeout=15000):
+            page.click(market_link_selector)
+        page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=15000)
+        page.wait_for_timeout(1000)
+    except Exception as postback_err:
+        print(f"[!] Market segment click timed out or failed ({postback_err}). Parsing default loaded grid instead...")
 
     prices = parse_prices_table(page.content())
     if not prices:
@@ -894,6 +897,7 @@ try:
     matched = sum(1 for s in prices if "code" in s)
     print(f"[+] Successfully scraped {len(prices)} stock prices "
           f"({matched}/{len(prices)} matched to a ticker code).")
+
 except Exception as prices_error:
     print(f"[-] Failed to fetch full stock prices: {prices_error}")
 
@@ -902,24 +906,24 @@ human_delay()
 context.close()
 browser.close()
 
-    # --- SAVE STRUCTURED RESULTS ---
-    output = {
-        "source": "https://www.egx.com.eg",
-        "lastUpdated": now_utc(),
-        "liveMarketStatus": live_status,
-        "indices": indices_output,
-        "gainers": gainers,
-        "losers": losers,
-        "marketSummary": market_summary,
-        "sectors": sectors,
-        "news": news,
-        "disclosures": disclosures,
-        "bulletin": bulletin,
-        "investorActivity": investor_activity,
-        "indexConstituents": index_constituents,
-        "indexCharts": index_charts,
-        "prices": prices
-    }
+# --- SAVE STRUCTURED RESULTS ---
+output = {
+    "source": "https://www.egx.com.eg",
+    "lastUpdated": now_utc(),
+    "liveMarketStatus": live_status,
+    "indices": indices_output,
+    "gainers": gainers,
+    "losers": losers,
+    "marketSummary": market_summary,
+    "sectors": sectors,
+    "news": news,
+    "disclosures": disclosures,
+    "bulletin": bulletin,
+    "investorActivity": investor_activity,
+    "indexConstituents": index_constituents,
+    "indexCharts": index_charts,
+    "prices": prices  # Safe now even if Part 11 fails
+}
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
