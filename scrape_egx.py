@@ -364,6 +364,74 @@ def parse_stack_chart(raw_text):
     return items
 
 
+def parse_prices_table(html_content):
+    """Parses the full Market Watch price grid on prices.aspx (Telerik
+    RadGrid, id ctl00_C_S_RadGrid2_ctl00) after switching it into
+    'Market Segment' grouping via the lkMarket postback. In this view
+    the grid groups rows by trading currency (Egyptian Pound / US
+    Dollar) using GroupHeader_Default rows rather than real per-row
+    market-segment data, so that group label is captured as `currency`
+    on each row rather than treated as a market segment.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": "ctl00_C_S_RadGrid2_ctl00"})
+    stocks = []
+    if not table:
+        return stocks
+
+    current_currency = None
+    for row in table.find_all("tr"):
+        classes = row.get("class") or []
+
+        if "GroupHeader_Default" in classes:
+            label_cell = row.find("td", attrs={"colspan": True})
+            if label_cell:
+                current_currency = label_cell.get_text(strip=True)
+            continue
+
+        if "GridRow_Default" not in classes and "GridAltRow_Default" not in classes:
+            continue
+
+        cols = row.find_all("td")
+        if len(cols) < 14:
+            continue
+
+        try:
+            name_cell = cols[1]
+            name_span = name_cell.find("span")
+            name = name_span.get_text(strip=True) if name_span else name_cell.get_text(strip=True)
+            if not name:
+                continue
+
+            isin = None
+            isin_link = name_cell.find("a", href=lambda h: h and "ISIN=" in h)
+            if isin_link:
+                isin_match = re.search(r"ISIN=([A-Za-z0-9]+)", isin_link["href"])
+                isin = isin_match.group(1) if isin_match else None
+
+            stocks.append({
+                "name": name,
+                "isin": isin,
+                "sector": cols[2].get_text(strip=True),
+                "currency": current_currency,
+                "prev_close": safe_num(cols[3].get_text(strip=True)),
+                "open": safe_num(cols[4].get_text(strip=True)),
+                "close": safe_num(cols[5].get_text(strip=True)),
+                "change_pct": safe_num(cols[6].get_text(strip=True)),
+                "last_price": safe_num(cols[7].get_text(strip=True)),
+                "high": safe_num(cols[8].get_text(strip=True)),
+                "low": safe_num(cols[9].get_text(strip=True)),
+                "value": safe_num(cols[10].get_text(strip=True)),
+                "volume": safe_num(cols[11].get_text(strip=True)),
+                "trades": safe_num(cols[12].get_text(strip=True)),
+                "market_cap_million": safe_num(cols[13].get_text(strip=True)),
+            })
+        except Exception:
+            continue
+
+    return stocks
+
+
 def parse_index_constituents(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": "ctl00_C_CIC_GridView1"})
@@ -560,6 +628,7 @@ def main():
     }
     index_constituents = {"EGX30": [], "SHARIAH": [], "EGX70": [], "EGX100": []}
     index_charts = {}
+    prices = []
 
     with sync_playwright() as p:
         print("Launching secure browser context...")
@@ -790,6 +859,28 @@ def main():
             except Exception as cic_error:
                 print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
+        # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
+        print("\nNavigating to Prices (Market Watch)...")
+        try:
+            page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(4000)
+
+            print("[*] Switching grid to Market Segment view...")
+            page.evaluate("__doPostBack('ctl00$C$S$lkMarket', '');")
+            page.wait_for_timeout(5000)
+
+            prices = parse_prices_table(page.content())
+
+            company_codes = load_company_codes()
+            attach_company_codes(prices, company_codes)
+            matched = sum(1 for s in prices if "code" in s)
+            print(f"[+] Successfully scraped {len(prices)} stock prices "
+                  f"({matched}/{len(prices)} matched to a ticker code).")
+        except Exception as prices_error:
+            print(f"[-] Failed to fetch full stock prices: {prices_error}")
+
+        human_delay()
+
         context.close()
         browser.close()
 
@@ -808,7 +899,8 @@ def main():
         "bulletin": bulletin,
         "investorActivity": investor_activity,
         "indexConstituents": index_constituents,
-        "indexCharts": index_charts
+        "indexCharts": index_charts,
+        "prices": prices
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
