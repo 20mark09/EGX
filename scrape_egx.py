@@ -347,90 +347,156 @@ def parse_pie_chart(raw_text):
     return items
 
 
-def parse_stack_chart(raw_text):
-    items = []
-    if not raw_text:
-        return items
-    try:
-        rows = json.loads(raw_text)
-    except Exception:
-        return items
-    for row in rows:
-        try:
-            nat_key = NATIONALITY_MAP.get(row.get("Type"), row.get("Type"))
-            items.append({"nationality": nat_key, "buy": row.get("Buy"), "sell": row.get("Sell")})
-        except Exception:
-            continue
-    return items
-
-
 def parse_prices_table(html_content):
-    """Parses the full Market Watch price grid on prices.aspx (Telerik
-    RadGrid, id ctl00_C_S_RadGrid2_ctl00) after switching it into
-    'Market Segment' grouping via the lkMarket postback. In this view
-    the grid groups rows by trading currency (Egyptian Pound / US
-    Dollar) using GroupHeader_Default rows rather than real per-row
-    market-segment data, so that group label is captured as `currency`
-    on each row rather than treated as a market segment.
-    """
     soup = BeautifulSoup(html_content, "html.parser")
+
+    # ==========================================
+    # EGX Structured Parser
+    # ==========================================
     table = soup.find("table", {"id": "ctl00_C_S_RadGrid2_ctl00"})
-    stocks = []
-    if not table:
-        return stocks
 
-    current_currency = None
-    for row in table.find_all("tr"):
-        classes = row.get("class") or []
+    if table:
+        stocks = []
+        current_currency = None
 
-        if "GroupHeader_Default" in classes:
-            label_cell = row.find("td", attrs={"colspan": True})
-            if label_cell:
-                current_currency = label_cell.get_text(strip=True)
-            continue
+        for row in table.find_all("tr"):
+            classes = row.get("class") or []
 
-        if "GridRow_Default" not in classes and "GridAltRow_Default" not in classes:
-            continue
-
-        cols = row.find_all("td")
-        if len(cols) < 14:
-            continue
-
-        try:
-            name_cell = cols[1]
-            name_span = name_cell.find("span")
-            name = name_span.get_text(strip=True) if name_span else name_cell.get_text(strip=True)
-            if not name:
+            if "GroupHeader_Default" in classes:
+                label_cell = row.find("td", attrs={"colspan": True})
+                if label_cell:
+                    current_currency = label_cell.get_text(strip=True)
                 continue
 
-            isin = None
-            isin_link = name_cell.find("a", href=lambda h: h and "ISIN=" in h)
-            if isin_link:
-                isin_match = re.search(r"ISIN=([A-Za-z0-9]+)", isin_link["href"])
-                isin = isin_match.group(1) if isin_match else None
+            if (
+                "GridRow_Default" not in classes
+                and "GridAltRow_Default" not in classes
+            ):
+                continue
 
-            stocks.append({
-                "name": name,
-                "isin": isin,
-                "sector": cols[2].get_text(strip=True),
-                "currency": current_currency,
-                "prev_close": safe_num(cols[3].get_text(strip=True)),
-                "open": safe_num(cols[4].get_text(strip=True)),
-                "close": safe_num(cols[5].get_text(strip=True)),
-                "change_pct": safe_num(cols[6].get_text(strip=True)),
-                "last_price": safe_num(cols[7].get_text(strip=True)),
-                "high": safe_num(cols[8].get_text(strip=True)),
-                "low": safe_num(cols[9].get_text(strip=True)),
-                "value": safe_num(cols[10].get_text(strip=True)),
-                "volume": safe_num(cols[11].get_text(strip=True)),
-                "trades": safe_num(cols[12].get_text(strip=True)),
-                "market_cap_million": safe_num(cols[13].get_text(strip=True)),
-            })
-        except Exception:
+            cols = row.find_all("td")
+
+            if len(cols) < 14:
+                continue
+
+            try:
+                name_cell = cols[1]
+
+                name_span = name_cell.find("span")
+                name = (
+                    name_span.get_text(strip=True)
+                    if name_span
+                    else name_cell.get_text(strip=True)
+                )
+
+                if not name:
+                    continue
+
+                isin = None
+                isin_link = name_cell.find(
+                    "a",
+                    href=lambda h: h and "ISIN=" in h
+                )
+
+                if isin_link:
+                    isin_match = re.search(
+                        r"ISIN=([A-Za-z0-9]+)",
+                        isin_link["href"]
+                    )
+                    isin = isin_match.group(1) if isin_match else None
+
+                stocks.append({
+                    "name": name,
+                    "isin": isin,
+                    "sector": cols[2].get_text(strip=True),
+                    "currency": current_currency,
+                    "prev_close": safe_num(cols[3].get_text(strip=True)),
+                    "open": safe_num(cols[4].get_text(strip=True)),
+                    "close": safe_num(cols[5].get_text(strip=True)),
+                    "change_pct": safe_num(cols[6].get_text(strip=True)),
+                    "last_price": safe_num(cols[7].get_text(strip=True)),
+                    "high": safe_num(cols[8].get_text(strip=True)),
+                    "low": safe_num(cols[9].get_text(strip=True)),
+                    "value": safe_num(cols[10].get_text(strip=True)),
+                    "volume": safe_num(cols[11].get_text(strip=True)),
+                    "trades": safe_num(cols[12].get_text(strip=True)),
+                    "market_cap_million": safe_num(cols[13].get_text(strip=True)),
+                })
+
+            except Exception:
+                continue
+
+        if stocks:
+            return stocks
+
+    # ==========================================
+    # Generic Telerik Grid Fallback
+    # ==========================================
+    grid_table = soup.select_one(
+        "table.rgMasterTable, table[id*='RadGrid']"
+    )
+
+    if not grid_table:
+        return []
+
+    headers = []
+
+    header_row = grid_table.select_one("thead tr")
+
+    if header_row:
+        for th in header_row.find_all(["th", "td"]):
+            text = re.sub(r"\s+", " ", th.get_text()).strip()
+
+            if text:
+                headers.append(text)
+
+    if not headers:
+        headers = [
+            "Ticker",
+            "Name",
+            "Sector",
+            "Last Price",
+            "Change %",
+            "Open",
+            "High",
+            "Low",
+            "Volume",
+            "Value",
+            "Trades",
+        ]
+
+    scraped_data = []
+
+    rows = grid_table.select(
+        "tbody tr.rgRow, tbody tr.rgAltRow, tbody tr"
+    )
+
+    for row in rows:
+        cells = row.find_all("td")
+
+        if len(cells) < 2:
             continue
 
-    return stocks
+        row_values = [
+            re.sub(r"\s+", " ", cell.get_text()).strip()
+            for cell in cells
+        ]
 
+        stock_entry = {}
+
+        for idx, value in enumerate(row_values):
+            col_key = (
+                headers[idx]
+                if idx < len(headers)
+                else f"Column_{idx + 1}"
+            )
+
+            stock_entry[col_key] = value
+
+        if stock_entry:
+            scraped_data.append(stock_entry)
+
+    return scraped_data
 
 def parse_index_constituents(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
@@ -860,56 +926,6 @@ def main():
                 print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
 
-               def parse_prices_table(html_content):
-            """
-            Parses all columns and rows from the Market Watch grid (table.rgMasterTable).
-            Dynamically captures headers so no data columns are lost.
-            """
-            soup = BeautifulSoup(html_content, "html.parser")
-            grid_table = soup.select_one("table.rgMasterTable, table[id*='RadGrid']")
-            
-            if not grid_table:
-                return []
-        
-            # 1. Extract dynamic column headers
-            headers = []
-            header_row = grid_table.select_one("thead tr")
-            if header_row:
-                for th in header_row.find_all(["th", "td"]):
-                    text = re.sub(r"\s+", " ", th.get_text()).strip()
-                    if text:
-                        headers.append(text)
-        
-            # Fallback header names if table header row isn't present
-            if not headers:
-                headers = [
-                    "Ticker", "Name", "Sector", "Last Price", "Change %", 
-                    "Open", "High", "Low", "Volume", "Value", "Trades"
-                ]
-        
-            # 2. Extract data rows across all columns
-            scraped_data = []
-            rows = grid_table.select("tbody tr.rgRow, tbody tr.rgAltRow, tbody tr")
-        
-            for row in rows:
-                cells = row.find_all("td")
-                if not cells or len(cells) < 2:
-                    continue  # Skip header/grouping/status rows
-        
-                row_values = [re.sub(r"\s+", " ", cell.get_text()).strip() for cell in cells]
-                
-                # Build dictionary dynamically matching headers to cell values
-                stock_entry = {}
-                for idx, value in enumerate(row_values):
-                    col_key = headers[idx] if idx < len(headers) else f"Column_{idx + 1}"
-                    stock_entry[col_key] = value
-        
-                if stock_entry:
-                    scraped_data.append(stock_entry)
-        
-            return scraped_data
-        
-        
         # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
         
