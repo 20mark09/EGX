@@ -860,18 +860,68 @@ def main():
                 print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
 
 
+               def parse_prices_table(html_content):
+            """
+            Parses all columns and rows from the Market Watch grid (table.rgMasterTable).
+            Dynamically captures headers so no data columns are lost.
+            """
+            soup = BeautifulSoup(html_content, "html.parser")
+            grid_table = soup.select_one("table.rgMasterTable, table[id*='RadGrid']")
+            
+            if not grid_table:
+                return []
+        
+            # 1. Extract dynamic column headers
+            headers = []
+            header_row = grid_table.select_one("thead tr")
+            if header_row:
+                for th in header_row.find_all(["th", "td"]):
+                    text = re.sub(r"\s+", " ", th.get_text()).strip()
+                    if text:
+                        headers.append(text)
+        
+            # Fallback header names if table header row isn't present
+            if not headers:
+                headers = [
+                    "Ticker", "Name", "Sector", "Last Price", "Change %", 
+                    "Open", "High", "Low", "Volume", "Value", "Trades"
+                ]
+        
+            # 2. Extract data rows across all columns
+            scraped_data = []
+            rows = grid_table.select("tbody tr.rgRow, tbody tr.rgAltRow, tbody tr")
+        
+            for row in rows:
+                cells = row.find_all("td")
+                if not cells or len(cells) < 2:
+                    continue  # Skip header/grouping/status rows
+        
+                row_values = [re.sub(r"\s+", " ", cell.get_text()).strip() for cell in cells]
+                
+                # Build dictionary dynamically matching headers to cell values
+                stock_entry = {}
+                for idx, value in enumerate(row_values):
+                    col_key = headers[idx] if idx < len(headers) else f"Column_{idx + 1}"
+                    stock_entry[col_key] = value
+        
+                if stock_entry:
+                    scraped_data.append(stock_entry)
+        
+            return scraped_data
+        
+        
         # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
         
         prices = []
         
         try:
-            # Use generic Telerik grid selectors that don't depend on ASP.NET dynamic IDs
+            # Broad selector for Telerik grid components
             PRICES_TABLE_SELECTOR = "table.rgMasterTable, table[id*='RadGrid']"
         
             page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
             
-            # Wait for the table using the broad selector
+            # Wait for the table to render
             page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
             page.wait_for_timeout(1500)
         
@@ -883,28 +933,30 @@ def main():
             
             if page.is_visible(market_link_selector):
                 try:
-                    # Click and give the Telerik AJAX postback a brief moment to update
+                    # Trigger ASP.NET AJAX PostBack
                     page.click(market_link_selector)
-                    page.wait_for_timeout(3000) # Give AJAX time to complete DOM swap
+                    page.wait_for_timeout(3000)  # Wait for AJAX DOM update
                 except Exception as postback_err:
                     print(f"[!] Market segment postback failed ({postback_err}). Falling back to initial grid...")
         
-            # Parse whatever version of the grid is active on page
+            # Parse active page content dynamically
             prices = parse_prices_table(page.content())
             
+            # Fallback if AJAX swap wiped or emptied data
             if not prices:
                 print("[-] Market Segment view returned 0 rows - falling back to pre-click grid content.")
                 prices = parse_prices_table(pre_click_content)
         
+            # Attach company codes / tickers
             company_codes = load_company_codes()
             attach_company_codes(prices, company_codes)
             matched = sum(1 for s in prices if "code" in s)
+            
             print(f"[+] Successfully scraped {len(prices)} stock prices "
                   f"({matched}/{len(prices)} matched to a ticker code).")
         
         except Exception as prices_error:
             print(f"[-] Failed to fetch full stock prices: {prices_error}")
-
 
         human_delay()
 
