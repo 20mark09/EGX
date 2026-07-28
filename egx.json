@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-28 18:47 UTC",
+  "lastUpdated": "2026-07-28 19:18 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -368,7 +368,68 @@
     }
   ],
   "news": [],
-  "disclosures": [],
+  "disclosures": [
+    {
+      "id": "292094",
+      "title": "Release from Act Financial (ACTF.CA) Regarding the Purchase of Treasury Stocks",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292094"
+    },
+    {
+      "id": "292093",
+      "title": "Credit Agricole Egypt (CIEB.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292093"
+    },
+    {
+      "id": "292092",
+      "title": "The Arab Dairy Products Co. Arab Dairy - Panda (ADPC.CA) - Release Regarding a Disclosure Form",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292092"
+    },
+    {
+      "id": "292091",
+      "title": "Release from Global Corp For Financial Services 1st I (EGBGLFS1P1CV) Concerning a Credit Rating",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292091"
+    },
+    {
+      "id": "292090",
+      "title": "Release from Capital for Securitization (EGBCPSC1P18ACF - EGBCPSC1P18BCF) Concerning a Credit Rating",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292090"
+    },
+    {
+      "id": "292089",
+      "title": "Arabia for Investment and Development (AIDC.CA) - Release Regarding a Disclosure Form",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292089"
+    },
+    {
+      "id": "292088",
+      "title": "Arabia for Investment and Development (AIDC.CA) - Release Regarding a Disclosure Form",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292088"
+    },
+    {
+      "id": "292087",
+      "title": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 27/07/2026",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292087"
+    },
+    {
+      "id": "292086",
+      "title": "Release from Ceramic & Porcelain (PRCL.CA) Regarding Decisions of the Board of Directors",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292086"
+    },
+    {
+      "id": "292084",
+      "title": "Explanatory Release from Elwadi For International Investment & Development (ELWA.CA) Regarding the Financial Statements",
+      "date": "28/07/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292084"
+    }
+  ],
   "bulletin": [
     {
       "id": null,
@@ -492,26 +553,78 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {},
-    "nationalityBreakdownPct": [],
-    "individualsByNationality": [],
-    "institutionsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 229878909028.7217,
-        "sell": 219511358564.2677
+    "byGroup": {
+      "total": {
+        "egyptians": {
+          "buy": 239174045544.0,
+          "sell": 228005438879.0,
+          "net": 11168606665.0
+        },
+        "arabs": {
+          "buy": 10677134198.0,
+          "sell": 21002545595.0,
+          "net": -10325411397.0
+        },
+        "foreigners": {
+          "buy": 25787773237.0,
+          "sell": 26630968506.0,
+          "net": -843195269.0
+        }
       },
-      {
-        "nationality": "arabs",
-        "buy": 10341979633.3855,
-        "sell": 20698573022.2964
+      "individuals": {
+        "egyptians": {
+          "buy": 9295136516.0,
+          "sell": 8494080315.0,
+          "net": 801056201.0
+        },
+        "foreigners": {
+          "buy": 4415338.0,
+          "sell": 2475411.0,
+          "net": 1939927.0
+        },
+        "arabs": {
+          "buy": 335154565.0,
+          "sell": 303972573.0,
+          "net": 31181992.0
+        }
       },
-      {
-        "nationality": "foreigners",
-        "buy": 25783357899.2298,
-        "sell": 26628493094.5036
+      "institutions": {
+        "egyptians": {
+          "buy": 229878909029.0,
+          "sell": 219511358564.0,
+          "net": 10367550464.0
+        },
+        "foreigners": {
+          "buy": 25783357899.0,
+          "sell": 26628493095.0,
+          "net": -845135195.0
+        },
+        "arabs": {
+          "buy": 10341979633.0,
+          "sell": 20698573022.0,
+          "net": -10356593389.0
+        }
       }
-    ]
+    },
+    "nationalityBreakdownPct": [
+      {
+        "label_ar": "مصريين",
+        "value": 84.74,
+        "color": "#205d96"
+      },
+      {
+        "label_ar": "عرب",
+        "value": 5.75,
+        "color": "#9e8b2b"
+      },
+      {
+        "label_ar": "اجانب",
+        "value": 9.51,
+        "color": "#bababa"
+      }
+    ],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   },
   "indexConstituents": {
     "EGX30": [
