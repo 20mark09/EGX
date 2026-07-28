@@ -862,14 +862,39 @@ def main():
         # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
         try:
+            PRICES_TABLE_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
+
             page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
+            page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
+            page.wait_for_timeout(1500)
+
+            # Kept as a fallback - if the lkMarket postback below doesn't
+            # land the way expected, the grid on initial load already has
+            # every row/column we need, just without the currency-based
+            # GroupHeader_Default rows (parse_prices_table handles that
+            # fine, `currency` just stays None on every row).
+            pre_click_content = page.content()
 
             print("[*] Switching grid to Market Segment view...")
             page.evaluate("__doPostBack('ctl00$C$S$lkMarket', '');")
-            page.wait_for_timeout(5000)
+
+            # RadGrid2 re-renders 222+ rows on this postback (vs the light
+            # panels on Indices.aspx), and whether that's a full navigation
+            # or an ajax-wrapped postback isn't guaranteed - wait on the
+            # network settling AND the table actually being present again,
+            # rather than a fixed sleep that may fire before the re-render
+            # (or re-navigation) has actually finished.
+            try:
+                page.wait_for_load_state("networkidle", timeout=20000)
+            except Exception:
+                pass
+            page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
+            page.wait_for_timeout(2000)
 
             prices = parse_prices_table(page.content())
+            if not prices:
+                print("[-] Market Segment view returned 0 rows - falling back to pre-click grid content.")
+                prices = parse_prices_table(pre_click_content)
 
             company_codes = load_company_codes()
             attach_company_codes(prices, company_codes)
