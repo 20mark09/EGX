@@ -1,111 +1,13 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-30 14:37 UTC",
+  "lastUpdated": "2026-07-30 16:18 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {
-    "EGX30": {
-      "date": "30/07/2026",
-      "value": 53442.2,
-      "open": 53627.32,
-      "high": 53627.32,
-      "low": 52755.97,
-      "change_pct": -0.35,
-      "ytd_pct": 27.76
-    },
-    "SHARIAH": {
-      "date": null,
-      "value": null,
-      "open": null,
-      "high": null,
-      "low": null,
-      "change_pct": null,
-      "ytd_pct": null
-    },
-    "EGX70": {
-      "date": "30/07/2026",
-      "value": 18233.32,
-      "open": 18422.68,
-      "high": 18466.21,
-      "low": 18064.22,
-      "change_pct": -1.03,
-      "ytd_pct": 38.92
-    },
-    "EGX100": {
-      "date": "30/07/2026",
-      "value": 24035.88,
-      "open": 24255.77,
-      "high": 24295.41,
-      "low": 23815.43,
-      "change_pct": -0.91,
-      "ytd_pct": 37.93
-    }
-  },
-  "gainers": [
-    {
-      "name": "Glaxo Smith Kline",
-      "price": 239.76,
-      "change_pct": 20.0,
-      "code": "BIOC"
-    },
-    {
-      "name": "Alexandria Flour Mills",
-      "price": 184.78,
-      "change_pct": 19.99,
-      "code": "AFMC"
-    },
-    {
-      "name": "Catalyst Partners Middle East –CPME",
-      "price": 26.67,
-      "change_pct": 15.01,
-      "code": "CPME"
-    },
-    {
-      "name": "General Company For Land Reclamation,Development & Reconstru",
-      "price": 273.78,
-      "change_pct": 13.61,
-      "code": "AALR"
-    },
-    {
-      "name": "Arabian Metal Industries And Industrial Investments",
-      "price": 15.0,
-      "change_pct": 8.7
-    }
-  ],
-  "losers": [
-    {
-      "name": "El Kahera Housing",
-      "price": 1.69,
-      "change_pct": -7.65,
-      "code": "ELKA"
-    },
-    {
-      "name": "Arab Real Estate Investment CO.-ALICO",
-      "price": 4.6,
-      "change_pct": -7.63,
-      "code": "RREI"
-    },
-    {
-      "name": "El Shams Housing & Urbanization",
-      "price": 13.41,
-      "change_pct": -6.22,
-      "code": "ELSH"
-    },
-    {
-      "name": "Aspire Capital Holding For Financial Investments",
-      "price": 0.422,
-      "change_pct": -6.01,
-      "code": "ASPI"
-    },
-    {
-      "name": "Zahraa Maadi Investment & Development",
-      "price": 7.17,
-      "change_pct": -5.66,
-      "code": "ZMID"
-    }
-  ],
+  "indices": {},
+  "gainers": [],
+  "losers": [],
   "marketSummary": {
     "main_market": {
       "listed_total": {
