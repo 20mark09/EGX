@@ -10,12 +10,6 @@ from playwright.sync_api import sync_playwright
 
 OUTPUT_FILE = "egx.json"
 
-# Top_GL.aspx (Top Gainers/Losers) has no ticker code or link anywhere in
-# its markup - confirmed by inspecting the raw HTML - so there's no way
-# to scrape a code for movers directly. company_codes.json (committed
-# alongside this script) is a hand-maintained name -> code lookup to
-# fill that gap. Missing/unmapped names just get no code, which the app
-# already handles gracefully (falls back to a generated avatar).
 COMPANY_CODES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "company_codes.json")
 
 
@@ -337,6 +331,27 @@ def parse_pie_chart(raw_text):
     return items
 
 
+def parse_stack_chart(raw_text):
+    items = []
+    if not raw_text:
+        return items
+    try:
+        rows = json.loads(raw_text)
+    except Exception:
+        return items
+    for row in rows:
+        try:
+            items.append({
+                "label_ar": row.get("Label"),
+                "buy": row.get("Buy"),
+                "sell": row.get("Sell"),
+                "net": row.get("Net")
+            })
+        except Exception:
+            continue
+    return items
+
+
 def parse_prices_table(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table", {"id": "ctl00_C_S_RadGrid2_ctl00"})
@@ -480,6 +495,7 @@ def parse_prices_table(html_content):
             scraped_data.append(stock_entry)
 
     return scraped_data
+
 
 def parse_index_constituents(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
@@ -883,51 +899,37 @@ def main():
         prices = []
 
         try:
-            RADGRID_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
-
             page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
 
             print(f"[diag] Page title: {page.title()!r}")
+            pre_click_html = page.content()
 
-            # Confirmed by a prior run: a fresh session defaults to the
-            # "Company" tab, whose grid renders under a different table id
-            # (ctl00_C_S_company) than the "Market Segment" tab's RadGrid2 -
-            # which is the one our parser (validated against a real saved
-            # page, 222/222 rows) actually targets. So we need the click to
-            # genuinely land before parsing.
             market_link_selector = "[id$='lkMarket']"
             link_count = page.locator(market_link_selector).count()
-            print(f"[diag] '{market_link_selector}' matches: {link_count}")
+            print(f"[diag] '{market_link_selector}' matches on page: {link_count}")
 
             if link_count > 0:
                 print("[*] Clicking Market Segment tab...")
                 try:
                     page.locator(market_link_selector).first.click()
-                    # Wait for the actual RadGrid2 table to show up - this is
-                    # an UpdatePanel partial postback, so a fixed sleep proved
-                    # last run to be no guarantee the update ever landed.
-                    page.wait_for_selector(RADGRID_SELECTOR, timeout=15000)
-                    print("[+] RadGrid2 (Market Segment grid) appeared after click.")
-                except Exception as wait_err:
-                    print(f"[!] RadGrid2 never appeared after clicking Market Segment: {wait_err}")
+                    
+                    # 1. Wait for AJAX network activity to subside
+                    page.wait_for_load_state("networkidle")
+                    
+                    # 2. Wait explicitly for Telerik RadGrid table rows to be rendered into the DOM
+                    page.wait_for_selector("#ctl00_C_S_RadGrid2_ctl00 tbody tr", state="attached", timeout=10000)
+                except Exception as postback_err:
+                    print(f"[!] Market segment click wait failed ({postback_err}). Using pre-click content instead.")
+            else:
+                print("[!] No lkMarket-style link found on the page at all.")
 
-            html = page.content()
-            prices = parse_prices_table(html)
+            post_click_html = page.content()
 
+            prices = parse_prices_table(post_click_html)
             if not prices:
-                print("[-] No RadGrid2 rows parsed - inspecting what's actually on the page instead of guessing further.")
-                soup_dbg = BeautifulSoup(html, "html.parser")
-                company_table = soup_dbg.find("table", {"id": "ctl00_C_S_company"})
-                if company_table:
-                    all_rows = company_table.find_all("tr")
-                    print(f"[diag] ctl00_C_S_company present with {len(all_rows)} <tr> total. Dumping first 3 raw rows:")
-                    for r in all_rows[:3]:
-                        print(f"[diag] ROW: {str(r)[:2000]}")
-                else:
-                    print("[diag] ctl00_C_S_company not present either. All table ids on page:")
-                    for t in soup_dbg.find_all("table"):
-                        print(f"[diag]   id={t.get('id')!r} class={t.get('class')!r}")
+                print("[-] Post-click parse returned 0 rows - trying pre-click content as fallback.")
+                prices = parse_prices_table(pre_click_html)
 
             company_codes = load_company_codes()
             attach_company_codes(prices, company_codes)
@@ -944,21 +946,21 @@ def main():
 
         # --- SAVE STRUCTURED RESULTS ---
         output = {
-        "source": "https://www.egx.com.eg",
-        "lastUpdated": now_utc(),
-        "liveMarketStatus": live_status,
-        "indices": indices_output,
-        "gainers": gainers,
-        "losers": losers,
-        "marketSummary": market_summary,
-        "sectors": sectors,
-        "news": news,
-        "disclosures": disclosures,
-        "bulletin": bulletin,
-        "investorActivity": investor_activity,
-        "indexConstituents": index_constituents,
-        "indexCharts": index_charts,
-        "prices": prices
+            "source": "https://www.egx.com.eg",
+            "lastUpdated": now_utc(),
+            "liveMarketStatus": live_status,
+            "indices": indices_output,
+            "gainers": gainers,
+            "losers": losers,
+            "marketSummary": market_summary,
+            "sectors": sectors,
+            "news": news,
+            "disclosures": disclosures,
+            "bulletin": bulletin,
+            "investorActivity": investor_activity,
+            "indexConstituents": index_constituents,
+            "indexCharts": index_charts,
+            "prices": prices
         }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
