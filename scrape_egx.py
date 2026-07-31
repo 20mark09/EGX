@@ -906,19 +906,19 @@ def main():
         prices = []
 
         try:
-            safe_goto(page, "https://www.egx.com.eg/en/prices.aspx", wait_until="networkidle")
-            page.wait_for_timeout(3000)
+            safe.goto(page, "https://www.egx.com.eg/en/prices.aspx", wait_until="networkidle", timeout=45000)
+            page.wait_for_timeout(6000)
 
             market_link_selector = "[id$='lkMarket']"
             if page.locator(market_link_selector).count() > 0:
                 print("[*] Clicking Market Segment tab...")
                 
                 # Listen for the AJAX POST request triggered by Telerik RadGrid
-                with page.expect_response(lambda res: "prices.aspx" in res.url and res.status == 200, timeout=15000):
+                with page.expect_response(lambda res: "prices.aspx" in res.url and res.status == 200, timeout=30000):
                     page.locator(market_link_selector).first.click()
                 
                 # Allow DOM rendering post-AJAX
-                page.wait_for_timeout(4000)
+                page.wait_for_timeout(6000)
 
             post_click_html = page.content()
             prices = parse_prices_table(post_click_html)
