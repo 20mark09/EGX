@@ -4,41 +4,56 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 def scrape_egx_prices():
-    # Correct EGX trading data URL
     url = "https://www.egx.com.eg/en/prices.aspx"
     
     with sync_playwright() as p:
+        # Launch Chromium with extra options for heavy/slow legacy sites
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
         page = context.new_page()
 
-        print("Navigating to EGX Market Watch...")
-        page.goto(url, wait_until="networkidle")
+        # Set generous default navigation and timeout limits (60 seconds)
+        page.set_default_navigation_timeout(60000)
+        page.set_default_timeout(60000)
 
-        # 1. Click the Market Segment / Main Board tab if present
-        try:
-            print("Clicking tab...")
-            page.click("#ctl00_C_S_lkMarket")
-        except Exception as e:
-            print(f"Tab click bypassed or non-interactive: {e}")
+        print("Navigating to EGX Market Watch (waiting for DOM content)...")
+        # 'domcontentloaded' is safer than 'networkidle' for slow ASP.NET pages with background polls
+        page.goto(url, wait_until="domcontentloaded")
 
-        # 2. Wait explicitly for ASP.NET RadGrid table rows to be rendered in the DOM
-        print("Waiting for grid rows to render...")
+        # Allow extra time for ASP.NET scripts to finish booting up
+        print("Waiting 10 seconds for initial page scripts to stabilize...")
+        page.wait_for_timeout(10000)
+
+        tab_selector = "#ctl00_C_S_lkMarket"
         grid_selector = "#ctl00_C_S_RadGrid2_ctl00 tr.GridRow_Default, #ctl00_C_S_RadGrid2_ctl00 tr.GridAltRow_Default"
-        
-        try:
-            page.wait_for_selector(grid_selector, state="visible", timeout=20000)
-            print("Grid rows successfully loaded.")
-        except Exception:
-            print("Timeout waiting for explicit grid rows. Attempting to parse existing DOM...")
 
-        # 3. Grab full updated page HTML
+        # 1. Attempt Tab Click with explicit locator wait
+        try:
+            print("Waiting for tab element to become visible...")
+            page.wait_for_selector(tab_selector, state="visible", timeout=30000)
+            print("Clicking tab...")
+            page.click(tab_selector)
+            
+            # Wait for ASP.NET AJAX UpdatePanel response to replace DOM content
+            page.wait_for_timeout(5000)
+        except Exception as e:
+            print(f"Tab click failed/timed out: {e}")
+
+        # 2. Wait explicitly for grid rows to appear after AJAX render
+        print("Waiting for grid rows to render...")
+        try:
+            page.wait_for_selector(grid_selector, state="attached", timeout=40000)
+            print("Grid rows successfully loaded into DOM.")
+        except Exception:
+            print("Timeout waiting for explicit grid rows. Parsing current DOM snapshot...")
+
+        # Grab full updated HTML
         html_content = page.content()
         browser.close()
 
-    # 4. Parse DOM using BeautifulSoup
+    # 3. Parse DOM using BeautifulSoup
     soup = BeautifulSoup(html_content, "html.parser")
     rows = soup.select("#ctl00_C_S_RadGrid2_ctl00 tr[class*='GridRow_Default'], #ctl00_C_S_RadGrid2_ctl00 tr[class*='GridAltRow_Default']")
     
@@ -85,6 +100,4 @@ def scrape_egx_prices():
 
 if __name__ == "__main__":
     results = scrape_egx_prices()
-    
-    # Preview first 5 items
     print(json.dumps(results[:5], indent=2, ensure_ascii=False))
