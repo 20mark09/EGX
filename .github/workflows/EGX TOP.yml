@@ -52,3 +52,12 @@ jobs:
           git add egx.json bulletin_state.json
           git diff --cached --quiet || git commit -m "Update EGX data"
           git push
+
+
+          - name: Upload screenshot
+          uses: actions/upload-artifact@v4
+          with:
+            name: egx-debug
+            path: |
+              market_segment_after_click.png
+              market_segment_after_click.html
