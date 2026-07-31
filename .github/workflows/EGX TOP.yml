@@ -54,10 +54,10 @@ jobs:
           git push
 
 
-          - name: Upload screenshot
-          uses: actions/upload-artifact@v4
-          with:
-            name: egx-debug
-            path: |
-              market_segment_after_click.png
-              market_segment_after_click.html
+      - name: Upload debug files
+        uses: actions/upload-artifact@v4
+        with:
+          name: egx-debug
+          path: |
+            egx_debug.png
+            egx_debug.html
