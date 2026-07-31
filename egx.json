@@ -1,17 +1,207 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-07-31 14:37 UTC",
+  "lastUpdated": "2026-07-31 17:01 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {},
-  "gainers": [],
-  "losers": [],
-  "stockPrices": [],
+  "indices": {
+    "EGX30": {
+      "date": null,
+      "value": null,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": null,
+      "ytd_pct": null
+    },
+    "SHARIAH": {
+      "date": "30/07/2026",
+      "value": 6012.67,
+      "open": 6057.08,
+      "high": 6057.08,
+      "low": 5920.2,
+      "change_pct": -0.73,
+      "ytd_pct": 30.77
+    },
+    "EGX70": {
+      "date": "30/07/2026",
+      "value": 18233.32,
+      "open": 18422.68,
+      "high": 18466.21,
+      "low": 18064.22,
+      "change_pct": -1.03,
+      "ytd_pct": 38.92
+    },
+    "EGX100": {
+      "date": "30/07/2026",
+      "value": 24035.88,
+      "open": 24255.77,
+      "high": 24295.41,
+      "low": 23815.43,
+      "change_pct": -0.91,
+      "ytd_pct": 37.93
+    }
+  },
+  "gainers": [
+    {
+      "name": "Glaxo Smith Kline",
+      "price": 239.76,
+      "change_pct": 20.0,
+      "code": "BIOC"
+    },
+    {
+      "name": "Alexandria Flour Mills",
+      "price": 184.78,
+      "change_pct": 19.99,
+      "code": "AFMC"
+    },
+    {
+      "name": "Catalyst Partners Middle East –CPME",
+      "price": 26.67,
+      "change_pct": 15.01,
+      "code": "CPME"
+    },
+    {
+      "name": "General Company For Land Reclamation,Development & Reconstru",
+      "price": 273.78,
+      "change_pct": 13.61,
+      "code": "AALR"
+    },
+    {
+      "name": "Arabian Metal Industries And Industrial Investments",
+      "price": 15.0,
+      "change_pct": 8.7
+    }
+  ],
+  "losers": [
+    {
+      "name": "El Kahera Housing",
+      "price": 1.69,
+      "change_pct": -7.65,
+      "code": "ELKA"
+    },
+    {
+      "name": "Arab Real Estate Investment CO.-ALICO",
+      "price": 4.6,
+      "change_pct": -7.63,
+      "code": "RREI"
+    },
+    {
+      "name": "El Shams Housing & Urbanization",
+      "price": 13.41,
+      "change_pct": -6.22,
+      "code": "ELSH"
+    },
+    {
+      "name": "Aspire Capital Holding For Financial Investments",
+      "price": 0.422,
+      "change_pct": -6.01,
+      "code": "ASPI"
+    },
+    {
+      "name": "Zahraa Maadi Investment & Development",
+      "price": 7.17,
+      "change_pct": -5.66,
+      "code": "ZMID"
+    }
+  ],
   "marketSummary": {
-    "main_market": {},
-    "breadth": {}
+    "main_market": {
+      "listed_total": {
+        "no": 261,
+        "volume": 2639056049,
+        "value": 66843485708,
+        "trades": 260866
+      },
+      "listed_stocks": {
+        "no": 221,
+        "volume": 2635721583,
+        "value": 11915808967,
+        "trades": 260580
+      },
+      "listed_t_bonds_bills_sukuk": {
+        "no": 40,
+        "volume": 3334466,
+        "value": 54927676741,
+        "trades": 286
+      },
+      "listed_bonds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "listed_funds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "smes_stocks": {
+        "no": 15,
+        "volume": 72198023,
+        "value": 77361769,
+        "trades": 5819
+      },
+      "otc_total": {
+        "no": 12,
+        "volume": 193729,
+        "value": 16090518,
+        "trades": 35
+      },
+      "otc_bonds": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "otc_deals": {
+        "no": 12,
+        "volume": 193729,
+        "value": 16090518,
+        "trades": 35
+      },
+      "otc_orders": {
+        "no": 0,
+        "volume": 0,
+        "value": 0,
+        "trades": 0
+      },
+      "total": {
+        "no": 288,
+        "volume": 2711447801,
+        "value": 66936937995,
+        "trades": 266720
+      },
+      "total_market_cap": 3936839098025
+    },
+    "breadth": {
+      "listed_stocks": {
+        "no": 221,
+        "volume": 2631721583,
+        "value": 11910888967,
+        "trades": 260579
+      },
+      "gainers": {
+        "no": 38,
+        "volume": 180089051,
+        "value": 3677222179,
+        "trades": 73682
+      },
+      "decliners": {
+        "no": 171,
+        "volume": 2420109573,
+        "value": 8015221685,
+        "trades": 181260
+      },
+      "unchanged": {
+        "no": 12,
+        "volume": 31522959,
+        "value": 218445103,
+        "trades": 5637
+      }
+    }
   },
   "sectors": [
     {
@@ -312,40 +502,8 @@
         "color": "#bababa"
       }
     ],
-    "individualsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 9445341433.7509,
-        "sell": 9770685425.3594
-      },
-      {
-        "nationality": "arabs",
-        "buy": 204446079.864,
-        "sell": 207063197.6663
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 22160878.6084,
-        "sell": 5072686.66
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "nationality": "egyptians",
-        "buy": 35602991059.3167,
-        "sell": 43364630762.8999
-      },
-      {
-        "nationality": "arabs",
-        "buy": 7182817636.7453,
-        "sell": 6655009115.9013
-      },
-      {
-        "nationality": "foreigners",
-        "buy": 14385728620.1513,
-        "sell": 6841024519.9497
-      }
-    ]
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   },
   "indexConstituents": {
     "EGX30": [
@@ -2553,5 +2711,6 @@
         "value": 24035.88
       }
     ]
-  }
+  },
+  "prices": []
 }
