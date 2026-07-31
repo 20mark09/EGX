@@ -867,8 +867,8 @@ def main():
         "bulletin": bulletin,
         "investorActivity": investor_activity,
         "indexConstituents": index_constituents,
-        "indexCharts": index_charts
-        "stockPrices": stock_prices,
+        "indexCharts": index_charts,
+        "stockPrices": stock_prices
     }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
