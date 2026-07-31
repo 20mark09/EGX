@@ -803,50 +803,69 @@ def main():
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         # --- PART 11: DEBUG NETWORK REQUESTS ---
-
+       # --- PART 11: EGX MARKET SEGMENT DEBUG ---
         print("\nNavigating to Prices (Market Watch)...")
         
-        def log_request(request):
-            url = request.url.lower()
+        try:
+            safe_goto(
+                page,
+                "https://www.egx.com.eg/en/prices.aspx",
+                wait_until="networkidle"
+            )
         
-            if (
-                "prices" in url
-                or "market" in url
-                or "ajax" in url
-                or "callback" in url
-                or "rad" in url
-            ):
-                print("\nREQUEST:")
-                print(request.method, request.url)
+            page.wait_for_timeout(5000)
         
-        def log_response(response):
-            url = response.url.lower()
+            print("[*] Looking for Market Segment tab...")
         
-            if (
-                "prices" in url
-                or "market" in url
-                or "ajax" in url
-                or "callback" in url
-                or "rad" in url
-            ):
-                print("\nRESPONSE:")
-                print(response.status, response.url)
+            # Print all links for debugging
+            links = page.locator("a")
+            print(f"[*] Found {links.count()} links")
         
-        page.on("request", log_request)
-        page.on("response", log_response)
+            for i in range(min(100, links.count())):
+                try:
+                    txt = links.nth(i).inner_text().strip()
+                    if txt:
+                        print(f"LINK {i}: {txt}")
+                except:
+                    pass
         
-        safe_goto(
-            page,
-            "https://www.egx.com.eg/en/prices.aspx",
-            wait_until="networkidle"
-        )
+            print("[*] Clicking Market Segment...")
         
-        page.wait_for_timeout(3000)
+            try:
+                page.locator("#ctl00_C_S_lkMarket").click(timeout=10000)
+            except:
+                page.get_by_text("Market Segment", exact=False).click(timeout=10000)
         
-        print("CLICK MARKET SEGMENT MANUALLY NOW")
-        input("Press ENTER after the grid loads...")
+            page.wait_for_timeout(10000)
         
-        print("Done")
+            print("[*] Saving screenshot after click...")
+        
+            page.screenshot(
+                path="market_segment_after_click.png",
+                full_page=True
+            )
+        
+            print(
+                "[*] EIPICO count:",
+                page.locator("text=Egyptian International Pharmaceuticals").count()
+            )
+        
+            print(
+                "[*] Abou Kir count:",
+                page.locator("text=Abou Kir").count()
+            )
+        
+            with open(
+                "market_segment_after_click.html",
+                "w",
+                encoding="utf-8"
+            ) as f:
+                f.write(page.content())
+        
+            print("[+] Debug files saved")
+        
+        except Exception as e:
+            print(f"[-] PART 11 FAILED: {e}")
 
         context.close()
         browser.close()
