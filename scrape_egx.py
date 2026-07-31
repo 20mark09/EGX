@@ -804,71 +804,35 @@ def main():
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         # --- PART 11: DEBUG NETWORK REQUESTS ---
        # --- PART 11: EGX MARKET SEGMENT DEBUG ---
+       
         print("\nNavigating to Prices (Market Watch)...")
         
-        try:
-            safe_goto(
-                page,
-                "https://www.egx.com.eg/en/prices.aspx",
-                wait_until="networkidle"
-            )
+        safe_goto(
+            page,
+            "https://www.egx.com.eg/en/prices.aspx",
+            wait_until="domcontentloaded"
+        )
         
-            page.wait_for_timeout(5000)
+        page.wait_for_timeout(5000)
         
-            print("[*] Looking for Market Segment tab...")
+        print("URL:", page.url)
+        print("TITLE:", page.title())
         
-            # Print all links for debugging
-            links = page.locator("a")
-            print(f"[*] Found {links.count()} links")
+        html = page.content()
         
-            for i in range(min(100, links.count())):
-                try:
-                    txt = links.nth(i).inner_text().strip()
-                    if txt:
-                        print(f"LINK {i}: {txt}")
-                except:
-                    pass
+        print("HTML length:", len(html))
+        print("HTML first 1000 chars:")
+        print(html[:1000])
         
-            print("[*] Clicking Market Segment...")
+        page.screenshot(
+            path="egx_debug.png",
+            full_page=True
+        )
         
-            try:
-                page.locator("#ctl00_C_S_lkMarket").click(timeout=10000)
-            except:
-                page.get_by_text("Market Segment", exact=False).click(timeout=10000)
+        with open("egx_debug.html", "w", encoding="utf-8") as f:
+            f.write(html)
         
-            page.wait_for_timeout(10000)
-        
-            print("[*] Saving screenshot after click...")
-        
-            page.screenshot(
-                path="market_segment_after_click.png",
-                full_page=True
-            )
-        
-            print(
-                "[*] EIPICO count:",
-                page.locator("text=Egyptian International Pharmaceuticals").count()
-            )
-        
-            print(
-                "[*] Abou Kir count:",
-                page.locator("text=Abou Kir").count()
-            )
-        
-            with open(
-                "market_segment_after_click.html",
-                "w",
-                encoding="utf-8"
-            ) as f:
-                f.write(page.content())
-        
-            print("[+] Debug files saved")
-        
-        except Exception as e:
-            print(f"[-] PART 11 FAILED: {e}")
-
-        context.close()
-        browser.close()
+        print("Debug files saved")
 
     # --- SAVE STRUCTURED RESULTS ---
     output = {
