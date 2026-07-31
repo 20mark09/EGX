@@ -801,31 +801,58 @@ def main():
         human_delay()
 
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
+        # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
+        
         try:
-            safe_goto(page, "https://www.egx.com.eg/en/prices.aspx", wait_until="networkidle")
-            page.wait_for_timeout(3000)
-
-            market_link_selector = "[id$='lkMarket']"
-            if page.locator(market_link_selector).count() > 0:
-                print("[*] Clicking Market Segment tab...")
-                
-                # Intercept the Telerik RadGrid AJAX POST response
+            safe_goto(
+                page,
+                "https://www.egx.com.eg/en/prices.aspx",
+                wait_until="networkidle"
+            )
+        
+            page.wait_for_timeout(8000)
+        
+            # Wait for any table containing company names
+            page.wait_for_selector("table", timeout=20000)
+        
+            rows = page.locator("table tr")
+        
+            print(f"Found {rows.count()} rows")
+        
+            stock_prices = []
+        
+            for i in range(rows.count()):
+        
+                cols = rows.nth(i).locator("td")
+        
+                if cols.count() < 13:
+                    continue
+        
                 try:
-                    with page.expect_response(lambda res: "prices.aspx" in res.url and res.status == 200, timeout=15000):
-                        page.locator(market_link_selector).first.click()
-                    page.wait_for_timeout(4000)
-                except Exception as click_wait_error:
-                    print(f"[!] Tab click wait timed out: {click_wait_error}. Parsing existing DOM fallback.")
-
-            stock_prices = parse_prices_table(page.content())
-
-            company_codes = load_company_codes()
-            attach_company_codes(stock_prices, company_codes)
-            matched = sum(1 for s in stock_prices if "code" in s)
-            print(f"[+] Successfully scraped {len(stock_prices)} stock prices ({matched}/{len(stock_prices)} matched to a ticker code).")
-        except Exception as prices_error:
-            print(f"[-] Failed to fetch full stock prices: {prices_error}")
+                    stock_prices.append({
+                        "name": cols.nth(0).inner_text().strip(),
+                        "sector": cols.nth(1).inner_text().strip(),
+                        "pc": safe_num(cols.nth(2).inner_text()),
+                        "open": safe_num(cols.nth(3).inner_text()),
+                        "close": safe_num(cols.nth(4).inner_text()),
+                        "change_pct": safe_num(cols.nth(5).inner_text().replace("%", "")),
+                        "last_price": safe_num(cols.nth(6).inner_text()),
+                        "high": safe_num(cols.nth(7).inner_text()),
+                        "low": safe_num(cols.nth(8).inner_text()),
+                        "value": safe_num(cols.nth(9).inner_text()),
+                        "volume": safe_num(cols.nth(10).inner_text()),
+                        "trades": safe_num(cols.nth(11).inner_text()),
+                        "market_cap": safe_num(cols.nth(12).inner_text())
+                    })
+        
+                except Exception as e:
+                    print(f"Row {i} failed: {e}")
+        
+            print(f"Scraped {len(stock_prices)} stocks")
+        
+        except Exception as e:
+            print(f"[-] Prices scrape failed: {e}")
 
         context.close()
         browser.close()
