@@ -1,103 +1,106 @@
 import json
 import re
+import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
 
-def scrape_egx_prices():
-    url = "https://www.egx.com.eg/en/prices.aspx"
+def get_egx_prices_via_api():
+    """Fastest & most reliable method: Direct internal endpoint call."""
+    print("Fetching data directly from EGX internal endpoint...")
     
-    with sync_playwright() as p:
-        # Launch Chromium with extra options for heavy/slow legacy sites
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+    # Internal JSON endpoint used by EGX Market Watch / Prices UI
+    api_url = "https://www.egx.com.eg/en/PricesData.aspx" 
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": "https://www.egx.com.eg/en/prices.aspx"
+    }
 
-        # Set generous default navigation and timeout limits (60 seconds)
-        page.set_default_navigation_timeout(60000)
-        page.set_default_timeout(60000)
+    try:
+        response = requests.get(api_url, headers=headers, timeout=15)
+        if response.status_code == 200:
+            try:
+                data = response.json()
+                print("Successfully fetched JSON directly!")
+                return data
+            except json.JSONDecodeError:
+                # If the endpoint returned raw HTML/UpdatePanel text instead of pure JSON
+                return parse_html_table(response.text)
+    except Exception as e:
+        print(f"Direct API call failed: {e}. Falling back to Playwright headless scraper...")
+    
+    return None
 
-        print("Navigating to EGX Market Watch (waiting for DOM content)...")
-        # 'domcontentloaded' is safer than 'networkidle' for slow ASP.NET pages with background polls
-        page.goto(url, wait_until="domcontentloaded")
 
-        # Allow extra time for ASP.NET scripts to finish booting up
-        print("Waiting 10 seconds for initial page scripts to stabilize...")
-        page.wait_for_timeout(10000)
-
-        tab_selector = "#ctl00_C_S_lkMarket"
-        grid_selector = "#ctl00_C_S_RadGrid2_ctl00 tr.GridRow_Default, #ctl00_C_S_RadGrid2_ctl00 tr.GridAltRow_Default"
-
-        # 1. Attempt Tab Click with explicit locator wait
-        try:
-            print("Waiting for tab element to become visible...")
-            page.wait_for_selector(tab_selector, state="visible", timeout=30000)
-            print("Clicking tab...")
-            page.click(tab_selector)
-            
-            # Wait for ASP.NET AJAX UpdatePanel response to replace DOM content
-            page.wait_for_timeout(5000)
-        except Exception as e:
-            print(f"Tab click failed/timed out: {e}")
-
-        # 2. Wait explicitly for grid rows to appear after AJAX render
-        print("Waiting for grid rows to render...")
-        try:
-            page.wait_for_selector(grid_selector, state="attached", timeout=40000)
-            print("Grid rows successfully loaded into DOM.")
-        except Exception:
-            print("Timeout waiting for explicit grid rows. Parsing current DOM snapshot...")
-
-        # Grab full updated HTML
-        html_content = page.content()
-        browser.close()
-
-    # 3. Parse DOM using BeautifulSoup
+def parse_html_table(html_content):
+    """Fallback parser that dynamically locates any price table in the DOM."""
     soup = BeautifulSoup(html_content, "html.parser")
-    rows = soup.select("#ctl00_C_S_RadGrid2_ctl00 tr[class*='GridRow_Default'], #ctl00_C_S_RadGrid2_ctl00 tr[class*='GridAltRow_Default']")
     
+    # Find any table containing stock links or ISINs dynamically
+    rows = soup.select("table tr")
     scraped_data = []
 
     for row in rows:
         cols = row.find_all("td")
-        if len(cols) < 12:
+        if len(cols) < 5:
             continue
 
-        # Extract Company Name
-        name_elem = row.select_one("span[id*='lblName']")
-        company_name = name_elem.get_text(strip=True) if name_elem else cols[0].get_text(strip=True)
-
-        # Extract ISIN Code from detail link attribute
-        isin_link = row.select_one("a[href*='ISIN=']")
+        # Look for ISIN code inside links or data attributes
+        isin_link = row.select_one("a[href*='ISIN='], a[href*='isin=']")
         isin = ""
         if isin_link and "href" in isin_link.attrs:
-            match = re.search(r"ISIN=([A-Z0-9]+)", isin_link["href"])
+            match = re.search(r"ISIN=([A-Z0-9]+)", isin_link["href"], re.IGNORECASE)
             if match:
                 isin = match.group(1)
 
-        # Extract numeric values
-        sector = cols[2].get_text(strip=True) if len(cols) > 2 else ""
-        prev_close = cols[3].get_text(strip=True) if len(cols) > 3 else ""
-        open_price = cols[4].get_text(strip=True) if len(cols) > 4 else ""
-        last_price = cols[7].get_text(strip=True) if len(cols) > 7 else ""
-        volume = cols[11].get_text(strip=True) if len(cols) > 11 else ""
+        row_text = [c.get_text(strip=True) for c in cols]
+        
+        # Ensure it's a valid data row (avoid headers)
+        if len(row_text) >= 8 and any(char.isdigit() for char in row_text[3]):
+            scraped_data.append({
+                "isin": isin,
+                "name": row_text[0],
+                "sector": row_text[2] if len(row_text) > 2 else "",
+                "prev_close": row_text[3] if len(row_text) > 3 else "",
+                "last": row_text[7] if len(row_text) > 7 else "",
+                "volume": row_text[-1] if len(row_text) > 0 else ""
+            })
 
-        item = {
-            "isin": isin,
-            "name": company_name,
-            "sector": sector,
-            "prev_close": prev_close,
-            "open": open_price,
-            "last": last_price,
-            "volume": volume
-        }
-        scraped_data.append(item)
-
-    print(f"\nScraped {len(scraped_data)} stocks successfully.\n")
     return scraped_data
 
 
+def scrape_egx_playwright_fallback():
+    """Playwright backup if direct requests are blocked."""
+    from playwright.sync_api import sync_playwright
+
+    print("Launching Playwright Fallback...")
+    url = "https://www.egx.com.eg/en/prices.aspx"
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        )
+        page = context.new_page()
+
+        print("Navigating to prices page...")
+        page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        page.wait_for_timeout(10000) # Give scripts time to execute
+
+        # Grab all rendered HTML regardless of specific container IDs
+        html_content = page.content()
+        browser.close()
+
+    return parse_html_table(html_content)
+
+
 if __name__ == "__main__":
-    results = scrape_egx_prices()
-    print(json.dumps(results[:5], indent=2, ensure_ascii=False))
+    # Primary attempt: Fast HTTP/API strategy
+    data = get_egx_prices_via_api()
+
+    # Secondary attempt: Browser fallback
+    if not data:
+        data = scrape_egx_playwright_fallback()
+
+    print(f"\nSuccessfully extracted {len(data)} items.\n")
+    if data:
+        print(json.dumps(data[:5], indent=2, ensure_ascii=False))
