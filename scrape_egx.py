@@ -883,42 +883,51 @@ def main():
         prices = []
 
         try:
+            RADGRID_SELECTOR = "table#ctl00_C_S_RadGrid2_ctl00"
+
             page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
             page.wait_for_timeout(4000)
 
             print(f"[diag] Page title: {page.title()!r}")
-            pre_click_html = page.content()
-            pre_tables = BeautifulSoup(pre_click_html, "html.parser").find_all("table")
-            print(f"[diag] Tables present before click: {len(pre_tables)}")
-            for t in pre_tables[:15]:
-                print(f"[diag]   - id={t.get('id')!r} class={t.get('class')!r}")
-            body_text = BeautifulSoup(pre_click_html, "html.parser").get_text(" ", strip=True)
-            print(f"[diag] Body text snippet: {body_text[:300]!r}")
 
+            # Confirmed by a prior run: a fresh session defaults to the
+            # "Company" tab, whose grid renders under a different table id
+            # (ctl00_C_S_company) than the "Market Segment" tab's RadGrid2 -
+            # which is the one our parser (validated against a real saved
+            # page, 222/222 rows) actually targets. So we need the click to
+            # genuinely land before parsing.
             market_link_selector = "[id$='lkMarket']"
             link_count = page.locator(market_link_selector).count()
-            print(f"[diag] '{market_link_selector}' matches on page: {link_count}")
+            print(f"[diag] '{market_link_selector}' matches: {link_count}")
 
             if link_count > 0:
                 print("[*] Clicking Market Segment tab...")
                 try:
                     page.locator(market_link_selector).first.click()
-                    page.wait_for_timeout(6000)
-                except Exception as postback_err:
-                    print(f"[!] Market segment click failed ({postback_err}). Using pre-click content instead.")
-            else:
-                print("[!] No lkMarket-style link found on the page at all.")
+                    # Wait for the actual RadGrid2 table to show up - this is
+                    # an UpdatePanel partial postback, so a fixed sleep proved
+                    # last run to be no guarantee the update ever landed.
+                    page.wait_for_selector(RADGRID_SELECTOR, timeout=15000)
+                    print("[+] RadGrid2 (Market Segment grid) appeared after click.")
+                except Exception as wait_err:
+                    print(f"[!] RadGrid2 never appeared after clicking Market Segment: {wait_err}")
 
-            post_click_html = page.content()
-            post_tables = BeautifulSoup(post_click_html, "html.parser").find_all("table")
-            print(f"[diag] Tables present after click: {len(post_tables)}")
-            for t in post_tables[:15]:
-                print(f"[diag]   - id={t.get('id')!r} class={t.get('class')!r}")
+            html = page.content()
+            prices = parse_prices_table(html)
 
-            prices = parse_prices_table(post_click_html)
             if not prices:
-                print("[-] Post-click parse returned 0 rows - trying pre-click content as fallback.")
-                prices = parse_prices_table(pre_click_html)
+                print("[-] No RadGrid2 rows parsed - inspecting what's actually on the page instead of guessing further.")
+                soup_dbg = BeautifulSoup(html, "html.parser")
+                company_table = soup_dbg.find("table", {"id": "ctl00_C_S_company"})
+                if company_table:
+                    all_rows = company_table.find_all("tr")
+                    print(f"[diag] ctl00_C_S_company present with {len(all_rows)} <tr> total. Dumping first 3 raw rows:")
+                    for r in all_rows[:3]:
+                        print(f"[diag] ROW: {str(r)[:2000]}")
+                else:
+                    print("[diag] ctl00_C_S_company not present either. All table ids on page:")
+                    for t in soup_dbg.find_all("table"):
+                        print(f"[diag]   id={t.get('id')!r} class={t.get('class')!r}")
 
             company_codes = load_company_codes()
             attach_company_codes(prices, company_codes)
