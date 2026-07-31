@@ -686,22 +686,30 @@ def main():
         page = context.new_page()
 
         # --- PART 1: SCRAPE ALL INDICES ON A SINGLE TAB ---
-        postback_actions = {
-            "EGX30": "ctl00$C$M$lnkEGX30",
-            "SHARIAH": "ctl00$C$M$lnkSHARIAH",
-            "EGX70": "ctl00$C$M$lnkEGX70EWI",
-            "EGX100": "ctl00$C$M$lnkEGX100EWI"
+        postback_selectors = {
+            "EGX30": "#ctl00_C_M_lnkEGX30",
+            "SHARIAH": "#ctl00_C_M_lnkSHARIAH",
+            "EGX70": "#ctl00_C_M_lnkEGX70EWI",
+            "EGX100": "#ctl00_C_M_lnkEGX100EWI"
         }
 
         print("Navigating to Indices Workspace...")
         try:
-            page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
+            page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="networkidle", timeout=45000)
+            
+            # Ensure ASP.NET JavaScript is actually loaded before interacting
+            page.wait_for_function("typeof __doPostBack === 'function'", timeout=10000)
 
-            for tracking_name, event_target in postback_actions.items():
+            for tracking_name, selector in postback_selectors.items():
                 print(f"[*] Processing panel view click for: {tracking_name}")
-                page.evaluate(f"__doPostBack('{event_target}', '');")
-                page.wait_for_timeout(5000)
+                if page.locator(selector).count() > 0:
+                    page.locator(selector).click()
+                    page.wait_for_load_state("networkidle")
+                    page.wait_for_timeout(3000)
+                else:
+                    print(f"[-] Selector {selector} not found, using direct doPostBack fallback")
+                    page.evaluate(f"__doPostBack('{selector.replace('#', '').replace('_', '$')}', '')")
+                    page.wait_for_timeout(4000)
 
                 metrics = parse_panel_metrics(page.content())
                 if metrics.get("value") is not None:
@@ -895,50 +903,32 @@ def main():
 
         # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
-
         prices = []
 
         try:
-            page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
-
-            print(f"[diag] Page title: {page.title()!r}")
-            pre_click_html = page.content()
+            safe_goto(page, "https://www.egx.com.eg/en/prices.aspx", wait_until="networkidle")
+            page.wait_for_timeout(3000)
 
             market_link_selector = "[id$='lkMarket']"
-            link_count = page.locator(market_link_selector).count()
-            print(f"[diag] '{market_link_selector}' matches on page: {link_count}")
-
-            if link_count > 0:
+            if page.locator(market_link_selector).count() > 0:
                 print("[*] Clicking Market Segment tab...")
-                try:
+                
+                # Listen for the AJAX POST request triggered by Telerik RadGrid
+                with page.expect_response(lambda res: "prices.aspx" in res.url and res.status == 200, timeout=15000):
                     page.locator(market_link_selector).first.click()
-                    
-                    # 1. Wait for AJAX network activity to subside
-                    page.wait_for_load_state("networkidle")
-                    
-                    # 2. Wait explicitly for Telerik RadGrid table rows to be rendered into the DOM
-                    page.wait_for_selector("#ctl00_C_S_RadGrid2_ctl00 tbody tr", state="attached", timeout=10000)
-                except Exception as postback_err:
-                    print(f"[!] Market segment click wait failed ({postback_err}). Using pre-click content instead.")
-            else:
-                print("[!] No lkMarket-style link found on the page at all.")
+                
+                # Allow DOM rendering post-AJAX
+                page.wait_for_timeout(4000)
 
             post_click_html = page.content()
-
             prices = parse_prices_table(post_click_html)
-            if not prices:
-                print("[-] Post-click parse returned 0 rows - trying pre-click content as fallback.")
-                prices = parse_prices_table(pre_click_html)
 
             company_codes = load_company_codes()
             attach_company_codes(prices, company_codes)
             matched = sum(1 for s in prices if "code" in s)
-            print(f"[+] Successfully scraped {len(prices)} stock prices "
-                  f"({matched}/{len(prices)} matched to a ticker code).")
+            print(f"[+] Successfully scraped {len(prices)} stock prices ({matched}/{len(prices)} matched to a ticker code).")
         except Exception as prices_error:
             print(f"[-] Failed to fetch full stock prices: {prices_error}")
-
         human_delay()
 
         context.close()
