@@ -273,16 +273,6 @@ INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
 
 
 def fetch_investor_json(context, url, referer, retries=2, retry_delay=3):
-    """Fetches one investor-activity WebService.asmx endpoint. These have
-    been observed occasionally returning a raw backend error string
-    (e.g. 'ORA-12521: TNS:listener does not currently know...') instead
-    of JSON, or an empty response, even though the HTTP request itself
-    succeeds - that's EGX's own backend having a bad moment, not a
-    scraping problem. We retry a couple of times before giving up, and
-    log the actual bad response so a future empty result is diagnosable
-    straight from the Action log instead of needing another round of
-    "here's my JSON, something's missing".
-    """
     for attempt in range(retries + 1):
         try:
             response = context.request.get(
@@ -349,10 +339,6 @@ def parse_pie_chart(raw_text):
 
 def parse_prices_table(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
-
-    # ==========================================
-    # EGX Structured Parser
-    # ==========================================
     table = soup.find("table", {"id": "ctl00_C_S_RadGrid2_ctl00"})
 
     if table:
@@ -429,9 +415,6 @@ def parse_prices_table(html_content):
         if stocks:
             return stocks
 
-    # ==========================================
-    # Generic Telerik Grid Fallback
-    # ==========================================
     grid_table = soup.select_one(
         "table.rgMasterTable, table[id*='RadGrid']"
     )
@@ -512,13 +495,12 @@ def parse_index_constituents(html_content):
             isin = cells[0].get_text(strip=True)
             code = cells[1].get_text(strip=True)
             name_ar = cells[2].get_text(strip=True)
-            
-            # Safeguard if weight column is present (EGX30) or missing (other indexes)
+
             weight = safe_num(cells[3].get_text(strip=True)) if len(cells) >= 4 else None
-            
+
             if not name_ar:
                 continue
-            
+
             node = {"isin": isin, "code": code, "name_ar": name_ar}
             if weight is not None:
                 node["weight_pct"] = weight
@@ -571,24 +553,12 @@ BULLETIN_STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "
 
 
 def _bulletin_item_key(item):
-    """A stable identifier for one bulletin item. Bulletin items don't
-    reliably have a NewsID-style id the way News/Disclosures items do
-    (we only ever confirmed Bulletin's *empty* state's markup, never a
-    populated one) - falling back to title+date when id is missing means
-    real items never get silently dropped from tracking just because
-    they lack a link/id, which is what was happening before: every
-    bulletin item with no id got filtered out of current_ids entirely,
-    so bulletin_state.json stayed empty and no notification ever fired,
-    even though the items themselves showed up fine in egx.json/the app.
-    """
     if item.get("id"):
         return f"id:{item['id']}"
     return f"td:{item.get('title', '')}|{item.get('date', '')}"
 
 
 def load_bulletin_state():
-    """The set of bulletin item keys seen as of the last run, so we only
-    notify on genuinely new items rather than re-notifying every run."""
     try:
         with open(BULLETIN_STATE_FILE, "r", encoding="utf-8") as f:
             return set(json.load(f))
@@ -602,12 +572,6 @@ def save_bulletin_state(keys):
 
 
 def get_fcm_access_token():
-    """Exchanges the FCM_SERVICE_ACCOUNT_JSON GitHub Actions secret (a
-    Firebase service account key) for a short-lived OAuth2 access token,
-    used to authenticate calls to FCM's HTTP v1 send API. Returns
-    (None, None) if the secret isn't configured, so this fails quietly
-    rather than crashing the whole scrape run.
-    """
     sa_json = os.environ.get("FCM_SERVICE_ACCOUNT_JSON")
     if not sa_json:
         return None, None
@@ -628,9 +592,6 @@ def get_fcm_access_token():
 
 
 def send_fcm_notification(title, body):
-    """Sends a push notification to every app instance subscribed to the
-    'egx_bulletins' topic, via FCM's HTTP v1 API.
-    """
     import requests
 
     token, project_id = get_fcm_access_token()
@@ -658,12 +619,6 @@ def send_fcm_notification(title, body):
 
 
 def notify_new_bulletins(bulletin_items):
-    """Compares this run's bulletin items against the last known state
-    (bulletin_state.json, committed to the repo) and sends one push
-    notification per genuinely new item, so the app gets notified "as
-    soon as something new shows up" rather than re-notifying the same
-    items every single 10-minute run.
-    """
     if not bulletin_items:
         return
 
@@ -875,7 +830,7 @@ def main():
         try:
             investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
             page.goto(investor_referer, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(6000)  # bumped from 4000 - more time for the page's own session/token setup before the AJAX calls fire
+            page.wait_for_timeout(6000)
 
             tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
             investor_activity["byGroup"] = parse_investor_tables(tables_raw)
@@ -889,10 +844,6 @@ def main():
             inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
             investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
 
-            # Log what actually came back instead of a blanket success
-            # message that doesn't reflect whether any real data landed -
-            # that's what made last run's total silent failure invisible
-            # until someone manually inspected the JSON.
             populated = {k: len(v) for k, v in investor_activity.items()}
             print(f"[+] Investor activity fetch complete. Populated counts: {populated}")
             if all(count == 0 for count in populated.values()):
@@ -918,7 +869,7 @@ def main():
             try:
                 page.goto(endpoint_url, wait_until="domcontentloaded", timeout=45000)
                 page.wait_for_timeout(4000)
-                
+
                 parsed_stocks = parse_index_constituents(page.content())
                 index_constituents[index_name] = parsed_stocks
                 print(f"[+] Successfully scraped {len(parsed_stocks)} {index_name} constituents.")
@@ -928,49 +879,52 @@ def main():
 
         # --- PART 11: SCRAPE FULL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
-        
+
         prices = []
-        
+
         try:
-            # Broad selector for Telerik grid components
-            PRICES_TABLE_SELECTOR = "table.rgMasterTable, table[id*='RadGrid']"
-        
             page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
-            
-            # Wait for the table to render
-            page.wait_for_selector(PRICES_TABLE_SELECTOR, timeout=20000)
-            page.wait_for_timeout(1500)
-        
-            pre_click_content = page.content()
-        
-            print("[*] Switching grid to Market Segment view...")
-            
+            page.wait_for_timeout(4000)
+
+            print(f"[diag] Page title: {page.title()!r}")
+            pre_click_html = page.content()
+            pre_tables = BeautifulSoup(pre_click_html, "html.parser").find_all("table")
+            print(f"[diag] Tables present before click: {len(pre_tables)}")
+            for t in pre_tables[:15]:
+                print(f"[diag]   - id={t.get('id')!r} class={t.get('class')!r}")
+            body_text = BeautifulSoup(pre_click_html, "html.parser").get_text(" ", strip=True)
+            print(f"[diag] Body text snippet: {body_text[:300]!r}")
+
             market_link_selector = "[id$='lkMarket']"
-            
-            if page.is_visible(market_link_selector):
+            link_count = page.locator(market_link_selector).count()
+            print(f"[diag] '{market_link_selector}' matches on page: {link_count}")
+
+            if link_count > 0:
+                print("[*] Clicking Market Segment tab...")
                 try:
-                    # Trigger ASP.NET AJAX PostBack
-                    page.click(market_link_selector)
-                    page.wait_for_timeout(3000)  # Wait for AJAX DOM update
+                    page.locator(market_link_selector).first.click()
+                    page.wait_for_timeout(6000)
                 except Exception as postback_err:
-                    print(f"[!] Market segment postback failed ({postback_err}). Falling back to initial grid...")
-        
-            # Parse active page content dynamically
-            prices = parse_prices_table(page.content())
-            
-            # Fallback if AJAX swap wiped or emptied data
+                    print(f"[!] Market segment click failed ({postback_err}). Using pre-click content instead.")
+            else:
+                print("[!] No lkMarket-style link found on the page at all.")
+
+            post_click_html = page.content()
+            post_tables = BeautifulSoup(post_click_html, "html.parser").find_all("table")
+            print(f"[diag] Tables present after click: {len(post_tables)}")
+            for t in post_tables[:15]:
+                print(f"[diag]   - id={t.get('id')!r} class={t.get('class')!r}")
+
+            prices = parse_prices_table(post_click_html)
             if not prices:
-                print("[-] Market Segment view returned 0 rows - falling back to pre-click grid content.")
-                prices = parse_prices_table(pre_click_content)
-        
-            # Attach company codes / tickers
+                print("[-] Post-click parse returned 0 rows - trying pre-click content as fallback.")
+                prices = parse_prices_table(pre_click_html)
+
             company_codes = load_company_codes()
             attach_company_codes(prices, company_codes)
             matched = sum(1 for s in prices if "code" in s)
-            
             print(f"[+] Successfully scraped {len(prices)} stock prices "
                   f"({matched}/{len(prices)} matched to a ticker code).")
-        
         except Exception as prices_error:
             print(f"[-] Failed to fetch full stock prices: {prices_error}")
 
@@ -995,7 +949,7 @@ def main():
         "investorActivity": investor_activity,
         "indexConstituents": index_constituents,
         "indexCharts": index_charts,
-        "prices": prices  # Safe now even if Part 11 fails
+        "prices": prices
         }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
