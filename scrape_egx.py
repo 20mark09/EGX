@@ -801,7 +801,6 @@ def main():
         human_delay()
 
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
-        # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
         
         try:
@@ -813,43 +812,38 @@ def main():
         
             page.wait_for_timeout(8000)
         
-            # Wait for any table containing company names
-            page.wait_for_selector("table", timeout=20000)
+            print("\n===== DEBUG =====")
+        
+            print(
+                "Egyptian International Pharmaceuticals found:",
+                page.locator("text=Egyptian International Pharmaceuticals").count()
+            )
+        
+            tables = page.locator("table")
+            print("Tables found:", tables.count())
         
             rows = page.locator("table tr")
+            print("Rows found:", rows.count())
         
-            print(f"Found {rows.count()} rows")
-        
-            stock_prices = []
-        
-            for i in range(rows.count()):
+            for i in range(min(20, rows.count())):
         
                 cols = rows.nth(i).locator("td")
         
-                if cols.count() < 13:
-                    continue
+                print(f"\nROW {i}")
+                print("COL COUNT:", cols.count())
         
-                try:
-                    stock_prices.append({
-                        "name": cols.nth(0).inner_text().strip(),
-                        "sector": cols.nth(1).inner_text().strip(),
-                        "pc": safe_num(cols.nth(2).inner_text()),
-                        "open": safe_num(cols.nth(3).inner_text()),
-                        "close": safe_num(cols.nth(4).inner_text()),
-                        "change_pct": safe_num(cols.nth(5).inner_text().replace("%", "")),
-                        "last_price": safe_num(cols.nth(6).inner_text()),
-                        "high": safe_num(cols.nth(7).inner_text()),
-                        "low": safe_num(cols.nth(8).inner_text()),
-                        "value": safe_num(cols.nth(9).inner_text()),
-                        "volume": safe_num(cols.nth(10).inner_text()),
-                        "trades": safe_num(cols.nth(11).inner_text()),
-                        "market_cap": safe_num(cols.nth(12).inner_text())
-                    })
+                for j in range(cols.count()):
         
-                except Exception as e:
-                    print(f"Row {i} failed: {e}")
+                    try:
+                        txt = cols.nth(j).inner_text().strip()
         
-            print(f"Scraped {len(stock_prices)} stocks")
+                        if txt:
+                            print(f"  [{j}] {txt}")
+        
+                    except Exception as e:
+                        print(f"  [{j}] ERROR: {e}")
+        
+            print("\n===== END DEBUG =====")
         
         except Exception as e:
             print(f"[-] Prices scrape failed: {e}")
