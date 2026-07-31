@@ -1,106 +1,859 @@
 import json
+import os
 import re
-import requests
+import time
+import random
+from datetime import datetime, timedelta, timezone
+from urllib.parse import urljoin, urlparse, parse_qs
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
-def get_egx_prices_via_api():
-    """Fastest & most reliable method: Direct internal endpoint call."""
-    print("Fetching data directly from EGX internal endpoint...")
-    
-    # Internal JSON endpoint used by EGX Market Watch / Prices UI
-    api_url = "https://www.egx.com.eg/en/PricesData.aspx" 
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "X-Requested-With": "XMLHttpRequest",
-        "Referer": "https://www.egx.com.eg/en/prices.aspx"
+OUTPUT_FILE = "egx.json"
+
+COMPANY_CODES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "company_codes.json")
+
+
+def _normalize_company_name(name):
+    return re.sub(r"\s+", " ", name or "").strip().upper()
+
+
+def load_company_codes():
+    try:
+        with open(COMPANY_CODES_FILE, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"[-] Could not load {COMPANY_CODES_FILE}: {e}")
+        return {}
+
+    return {
+        _normalize_company_name(name): code.strip().upper()
+        for name, code in raw.items()
+        if name != "_readme" and code and code.strip()
     }
 
+
+def attach_company_codes(items, company_codes):
+    for item in items:
+        code = company_codes.get(_normalize_company_name(item.get("name")))
+        if code:
+            item["code"] = code
+    return items
+
+
+def safe_num(text):
+    if text is None:
+        return None
+    text = text.replace(",", "").strip()
+    if text == "":
+        return None
     try:
-        response = requests.get(api_url, headers=headers, timeout=15)
-        if response.status_code == 200:
+        return float(text) if "." in text else int(text)
+    except ValueError:
+        return None
+
+
+def slugify(label):
+    return re.sub(r"[^a-z0-9]+", "_", label.lower()).strip("_")
+
+
+def now_utc():
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+
+def human_delay():
+    time.sleep(random.uniform(3.5, 6.0))
+
+
+def safe_goto(page, url, wait_until="domcontentloaded", retries=3):
+    """Wrapper around page.goto to handle random ERR_CONNECTION_RESET drops from EGX."""
+    for attempt in range(retries):
+        try:
+            return page.goto(url, wait_until=wait_until, timeout=45000)
+        except Exception as e:
+            if "ERR_CONNECTION_RESET" in str(e) or "Timeout" in str(e):
+                print(f"[!] Network issue on {url} (attempt {attempt + 1}/{retries}). Retrying in {3 * (attempt + 1)}s...")
+                time.sleep(3 * (attempt + 1))
+            else:
+                raise e
+    raise Exception(f"Failed to navigate to {url} after {retries} attempts.")
+
+
+def parse_panel_metrics(html_content):
+    text = BeautifulSoup(html_content, "html.parser").get_text("\n", strip=True)
+    date_match = re.search(r"Date\s*:\s*(\d{2}/\d{2}/\d{4})", text, re.IGNORECASE)
+    value_match = re.search(r"Value\s*:\s*([\d,.]+)", text, re.IGNORECASE)
+    open_match = re.search(r"Open\s*:\s*([\d,.]+)", text, re.IGNORECASE)
+    high_match = re.search(r"High\s*:\s*([\d,.]+)", text, re.IGNORECASE)
+    low_match = re.search(r"Low\s*:\s*([\d,.]+)", text, re.IGNORECASE)
+    change_match = re.search(r"Change\s*:\s*(-?[\d,.]+)", text, re.IGNORECASE)
+    ytd_match = re.search(r"YTD%\s*Change\s*:\s*(-?[\d,.]+)", text, re.IGNORECASE)
+
+    def safe_str(match):
+        return match.group(1) if match else None
+
+    def safe_num_match(match):
+        if not match:
+            return None
+        try:
+            return float(match.group(1).replace(",", ""))
+        except ValueError:
+            return None
+
+    return {
+        "date": safe_str(date_match),
+        "value": safe_num_match(value_match),
+        "open": safe_num_match(open_match),
+        "high": safe_num_match(high_match),
+        "low": safe_num_match(low_match),
+        "change_pct": safe_num_match(change_match),
+        "ytd_pct": safe_num_match(ytd_match)
+    }
+
+
+def parse_gl_table(soup, table_id):
+    table = soup.find("table", {"id": table_id})
+    stocks = []
+    if not table:
+        return stocks
+    rows = table.find_all("tr")[1:]
+    for row in rows:
+        cols = row.find_all("td")
+        if len(cols) >= 6:
             try:
-                data = response.json()
-                print("Successfully fetched JSON directly!")
-                return data
-            except json.JSONDecodeError:
-                # If the endpoint returned raw HTML/UpdatePanel text instead of pure JSON
-                return parse_html_table(response.text)
-    except Exception as e:
-        print(f"Direct API call failed: {e}. Falling back to Playwright headless scraper...")
+                name_text = cols[0].get_text(strip=True)
+                if not name_text or "No data available" in name_text:
+                    continue
+                stocks.append({
+                    "name": name_text,
+                    "price": float(cols[4].get_text(strip=True).replace(",", "")),
+                    "change_pct": float(cols[5].get_text(strip=True).replace(",", "").replace("%", ""))
+                })
+            except Exception:
+                continue
+    return stocks
+
+
+def parse_prices_table(html_content):
+    soup = BeautifulSoup(html_content, "html.parser")
+    # Telerik RadGrid main data table
+    table = soup.find("table", id=lambda x: x and x.endswith("RadGrid2_ctl00"))
+    if not table:
+        table = soup.find("table", class_="rgMasterTable")
     
+    stocks = []
+    if not table:
+        return stocks
+
+    tbody = table.find("tbody")
+    if not tbody:
+        return stocks
+
+    for row in tbody.find_all("tr"):
+        cols = row.find_all("td")
+        # Standard EGX Market Watch columns
+        if len(cols) >= 6:
+            try:
+                name = cols[0].get_text(strip=True)
+                if not name or "No data available" in name:
+                    continue
+                
+                last_price = safe_num(cols[1].get_text(strip=True))
+                change_pct = safe_num(cols[2].get_text(strip=True).replace("%", ""))
+                volume = safe_num(cols[3].get_text(strip=True))
+                value = safe_num(cols[4].get_text(strip=True))
+                trades = safe_num(cols[5].get_text(strip=True))
+
+                stocks.append({
+                    "name": name,
+                    "price": last_price,
+                    "change_pct": change_pct,
+                    "volume": volume,
+                    "value": value,
+                    "trades": trades
+                })
+            except Exception:
+                continue
+    return stocks
+
+
+def parse_market_summary(html_content):
+    soup = BeautifulSoup(html_content, "html.parser")
+    tables = soup.find_all("table", class_="TableStatic")
+    result = {"main_market": {}, "breadth": {}}
+    section_starts = {"Listed": "listed", "SMEs Market": "smes", "OTC": "otc"}
+
+    if len(tables) >= 1:
+        section = None
+        for row in tables[0].find_all("tr"):
+            cells = row.find_all("td")
+            if not cells:
+                continue
+            label = cells[0].get_text(strip=True)
+            if label == "No.":
+                continue
+            values = [c.get_text(strip=True) for c in cells[1:]]
+
+            if label in section_starts:
+                section = section_starts[label]
+                if any(values):
+                    result["main_market"][f"{section}_total"] = {
+                        "no": safe_num(values[0]),
+                        "volume": safe_num(values[1]),
+                        "value": safe_num(values[2]),
+                        "trades": safe_num(values[3]),
+                    }
+                continue
+
+            if label == "Total":
+                section = None
+                result["main_market"]["total"] = {
+                    "no": safe_num(values[0]),
+                    "volume": safe_num(values[1]),
+                    "value": safe_num(values[2]),
+                    "trades": safe_num(values[3]),
+                }
+                continue
+
+            if label == "Total Market Cap (LE)":
+                result["main_market"]["total_market_cap"] = safe_num(values[0]) if values else None
+                continue
+
+            if not any(values):
+                continue
+
+            key = (f"{section}_" if section else "") + slugify(label)
+            if len(values) == 4:
+                result["main_market"][key] = {
+                    "no": safe_num(values[0]),
+                    "volume": safe_num(values[1]),
+                    "value": safe_num(values[2]),
+                    "trades": safe_num(values[3]),
+                }
+            else:
+                result["main_market"][key] = values
+
+    if len(tables) >= 2:
+        for row in tables[1].find_all("tr"):
+            cells = row.find_all("td")
+            if not cells:
+                continue
+            label = cells[0].get_text(strip=True)
+            if label == "No.":
+                continue
+            values = [c.get_text(strip=True) for c in cells[1:]]
+            if not any(values):
+                continue
+            key = slugify(label)
+            if len(values) == 4:
+                result["breadth"][key] = {
+                    "no": safe_num(values[0]),
+                    "volume": safe_num(values[1]),
+                    "value": safe_num(values[2]),
+                    "trades": safe_num(values[3]),
+                }
+            else:
+                result["breadth"][key] = values
+    return result
+
+
+def parse_news_grid(html_content, table_id, base_url="https://www.egx.com.eg/en/"):
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": table_id})
+    items = []
+    if not table:
+        return items
+    title_spans = table.find_all("span", id=lambda x: x and x.endswith("_lblTitle"))
+    for title_span in title_spans:
+        try:
+            title = title_span.get_text(strip=True)
+            link_tag = title_span.find_parent("a")
+            href = link_tag["href"] if link_tag and link_tag.has_attr("href") else None
+            url = urljoin(base_url, href) if href else None
+            news_id = None
+            if href:
+                id_match = re.search(r"NewsID=(\d+)", href)
+                news_id = id_match.group(1) if id_match else None
+            prefix = title_span["id"].rsplit("_lblTitle", 1)[0]
+            date_span = soup.find("span", id=f"{prefix}_lblDate")
+            date_text = date_span.get_text(strip=True) if date_span else None
+            items.append({"id": news_id, "title": title, "date": date_text, "url": url})
+        except Exception:
+            continue
+    return items
+
+
+def parse_sectors(html_content):
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": "ctl00_C_M_GridView2"})
+    sectors = []
+    if not table:
+        return sectors
+    for row in table.find_all("tr"):
+        cells = row.find_all("td")
+        if len(cells) < 8:
+            continue
+        try:
+            name = cells[0].get_text(strip=True)
+            if not name:
+                continue
+            sectors.append({
+                "name": name,
+                "value": safe_num(cells[2].get_text(strip=True)),
+                "value_pct": safe_num(cells[3].get_text(strip=True)),
+                "volume": safe_num(cells[4].get_text(strip=True)),
+                "volume_pct": safe_num(cells[5].get_text(strip=True)),
+                "market_cap": safe_num(cells[6].get_text(strip=True)),
+                "market_cap_pct": safe_num(cells[7].get_text(strip=True)),
+            })
+        except Exception:
+            continue
+    return sectors
+
+
+def parse_live_market_status(html_content):
+    soup = BeautifulSoup(html_content, "html.parser")
+    el = soup.find(id="ctl00_C_lblMarketStatus")
+    if not el:
+        return {"text_ar": None, "color": None}
+    style = el.get("style", "")
+    color_match = re.search(r"color\s*:\s*([A-Za-z]+)", style, re.IGNORECASE)
+    return {
+        "text_ar": el.get_text(strip=True),
+        "color": color_match.group(1) if color_match else None,
+    }
+
+
+NATIONALITY_MAP = {"مصريين": "egyptians", "عرب": "arabs", "أجانب": "foreigners", "اجانب": "foreigners"}
+INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
+
+
+def fetch_investor_json(context, url, referer, retries=2, retry_delay=3):
+    for attempt in range(retries + 1):
+        try:
+            response = context.request.get(
+                url,
+                headers={
+                    "Referer": referer,
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                },
+                timeout=20000,
+            )
+            text = response.text()
+            stripped = text.strip() if text else ""
+            if stripped.startswith("[") or stripped.startswith("{"):
+                return text
+            print(f"[-] Non-JSON response from {url} (attempt {attempt + 1}/{retries + 1}): {stripped[:150]!r}")
+        except Exception as e:
+            print(f"[-] Failed to fetch {url} (attempt {attempt + 1}/{retries + 1}): {e}")
+
+        if attempt < retries:
+            time.sleep(retry_delay)
+
     return None
 
 
-def parse_html_table(html_content):
-    """Fallback parser that dynamically locates any price table in the DOM."""
-    soup = BeautifulSoup(html_content, "html.parser")
-    
-    # Find any table containing stock links or ISINs dynamically
-    rows = soup.select("table tr")
-    scraped_data = []
-
+def parse_investor_tables(raw_text):
+    result = {}
+    if not raw_text:
+        return result
+    try:
+        rows = json.loads(raw_text)
+    except Exception:
+        return result
     for row in rows:
-        cols = row.find_all("td")
-        if len(cols) < 5:
+        try:
+            group_key = INVESTOR_GROUP_MAP.get(str(row.get("Group")), str(row.get("Group")))
+            nat_key = NATIONALITY_MAP.get(row.get("Type"), row.get("Type"))
+            result.setdefault(group_key, {})[nat_key] = {
+                "buy": row.get("Buy"),
+                "sell": row.get("Sell"),
+                "net": row.get("Net"),
+            }
+        except Exception:
             continue
-
-        # Look for ISIN code inside links or data attributes
-        isin_link = row.select_one("a[href*='ISIN='], a[href*='isin=']")
-        isin = ""
-        if isin_link and "href" in isin_link.attrs:
-            match = re.search(r"ISIN=([A-Z0-9]+)", isin_link["href"], re.IGNORECASE)
-            if match:
-                isin = match.group(1)
-
-        row_text = [c.get_text(strip=True) for c in cols]
-        
-        # Ensure it's a valid data row (avoid headers)
-        if len(row_text) >= 8 and any(char.isdigit() for char in row_text[3]):
-            scraped_data.append({
-                "isin": isin,
-                "name": row_text[0],
-                "sector": row_text[2] if len(row_text) > 2 else "",
-                "prev_close": row_text[3] if len(row_text) > 3 else "",
-                "last": row_text[7] if len(row_text) > 7 else "",
-                "volume": row_text[-1] if len(row_text) > 0 else ""
-            })
-
-    return scraped_data
+    return result
 
 
-def scrape_egx_playwright_fallback():
-    """Playwright backup if direct requests are blocked."""
-    from playwright.sync_api import sync_playwright
+def parse_pie_chart(raw_text):
+    items = []
+    if not raw_text:
+        return items
+    try:
+        rows = json.loads(raw_text)
+    except Exception:
+        return items
+    for row in rows:
+        try:
+            items.append({"label_ar": row.get("Label"), "value": row.get("Value"), "color": row.get("Color")})
+        except Exception:
+            continue
+    return items
 
-    print("Launching Playwright Fallback...")
-    url = "https://www.egx.com.eg/en/prices.aspx"
+
+def parse_stack_chart(raw_text):
+    items = []
+    if not raw_text:
+        return items
+    try:
+        rows = json.loads(raw_text)
+    except Exception:
+        return items
+    for row in rows:
+        try:
+            nat_key = NATIONALITY_MAP.get(row.get("Type"), row.get("Type"))
+            items.append({"nationality": nat_key, "buy": row.get("Buy"), "sell": row.get("Sell")})
+        except Exception:
+            continue
+    return items
+
+
+def parse_index_constituents(html_content):
+    soup = BeautifulSoup(html_content, "html.parser")
+    table = soup.find("table", {"id": "ctl00_C_CIC_GridView1"})
+    items = []
+    if not table:
+        return items
+    for row in table.find_all("tr")[1:]:
+        cells = row.find_all("td")
+        if len(cells) < 3:
+            continue
+        try:
+            isin = cells[0].get_text(strip=True)
+            code = cells[1].get_text(strip=True)
+            name_ar = cells[2].get_text(strip=True)
+            weight = safe_num(cells[3].get_text(strip=True)) if len(cells) >= 4 else None
+            
+            if not name_ar:
+                continue
+            
+            node = {"isin": isin, "code": code, "name_ar": name_ar}
+            if weight is not None:
+                node["weight_pct"] = weight
+            items.append(node)
+        except Exception:
+            continue
+    return items
+
+
+def parse_chart_data(raw_text):
+    points = []
+    if not raw_text:
+        return points
+    try:
+        rows = json.loads(raw_text)
+    except Exception:
+        return points
+    for row in rows:
+        try:
+            points.append({"time": row.get("CDAY"), "value": row.get("INDEX_VALUE")})
+        except Exception:
+            continue
+    return points
+
+
+_CHART_INDEX_ALIASES = {
+    "EGX30": "EGX30", "EGX_33_SHARIAH": "SHARIAH", "SHARIAH": "SHARIAH",
+    "EGX70": "EGX70", "EGX70EWI": "EGX70", "EGX70_EWI": "EGX70",
+    "EGX100": "EGX100", "EGX100EWI": "EGX100", "EGX100_EWI": "EGX100",
+}
+
+
+def normalize_chart_index_name(raw_name):
+    if not raw_name:
+        return raw_name
+    key = raw_name.upper()
+    if key in _CHART_INDEX_ALIASES:
+        return _CHART_INDEX_ALIASES[key]
+    for known in ("EGX30", "SHARIAH", "EGX70", "EGX100"):
+        if known in key:
+            return known
+    return raw_name
+
+
+BULLETIN_STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bulletin_state.json")
+
+
+def _bulletin_item_key(item):
+    if item.get("id"):
+        return f"id:{item['id']}"
+    return f"td:{item.get('title', '')}|{item.get('date', '')}"
+
+
+def load_bulletin_state():
+    try:
+        with open(BULLETIN_STATE_FILE, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return set()
+
+
+def save_bulletin_state(keys):
+    with open(BULLETIN_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(sorted(keys), f, indent=2)
+
+
+def get_fcm_access_token():
+    sa_json = os.environ.get("FCM_SERVICE_ACCOUNT_JSON")
+    if not sa_json:
+        return None, None
+
+    try:
+        from google.oauth2 import service_account
+        from google.auth.transport.requests import Request
+
+        info = json.loads(sa_json)
+        credentials = service_account.Credentials.from_service_account_info(
+            info, scopes=["https://www.googleapis.com/auth/firebase.messaging"]
+        )
+        credentials.refresh(Request())
+        return credentials.token, info.get("project_id")
+    except Exception as e:
+        print(f"[-] Failed to get FCM access token: {e}")
+        return None, None
+
+
+def send_fcm_notification(title, body):
+    import requests
+
+    token, project_id = get_fcm_access_token()
+    if not token or not project_id:
+        print("[-] FCM not configured - skipping push notification.")
+        return
+
+    url = f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
+    payload = {
+        "message": {
+            "topic": "egx_bulletins",
+            "notification": {"title": title, "body": body},
+        }
+    }
+    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+
+    try:
+        response = requests.post(url, json=payload, headers=headers, timeout=15)
+        if response.status_code == 200:
+            print(f"[+] Push notification sent: {title}")
+        else:
+            print(f"[-] FCM send failed ({response.status_code}): {response.text[:200]}")
+    except Exception as e:
+        print(f"[-] FCM send error: {e}")
+
+
+def notify_new_bulletins(bulletin_items):
+    if not bulletin_items:
+        return
+
+    seen_keys = load_bulletin_state()
+    current_keys = {_bulletin_item_key(item) for item in bulletin_items}
+    new_keys = current_keys - seen_keys
+
+    if new_keys:
+        new_items = [item for item in bulletin_items if _bulletin_item_key(item) in new_keys]
+        for item in new_items:
+            send_fcm_notification("EGX Bulletin", item.get("title", "New bulletin item"))
+        print(f"[+] {len(new_items)} new bulletin item(s) - notification(s) sent.")
+    else:
+        print("[+] No new bulletin items since last run - no notifications sent.")
+
+    save_bulletin_state(current_keys | seen_keys)
+
+
+def main():
+    indices_output = {}
+    gainers, losers = [], []
+    stock_prices = []
+    market_summary = {"main_market": {}, "breadth": {}}
+    news, sectors, disclosures, bulletin = [], [], [], []
+    live_status = {"text_ar": None, "color": None}
+    investor_activity = {
+        "byGroup": {}, "nationalityBreakdownPct": [],
+        "individualsByNationality": [], "institutionsByNationality": []
+    }
+    index_constituents = {"EGX30": [], "SHARIAH": [], "EGX70": [], "EGX100": []}
+    index_charts = {}
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        print("Launching secure browser context...")
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
         )
+
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            viewport={"width": 1280, "height": 720}
+        )
+
         page = context.new_page()
 
-        print("Navigating to prices page...")
-        page.goto(url, wait_until="domcontentloaded", timeout=60000)
-        page.wait_for_timeout(10000) # Give scripts time to execute
+        # --- PART 1: SCRAPE ALL INDICES ON A SINGLE TAB ---
+        postback_selectors = {
+            "EGX30": "#ctl00_C_M_lnkEGX30",
+            "SHARIAH": "#ctl00_C_M_lnkSHARIAH",
+            "EGX70": "#ctl00_C_M_lnkEGX70EWI",
+            "EGX100": "#ctl00_C_M_lnkEGX100EWI"
+        }
 
-        # Grab all rendered HTML regardless of specific container IDs
-        html_content = page.content()
+        print("Navigating to Indices Workspace...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/en/Indices.aspx", wait_until="networkidle")
+            page.wait_for_function("typeof __doPostBack === 'function'", timeout=10000)
+
+            for tracking_name, selector in postback_selectors.items():
+                print(f"[*] Processing panel view click for: {tracking_name}")
+                if page.locator(selector).count() > 0:
+                    page.locator(selector).click()
+                    page.wait_for_load_state("networkidle")
+                    page.wait_for_timeout(3000)
+                else:
+                    event_target = selector.replace("#", "").replace("_", "$")
+                    page.evaluate(f"__doPostBack('{event_target}', '');")
+                    page.wait_for_timeout(4000)
+
+                metrics = parse_panel_metrics(page.content())
+                if metrics.get("value") is not None:
+                    indices_output[tracking_name] = metrics
+                    print(f"[+] Extracted panel data for {tracking_name}: {metrics['value']}")
+                else:
+                    print(f"[-] Structural parse returned empty for {tracking_name}")
+                    indices_output[tracking_name] = {k: None for k in ["date", "value", "open", "high", "low", "change_pct", "ytd_pct"]}
+        except Exception as loop_error:
+            print(f"[-] Catastrophic stop on indices interface: {loop_error}")
+
+        human_delay()
+
+        # --- PART 2: SCRAPE TOP GAINERS & LOSERS ---
+        print("\nNavigating to Top Gainers/Losers Desk...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/en/Top_GL.aspx")
+            page.wait_for_timeout(4000)
+            gl_soup = BeautifulSoup(page.content(), "html.parser")
+            gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
+            losers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView2")
+
+            company_codes = load_company_codes()
+            attach_company_codes(gainers, company_codes)
+            attach_company_codes(losers, company_codes)
+            matched = sum(1 for m in gainers + losers if "code" in m)
+            print(f"[+] Successfully scraped {len(gainers)} gainers and {len(losers)} losers ({matched}/{len(gainers) + len(losers)} matched to a ticker code).")
+        except Exception as gl_error:
+            print(f"[-] Failed to fetch Top Gainers/Losers: {gl_error}")
+
+        human_delay()
+
+        # --- PART 3: SCRAPE MARKET SUMMARY STATISTICS ---
+        print("\nNavigating to Market Summary...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/en/MarketSummry.aspx")
+            page.wait_for_timeout(4000)
+            market_summary = parse_market_summary(page.content())
+            print(f"[+] Successfully scraped market summary.")
+        except Exception as ms_error:
+            print(f"[-] Failed to fetch Market Summary: {ms_error}")
+
+        human_delay()
+
+        # --- PART 4: SCRAPE NEWS ---
+        print("\nNavigating to News List...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/en/NewsList.aspx")
+            page.wait_for_timeout(4000)
+            news = parse_news_grid(page.content(), "ctl00_C_N_GridView1")
+            print(f"[+] Successfully scraped {len(news)} news items.")
+        except Exception as news_error:
+            print(f"[-] Failed to fetch News: {news_error}")
+
+        human_delay()
+
+        # --- PART 5: SCRAPE SECTORS ---
+        print("\nNavigating to Market Watch - Sectors...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/en/MarketWatchSectors.aspx")
+            page.wait_for_timeout(4000)
+            sectors = parse_sectors(page.content())
+            print(f"[+] Successfully scraped {len(sectors)} sectors.")
+        except Exception as sectors_error:
+            print(f"[-] Failed to fetch Sectors: {sectors_error}")
+
+        human_delay()
+
+        # --- PART 6: SCRAPE DISCLOSURES ---
+        print("\nNavigating to Disclosures search...")
+        try:
+            today = datetime.now(timezone.utc)
+            three_months_ago = today - timedelta(days=90)
+            from_str = three_months_ago.strftime("%d/%m/%Y")
+            to_str = today.strftime("%d/%m/%Y")
+            disclosures_url = f"https://www.egx.com.eg/en/NewsSearch.aspx?com=&word=&from={from_str}&to={to_str}&isin=&sec_id=20"
+
+            safe_goto(page, disclosures_url)
+            page.wait_for_timeout(4000)
+            disclosures = parse_news_grid(page.content(), "ctl00_C_N_GVNews")
+            print(f"[+] Successfully scraped {len(disclosures)} disclosures.")
+        except Exception as disc_error:
+            print(f"[-] Failed to fetch Disclosures: {disc_error}")
+
+        human_delay()
+
+        # --- PART 7: SCRAPE BULLETIN ---
+        print("\nNavigating to Bulletin News...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/ar/BulletinNews.aspx")
+            page.wait_for_timeout(4000)
+            bulletin = parse_news_grid(page.content(), "ctl00_C_BulletinNews1_GVNews", base_url="https://www.egx.com.eg/ar/")
+            print(f"[+] Successfully scraped {len(bulletin)} bulletin items.")
+            notify_new_bulletins(bulletin)
+        except Exception as bulletin_error:
+            print(f"[-] Failed to fetch Bulletin: {bulletin_error}")
+
+        human_delay()
+
+        # --- PART 8: SCRAPE LIVE MARKET STATUS & ALL INDEX GRAPH DATA ---
+        print("\nNavigating to Homepage for live market status and chart data...")
+        try:
+            def handle_chart_response(response):
+                if "getIndexChartData" not in response.url:
+                    return
+                try:
+                    query = parse_qs(urlparse(response.url).query)
+                    raw_index_name = query.get("index", ["UNKNOWN"])[0]
+                    index_name = normalize_chart_index_name(raw_name=raw_index_name)
+                    data_points = parse_chart_data(response.text())
+                    if data_points:
+                        index_charts[index_name] = data_points
+                        print(f"[+] Captured chart data for {index_name} ({len(data_points)} points)")
+                except Exception as capture_error:
+                    print(f"[-] Failed to parse a captured chart response: {capture_error}")
+
+            page.on("response", handle_chart_response)
+            safe_goto(page, "https://www.egx.com.eg/ar/homepage.aspx")
+            page.wait_for_timeout(6000)
+
+            live_status = parse_live_market_status(page.content())
+            print(f"[+] Live market status: {live_status}")
+
+            chart_tabs = ["EGX30", "EGX_33_Shariah", "EGX70_EWI", "EGX100_EWI"]
+            for tab_value in chart_tabs:
+                selector = f'div[dataindex="{tab_value}"]'
+                if page.locator(selector).count() > 0:
+                    print(f"[*] Switching chart workspace to: {tab_value}")
+                    try:
+                        page.locator(selector).evaluate("el => el.click()")
+                        page.wait_for_timeout(3000)
+                    except Exception as click_error:
+                        print(f"[-] Interaction skipped on tab {tab_value}: {click_error}")
+        except Exception as status_error:
+            print(f"[-] Failed to fetch live market status/chart data: {status_error}")
+
+        human_delay()
+
+        # --- PART 9: SCRAPE INVESTOR ACTIVITY ---
+        print("\nFetching Investor Type data...")
+        try:
+            investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
+            safe_goto(page, investor_referer)
+            page.wait_for_timeout(6000)
+
+            tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
+            investor_activity["byGroup"] = parse_investor_tables(tables_raw)
+
+            pie2_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
+            investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
+
+            indiv_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
+            investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
+
+            inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
+            investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
+
+            populated = {k: len(v) for k, v in investor_activity.items()}
+            print(f"[+] Investor activity fetch complete. Populated counts: {populated}")
+        except Exception as inv_error:
+            print(f"[-] Failed to fetch Investor Type data: {inv_error}")
+
+        human_delay()
+
+        # --- PART 10: SCRAPE ALL CONSTITUENT ENDPOINTS SEQUENTIALLY ---
+        constituent_endpoints = {
+            "EGX30": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=1&nav=1",
+            "SHARIAH": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=22&nav=22",
+            "EGX70": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=16&nav=16",
+            "EGX100": "https://www.egx.com.eg/ar/currentindexconstituntes.aspx?type=5&nav=4"
+        }
+
+        for index_name, endpoint_url in constituent_endpoints.items():
+            print(f"\nNavigating to {index_name} Constituents...")
+            try:
+                safe_goto(page, endpoint_url)
+                page.wait_for_timeout(4000)
+                
+                parsed_stocks = parse_index_constituents(page.content())
+                index_constituents[index_name] = parsed_stocks
+                print(f"[+] Successfully scraped {len(parsed_stocks)} {index_name} constituents.")
+            except Exception as cic_error:
+                print(f"[-] Failed to fetch {index_name} constituents: {cic_error}")
+
+        human_delay()
+
+        # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
+        print("\nNavigating to Prices (Market Watch)...")
+        try:
+            safe_goto(page, "https://www.egx.com.eg/en/prices.aspx", wait_until="networkidle")
+            page.wait_for_timeout(3000)
+
+            market_link_selector = "[id$='lkMarket']"
+            if page.locator(market_link_selector).count() > 0:
+                print("[*] Clicking Market Segment tab...")
+                
+                # Intercept the Telerik RadGrid AJAX POST response
+                try:
+                    with page.expect_response(lambda res: "prices.aspx" in res.url and res.status == 200, timeout=15000):
+                        page.locator(market_link_selector).first.click()
+                    page.wait_for_timeout(4000)
+                except Exception as click_wait_error:
+                    print(f"[!] Tab click wait timed out: {click_wait_error}. Parsing existing DOM fallback.")
+
+            stock_prices = parse_prices_table(page.content())
+
+            company_codes = load_company_codes()
+            attach_company_codes(stock_prices, company_codes)
+            matched = sum(1 for s in stock_prices if "code" in s)
+            print(f"[+] Successfully scraped {len(stock_prices)} stock prices ({matched}/{len(stock_prices)} matched to a ticker code).")
+        except Exception as prices_error:
+            print(f"[-] Failed to fetch full stock prices: {prices_error}")
+
+        context.close()
         browser.close()
 
-    return parse_html_table(html_content)
+    # --- SAVE STRUCTURED RESULTS ---
+    output = {
+        "source": "https://www.egx.com.eg",
+        "lastUpdated": now_utc(),
+        "liveMarketStatus": live_status,
+        "indices": indices_output,
+        "gainers": gainers,
+        "losers": losers,
+        "stockPrices": stock_prices,
+        "marketSummary": market_summary,
+        "sectors": sectors,
+        "news": news,
+        "disclosures": disclosures,
+        "bulletin": bulletin,
+        "investorActivity": investor_activity,
+        "indexConstituents": index_constituents,
+        "indexCharts": index_charts
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    print(f"\nFinal run complete! Tracking metrics saved perfectly to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
-    # Primary attempt: Fast HTTP/API strategy
-    data = get_egx_prices_via_api()
-
-    # Secondary attempt: Browser fallback
-    if not data:
-        data = scrape_egx_playwright_fallback()
-
-    print(f"\nSuccessfully extracted {len(data)} items.\n")
-    if data:
-        print(json.dumps(data[:5], indent=2, ensure_ascii=False))
+    main()
