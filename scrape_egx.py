@@ -802,92 +802,51 @@ def main():
 
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
+        # --- PART 11: DEBUG NETWORK REQUESTS ---
+
         print("\nNavigating to Prices (Market Watch)...")
         
-        try:
-            safe_goto(
-                page,
-                "https://www.egx.com.eg/en/prices.aspx",
-                wait_until="networkidle"
-            )
+        def log_request(request):
+            url = request.url.lower()
         
-            page.wait_for_timeout(5000)
+            if (
+                "prices" in url
+                or "market" in url
+                or "ajax" in url
+                or "callback" in url
+                or "rad" in url
+            ):
+                print("\nREQUEST:")
+                print(request.method, request.url)
         
-            print("[*] Switching to Market Segment tab...")
+        def log_response(response):
+            url = response.url.lower()
         
-            # Trigger the same postback as clicking Market Segment
-            page.evaluate("""
-                if (typeof __doPostBack === 'function') {
-                    __doPostBack('ctl00$C$S$lkMarket','');
-                }
-            """)
+            if (
+                "prices" in url
+                or "market" in url
+                or "ajax" in url
+                or "callback" in url
+                or "rad" in url
+            ):
+                print("\nRESPONSE:")
+                print(response.status, response.url)
         
-            page.wait_for_load_state("networkidle")
-            page.wait_for_timeout(10000)
+        page.on("request", log_request)
+        page.on("response", log_response)
         
-            print(
-                "[*] EIPICO found:",
-                page.locator("text=Egyptian International Pharmaceuticals").count()
-            )
+        safe_goto(
+            page,
+            "https://www.egx.com.eg/en/prices.aspx",
+            wait_until="networkidle"
+        )
         
-            # Save HTML for debugging
-            with open("market_segment_debug.html", "w", encoding="utf-8") as f:
-                f.write(page.content())
+        page.wait_for_timeout(3000)
         
-            tables = page.locator("table")
-            print(f"[*] Tables found: {tables.count()}")
+        print("CLICK MARKET SEGMENT MANUALLY NOW")
+        input("Press ENTER after the grid loads...")
         
-            rows = page.locator("tr")
-            print(f"[*] Rows found: {rows.count()}")
-        
-            stock_prices = []
-        
-            for i in range(rows.count()):
-        
-                row = rows.nth(i)
-                cols = row.locator("td")
-        
-                col_count = cols.count()
-        
-                # Stock rows should have lots of columns
-                if col_count < 10:
-                    continue
-        
-                try:
-                    values = []
-        
-                    for j in range(col_count):
-                        txt = cols.nth(j).inner_text().strip()
-                        values.append(txt)
-        
-                    # Skip headers and garbage rows
-                    if not values:
-                        continue
-        
-                    if (
-                        "Name" in values[0]
-                        or "TODAY'S MARKET WATCH" in values[0]
-                        or "Market Activity" in values[0]
-                    ):
-                        continue
-        
-                    print(f"\nROW {i}")
-                    print(values)
-        
-                    stock_prices.append({
-                        "raw": values
-                    })
-        
-                except Exception as e:
-                    print(f"[-] Row {i} error: {e}")
-        
-            print(f"[+] Found {len(stock_prices)} possible stock rows")
-        
-            company_codes = load_company_codes()
-            attach_company_codes(stock_prices, company_codes)
-        
-        except Exception as prices_error:
-            print(f"[-] Failed to fetch full stock prices: {prices_error}")
+        print("Done")
 
         context.close()
         browser.close()
