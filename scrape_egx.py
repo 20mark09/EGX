@@ -801,6 +801,7 @@ def main():
         human_delay()
 
         # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
+        # --- PART 11: SCRAPE ALL STOCK PRICES (Market Watch) ---
         print("\nNavigating to Prices (Market Watch)...")
         
         try:
@@ -810,43 +811,83 @@ def main():
                 wait_until="networkidle"
             )
         
-            page.wait_for_timeout(8000)
+            page.wait_for_timeout(5000)
         
-            print("\n===== DEBUG =====")
+            print("[*] Switching to Market Segment tab...")
+        
+            # Trigger the same postback as clicking Market Segment
+            page.evaluate("""
+                if (typeof __doPostBack === 'function') {
+                    __doPostBack('ctl00$C$S$lkMarket','');
+                }
+            """)
+        
+            page.wait_for_load_state("networkidle")
+            page.wait_for_timeout(10000)
         
             print(
-                "Egyptian International Pharmaceuticals found:",
+                "[*] EIPICO found:",
                 page.locator("text=Egyptian International Pharmaceuticals").count()
             )
         
+            # Save HTML for debugging
+            with open("market_segment_debug.html", "w", encoding="utf-8") as f:
+                f.write(page.content())
+        
             tables = page.locator("table")
-            print("Tables found:", tables.count())
+            print(f"[*] Tables found: {tables.count()}")
         
-            rows = page.locator("table tr")
-            print("Rows found:", rows.count())
+            rows = page.locator("tr")
+            print(f"[*] Rows found: {rows.count()}")
         
-            for i in range(min(20, rows.count())):
+            stock_prices = []
         
-                cols = rows.nth(i).locator("td")
+            for i in range(rows.count()):
         
-                print(f"\nROW {i}")
-                print("COL COUNT:", cols.count())
+                row = rows.nth(i)
+                cols = row.locator("td")
         
-                for j in range(cols.count()):
+                col_count = cols.count()
         
-                    try:
+                # Stock rows should have lots of columns
+                if col_count < 10:
+                    continue
+        
+                try:
+                    values = []
+        
+                    for j in range(col_count):
                         txt = cols.nth(j).inner_text().strip()
+                        values.append(txt)
         
-                        if txt:
-                            print(f"  [{j}] {txt}")
+                    # Skip headers and garbage rows
+                    if not values:
+                        continue
         
-                    except Exception as e:
-                        print(f"  [{j}] ERROR: {e}")
+                    if (
+                        "Name" in values[0]
+                        or "TODAY'S MARKET WATCH" in values[0]
+                        or "Market Activity" in values[0]
+                    ):
+                        continue
         
-            print("\n===== END DEBUG =====")
+                    print(f"\nROW {i}")
+                    print(values)
         
-        except Exception as e:
-            print(f"[-] Prices scrape failed: {e}")
+                    stock_prices.append({
+                        "raw": values
+                    })
+        
+                except Exception as e:
+                    print(f"[-] Row {i} error: {e}")
+        
+            print(f"[+] Found {len(stock_prices)} possible stock rows")
+        
+            company_codes = load_company_codes()
+            attach_company_codes(stock_prices, company_codes)
+        
+        except Exception as prices_error:
+            print(f"[-] Failed to fetch full stock prices: {prices_error}")
 
         context.close()
         browser.close()
