@@ -901,11 +901,14 @@ def main():
             print(f"[diag] '{market_link_selector}' matches: {link_count}")
 
             if link_count > 0:
-                # This is an UpdatePanel partial postback and has shown to be
-                # timing-sensitive (worked once, then came back empty) - wait
-                # for the page to actually settle first, and retry the click
-                # once if the grid doesn't show up in time rather than
-                # giving up after a single attempt.
+                # Confirmed (via screenshots) the Market Segment tab and its
+                # RadGrid2 data both genuinely exist and work in a real
+                # browser - the Company tab landing page is just a search
+                # box, nothing else. So the real gap is that clicking a
+                # javascript: href via Playwright isn't reliably firing the
+                # postback in headless Chromium. The link's href is exactly
+                # __doPostBack('ctl00$C$S$lkMarket',''), so call that
+                # directly rather than depend on click-event simulation.
                 try:
                     page.wait_for_load_state("networkidle", timeout=10000)
                 except Exception:
@@ -913,11 +916,11 @@ def main():
 
                 grid_appeared = False
                 for attempt in range(1, 3):
-                    print(f"[*] Clicking Market Segment tab (attempt {attempt}/2)...")
+                    print(f"[*] Triggering Market Segment postback directly (attempt {attempt}/2)...")
                     try:
-                        page.locator(market_link_selector).first.click()
+                        page.evaluate("__doPostBack('ctl00$C$S$lkMarket', '');")
                         page.wait_for_selector(RADGRID_SELECTOR, timeout=20000)
-                        print("[+] RadGrid2 (Market Segment grid) appeared after click.")
+                        print("[+] RadGrid2 (Market Segment grid) appeared.")
                         grid_appeared = True
                         break
                     except Exception as wait_err:
