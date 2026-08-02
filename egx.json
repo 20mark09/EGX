@@ -1,11 +1,48 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-02 12:44 UTC",
+  "lastUpdated": "2026-08-02 13:27 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
   },
-  "indices": {},
+  "indices": {
+    "EGX30": {
+      "date": "02/08/2026",
+      "value": 54285.86,
+      "open": 53442.2,
+      "high": 54299.07,
+      "low": 53442.2,
+      "change_pct": 1.58,
+      "ytd_pct": 29.78
+    },
+    "SHARIAH": {
+      "date": "02/08/2026",
+      "value": 54285.86,
+      "open": 53442.2,
+      "high": 54299.07,
+      "low": 53442.2,
+      "change_pct": 1.58,
+      "ytd_pct": 29.78
+    },
+    "EGX70": {
+      "date": "02/08/2026",
+      "value": 19034.28,
+      "open": 18233.32,
+      "high": 19034.28,
+      "low": 18233.32,
+      "change_pct": 4.39,
+      "ytd_pct": 45.02
+    },
+    "EGX100": {
+      "date": "02/08/2026",
+      "value": 24956.02,
+      "open": 24035.88,
+      "high": 24956.02,
+      "low": 24035.88,
+      "change_pct": 3.83,
+      "ytd_pct": 43.21
+    }
+  },
   "gainers": [
     {
       "name": "Glaxo Smith Kline",
@@ -333,6 +370,12 @@
   "news": [],
   "disclosures": [
     {
+      "id": "292361",
+      "title": "Resume of Trading on Tycoon Investments Holding (ANFI.CA)",
+      "date": "02/08/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292361"
+    },
+    {
       "id": "292359",
       "title": "Release from El Badr Investment And Development BID (BIDI.CA) Regarding the Investor Relations Officer (SMEs Market)",
       "date": "02/08/2026",
@@ -385,15 +428,27 @@
       "title": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 30/07/2026",
       "date": "02/08/2026",
       "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292335"
-    },
-    {
-      "id": "292330",
-      "title": "Global Corp Securitization 6th Iss 1st Pro Tranche B Sep 2027 (EGBGLSC6P1BCV) Declares Bond Dividends for Coupon No. (22)",
-      "date": "02/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292330"
     }
   ],
   "bulletin": [
+    {
+      "id": null,
+      "title": "القاهرة للادوية والصناعات الكيماوية (CPCI.CA) قرارات مجلس ادارة الشركة",
+      "date": "02/08/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342033&All="
+    },
+    {
+      "id": null,
+      "title": "سندات ثروة للتوريق (EGBSASC44CCV) بيان من الشركة",
+      "date": "02/08/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342032&All="
+    },
+    {
+      "id": null,
+      "title": "الاستثمار العقاري العربي - اليكو (RREI.CA) بيان",
+      "date": "02/08/2026",
+      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342031&All="
+    },
     {
       "id": null,
       "title": "الشمس للاسكان والتعمير (ELSH.CA) قرارات مجلس ادارة الشركة",
@@ -495,80 +550,10 @@
       "title": "تم ايقاف الورقة المالية - EGS70571C012 -  شارم دريمز للاستثمار السياحى لمدة 10 دقائق لتجاوزها نسبة 10 %",
       "date": "02/08/2026",
       "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342022&All="
-    },
-    {
-      "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS48031C016 -  المصرية للاتصالات لمدة 10 دقائق لتجاوزها نسبة 10 %",
-      "date": "02/08/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342021&All="
-    },
-    {
-      "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS3E1E1C013 -  العربية للصناعات المعدنية والاستثمارات الصناعية لمدة 10 دقائق لتجاوزها نسبة 10 %",
-      "date": "02/08/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342020&All="
-    },
-    {
-      "id": null,
-      "title": "تم ايقاف الورقة المالية - EGS67331C016 -  تايكون انفستمنتس هولدنج لمدة 10 دقائق لتجاوزها نسبة 10 %",
-      "date": "02/08/2026",
-      "url": "https://www.egx.com.eg/ar/BulletinNews.aspx?BCODE=342019&All="
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 43648646496.0,
-          "sell": 43376464035.0,
-          "net": 272182461.0
-        },
-        "arabs": {
-          "buy": 726017149.0,
-          "sell": 1026919159.0,
-          "net": -300902011.0
-        },
-        "foreigners": {
-          "buy": 134438258.0,
-          "sell": 105718709.0,
-          "net": 28719549.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 9344404065.0,
-          "sell": 8763500562.0,
-          "net": 580903504.0
-        },
-        "foreigners": {
-          "buy": 18919856.0,
-          "sell": 6588378.0,
-          "net": 12331478.0
-        },
-        "arabs": {
-          "buy": 250691743.0,
-          "sell": 318790215.0,
-          "net": -68098472.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 34304242431.0,
-          "sell": 34612963473.0,
-          "net": -308721042.0
-        },
-        "foreigners": {
-          "buy": 115518402.0,
-          "sell": 99130331.0,
-          "net": 16388071.0
-        },
-        "arabs": {
-          "buy": 475325406.0,
-          "sell": 708128944.0,
-          "net": -232803538.0
-        }
-      }
-    },
+    "byGroup": {},
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
