@@ -901,16 +901,31 @@ def main():
             print(f"[diag] '{market_link_selector}' matches: {link_count}")
 
             if link_count > 0:
-                print("[*] Clicking Market Segment tab...")
+                # This is an UpdatePanel partial postback and has shown to be
+                # timing-sensitive (worked once, then came back empty) - wait
+                # for the page to actually settle first, and retry the click
+                # once if the grid doesn't show up in time rather than
+                # giving up after a single attempt.
                 try:
-                    page.locator(market_link_selector).first.click()
-                    # Wait for the actual RadGrid2 table to show up - this is
-                    # an UpdatePanel partial postback, so a fixed sleep proved
-                    # last run to be no guarantee the update ever landed.
-                    page.wait_for_selector(RADGRID_SELECTOR, timeout=15000)
-                    print("[+] RadGrid2 (Market Segment grid) appeared after click.")
-                except Exception as wait_err:
-                    print(f"[!] RadGrid2 never appeared after clicking Market Segment: {wait_err}")
+                    page.wait_for_load_state("networkidle", timeout=10000)
+                except Exception:
+                    pass
+
+                grid_appeared = False
+                for attempt in range(1, 3):
+                    print(f"[*] Clicking Market Segment tab (attempt {attempt}/2)...")
+                    try:
+                        page.locator(market_link_selector).first.click()
+                        page.wait_for_selector(RADGRID_SELECTOR, timeout=20000)
+                        print("[+] RadGrid2 (Market Segment grid) appeared after click.")
+                        grid_appeared = True
+                        break
+                    except Exception as wait_err:
+                        print(f"[!] RadGrid2 didn't appear on attempt {attempt}: {wait_err}")
+                        page.wait_for_timeout(2000)
+
+                if not grid_appeared:
+                    print("[!] RadGrid2 never appeared after 2 attempts.")
 
             html = page.content()
             prices = parse_prices_table(html)
