@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-04 13:10 UTC",
+  "lastUpdated": "2026-08-04 15:37 UTC",
   "liveMarketStatus": {
     "text_ar": "مغلق",
     "color": "Red"
@@ -371,6 +371,12 @@
   "news": [],
   "disclosures": [
     {
+      "id": "292479",
+      "title": "El Obour Real Estate Investment (OBRI.CA) - Release Regarding a Disclosure Form",
+      "date": "04/08/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292479"
+    },
+    {
       "id": "292468",
       "title": "Arab Real Estate Investment CO.-ALICO (RREI.CA) - Release Regarding a Disclosure Form",
       "date": "04/08/2026",
@@ -423,12 +429,6 @@
       "title": "Suspension of Trading on Cairo Educational Services (CAED.CA)",
       "date": "04/08/2026",
       "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292460"
-    },
-    {
-      "id": "292459",
-      "title": "Release  from cairo for investment and real estate development CIRA Educat (CIRA.CA) Regarding the Ownership of a Piece of Land",
-      "date": "04/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292459"
     }
   ],
   "bulletin": [
@@ -554,76 +554,8 @@
     }
   ],
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 249472137582.0,
-          "sell": 250461257727.0,
-          "net": -989120145.0
-        },
-        "arabs": {
-          "buy": 20720117954.0,
-          "sell": 21305646530.0,
-          "net": -585528576.0
-        },
-        "foreigners": {
-          "buy": 23783312542.0,
-          "sell": 22208663821.0,
-          "net": 1574648721.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 11708824939.0,
-          "sell": 11437499012.0,
-          "net": 271325926.0
-        },
-        "foreigners": {
-          "buy": 9303950.0,
-          "sell": 4715030.0,
-          "net": 4588920.0
-        },
-        "arabs": {
-          "buy": 446108804.0,
-          "sell": 418606570.0,
-          "net": 27502234.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 237763312643.0,
-          "sell": 239023758714.0,
-          "net": -1260446071.0
-        },
-        "foreigners": {
-          "buy": 23774008593.0,
-          "sell": 22203948791.0,
-          "net": 1570059801.0
-        },
-        "arabs": {
-          "buy": 20274009150.0,
-          "sell": 20887039960.0,
-          "net": -613030811.0
-        }
-      }
-    },
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 85.03,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 7.15,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 7.82,
-        "color": "#bababa"
-      }
-    ],
+    "byGroup": {},
+    "nationalityBreakdownPct": [],
     "individualsByNationality": [],
     "institutionsByNationality": []
   },
