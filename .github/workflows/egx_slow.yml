@@ -7,7 +7,7 @@ on:
     # index constituents all change slowly enough that hourly is plenty -
     # scraping them more often would just be extra load on EGX for no
     # real freshness gain.
-    - cron: "0 6-15 * * 0-4"
+    - cron: "0 6,12  * * 0-4"
   workflow_dispatch:
 
 permissions:
