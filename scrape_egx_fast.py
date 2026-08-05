@@ -236,7 +236,7 @@ def main():
 
     output = {
         "source": "https://www.egx.com.eg",
-        "lastUpdated": datetime.now(ZoneInfo("Africa/Cairo")),
+        "lastUpdated": datetime.now(ZoneInfo("Africa/Cairo")).isoformat(),
         "indices": indices_output,
         "prices": prices,
         "gainers": gainers,
