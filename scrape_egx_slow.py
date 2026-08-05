@@ -148,7 +148,7 @@ def main():
 
     output = {
         "source": "https://www.egx.com.eg",
-        "lastUpdated": datetime.now(ZoneInfo("Africa/Cairo")),
+        "lastUpdated": datetime.now(ZoneInfo("Africa/Cairo")).isoformat(),
         "marketSummary": market_summary,
         "sectors": sectors,
         "news": news,
