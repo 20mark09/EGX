@@ -7,7 +7,7 @@ on:
     # exact minute - they can lag under high platform load, more so the
     # tighter the schedule - so "every ~15 minutes" is realistic, not a
     # hard guarantee.
-    - cron: "*/15 6-15 * * 0-4"
+    - cron: "*/15 6-20 * * 0-4"
   workflow_dispatch:
 
 permissions:
