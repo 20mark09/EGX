@@ -1,0 +1,48 @@
+name: EGX Scraper - Slow (everything else)
+
+on:
+  schedule:
+    # Once an hour, 06:00-15:00 UTC, Sunday-Thursday. Gainers/losers,
+    # market summary, news, sectors, disclosures, investor activity, and
+    # index constituents all change slowly enough that hourly is plenty -
+    # scraping them more often would just be extra load on EGX for no
+    # real freshness gain.
+    - cron: "0 6-15 * * 0-4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: egx-slow
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          pip install beautifulsoup4 playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run Slow Scraper
+        run: python scrape_egx_slow.py
+
+      - name: Commit JSON
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git pull --rebase --autostash
+          git add egx_other.json
+          git diff --cached --quiet || git commit -m "Update EGX market data"
+          git push
