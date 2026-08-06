@@ -43,6 +43,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git pull --rebase --autostash
-          git add egx_prices.json
+          git add egx.json
           git diff --cached --quiet || git commit -m "Update EGX prices/indices"
           git push
