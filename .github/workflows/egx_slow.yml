@@ -1,13 +1,16 @@
 name: EGX Scraper - Slow (everything else)
 
 on:
-  schedule:
+
+  repository_dispatch:
+      types: [run-slow]
+  #schedule:
     # Once an hour, 06:00-15:00 UTC, Sunday-Thursday. Gainers/losers,
     # market summary, news, sectors, disclosures, investor activity, and
     # index constituents all change slowly enough that hourly is plenty -
     # scraping them more often would just be extra load on EGX for no
     # real freshness gain.
-    - cron: "0 6,12  * * 0-4"
+    #- cron: "0 6,12  * * 0-4"
   workflow_dispatch:
 
 permissions:
