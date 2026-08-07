@@ -2,7 +2,7 @@ name: EGX Scraper - Bulletin (fastest)
 
 on:
   repository_dispatch:
-      types: [run-fast]
+      types: [run-notification]
   #schedule:
     # Every 5 minutes, 06:00-15:00 UTC, Sunday-Thursday. 5 minutes is the
     # shortest interval GitHub Actions' scheduled workflows practically
