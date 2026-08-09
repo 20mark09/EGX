@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-09 03:03:16 PM",
+  "lastUpdated": "2026-08-09 03:18:44 PM",
   "indices": {
     "SHARIAH": {
       "date": "09/08/2026",
@@ -5093,7 +5093,59 @@
     ]
   },
   "investorActivity": {
-    "byGroup": {},
+    "byGroup": {
+      "total": {
+        "egyptians": {
+          "buy": 22997154628.0,
+          "sell": 22961747305.0,
+          "net": 35407323.0
+        },
+        "arabs": {
+          "buy": 995913506.0,
+          "sell": 961651081.0,
+          "net": 34262425.0
+        },
+        "foreigners": {
+          "buy": 66662817.0,
+          "sell": 136332564.0,
+          "net": -69669748.0
+        }
+      },
+      "individuals": {
+        "egyptians": {
+          "buy": 10345411644.0,
+          "sell": 10395785431.0,
+          "net": -50373786.0
+        },
+        "foreigners": {
+          "buy": 4487959.0,
+          "sell": 5245529.0,
+          "net": -757570.0
+        },
+        "arabs": {
+          "buy": 352683505.0,
+          "sell": 374009693.0,
+          "net": -21326189.0
+        }
+      },
+      "institutions": {
+        "egyptians": {
+          "buy": 12651742984.0,
+          "sell": 12565961875.0,
+          "net": 85781109.0
+        },
+        "foreigners": {
+          "buy": 62174858.0,
+          "sell": 131087036.0,
+          "net": -68912178.0
+        },
+        "arabs": {
+          "buy": 643230002.0,
+          "sell": 587641388.0,
+          "net": 55588614.0
+        }
+      }
+    },
     "nationalityBreakdownPct": [
       {
         "label_ar": "مصريين",
