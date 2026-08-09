@@ -590,34 +590,54 @@ NATIONALITY_MAP = {"مصريين": "egyptians", "عرب": "arabs", "أجانب":
 INVESTOR_GROUP_MAP = {"1": "total", "2": "individuals", "3": "institutions"}
 
 
-def fetch_investor_json(context, url, referer, retries=2, retry_delay=3):
-    """Fetches one investor-activity WebService.asmx endpoint. These have
-    been observed occasionally returning a raw backend error string
-    (e.g. 'ORA-12521: TNS:listener does not currently know...') instead
-    of JSON, or an empty response, even though the HTTP request itself
-    succeeds - that's EGX's own backend having a bad moment, not a
-    scraping problem. We retry a couple of times before giving up, and
+def fetch_investor_json(page, url, referer, retries=2, retry_delay=3):
+    """Fetches one investor-activity WebService.asmx endpoint.
+
+    IMPORTANT: this takes a `page`, not a `context`, and issues the
+    request via page.evaluate(fetch(...)) rather than
+    context.request.get(). context.request.get() goes out through
+    Playwright's own bundled HTTP client, not the real Chromium network
+    stack - its TLS handshake doesn't match an actual browser's, which
+    is exactly the kind of mismatch bot-detection products fingerprint
+    on (the TS*/TSPD_101_DID cookies EGX sets are the standard marker of
+    F5's bot-detection product, which is known for scrutinizing AJAX/API
+    endpoints like these .asmx services particularly closely). Issuing
+    the fetch from inside the already-loaded page means it goes out with
+    the same TLS fingerprint, cookies, and referrer as a real browser tab
+    - because it *is* one.
+
+    Separately, these endpoints have also been observed occasionally
+    returning a raw backend error string (e.g. an Oracle TNS listener
+    error) instead of JSON, or an empty response, even when the request
+    itself succeeds - that's EGX's own backend having a bad moment, not
+    a scraping problem. We retry a couple of times before giving up, and
     log the actual bad response so a future empty result is diagnosable
-    straight from the Action log instead of needing another round of
-    "here's my JSON, something's missing".
+    straight from the Action log.
     """
     for attempt in range(retries + 1):
         try:
-            response = context.request.get(
-                url,
-                headers={
-                    "Referer": referer,
-                    "X-Requested-With": "XMLHttpRequest",
-                    "Accept": "application/json, text/javascript, */*; q=0.01",
-                },
-                timeout=20000,
+            result = page.evaluate(
+                """async ({ url }) => {
+                    const res = await fetch(url, {
+                        method: "GET",
+                        headers: {
+                            "X-Requested-With": "XMLHttpRequest",
+                            "Accept": "application/json, text/javascript, */*; q=0.01",
+                        },
+                        credentials: "include",
+                    });
+                    const text = await res.text();
+                    return { status: res.status, text };
+                }""",
+                {"url": url},
             )
-            text = response.text()
+            text = result.get("text", "") if result else ""
             stripped = text.strip() if text else ""
             if stripped.startswith("[") or stripped.startswith("{"):
                 return text
             print(f"[-] Non-JSON response from {url} "
-                  f"(attempt {attempt + 1}/{retries + 1}): {stripped[:150]!r}")
+                  f"(status {result.get('status') if result else '?'}, "
+                  f"attempt {attempt + 1}/{retries + 1}): {stripped[:150]!r}")
         except Exception as e:
             print(f"[-] Failed to fetch {url} (attempt {attempt + 1}/{retries + 1}): {e}")
 
