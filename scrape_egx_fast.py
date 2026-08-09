@@ -183,19 +183,24 @@ def scrape_investor_activity(context, page):
 
         page.wait_for_timeout(random.randint(5000, 8000))
 
-        tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
+        # fetch_investor_json now takes `page` (not `context`) - it issues
+        # the request via page.evaluate(fetch(...)) so it goes out through
+        # Chromium's real network stack instead of Playwright's separate
+        # APIRequestContext. See the docstring on fetch_investor_json for
+        # why that distinction turned out to matter here.
+        tables_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
         investor_activity["byGroup"] = parse_investor_tables(tables_raw)
         jittered_delay(1.0, 2.5)
 
-        pie2_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
+        pie2_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
         investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
         jittered_delay(1.0, 2.5)
 
-        indiv_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
+        indiv_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
         investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
         jittered_delay(1.0, 2.5)
 
-        inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
+        inst_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
         investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
 
         populated = {k: len(v) for k, v in investor_activity.items()}
@@ -236,6 +241,20 @@ def scrape_prices(page):
             except Exception:
                 pass
 
+            # Log the postback's own network response (status + length) so
+            # a "grid never appeared" failure tells us whether the server
+            # actually rejected/redirected the postback vs. returned the
+            # same (unchanged) view vs. something else entirely - the
+            # difference between those is invisible from the DOM alone.
+            postback_responses = []
+
+            def handle_postback_response(response):
+                if response.request.method == "POST" and "prices.aspx" in response.url:
+                    postback_responses.append((response.status, response.url))
+                    print(f"[debug] postback response: status={response.status} url={response.url}")
+
+            page.on("response", handle_postback_response)
+
             grid_appeared = False
             for attempt in range(1, 3):
                 print(f"[*] Triggering Market Segment postback directly (attempt {attempt}/2)...")
@@ -247,13 +266,25 @@ def scrape_prices(page):
                         dump_debug_snapshot(page, f"prices_no_postback_attempt{attempt}")
                         break
                     page.evaluate("__doPostBack('ctl00$C$S$lkMarket', '');")
-                    page.wait_for_selector(RADGRID_SELECTOR, timeout=20000)
+                    page.wait_for_selector(RADGRID_SELECTOR, timeout=25000)
                     print("[+] RadGrid2 (Market Segment grid) appeared.")
                     grid_appeared = True
                     break
                 except Exception as wait_err:
                     print(f"[!] RadGrid2 didn't appear on attempt {attempt}: {wait_err}")
+                    # If the postback response(s) came back 200 but the grid
+                    # still isn't there, we're not being blocked - the
+                    # server is returning content, just not the tab we
+                    # asked for (stale ViewState/EVENTVALIDATION after the
+                    # wait, wrong event target, etc). If there's no 200 at
+                    # all, that points back to a block on the postback
+                    # request itself instead.
+                    still_on_company_tab = page.locator("#ctl00_C_S_company").count() > 0
+                    print(f"[debug] postback responses so far: {postback_responses}; "
+                          f"still shows Company-tab search box: {still_on_company_tab}")
                     page.wait_for_timeout(random.randint(1500, 3000))
+
+            page.remove_listener("response", handle_postback_response)
 
             if not grid_appeared:
                 print("[!] RadGrid2 never appeared after 2 attempts.")
