@@ -6,12 +6,6 @@ on:
     - cron: '*/15 6-14 * * 0-4'
   workflow_dispatch:
 
-# Reusable steps every section job needs. YAML doesn't support real
-# anchors across jobs the way some other CI systems do without a
-# composite action, so each job below repeats these four steps - adjust
-# the python version / install command to match whatever your current
-# egx_fast.yml already uses.
-
 jobs:
   indices:
     runs-on: ubuntu-latest
@@ -22,7 +16,7 @@ jobs:
           python-version: '3.11'
       - run: pip install playwright beautifulsoup4
       - run: playwright install --with-deps chromium
-      - run: python scrape_indices_section.py
+      - run: python parts/scrape_indices_section.py
       - uses: actions/upload-artifact@v4
         with:
           name: egx-section-indices
@@ -31,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: debug-dumps-indices
-          path: debug_dumps/
+          path: parts/debug_dumps/
           if-no-files-found: ignore
 
   homepage:
@@ -43,7 +37,7 @@ jobs:
           python-version: '3.11'
       - run: pip install playwright beautifulsoup4
       - run: playwright install --with-deps chromium
-      - run: python scrape_homepage_section.py
+      - run: python parts/scrape_homepage_section.py
       - uses: actions/upload-artifact@v4
         with:
           name: egx-section-homepage
@@ -52,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: debug-dumps-homepage
-          path: debug_dumps/
+          path: parts/debug_dumps/
           if-no-files-found: ignore
 
   gainers_losers:
@@ -64,7 +58,7 @@ jobs:
           python-version: '3.11'
       - run: pip install playwright beautifulsoup4
       - run: playwright install --with-deps chromium
-      - run: python scrape_gainers_losers_section.py
+      - run: python parts/scrape_gainers_losers_section.py
       - uses: actions/upload-artifact@v4
         with:
           name: egx-section-gl
@@ -73,7 +67,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: debug-dumps-gl
-          path: debug_dumps/
+          path: parts/debug_dumps/
           if-no-files-found: ignore
 
   prices:
@@ -85,7 +79,7 @@ jobs:
           python-version: '3.11'
       - run: pip install playwright beautifulsoup4
       - run: playwright install --with-deps chromium
-      - run: python scrape_prices_section.py
+      - run: python parts/scrape_prices_section.py
       - uses: actions/upload-artifact@v4
         with:
           name: egx-section-prices
@@ -94,7 +88,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: debug-dumps-prices
-          path: debug_dumps/
+          path: parts/debug_dumps/
           if-no-files-found: ignore
 
   investor_activity:
@@ -106,7 +100,7 @@ jobs:
           python-version: '3.11'
       - run: pip install playwright beautifulsoup4
       - run: playwright install --with-deps chromium
-      - run: python scrape_investor_section.py
+      - run: python parts/scrape_investor_section.py
       - uses: actions/upload-artifact@v4
         with:
           name: egx-section-investor
@@ -115,7 +109,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: debug-dumps-investor
-          path: debug_dumps/
+          path: parts/debug_dumps/
           if-no-files-found: ignore
 
   merge:
@@ -135,7 +129,7 @@ jobs:
         with:
           pattern: egx-section-*
           merge-multiple: true
-      - run: python merge_egx_sections.py
+      - run: python parts/merge_egx_sections.py
       # Replace this with whatever your existing egx_fast.yml does to
       # publish egx.json (commit back to the repo, push to a Pages
       # branch, upload to a bucket, etc) - that step should move here.
