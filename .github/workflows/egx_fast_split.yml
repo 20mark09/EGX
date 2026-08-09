@@ -5,8 +5,9 @@ name: EGX Fast Scrape (split)
 
 # Adjust this schedule to match your existing egx_fast.yml.
 on:
-  schedule:
-    - cron: '*/15 6-14 * * 0-4'
+ repository_dispatch:
+      types: [run-fast]
+ 
   workflow_dispatch:
 
 jobs:
