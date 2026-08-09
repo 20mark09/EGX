@@ -1,8 +1,7 @@
 name: EGX Scraper - Fast (Indices + Prices)
 
 on:
-  repository_dispatch:
-      types: [run-fast]
+  
   #schedule:
     # Every 15 minutes, 06:00-15:00 UTC, Sunday-Thursday (EGX's trading
     # week). GitHub doesn't guarantee scheduled workflows fire at the
