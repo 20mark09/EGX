@@ -183,24 +183,22 @@ def scrape_investor_activity(context, page):
 
         page.wait_for_timeout(random.randint(5000, 8000))
 
-        # fetch_investor_json now takes `page` (not `context`) - it issues
-        # the request via page.evaluate(fetch(...)) so it goes out through
-        # Chromium's real network stack instead of Playwright's separate
-        # APIRequestContext. See the docstring on fetch_investor_json for
-        # why that distinction turned out to matter here.
-        tables_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
+        # fetch_investor_json now POSTs a JSON body (base URL + params
+        # dict) instead of GET-with-querystring - see its docstring for
+        # why the GET form was reliably failing regardless of client.
+        tables_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables", {"Lang": "ar", "SB": 1}, investor_referer)
         investor_activity["byGroup"] = parse_investor_tables(tables_raw)
         jittered_delay(1.0, 2.5)
 
-        pie2_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
+        pie2_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/InvPieCharts", {"Lang": "ar", "SB": 1, "Type": 2}, investor_referer)
         investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
         jittered_delay(1.0, 2.5)
 
-        indiv_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
+        indiv_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart", {"Lang": "ar", "SB": 1, "Type": 1}, investor_referer)
         investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
         jittered_delay(1.0, 2.5)
 
-        inst_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
+        inst_raw = fetch_investor_json(page, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart", {"Lang": "ar", "SB": 1, "Type": 2}, investor_referer)
         investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
 
         populated = {k: len(v) for k, v in investor_activity.items()}
@@ -228,6 +226,14 @@ def scrape_prices(page):
 
         market_link_selector = "[id$='lkMarket']"
         link_count = page.locator(market_link_selector).count()
+
+        if link_count == 0:
+            print("[-] Market Segment link ([id$='lkMarket']) not found on page at all - "
+                  "different failure mode than the postback-fires-but-grid-never-appears "
+                  "case (that one still has 'Triggering Market Segment postback' logged "
+                  "before it fails; this one doesn't reach that point). Could be a timing "
+                  "issue (page not fully rendered yet) or a structural change/partial block.")
+            dump_debug_snapshot(page, "prices_no_market_link")
 
         if link_count > 0:
             # Fresh sessions default to the "Company" tab (just a search
