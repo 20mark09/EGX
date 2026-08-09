@@ -1,7 +1,26 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-09 11:33:10 AM",
-  "indices": {},
+  "lastUpdated": "2026-08-09 11:49:22 AM",
+  "indices": {
+    "SHARIAH": {
+      "date": "09/08/2026",
+      "value": 6409.79,
+      "open": 6331.46,
+      "high": 6430.36,
+      "low": 6331.46,
+      "change_pct": 1.24,
+      "ytd_pct": 39.41
+    },
+    "EGX30": {
+      "date": null,
+      "value": null,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": null,
+      "ytd_pct": null
+    }
+  },
   "prices": [],
   "gainers": [],
   "losers": [],
