@@ -1,31 +1,31 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-09 10:00:55 AM",
+  "lastUpdated": "2026-08-09 03:32:12 PM",
   "marketSummary": {
     "main_market": {
       "listed_total": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 252,
+        "volume": 3345240738,
+        "value": 24059730951,
+        "trades": 302031
       },
       "listed_stocks": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 222,
+        "volume": 3344706995,
+        "value": 12235766133,
+        "trades": 301839
       },
       "listed_t_bonds_bills_sukuk": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 29,
+        "volume": 514291,
+        "value": 11821911493,
+        "trades": 189
       },
       "listed_bonds": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 1,
+        "volume": 19452,
+        "value": 2053325,
+        "trades": 3
       },
       "listed_funds": {
         "no": 0,
@@ -34,16 +34,16 @@
         "trades": 0
       },
       "smes_stocks": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 15,
+        "volume": 45764604,
+        "value": 90873631,
+        "trades": 5831
       },
       "otc_total": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 20,
+        "volume": 6381637,
+        "value": 24432291,
+        "trades": 51
       },
       "otc_bonds": {
         "no": 0,
@@ -52,10 +52,10 @@
         "trades": 0
       },
       "otc_deals": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 20,
+        "volume": 6381637,
+        "value": 24432291,
+        "trades": 51
       },
       "otc_orders": {
         "no": 0,
@@ -64,102 +64,265 @@
         "trades": 0
       },
       "total": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 287,
+        "volume": 3397386979,
+        "value": 24175036872,
+        "trades": 307913
       },
-      "total_market_cap": 4103697439880
+      "total_market_cap": 4158847866540
     },
     "breadth": {
       "listed_stocks": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
-      },
-      "decliners": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 223,
+        "volume": 3344726447,
+        "value": 12237819458,
+        "trades": 301842
       },
       "gainers": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 142,
+        "volume": 2605538657,
+        "value": 9691757044,
+        "trades": 238483
+      },
+      "decliners": {
+        "no": 58,
+        "volume": 550136005,
+        "value": 2293853658,
+        "trades": 55335
       },
       "unchanged": {
-        "no": 0,
-        "volume": 0,
-        "value": 0,
-        "trades": 0
+        "no": 23,
+        "volume": 189051785,
+        "value": 252208756,
+        "trades": 8024
       }
     }
   },
-  "sectors": [],
+  "sectors": [
+    {
+      "name": "Banks",
+      "value": 369036464,
+      "value_pct": 3.02,
+      "volume": 8382876,
+      "volume_pct": 0.25,
+      "market_cap": 947467270264,
+      "market_cap_pct": 23.43
+    },
+    {
+      "name": "Basic Resources",
+      "value": 676193647,
+      "value_pct": 5.53,
+      "volume": 27691052,
+      "volume_pct": 0.83,
+      "market_cap": 490861024148,
+      "market_cap_pct": 12.14
+    },
+    {
+      "name": "Health Care & Pharmaceuticals",
+      "value": 2564506695,
+      "value_pct": 20.96,
+      "volume": 372255158,
+      "volume_pct": 11.13,
+      "market_cap": 206019373885,
+      "market_cap_pct": 5.09
+    },
+    {
+      "name": "Industrial Goods , Services and Automobiles",
+      "value": 605342025,
+      "value_pct": 4.95,
+      "volume": 108428015,
+      "volume_pct": 3.24,
+      "market_cap": 285047172734,
+      "market_cap_pct": 7.05
+    },
+    {
+      "name": "Real Estate",
+      "value": 1870785477,
+      "value_pct": 15.29,
+      "volume": 654968755,
+      "volume_pct": 19.58,
+      "market_cap": 533266399216,
+      "market_cap_pct": 13.19
+    },
+    {
+      "name": "Travel & Leisure",
+      "value": 86374204,
+      "value_pct": 0.71,
+      "volume": 4832411,
+      "volume_pct": 0.14,
+      "market_cap": 87686531151,
+      "market_cap_pct": 2.17
+    },
+    {
+      "name": "Utilities",
+      "value": 48157321,
+      "value_pct": 0.39,
+      "volume": 2600767,
+      "volume_pct": 0.08,
+      "market_cap": 29290657831,
+      "market_cap_pct": 0.72
+    },
+    {
+      "name": "IT , Media & Communication Services",
+      "value": 562205800,
+      "value_pct": 4.6,
+      "volume": 157334741,
+      "volume_pct": 4.7,
+      "market_cap": 374486257393,
+      "market_cap_pct": 9.26
+    },
+    {
+      "name": "Food, Beverages and Tobacco",
+      "value": 1597408297,
+      "value_pct": 13.06,
+      "volume": 678151503,
+      "volume_pct": 20.28,
+      "market_cap": 295344104340,
+      "market_cap_pct": 7.3
+    },
+    {
+      "name": "Energy & Support Services",
+      "value": 50053683,
+      "value_pct": 0.41,
+      "volume": 5095352,
+      "volume_pct": 0.15,
+      "market_cap": 27675906139,
+      "market_cap_pct": 0.68
+    },
+    {
+      "name": "Trade & Distributors",
+      "value": 158550122,
+      "value_pct": 1.3,
+      "volume": 7263781,
+      "volume_pct": 0.22,
+      "market_cap": 47439701107,
+      "market_cap_pct": 1.17
+    },
+    {
+      "name": "Shipping & Transportation Services",
+      "value": 97373188,
+      "value_pct": 0.8,
+      "volume": 3814600,
+      "volume_pct": 0.11,
+      "market_cap": 106858599862,
+      "market_cap_pct": 2.64
+    },
+    {
+      "name": "Education Services",
+      "value": 198099033,
+      "value_pct": 1.62,
+      "volume": 83758114,
+      "volume_pct": 2.5,
+      "market_cap": 93947023438,
+      "market_cap_pct": 2.32
+    },
+    {
+      "name": "Non-bank financial services",
+      "value": 1259059968,
+      "value_pct": 10.29,
+      "volume": 601684898,
+      "volume_pct": 17.99,
+      "market_cap": 264890356692,
+      "market_cap_pct": 6.55
+    },
+    {
+      "name": "Contracting & Construction Engineering",
+      "value": 847322932,
+      "value_pct": 6.92,
+      "volume": 478359350,
+      "volume_pct": 14.3,
+      "market_cap": 109601420442,
+      "market_cap_pct": 2.71
+    },
+    {
+      "name": "Textile & Durables",
+      "value": 669680838,
+      "value_pct": 5.47,
+      "volume": 77172894,
+      "volume_pct": 2.31,
+      "market_cap": 42950154583,
+      "market_cap_pct": 1.06
+    },
+    {
+      "name": "Building Materials",
+      "value": 525332921,
+      "value_pct": 4.29,
+      "volume": 26820865,
+      "volume_pct": 0.8,
+      "market_cap": 92724777747,
+      "market_cap_pct": 2.29
+    },
+    {
+      "name": "Paper & Packaging",
+      "value": 50283519,
+      "value_pct": 0.41,
+      "volume": 46091863,
+      "volume_pct": 1.38,
+      "market_cap": 8411379453,
+      "market_cap_pct": 0.21
+    }
+  ],
   "news": [],
   "disclosures": [
     {
-      "id": "292576",
-      "title": "El Kahera El Watania Investment (KWIN.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/06/2026",
+      "id": "292673",
+      "title": "Release from EFG Corp-Solutions (EGBHRSL2P1CV) Regarding Coupon No. (20)",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292576"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292673"
     },
     {
-      "id": "292574",
-      "title": "El Kahera El Watania Investment (KWIN.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/06/2026",
+      "id": "292665",
+      "title": "Mena Touristic & Real Estate Investment (MENA.CA) - AGM Minutes (after Certification)",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292574"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292665"
     },
     {
-      "id": "292572",
-      "title": "Release from Orascom Construction PLC (ORAS.CA) Concerning the BoD's Meeting",
+      "id": "292662",
+      "title": "Arabian Metal Industries And Industrial Investments (AMII.CA) - Release Regarding a Disclosure Form",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292572"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292662"
     },
     {
-      "id": "292571",
-      "title": "Electro Cable Egypt (ELEC.CA) - Decisions of the BoD's Meeting",
+      "id": "292658",
+      "title": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 06/08/2026",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292571"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292658"
     },
     {
-      "id": "292570",
-      "title": "Release from Extracted Oils (ZEOT.CA) Concerning the BoD's Meeting",
+      "id": "292657",
+      "title": "Elwadi For International Investment & Development (ELWA.CA) - AGM Minutes (after Certification)",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292570"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292657"
     },
     {
-      "id": "292569",
-      "title": "Release from Alexandria New Medical Center (AMES.CA) Concerning the BoD's Meeting",
+      "id": "292656",
+      "title": "A Capital Holding (ACAP.CA) Reports 6 Months Standalone Results",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292569"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292656"
     },
     {
-      "id": "292568",
-      "title": "Alexandria Pharmaceuticals (AXPH.CA) - Decisions of the BoD Meeting",
+      "id": "292654",
+      "title": "Release from El Ahram Co. For Printing And Packing (EPPK.CA) Concerning the EGM Invitation",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292568"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292654"
     },
     {
-      "id": "292567",
-      "title": "El Kahera El Watania Investment (KWIN.CA) - Decisions of the BoD Meeting",
+      "id": "292653",
+      "title": "A Capital Holding (ACAP.CA) Reports 6 Months Consolidated Results",
       "date": "09/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292567"
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292653"
     },
     {
-      "id": "292565",
-      "title": "Fitness Prime (FTNS.CA) Reports Year Ended 31/12/2025 Results (SMEs Market)",
-      "date": "06/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292565"
+      "id": "292651",
+      "title": "Heliopolis Housing (HELI.CA) - Board of Directors' Decisions",
+      "date": "09/08/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292651"
     },
     {
-      "id": "292564",
-      "title": "Gulf Canadian Real Estate Investment Co. (CCRS.CA) - AGM Minutes (after Certification)",
-      "date": "06/08/2026",
-      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292564"
+      "id": "292650",
+      "title": "Arabian Metal Industries And Industrial Investments (AMII.CA) - Release Regarding a Disclosure Form",
+      "date": "09/08/2026",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=292650"
     }
   ],
   "indexConstituents": {
