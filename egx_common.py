@@ -44,6 +44,21 @@ BROWSER_LAUNCH_ARGS = [
 ]
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 
+# A bare user_agent + viewport is a thinner fingerprint than a real Chrome
+# request - a real browser sends this whole set of headers on every
+# navigation. Doesn't fix IP-level blocking, but rules out "obviously not
+# a browser" as a contributing signal.
+EXTRA_HEADERS = {
+    "Accept-Language": "en-US,en;q=0.9,ar;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "Upgrade-Insecure-Requests": "1",
+}
+
+DEBUG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "debug_dumps")
+
 
 def launch_browser_context(p):
     """Launches a browser + context with the same settings every script
@@ -52,12 +67,116 @@ def launch_browser_context(p):
     context = browser.new_context(
         user_agent=USER_AGENT,
         viewport={"width": 1280, "height": 720},
+        extra_http_headers=EXTRA_HEADERS,
+        locale="en-US",
     )
     return browser, context
 
 
+def new_page_fresh_context(browser, old_context=None):
+    """Closes old_context (if given) and opens a brand new context + page.
+
+    scrape_egx_fast.py used to run every section (indices, live status,
+    gainers/losers, prices, investor activity) through one long-lived
+    context/connection - five page loads plus ~10 postback/XHR calls back
+    to back with only a few seconds between them. That's a much stronger
+    "this is a script" signature than scrape_egx_bulletin.py's single
+    page load, and is the likely reason fast.py gets blocked mid-run while
+    bulletin.py doesn't. Starting a clean context per section (no shared
+    cookies, no kept-alive connection carrying the previous section's
+    traffic) makes each section look like an independent visit rather than
+    one continuous crawl.
+    """
+    if old_context is not None:
+        try:
+            old_context.close()
+        except Exception:
+            pass
+    context = browser.new_context(
+        user_agent=USER_AGENT,
+        viewport={"width": 1280, "height": 720},
+        extra_http_headers=EXTRA_HEADERS,
+        locale="en-US",
+    )
+    return context, context.new_page()
+
+
 def human_delay():
     time.sleep(random.uniform(3.5, 6.0))
+
+
+def jittered_delay(min_seconds, max_seconds):
+    """Same idea as human_delay but with a caller-specified range, so
+    section-to-section gaps and postback waits don't all land on the same
+    fixed intervals (a flat 5000ms wait every time is itself a fingerprint)."""
+    time.sleep(random.uniform(min_seconds, max_seconds))
+
+
+def dump_debug_snapshot(page, label):
+    """Saves title/URL/text-snippet to the log and the full HTML to
+    debug_dumps/, on any failure worth investigating. The goal is that the
+    next time something comes back empty, there's an actual artifact
+    (what page did we really get - the real page, a WAF challenge page, a
+    rate-limit notice, something else) instead of just a bare exception.
+    Upload debug_dumps/ as a GitHub Actions artifact if you want to pull
+    these down after a scheduled run.
+    """
+    try:
+        os.makedirs(DEBUG_DIR, exist_ok=True)
+        ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        title, url, html = None, None, ""
+        try:
+            title = page.title()
+        except Exception:
+            pass
+        try:
+            url = page.url
+        except Exception:
+            pass
+        try:
+            html = page.content()
+        except Exception:
+            pass
+
+        snippet = re.sub(r"\s+", " ", BeautifulSoup(html, "html.parser").get_text()).strip()[:300] if html else ""
+        print(f"[debug] {label}: title={title!r} url={url!r}")
+        print(f"[debug] {label}: text snippet: {snippet!r}")
+
+        if html:
+            fname = os.path.join(DEBUG_DIR, f"{ts}_{slugify(label)}.html")
+            with open(fname, "w", encoding="utf-8") as f:
+                f.write(html)
+            print(f"[debug] {label}: full HTML saved to {fname}")
+    except Exception as dump_error:
+        print(f"[debug] {label}: failed to capture debug snapshot: {dump_error}")
+
+
+def goto_resilient(page, url, label, wait_until="domcontentloaded", timeout=45000, retries=2):
+    """page.goto with retry+backoff on transient failures (connection
+    resets, timeouts) and a debug snapshot on final failure, so a blocked
+    run is diagnosable ("we got a challenge page" / "we got reset every
+    time" / "the real page loaded but was missing X") rather than just a
+    one-line exception in the Action log.
+
+    Backoff is randomized and grows with attempt number specifically so
+    retries themselves don't add another fixed-interval fingerprint.
+    """
+    last_error = None
+    for attempt in range(retries + 1):
+        try:
+            page.goto(url, wait_until=wait_until, timeout=timeout)
+            return True
+        except Exception as e:
+            last_error = e
+            print(f"[-] goto {label} failed (attempt {attempt + 1}/{retries + 1}): {e}")
+            if attempt < retries:
+                backoff = random.uniform(8, 16) * (attempt + 1)
+                print(f"[*] Backing off {backoff:.1f}s before retrying {label}...")
+                time.sleep(backoff)
+
+    print(f"[-] goto {label} exhausted all {retries + 1} attempt(s). Last error: {last_error}")
+    dump_debug_snapshot(page, f"{label}_goto_failure")
+    return False
 
 
 def now_utc():
