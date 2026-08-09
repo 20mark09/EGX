@@ -1,5 +1,8 @@
 name: EGX Fast Scrape (split)
 
+
+
+
 # Adjust this schedule to match your existing egx_fast.yml.
 on:
   schedule:
@@ -113,6 +116,9 @@ jobs:
           if-no-files-found: ignore
 
   merge:
+    permissions:
+      contents: write
+
     # if: always() is the important part here - a partial run (some
     # sections blocked, some not) should still publish whatever came
     # through, rather than the whole workflow going red and nothing
