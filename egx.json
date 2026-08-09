@@ -1,7 +1,44 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-09 09:01:58 AM",
-  "indices": {},
+  "lastUpdated": "2026-08-09 09:22:09 AM",
+  "indices": {
+    "SHARIAH": {
+      "date": "06/08/2026",
+      "value": 6331.46,
+      "open": 6326.53,
+      "high": 6369.39,
+      "low": 6302.37,
+      "change_pct": 0.08,
+      "ytd_pct": 37.71
+    },
+    "EGX30": {
+      "date": "06/08/2026",
+      "value": 6331.46,
+      "open": 6326.53,
+      "high": 6369.39,
+      "low": 6302.37,
+      "change_pct": 0.08,
+      "ytd_pct": 37.71
+    },
+    "EGX70": {
+      "date": "06/08/2026",
+      "value": 6331.46,
+      "open": 6326.53,
+      "high": 6369.39,
+      "low": 6302.37,
+      "change_pct": 0.08,
+      "ytd_pct": 37.71
+    },
+    "EGX100": {
+      "date": "06/08/2026",
+      "value": 6331.46,
+      "open": 6326.53,
+      "high": 6369.39,
+      "low": 6302.37,
+      "change_pct": 0.08,
+      "ytd_pct": 37.71
+    }
+  },
   "prices": [],
   "gainers": [],
   "losers": [],
