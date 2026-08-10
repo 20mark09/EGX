@@ -36,7 +36,7 @@ def scrape_indices(page):
 
     print("Navigating to Indices Workspace...")
     try:
-        page.goto("https://www.egx.com.eg/en/Indices.aspx", wait_until="domcontentloaded", timeout=45000)
+        page.goto("https://egx.com.eg/en/Indices.aspx", wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(4000)
 
         for tracking_name, event_target in postback_actions.items():
@@ -78,7 +78,7 @@ def scrape_live_status_and_charts(page):
                 print(f"[-] Failed to parse a captured chart response: {capture_error}")
 
         page.on("response", handle_chart_response)
-        page.goto("https://www.egx.com.eg/ar/homepage.aspx", wait_until="domcontentloaded", timeout=45000)
+        page.goto("https://egx.com.eg/ar/homepage.aspx", wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(6000)
 
         live_status = parse_live_market_status(page.content())
@@ -103,7 +103,7 @@ def scrape_gainers_losers(page):
     gainers, losers = [], []
     print("\nNavigating to Top Gainers/Losers Desk...")
     try:
-        page.goto("https://www.egx.com.eg/en/Top_GL.aspx", wait_until="domcontentloaded", timeout=45000)
+        page.goto("https://egx.com.eg/en/Top_GL.aspx", wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(4000)
         gl_soup = BeautifulSoup(page.content(), "html.parser")
         gainers = parse_gl_table(gl_soup, "ctl00_C_Top_GL1_GridView1")
@@ -126,20 +126,20 @@ def scrape_investor_activity(context, page):
     }
     print("\nFetching Investor Type data...")
     try:
-        investor_referer = "https://www.egx.com.eg/en/InvestorsTypeCharts.aspx"
+        investor_referer = "https://egx.com.eg/en/InvestorsTypeCharts.aspx"
         page.goto(investor_referer, wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(6000)
 
-        tables_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
+        tables_raw = fetch_investor_json(context, "https://egx.com.eg/WebService.asmx/GetInvestorTables?Lang=ar&SB=1", investor_referer)
         investor_activity["byGroup"] = parse_investor_tables(tables_raw)
 
-        pie2_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
+        pie2_raw = fetch_investor_json(context, "https://egx.com.eg/WebService.asmx/InvPieCharts?Lang=ar&SB=1&Type=2", investor_referer)
         investor_activity["nationalityBreakdownPct"] = parse_pie_chart(pie2_raw)
 
-        indiv_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
+        indiv_raw = fetch_investor_json(context, "https://egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=1", investor_referer)
         investor_activity["individualsByNationality"] = parse_stack_chart(indiv_raw)
 
-        inst_raw = fetch_investor_json(context, "https://www.egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
+        inst_raw = fetch_investor_json(context, "https://egx.com.eg/WebService.asmx/IndivByNatStackChart?Lang=ar&SB=1&Type=2", investor_referer)
         investor_activity["institutionsByNationality"] = parse_stack_chart(inst_raw)
 
         populated = {k: len(v) for k, v in investor_activity.items()}
@@ -157,7 +157,7 @@ def scrape_prices(page):
     prices = []
     print("\nNavigating to Prices (Market Watch)...")
     try:
-        page.goto("https://www.egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
+        page.goto("https://egx.com.eg/en/prices.aspx", wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(4000)
 
         market_link_selector = "[id$='lkMarket']"
@@ -235,7 +235,7 @@ def main():
         browser.close()
 
     output = {
-        "source": "https://www.egx.com.eg",
+        "source": "https://egx.com.eg",
         "lastUpdated": datetime.now(ZoneInfo("Africa/Cairo")).strftime("%Y-%m-%d %I:%M:%S %p"),
         "indices": indices_output,
         "prices": prices,
