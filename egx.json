@@ -1,5 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
+<<<<<<< Updated upstream
   "lastUpdated": "2026-08-10 11:48:42 AM",
   "indices": {
     "SHARIAH": {
@@ -37,6 +38,45 @@
       "low": 6404.5,
       "change_pct": -0.27,
       "ytd_pct": 39.39
+=======
+  "lastUpdated": "2026-08-10 11:48:51 AM",
+  "indices": {
+    "SHARIAH": {
+      "date": "10/08/2026",
+      "value": 6410.35,
+      "open": 6426.09,
+      "high": 6431.84,
+      "low": 6404.5,
+      "change_pct": -0.24,
+      "ytd_pct": 39.42
+    },
+    "EGX30": {
+      "date": "10/08/2026",
+      "value": 54876.04,
+      "open": 55125.43,
+      "high": 55159.0,
+      "low": 54872.41,
+      "change_pct": -0.45,
+      "ytd_pct": 31.19
+    },
+    "EGX70": {
+      "date": "10/08/2026",
+      "value": 21250.99,
+      "open": 20798.21,
+      "high": 21286.75,
+      "low": 20666.63,
+      "change_pct": 2.18,
+      "ytd_pct": 61.91
+    },
+    "EGX100": {
+      "date": "10/08/2026",
+      "value": 27417.36,
+      "open": 26983.04,
+      "high": 27459.73,
+      "low": 26833.63,
+      "change_pct": 1.61,
+      "ytd_pct": 57.34
+>>>>>>> Stashed changes
     }
   },
   "prices": [],
@@ -49,18 +89,29 @@
     },
     {
       "name": "Egyptians Real Estate Fund Certificates",
+<<<<<<< Updated upstream
       "price": 21.4,
       "change_pct": 19.96,
+=======
+      "price": 21.39,
+      "change_pct": 19.9,
+>>>>>>> Stashed changes
       "code": "EGREF"
     },
     {
       "name": "Golden Textiles & Clothes Wool",
+<<<<<<< Updated upstream
       "price": 138.23,
       "change_pct": 15.51,
+=======
+      "price": 138.4,
+      "change_pct": 15.65,
+>>>>>>> Stashed changes
       "code": "GTWL"
     },
     {
       "name": "Glaxo Smith Kline",
+<<<<<<< Updated upstream
       "price": 550.56,
       "change_pct": 15.36,
       "code": "BIOC"
@@ -70,6 +121,17 @@
       "price": 412.23,
       "change_pct": 14.83,
       "code": "NIPH"
+=======
+      "price": 550.0,
+      "change_pct": 15.24,
+      "code": "BIOC"
+    },
+    {
+      "name": "Ismailia National Food Industries",
+      "price": 187.99,
+      "change_pct": 15.2,
+      "code": "INFI"
+>>>>>>> Stashed changes
     }
   ],
   "losers": [
@@ -87,13 +149,22 @@
     },
     {
       "name": "Arab Co. for Asset Management And Development",
+<<<<<<< Updated upstream
       "price": 2.3,
       "change_pct": -4.17,
+=======
+      "price": 2.31,
+      "change_pct": -3.75,
+>>>>>>> Stashed changes
       "code": "ACAMD"
     },
     {
       "name": "Alexandria Flour Mills",
+<<<<<<< Updated upstream
       "price": 222.21,
+=======
+      "price": 222.2,
+>>>>>>> Stashed changes
       "change_pct": -3.39,
       "code": "AFMC"
     },
@@ -105,7 +176,7 @@
     }
   ],
   "liveMarketStatus": {
-    "text_ar": "مفتوح",
+    "text_ar": null,
     "color": null
   },
   "indexCharts": {
