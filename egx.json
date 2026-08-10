@@ -1,39 +1,120 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-10 09:48:49 AM",
-  "indices": {
-    "SHARIAH": {
-      "date": "09/08/2026",
-      "value": 6426.09,
-      "open": 6331.46,
-      "high": 6430.36,
-      "low": 6331.46,
-      "change_pct": 1.49,
-      "ytd_pct": 39.77
-    },
-    "EGX30": {
-      "date": null,
-      "value": null,
-      "open": null,
-      "high": null,
-      "low": null,
-      "change_pct": null,
-      "ytd_pct": null
-    }
-  },
-  "prices": [
-    {
-      "Name": "",
-      "Sector": "No Data Currently Available"
-    }
-  ],
+  "lastUpdated": "2026-08-10 10:25:23 AM",
+  "indices": {},
+  "prices": [],
   "gainers": [],
   "losers": [],
   "liveMarketStatus": {
-    "text_ar": "مغلق",
-    "color": "Red"
+    "text_ar": "مفتوح",
+    "color": null
   },
-  "indexCharts": {},
+  "indexCharts": {
+    "SHARIAH": [
+      {
+        "time": "2026-08-10T09:58:00",
+        "value": 6426.09
+      },
+      {
+        "time": "2026-08-10T10:00:00",
+        "value": 6431.84
+      },
+      {
+        "time": "2026-08-10T10:05:00",
+        "value": 6421.86
+      },
+      {
+        "time": "2026-08-10T10:10:00",
+        "value": 6413.91
+      },
+      {
+        "time": "2026-08-10T10:15:00",
+        "value": 6409.17
+      },
+      {
+        "time": "2026-08-10T10:20:00",
+        "value": 6413.9
+      }
+    ],
+    "EGX30": [
+      {
+        "time": "2026-08-10T09:58:00",
+        "value": 55125.43
+      },
+      {
+        "time": "2026-08-10T10:00:00",
+        "value": 55159.0
+      },
+      {
+        "time": "2026-08-10T10:05:00",
+        "value": 55095.44
+      },
+      {
+        "time": "2026-08-10T10:10:00",
+        "value": 54983.27
+      },
+      {
+        "time": "2026-08-10T10:15:00",
+        "value": 54929.28
+      },
+      {
+        "time": "2026-08-10T10:20:00",
+        "value": 54906.72
+      }
+    ],
+    "EGX70": [
+      {
+        "time": "2026-08-10T09:58:00",
+        "value": 20798.21
+      },
+      {
+        "time": "2026-08-10T10:00:00",
+        "value": 20914.1
+      },
+      {
+        "time": "2026-08-10T10:05:00",
+        "value": 20755.27
+      },
+      {
+        "time": "2026-08-10T10:10:00",
+        "value": 20748.89
+      },
+      {
+        "time": "2026-08-10T10:15:00",
+        "value": 20873.47
+      },
+      {
+        "time": "2026-08-10T10:20:00",
+        "value": 21011.61
+      }
+    ],
+    "EGX100": [
+      {
+        "time": "2026-08-10T09:58:00",
+        "value": 26983.04
+      },
+      {
+        "time": "2026-08-10T10:00:00",
+        "value": 27108.12
+      },
+      {
+        "time": "2026-08-10T10:05:00",
+        "value": 26945.01
+      },
+      {
+        "time": "2026-08-10T10:10:00",
+        "value": 26924.64
+      },
+      {
+        "time": "2026-08-10T10:15:00",
+        "value": 27037.24
+      },
+      {
+        "time": "2026-08-10T10:20:00",
+        "value": 27178.6
+      }
+    ]
+  },
   "investorActivity": {
     "byGroup": {},
     "nationalityBreakdownPct": [],
