@@ -1,50 +1,18 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-11 09:25:45 AM",
-  "indices": {
-    "SHARIAH": {
-      "date": "10/08/2026",
-      "value": 6411.87,
-      "open": 6426.09,
-      "high": 6431.84,
-      "low": 6384.49,
-      "change_pct": -0.22,
-      "ytd_pct": 39.46
-    },
-    "EGX30": {
-      "date": "10/08/2026",
-      "value": 54876.0,
-      "open": 55125.43,
-      "high": 55159.0,
-      "low": 54799.07,
-      "change_pct": -0.45,
-      "ytd_pct": 31.19
-    },
-    "EGX70": {
-      "date": "10/08/2026",
-      "value": 21339.79,
-      "open": 20798.21,
-      "high": 21434.81,
-      "low": 20666.63,
-      "change_pct": 2.6,
-      "ytd_pct": 62.58
-    },
-    "EGX100": {
-      "date": "10/08/2026",
-      "value": 27521.83,
-      "open": 26983.04,
-      "high": 27611.57,
-      "low": 26833.63,
-      "change_pct": 2.0,
-      "ytd_pct": 57.94
+  "lastUpdated": "2026-08-11 09:48:44 AM",
+  "indices": {},
+  "prices": [
+    {
+      "Name": "",
+      "Sector": "No Data Currently Available"
     }
-  },
-  "prices": [],
+  ],
   "gainers": [],
   "losers": [],
   "liveMarketStatus": {
-    "text_ar": null,
-    "color": null
+    "text_ar": "مغلق",
+    "color": "Red"
   },
   "indexCharts": {},
   "investorActivity": {
