@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-10 06:26:57 PM",
+  "lastUpdated": "2026-08-11 09:25:45 AM",
   "indices": {
     "SHARIAH": {
       "date": "10/08/2026",
@@ -13,99 +13,38 @@
     },
     "EGX30": {
       "date": "10/08/2026",
-      "value": 6411.87,
-      "open": 6426.09,
-      "high": 6431.84,
-      "low": 6384.49,
-      "change_pct": -0.22,
-      "ytd_pct": 39.46
+      "value": 54876.0,
+      "open": 55125.43,
+      "high": 55159.0,
+      "low": 54799.07,
+      "change_pct": -0.45,
+      "ytd_pct": 31.19
     },
     "EGX70": {
       "date": "10/08/2026",
-      "value": 6411.87,
-      "open": 6426.09,
-      "high": 6431.84,
-      "low": 6384.49,
-      "change_pct": -0.22,
-      "ytd_pct": 39.46
+      "value": 21339.79,
+      "open": 20798.21,
+      "high": 21434.81,
+      "low": 20666.63,
+      "change_pct": 2.6,
+      "ytd_pct": 62.58
     },
     "EGX100": {
       "date": "10/08/2026",
-      "value": 6411.87,
-      "open": 6426.09,
-      "high": 6431.84,
-      "low": 6384.49,
-      "change_pct": -0.22,
-      "ytd_pct": 39.46
+      "value": 27521.83,
+      "open": 26983.04,
+      "high": 27611.57,
+      "low": 26833.63,
+      "change_pct": 2.0,
+      "ytd_pct": 57.94
     }
   },
   "prices": [],
-  "gainers": [
-    {
-      "name": "Memphis Pharmaceuticals",
-      "price": 393.72,
-      "change_pct": 20.0,
-      "code": "MPCI"
-    },
-    {
-      "name": "El-Nile Co. For Pharmaceuticals And Chemical Industries",
-      "price": 430.8,
-      "change_pct": 20.0,
-      "code": "NIPH"
-    },
-    {
-      "name": "Development & Engineering Consultants",
-      "price": 128.94,
-      "change_pct": 20.0,
-      "code": "DAPH"
-    },
-    {
-      "name": "October Pharma",
-      "price": 289.92,
-      "change_pct": 20.0,
-      "code": "OCPH"
-    },
-    {
-      "name": "Egyptian International Pharmaceuticals (EIPICO)",
-      "price": 160.18,
-      "change_pct": 19.99,
-      "code": "PHAR"
-    }
-  ],
-  "losers": [
-    {
-      "name": "North Cairo Mills",
-      "price": 187.77,
-      "change_pct": -5.21,
-      "code": "MILS"
-    },
-    {
-      "name": "Arab Co. for Asset Management And Development",
-      "price": 2.28,
-      "change_pct": -5.0,
-      "code": "ACAMD"
-    },
-    {
-      "name": "Lecico Egypt",
-      "price": 33.66,
-      "change_pct": -4.97,
-      "code": "LCSW"
-    },
-    {
-      "name": "Arabian Metal Industries And Industrial Investments",
-      "price": 13.8,
-      "change_pct": -4.76
-    },
-    {
-      "name": "Egyptian Gulf Marseilia For Real Estate Investment",
-      "price": 8.17,
-      "change_pct": -4.0,
-      "code": "MAAL"
-    }
-  ],
+  "gainers": [],
+  "losers": [],
   "liveMarketStatus": {
-    "text_ar": "مغلق",
-    "color": "Red"
+    "text_ar": null,
+    "color": null
   },
   "indexCharts": {},
   "investorActivity": {
