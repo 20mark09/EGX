@@ -1,8 +1,35 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-11 02:48:00 PM",
+  "lastUpdated": "2026-08-11 03:04:32 PM",
   "indices": {
     "SHARIAH": {
+      "date": null,
+      "value": null,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": null,
+      "ytd_pct": null
+    },
+    "EGX30": {
+      "date": null,
+      "value": null,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": null,
+      "ytd_pct": null
+    },
+    "EGX70": {
+      "date": null,
+      "value": null,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": null,
+      "ytd_pct": null
+    },
+    "EGX100": {
       "date": null,
       "value": null,
       "open": null,
@@ -16,114 +43,14 @@
   "gainers": [],
   "losers": [],
   "liveMarketStatus": {
-    "text_ar": null,
-    "color": null
+    "text_ar": "مغلق",
+    "color": "Red"
   },
   "indexCharts": {},
   "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 217901887506.0,
-          "sell": 222069399900.0,
-          "net": -4167512393.0
-        },
-        "arabs": {
-          "buy": 14055141688.0,
-          "sell": 22729931119.0,
-          "net": -8674789430.0
-        },
-        "foreigners": {
-          "buy": 42775785086.0,
-          "sell": 29933483262.0,
-          "net": 12842301824.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 15196038250.0,
-          "sell": 14632350953.0,
-          "net": 563687298.0
-        },
-        "foreigners": {
-          "buy": 13393592.0,
-          "sell": 10459112.0,
-          "net": 2934479.0
-        },
-        "arabs": {
-          "buy": 305847532.0,
-          "sell": 318029695.0,
-          "net": -12182163.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 202705849256.0,
-          "sell": 207437048947.0,
-          "net": -4731199691.0
-        },
-        "foreigners": {
-          "buy": 42762391494.0,
-          "sell": 29923024150.0,
-          "net": 12839367344.0
-        },
-        "arabs": {
-          "buy": 13749294156.0,
-          "sell": 22411901423.0,
-          "net": -8662607267.0
-        }
-      }
-    },
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 80.07,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 6.69,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 13.23,
-        "color": "#bababa"
-      }
-    ],
-    "individualsByNationality": [
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      }
-    ]
+    "byGroup": {},
+    "nationalityBreakdownPct": [],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   }
 }
