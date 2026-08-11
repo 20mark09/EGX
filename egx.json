@@ -1,74 +1,49 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-11 11:48:41 AM",
-  "indices": {},
+  "lastUpdated": "2026-08-11 12:25:43 PM",
+  "indices": {
+    "SHARIAH": {
+      "date": "11/08/2026",
+      "value": 6404.95,
+      "open": 6411.87,
+      "high": 6439.37,
+      "low": 6379.75,
+      "change_pct": -0.11,
+      "ytd_pct": 39.31
+    },
+    "EGX30": {
+      "date": "11/08/2026",
+      "value": 6404.95,
+      "open": 6411.87,
+      "high": 6439.37,
+      "low": 6379.75,
+      "change_pct": -0.11,
+      "ytd_pct": 39.31
+    },
+    "EGX70": {
+      "date": "11/08/2026",
+      "value": 6404.95,
+      "open": 6411.87,
+      "high": 6439.37,
+      "low": 6379.75,
+      "change_pct": -0.11,
+      "ytd_pct": 39.31
+    },
+    "EGX100": {
+      "date": "11/08/2026",
+      "value": 6404.95,
+      "open": 6411.87,
+      "high": 6439.37,
+      "low": 6379.75,
+      "change_pct": -0.11,
+      "ytd_pct": 39.31
+    }
+  },
   "prices": [],
-  "gainers": [
-    {
-      "name": "Misr Cement (Qena)",
-      "price": 243.6,
-      "change_pct": 20.0,
-      "code": "MCQE"
-    },
-    {
-      "name": "ODIN Investments",
-      "price": 3.91,
-      "change_pct": 19.57,
-      "code": "ODIN"
-    },
-    {
-      "name": "Misr Beni Suef Cement",
-      "price": 305.5,
-      "change_pct": 15.28,
-      "code": "MBSC"
-    },
-    {
-      "name": "Arabian Cement Company",
-      "price": 72.45,
-      "change_pct": 13.74,
-      "code": "ARCC"
-    },
-    {
-      "name": "South Valley Cement",
-      "price": 10.55,
-      "change_pct": 12.35,
-      "code": "SVCE"
-    }
-  ],
-  "losers": [
-    {
-      "name": "Ismailia National Food Industries",
-      "price": 164.66,
-      "change_pct": -7.75,
-      "code": "INFI"
-    },
-    {
-      "name": "Alexandria Flour Mills",
-      "price": 209.39,
-      "change_pct": -6.44,
-      "code": "AFMC"
-    },
-    {
-      "name": "Egyptians Real Estate Fund Certificates",
-      "price": 19.67,
-      "change_pct": -5.57,
-      "code": "EGREF"
-    },
-    {
-      "name": "Elsaeed Contracting& Real Estate Investment Company SCCD",
-      "price": 2.7,
-      "change_pct": -4.26,
-      "code": "UEGC"
-    },
-    {
-      "name": "North Cairo Mills",
-      "price": 180.09,
-      "change_pct": -4.09,
-      "code": "MILS"
-    }
-  ],
+  "gainers": [],
+  "losers": [],
   "liveMarketStatus": {
-    "text_ar": "مفتوح",
+    "text_ar": null,
     "color": null
   },
   "indexCharts": {},
