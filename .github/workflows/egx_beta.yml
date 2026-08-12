@@ -1,0 +1,27 @@
+name: EGX Beta Scrape
+
+on:
+  schedule:
+    - cron: '*/15 6-14 * * 0-4'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install playwright
+      - run: playwright install --with-deps chromium
+      - run: python scrape_egx_beta.py
+      - name: Commit egx.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add egx.json
+          git diff --staged --quiet || git commit -m "Update egx.json [skip ci]"
+          git push
