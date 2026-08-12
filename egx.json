@@ -1,78 +1,123 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-12 09:47:27 AM",
+  "lastUpdated": "2026-08-12 10:24:27 AM",
   "indices": {
     "SHARIAH": {
-      "date": "11/08/2026",
-      "value": 6460.79,
-      "open": 6411.87,
-      "high": 6460.79,
-      "low": 6379.75,
-      "change_pct": 0.76,
-      "ytd_pct": 40.52
+      "date": "12/08/2026",
+      "value": 6503.96,
+      "open": 6460.79,
+      "high": 6528.09,
+      "low": 6460.79,
+      "change_pct": 0.67,
+      "ytd_pct": 41.46
     },
     "EGX30": {
-      "date": "11/08/2026",
-      "value": 6460.79,
-      "open": 6411.87,
-      "high": 6460.79,
-      "low": 6379.75,
-      "change_pct": 0.76,
-      "ytd_pct": 40.52
+      "date": "12/08/2026",
+      "value": 6503.96,
+      "open": 6460.79,
+      "high": 6528.09,
+      "low": 6460.79,
+      "change_pct": 0.67,
+      "ytd_pct": 41.46
     },
     "EGX70": {
-      "date": "11/08/2026",
-      "value": 6460.79,
-      "open": 6411.87,
-      "high": 6460.79,
-      "low": 6379.75,
-      "change_pct": 0.76,
-      "ytd_pct": 40.52
+      "date": "12/08/2026",
+      "value": 6503.96,
+      "open": 6460.79,
+      "high": 6528.09,
+      "low": 6460.79,
+      "change_pct": 0.67,
+      "ytd_pct": 41.46
     },
     "EGX100": {
-      "date": "11/08/2026",
-      "value": 6460.79,
-      "open": 6411.87,
-      "high": 6460.79,
-      "low": 6379.75,
-      "change_pct": 0.76,
-      "ytd_pct": 40.52
+      "date": "12/08/2026",
+      "value": 6503.96,
+      "open": 6460.79,
+      "high": 6528.09,
+      "low": 6460.79,
+      "change_pct": 0.67,
+      "ytd_pct": 41.46
     }
   },
-  "prices": [
-    {
-      "Name": "",
-      "Sector": "No Data Currently Available"
-    }
-  ],
+  "prices": [],
   "gainers": [],
   "losers": [],
   "liveMarketStatus": {
-    "text_ar": null,
+    "text_ar": "مفتوح",
     "color": null
   },
   "indexCharts": {},
   "investorActivity": {
     "byGroup": {
-      "individuals": {
+      "total": {
         "egyptians": {
-          "buy": 0.0,
-          "sell": 0.0,
-          "net": 0.0
-        },
-        "foreigners": {
-          "buy": 0.0,
-          "sell": 0.0,
-          "net": 0.0
+          "buy": 1070594764.0,
+          "sell": 1055911231.0,
+          "net": 14683533.0
         },
         "arabs": {
-          "buy": 0.0,
-          "sell": 0.0,
-          "net": 0.0
+          "buy": 11474438.0,
+          "sell": 22081225.0,
+          "net": -10606788.0
+        },
+        "foreigners": {
+          "buy": 19833874.0,
+          "sell": 23910620.0,
+          "net": -4076746.0
+        }
+      },
+      "individuals": {
+        "egyptians": {
+          "buy": 1015270292.0,
+          "sell": 994352802.0,
+          "net": 20917489.0
+        },
+        "foreigners": {
+          "buy": 709599.0,
+          "sell": 3567954.0,
+          "net": -2858354.0
+        },
+        "arabs": {
+          "buy": 11437023.0,
+          "sell": 16844025.0,
+          "net": -5407002.0
+        }
+      },
+      "institutions": {
+        "egyptians": {
+          "buy": 55324472.0,
+          "sell": 61558428.0,
+          "net": -6233956.0
+        },
+        "foreigners": {
+          "buy": 19124275.0,
+          "sell": 20342666.0,
+          "net": -1218391.0
+        },
+        "arabs": {
+          "buy": 37415.0,
+          "sell": 5237200.0,
+          "net": -5199785.0
         }
       }
     },
-    "nationalityBreakdownPct": [],
+    "nationalityBreakdownPct": [
+      {
+        "label_ar": "مصريين",
+        "value": 96.49,
+        "color": "#205d96"
+      },
+      {
+        "label_ar": "عرب",
+        "value": 1.52,
+        "color": "#9e8b2b"
+      },
+      {
+        "label_ar": "اجانب",
+        "value": 1.98,
+        "color": "#bababa"
+      }
+    ],
     "individualsByNationality": [
       {
         "label_ar": null,
