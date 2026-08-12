@@ -1,6 +1,6 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-12 09:25:01 AM",
+  "lastUpdated": "2026-08-12 09:47:27 AM",
   "indices": {
     "SHARIAH": {
       "date": "11/08/2026",
@@ -39,12 +39,17 @@
       "ytd_pct": 40.52
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "Name": "",
+      "Sector": "No Data Currently Available"
+    }
+  ],
   "gainers": [],
   "losers": [],
   "liveMarketStatus": {
-    "text_ar": "مغلق",
-    "color": "Red"
+    "text_ar": null,
+    "color": null
   },
   "indexCharts": {},
   "investorActivity": {
@@ -68,7 +73,39 @@
       }
     },
     "nationalityBreakdownPct": [],
-    "individualsByNationality": [],
-    "institutionsByNationality": []
+    "individualsByNationality": [
+      {
+        "label_ar": null,
+        "value": null,
+        "color": null
+      },
+      {
+        "label_ar": null,
+        "value": null,
+        "color": null
+      },
+      {
+        "label_ar": null,
+        "value": null,
+        "color": null
+      }
+    ],
+    "institutionsByNationality": [
+      {
+        "label_ar": null,
+        "value": null,
+        "color": null
+      },
+      {
+        "label_ar": null,
+        "value": null,
+        "color": null
+      },
+      {
+        "label_ar": null,
+        "value": null,
+        "color": null
+      }
+    ]
   }
 }
