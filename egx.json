@@ -1,156 +1,174 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-12 10:24:27 AM",
-  "indices": {
-    "SHARIAH": {
-      "date": "12/08/2026",
-      "value": 6503.96,
-      "open": 6460.79,
-      "high": 6528.09,
-      "low": 6460.79,
-      "change_pct": 0.67,
-      "ytd_pct": 41.46
-    },
-    "EGX30": {
-      "date": "12/08/2026",
-      "value": 6503.96,
-      "open": 6460.79,
-      "high": 6528.09,
-      "low": 6460.79,
-      "change_pct": 0.67,
-      "ytd_pct": 41.46
-    },
-    "EGX70": {
-      "date": "12/08/2026",
-      "value": 6503.96,
-      "open": 6460.79,
-      "high": 6528.09,
-      "low": 6460.79,
-      "change_pct": 0.67,
-      "ytd_pct": 41.46
-    },
-    "EGX100": {
-      "date": "12/08/2026",
-      "value": 6503.96,
-      "open": 6460.79,
-      "high": 6528.09,
-      "low": 6460.79,
-      "change_pct": 0.67,
-      "ytd_pct": 41.46
-    }
-  },
+  "lastUpdated": "2026-08-12 10:48:29 AM",
+  "indices": {},
   "prices": [],
-  "gainers": [],
-  "losers": [],
+  "gainers": [
+    {
+      "name": "Misr Cement (Qena)",
+      "price": 283.41,
+      "change_pct": 16.34,
+      "code": "MCQE"
+    },
+    {
+      "name": "Arabian Cement Company",
+      "price": 87.93,
+      "change_pct": 15.03,
+      "code": "ARCC"
+    },
+    {
+      "name": "Misr Beni Suef Cement",
+      "price": 364.4,
+      "change_pct": 14.59,
+      "code": "MBSC"
+    },
+    {
+      "name": "Middle & West Delta Flour Mills",
+      "price": 680.46,
+      "change_pct": 10.83,
+      "code": "WCDF"
+    },
+    {
+      "name": "South Valley Cement",
+      "price": 12.47,
+      "change_pct": 10.75,
+      "code": "SVCE"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Glaxo Smith Kline",
+      "price": 508.88,
+      "change_pct": -7.48,
+      "code": "BIOC"
+    },
+    {
+      "name": "El-Nile Co. For Pharmaceuticals And Chemical Industries",
+      "price": 425.84,
+      "change_pct": -7.43,
+      "code": "NIPH"
+    },
+    {
+      "name": "October Pharma",
+      "price": 295.24,
+      "change_pct": -4.76,
+      "code": "OCPH"
+    },
+    {
+      "name": "El Ezz Porcelain (Gemma)",
+      "price": 40.4,
+      "change_pct": -3.07,
+      "code": "ECAP"
+    },
+    {
+      "name": "Memphis Pharmaceuticals",
+      "price": 389.96,
+      "change_pct": -3.0,
+      "code": "MPCI"
+    }
+  ],
   "liveMarketStatus": {
     "text_ar": "مفتوح",
     "color": null
   },
-  "indexCharts": {},
-  "investorActivity": {
-    "byGroup": {
-      "total": {
-        "egyptians": {
-          "buy": 1070594764.0,
-          "sell": 1055911231.0,
-          "net": 14683533.0
-        },
-        "arabs": {
-          "buy": 11474438.0,
-          "sell": 22081225.0,
-          "net": -10606788.0
-        },
-        "foreigners": {
-          "buy": 19833874.0,
-          "sell": 23910620.0,
-          "net": -4076746.0
-        }
-      },
-      "individuals": {
-        "egyptians": {
-          "buy": 1015270292.0,
-          "sell": 994352802.0,
-          "net": 20917489.0
-        },
-        "foreigners": {
-          "buy": 709599.0,
-          "sell": 3567954.0,
-          "net": -2858354.0
-        },
-        "arabs": {
-          "buy": 11437023.0,
-          "sell": 16844025.0,
-          "net": -5407002.0
-        }
-      },
-      "institutions": {
-        "egyptians": {
-          "buy": 55324472.0,
-          "sell": 61558428.0,
-          "net": -6233956.0
-        },
-        "foreigners": {
-          "buy": 19124275.0,
-          "sell": 20342666.0,
-          "net": -1218391.0
-        },
-        "arabs": {
-          "buy": 37415.0,
-          "sell": 5237200.0,
-          "net": -5199785.0
-        }
-      }
-    },
-    "nationalityBreakdownPct": [
+  "indexCharts": {
+    "SHARIAH": [
       {
-        "label_ar": "مصريين",
-        "value": 96.49,
-        "color": "#205d96"
+        "time": "2026-08-12T09:58:00",
+        "value": 6460.79
       },
       {
-        "label_ar": "عرب",
-        "value": 1.52,
-        "color": "#9e8b2b"
+        "time": "2026-08-12T10:00:00",
+        "value": 6527.07
       },
       {
-        "label_ar": "اجانب",
-        "value": 1.98,
-        "color": "#bababa"
+        "time": "2026-08-12T10:05:00",
+        "value": 6506.58
+      },
+      {
+        "time": "2026-08-12T10:10:00",
+        "value": 6510.02
+      },
+      {
+        "time": "2026-08-12T10:15:00",
+        "value": 6510.3
+      },
+      {
+        "time": "2026-08-12T10:20:00",
+        "value": 6511.17
+      },
+      {
+        "time": "2026-08-12T10:25:00",
+        "value": 6511.14
+      },
+      {
+        "time": "2026-08-12T10:30:00",
+        "value": 6511.16
+      },
+      {
+        "time": "2026-08-12T10:35:00",
+        "value": 6515.2
+      },
+      {
+        "time": "2026-08-12T10:40:00",
+        "value": 6515.0
+      },
+      {
+        "time": "2026-08-12T10:45:00",
+        "value": 6510.02
       }
     ],
-    "individualsByNationality": [
+    "EGX30": [
       {
-        "label_ar": null,
-        "value": null,
-        "color": null
+        "time": "2026-08-12T09:58:00",
+        "value": 54829.32
       },
       {
-        "label_ar": null,
-        "value": null,
-        "color": null
+        "time": "2026-08-12T10:00:00",
+        "value": 55078.47
       },
       {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
+        "time": "2026-08-12T10:05:00",
+        "value": 55048.58
       },
       {
-        "label_ar": null,
-        "value": null,
-        "color": null
+        "time": "2026-08-12T10:10:00",
+        "value": 55052.09
       },
       {
-        "label_ar": null,
-        "value": null,
-        "color": null
+        "time": "2026-08-12T10:15:00",
+        "value": 55058.2
+      },
+      {
+        "time": "2026-08-12T10:20:00",
+        "value": 55064.86
+      },
+      {
+        "time": "2026-08-12T10:25:00",
+        "value": 55067.59
+      },
+      {
+        "time": "2026-08-12T10:30:00",
+        "value": 55067.8
+      },
+      {
+        "time": "2026-08-12T10:35:00",
+        "value": 55085.24
+      },
+      {
+        "time": "2026-08-12T10:40:00",
+        "value": 55091.19
+      },
+      {
+        "time": "2026-08-12T10:45:00",
+        "value": 55087.32
       }
     ]
+  },
+  "investorActivity": {
+    "byGroup": {},
+    "nationalityBreakdownPct": [],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   }
 }
