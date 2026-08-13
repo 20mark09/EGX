@@ -1,104 +1,19 @@
 {
   "source": "https://www.egx.com.eg",
-  "lastUpdated": "2026-08-13 01:24:57 PM",
-  "indices": {
-    "SHARIAH": {
-      "date": "13/08/2026",
-      "value": 6540.71,
-      "open": 6475.04,
-      "high": 6573.96,
-      "low": 6475.04,
-      "change_pct": 1.01,
-      "ytd_pct": 42.26
-    },
-    "EGX30": {
-      "date": "13/08/2026",
-      "value": 6540.71,
-      "open": 6475.04,
-      "high": 6573.96,
-      "low": 6475.04,
-      "change_pct": 1.01,
-      "ytd_pct": 42.26
-    },
-    "EGX70": {
-      "date": "13/08/2026",
-      "value": 6540.71,
-      "open": 6475.04,
-      "high": 6573.96,
-      "low": 6475.04,
-      "change_pct": 1.01,
-      "ytd_pct": 42.26
-    },
-    "EGX100": {
-      "date": "13/08/2026",
-      "value": 6540.71,
-      "open": 6475.04,
-      "high": 6573.96,
-      "low": 6475.04,
-      "change_pct": 1.01,
-      "ytd_pct": 42.26
-    }
-  },
+  "lastUpdated": "2026-08-13 01:47:59 PM",
+  "indices": {},
   "prices": [],
   "gainers": [],
   "losers": [],
   "liveMarketStatus": {
-    "text_ar": "مفتوح",
+    "text_ar": null,
     "color": null
   },
   "indexCharts": {},
   "investorActivity": {
     "byGroup": {},
-    "nationalityBreakdownPct": [
-      {
-        "label_ar": "مصريين",
-        "value": 77.68,
-        "color": "#205d96"
-      },
-      {
-        "label_ar": "عرب",
-        "value": 0.76,
-        "color": "#9e8b2b"
-      },
-      {
-        "label_ar": "اجانب",
-        "value": 21.56,
-        "color": "#bababa"
-      }
-    ],
-    "individualsByNationality": [
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      }
-    ],
-    "institutionsByNationality": [
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      },
-      {
-        "label_ar": null,
-        "value": null,
-        "color": null
-      }
-    ]
+    "nationalityBreakdownPct": [],
+    "individualsByNationality": [],
+    "institutionsByNationality": []
   }
 }
