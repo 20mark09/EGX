@@ -3,8 +3,17 @@ name: EGX Beta Scrape
 on:
   repository_dispatch:
        types: [run-fast]
- 
-  workflow_dispatch:
+
+# Prevents two runs (e.g. a scheduled run overlapping a manual
+# workflow_dispatch, or one run taking longer than the 15-minute
+# interval) from both trying to commit+push at the same time - that's
+# what caused the "fetch first" rejection. New runs queue instead of
+# racing. cancel-in-progress: false means a queued run waits for the
+# current one to finish rather than killing it mid-scrape.
+concurrency:
+  group: egx-beta-deploy
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -18,10 +27,28 @@ jobs:
       - run: pip install playwright
       - run: playwright install --with-deps chromium
       - run: python scrape_egx_beta.py
-      - name: Commit egx.json
+      - name: Commit and push egx.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add egx.json
-          git diff --staged --quiet || git commit -m "Update egx.json [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update egx.json [skip ci]"
+          # Belt-and-suspenders on top of the concurrency group above:
+          # rebase onto whatever's newest before each push attempt, and
+          # retry a few times with jittered backoff instead of failing
+          # outright on a race.
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push origin main; then
+              echo "Pushed successfully on attempt $attempt."
+              exit 0
+            fi
+            echo "Push failed on attempt $attempt, retrying..."
+            sleep $(( (RANDOM % 8) + 3 ))
+          done
+          echo "Push failed after 5 attempts."
+          exit 1
