@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-17 10:01:20 AM",
+  "lastUpdated": "2026-08-17 10:16:00 AM",
   "marketStatus": {
     "status": "Open",
     "status_ar": "مفتوح",
-    "statusDate": "2026-08-17T10:01:13"
+    "statusDate": "2026-08-17T10:15:52"
   },
   "indices": {
     "EGX30": null,
@@ -15,13 +15,13 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 135.71,
-        "changePer": 0.24296953132357255,
-        "high": 56001.97,
-        "close": 55990.45,
+        "change": 168.24,
+        "changePer": 0.3012098883639956,
+        "high": 56101.69,
+        "close": 56022.98,
         "open": 55854.74,
         "low": 55854.74,
-        "ytdPercent": 33.8557,
+        "ytdPercent": 33.9334,
         "date": "2026-08-17T00:00:00"
       },
       "points": [
@@ -32,18 +32,30 @@
         {
           "time": "2026-08-17T10:00:00",
           "value": 56001.97
+        },
+        {
+          "time": "2026-08-17T10:05:00",
+          "value": 56032.07
+        },
+        {
+          "time": "2026-08-17T10:10:00",
+          "value": 56073.83
+        },
+        {
+          "time": "2026-08-17T10:15:00",
+          "value": 56031.32
         }
       ]
     },
     "SHARIAH": {
       "live": {
-        "change": 27.08,
-        "changePer": 0.40450633198796637,
-        "high": 6728.07,
-        "close": 6721.66,
+        "change": -13.43,
+        "changePer": -0.20061004573849292,
+        "high": 6730.7,
+        "close": 6681.15,
         "open": 6694.58,
-        "low": 6694.58,
-        "ytdPercent": 46.1939,
+        "low": 6676.89,
+        "ytdPercent": 45.3128,
         "date": "2026-08-17T00:00:00"
       },
       "points": [
@@ -54,18 +66,30 @@
         {
           "time": "2026-08-17T10:00:00",
           "value": 6728.07
+        },
+        {
+          "time": "2026-08-17T10:05:00",
+          "value": 6712.11
+        },
+        {
+          "time": "2026-08-17T10:10:00",
+          "value": 6697.3
+        },
+        {
+          "time": "2026-08-17T10:15:00",
+          "value": 6681.35
         }
       ]
     },
     "EGX70": {
       "live": {
-        "change": 49.6,
-        "changePer": 0.22926143152501838,
+        "change": 46.54,
+        "changePer": 0.21511748030593458,
         "high": 21688.79,
-        "close": 21684.29,
+        "close": 21681.23,
         "open": 21634.69,
-        "low": 21634.69,
-        "ytdPercent": 65.2095,
+        "low": 21584.3,
+        "ytdPercent": 65.1862,
         "date": "2026-08-17T00:00:00"
       },
       "points": [
@@ -76,18 +100,30 @@
         {
           "time": "2026-08-17T10:00:00",
           "value": 21688.79
+        },
+        {
+          "time": "2026-08-17T10:05:00",
+          "value": 21646.69
+        },
+        {
+          "time": "2026-08-17T10:10:00",
+          "value": 21643.09
+        },
+        {
+          "time": "2026-08-17T10:15:00",
+          "value": 21682.33
         }
       ]
     },
     "EGX100": {
       "live": {
-        "change": 39.39,
-        "changePer": 0.14061067655903292,
+        "change": 62.87,
+        "changePer": 0.22442734793771008,
         "high": 28096.01,
-        "close": 28052.91,
+        "close": 28076.39,
         "open": 28013.52,
-        "low": 28013.52,
-        "ytdPercent": 60.9842,
+        "low": 27980.78,
+        "ytdPercent": 61.1189,
         "date": "2026-08-17T00:00:00"
       },
       "points": [
@@ -98,6 +134,18 @@
         {
           "time": "2026-08-17T10:00:00",
           "value": 28096.01
+        },
+        {
+          "time": "2026-08-17T10:05:00",
+          "value": 28041.44
+        },
+        {
+          "time": "2026-08-17T10:10:00",
+          "value": 28032.36
+        },
+        {
+          "time": "2026-08-17T10:15:00",
+          "value": 28077
         }
       ]
     }
@@ -9279,6 +9327,78 @@
   "news": {
     "disclosure": [
       {
+        "code": 293362,
+        "dateStamp": "2026-08-17T10:14:32",
+        "heading": "Aman For Securitization 2nd Iss 2nd Pro Tranche C Dec 2027 VR (EGBAMSC2P2CC) Declares Bond Dividends for Coupon No. (7) ",
+        "content": "Issuer Name : Aman For Securitization 2nd Iss 2nd Pro Tranche C Dec 2027 VR<br />ISIN Code : EGB697J1S406<br />Reuters Code : EGBAMSC2P2CC<br />Interest Type : Floating<br />Coupon Interest : 21.05% <br />Coupon Amount : EGP 1.6724657534<br />Coupon Number : 7<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات امان للتوريق الإصدار الثاني برنامج الثاني الشريحة ج ديسمبر 2027 (EGBAMSC2P2CC) يعلن عن توزيع كوبون السند رقم (7)",
+        "contentArabic": "المصدر : سندات امان للتوريق الإصدار الثاني برنامج الثاني الشريحة ج ديسمبر 2027<br />كود الترقيم الدولي : EGB697J1S406<br />كود رويتيرز : EGBAMSC2P2CC<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 21.05% <br />قيمة الكوبون : 1.6724657534 جم للسند<br />رقم الكوبون : 7<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB697J1S406",
+        "companyName": "سندات امان للتوريق ص 2 ب 2 ش ج ديسمبر 2027 ع.م",
+        "companyNameArabic": "Aman For Securitization 2nd Iss 2nd Pro Tra C Dec 2027 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293361,
+        "dateStamp": "2026-08-17T10:14:07",
+        "heading": "Minapharm Pharmaceuticals (MIPH.CA) - Minutes of the Board of Directors' Meeting ",
+        "content": "Company: Minapharm Pharmaceuticals<br />Symbols: EGS380G1C011<br />Reuters: MIPH.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 16/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342944_1.pdf\" target=\"_blank\">The BoD Meeting Minutes (2,218 KB)</a>",
+        "headingArabic": "مينا فارم للأدوية و الصناعات الكيماوية (MIPH.CA) - محضر اجتماع مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: مينا فارم للأدوية و الصناعات الكيماوية<br />كود الترقيم الدولي: EGS380G1C011<br />كود رويترز: MIPH.CA<br />مضمون الاعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 16/08/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342944_1.pdf\" target=\"_blank\">محضر اجتماع مجلس الإدارة (2,218 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS380G1C011",
+        "companyName": "مينا فارم للأدوية و الصناعات الكيماوية",
+        "companyNameArabic": "Minapharm Pharmaceuticals",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 293360,
+        "dateStamp": "2026-08-17T10:12:33",
+        "heading": "Aman For Securitization 1st Iss 1st Prog Tranche C October 2027 (AMAN1P1C=CA) Declares Bond Dividends for Coupon No. (42) ",
+        "content": "Issuer Name : Aman For Securitization 1st Iss 1st Prog Tranche C October 2027<br />ISIN Code : EGB697J1S034<br />Reuters Code : AMAN1P1C=CA<br />Interest Type : Fixed<br />Coupon Interest : 18.7% <br />Coupon Amount : EGP 0.8096803653<br />Coupon Number : 42<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 5.3921568627<br />",
+        "headingArabic": "سندات امان للتوريق الإصدار الأول برنامج أول شريحة ج أكتوبر 2027 (AMAN1P1C=CA) يعلن عن توزيع كوبون السند رقم (42)",
+        "contentArabic": "المصدر : سندات امان للتوريق الإصدار الأول برنامج أول شريحة ج أكتوبر 2027<br />كود الترقيم الدولي : EGB697J1S034<br />كود رويتيرز : AMAN1P1C=CA<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18.7% <br />قيمة الكوبون : 0.8096803653 جم للسند<br />رقم الكوبون : 42<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 5.3921568627 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB697J1S034",
+        "companyName": "سندات امان للتوريق الاصدار 1 برنامج اول شريحة  ج اكتوبر 2027",
+        "companyNameArabic": "Aman For Securitization 1st Iss  1st Prog Tran C October 202",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293359,
+        "dateStamp": "2026-08-17T10:09:25",
+        "heading": "Aman For Securitization 1st  Iss Tranche H OCT 2026 FR (EGBAMSC01HCF) Declares Bond Dividends for Coupon No. (19) ",
+        "content": "Issuer Name : Aman For Securitization 1st  Iss Tranche H OCT 2026 FR<br />ISIN Code : EGB697J1S265<br />Reuters Code : EGBAMSC01HCF<br />Interest Type : Fixed<br />Coupon Interest : 23.5% <br />Coupon Amount : EGP 0.4506849315<br />Coupon Number : 19<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 19.3548387097<br />",
+        "headingArabic": "سندات امان للتوريق الإصدار الأول الشريحة ه أكتوبر 2026 (EGBAMSC01HCF) يعلن عن توزيع كوبون السند رقم (19)",
+        "contentArabic": "المصدر : سندات امان للتوريق الإصدار الأول الشريحة ه أكتوبر 2026<br />كود الترقيم الدولي : EGB697J1S265<br />كود رويتيرز : EGBAMSC01HCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 23.5% <br />قيمة الكوبون : 0.4506849315 جم للسند<br />رقم الكوبون : 19<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 19.3548387097 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB697J1S265",
+        "companyName": "سندات امان للتوريق الاصدار الاول الشريحة ه اكتوبر 2026 ع.ث",
+        "companyNameArabic": "Aman For Securitization 1st  Iss Tran H OCT 2026 FR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
         "code": 293358,
         "dateStamp": "2026-08-17T09:42:43",
         "heading": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda (RMDA.CA) - EGM Invitation ",
@@ -9563,78 +9683,6 @@
         "isin": "EGS676N1C015",
         "companyName": "A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس",
         "companyNameArabic": "Al Tawfeek Leasing Company-A.T.LEASE",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 293340,
-        "dateStamp": "2026-08-16T15:00:52",
-        "heading": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 13/08/2026",
-        "content": "                                                                                                      <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/62888_1.pdf\" target=\"_blank\">News Attachment in Arabic (211 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/62888_101.pdf\" target=\"_blank\">News Attachment in English (121 KB)</a>",
-        "headingArabic": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة على الشركات المقيدة: جلسة تداول يوم 13/08/2026",
-        "contentArabic": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة بهم بالشركات المقيد لها أوراق مالية بجداول البورصة خلال جلسة 13/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/62888_1.pdf\" target=\"_blank\">مرفق الإعلان باللغة العربية (211 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/62888_101.pdf\" target=\"_blank\">مرفق الإعلان باللغة الإنجليزية (121 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": null,
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293339,
-        "dateStamp": "2026-08-16T14:50:05",
-        "heading": "Universal For Paper and Packaging Materials - Unipack (UNIP.CA) - Release Regarding a Disclosure Form ",
-        "content": "Company Name : Universal For Paper and Packaging Materials - Unipack<br />ISIN Code : EGS38161C013<br />Reuters Code : UNIP.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342886_1.pdf\" target=\"_blank\">The Release (328 KB)</a>",
-        "headingArabic": "يونيفرسال لصناعة مواد التعبئة و التغليف و الورق - يونيباك (UNIP.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ ",
-        "contentArabic": "اسم الشركة : يونيفرسال لصناعة مواد التعبئة و التغليف و الورق - يونيباك<br />كود الترقيم الدولي : EGS38161C013<br />كود رويترز : UNIP.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342886_1.pdf\" target=\"_blank\">البيان (328 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38161C013",
-        "companyName": "يونيفرسال لصناعة مواد التعبئة و التغليف و الورق - يونيباك",
-        "companyNameArabic": "Universal For Paper and Packaging Materials (Unipack",
-        "sectorId": 28,
-        "attachments": []
-      },
-      {
-        "code": 293338,
-        "dateStamp": "2026-08-16T14:46:33",
-        "heading": "EL Orouba Securities Brokerage Co . (EOSB.CA) - Minutes of the Board of Directors' Meeting ",
-        "content": "Company: EL Orouba Securities Brokerage Co .<br />Symbols: EGS681I1C015<br />Reuters: EOSB.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 13/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342866_1.pdf\" target=\"_blank\">The BoD Meeting Minutes (1,647 KB)</a>",
-        "headingArabic": "العروبة للسمسرة فى الأوراق المالية (EOSB.CA) - محضر اجتماع مجلس إدارة الشركة ",
-        "contentArabic": "اسم الشركة: العروبة للسمسرة فى الأوراق المالية<br />كود الترقيم الدولي: EGS681I1C015<br />كود رويترز: EOSB.CA<br />مضمون الاعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 13/08/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342866_1.pdf\" target=\"_blank\">محضر اجتماع مجلس الإدارة (1,647 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS681I1C015",
-        "companyName": "العروبة للسمسرة فى الأوراق المالية",
-        "companyNameArabic": "El Orouba Securities Brokerage",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 293337,
-        "dateStamp": "2026-08-16T14:44:10",
-        "heading": "EL Orouba Securities Brokerage Co . (EOSB.CA) Reports Its Financial Results  for the Period From 01/01/2026 to 30/06/2026 ",
-        "content": "Company Name: EL Orouba Securities Brokerage Co .<br />ISIN Code: EGS681I1C015<br />Currency: Egyptian Pound<br />F/S  Period: From 01/01/2026 to 30/06/2026<br />Net profit: 917,524 <br />F/S  Period: From 01/01/2025 to 30/06/2025<br />Net Comparative profit: 854,737  <br />Audit Status: Reviewed<br />Source: EL Orouba Securities Brokerage Co .",
-        "headingArabic": "العروبة للسمسرة فى الأوراق المالية (EOSB.CA) تعلن نتائج أعمالها عن الفترة: من 01/01/2026 إلى 30/06/2026 ",
-        "contentArabic": "اسم الشركة: العروبة للسمسرة فى الأوراق المالية<br />كود الترقيم الدولي: EGS681I1C015<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/01/2026 إلى 30/06/2026<br />صافي الربح: 917,524 <br />أرقام المقارنة  عن الفترة: من 01/01/2025 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 854,737 <br />تقرير فحص محدود: مرفق<br />المصدر: العروبة للسمسرة فى الأوراق المالية<br />القوائم المالية لشركة العروبة فى الفترة المنتهية فى 30-6-2026",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS681I1C015",
-        "companyName": "العروبة للسمسرة فى الأوراق المالية",
-        "companyNameArabic": "El Orouba Securities Brokerage",
         "sectorId": 24,
         "attachments": []
       }
