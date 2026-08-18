@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-18 02:46:12 PM",
+  "lastUpdated": "2026-08-18 03:01:24 PM",
   "marketStatus": {
     "status": "Closed",
     "status_ar": "مغلق",
-    "statusDate": "2026-08-18T14:46:01"
+    "statusDate": "2026-08-18T15:01:11"
   },
   "indices": {
     "EGX30": {
@@ -296,6 +296,14 @@
         {
           "time": "2026-08-18T14:45:00",
           "value": 55276.78
+        },
+        {
+          "time": "2026-08-18T14:50:00",
+          "value": 55276.78
+        },
+        {
+          "time": "2026-08-18T14:55:00",
+          "value": 55276.78
         }
       ]
     },
@@ -545,6 +553,14 @@
         },
         {
           "time": "2026-08-18T14:45:00",
+          "value": 6606.93
+        },
+        {
+          "time": "2026-08-18T14:50:00",
+          "value": 6606.93
+        },
+        {
+          "time": "2026-08-18T14:55:00",
           "value": 6606.93
         }
       ]
@@ -796,6 +812,14 @@
         {
           "time": "2026-08-18T14:45:00",
           "value": 21667.02
+        },
+        {
+          "time": "2026-08-18T14:50:00",
+          "value": 21667.02
+        },
+        {
+          "time": "2026-08-18T14:55:00",
+          "value": 21667.02
         }
       ]
     },
@@ -1045,6 +1069,14 @@
         },
         {
           "time": "2026-08-18T14:45:00",
+          "value": 27953.58
+        },
+        {
+          "time": "2026-08-18T14:50:00",
+          "value": 27953.58
+        },
+        {
+          "time": "2026-08-18T14:55:00",
           "value": 27953.58
         }
       ]
@@ -9729,7 +9761,7 @@
       "value": 1350049851.03,
       "volume": 244136297,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9779,7 +9811,7 @@
       "value": 564179856.63,
       "volume": 35892736,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -9829,7 +9861,7 @@
       "value": 377663785.52,
       "volume": 2723858,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -9879,7 +9911,7 @@
       "value": 370150713.855,
       "volume": 740368608,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9929,7 +9961,7 @@
       "value": 348278631.13,
       "volume": 3286081,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9979,7 +10011,7 @@
       "value": 347445280.89,
       "volume": 2711205,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10029,7 +10061,7 @@
       "value": 296529038.75,
       "volume": 1376011,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10079,7 +10111,7 @@
       "value": 281715140.59,
       "volume": 88680004,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10129,7 +10161,7 @@
       "value": 271005538.753,
       "volume": 557423061,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10179,7 +10211,7 @@
       "value": 267982845.71,
       "volume": 1564135,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10229,7 +10261,7 @@
       "value": 256337165.63,
       "volume": 1874864,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10279,7 +10311,7 @@
       "value": 248612609.16,
       "volume": 20824778,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10329,7 +10361,7 @@
       "value": 231758557.197,
       "volume": 169063950,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10379,7 +10411,7 @@
       "value": 220414287.91,
       "volume": 5236337,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10429,7 +10461,7 @@
       "value": 209805920.5,
       "volume": 94281778,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10479,7 +10511,7 @@
       "value": 204489318.624,
       "volume": 280713274,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10529,7 +10561,7 @@
       "value": 201668569.37,
       "volume": 1523049,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10579,7 +10611,7 @@
       "value": 191869837.95,
       "volume": 56141881,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10629,7 +10661,7 @@
       "value": 187507843.43,
       "volume": 498251,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10679,7 +10711,7 @@
       "value": 179135824.06,
       "volume": 693228,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10729,7 +10761,7 @@
       "value": 164146768.86,
       "volume": 1696246,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10779,7 +10811,7 @@
       "value": 161899542.1,
       "volume": 427648,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10829,7 +10861,7 @@
       "value": 159683855.23,
       "volume": 51329684,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10879,7 +10911,7 @@
       "value": 158928349.52,
       "volume": 9732983,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10929,7 +10961,7 @@
       "value": 150326806.88,
       "volume": 421094,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10979,7 +11011,7 @@
       "value": 148486349.99,
       "volume": 19550145,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11029,7 +11061,7 @@
       "value": 132956967.17,
       "volume": 883921,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11079,7 +11111,7 @@
       "value": 129316307.85,
       "volume": 11482767,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11129,7 +11161,7 @@
       "value": 128091862.7,
       "volume": 58881947,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11179,7 +11211,7 @@
       "value": 118701045.72,
       "volume": 24582551,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11229,7 +11261,7 @@
       "value": 118194964.27,
       "volume": 15790952,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11279,7 +11311,7 @@
       "value": 116998265.59,
       "volume": 154659,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11329,7 +11361,7 @@
       "value": 115792277.13,
       "volume": 333718,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11379,7 +11411,7 @@
       "value": 115157987.4,
       "volume": 300852,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11429,7 +11461,7 @@
       "value": 112187412.71,
       "volume": 492195,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11479,7 +11511,7 @@
       "value": 110440747.89,
       "volume": 61716602,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11529,7 +11561,7 @@
       "value": 106570967.83,
       "volume": 207869,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11579,7 +11611,7 @@
       "value": 106221113.41,
       "volume": 11693087,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11629,7 +11661,7 @@
       "value": 100565677.12,
       "volume": 855449,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11679,7 +11711,7 @@
       "value": 99755170.32,
       "volume": 1953523,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11729,7 +11761,7 @@
       "value": 96925189.839,
       "volume": 106166045,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11779,7 +11811,7 @@
       "value": 93324732,
       "volume": 9981153,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11829,7 +11861,7 @@
       "value": 90799566.48,
       "volume": 5673503,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11879,7 +11911,7 @@
       "value": 87696828.77,
       "volume": 6020223,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11929,7 +11961,7 @@
       "value": 85620610.36,
       "volume": 1630433,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11979,7 +12011,7 @@
       "value": 84069773.93,
       "volume": 287726,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12029,7 +12061,7 @@
       "value": 83843165.78,
       "volume": 7173991,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12079,7 +12111,7 @@
       "value": 81968265.84,
       "volume": 189466,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12129,7 +12161,7 @@
       "value": 81410738.8,
       "volume": 4625280,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12179,7 +12211,7 @@
       "value": 80575531.31,
       "volume": 85836317,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12229,7 +12261,7 @@
       "value": 77328766.85,
       "volume": 5807971,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12279,7 +12311,7 @@
       "value": 77286236.45,
       "volume": 994163,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12329,7 +12361,7 @@
       "value": 73124735.55,
       "volume": 15184613,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12379,7 +12411,7 @@
       "value": 73090975.68,
       "volume": 2171801,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12429,7 +12461,7 @@
       "value": 73014039.32,
       "volume": 36223022,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12479,7 +12511,7 @@
       "value": 71694904.22,
       "volume": 1808767,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12529,7 +12561,7 @@
       "value": 70922767.29,
       "volume": 357113,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12579,7 +12611,7 @@
       "value": 70263926.63,
       "volume": 9162584,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12629,7 +12661,7 @@
       "value": 67542893.88,
       "volume": 2544401,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12679,7 +12711,7 @@
       "value": 65481024.81,
       "volume": 4600557,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12729,7 +12761,7 @@
       "value": 64867924.935,
       "volume": 158928296,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12779,7 +12811,7 @@
       "value": 64104283.69,
       "volume": 14643080,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12829,7 +12861,7 @@
       "value": 63761920.75,
       "volume": 17974974,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12879,7 +12911,7 @@
       "value": 62527878.51,
       "volume": 828217,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12929,7 +12961,7 @@
       "value": 62501755.29,
       "volume": 1818438,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12979,7 +13011,7 @@
       "value": 59849455.22,
       "volume": 27292564,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13029,7 +13061,7 @@
       "value": 59240778.62,
       "volume": 165877,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13079,7 +13111,7 @@
       "value": 58629243.233,
       "volume": 64840023,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13129,7 +13161,7 @@
       "value": 57691063.09,
       "volume": 2337859,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13179,7 +13211,7 @@
       "value": 57365408.05,
       "volume": 194289,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13229,7 +13261,7 @@
       "value": 54350419,
       "volume": 3492616,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13279,7 +13311,7 @@
       "value": 54066292.82,
       "volume": 234207,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13329,7 +13361,7 @@
       "value": 51218092.48,
       "volume": 33881467,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13379,7 +13411,7 @@
       "value": 51041020.09,
       "volume": 38754570,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13429,7 +13461,7 @@
       "value": 48964745.2,
       "volume": 1290486,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13479,7 +13511,7 @@
       "value": 48353371.5,
       "volume": 341167,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13529,7 +13561,7 @@
       "value": 47712498.75,
       "volume": 5053914,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13579,7 +13611,7 @@
       "value": 47390359.74,
       "volume": 26209249,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13629,7 +13661,7 @@
       "value": 47301314.06,
       "volume": 4325509,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13679,7 +13711,7 @@
       "value": 47191772.61,
       "volume": 1966443,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13729,7 +13761,7 @@
       "value": 47186383.98,
       "volume": 2328959,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13779,7 +13811,7 @@
       "value": 46611686.97,
       "volume": 1379355,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13829,7 +13861,7 @@
       "value": 45616856.6,
       "volume": 835449,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13879,7 +13911,7 @@
       "value": 45047489.54,
       "volume": 8788219,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13929,7 +13961,7 @@
       "value": 43968494.74,
       "volume": 2533347,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13979,7 +14011,7 @@
       "value": 43842298.59,
       "volume": 1743641,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14029,7 +14061,7 @@
       "value": 43720789.34,
       "volume": 482550,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14079,7 +14111,7 @@
       "value": 43686787,
       "volume": 6913345,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14129,7 +14161,7 @@
       "value": 42721142.45,
       "volume": 2229833,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14179,7 +14211,7 @@
       "value": 42506182.1,
       "volume": 5915189,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14229,7 +14261,7 @@
       "value": 42298001.779,
       "volume": 52294444,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14279,7 +14311,7 @@
       "value": 42107302.745,
       "volume": 174294494,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14329,7 +14361,7 @@
       "value": 40627902.79,
       "volume": 6159953,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14379,7 +14411,7 @@
       "value": 40065015.79,
       "volume": 25794709,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14429,7 +14461,7 @@
       "value": 39956014.48,
       "volume": 21192306,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14479,7 +14511,7 @@
       "value": 38916451.26,
       "volume": 61176,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14529,7 +14561,7 @@
       "value": 38244216.17,
       "volume": 16501178,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14579,7 +14611,7 @@
       "value": 38093352.38,
       "volume": 2247645,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14629,7 +14661,7 @@
       "value": 37598048.55,
       "volume": 606361,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14679,7 +14711,7 @@
       "value": 37301804.6,
       "volume": 3284671,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14729,7 +14761,7 @@
       "value": 36702184.43,
       "volume": 232092,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14779,7 +14811,7 @@
       "value": 36200773.55,
       "volume": 3211959,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14829,7 +14861,7 @@
       "value": 34484091.27,
       "volume": 1149504,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14879,7 +14911,7 @@
       "value": 32696544.96,
       "volume": 6612524,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14929,7 +14961,7 @@
       "value": 32179088.3,
       "volume": 10114435,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14979,7 +15011,7 @@
       "value": 31776024.82,
       "volume": 342403,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15029,7 +15061,7 @@
       "value": 30341225.64,
       "volume": 9676133,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15079,7 +15111,7 @@
       "value": 30216447.82,
       "volume": 4905183,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15129,7 +15161,7 @@
       "value": 29644447.94,
       "volume": 669106,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15179,7 +15211,7 @@
       "value": 29196187.61,
       "volume": 21643626,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15229,7 +15261,7 @@
       "value": 29152191.96,
       "volume": 2393941,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15279,7 +15311,7 @@
       "value": 29150142.96,
       "volume": 456713,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15329,7 +15361,7 @@
       "value": 29100336.3,
       "volume": 2390919,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15379,7 +15411,7 @@
       "value": 27776513.9,
       "volume": 1385934,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15429,7 +15461,7 @@
       "value": 27772774.43,
       "volume": 761656,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15479,7 +15511,7 @@
       "value": 26890647.48,
       "volume": 719563,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15529,7 +15561,7 @@
       "value": 26690405.42,
       "volume": 808499,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15579,7 +15611,7 @@
       "value": 26391860.34,
       "volume": 1423888,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15629,7 +15661,7 @@
       "value": 26378693.56,
       "volume": 338503,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15679,7 +15711,7 @@
       "value": 25987370.18,
       "volume": 15047801,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15729,7 +15761,7 @@
       "value": 25789828.08,
       "volume": 284135,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15779,7 +15811,7 @@
       "value": 25445635.93,
       "volume": 983849,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15829,7 +15861,7 @@
       "value": 25318772.6,
       "volume": 2823385,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15879,7 +15911,7 @@
       "value": 23434103.52,
       "volume": 718826,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15929,7 +15961,7 @@
       "value": 23130601.61,
       "volume": 853648,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15979,7 +16011,7 @@
       "value": 22391732.6,
       "volume": 1690222,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16029,7 +16061,7 @@
       "value": 21269353.51,
       "volume": 72473,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16079,7 +16111,7 @@
       "value": 21051106.46,
       "volume": 1469146,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16129,7 +16161,7 @@
       "value": 20758442.89,
       "volume": 513923,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16179,7 +16211,7 @@
       "value": 20589479.82,
       "volume": 580552,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16229,7 +16261,7 @@
       "value": 20535562.91,
       "volume": 974889,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16279,7 +16311,7 @@
       "value": 20355935.84,
       "volume": 3689334,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16329,7 +16361,7 @@
       "value": 20095520.42,
       "volume": 1461547,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16379,7 +16411,7 @@
       "value": 20001309.446,
       "volume": 763421,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16429,7 +16461,7 @@
       "value": 19562341.76,
       "volume": 2977418,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16479,7 +16511,7 @@
       "value": 19511695.71,
       "volume": 381507,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16529,7 +16561,7 @@
       "value": 19226887.48,
       "volume": 1284552,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16579,7 +16611,7 @@
       "value": 19209168.57,
       "volume": 508644,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16629,7 +16661,7 @@
       "value": 19204359,
       "volume": 2138929,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16679,7 +16711,7 @@
       "value": 18550839.83,
       "volume": 3777719,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16729,7 +16761,7 @@
       "value": 17543308.42,
       "volume": 577121,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16779,7 +16811,7 @@
       "value": 17105481.03,
       "volume": 1225393,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16829,7 +16861,7 @@
       "value": 17045363.22,
       "volume": 981674,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16879,7 +16911,7 @@
       "value": 16858762.82,
       "volume": 475230,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16929,7 +16961,7 @@
       "value": 16768736.78,
       "volume": 267468,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16979,7 +17011,7 @@
       "value": 16673766.05,
       "volume": 330830,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -17029,7 +17061,7 @@
       "value": 16154452.82,
       "volume": 853689,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17079,7 +17111,7 @@
       "value": 15967555.08,
       "volume": 1526201,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17129,7 +17161,7 @@
       "value": 15939151.085,
       "volume": 2203704,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17179,7 +17211,7 @@
       "value": 15472298.81,
       "volume": 739957,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17229,7 +17261,7 @@
       "value": 15426251.428,
       "volume": 28104994,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17279,7 +17311,7 @@
       "value": 15419446.15,
       "volume": 216320,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17329,7 +17361,7 @@
       "value": 15210139.05,
       "volume": 168503724,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17379,7 +17411,7 @@
       "value": 14976248.16,
       "volume": 3800695,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17429,7 +17461,7 @@
       "value": 14409115.16,
       "volume": 465011,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -17479,7 +17511,7 @@
       "value": 14053741.54,
       "volume": 210798,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17529,7 +17561,7 @@
       "value": 14046831.42,
       "volume": 487008,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17579,7 +17611,7 @@
       "value": 13950515.05,
       "volume": 566820,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17629,7 +17661,7 @@
       "value": 13527692.95,
       "volume": 619309,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17679,7 +17711,7 @@
       "value": 13450449.41,
       "volume": 103348,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17729,7 +17761,7 @@
       "value": 13414169.708,
       "volume": 26729293,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17779,7 +17811,7 @@
       "value": 12851617.56,
       "volume": 4670028,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -17829,7 +17861,7 @@
       "value": 12736141.66,
       "volume": 220728,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17879,7 +17911,7 @@
       "value": 12289776.33,
       "volume": 36366,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17929,7 +17961,7 @@
       "value": 12237111.611,
       "volume": 25502263,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17979,7 +18011,7 @@
       "value": 12033776.03,
       "volume": 202960,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18029,7 +18061,7 @@
       "value": 11803388.61,
       "volume": 4749051,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18079,7 +18111,7 @@
       "value": 11729130.28,
       "volume": 716830,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18129,7 +18161,7 @@
       "value": 11277435.31,
       "volume": 4839551,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18179,7 +18211,7 @@
       "value": 10920869.97,
       "volume": 40785,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18229,7 +18261,7 @@
       "value": 10771472.48,
       "volume": 524514,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18279,7 +18311,7 @@
       "value": 10653353.362,
       "volume": 323846,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18329,7 +18361,7 @@
       "value": 10594033.03,
       "volume": 286065,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18379,7 +18411,7 @@
       "value": 10199598.16,
       "volume": 238696,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18429,7 +18461,7 @@
       "value": 9660001.59,
       "volume": 6624295,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18479,7 +18511,7 @@
       "value": 9074961.19,
       "volume": 1345577,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18529,7 +18561,7 @@
       "value": 9031981.05,
       "volume": 164205,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18579,7 +18611,7 @@
       "value": 8930739.105,
       "volume": 179641,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18629,7 +18661,7 @@
       "value": 8277208.17,
       "volume": 4228089,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18679,7 +18711,7 @@
       "value": 8260972.38,
       "volume": 27737,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18729,7 +18761,7 @@
       "value": 7833417.48,
       "volume": 3028911,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18779,7 +18811,7 @@
       "value": 7403666.35,
       "volume": 255608,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18829,7 +18861,7 @@
       "value": 7262039.828,
       "volume": 10469356,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18879,7 +18911,7 @@
       "value": 6753714.47,
       "volume": 18174,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18929,7 +18961,7 @@
       "value": 6573742.27,
       "volume": 25033,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18979,7 +19011,7 @@
       "value": 6209927.72,
       "volume": 14883,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19029,7 +19061,7 @@
       "value": 6016727.29,
       "volume": 547964,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19079,7 +19111,7 @@
       "value": 5357630.76,
       "volume": 362596,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19129,7 +19161,7 @@
       "value": 5308571.36,
       "volume": 136419,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19179,7 +19211,7 @@
       "value": 5282406.66,
       "volume": 702144,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19229,7 +19261,7 @@
       "value": 4983377.612,
       "volume": 141979,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19279,7 +19311,7 @@
       "value": 4810882.94,
       "volume": 112538,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19329,7 +19361,7 @@
       "value": 4635510.02,
       "volume": 630919,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19379,7 +19411,7 @@
       "value": 4044292.48,
       "volume": 84098,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19429,7 +19461,7 @@
       "value": 3685408.27,
       "volume": 416359,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19479,7 +19511,7 @@
       "value": 3644100.27,
       "volume": 1234613,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19529,7 +19561,7 @@
       "value": 3571193.25,
       "volume": 402803,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19579,7 +19611,7 @@
       "value": 3486075.38,
       "volume": 5446,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19629,7 +19661,7 @@
       "value": 3441298.61,
       "volume": 6289,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19679,7 +19711,7 @@
       "value": 3201918.99,
       "volume": 505507,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19729,7 +19761,7 @@
       "value": 2990892.65,
       "volume": 60289,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19779,7 +19811,7 @@
       "value": 2959588.555,
       "volume": 517144,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19829,7 +19861,7 @@
       "value": 2828423.08,
       "volume": 44311,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19879,7 +19911,7 @@
       "value": 2681242.5,
       "volume": 4989,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19929,7 +19961,7 @@
       "value": 2192461.88,
       "volume": 816363,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19979,7 +20011,7 @@
       "value": 2013269.21,
       "volume": 7371,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20029,7 +20061,7 @@
       "value": 1860991.392,
       "volume": 754605,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20079,7 +20111,7 @@
       "value": 1846570.26,
       "volume": 97378,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20129,7 +20161,7 @@
       "value": 1829587.74,
       "volume": 1355,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20179,7 +20211,7 @@
       "value": 1715373.89,
       "volume": 56281,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20229,7 +20261,7 @@
       "value": 1667798.26,
       "volume": 131517,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20279,7 +20311,7 @@
       "value": 1502683.71,
       "volume": 115302,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20329,7 +20361,7 @@
       "value": 1348451.978,
       "volume": 631271,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20379,7 +20411,7 @@
       "value": 1163395.28,
       "volume": 668015,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20429,7 +20461,7 @@
       "value": 567147.68,
       "volume": 731,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20479,7 +20511,7 @@
       "value": 512806.248,
       "volume": 1170,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20529,7 +20561,7 @@
       "value": 382641.45,
       "volume": 199246,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20579,7 +20611,7 @@
       "value": 369719.49,
       "volume": 16611,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20629,7 +20661,7 @@
       "value": 132468.96,
       "volume": 3502,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20679,7 +20711,7 @@
       "value": 89358,
       "volume": 852,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20729,7 +20761,7 @@
       "value": 37000,
       "volume": 10000,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20779,7 +20811,7 @@
       "value": 520.02,
       "volume": 321,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     }
@@ -20831,7 +20863,7 @@
       "value": 296529038.75,
       "volume": 1376011,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20881,7 +20913,7 @@
       "value": 231758557.197,
       "volume": 169063950,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20931,7 +20963,7 @@
       "value": 132956967.17,
       "volume": 883921,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20981,7 +21013,7 @@
       "value": 370150713.855,
       "volume": 740368608,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21031,7 +21063,7 @@
       "value": 10771472.48,
       "volume": 524514,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     }
@@ -21083,7 +21115,7 @@
       "value": 59240778.62,
       "volume": 165877,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21133,7 +21165,7 @@
       "value": 81968265.84,
       "volume": 189466,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21183,7 +21215,7 @@
       "value": 115157987.4,
       "volume": 300852,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21233,7 +21265,7 @@
       "value": 54066292.82,
       "volume": 234207,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21283,137 +21315,137 @@
       "value": 150326806.88,
       "volume": 421094,
       "withHistory": "N",
-      "writeTime": "202608181431",
+      "writeTime": "202608181446",
       "volatility": null,
       "tamayuz": null
     }
   ],
   "investorActivity": {
     "invsetorsStatistics": {
-      "buyCom": 288680004611.0835,
-      "buyEg": 237997673459.724,
-      "buyF": 62721748680.0087,
-      "buyRet": 12039417528.6492,
-      "egTotal": 241302566742.3861,
-      "forTotal": 59416855397.3466,
-      "ratBuyCom": 95.99,
-      "ratBuyEg": 79.14,
-      "ratBuyFor": 20.85,
-      "ratBuyRat": 4,
-      "ratCom": 96.12,
-      "ratEg": 80.24,
-      "ratFor": 19.75,
-      "ratRet": 3.87,
+      "buyCom": 288167677514.2035,
+      "buyEg": 237661980472.024,
+      "buyF": 62544058680.0087,
+      "buyRet": 12038361637.8292,
+      "egTotal": 240878028754.6861,
+      "forTotal": 59328010397.3466,
+      "ratBuyCom": 95.98,
+      "ratBuyEg": 79.16,
+      "ratBuyFor": 20.83,
+      "ratBuyRat": 4.01,
+      "ratCom": 96.11,
+      "ratEg": 80.23,
+      "ratFor": 19.76,
+      "ratRet": 3.88,
       "ratSellCom": 96.24,
-      "ratSellEg": 81.34,
-      "ratSellFor": 18.65,
+      "ratSellEg": 81.3,
+      "ratSellFor": 18.69,
       "ratSellRat": 3.75,
-      "sellCom": 289439380575.3538,
-      "sellEg": 244607460025.0482,
+      "sellCom": 288927324938.3538,
+      "sellEg": 244094247427.3482,
       "sellF": 56111962114.6845,
-      "sellRet": 11280041564.3789,
-      "totalValue": 300719422139.7327,
-      "tradeDate": "2026-08-18T14:21:34",
-      "tradeTime": "142134"
+      "sellRet": 11278884603.6789,
+      "totalValue": 300206039152.0327,
+      "tradeDate": "2026-08-18T14:14:58",
+      "tradeTime": "141458"
     },
     "investorsType": [
       {
         "buyPerc": 79.17,
-        "buyValue": 238342471547.724,
-        "chartLabel": "Egyptians\\n80.26%",
-        "chartLabelA": "مصريين\\n80.26%",
+        "buyValue": 237662150862.024,
+        "chartLabel": "Egyptians\\n80.24%",
+        "chartLabelA": "مصريين\\n80.24%",
         "clientType": "Egyptians",
         "clientTypeA": "مصريين",
-        "netValue": -6609786565.3242,
-        "sellPerc": 81.36,
-        "sellValue": 244952258113.0482,
-        "totalPerc": 80.26
+        "netValue": -6432096565.3242,
+        "sellPerc": 81.31,
+        "sellValue": 244094247427.3482,
+        "totalPerc": 80.24
       },
       {
-        "buyPerc": 7.71,
-        "buyValue": 23202725475.4767,
-        "chartLabel": "Arab\\n8.39%",
-        "chartLabelA": "عرب\\n8.39%",
+        "buyPerc": 7.67,
+        "buyValue": 23025035475.4767,
+        "chartLabel": "Arab\\n8.38%",
+        "chartLabelA": "عرب\\n8.38%",
         "clientType": "Arab",
         "clientTypeA": "عرب",
-        "netValue": -4104762692.4699,
-        "sellPerc": 9.07,
+        "netValue": -4282452692.4699,
+        "sellPerc": 9.1,
         "sellValue": 27307488167.9466,
-        "totalPerc": 8.39
+        "totalPerc": 8.38
       },
       {
-        "buyPerc": 13.13,
+        "buyPerc": 13.16,
         "buyValue": 39519023204.532,
-        "chartLabel": "Non-Arab\\nForeigners\\n 11.35%",
-        "chartLabelA": "أجانب\\n 11.35%",
+        "chartLabel": "Non-Arab\\nForeigners\\n 11.38%",
+        "chartLabelA": "أجانب\\n 11.38%",
         "clientType": "Non-Arab Foreigners",
         "clientTypeA": "أجانب",
         "netValue": 10714549257.7941,
-        "sellPerc": 9.57,
+        "sellPerc": 9.59,
         "sellValue": 28804473946.7379,
-        "totalPerc": 11.35
+        "totalPerc": 11.38
       },
       {
-        "buyPerc": 20.84,
-        "buyValue": 62721748680.0087,
+        "buyPerc": 20.83,
+        "buyValue": 62544058680.0087,
         "chartLabel": "Arabs & Foreigners",
         "chartLabelA": "عرب وأجانب",
         "clientType": "Arabs & Foreigners",
         "clientTypeA": "عرب وأجانب",
-        "netValue": 6609786565.3242,
-        "sellPerc": 18.64,
+        "netValue": 6432096565.3242,
+        "sellPerc": 18.69,
         "sellValue": 56111962114.6845,
-        "totalPerc": 19.74
+        "totalPerc": 19.76
       }
     ],
     "investorsTypeBills": [
       {
         "buyPerc": 77.26,
-        "buyValue": 209826893528.75,
-        "chartLabel": "Egyptians\\n80.33%",
-        "chartLabelA": "مصريين\\n80.33%",
+        "buyValue": 209147729803.75,
+        "chartLabel": "Egyptians\\n80.3%",
+        "chartLabelA": "مصريين\\n80.3%",
         "clientType": "Egyptians",
         "clientTypeA": "مصريين",
-        "netValue": -16673562051.75,
-        "sellPerc": 83.4,
-        "sellValue": 226500455580.5,
-        "totalPerc": 80.33
+        "netValue": -16495872051.75,
+        "sellPerc": 83.35,
+        "sellValue": 225643601855.5,
+        "totalPerc": 80.3
       },
       {
-        "buyPerc": 8.43,
-        "buyValue": 22890260456.5,
-        "chartLabel": "Arab\\n7.34%",
-        "chartLabelA": "عرب\\n7.34%",
+        "buyPerc": 8.39,
+        "buyValue": 22712570456.5,
+        "chartLabel": "Arab\\n7.33%",
+        "chartLabelA": "عرب\\n7.33%",
         "clientType": "Arab",
         "clientTypeA": "عرب",
-        "netValue": 5913074670.25,
-        "sellPerc": 6.25,
+        "netValue": 5735384670.25,
+        "sellPerc": 6.27,
         "sellValue": 16977185786.25,
-        "totalPerc": 7.34
+        "totalPerc": 7.33
       },
       {
-        "buyPerc": 14.31,
+        "buyPerc": 14.35,
         "buyValue": 38856062299.5,
-        "chartLabel": "Non-Arab\\nForeigners\\n 12.33%",
-        "chartLabelA": "أجانب\\n 12.33%",
+        "chartLabel": "Non-Arab\\nForeigners\\n 12.37%",
+        "chartLabelA": "أجانب\\n 12.37%",
         "clientType": "Non-Arab Foreigners",
         "clientTypeA": "أجانب",
         "netValue": 10760487381.5,
-        "sellPerc": 10.35,
+        "sellPerc": 10.38,
         "sellValue": 28095574918,
-        "totalPerc": 12.33
+        "totalPerc": 12.37
       },
       {
         "buyPerc": 22.74,
-        "buyValue": 61746322756,
+        "buyValue": 61568632756,
         "chartLabel": "Arabs & Foreigners",
         "chartLabelA": "عرب وأجانب",
         "clientType": "Arabs & Foreigners",
         "clientTypeA": "عرب وأجانب",
-        "netValue": 16673562051.75,
-        "sellPerc": 16.6,
+        "netValue": 16495872051.75,
+        "sellPerc": 16.65,
         "sellValue": 45072760704.25,
-        "totalPerc": 19.67
+        "totalPerc": 19.7
       }
     ],
     "investorsTypeBonds": [
@@ -21469,14 +21501,14 @@
     "investorsTypeNoBonds": [
       {
         "buyPerc": 92.92,
-        "buyValue": 12733659722.124,
+        "buyValue": 12732502761.424,
         "chartLabel": "Egyptians\\n92.22%",
         "chartLabelA": "مصريين\\n92.22%",
         "clientType": "Egyptians",
         "clientTypeA": "مصريين",
         "netValue": 190487037.1458,
         "sellPerc": 91.53,
-        "sellValue": 12543172684.9782,
+        "sellValue": 12542015724.2782,
         "totalPerc": 92.22
       },
       {
@@ -21523,9 +21555,9 @@
         "nationalityEnglish": "Egyptians",
         "typeEnglish": "Individuals",
         "typeNationality": 11,
-        "buyValue": 11547479158.9142,
-        "sellValue": 10927878248.0422,
-        "netValue": 619600910.872
+        "buyValue": 11544080420.0942,
+        "sellValue": 10926721287.3422,
+        "netValue": 617359132.752
       },
       {
         "nationality": "اجانب",
@@ -21607,9 +21639,9 @@
         "nationalityEnglish": "Egyptians",
         "typeEnglish": "Individuals",
         "typeNationality": 11,
-        "buyValue": 411072669.75,
+        "buyValue": 408559431.75,
         "sellValue": 7249350.75,
-        "netValue": 403823319
+        "netValue": 401310081
       },
       {
         "nationality": "اجانب",
@@ -21649,9 +21681,9 @@
         "nationalityEnglish": "Egyptians",
         "typeEnglish": "Individuals",
         "typeNationality": 11,
-        "buyValue": 11136406489.1642,
-        "sellValue": 10920628897.2922,
-        "netValue": 215777591.872
+        "buyValue": 11135520988.3442,
+        "sellValue": 10919471936.5922,
+        "netValue": 216049051.752
       },
       {
         "nationality": "اجانب",
@@ -21691,9 +21723,9 @@
         "nationalityEnglish": "Egyptians",
         "typeEnglish": "Institutions",
         "typeNationality": 21,
-        "buyValue": 226794992388.8098,
-        "sellValue": 234024379865.006,
-        "netValue": -7229387476.1962
+        "buyValue": 226118070441.9298,
+        "sellValue": 233167526140.006,
+        "netValue": -7049455698.0762
       },
       {
         "nationality": "اجانب",
@@ -21711,9 +21743,9 @@
         "nationalityEnglish": "Arab",
         "typeEnglish": "Institutions",
         "typeNationality": 22,
-        "buyValue": 22721540109.8917,
+        "buyValue": 22543850109.8917,
         "sellValue": 26963699424.9889,
-        "netValue": -4242159315.0972
+        "netValue": -4419849315.0972
       },
       {
         "nationality": "عرب وأجانب",
@@ -21721,9 +21753,9 @@
         "nationalityEnglish": "Arabs & Foreigners",
         "typeEnglish": "Institutions",
         "typeNationality": 24,
-        "buyValue": 62227297072.2737,
+        "buyValue": 62049607072.2737,
         "sellValue": 55759798798.3478,
-        "netValue": 6467498273.9259
+        "netValue": 6289808273.9259
       }
     ],
     "institutionInvestorsByNationB": [
@@ -21775,9 +21807,9 @@
         "nationalityEnglish": "Egyptians",
         "typeEnglish": "Institutions",
         "typeNationality": 21,
-        "buyValue": 209415820859,
-        "sellValue": 226493206229.75,
-        "netValue": -17077385370.75
+        "buyValue": 208739170372,
+        "sellValue": 225636352504.75,
+        "netValue": -16897182132.75
       },
       {
         "nationality": "اجانب",
@@ -21795,9 +21827,9 @@
         "nationalityEnglish": "Arab",
         "typeEnglish": "Institutions",
         "typeNationality": 22,
-        "buyValue": 22691198217,
+        "buyValue": 22513508217,
         "sellValue": 16977185786.25,
-        "netValue": 5714012430.75
+        "netValue": 5536322430.75
       },
       {
         "nationality": "عرب وأجانب",
@@ -21805,9 +21837,9 @@
         "nationalityEnglish": "Arabs & Foreigners",
         "typeEnglish": "Institutions",
         "typeNationality": 24,
-        "buyValue": 61547189286.75,
+        "buyValue": 61369499286.75,
         "sellValue": 45072760704.25,
-        "netValue": 16474428582.5
+        "netValue": 16296738582.5
       }
     ],
     "institutionInvestorsByNationNB": [
@@ -21817,9 +21849,9 @@
         "nationalityEnglish": "Egyptians",
         "typeEnglish": "Institutions",
         "typeNationality": 21,
-        "buyValue": 1597253232.9598,
+        "buyValue": 1596981773.0798,
         "sellValue": 1622543787.686,
-        "netValue": -25290554.7262
+        "netValue": -25562014.6062
       },
       {
         "nationality": "اجانب",
@@ -21855,6 +21887,240 @@
   },
   "news": {
     "disclosure": [
+      {
+        "code": 293548,
+        "dateStamp": "2026-08-18T14:59:46",
+        "heading": "Palm Hills Development Company (PHDC.CA) Reports 6 Months Consolidated Results",
+        "content": "Company Name : Palm Hills Development Company<br />ISIN Code    : EGS655L1C012<br />Currency     : EGP<br />F/S Consolidated Period : From 01/01/2026 To 30/06/2026<br />Net Profit   : 2,292,526,276<br />F/S Consolidated Period : From 01/01/2025 To 30/06/2025<br />Net Comparative Profit   : 2,582,379,370<br />Audit Status : Audited<br />Source : Palm Hills Development Company<br />",
+        "headingArabic": "بالم هيلز للتعمير (PHDC.CA) تعلن نتائج أعمالها المجمعة عن 6 أشهر",
+        "contentArabic": "اسم الشركة       : بالم هيلز للتعمير<br />كود الترقيم الدولي : EGS655L1C012<br />العملة           : جنيه مصري<br />القوائم المالية المجمعة عن الفترة :من 01/01/2026 الى 30/06/2026<br />صافي الربح   : 2,292,526,276 <br />أرقام المقارنة المجمعة عن الفترة  : من 01/01/2025 الى 30/06/2025<br />صافي الربح لفترة المقارنة   : 2,582,379,370 <br />تقرير مراقب الحسابات : مرفق<br />مع الأخذ في الإعتبار حقوق الأقلية<br />المصدر : بالم هيلز للتعمير<br />",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS655L1C012",
+        "companyName": "بالم هيلز للتعمير",
+        "companyNameArabic": "Palm Hills Development Company",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 293546,
+        "dateStamp": "2026-08-18T14:57:42",
+        "heading": "Capital For Securitization 6th Iss 6th Pro Tranche A May 27 (EGBCPSC6P6AC) Declares Bond Dividends for Coupon No. (3) ",
+        "content": "Issuer Name : Capital For Securitization 6th Iss 6th Pro Tranche A May 27<br />ISIN Code : EGB69611S4B7<br />Reuters Code : EGBCPSC6P6AC<br />Interest Type : Floating<br />Coupon Interest : 20.25% <br />Coupon Amount : EGP 1.7198630142<br />Coupon Number : 3<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 32.1344059067<br />",
+        "headingArabic": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة أ مايو 2027 (EGBCPSC6P6AC) يعلن عن توزيع كوبون السند رقم (3)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة أ مايو 2027<br />كود الترقيم الدولي : EGB69611S4B7<br />كود رويتيرز : EGBCPSC6P6AC<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.25% <br />قيمة الكوبون : 1.7198630142 جم للسند<br />رقم الكوبون : 3<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 32.1344059067 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4B7",
+        "companyName": "سندات كابيتال للتوريق ص 6 ب 6 ش أ مايو 2027 ع.م",
+        "companyNameArabic": "Capital For Securitization 6th Iss 6th Pro Tra A May 27 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293545,
+        "dateStamp": "2026-08-18T14:57:33",
+        "heading": "Capital For Securitization 1st Iss 6th Pro Tranche D May 2030 (EGBCPSC1P6DC) Declares Bond Dividends for Coupon No. (31) ",
+        "content": "Issuer Name : Capital For Securitization 1st Iss 6th Pro Tranche D May 2030<br />ISIN Code : EGB69611S774<br />Reuters Code : EGBCPSC1P6DC<br />Interest Type : Floating<br />Coupon Interest : 21.15% <br />Coupon Amount : EGP 1.5585463696<br />Coupon Number : 31<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الإصدار الأول برنامج سادس شريحة د مايو 2030 (EGBCPSC1P6DC) يعلن عن توزيع كوبون السند رقم (31)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الأول برنامج سادس شريحة د مايو 2030<br />كود الترقيم الدولي : EGB69611S774<br />كود رويتيرز : EGBCPSC1P6DC<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 21.15% <br />قيمة الكوبون : 1.5585463696 جم للسند<br />رقم الكوبون : 31<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S774",
+        "companyName": "سندات كابيتال للتوريق ص1 ب6 ش د مايو 2030 ع م",
+        "companyNameArabic": "Capital For Securitization 1st Iss 6th Pro Tra D May 2030 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293544,
+        "dateStamp": "2026-08-18T14:55:40",
+        "heading": "Capital For Securitization 1st Iss 18th Pro Tranche A Jun 27 FR (EGBCPSC1P18A) Declares Bond Dividends for Coupon No. (2) ",
+        "content": "Issuer Name : Capital For Securitization 1st Iss 18th Pro Tranche A Jun 27 FR<br />ISIN Code : EGB69611S4F8<br />Reuters Code : EGBCPSC1P18A<br />Interest Type : Fixed<br />Coupon Interest : 21.5% <br />Coupon Amount : EGP 1.5367890674<br />Coupon Number : 2<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 3.9753071081<br />",
+        "headingArabic": "سندات كابيتال للتوريق الإصدار الأول البرنامج الثامن عشر شريحة أ يونيو 2027 (EGBCPSC1P18A) يعلن عن توزيع كوبون السند رقم (2)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الأول البرنامج الثامن عشر شريحة أ يونيو 2027<br />كود الترقيم الدولي : EGB69611S4F8<br />كود رويتيرز : EGBCPSC1P18A<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.5% <br />قيمة الكوبون : 1.5367890674 جم للسند<br />رقم الكوبون : 2<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 3.9753071081 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4F8",
+        "companyName": "سندات كابيتال للتوريق ص 1 ب 18 ش أ يونيو 2027 ع.ث",
+        "companyNameArabic": "Capital For Securitization 1st Iss 18th Pro Tra A Jun 27 FR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293543,
+        "dateStamp": "2026-08-18T14:55:06",
+        "heading": "Capital For Securitization 6th Iss 6th Pro Tranche B Apr 29 (EGBCPSC6P6BCV) Declares Bond Dividends for Coupon No. (3) ",
+        "content": "Issuer Name : Capital For Securitization 6th Iss 6th Pro Tranche B Apr 29<br />ISIN Code : EGB69611S4C5<br />Reuters Code : EGBCPSC6P6BCV<br />Interest Type : Floating<br />Coupon Interest : 20.4% <br />Coupon Amount : EGP 1.7326027391<br />Coupon Number : 3<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ب ابريل 2029 (EGBCPSC6P6BCV) يعلن عن توزيع كوبون السند رقم (3)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ب ابريل 2029<br />كود الترقيم الدولي : EGB69611S4C5<br />كود رويتيرز : EGBCPSC6P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.4% <br />قيمة الكوبون : 1.7326027391 جم للسند<br />رقم الكوبون : 3<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4C5",
+        "companyName": "سندات كابيتال للتوريق ص 6 ب 6 ش ب ابريل 2029 ع.م",
+        "companyNameArabic": "Capital For Securitization 6th Iss 6th Pro Tra B Apr 29 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293542,
+        "dateStamp": "2026-08-18T14:53:21",
+        "heading": "Capital For Securitization 6th Iss 6th Pro Tranche C Apr 31 (EGBCPSC6P6CCV) Declares Bond Dividends for Coupon No. (3) ",
+        "content": "Issuer Name : Capital For Securitization 6th Iss 6th Pro Tranche C Apr 31<br />ISIN Code : EGB69611S4D3<br />Reuters Code : EGBCPSC6P6CCV<br />Interest Type : Floating<br />Coupon Interest : 20.55% <br />Coupon Amount : EGP 1.745342466<br />Coupon Number : 3<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ج ابريل 2031 (EGBCPSC6P6CCV) يعلن عن توزيع كوبون السند رقم (3)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة ج ابريل 2031<br />كود الترقيم الدولي : EGB69611S4D3<br />كود رويتيرز : EGBCPSC6P6CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.55% <br />قيمة الكوبون : 1.745342466 جم للسند<br />رقم الكوبون : 3<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4D3",
+        "companyName": "سندات كابيتال للتوريق ص 6 ب 6 ش ج ابريل 2031 ع.م",
+        "companyNameArabic": "Capital For Securitization 6th Iss 6th Pro Tra C Apr 31 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293541,
+        "dateStamp": "2026-08-18T14:53:20",
+        "heading": "Capital For Securitization 1st Iss 18th Pro Tranche B Jan 28 FR (EGBCPSC1P18BCF) Declares Bond Dividends for Coupon No. (2) ",
+        "content": "Issuer Name : Capital For Securitization 1st Iss 18th Pro Tranche B Jan 28 FR<br />ISIN Code : EGB69611S4G6<br />Reuters Code : EGBCPSC1P18BCF<br />Interest Type : Fixed<br />Coupon Interest : 19.8% <br />Coupon Amount : EGP 1.735890412<br />Coupon Number : 2<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الإصدار الأول البرنامج الثامن عشر شريحة ب يناير 2028 (EGBCPSC1P18BCF) يعلن عن توزيع كوبون السند رقم (2)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الأول البرنامج الثامن عشر شريحة ب يناير 2028<br />كود الترقيم الدولي : EGB69611S4G6<br />كود رويتيرز : EGBCPSC1P18BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 19.8% <br />قيمة الكوبون : 1.735890412 جم للسند<br />رقم الكوبون : 2<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4G6",
+        "companyName": "سندات كابيتال للتوريق ص 1 ب 18 ش ب يناير 2028 ع.ث",
+        "companyNameArabic": "Capital For Securitization 1st Iss 18th Pro Tra B Jan 28 FR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293540,
+        "dateStamp": "2026-08-18T14:51:23",
+        "heading": "Capital For Securitization 2nd Iss 6th Pro Tranche B Oct 2027 (EGBCPSC2P6BCV) Declares Bond Dividends for Coupon No. (22) ",
+        "content": "Issuer Name : Capital For Securitization 2nd Iss 6th Pro Tranche B Oct 2027<br />ISIN Code : EGB69611S0G4<br />Reuters Code : EGBCPSC2P6BCV<br />Interest Type : Floating<br />Coupon Interest : 20.4% <br />Coupon Amount : EGP 0.7670123688<br />Coupon Number : 22<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 4.8322147651<br />",
+        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ب أكتوبر 2027 (EGBCPSC2P6BCV) يعلن عن توزيع كوبون السند رقم (22)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ب أكتوبر 2027<br />كود الترقيم الدولي : EGB69611S0G4<br />كود رويتيرز : EGBCPSC2P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.4% <br />قيمة الكوبون : 0.7670123688 جم للسند<br />رقم الكوبون : 22<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 4.8322147651 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S0G4",
+        "companyName": "سندات كابيتال للتوريق ص2  ب6 ش ب اكتوبر 2027 ع م",
+        "companyNameArabic": "Capital For Securitization 2nd Iss 6th Pro Tra B Oct 2027 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293539,
+        "dateStamp": "2026-08-18T14:51:23",
+        "heading": "Capital For Securitization 6th Iss 6th Pro Tranche D Jan 33 (EGBCPSC6P6DCV) Declares Bond Dividends for Coupon No. (3) ",
+        "content": "Issuer Name : Capital For Securitization 6th Iss 6th Pro Tranche D Jan 33<br />ISIN Code : EGB69611S4E1<br />Reuters Code : EGBCPSC6P6DCV<br />Interest Type : Floating<br />Coupon Interest : 20.8% <br />Coupon Amount : EGP 1.7665753408<br />Coupon Number : 3<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة د يناير 2033 (EGBCPSC6P6DCV) يعلن عن توزيع كوبون السند رقم (3)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار السادس البرنامج السادس شريحة د يناير 2033<br />كود الترقيم الدولي : EGB69611S4E1<br />كود رويتيرز : EGBCPSC6P6DCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.8% <br />قيمة الكوبون : 1.7665753408 جم للسند<br />رقم الكوبون : 3<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4E1",
+        "companyName": "سندات كابيتال للتوريق ص 6 ب 6 ش د يناير 2033 ع.م",
+        "companyNameArabic": "Capital For Securitization 6th Iss 6th Pro Tra D Jan 33 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293538,
+        "dateStamp": "2026-08-18T14:49:20",
+        "heading": "Capital For Securitization 1st Iss 6th Pro Tranche B Jan 2027 (EGBCPSC1P6BCV) Declares Bond Dividends for Coupon No. (31) ",
+        "content": "Issuer Name : Capital For Securitization 1st Iss 6th Pro Tranche B Jan 2027<br />ISIN Code : EGB69611S758<br />Reuters Code : EGBCPSC1P6BCV<br />Interest Type : Floating<br />Coupon Interest : 20.6% <br />Coupon Amount : EGP 0.2159319023<br />Coupon Number : 31<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 4.0152473094<br />",
+        "headingArabic": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ب يناير 2027 (EGBCPSC1P6BCV) يعلن عن توزيع كوبون السند رقم (31)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ب يناير 2027<br />كود الترقيم الدولي : EGB69611S758<br />كود رويتيرز : EGBCPSC1P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.6% <br />قيمة الكوبون : 0.2159319023 جم للسند<br />رقم الكوبون : 31<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 4.0152473094 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S758",
+        "companyName": "سندات كابيتال للتوريق ص1 ب6 ش ب يناير 2027 ع م",
+        "companyNameArabic": "Capital For Securitization 1st Iss 6th Pro Tra B Jan 2027 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293537,
+        "dateStamp": "2026-08-18T14:48:33",
+        "heading": "Capital For Securitization 2nd Iss 6th Pro Tranche C Oct 2029 (EGBCPSC2P6CCV) Declares Bond Dividends for Coupon No. (22) ",
+        "content": "Issuer Name : Capital For Securitization 2nd Iss 6th Pro Tranche C Oct 2029<br />ISIN Code : EGB69611S0H2<br />Reuters Code : EGBCPSC2P6CCV<br />Interest Type : Floating<br />Coupon Interest : 20.55% <br />Coupon Amount : EGP 1.5179272244<br />Coupon Number : 22<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ج اكتوبر 2029 (EGBCPSC2P6CCV) يعلن عن توزيع كوبون السند رقم (22)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ج اكتوبر 2029<br />كود الترقيم الدولي : EGB69611S0H2<br />كود رويتيرز : EGBCPSC2P6CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.55% <br />قيمة الكوبون : 1.5179272244 جم للسند<br />رقم الكوبون : 22<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S0H2",
+        "companyName": "سندات كابيتال للتوريق ص 2 ب6 ش ج اكتوبر 2029 ع م",
+        "companyNameArabic": "Capital For Securitization 2nd Iss 6th Pro Tra C Oct 2029 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293536,
+        "dateStamp": "2026-08-18T14:46:43",
+        "heading": "Capital For Securitization 2nd Iss 6th Pro Tranche D Jul 2031 (EGBCPSC2P6DCV) Declares Bond Dividends for Coupon No. (22) ",
+        "content": "Issuer Name : Capital For Securitization 2nd Iss 6th Pro Tranche D Jul 2031<br />ISIN Code : EGB69611S0I0<br />Reuters Code : EGBCPSC2P6DCV<br />Interest Type : Floating<br />Coupon Interest : 20.8% <br />Coupon Amount : EGP 1.6032742606<br />Coupon Number : 22<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
+        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة د يوليو 2031 (EGBCPSC2P6DCV) يعلن عن توزيع كوبون السند رقم (22)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة د يوليو 2031<br />كود الترقيم الدولي : EGB69611S0I0<br />كود رويتيرز : EGBCPSC2P6DCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.8% <br />قيمة الكوبون : 1.6032742606 جم للسند<br />رقم الكوبون : 22<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S0I0",
+        "companyName": "سندات كابيتال للتوريق ص2 ب6 ش د يوليو 2031 ع م",
+        "companyNameArabic": "Capital For Securitization 2nd Iss 6th Pro Tra D Jul 2031 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293535,
+        "dateStamp": "2026-08-18T14:46:43",
+        "heading": "Capital For Securitization 1st Iss 6th Pro Tranche C Dec 2028 (EGBCPSC1P6CCV) Declares Bond Dividends for Coupon No. (31) ",
+        "content": "Issuer Name : Capital For Securitization 1st Iss 6th Pro Tranche C Dec 2028<br />ISIN Code : EGB69611S766<br />Reuters Code : EGBCPSC1P6CCV<br />Interest Type : Floating<br />Coupon Interest : 20.8% <br />Coupon Amount : EGP 1.6241945902<br />Coupon Number : 31<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 0.2690487410<br />",
+        "headingArabic": "سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ج ديسمبر 2028 (EGBCPSC1P6CCV) يعلن عن توزيع كوبون السند رقم (31)",
+        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الاول برنامج سادس شريحة ج ديسمبر 2028<br />كود الترقيم الدولي : EGB69611S766<br />كود رويتيرز : EGBCPSC1P6CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.8% <br />قيمة الكوبون : 1.6241945902 جم للسند<br />رقم الكوبون : 31<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 0.2690487410 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S766",
+        "companyName": "سندات كابيتال للتوريق ص1 ب6 ش ج ديسمبر 2028 ع م",
+        "companyNameArabic": "Capital For Securitization 1st Iss 6th Pro Tra C Dec 2028 VR",
+        "sectorId": null,
+        "attachments": []
+      },
       {
         "code": 293534,
         "dateStamp": "2026-08-18T14:44:18",
@@ -21979,240 +22245,6 @@
         "companyName": "سندات كابيتال للتوريق ص 4 ب 6 ش د ديسمبر 2031 ع.م",
         "companyNameArabic": "Capital For Securitization 4th Iss 6th Pro Tra D Dec 30 VR",
         "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293526,
-        "dateStamp": "2026-08-18T14:27:51",
-        "heading": "Capital For Securitization 4th Iss 6th Pro Tranche C Mar 30 VR (EGBCPSC4P6CC) Declares Bond Dividends for Coupon No. (17) ",
-        "content": "Issuer Name : Capital For Securitization 4th Iss 6th Pro Tranche C Mar 30 VR<br />ISIN Code : EGB69611S1N8<br />Reuters Code : EGBCPSC4P6CC<br />Interest Type : Floating<br />Coupon Interest : 20.55% <br />Coupon Amount : EGP 1.7443277345<br />Coupon Number : 17<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة  ج مارس 2030 (EGBCPSC4P6CCV) يعلن عن توزيع كوبون السند رقم (17)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة  ج مارس 2030<br />كود الترقيم الدولي : EGB69611S1N8<br />كود رويتيرز : EGBCPSC4P6CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.55% <br />قيمة الكوبون : 1.7443277345 جم للسند<br />رقم الكوبون : 17<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S1N8",
-        "companyName": "سندات كابيتال للتوريق ص 4 ب 6 ش ج مارس 2030 ع.م",
-        "companyNameArabic": "Capital For Securitization 4th Iss 6th Pro Tra C Mar 30 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293525,
-        "dateStamp": "2026-08-18T14:26:02",
-        "heading": "Capital For Securitization 4th Iss 6th Pro Tranche B Mar 28 VR (EGBCPSC4P6BC) Declares Bond Dividends for Coupon No. (17) ",
-        "content": "Issuer Name : Capital For Securitization 4th Iss 6th Pro Tranche B Mar 28 VR<br />ISIN Code : EGB69611S1M0<br />Reuters Code : EGBCPSC4P6BC<br />Interest Type : Floating<br />Coupon Interest : 20.4% <br />Coupon Amount : EGP 1.4854990904<br />Coupon Number : 17<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 6.2198034098<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة ب مارس 2028 (EGBCPSC4P6BCV) يعلن عن توزيع كوبون السند رقم (17)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الرابع من البرنامج السادس الشريحة ب مارس 2028<br />كود الترقيم الدولي : EGB69611S1M0<br />كود رويتيرز : EGBCPSC4P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.4% <br />قيمة الكوبون : 1.4854990904 جم للسند<br />رقم الكوبون : 17<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 6.2198034098 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S1M0",
-        "companyName": "سندات كابيتال للتوريق ص 4 ب 6 ش ب مارس 2028 ع.م",
-        "companyNameArabic": "Capital For Securitization 4th Iss 6th Pro Tra B Mar 28 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293524,
-        "dateStamp": "2026-08-18T14:23:39",
-        "heading": "Capital For Securitization 3rd Iss 14th Pro March 2027 F R (EGBCPSC3P14C) Declares Bond Dividends for Coupon No. (5) ",
-        "content": "Issuer Name : Capital For Securitization 3rd Iss 14th Pro March 2027 F R<br />ISIN Code : EGB69611S3M6<br />Reuters Code : EGBCPSC3P14C<br />Interest Type : Fixed<br />Coupon Interest : 19% <br />Coupon Amount : EGP 1.1084720551<br />Coupon Number : 5<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 9.8323250670<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الثالث البرنامج الرابع عشر مارس2027 (EGBCPSC3P14CF) يعلن عن توزيع كوبون السند رقم (5)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثالث البرنامج الرابع عشر مارس2027<br />كود الترقيم الدولي : EGB69611S3M6<br />كود رويتيرز : EGBCPSC3P14CF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 19% <br />قيمة الكوبون : 1.1084720551 جم للسند<br />رقم الكوبون : 5<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 9.8323250670 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S3M6",
-        "companyName": "سندات كابيتال للتوريق ص3 ب14 مارس 2027 ع ث",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 14th Pro March 2027 F R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293523,
-        "dateStamp": "2026-08-18T14:17:34",
-        "heading": "Capital For Securitization 3rd Iss 6th Pro Tranche D Sep 2031 (EGBCPSC3P6DC) Declares Bond Dividends for Coupon No. (20) ",
-        "content": "Issuer Name : Capital For Securitization 3rd Iss 6th Pro Tranche D Sep 2031<br />ISIN Code : EGB69611S0V3<br />Reuters Code : EGBCPSC3P6DC<br />Interest Type : Floating<br />Coupon Interest : 20.8% <br />Coupon Amount : EGP 1.6814643962<br />Coupon Number : 20<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة د سبتمبر 2031 (EGBCPSC3P6DCV) يعلن عن توزيع كوبون السند رقم (20)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة د سبتمبر 2031<br />كود الترقيم الدولي : EGB69611S0V3<br />كود رويتيرز : EGBCPSC3P6DCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.8% <br />قيمة الكوبون : 1.6814643962 جم للسند<br />رقم الكوبون : 20<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S0V3",
-        "companyName": "سندات كابيتال للتوريق ص3 ب6 ش د سبتمبر 2031 ع م",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 6th Pro Tra D Sep 2031 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293522,
-        "dateStamp": "2026-08-18T14:15:36",
-        "heading": "Capital For Securitization 3rd Iss 6th Pro Tranche C Dec 2029 (EGBCPSC3P6CC) Declares Bond Dividends for Coupon No. (20) ",
-        "content": "Issuer Name : Capital For Securitization 3rd Iss 6th Pro Tranche C Dec 2029<br />ISIN Code : EGB69611S0U5<br />Reuters Code : EGBCPSC3P6CC<br />Interest Type : Floating<br />Coupon Interest : 20.55% <br />Coupon Amount : EGP 1.6029339764<br />Coupon Number : 20<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 0.0764081951<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة ج ديسمبر 2029 (EGBCPSC3P6CCV) يعلن عن توزيع كوبون السند رقم (20)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة ج ديسمبر 2029<br />كود الترقيم الدولي : EGB69611S0U5<br />كود رويتيرز : EGBCPSC3P6CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.55% <br />قيمة الكوبون : 1.6029339764 جم للسند<br />رقم الكوبون : 20<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 0.0764081951 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S0U5",
-        "companyName": "سندات كابيتال للتوريق ص3 ب6 ش ج ديسمبر 2029 ع م",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 6th Pro Tra C Dec 2029 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293521,
-        "dateStamp": "2026-08-18T13:58:20",
-        "heading": "Capital For Securitization 3rd Iss 6th Pro Tranche B Dec 2027 (EGBCPSC3P6BC) Declares Bond Dividends for Coupon No. (20) ",
-        "content": "Issuer Name : Capital For Securitization 3rd Iss 6th Pro Tranche B Dec 2027<br />ISIN Code : EGB69611S0T7<br />Reuters Code : EGBCPSC3P6BC<br />Interest Type : Floating<br />Coupon Interest : 20.4% <br />Coupon Amount : EGP 1.2274129756<br />Coupon Number : 20<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 5.2727172020<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة ب ديسمبر 2027 (EGBCPSC3P6BCV) يعلن عن توزيع كوبون السند رقم (20)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثالث البرنامج السادس شريحة ب ديسمبر 2027<br />كود الترقيم الدولي : EGB69611S0T7<br />كود رويتيرز : EGBCPSC3P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.4% <br />قيمة الكوبون : 1.2274129756 جم للسند<br />رقم الكوبون : 20<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 5.2727172020 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S0T7",
-        "companyName": "سندات كابيتال للتوريق ص3 ب6 ش ب ديسمبر 2027 ع م",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 6th Pro Tra B Dec 2027 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293520,
-        "dateStamp": "2026-08-18T13:53:39",
-        "heading": "Capital For Securitization 2nd Iss 10th Pro Tranche C Sep 27 FR (EGBCPSC2P10C) Declares Bond Dividends for Coupon No. (7) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 10th Pro Tranche C Sep 27 FR<br />ISIN Code : EGB69611S3L8<br />Reuters Code : EGBCPSC2P10C<br />Interest Type : Fixed<br />Coupon Interest : 21.05% <br />Coupon Amount : EGP 1.6724657522<br />Coupon Number : 7<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ج سبتمبر 2027 (EGBCPSC2P10CCF) يعلن عن توزيع كوبون السند رقم (7)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ج سبتمبر 2027<br />كود الترقيم الدولي : EGB69611S3L8<br />كود رويتيرز : EGBCPSC2P10CCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.05% <br />قيمة الكوبون : 1.6724657522 جم للسند<br />رقم الكوبون : 7<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S3L8",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 10 ش ج سبتمبر 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 10th Pro Tra C Sep 27 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293519,
-        "dateStamp": "2026-08-18T13:53:10",
-        "heading": "Al Tawfeek Leasing Company-A.T.LEASE (ATLC.CA) - Release from FRA",
-        "content": "Company Name : Al Tawfeek Leasing Company-A.T.LEASE<br />ISIN Code : EGS676N1C015<br />Reuters Code : ATLC.CA<br />Content : <br />Release from FRA regarding the authority’s approval to publish the tender offer announcement dated 16/08/2026 submitted by Al Baraka Bank Egypt S.A.E., to acquire up to 329,471,871 shares, representing up to 90% and a minimum of 51% of the total share capital of Al Tawfiq Leasing company S.A.E., the “target company”, and to allocate the increased shares to the shareholders of Al Tawfiq Leasing company S.A.E. who responded to the tender offer through an exchange in accordance with the provisions of chapter Twelve of the executive regulations of the capital market law no. 95 of 1992.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342928_1.PDF\" target=\"_blank\">Release from FRA (4,372 KB)</a>",
-        "headingArabic": "A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس (ATLC.CA) - بيان من الهيئة العامة للرقابة المالية",
-        "contentArabic": "اسم الشركة : A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس<br />كود الترقيم الدولي : EGS676N1C015<br />كود رويترز : ATLC.CA<br />مضمون الإعلان : <br />بيان من الهيئة العامة للرقابة المالية بشأن موافقة الهيئة على نشر إعلان عرض الشراء بتاريخ 16/08/2026، المقدم من شركة بنك البركة مصر ش.م.م، للاستحواذ حتى عدد 329,471,871 سهم بما يصل إلى نسبة تمثل 90% وبحد أدني 51% من إجمالي أسهم رأس مال شركه التوفيق للتأجير التمويلي ش.م.م \"الشركة المستهدفة\"، وتخصيص أسهم الزيادة لمساهمي شركة التوفيق للتأجير التمويلي ش.م.م المستجيبين لعرض الشراء من خلال المبادلة وفقاً للأحكام الواردة بالباب الثاني عشر من اللائحة التنفيذية لقانون سوق رأس المال رقم 95 لسنة 1992.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342928_1.PDF\" target=\"_blank\">بيان من الهيئة العامة للرقابة المالية (4,372 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS676N1C015",
-        "companyName": "A.T.LEASEالتوفيق للتأجير التمويلي -أية.تي.ليس",
-        "companyNameArabic": "Al Tawfeek Leasing Company-A.T.LEASE",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 293518,
-        "dateStamp": "2026-08-18T13:51:46",
-        "heading": "Capital For Securitization 2nd Iss 10th Pro Tranche B Dec 26 FR (EGBCPSC2P10B) Declares Bond Dividends for Coupon No. (7) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 10th Pro Tranche B Dec 26 FR<br />ISIN Code : EGB69611S3K0<br />Reuters Code : EGBCPSC2P10B<br />Interest Type : Fixed<br />Coupon Interest : 21.55% <br />Coupon Amount : EGP 1.4000734896<br />Coupon Number : 7<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP16.3541666667<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ب ديسمبر 2026 (EGBCPSC2P10BCF) يعلن عن توزيع كوبون السند رقم (7)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثانى برنامج العاشر الشريحة ب ديسمبر 2026<br />كود الترقيم الدولي : EGB69611S3K0<br />كود رويتيرز : EGBCPSC2P10BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.55% <br />قيمة الكوبون : 1.4000734896 جم للسند<br />رقم الكوبون : 7<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 16.3541666667 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S3K0",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 10 ش ب ديسمبر 2026 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 10th Pro Tra B Dec 26 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293517,
-        "dateStamp": "2026-08-18T13:49:05",
-        "heading": "EGX 30 INDEX ETF (EGX30ETF.CA) - Board of Directors' Decisions",
-        "content": "Company Name : EGX 30 INDEX ETF<br />ISIN Code : EGS69491M015<br />Reuters Code : EGX30ETF.CA<br />Content : <br />Board of Directors' decisions held on 13/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342828_1.pdf\" target=\"_blank\">Board of Directors' Decisions (214 KB)</a>",
-        "headingArabic": "EGX 30 INDEX ETF-وثائق استثمار شركة صناديق المؤشرات (EGX30ETF.CA) - قرارات مجلس إدارة الشركة",
-        "contentArabic": "اسم الشركة : EGX 30 INDEX ETF-وثائق استثمار شركة صناديق المؤشرات<br />كود الترقيم الدولي : EGS69491M015<br />كود رويترز : EGX30ETF.CA<br />مضمون الإعلان : <br />ملخص قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 13/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/342828_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (214 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS69491M015",
-        "companyName": "EGX 30 INDEX ETF-وثائق استثمار شركة صناديق المؤشرات",
-        "companyNameArabic": "EGX 30 INDEX ETF",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 293516,
-        "dateStamp": "2026-08-18T13:46:16",
-        "heading": "Catalyst Partners Middle East – CPME (CPME.CA) Reports 6 Months Standalone Results",
-        "content": "Company Name : Catalyst Partners Middle East – CPME<br />ISIN Code    : EGS698X1C017<br />Currency     : EGP<br />F/S Standalone Period : From 01/01/2026 To 30/06/2026<br />Net Loss   : 4,807,355<br />F/S Standalone Period : From 01/01/2025 To 30/06/2025<br />Net Comparative Profit   : 704,472<br />Audit Status : Audited<br />Source : Catalyst Partners Middle East – CPME<br />",
-        "headingArabic": "كاتليست بارتنرز ميديل ايست (CPME.CA) تعلن نتائج أعمالها غير المجمعة عن 6 أشهر",
-        "contentArabic": "اسم الشركة       : كاتليست بارتنرز ميديل ايست<br />كود الترقيم الدولي : EGS698X1C017<br />العملة           : جنيه مصري<br />القوائم المالية غير المجمعة عن الفترة :من 01/01/2026 الى 30/06/2026<br />صافي الخسارة   : 4,807,355 <br />أرقام المقارنة غير المجمعة عن الفترة  : من 01/01/2025 الى 30/06/2025<br />صافي الربح لفترة المقارنة   : 704,472 <br />تقرير مراقب الحسابات : مرفق<br />المصدر : كاتليست بارتنرز ميديل ايست<br />",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS698X1C017",
-        "companyName": "كاتليست بارتنرز ميديل ايست",
-        "companyNameArabic": "Catalyst Partners Middle East –CPME",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 293514,
-        "dateStamp": "2026-08-18T13:45:23",
-        "heading": "Capital For Securitization 1st Iss 14 Pro Oct 2026 FR (EGBCPSC1P14C) Declares Bond Dividends for Coupon No. (11) ",
-        "content": "Issuer Name : Capital For Securitization 1st Iss 14 Pro Oct 2026 FR<br />ISIN Code : EGB69611S2S5<br />Reuters Code : EGBCPSC1P14C<br />Interest Type : Floating<br />Coupon Interest : 22% <br />Coupon Amount : EGP 0.1914773633<br />Coupon Number : 11<br />Coupon Date : 03/09/2026<br />Coupon Payment Date : 06/09/2026<br />Notes :  <br />Bond Redemption: EGP 5.2849236000<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الاول برنامج الرابع عشر أكتوبر 2026 (EGBCPSC1P14CF) يعلن عن توزيع كوبون السند رقم (11)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الاول برنامج الرابع عشر أكتوبر 2026<br />كود الترقيم الدولي : EGB69611S2S5<br />كود رويتيرز : EGBCPSC1P14CF<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 22% <br />قيمة الكوبون : 0.1914773633 جم للسند<br />رقم الكوبون : 11<br />تاريخ الاستحقاق : 03/09/2026<br />تاريخ الصرف : 06/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 5.2849236000 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S2S5",
-        "companyName": "سندات كابيتال للتوريق ص1 ب14 أكتوبر 2026 ع ث",
-        "companyNameArabic": "Capital For Securitization 1st Iss 14 Pro Oct 2026 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293513,
-        "dateStamp": "2026-08-18T13:44:36",
-        "heading": "Catalyst Partners Middle East – CPME (CPME.CA) Reports 6 Months Consolidated Results",
-        "content": "Company Name : Catalyst Partners Middle East – CPME<br />ISIN Code    : EGS698X1C017<br />Currency     : EGP<br />F/S Consolidated Period : From 01/01/2026 To 30/06/2026<br />Net Profit   : 117,083,233<br />F/S Consolidated Period : From 01/10/2024 To 31/12/2025<br />Net Comparative Profit   : 18,918,371<br />Audit Status : Audited<br />Comment : taking minority interests into consideration<br />Source : Catalyst Partners Middle East – CPME<br />",
-        "headingArabic": "كاتليست بارتنرز ميديل ايست (CPME.CA) تعلن نتائج أعمالها المجمعة عن 6 أشهر",
-        "contentArabic": "اسم الشركة       : كاتليست بارتنرز ميديل ايست<br />كود الترقيم الدولي : EGS698X1C017<br />العملة           : جنيه مصري<br />القوائم المالية المجمعة عن الفترة :من 01/01/2026 الى 30/06/2026<br />صافي الربح   : 117,083,233 <br />أرقام المقارنة المجمعة عن الفترة  : من 01/10/2024 الى 31/12/2025<br />صافي الربح لفترة المقارنة   : 18,918,371 <br />تقرير مراقب الحسابات : مرفق<br />مع الأخذ في الإعتبار حقوق الأقلية<br />المصدر : كاتليست بارتنرز ميديل ايست<br />",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS698X1C017",
-        "companyName": "كاتليست بارتنرز ميديل ايست",
-        "companyNameArabic": "Catalyst Partners Middle East –CPME",
-        "sectorId": 24,
         "attachments": []
       }
     ],
