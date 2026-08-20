@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-20 09:45:57 AM",
+  "lastUpdated": "2026-08-20 10:01:34 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-08-20T09:45:49"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-08-20T10:01:30"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 54512.65,
-        "close": 54512.65,
+        "change": -98.9,
+        "changePer": -0.18142577915401287,
+        "high": 54550.52,
+        "close": 54413.75,
         "open": 54512.65,
-        "low": 54512.65,
-        "ytdPercent": 30.3227,
+        "low": 54413.75,
+        "ytdPercent": 30.0863,
         "date": "2026-08-20T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-20T09:58:00",
+          "value": 54512.65
+        },
+        {
+          "time": "2026-08-20T10:00:00",
+          "value": 54550.52
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6518.41,
-        "close": 6518.41,
+        "change": -14.2,
+        "changePer": -0.2178445357073274,
+        "high": 6521.56,
+        "close": 6504.21,
         "open": 6518.41,
-        "low": 6518.41,
-        "ytdPercent": 41.7733,
+        "low": 6504.21,
+        "ytdPercent": 41.4644,
         "date": "2026-08-20T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-20T09:58:00",
+          "value": 6518.41
+        },
+        {
+          "time": "2026-08-20T10:00:00",
+          "value": 6521.56
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 20962.17,
-        "close": 20962.17,
+        "change": 71.67,
+        "changePer": 0.34190162564276505,
+        "high": 21068.36,
+        "close": 21033.84,
         "open": 20962.17,
         "low": 20962.17,
-        "ytdPercent": 59.7078,
+        "ytdPercent": 60.2538,
         "date": "2026-08-20T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-20T09:58:00",
+          "value": 20962.17
+        },
+        {
+          "time": "2026-08-20T10:00:00",
+          "value": 21068.36
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27185.62,
-        "close": 27185.62,
+        "change": 58.63,
+        "changePer": 0.2156654878571833,
+        "high": 27286.55,
+        "close": 27244.25,
         "open": 27185.62,
         "low": 27185.62,
-        "ytdPercent": 56.0072,
+        "ytdPercent": 56.3436,
         "date": "2026-08-20T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-20T09:58:00",
+          "value": 27185.62
+        },
+        {
+          "time": "2026-08-20T10:00:00",
+          "value": 27286.55
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,78 @@
   "news": {
     "disclosure": [
       {
+        "code": 293629,
+        "dateStamp": "2026-08-20T10:00:00",
+        "heading": "Novida for Investment and Technology (AMPI.CA) - EGM Minutes (SMEs Market)",
+        "content": "Company: Novida for Investment and Technology<br />Symbols: EGS745W1C011<br />Reuters: AMPI.CA<br />Content: <br />Minutes of the EGM held on 13/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343190_1.pdf\" target=\"_blank\">EGM Minutes (before Certification) (Second Meeting) (4,523 KB)</a>",
+        "headingArabic": "نوفيدا للإستثمار والتكنولوجيا (AMPI.CA) - محضر اجتماع الجمعية العامة غير العادية (غير موثق) (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: نوفيدا للإستثمار والتكنولوجيا<br />كود الترقيم الدولي: EGS745W1C011<br />كود رويترز: AMPI.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة غير العادية التي انعقدت يوم 13/08/2026 (غير موثق) اجتماع ثان.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343190_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة غير العادية (اجتماع ثان) (غير موثق) (4,523 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS745W1C011",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293628,
+        "dateStamp": "2026-08-20T09:55:27",
+        "heading": "Release from Commercial International Bank-Egypt (CIB) (COMI.CA)  ",
+        "content": "Company: Commercial International Bank-Egypt (CIB)<br />Symbols: EGS60121C018<br />Reuters: COMI.CA<br />Content:<br />Release from CIB Egypt concerning received preliminary approval to establish YOMO digital bank.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343191_1.pdf\" target=\"_blank\">Release from the Bank in English (24 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343191_2.pdf\" target=\"_blank\">Release from the Bank in Arabic (25 KB)</a>",
+        "headingArabic": "بيان من البنك التجاري الدولي -مصر (سى اى بى ) (COMI.CA)",
+        "contentArabic": "اسم البنك: البنك التجاري الدولي -مصر (سى اى بى ) <br />كود الترقيم الدولي: EGS60121C018<br />كود رويترز: COMI.CA<br />مضمون الإعلان :<br />بيان من البنك بشأن الحصول على الموافقة المبدئية من البنك المركزي المصري لتأسيس بنك يومو الرقمي.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343191_1.pdf\" target=\"_blank\">بيان من البنك باللغة الإنجليزية (24 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343191_2.pdf\" target=\"_blank\">بيان من البنك باللغة العربية (25 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS60121C018",
+        "companyName": "البنك التجاري الدولي -مصر (سى اى بى )",
+        "companyNameArabic": "Commercial International Bank-Egypt (CIB)",
+        "sectorId": 1,
+        "attachments": []
+      },
+      {
+        "code": 293627,
+        "dateStamp": "2026-08-20T09:51:20",
+        "heading": "Misr Fertilizers Production Company - Mopco (MFPC.CA) - Central Auditing Organization Report",
+        "content": "Company: Misr Fertilizers Production Company - Mopco  <br />Symbols: EGS39061C014<br />Reuters: MFPC.CA<br />Content: <br />Central Auditing Organization Report on the financial statements for the period ending on 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343205_1.pdf\" target=\"_blank\">Central Auditing Organization Report (107 KB)</a>",
+        "headingArabic": "مصر لإنتاج الأسمدة - موبكو (MFPC.CA) - تقرير الجهاز المركزي للمحاسبات ",
+        "contentArabic": "اسم الشركة: مصر لإنتاج الأسمدة - موبكو <br />كود الترقيم الدولي: EGS39061C014<br />كود رويترز: MFPC.CA<br />مضمون الإعلان :<br />تقرير الجهاز المركزي للمحاسبات عن القوائم المالية عن الفترة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343205_1.pdf\" target=\"_blank\">تقرير الجهاز المركزي للمحاسبات (107 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS39061C014",
+        "companyName": "مصر لإنتاج الأسمدة - موبكو",
+        "companyNameArabic": "Misr Fertilizers Production Company - Mopco",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 293626,
+        "dateStamp": "2026-08-20T09:46:11",
+        "heading": "El Obour Real Estate Investment (OBRI.CA) - AGM Minutes ",
+        "content": "Company: El Obour Real Estate Investment<br />Symbols: EGS65551C011<br />Reuters: OBRI.CA<br />Content: <br />Minutes of the AGM held on 19/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343204_1.pdf\" target=\"_blank\">AGM Minutes (before Certification) (2,171 KB)</a>",
+        "headingArabic": "العبور للاستثمار العقارى (OBRI.CA) - محضر اجتماع الجمعية العامة العادية (غير موثق) ",
+        "contentArabic": "اسم الشركة: العبور للاستثمار العقارى<br />كود الترقيم الدولي: EGS65551C011<br />كود رويترز: OBRI.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 19/08/2026 (غير موثق).<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343204_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (غير موثق)  (2,171 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65551C011",
+        "companyName": "العبور للاستثمار العقارى",
+        "companyNameArabic": "El Obour Real Estate Investment",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 293625,
         "dateStamp": "2026-08-20T09:43:35",
         "heading": "El Kahera Housing (ELKA.CA) - Decisions of the BoD Meeting ",
@@ -9528,78 +9636,6 @@
         "companyName": "النصر للملابس والمنسوجات - كابو",
         "companyNameArabic": "El Nasr Clothes & Textiles (Kabo)",
         "sectorId": 26,
-        "attachments": []
-      },
-      {
-        "code": 293605,
-        "dateStamp": "2026-08-19T15:51:54",
-        "heading": "Alexandria Spinning & Weaving (SPINALEX) (SPIN.CA) - Release Regarding a Disclosure Form",
-        "content": "Company Name : Alexandria Spinning & Weaving (SPINALEX)<br />ISIN Code : EGS32041C013<br />Reuters Code : SPIN.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343157_1.pdf\" target=\"_blank\">News Attachment I  (349 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343157_2.pdf\" target=\"_blank\">News Attachment 2  (520 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343157_3.pdf\" target=\"_blank\">News Attachment 3 (182 KB)</a>",
-        "headingArabic": " الاسكندرية للغزل والنسيج (سبينالكس) (SPIN.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ ",
-        "contentArabic": "اسم الشركة : الاسكندرية للغزل والنسيج (سبينالكس)<br />كود الترقيم الدولي : EGS32041C013<br />كود رويترز : SPIN.CA<br />مضمون الاعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ ,وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343157_1.pdf\" target=\"_blank\">بيان بيع 1 (349 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343157_2.pdf\" target=\"_blank\">بيان بيع 2 (520 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343157_3.pdf\" target=\"_blank\">بيان شراء (182 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS32041C013",
-        "companyName": "الاسكندرية للغزل والنسيج (سبينالكس)",
-        "companyNameArabic": "Alexandria Spinning & Weaving (SPINALEX)",
-        "sectorId": 26,
-        "attachments": []
-      },
-      {
-        "code": 293600,
-        "dateStamp": "2026-08-19T15:24:16",
-        "heading": "Tasaheel For Financing 1st Iss 1st Pro Tranche B May 2028 (EGBTSSL1P1BC) Declares Bond Dividends for Coupon No. (5) ",
-        "content": "Issuer Name : Tasaheel For Financing 1st Iss 1st Pro Tranche B May 2028<br />ISIN Code : EGB610M1L020<br />Reuters Code : EGBTSSL1P1BC<br />Interest Type : Fixed<br />Coupon Interest : 23.5% <br />Coupon Amount : EGP 4.448157666<br />Coupon Number : 5<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 30/08/2026<br />Notes :  <br />Bond Redemption: EGP 7.5878784000<br />",
-        "headingArabic": "سندات تساهيل للتمويل الاصدار الاول البرنامج الاول الشريحة  ب مايو 2028 (EGBTSSL1P1BCF) يعلن عن توزيع كوبون السند رقم (5)",
-        "contentArabic": "المصدر : سندات تساهيل للتمويل الاصدار الاول البرنامج الاول الشريحة  ب مايو 2028<br />كود الترقيم الدولي : EGB610M1L020<br />كود رويتيرز : EGBTSSL1P1BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 23.5% <br />قيمة الكوبون : 4.448157666 جم للسند<br />رقم الكوبون : 5<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 30/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 7.5878784000 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB610M1L020",
-        "companyName": "سندات تساهيل للتمويل ص1 ب1 ش ب مايو 2028 ع ث",
-        "companyNameArabic": "Tasaheel For Financing 1st Iss 1st Pro Tran B May 2028 F R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293599,
-        "dateStamp": "2026-08-19T15:22:03",
-        "heading": "EFG Securitization 3rd Iss 5th Pro Tranche B Apr 2027 (EGBEFGS3P5BC) Declares Bond Dividends for Coupon No. (7) ",
-        "content": "Issuer Name : EFG Securitization 3rd Iss 5th Pro Tranche B Apr 2027<br />ISIN Code : EGB694K1S596<br />Reuters Code : EGBEFGS3P5BC<br />Interest Type : Fixed<br />Coupon Interest : 21.5% <br />Coupon Amount : EGP 1.7082191793<br />Coupon Number : 7<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
-        "headingArabic": "سندات اى اف جى للتوريق الاصدار الثالث البرنامج الخامس شريحة ب ابريل 2027 (EGBEFGS3P5BCF) يعلن عن توزيع كوبون السند رقم (7)",
-        "contentArabic": "المصدر : سندات اى اف جى للتوريق الاصدار الثالث البرنامج الخامس شريحة ب ابريل 2027<br />كود الترقيم الدولي : EGB694K1S596<br />كود رويتيرز : EGBEFGS3P5BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.5% <br />قيمة الكوبون : 1.7082191793 جم للسند<br />رقم الكوبون : 7<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB694K1S596",
-        "companyName": "سندات اى اف جى للتوريق ص 3 ب 5 ش ب ابريل 2027 ع.ث",
-        "companyNameArabic": "EFG Securitization 3rd Iss 5th Pro Tra B Apr 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293598,
-        "dateStamp": "2026-08-19T15:20:22",
-        "heading": "EFG Securitization 2nd Iss 5th Pro Tranche B Mar 2027 (EGBEFGS2P5BC) Declares Bond Dividends for Coupon No. (9) ",
-        "content": "Issuer Name : EFG Securitization 2nd Iss 5th Pro Tranche B Mar 2027<br />ISIN Code : EGB694K1S570<br />Reuters Code : EGBEFGS2P5BC<br />Interest Type : Fixed<br />Coupon Interest : 21.6% <br />Coupon Amount : EGP 1.7161643824<br />Coupon Number : 9<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
-        "headingArabic": "سندات اى اف جى للتوريق الاصدار الثاني البرنامج  الخامس الشريحة ب مارس 2027 (EGBEFGS2P5BCF) يعلن عن توزيع كوبون السند رقم (9)",
-        "contentArabic": "المصدر : سندات اى اف جى للتوريق الاصدار الثاني البرنامج  الخامس الشريحة ب مارس 2027<br />كود الترقيم الدولي : EGB694K1S570<br />كود رويتيرز : EGBEFGS2P5BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.6% <br />قيمة الكوبون : 1.7161643824 جم للسند<br />رقم الكوبون : 9<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB694K1S570",
-        "companyName": "سندات اى اف جى للتوريق ص 2 ب 5 ش ب مارس 2027 ع.ث",
-        "companyNameArabic": "EFG Securitization 2nd Iss 5th Pro Tra B Mar 2027 FR",
-        "sectorId": null,
         "attachments": []
       }
     ],
