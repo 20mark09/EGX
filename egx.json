@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-23 09:46:07 AM",
+  "lastUpdated": "2026-08-23 10:01:24 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-08-23T09:45:58"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-08-23T10:01:15"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 54737.07,
-        "close": 54737.07,
+        "change": 206.86,
+        "changePer": 0.37791573425468333,
+        "high": 54943.93,
+        "close": 54943.93,
         "open": 54737.07,
         "low": 54737.07,
-        "ytdPercent": 30.8592,
+        "ytdPercent": 31.3538,
         "date": "2026-08-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-23T09:58:00",
+          "value": 54737.07
+        },
+        {
+          "time": "2026-08-23T10:00:00",
+          "value": 54942.12
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6533.13,
-        "close": 6533.13,
+        "change": 48.49,
+        "changePer": 0.7422169771610239,
+        "high": 6581.62,
+        "close": 6581.62,
         "open": 6533.13,
         "low": 6533.13,
-        "ytdPercent": 42.0934,
+        "ytdPercent": 43.1481,
         "date": "2026-08-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-23T09:58:00",
+          "value": 6533.13
+        },
+        {
+          "time": "2026-08-23T10:00:00",
+          "value": 6581.62
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 20816.03,
-        "close": 20816.03,
+        "change": 164.82,
+        "changePer": 0.7917936321190928,
+        "high": 20986.55,
+        "close": 20980.85,
         "open": 20816.03,
         "low": 20816.03,
-        "ytdPercent": 58.5943,
+        "ytdPercent": 59.8501,
         "date": "2026-08-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-23T09:58:00",
+          "value": 20816.03
+        },
+        {
+          "time": "2026-08-23T10:00:00",
+          "value": 20986.55
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27052.41,
-        "close": 27052.41,
+        "change": 197.71,
+        "changePer": 0.7308406164182785,
+        "high": 27255.3,
+        "close": 27250.12,
         "open": 27052.41,
         "low": 27052.41,
-        "ytdPercent": 55.2427,
+        "ytdPercent": 56.3773,
         "date": "2026-08-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-23T09:58:00",
+          "value": 27052.41
+        },
+        {
+          "time": "2026-08-23T10:00:00",
+          "value": 27255.3
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,114 @@
   "news": {
     "disclosure": [
       {
+        "code": 293719,
+        "dateStamp": "2026-08-23T09:59:50",
+        "heading": "EL TAAMIR Securitization 2nd Iss 2nd Pro Tranche A Oct 2027 (EGBETSC2P2AC) Declares Bond Dividends for Coupon No. (11) ",
+        "content": "Issuer Name : EL TAAMIR Securitization 2nd Iss 2nd Pro Tranche A Oct 2027<br />ISIN Code : EGB692R1S401<br />Reuters Code : EGBETSC2P2AC<br />Interest Type : Floating<br />Coupon Interest : 20.35% <br />Coupon Amount : EGP 1.183912257<br />Coupon Number : 11<br />Coupon Date : 02/09/2026<br />Coupon Payment Date : 03/09/2026<br />Notes :  <br />Bond Redemption: EGP 9.513513514<br />",
+        "headingArabic": "سندات التعمير للتوريق الإصدار الثاني برنامج ثاني شريحة أ أكتوبر 2027 (EGBETSC2P2AC) يعلن عن توزيع كوبون السند رقم (11)",
+        "contentArabic": "المصدر : سندات التعمير للتوريق الإصدار الثاني برنامج ثاني شريحة أ أكتوبر 2027<br />كود الترقيم الدولي : EGB692R1S401<br />كود رويتيرز : EGBETSC2P2AC<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.35% <br />قيمة الكوبون : 1.183912257 جم للسند<br />رقم الكوبون : 11<br />تاريخ الإستحقاق : 02/09/2026<br />تاريخ الصرف : 03/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 9.513513514 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB692R1S401",
+        "companyName": "سندات التعمير للتوريق ص 2 ب 2 ش أ اكتوبر 2027 ع.م",
+        "companyNameArabic": "EL TAAMIR Securitization 2nd Iss 2nd Pro Tra A Oct 2027 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293718,
+        "dateStamp": "2026-08-23T09:57:52",
+        "heading": "EL TAAMIR Securitization 1st Issue 1st Program Tranche W Oct 2028 (EGETSC1P1W=C) Declares Bond Dividends for Coupon No. (32) ",
+        "content": "Issuer Name : EL TAAMIR Securitization 1st Issue 1st Program Tranche W Oct 2028<br />ISIN Code : EGB692R1S286<br />Reuters Code : EGETSC1P1W=C<br />Interest Type : Fixed<br />Coupon Interest : 18.2% <br />Coupon Amount : EGP 1.281958762<br />Coupon Number : 32<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />Notes :  <br />Bond Redemption: EGP 3.690838037<br />",
+        "headingArabic": "سندات التعمير للتوريق الإصدار الأول برنامج الأول شريحة وأكتوبر 2028 (EGETSC1P1W=C) يعلن عن توزيع كوبون السند رقم (32)",
+        "contentArabic": "المصدر : سندات التعمير للتوريق الإصدار الأول برنامج الأول شريحة وأكتوبر 2028<br />كود الترقيم الدولي : EGB692R1S286<br />كود رويتيرز : EGETSC1P1W=C<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18.2% <br />قيمة الكوبون : 1.281958762 جم للسند<br />رقم الكوبون : 32<br />تاريخ الإستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 3.690838037 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB692R1S286",
+        "companyName": "سندات التعمير للتوريق ص  1 ب  1 ش  و اكتوبر 2028 عائد ثابت",
+        "companyNameArabic": "EL TAAMIR Securitization 1st Is 1st Pr Tr W Oct 2028 Fix Rat",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 293717,
+        "dateStamp": "2026-08-23T09:51:37",
+        "heading": "Arab Co. for Asset Management And Development (ACAMD.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Arab Co. for Asset Management And Development<br />Symbols: EGS72AQ1C016<br />Reuters: ACAMD.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 20/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343287_1.pdf\" target=\"_blank\">News Attachment 1 (72 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343287_2.pdf\" target=\"_blank\">News Attachment 2 (856 KB)</a>",
+        "headingArabic": "الشركة العربية لادارة وتطوير الاصول (ACAMD.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: الشركة العربية لادارة وتطوير الاصول<br />كود الترقيم الدولي: EGS72AQ1C016<br />كود رويترز: ACAMD.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 20/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343287_1.pdf\" target=\"_blank\">مرفق الإعلان 1 (72 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343287_2.pdf\" target=\"_blank\">مرفق الإعلان 2 (856 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS72AQ1C016",
+        "companyName": "الشركة العربية لادارة وتطوير الاصول",
+        "companyNameArabic": "Arab Co. for Asset Management And Development",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 293716,
+        "dateStamp": "2026-08-23T09:51:03",
+        "heading": "Arabia Investments Holding (AIH.CA) - Release Regarding a Disclosure Form",
+        "content": "Company Name : Arabia Investments Holding<br />ISIN Code : EGS21351C019<br />Reuters Code : AIH.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules. <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343238_1.pdf\" target=\"_blank\">The Release  (271 KB)</a>",
+        "headingArabic": " ارابيا انفستمنتس هولدنج (AIH.CA) - بخصوص نموذج إفصاح بعد التنفيذ",
+        "contentArabic": "اسم الشركة : ارابيا انفستمنتس هولدنج<br />كود الترقيم الدولي : EGS21351C019<br />كود رويترز : AIH.CA<br />مضمون الاعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ ِوقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343238_1.pdf\" target=\"_blank\">البيان (271 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21351C019",
+        "companyName": "ارابيا انفستمنتس هولدنج",
+        "companyNameArabic": "Arabia Investments Holding",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 293715,
+        "dateStamp": "2026-08-23T09:48:55",
+        "heading": "Aspire Capital Holding For Financial Investments (ASPI.CA) - AGM Minutes (Notarized) ",
+        "content": "Company: Aspire Capital Holding For Financial Investments<br />Symbols: EGS691L1C018<br />Reuters: ASPI.CA<br />Content: <br />Notarized minutes of the AGM held on 02/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343283_1.pdf\" target=\"_blank\">AGM Minutes (Notarized)  (3,098 KB)</a>",
+        "headingArabic": "اسباير كابيتال القابضة للاستثمارات المالية (ASPI.CA) - محضر اجتماع الجمعية العامة العادية (موثق) ",
+        "contentArabic": "اسم الشركة: اسباير كابيتال القابضة للاستثمارات المالية<br />كود الترقيم الدولي: EGS691L1C018<br />كود رويترز: ASPI.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 02/08/2026 (موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343283_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (موثق) (3,098 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS691L1C018",
+        "companyName": "اسباير كابيتال القابضة للاستثمارات المالية",
+        "companyNameArabic": "Aspire Capital Holding For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 293714,
+        "dateStamp": "2026-08-23T09:46:39",
+        "heading": "Mohandes Insurance (MOIN.CA) - AGM Minutes (Notarized) ",
+        "content": "Company: Mohandes Insurance<br />Symbols: EGS63041C015<br />Reuters: MOIN.CA<br />Content: <br />Notarized minutes of the AGM held on 14/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343282_1.pdf\" target=\"_blank\">AGM Minutes (Notarized)  (8,725 KB)</a>",
+        "headingArabic": "المهندس للتأمين (MOIN.CA) - محضر اجتماع الجمعية العامة العادية (موثق) ",
+        "contentArabic": "اسم الشركة: المهندس للتأمين<br />كود الترقيم الدولي: EGS63041C015<br />كود رويترز: MOIN.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 14/06/2026 (موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343282_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (موثق) (8,725 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS63041C015",
+        "companyName": "المهندس للتأمين",
+        "companyNameArabic": "Mohandes Insurance",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
         "code": 293713,
         "dateStamp": "2026-08-23T09:43:57",
         "heading": "Release from Industrial & Engineering Projects (IEEC.CA) Regarding the Summary of the Board of Directors Resolutions ",
@@ -9492,114 +9636,6 @@
         "companyName": "شركة مستشفي كليوباترا",
         "companyNameArabic": "Cleopatra Hospital Company",
         "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 293696,
-        "dateStamp": "2026-08-23T09:02:42",
-        "heading": "Release from Faisal Islamic Bank of Egypt - In EGP (FAIT.CA) - Regarding the Bank's Indicators ",
-        "content": "Company: Faisal Islamic Bank of Egypt <br />Symbols: EGS60321C014-EGS60322C012<br />Reuters: FAITA.CA-FAIT.CA<br />Content: <br />Release from the bank regarding the bank's indicators at the end of July 2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343252_1.pdf\" target=\"_blank\">Release from the Bank in Arabic & English (231 KB)</a>",
-        "headingArabic": "بيان من بنك فيصل الاسلامي المصري (FAITA.CA) بخصوص مؤشرات أعمال البنك",
-        "contentArabic": "اسم البنك: بنك فيصل الاسلامي المصري <br>كود الترقيم الدولي: EGS60321C014-EGS60322C012<br>كود رويترز: FAITA.CA-FAIT.CA<br>مضمون الإعلان :<br>بيان من البنك بخصوص مؤشرات نتائج أعمال البنك في نهاية يوليو 2026.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343252_1.pdf\" target=\"_blank\">بيان من البنك باللغة العربية والإنجليزية (231 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS60321C014",
-        "companyName": "بنك فيصل الاسلامي المصرية بالجنية",
-        "companyNameArabic": "Faisal Islamic Bank of Egypt - In EGP",
-        "sectorId": 1,
-        "attachments": []
-      },
-      {
-        "code": 293695,
-        "dateStamp": "2026-08-23T08:58:32",
-        "heading": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda (RMDA.CA) - AGM Minutes ",
-        "content": "Company: Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda<br />Symbols: EGS381B1C015<br />Reuters: RMDA.CA<br />Content: <br />Minutes of the AGM held on 13/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343243_1.pdf\" target=\"_blank\">AGM Minutes (before Certification) (960 KB)</a>",
-        "headingArabic": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا (RMDA.CA) - محضر اجتماع الجمعية العامة العادية (غير موثق) ",
-        "contentArabic": "اسم الشركة: العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا<br />كود الترقيم الدولي: EGS381B1C015<br />كود رويترز: RMDA.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 13/08/2026 (غير موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343243_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (غير موثق) (960 KB)</a>",
-        "section": "General Assemblies                                ",
-        "sectionArabic": "الجمعيات العامة                                   ",
-        "secId": 5,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS381B1C015",
-        "companyName": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا",
-        "companyNameArabic": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 293694,
-        "dateStamp": "2026-08-23T08:56:17",
-        "heading": "Release from Export Development Bank of Egypt (EXPA.CA) Concerning the Board of Director's & the Executive Managers ",
-        "content": "Company: Export Development Bank of Egypt <br />Symbols: EGS60241C014<br />Reuters: EXPA.CA<br />Content: <br />Release from the bank concerning the Board of Director's & the Executive Managers.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343237_1.pdf\" target=\"_blank\">Release from the Company (179 KB)</a>",
-        "headingArabic": "بيان من البنك المصري لتنمية الصادرات (EXPA.CA) بخصوص إطاره التنظيمي",
-        "contentArabic": "اسم البنك: البنك المصري لتنمية الصادرات <br />كود الترقيم الدولي: EGS60241C014<br />كود رويترز: EXPA.CA<br />مضمون الإعلان :<br />بيان من البنك بخصوص الإطار التنظيمي للبنك.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343237_1.pdf\" target=\"_blank\">بيان من الشركة (179 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS60241C014",
-        "companyName": "البنك المصري لتنمية الصادرات",
-        "companyNameArabic": "Export Development Bank of Egypt",
-        "sectorId": 1,
-        "attachments": []
-      },
-      {
-        "code": 293691,
-        "dateStamp": "2026-08-20T15:16:45",
-        "heading": "Release from Misr Oils & Soap (MOSC.CA) Regarding the Company's Response to the Auditor's",
-        "content": "Company Name : Misr Oils & Soap<br />ISIN Code : EGS38421C011<br />Reuters Code : MOSC.CA<br />Content : <br />Release from the company regarding the company's response to the Auditor's reservations on the financial statements for the financial period ended on 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343244_1.pdf\" target=\"_blank\">Release from the Company (715 KB)</a>",
-        "headingArabic": "بيان من مصر للزيوت والصابون (MOSC.CA) بخصوص رد الشركة على مراقب الحسابات",
-        "contentArabic": "اسم الشركة : مصر للزيوت والصابون<br />كود الترقيم الدولي : EGS38421C011<br />كود رويترز : MOSC.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص رد الشركة على تحفظات مراقب الحسابات عن القوائم المالية عن الفترة المالية المنتهية في 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343244_1.pdf\" target=\"_blank\">بيان من الشركة (715 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38421C011",
-        "companyName": "مصر للزيوت و الصابون",
-        "companyNameArabic": "Misr Oils & Soap",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 293690,
-        "dateStamp": "2026-08-20T15:13:08",
-        "heading": "Misr Oils & Soap (MOSC.CA) - Central Auditing Organization Report",
-        "content": "Company Name : Misr Oils & Soap<br />ISIN Code : EGS38421C011<br />Reuters Code : MOSC.CA<br />Content : <br />Central Auditing Organization Report for the period ended on 30/06/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343245_1.pdf\" target=\"_blank\">Central Auditing Organization Report (726 KB)</a>",
-        "headingArabic": "مصر للزيوت والصابون (MOSC.CA) - تقرير الجهاز المركزي للمحاسبات",
-        "contentArabic": "اسم الشركة : مصر للزيوت والصابون<br />كود الترقيم الدولي : EGS38421C011<br />كود رويترز : MOSC.CA<br />مضمون الإعلان : <br />تقرير الجهاز المركزي للمحاسبات عن القوائم المالية عن الفترة المالية المنتهية في 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343245_1.pdf\" target=\"_blank\">تقرير الجهاز المركزي للمحاسبات (726 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38421C011",
-        "companyName": "مصر للزيوت و الصابون",
-        "companyNameArabic": "Misr Oils & Soap",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 293689,
-        "dateStamp": "2026-08-20T15:06:12",
-        "heading": "Heibco for commercial investments & real estate development (HBCO.CA) - Release Regarding a Disclosure Form (SMEs Market) ",
-        "content": "Company Name : Heibco for commercial investments & real estate development<br />ISIN Code : EGS23OD1C015<br />Reuters Code : HBCO.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343241_1.pdf\" target=\"_blank\">The Release (240 KB)</a>",
-        "headingArabic": "هيبكو للاستثمارات التجارية والتنمية العقارية (HBCO.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ (سوق الشركات الصغيرة والمتوسطة)",
-        "contentArabic": "اسم الشركة : هيبكو للاستثمارات التجارية والتنمية العقارية<br />كود الترقيم الدولي : EGS23OD1C015<br />كود رويترز : HBCO.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343241_1.pdf\" target=\"_blank\">البيان (240 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS23OD1C015",
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
         "attachments": []
       }
     ],
