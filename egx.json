@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-25 09:46:00 AM",
+  "lastUpdated": "2026-08-25 10:01:16 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-08-25T09:45:55"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-08-25T10:01:06"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 55164.84,
-        "close": 55164.84,
+        "change": 55.45,
+        "changePer": 0.10051692346066807,
+        "high": 55221.07,
+        "close": 55220.29,
         "open": 55164.84,
         "low": 55164.84,
-        "ytdPercent": 31.8819,
+        "ytdPercent": 32.0145,
         "date": "2026-08-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-25T09:58:00",
+          "value": 55164.84
+        },
+        {
+          "time": "2026-08-25T10:00:00",
+          "value": 55221.07
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6566.47,
-        "close": 6566.47,
+        "change": 14.71,
+        "changePer": 0.22401686141869223,
+        "high": 6581.66,
+        "close": 6581.18,
         "open": 6566.47,
         "low": 6566.47,
-        "ytdPercent": 42.8186,
+        "ytdPercent": 43.1385,
         "date": "2026-08-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-25T09:58:00",
+          "value": 6566.47
+        },
+        {
+          "time": "2026-08-25T10:00:00",
+          "value": 6581.66
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 21372.45,
-        "close": 21372.45,
+        "change": -1.39,
+        "changePer": -0.006503699856591078,
+        "high": 21395.5,
+        "close": 21371.06,
         "open": 21372.45,
-        "low": 21372.45,
-        "ytdPercent": 62.8336,
+        "low": 21370.2,
+        "ytdPercent": 62.823,
         "date": "2026-08-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-25T09:58:00",
+          "value": 21372.45
+        },
+        {
+          "time": "2026-08-25T10:00:00",
+          "value": 21395.5
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27651.35,
-        "close": 27651.35,
+        "change": 8.74,
+        "changePer": 0.031607860014068026,
+        "high": 27681.88,
+        "close": 27660.09,
         "open": 27651.35,
         "low": 27651.35,
-        "ytdPercent": 58.6798,
+        "ytdPercent": 58.7299,
         "date": "2026-08-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-25T09:58:00",
+          "value": 27651.35
+        },
+        {
+          "time": "2026-08-25T10:00:00",
+          "value": 27681.88
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,42 @@
   "news": {
     "disclosure": [
       {
+        "code": 293849,
+        "dateStamp": "2026-08-25T09:58:10",
+        "heading": "Release from El Ahli Investment and Development (AFDI.CA) Concerning the Financial Statements",
+        "content": "Company Name : El Ahli Investment and Development<br />ISIN Code : EGS69021C011<br />Reuters Code : AFDI.CA<br />Content : <br />Release from the company concerning the delay in sending the consolidated and standalone financial statements for the period ending on 31/03/2026 ,and the standalone financial statements for the period ending on 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343397_1.PDF\" target=\"_blank\">Release from the Company (129 KB)</a>",
+        "headingArabic": "بيان من الاهلي للتنمية والاستثمار (AFDI.CA) بخصوص القوائم المالية ",
+        "contentArabic": "اسم الشركة : الاهلي للتنمية والاستثمار<br />كود الترقيم الدولي : EGS69021C011<br />كود رويترز : AFDI.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص مبررات التأخير في إرسال القوائم المالية المستقلة والمجمعة عن الفترة المالية المنتهية في 31/03/2026, والقوائم المالية المستقلة عن الفترة المالية المنتهية في 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343397_1.PDF\" target=\"_blank\">بيان من الشركة (129 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS69021C011",
+        "companyName": "الاهلي للتنمية والاستثمار",
+        "companyNameArabic": "El Ahli Investment and Development",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 293848,
+        "dateStamp": "2026-08-25T09:54:17",
+        "heading": "Lotus For Agricultural Investments And Development (LUTS.CA) - Release Regarding a Disclosure Form ",
+        "content": "Company Name : Lotus For Agricultural Investments And Development<br />ISIN Code : EGS07661C019<br />Reuters Code : LUTS.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343391_1.pdf\" target=\"_blank\">The Release (63 KB)</a>",
+        "headingArabic": "لوتس للتنمية والاستثمار الزراعى (LUTS.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
+        "contentArabic": "اسم الشركة : لوتس للتنمية والاستثمار الزراعى<br />كود الترقيم الدولي : EGS07661C019<br />كود رويترز : LUTS.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343391_1.pdf\" target=\"_blank\">البيان (63 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS07661C019",
+        "companyName": "لوتس للتنمية والاستثمار الزراعى",
+        "companyNameArabic": "Lotus For Agricultural Investments And Development",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 293847,
         "dateStamp": "2026-08-25T09:45:00",
         "heading": "Release from Industrial & Engineering Projects (IEEC.CA) Regarding Summary of Resolutions of the BoD Meeting",
@@ -9564,42 +9636,6 @@
         "companyName": "مرسى مرسى علم للتنمية السياحية",
         "companyNameArabic": "Marsa Marsa Alam For Tourism Development",
         "sectorId": 16,
-        "attachments": []
-      },
-      {
-        "code": 293820,
-        "dateStamp": "2026-08-24T12:32:25",
-        "heading": "Capital For Securitization 2nd Iss 6th Pro Tranche C Oct 2029 (EGBCPSC2P6CC) Declares Bond Dividends for Coupon No. (4) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 6th Pro Tranche C Oct 2029<br />ISIN Code : EGB69611S0H2<br />Reuters Code : EGBCPSC2P6CC<br />Interest Type : Fixed<br />Coupon Interest : 18% <br />Coupon Amount : EGP 1.5287671231<br />Coupon Number : 4<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2026<br />",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ج اكتوبر 2029 (EGBCPSC2P6CCV) يعلن عن توزيع كوبون السند رقم (4)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني البرنامج السادس شريحة ج اكتوبر 2029<br />كود الترقيم الدولي : EGB69611S0H2<br />كود رويتيرز : EGBCPSC2P6CCV<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18% <br />قيمة الكوبون : 1.5287671231 جم للسند<br />رقم الكوبون : 4<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S0H2",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب6 ش ج اكتوبر 2029 ع م",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 6th Pro Tra C Oct 2029 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293819,
-        "dateStamp": "2026-08-24T12:29:50",
-        "heading": "Capital For Securitization 5th Iss 7th Pro Tranche B Sep 27 FR (EGBCPSC5P7BC) Declares Bond Dividends for Coupon No. (4) ",
-        "content": "Issuer Name : Capital For Securitization 5th Iss 7th Pro Tranche B Sep 27 FR<br />ISIN Code : EGB69611S4A9<br />Reuters Code : EGBCPSC5P7BC<br />Interest Type : Fixed<br />Coupon Interest : 18.5% <br />Coupon Amount : EGP 1.4698630131<br />Coupon Number : 4<br />Coupon Date : 30/08/2026<br />Coupon Payment Date : 31/08/2006<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الخامس البرنامج السابع شريحة ب سبتمبر 2027 (EGBCPSC5P7BCF) يعلن عن توزيع كوبون السند رقم (4)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الخامس البرنامج السابع شريحة ب سبتمبر 2027<br />كود الترقيم الدولي : EGB69611S4A9<br />كود رويتيرز : EGBCPSC5P7BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18.5% <br />قيمة الكوبون : 1.4698630131 جم للسند<br />رقم الكوبون : 4<br />تاريخ الاستحقاق : 30/08/2026<br />تاريخ الصرف : 31/08/2006<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S4A9",
-        "companyName": "سندات كابيتال للتوريق ص 5 ب 7 ش ب سبتمبر 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 5th Iss 7th Pro Tra B Sep 27 FR",
-        "sectorId": null,
         "attachments": []
       }
     ],
