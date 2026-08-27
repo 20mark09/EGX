@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-27 09:01:23 AM",
+  "lastUpdated": "2026-08-27 09:16:11 AM",
   "marketStatus": {
     "status": "Closed",
     "status_ar": "مغلق",
-    "statusDate": "2026-08-27T09:01:11"
+    "statusDate": "2026-08-27T09:16:02"
   },
   "indices": {
     "EGX30": {
@@ -21321,33 +21321,7 @@
     }
   ],
   "investorActivity": {
-    "invsetorsStatistics": {
-      "buyCom": 185179025741.55,
-      "buyEg": 118935404379.1789,
-      "buyF": 75211693295.0294,
-      "buyRet": 8968071932.6583,
-      "egTotal": 117021495906.6701,
-      "forTotal": 77125601767.5382,
-      "ratBuyCom": 95.38,
-      "ratBuyEg": 61.26,
-      "ratBuyFor": 38.73,
-      "ratBuyRat": 4.61,
-      "ratCom": 95.47,
-      "ratEg": 60.27,
-      "ratFor": 39.72,
-      "ratRet": 4.52,
-      "ratSellCom": 95.56,
-      "ratSellEg": 59.28,
-      "ratSellFor": 40.71,
-      "ratSellRat": 4.43,
-      "sellCom": 185536712224.4851,
-      "sellEg": 115107587434.1613,
-      "sellF": 79039510240.047,
-      "sellRet": 8610385449.7232,
-      "totalValue": 194147097674.2083,
-      "tradeDate": "2026-08-26T14:29:59",
-      "tradeTime": "142959"
-    },
+    "invsetorsStatistics": null,
     "investorsType": [
       {
         "buyPerc": 61.26,
