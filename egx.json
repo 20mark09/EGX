@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-27 09:46:12 AM",
+  "lastUpdated": "2026-08-27 10:01:23 AM",
   "marketStatus": {
     "status": "Closed",
     "status_ar": "مغلق",
-    "statusDate": "2026-08-27T09:45:55"
+    "statusDate": "2026-08-27T10:01:16"
   },
   "indices": {
     "EGX30": {
@@ -27,7 +27,16 @@
       "mc": 1309280603614.6636,
       "mcPer": 31.829
     },
-    "EGX70": null,
+    "EGX70": {
+      "value": 4147186302.663,
+      "valPer": 36.357,
+      "volume": 2425045384,
+      "volPer": 63.783,
+      "trades": 91878,
+      "trdPer": 36.394,
+      "mc": 1131468458514.11,
+      "mcPer": 27.506
+    },
     "EGX100": {
       "value": 7830081700.212,
       "valPer": 68.643,
