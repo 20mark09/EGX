@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-08-30 09:45:57 AM",
+  "lastUpdated": "2026-08-30 10:01:16 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-08-30T09:45:49"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-08-30T10:01:08"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 55106.54,
-        "close": 55106.54,
+        "change": 90.48,
+        "changePer": 0.164191037942139,
+        "high": 55197.02,
+        "close": 55197.02,
         "open": 55106.54,
         "low": 55106.54,
-        "ytdPercent": 31.7425,
+        "ytdPercent": 31.9588,
         "date": "2026-08-30T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-30T09:58:00",
+          "value": 55106.54
+        },
+        {
+          "time": "2026-08-30T10:00:00",
+          "value": 55197.02
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6581.78,
-        "close": 6581.78,
+        "change": 21.98,
+        "changePer": 0.3339522135349404,
+        "high": 6603.76,
+        "close": 6603.76,
         "open": 6581.78,
         "low": 6581.78,
-        "ytdPercent": 43.1516,
+        "ytdPercent": 43.6296,
         "date": "2026-08-30T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-30T09:58:00",
+          "value": 6581.78
+        },
+        {
+          "time": "2026-08-30T10:00:00",
+          "value": 6603.76
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 21269.03,
-        "close": 21269.03,
+        "change": 87.11,
+        "changePer": 0.4095626363778696,
+        "high": 21356.14,
+        "close": 21356.14,
         "open": 21269.03,
         "low": 21269.03,
-        "ytdPercent": 62.0457,
+        "ytdPercent": 62.7094,
         "date": "2026-08-30T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-30T09:58:00",
+          "value": 21269.03
+        },
+        {
+          "time": "2026-08-30T10:00:00",
+          "value": 21356.14
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27578.41,
-        "close": 27578.41,
+        "change": 102.51,
+        "changePer": 0.37170380743487386,
+        "high": 27680.92,
+        "close": 27680.92,
         "open": 27578.41,
         "low": 27578.41,
-        "ytdPercent": 58.2612,
+        "ytdPercent": 58.8495,
         "date": "2026-08-30T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-08-30T09:58:00",
+          "value": 27578.41
+        },
+        {
+          "time": "2026-08-30T10:00:00",
+          "value": 27680.92
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 293992,
+        "dateStamp": "2026-08-30T10:00:46",
+        "heading": "Aspire Capital Holding For Financial Investments (ASPI.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Aspire Capital Holding For Financial Investments<br />Symbols: EGS691L1C018<br />Reuters: ASPI.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 26/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343552_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (296 KB)</a>",
+        "headingArabic": "اسباير كابيتال القابضة للاستثمارات المالية (ASPI.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: اسباير كابيتال القابضة للاستثمارات المالية<br />كود الترقيم الدولي: EGS691L1C018<br />كود رويترز: ASPI.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 26/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343552_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة  (296 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS691L1C018",
+        "companyName": "اسباير كابيتال القابضة للاستثمارات المالية",
+        "companyNameArabic": "Aspire Capital Holding For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 293991,
+        "dateStamp": "2026-08-30T09:58:07",
+        "heading": "Release from Egyptian Real Estate Group (AREH.CA) Concerning a Lawsuit ",
+        "content": "Company: Egyptian Real Estate Group <br />Symbols: EGS65211C012<br />Reuters: AREH.CA<br />Content: <br />With reference to the announcement published on the trading screens on 30/07/2026 concerning case no.117 of judicial year 19 (Grievances), which was scheduled to be held on 26/08/2026, a release from the company issued to confirming that the hearing has been adjourned to 27/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343550_1.pdf\" target=\"_blank\">Release from the Company (467 KB)</a>",
+        "headingArabic": "بيان من المجموعه المصريه العقاريه (AREH.CA) بخصوص دعوى قضائية",
+        "contentArabic": "اسم الشركة: المجموعه المصريه العقاريه <br />كود الترقيم الدولي: EGS65211C012<br />كود رويترز: AREH.CA<br />مضمون الإعلان :<br />بالإشارة إلى الإعلان المنشور على شاشات التداول بتاريخ 30/07/2026 بخصوص الدعوى رقم 117 لسنة 19 ق تظلمات ومحدد لنظرها جلسة 26/08/2026, ورد بيان من الشركة تفيد فيه أنه تم التأجيل لجلسة 27/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343550_1.pdf\" target=\"_blank\">  بيان من الشركة  (467 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65211C012",
+        "companyName": "المجموعه المصريه العقاريه",
+        "companyNameArabic": "Egyptian Real Estate Group",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 293990,
+        "dateStamp": "2026-08-30T09:48:59",
+        "heading": "Release from Valmore Holding-EGP (VLMRA.CA) Regarding the Sale of Treasury Stocks ",
+        "content": "Company: Valmore Holding <br />Symbols: EGS69081C023-EGS69082C013<br />Reuters: VLMRA.CA-VLMR.CA<br />Content: <br />Release from the company regarding the sale of treasury stocks on the Kuwait Stock Exchange on 26/08/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343546_1.pdf\" target=\"_blank\">Release from the Company (657 KB)</a>",
+        "headingArabic": "بيان من فالمور القابضة للاستثمار (VLMRA.CA) بشأن بيع أسهم خزينة",
+        "contentArabic": "اسم الشركة: فالمور القابضة للاستثمار <br />كود الترقيم الدولي: EGS69081C023-EGS69082C013<br />كود رويترز: VLMRA.CA-VLMR.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن بيع أسهم خزينة بجلسة 26/08/2026 ببورصة الكويت.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343546_1.pdf\" target=\"_blank\">بيان من الشركة (657 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS69081C023",
+        "companyName": "فالمور القابضة للاستثماربالجنية",
+        "companyNameArabic": "Valmore Holding-EGP",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
         "code": 293989,
         "dateStamp": "2026-08-30T09:44:31",
         "heading": "Alexandria Spinning & Weaving (SPINALEX) (SPIN.CA) Reports its Financial Results for the Period from 01/07/2025 to 31/03/2026 ",
@@ -9545,60 +9635,6 @@
         "isin": "EGB69801S151",
         "companyName": "سندات الاهلى للتوريق ص1 ب3 ش ج سبتمبر 2028 ع م",
         "companyNameArabic": "Al Ahly Securitization 1st Iss 3rd Pro Tran C Sept 2028 V R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293962,
-        "dateStamp": "2026-08-26T16:05:13",
-        "heading": "Al Ahly Securitization 1st Iss 3rd Pro Tranche B Dec 2026 (EGBAHSC1P3BCV) Declares Bond Dividends for Coupon No. (17) ",
-        "content": "Issuer Name : Al Ahly Securitization 1st Iss 3rd Pro Tranche B Dec 2026<br />ISIN Code : EGB69801S144<br />Reuters Code : EGBAHSC1P3BCV<br />Interest Type : Floating<br />Coupon Interest : 20.50% <br />Coupon Amount : EGP 0.49236<br />Coupon Number : 17<br />Coupon Date : 06/09/2026<br />Coupon Payment Date : 07/09/2026<br />Notes :  <br />Bond Redemption: EGP 8.00738  <br />",
-        "headingArabic": "سندات الاهلى للتوريق الاصدار الاول من البرنامج الثالث الشريحة ب ديسمبر 2026 (EGBAHSC1P3BCV) يعلن عن توزيع كوبون السند رقم (17)",
-        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الاول من البرنامج الثالث الشريحة ب ديسمبر 2026<br />كود الترقيم الدولي : EGB69801S144<br />كود رويتيرز : EGBAHSC1P3BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.5% <br />قيمة الكوبون : 0.49236 جم للسند<br />رقم الكوبون : 17<br />تاريخ الاستحقاق : 06/09/2026<br />تاريخ الصرف : 07/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 8.00738 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69801S144",
-        "companyName": "سندات الاهلى للتوريق ص1 ب3 ش ب ديسمبر 2026 ع م",
-        "companyNameArabic": "Al Ahly Securitization 1st Iss 3rd Pro Tran B Dec 2026 V R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293961,
-        "dateStamp": "2026-08-26T16:02:19",
-        "heading": "Al Ahly Securitization 1st Iss -1st Prog Tranche C Feb 2028 (AHLYS1P1C=CA) Declares Bond Dividends for Coupon No. (38) ",
-        "content": "Issuer Name : Al Ahly Securitization 1st Iss -1st Prog Tranche C Feb 2028<br />ISIN Code : EGB69801S037<br />Reuters Code : AHLYS1P1C=CA<br />Interest Type : Floating<br />Coupon Interest : 20.7% <br />Coupon Amount : EGP 1.00471<br />Coupon Number : 38<br />Coupon Date : 03/09/2026<br />Coupon Payment Date : 06/09/2026<br />Notes :  <br />Bond Redemption: EGP 5.54348 <br />",
-        "headingArabic": "سندات الاهلى للتوريق الاصدار الاول  برنامج اول شريحة ج فبراير 2028 (AHLYS1P1C=CA) يعلن عن توزيع كوبون السند رقم (38)",
-        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الاول  برنامج اول شريحة ج فبراير 2028<br />كود الترقيم الدولي : EGB69801S037<br />كود رويتيرز : AHLYS1P1C=CA<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.7% <br />قيمة الكوبون : 1.00471 جم للسند<br />رقم الكوبون : 38<br />تاريخ الاستحقاق : 03/09/2026<br />تاريخ الصرف : 06/09/2026<br />ملاحظات : <br />الإستهلاك من أصل السند: 5.54348 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69801S037",
-        "companyName": "سندات الاهلى للتوريق ص 1  ب 1 ش ج فبراير 2028 ذات عائد متغير",
-        "companyNameArabic": "Al Ahly Securitization 1st Iss -1st Prog Tran C Feb 2028 V R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 293960,
-        "dateStamp": "2026-08-26T15:59:29",
-        "heading": "Al Ahly Securitization 2nd Iss - 6th Pro Tranche B Dec 2026 (EGBAHSC2P6BCV) Declares Bond Dividends for Coupon No. (8) ",
-        "content": "Issuer Name : Al Ahly Securitization 2nd Iss - 6th Pro Tranche B Dec 2026<br />ISIN Code : EGB69801S466<br />Reuters Code : EGBAHSC2P6BCV<br />Interest Type : Floating<br />Coupon Interest : 20.20% <br />Coupon Amount : EGP 1.04156<br />Coupon Number : 8<br />Coupon Date : 06/09/2026<br />Coupon Payment Date : 07/09/2026<br />Notes :  <br />Bond Redemption: EGP 11.30137  <br />",
-        "headingArabic": "سندات الاهلي للتوريق الاصدار الثاني برنامج سادس الشريحة ب ديسمبر 2026 (EGBAHSC2P6BCV) يعلن عن توزيع كوبون السند رقم (8)",
-        "contentArabic": "المصدر : سندات الاهلي للتوريق الاصدار الثاني برنامج سادس الشريحة ب ديسمبر 2026<br />كود الترقيم الدولي : EGB69801S466<br />كود رويتيرز : EGBAHSC2P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.2% <br />قيمة الكوبون : 1.04156 جم للسند<br />رقم الكوبون : 8<br />تاريخ الاستحقاق : 06/09/2026<br />تاريخ الصرف : 07/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 11.30137 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69801S466",
-        "companyName": "سندات الاهلي للتوريق ص2 ب6 ش ب ديسمبر 2026 ع م",
-        "companyNameArabic": "Al Ahly Securitization 2nd Iss - 6th Pro Tra B Dec 2026 V R",
         "sectorId": null,
         "attachments": []
       }
