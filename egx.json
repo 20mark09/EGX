@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-01 09:46:06 AM",
+  "lastUpdated": "2026-09-01 10:01:32 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-01T09:45:58"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-01T10:01:24"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 54866.04,
-        "close": 54866.04,
+        "change": 10.53,
+        "changePer": 0.019192199765100598,
+        "high": 54898.62,
+        "close": 54876.57,
         "open": 54866.04,
         "low": 54866.04,
-        "ytdPercent": 31.1676,
+        "ytdPercent": 31.1927,
         "date": "2026-09-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-01T09:58:00",
+          "value": 54866.04
+        },
+        {
+          "time": "2026-09-01T10:00:00",
+          "value": 54898.62
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6548.36,
-        "close": 6548.36,
+        "change": -3.2,
+        "changePer": -0.04886719728298383,
+        "high": 6556.95,
+        "close": 6545.16,
         "open": 6548.36,
-        "low": 6548.36,
-        "ytdPercent": 42.4247,
+        "low": 6544.81,
+        "ytdPercent": 42.3551,
         "date": "2026-09-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-01T09:58:00",
+          "value": 6548.36
+        },
+        {
+          "time": "2026-09-01T10:00:00",
+          "value": 6556.95
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 20893.38,
-        "close": 20893.38,
+        "change": 73.57,
+        "changePer": 0.35212110247360645,
+        "high": 20971.36,
+        "close": 20966.95,
         "open": 20893.38,
         "low": 20893.38,
-        "ytdPercent": 59.1837,
+        "ytdPercent": 59.7442,
         "date": "2026-09-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-01T09:58:00",
+          "value": 20893.38
+        },
+        {
+          "time": "2026-09-01T10:00:00",
+          "value": 20971.36
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27262.44,
-        "close": 27262.44,
+        "change": 73.11,
+        "changePer": 0.2681711541593489,
+        "high": 27339.58,
+        "close": 27335.55,
         "open": 27262.44,
         "low": 27262.44,
-        "ytdPercent": 56.448,
+        "ytdPercent": 56.8675,
         "date": "2026-09-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-01T09:58:00",
+          "value": 27262.44
+        },
+        {
+          "time": "2026-09-01T10:00:00",
+          "value": 27339.58
+        }
+      ]
     }
   },
   "constituents": {
@@ -8702,33 +8738,7 @@
   "gainers": [],
   "losers": [],
   "investorActivity": {
-    "invsetorsStatistics": {
-      "buyCom": 66378026653.9504,
-      "buyEg": 42198910425.0215,
-      "buyF": 36592129246.9493,
-      "buyRet": 12413013018.0204,
-      "egTotal": 52700270200.63595,
-      "forTotal": 26090769471.33485,
-      "ratBuyCom": 84.24,
-      "ratBuyEg": 53.55,
-      "ratBuyFor": 46.44,
-      "ratBuyRat": 15.75,
-      "ratCom": 84.36,
-      "ratEg": 66.88,
-      "ratFor": 33.11,
-      "ratRet": 15.63,
-      "ratSellCom": 84.47,
-      "ratSellEg": 80.21,
-      "ratSellFor": 19.78,
-      "ratSellRat": 15.52,
-      "sellCom": 66558798416.6676,
-      "sellEg": 63201629976.2504,
-      "sellF": 15589409695.7204,
-      "sellRet": 12232241255.3032,
-      "totalValue": 78791039671.9708,
-      "tradeDate": "2026-08-31T14:29:59",
-      "tradeTime": "142959"
-    },
+    "invsetorsStatistics": null,
     "investorsType": [
       {
         "buyPerc": 53.56,
@@ -9269,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 294202,
+        "dateStamp": "2026-09-01T09:58:38",
+        "heading": "Release from South Cairo & Giza Mills & Bakeries (SCFM.CA) Concerning the Invitation of the AGM & EGM ",
+        "content": "Company Name : South Cairo & Giza Mills & Bakeries<br />ISIN Code : EGS30411C010<br />Reuters Code : SCFM.CA<br />Content : <br />Release from the company concerning the invitation of the AGM & EGM which is scheduled to be held on 23/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343704_1.pdf\" target=\"_blank\">Release from the Company (548 KB)</a>",
+        "headingArabic": "بيان من مطاحن ومخابز جنوب القاهرة والجيزة (SCFM.CA) بخصوص دعوة الجمعية العامة العادية وغير العادية",
+        "contentArabic": "اسم الشركة : مطاحن ومخابز جنوب القاهرة والجيزة<br />كود الترقيم الدولي : EGS30411C010<br />كود رويترز : SCFM.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص دعوة الجمعية العامة العادية وغير العادية المقرر إنعقادهما يوم 23/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343704_1.pdf\" target=\"_blank\">بيان من الشركة (548 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30411C010",
+        "companyName": "مطاحن ومخابز جنوب القاهرة والجيزة",
+        "companyNameArabic": "South Cairo & Giza Mills & Bakeries",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 294201,
+        "dateStamp": "2026-09-01T09:50:52",
+        "heading": "KORRA (KORA.CA) - Board of Directors' Meeting Minutes",
+        "content": "Company Name : KORRA<br />ISIN Code : EGS07911C018<br />Reuters Code : KORA.CA<br />Content : <br />Board of Directors' meeting minutes held on 31/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343692_1.pdf\" target=\"_blank\">BoD Meeting Minutes (201 KB)</a>",
+        "headingArabic": "قرة لمشروعات الطاقة والاستثمار (KORA.CA) - محضر اجتماع مجلس إدارة الشركة",
+        "contentArabic": "اسم الشركة : قرة لمشروعات الطاقة والاستثمار<br />كود الترقيم الدولي : EGS07911C018<br />كود رويترز : KORA.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 31/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343692_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة (201 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS07911C018",
+        "companyName": "قرة لمشروعات الطاقة والاستثمار",
+        "companyNameArabic": "KORRA",
+        "sectorId": 25,
+        "attachments": []
+      },
+      {
+        "code": 294200,
+        "dateStamp": "2026-09-01T09:47:52",
+        "heading": "KORRA (KORA.CA) Reports 6 Months Consolidated Results",
+        "content": "Company Name : KORRA<br />ISIN Code    : EGS07911C018<br />Currency     : EGP<br />F/S Consolidated Period : From 01/01/2026 To 30/06/2026<br />Net Profit   : 139,114,770<br />F/S Consolidated Period : From 01/01/2025 To 30/06/2025<br />Net Comparative Profit   : 201,016,518<br />Audit Status : Reviewed<br />Comment : Taking into account minority rights<br />Source : KORRA<br />",
+        "headingArabic": "قرة لمشروعات الطاقة والاستثمار (KORA.CA) تعلن نتائج أعمالها المجمعة عن 6 أشهر",
+        "contentArabic": "اسم الشركة       : قرة لمشروعات الطاقة والاستثمار<br />كود الترقيم الدولي : EGS07911C018<br />العملة           : جنيه مصري<br />القوائم المالية المجمعة عن الفترة :من 01/01/2026 الى 30/06/2026<br />صافي الربح   : 139,114,770 <br />ارقام المقارنة المجمعة عن الفترة  : من 01/01/2025 الى 30/06/2025<br />صافي الربح لفترة المقارنة   : 201,016,518 <br />تقرير الفحص المحدود : مرفق<br />مع الأخذ في الإعتبار حقوق الأقلية<br />المصدر : قرة لمشروعات الطاقة والاستثمار<br />",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS07911C018",
+        "companyName": "قرة لمشروعات الطاقة والاستثمار",
+        "companyNameArabic": "KORRA",
+        "sectorId": 25,
+        "attachments": []
+      },
+      {
         "code": 294198,
         "dateStamp": "2026-09-01T09:43:10",
         "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) Concerning the Purchase of Treasury Stocks ",
@@ -9571,60 +9635,6 @@
         "isin": "EGB69761S223",
         "companyName": "سندات جلوبال كورب للتوريق ص 2 ب 2 ش ج يناير 2030 ع.م",
         "companyNameArabic": "Global Corp Securitization 2nd Iss 2nd Pro Tra C Jan 2030 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294172,
-        "dateStamp": "2026-08-31T14:06:26",
-        "heading": "Global Corp Securitization 1st Iss 3rd Pro Tranche C May 30 (EGBGLSC1P3CCV) Declares Bond Dividends for Coupon No. (3) ",
-        "content": "Issuer Name : Global Corp Securitization 1st Iss 3rd Pro Tranche C May 30<br />ISIN Code : EGB69761S322<br />Reuters Code : EGBGLSC1P3CCV<br />Interest Type : Floating<br />Coupon Interest : 20.5% <br />Coupon Amount : EGP 1.797260274<br />Coupon Number : 3<br />Coupon Date : 13/08/2026<br />Coupon Payment Date : 16/08/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة ج مايو 2030 (EGBGLSC1P3CCV) يعلن عن توزيع كوبون السند رقم (3)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة ج مايو 2030<br />كود الترقيم الدولي : EGB69761S322<br />كود رويتيرز : EGBGLSC1P3CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.5% <br />قيمة الكوبون : 1.797260274 جم للسند<br />رقم الكوبون : 3<br />تاريخ الإستحقاق : 13/08/2026<br />تاريخ الصرف : 16/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S322",
-        "companyName": "سندات جلوبال كورب للتوريق ص 1 ب 3 ش ج مايو 2030 ع.م",
-        "companyNameArabic": "Global Corp Securitization 1st Iss 3rd Pro Tra C May 30 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294171,
-        "dateStamp": "2026-08-31T14:04:28",
-        "heading": "Global Corp Securitization 1st Iss 3rd Pro Tranche B May 29 (EGBGLSC1P3BCV) Declares Bond Dividends for Coupon No. (3) ",
-        "content": "Issuer Name : Global Corp Securitization 1st Iss 3rd Pro Tranche B May 29<br />ISIN Code : EGB69761S314<br />Reuters Code : EGBGLSC1P3BCV<br />Interest Type : Floating<br />Coupon Interest : 20.4% <br />Coupon Amount : EGP 1.7884931507<br />Coupon Number : 3<br />Coupon Date : 13/08/2026<br />Coupon Payment Date : 16/08/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة ب مايو 2029 (EGBGLSC1P3BCV) يعلن عن توزيع كوبون السند رقم (3)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة ب مايو 2029<br />كود الترقيم الدولي : EGB69761S314<br />كود رويتيرز : EGBGLSC1P3BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.4% <br />قيمة الكوبون : 1.7884931507 جم للسند<br />رقم الكوبون : 3<br />تاريخ الإستحقاق : 13/08/2026<br />تاريخ الصرف : 16/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S314",
-        "companyName": "سندات جلوبال كورب للتوريق ص 1 ب 3 ش ب مايو 2029 ع.م",
-        "companyNameArabic": "Global Corp Securitization 1st Iss 3rd Pro Tra B May 29 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294170,
-        "dateStamp": "2026-08-31T14:04:28",
-        "heading": "Global Corp Securitization 2nd Iss 2nd Pro Tranche B Sep 28 (EGBGLSC2P2BCV) Declares Bond Dividends for Coupon No. (10) ",
-        "content": "Issuer Name : Global Corp Securitization 2nd Iss 2nd Pro Tranche B Sep 28<br />ISIN Code : EGB69761S215<br />Reuters Code : EGBGLSC2P2BCV<br />Interest Type : Floating<br />Coupon Interest : 20.45% <br />Coupon Amount : EGP 1.7123090965<br />Coupon Number : 10<br />Coupon Date : 13/08/2026<br />Coupon Payment Date : 16/08/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الاصدار الثاني البرنامج الثاني شريحة ب سبتمبر 2028 (EGBGLSC2P2BCV) يعلن عن توزيع كوبون السند رقم (10)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الاصدار الثاني البرنامج الثاني شريحة ب سبتمبر 2028<br />كود الترقيم الدولي : EGB69761S215<br />كود رويتيرز : EGBGLSC2P2BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.45% <br />قيمة الكوبون : 1.7123090965 جم للسند<br />رقم الكوبون : 10<br />تاريخ الاستحقاق : 13/08/2026<br />تاريخ الصرف : 16/08/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S215",
-        "companyName": "سندات جلوبال كورب للتوريق ص 2 ب 2 ش ب سبتمبر 2028 ع.م",
-        "companyNameArabic": "Global Corp Securitization 2nd Iss 2nd Pro Tra B Sep 28 VR",
         "sectorId": null,
         "attachments": []
       }
