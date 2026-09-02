@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-02 09:46:13 AM",
+  "lastUpdated": "2026-09-02 10:01:16 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-02T09:46:07"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-02T10:01:10"
   },
   "indices": {
     "EGX30": null,
@@ -24,7 +24,12 @@
         "ytdPercent": 32.5189,
         "date": "2026-09-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-02T09:58:00",
+          "value": 55431.29
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
@@ -37,7 +42,12 @@
         "ytdPercent": 42.665,
         "date": "2026-09-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-02T09:58:00",
+          "value": 6559.41
+        }
+      ]
     },
     "EGX70": {
       "live": {
@@ -50,7 +60,12 @@
         "ytdPercent": 62.4204,
         "date": "2026-09-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-02T09:58:00",
+          "value": 21318.22
+        }
+      ]
     },
     "EGX100": {
       "live": {
@@ -63,7 +78,12 @@
         "ytdPercent": 59.1611,
         "date": "2026-09-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-02T09:58:00",
+          "value": 27735.23
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9263,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 294251,
+        "dateStamp": "2026-09-02T09:57:46",
+        "heading": "Release from Concrete Fashion Group For Commercial& Industrial Investment (CFGH.CA) Regarding the Business Results",
+        "content": "Company Name : Concrete Fashion Group For Commercial& Industrial Investment<br />ISIN Code : EGS672I2C014<br />Reuters Code : CFGH.CA<br />Content : <br />Release from the company regarding the business results for the financial period ending on 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343758_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (2,709 KB)</a>",
+        "headingArabic": "بيان من كونكريت فاشون جروب للاستثمارات التجارية والصناعية (CFGH.CA) بخصوص نتائج الأعمال",
+        "contentArabic": "اسم الشركة : كونكريت فاشون جروب للاستثمارات التجارية والصناعية<br />كود الترقيم الدولي : EGS672I2C014<br />كود رويترز : CFGH.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص نتائج الأعمال عن الفترة المالية المنتهية في 30/06/2026.<br /><br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343758_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (2,709 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS672I2C014",
+        "companyName": "كونكريت فاشون جروب للاستثمارات التجارية والصناعية",
+        "companyNameArabic": "Concrete Fashion Group For Commercial& Industrial Investment",
+        "sectorId": 26,
+        "attachments": []
+      },
+      {
+        "code": 294250,
+        "dateStamp": "2026-09-02T09:53:04",
+        "heading": "Elsaeed Contracting & Real Estate Investment Company SCCD (UEGC.CA) - Release Regarding a Disclosure Form",
+        "content": "Company Name : Elsaeed Contracting & Real Estate Investment Company SCCD<br />ISIN Code : EGS21531C016<br />Reuters Code : UEGC.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343735_1.pdf\" target=\"_blank\">The Release (327 KB)</a>",
+        "headingArabic": "الصعيد العامة للمقاولات و الاستثمار العقارى SCCD (UEGC.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
+        "contentArabic": "اسم الشركة : الصعيد العامة للمقاولات و الاستثمار العقارى SCCD<br />كود الترقيم الدولي : EGS21531C016<br />كود رويترز : UEGC.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343735_1.pdf\" target=\"_blank\">البيان (327 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21531C016",
+        "companyName": "الصعيد العامة للمقاولات والاستثمار العقاري SCCD",
+        "companyNameArabic": "Elsaeed Contracting& Real Estate Investment Company SCCD",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 294249,
+        "dateStamp": "2026-09-02T09:49:57",
+        "heading": "Elsaeed Contracting & Real Estate Investment Company SCCD (UEGC.CA) - Release Regarding a Disclosure Form",
+        "content": "Company Name : Elsaeed Contracting & Real Estate Investment Company SCCD<br />ISIN Code : EGS21531C016<br />Reuters Code : UEGC.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343743_1.pdf\" target=\"_blank\">The Release (340 KB)</a>",
+        "headingArabic": "الصعيد العامة للمقاولات و الاستثمار العقارى SCCD (UEGC.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
+        "contentArabic": "اسم الشركة : الصعيد العامة للمقاولات و الاستثمار العقارى SCCD<br />كود الترقيم الدولي : EGS21531C016<br />كود رويترز : UEGC.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343743_1.pdf\" target=\"_blank\">البيان (340 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21531C016",
+        "companyName": "الصعيد العامة للمقاولات والاستثمار العقاري SCCD",
+        "companyNameArabic": "Elsaeed Contracting& Real Estate Investment Company SCCD",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 294248,
         "dateStamp": "2026-09-02T09:36:02",
         "heading": "East Delta Flour Mills (EDFM.CA) - Decisions of the BoD Meeting ",
@@ -9546,60 +9620,6 @@
         "companyName": "النصر للملابس والمنسوجات - كابو",
         "companyNameArabic": "El Nasr Clothes & Textiles (Kabo)",
         "sectorId": 26,
-        "attachments": []
-      },
-      {
-        "code": 294229,
-        "dateStamp": "2026-09-01T14:07:43",
-        "heading": "Trading of Insiders, Major Shareholders & Their Related Parties on Listed Companies: Trading Session 31/08/2026",
-        "content": "                                                                                                                          <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/63088_1.pdf\" target=\"_blank\">News Attachment in Arabic  (210 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/63088_101.pdf\" target=\"_blank\">News Attachment in English (155 KB)</a>",
-        "headingArabic": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة على الشركات المقيدة: جلسة تداول يوم 31/08/2026",
-        "contentArabic": "تعاملات الداخليين والمساهمين الرئيسيين والمجموعات المرتبطة بهم بالشركات المقيد لها اوراق مالية بجداول البورصة خلال جلسة 31/08/2026<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/63088_1.pdf\" target=\"_blank\">مرفق الإعلان باللغة العربية  (210 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/63088_101.pdf\" target=\"_blank\">مرفق الاعلان باللغة الإنجليزية   (155 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": null,
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294228,
-        "dateStamp": "2026-09-01T14:07:00",
-        "heading": "El Ahram Co. For Printing And Packing (EPPK.CA) - Release Regarding a Disclosure Form",
-        "content": "Company Name : El Ahram Co. For Printing And Packing<br />ISIN Code : EGS360A1C011<br />Reuters Code : EPPK.CA<br />Content : <br />Release regarding the disclosure form in accordance with the provisions of Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343711_1.pdf\" target=\"_blank\">The Release (420 KB)</a>",
-        "headingArabic": "الاهرام للطباعة و التغليف (EPPK.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : الاهرام للطباعة و التغليف<br />كود الترقيم الدولي : EGS360A1C011<br />كود رويترز : EPPK.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343711_1.pdf\" target=\"_blank\">البيان (420 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS360A1C011",
-        "companyName": "الاهرام للطباعة و التغليف",
-        "companyNameArabic": "El Ahram Co. For Printing And Packing",
-        "sectorId": 28,
-        "attachments": []
-      },
-      {
-        "code": 294227,
-        "dateStamp": "2026-09-01T13:11:48",
-        "heading": "Sinai Cement (SCEM.CA) - Board of Directors' Decisions ",
-        "content": "Company Name : Sinai Cement<br />ISIN Code : EGS3C401C014<br />Reuters Code : SCEM.CA<br />Content : <br />The Board of Directors' decisions held on 31/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343708_1.pdf\" target=\"_blank\">The BoD Decisions  (1,172 KB)</a>",
-        "headingArabic": " اسمنت سيناء (SCEM.CA) - قرارات مجلس إدارة الشركة",
-        "contentArabic": "اسم الشركة : اسمنت سيناء<br />كود الترقيم الدولي : EGS3C401C014<br />كود رويترز : SCEM.CA<br />مضمون الاعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 31/08/2026. <br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343708_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (1,172 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3C401C014",
-        "companyName": "اسمنت سيناء",
-        "companyNameArabic": "Sinai Cement",
-        "sectorId": 27,
         "attachments": []
       }
     ],
