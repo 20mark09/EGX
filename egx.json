@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-03 09:46:07 AM",
+  "lastUpdated": "2026-09-03 10:01:20 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-03T09:46:01"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-03T10:01:07"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 55679.72,
-        "close": 55679.72,
+        "change": -3.66,
+        "changePer": -0.00657330891750174,
+        "high": 55714.77,
+        "close": 55676.06,
         "open": 55679.72,
-        "low": 55679.72,
-        "ytdPercent": 33.1128,
+        "low": 55676.06,
+        "ytdPercent": 33.1041,
         "date": "2026-09-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-03T09:58:00",
+          "value": 55679.72
+        },
+        {
+          "time": "2026-09-03T10:00:00",
+          "value": 55714.77
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6566.37,
-        "close": 6566.37,
+        "change": 10.87,
+        "changePer": 0.16554047365591643,
+        "high": 6577.96,
+        "close": 6577.24,
         "open": 6566.37,
         "low": 6566.37,
-        "ytdPercent": 42.8164,
+        "ytdPercent": 43.0528,
         "date": "2026-09-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-03T09:58:00",
+          "value": 6566.37
+        },
+        {
+          "time": "2026-09-03T10:00:00",
+          "value": 6577.92
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 21225.15,
-        "close": 21225.15,
+        "change": 78.92,
+        "changePer": 0.3718230495426416,
+        "high": 21304.07,
+        "close": 21304.07,
         "open": 21225.15,
         "low": 21225.15,
-        "ytdPercent": 61.7114,
+        "ytdPercent": 62.3126,
         "date": "2026-09-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-03T09:58:00",
+          "value": 21225.15
+        },
+        {
+          "time": "2026-09-03T10:00:00",
+          "value": 21300.28
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27744.78,
-        "close": 27744.78,
+        "change": 73.78,
+        "changePer": 0.2659238963149104,
+        "high": 27823.29,
+        "close": 27818.56,
         "open": 27744.78,
         "low": 27744.78,
-        "ytdPercent": 59.2159,
+        "ytdPercent": 59.6393,
         "date": "2026-09-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-03T09:58:00",
+          "value": 27744.78
+        },
+        {
+          "time": "2026-09-03T10:00:00",
+          "value": 27819.76
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 294285,
+        "dateStamp": "2026-09-03T09:53:39",
+        "heading": "Release from Pioneers Properties For Urban Development - PRE Group (PRDC.CA) Regarding the Purchase of Treasury Stocks ",
+        "content": "Company: Pioneers Properties For Urban Development - PRE Group <br />Symbols: EGS21FW1C015<br />Reuters: PRDC.CA<br />Content: <br />Release from the company regarding the purchase of treasury stocks on 02/09/2026 trading session. <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343808_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (287 KB)</a>",
+        "headingArabic": "بيان من بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب (PRDC.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب <br />كود الترقيم الدولي: EGS21FW1C015<br />كود رويترز: PRDC.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 02/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343808_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية  (287 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21FW1C015",
+        "companyName": "بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب",
+        "companyNameArabic": "Pioneers Properties For Urban Development - PRE Group",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 294284,
         "dateStamp": "2026-09-03T09:19:24",
         "heading": "El Obour Real Estate Investment (OBRI.CA) - AGM Minutes (Notarized) ",
@@ -9582,24 +9636,6 @@
         "companyName": "ابن سينا فارما",
         "companyNameArabic": "Ibnsina Pharma",
         "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 294258,
-        "dateStamp": "2026-09-02T10:19:22",
-        "heading": "Global Corp Securitization 2nd Iss 2nd Pro Tranche B Sep 28 (EGBGLSC2P2BCV) Declares Bond Dividends for Coupon No. (11) ",
-        "content": "Issuer Name : Global Corp Securitization 2nd Iss 2nd Pro Tranche B Sep 28<br />ISIN Code : EGB69761S215<br />Reuters Code : EGBGLSC2P2BCV<br />Interest Type : Floating<br />Coupon Interest : 20.45% <br />Coupon Amount : EGP 1.605289778<br />Coupon Number : 11<br />Coupon Date : 14/09/2026<br />Coupon Payment Date : 15/09/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الثاني البرنامج الثاني شريحة ب سبتمبر 2028 (EGBGLSC2P2BCV) يعلن عن توزيع كوبون السند رقم (11)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الثاني البرنامج الثاني شريحة ب سبتمبر 2028<br />كود الترقيم الدولي : EGB69761S215<br />كود رويتيرز : EGBGLSC2P2BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.45% <br />قيمة الكوبون : 1.605289778 جم للسند<br />رقم الكوبون : 11<br />تاريخ الإستحقاق : 14/09/2026<br />تاريخ الصرف : 15/09/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S215",
-        "companyName": "سندات جلوبال كورب للتوريق ص 2 ب 2 ش ب سبتمبر 2028 ع.م",
-        "companyNameArabic": "Global Corp Securitization 2nd Iss 2nd Pro Tra B Sep 28 VR",
-        "sectorId": null,
         "attachments": []
       }
     ],
