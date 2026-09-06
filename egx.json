@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-06 09:45:53 AM",
+  "lastUpdated": "2026-09-06 10:01:15 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-06T09:45:47"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-06T10:01:09"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 56270.32,
-        "close": 56270.32,
+        "change": 131.29,
+        "changePer": 0.23332015883328902,
+        "high": 56401.61,
+        "close": 56401.61,
         "open": 56270.32,
         "low": 56270.32,
-        "ytdPercent": 34.5248,
+        "ytdPercent": 34.8386,
         "date": "2026-09-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-06T09:58:00",
+          "value": 56270.32
+        },
+        {
+          "time": "2026-09-06T10:00:00",
+          "value": 56401.61
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6637.87,
-        "close": 6637.87,
+        "change": 14.45,
+        "changePer": 0.21769031330833535,
+        "high": 6652.32,
+        "close": 6652.32,
         "open": 6637.87,
         "low": 6637.87,
-        "ytdPercent": 44.3715,
+        "ytdPercent": 44.6858,
         "date": "2026-09-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-06T09:58:00",
+          "value": 6637.87
+        },
+        {
+          "time": "2026-09-06T10:00:00",
+          "value": 6652.32
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 21302.67,
-        "close": 21302.67,
+        "change": 125.21,
+        "changePer": 0.587766697789526,
+        "high": 21427.88,
+        "close": 21427.88,
         "open": 21302.67,
         "low": 21302.67,
-        "ytdPercent": 62.302,
+        "ytdPercent": 63.2559,
         "date": "2026-09-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-06T09:58:00",
+          "value": 21302.67
+        },
+        {
+          "time": "2026-09-06T10:00:00",
+          "value": 21427.88
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 27898.74,
-        "close": 27898.74,
+        "change": 146.21,
+        "changePer": 0.5240738470626272,
+        "high": 28044.95,
+        "close": 28044.95,
         "open": 27898.74,
         "low": 27898.74,
-        "ytdPercent": 60.0995,
+        "ytdPercent": 60.9385,
         "date": "2026-09-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-06T09:58:00",
+          "value": 27898.74
+        },
+        {
+          "time": "2026-09-06T10:00:00",
+          "value": 28044.95
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,78 @@
   "news": {
     "disclosure": [
       {
+        "code": 294344,
+        "dateStamp": "2026-09-06T09:55:07",
+        "heading": "Delta Insurance (DEIN.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/06/2026 ",
+        "content": "Company Name: Delta Insurance<br />ISIN Code: EGS63031C016<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/06/2026<br />Net profit: 302,122,796 <br />F/S (Consolidated) Period: From 01/01/2025 to 30/06/2025<br />Net Comparative profit: 461,061,522  <br />Audit Status: Reviewed<br />Source: Delta Insurance<br />Taking minority rights into consideration",
+        "headingArabic": "الدلتا للتأمين (DEIN.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/06/2026 ",
+        "contentArabic": "اسم الشركة: الدلتا للتأمين<br />كود الترقيم الدولي: EGS63031C016<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/06/2026<br />صافي الربح: 302,122,796 <br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 461,061,522 <br />تقرير فحص محدود: مرفق<br />المصدر: الدلتا للتأمين<br />مع الأخذ في الإعتبار حقوق الأقلية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS63031C016",
+        "companyName": "الدلتا للتأمين",
+        "companyNameArabic": "Delta Insurance",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 294342,
+        "dateStamp": "2026-09-06T09:53:11",
+        "heading": "Cleopatra Hospital Company (CLHO.CA) - Minutes of the BoD Meeting ",
+        "content": "Company: Cleopatra Hospital Company<br />Symbols: EGS729J1C018<br />Reuters: CLHO.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343849_1.pdf\" target=\"_blank\">Minutes of the BoD Meeting  (1,332 KB)</a>",
+        "headingArabic": "شركة مستشفي كليوباترا (CLHO.CA) - محضر اجتماع مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: شركة مستشفي كليوباترا<br />كود الترقيم الدولي: EGS729J1C018<br />كود رويترز: CLHO.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343849_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة  (1,332 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS729J1C018",
+        "companyName": "شركة مستشفي كليوباترا",
+        "companyNameArabic": "Cleopatra Hospital Company",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 294341,
+        "dateStamp": "2026-09-06T09:49:59",
+        "heading": "Arab Moltaka Investments Co (AMIA.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Arab Moltaka Investments Co<br />Symbols: EGS67221C019<br />Reuters: AMIA.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343848_1.pdf\" target=\"_blank\">News Attachment 1 (513 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343848_2.pdf\" target=\"_blank\">News Attachment 2 (2,196 KB)</a>",
+        "headingArabic": "الملتقي العربي للاستثمارات (AMIA.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: الملتقي العربي للاستثمارات<br />كود الترقيم الدولي: EGS67221C019<br />كود رويترز: AMIA.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343848_1.pdf\" target=\"_blank\">مرفق الإعلان 1 (513 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343848_2.pdf\" target=\"_blank\">مرفق الإعلان 2 (2,196 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS67221C019",
+        "companyName": "الملتقي العربي للاستثمارات",
+        "companyNameArabic": "Arab Moltaka Investments Co",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 294340,
+        "dateStamp": "2026-09-06T09:46:29",
+        "heading": "Delta Insurance (DEIN.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Delta Insurance<br />Symbols: EGS63031C016<br />Reuters: DEIN.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343847_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (68 KB)</a>",
+        "headingArabic": "الدلتا للتأمين (DEIN.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: الدلتا للتأمين<br />كود الترقيم الدولي: EGS63031C016<br />كود رويترز: DEIN.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343847_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (68 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS63031C016",
+        "companyName": "الدلتا للتأمين",
+        "companyNameArabic": "Delta Insurance",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
         "code": 294339,
         "dateStamp": "2026-09-06T09:43:57",
         "heading": "Delta Insurance (DEIN.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/06/2026 ",
@@ -9528,78 +9636,6 @@
         "companyName": null,
         "companyNameArabic": null,
         "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294322,
-        "dateStamp": "2026-09-03T15:56:12",
-        "heading": "Release from Misr Duty Free Shops (MFSC.CA) Concerning (TCFD) Report ",
-        "content": "Company Name : Misr Duty Free Shops<br />ISIN Code : EGS53051C016<br />Reuters Code : MFSC.CA<br />Content : <br />Release from the company regarding the 2026 Annual Report on Climate-Related Financial Disclosures (TCFD) Practices.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343830_1.pdf\" target=\"_blank\">Release from the Company  (1,509 KB)</a>",
-        "headingArabic": "بيان من مصر للاسواق الحرة (MFSC.CA) بخصوص تقرير (TCFD) ",
-        "contentArabic": "اسم الشركة : مصر للاسواق الحرة<br />كود الترقيم الدولي : EGS53051C016<br />كود رويترز : MFSC.CA<br />مضمون الاعلان : <br />بيان من الشركة بخصوص التقرير السنوى للإفصاح عن ممارسات الإفصاحات المالية المتعلقة بالتغيرات المناخية (TCFD) لسنة 2026. <br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343830_1.pdf\" target=\"_blank\">بيان من الشركة (1,509 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS53051C016",
-        "companyName": "مصر للاسواق الحرة",
-        "companyNameArabic": "Misr Duty Free Shops",
-        "sectorId": 21,
-        "attachments": []
-      },
-      {
-        "code": 294320,
-        "dateStamp": "2026-09-03T15:43:42",
-        "heading": "Al Ahly SUKUK 2nd Iss Mar 2031 (EGAHLSK2CV) Declares Bond Dividends for Coupon No. (11) ",
-        "content": "Issuer Name : Al Ahly SUKUK 2nd Iss Mar 2031<br />ISIN Code : EGB698A1S024<br />Reuters Code : EGAHLSK2CV<br />Interest Type : Floating<br />Coupon Interest : 21.25% <br />Coupon Amount : EGP 1.68519<br />Coupon Number : 11<br />Coupon Date : 14/09/2026<br />Coupon Payment Date : 15/09/2026<br />Notes :  <br />Bond Redemption: EGP 0.56159 ",
-        "headingArabic": "صكوك مضاربة الاهلى للتصكيك الاصدار الثاني مارس 2031 (EGAHLSK2CV) يعلن عن توزيع كوبون السند رقم (11)",
-        "contentArabic": "المصدر : صكوك مضاربة الاهلى للتصكيك الاصدار الثاني مارس 2031<br />كود الترقيم الدولي : EGB698A1S024<br />كود رويتيرز : EGAHLSK2CV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 21.25% <br />قيمة الكوبون : 1.68519 جم للسند<br />رقم الكوبون : 11<br />تاريخ الاستحقاق : 14/09/2026<br />تاريخ الصرف : 15/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 0.56159 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB698A1S024",
-        "companyName": "صكوك مضاربة الاهلى للتصكيك ص 2 مارس 2031 ع.م",
-        "companyNameArabic": "Al Ahly SUKUK 2nd Iss Mar 2031 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294308,
-        "dateStamp": "2026-09-03T14:50:59",
-        "heading": "The Egyptian Modern Education Systems (MOED.CA) - Release Regarding a Disclosure Form ",
-        "content": "Company Name : The Egyptian Modern Education Systems<br />ISIN Code : EGS729F1C012<br />Reuters Code : MOED.CA<br />Content : <br />Release regarding the disclosure form in accordance with the provisions of Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343829_1.pdf\" target=\"_blank\">The Release (46 KB)</a>",
-        "headingArabic": "المصرية لنظم التعليم الحديثة (MOED.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : المصرية لنظم التعليم الحديثة<br />كود الترقيم الدولي : EGS729F1C012<br />كود رويترز : MOED.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343829_1.pdf\" target=\"_blank\">البيان (46 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS729F1C012",
-        "companyName": "المصرية لنظم التعليم الحديثة",
-        "companyNameArabic": "The Egyptian Modern Education Systems",
-        "sectorId": 23,
-        "attachments": []
-      },
-      {
-        "code": 294306,
-        "dateStamp": "2026-09-03T12:04:55",
-        "heading": "QALA For Financial Investments (CCAP.CA) - AGM minutes (before Certification)",
-        "content": "Company Name : QALA For Financial Investments<br />ISIN Code : EGS73541C012 - EGS73541P048<br />Reuters Code : CCAP.CA - CCAPP.CA<br />Content : <br />AGM minutes (before certification).<br />Assembly Date : 26/08/2026<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343803_1.pdf\" target=\"_blank\">AGM Minutes  (237 KB)</a>",
-        "headingArabic": "القلعة للاستثمارات المالية (CCAP.CA  CCAPP.CA) - محضر اجتماع الجمعية العامة العادية (غير موثق)",
-        "contentArabic": "اسم الشركة : القلعة للاستثمارات المالية<br />كود الترقيم الدولي : EGS73541C012 - EGS73541P048<br />كود رويترز : CCAP.CA - CCAPP.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت في 26/08/2026 (غير موثق).<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343803_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (237 KB)</a>",
-        "section": "General Assemblies                                ",
-        "sectionArabic": "الجمعيات العامة                                   ",
-        "secId": 5,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS73541C012",
-        "companyName": "القلعة للاستثمارات المالية",
-        "companyNameArabic": "QALAA For Financial Investments",
-        "sectorId": 24,
         "attachments": []
       }
     ],
