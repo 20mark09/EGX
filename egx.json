@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-07 09:46:03 AM",
+  "lastUpdated": "2026-09-07 10:01:12 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-07T09:45:57"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-07T10:01:04"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 56676.16,
-        "close": 56676.16,
+        "change": 94.46,
+        "changePer": 0.16666619615725553,
+        "high": 56771.79,
+        "close": 56770.62,
         "open": 56676.16,
         "low": 56676.16,
-        "ytdPercent": 35.495,
+        "ytdPercent": 35.7208,
         "date": "2026-09-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-07T09:58:00",
+          "value": 56676.16
+        },
+        {
+          "time": "2026-09-07T10:00:00",
+          "value": 56771.79
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6723.16,
-        "close": 6723.16,
+        "change": 15.76,
+        "changePer": 0.23441357932876802,
+        "high": 6738.98,
+        "close": 6738.92,
         "open": 6723.16,
         "low": 6723.16,
-        "ytdPercent": 46.2265,
+        "ytdPercent": 46.5693,
         "date": "2026-09-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-07T09:58:00",
+          "value": 6723.16
+        },
+        {
+          "time": "2026-09-07T10:00:00",
+          "value": 6738.98
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 21618.27,
-        "close": 21618.27,
+        "change": 74.43,
+        "changePer": 0.34429211958218675,
+        "high": 21696.14,
+        "close": 21692.7,
         "open": 21618.27,
         "low": 21618.27,
-        "ytdPercent": 64.7065,
+        "ytdPercent": 65.2736,
         "date": "2026-09-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-07T09:58:00",
+          "value": 21618.27
+        },
+        {
+          "time": "2026-09-07T10:00:00",
+          "value": 21696.14
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 28213.87,
-        "close": 28213.87,
+        "change": 86.26,
+        "changePer": 0.30573615034024043,
+        "high": 28303.53,
+        "close": 28300.13,
         "open": 28213.87,
         "low": 28213.87,
-        "ytdPercent": 61.9079,
+        "ytdPercent": 62.4029,
         "date": "2026-09-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-07T09:58:00",
+          "value": 28213.87
+        },
+        {
+          "time": "2026-09-07T10:00:00",
+          "value": 28303.53
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 294393,
+        "dateStamp": "2026-09-07T09:55:56",
+        "heading": "Release from Taqa Arabia (TAQA.CA) Regarding the Decisions of the Board of Directors' ",
+        "content": "Company: Taqa Arabia <br />Symbols: EGS490S1C014<br />Reuters: TAQA.CA<br />Content: <br />With reference to the announcement published on the trading screens on 12/08/2026 regarding the decisions of the company's Board of Directors at its meeting held on 11/08/2026, a release was received from the company regarding the notification of the sale of treasury stocks.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343891_1.pdf\" target=\"_blank\">Notification of the Sale of Treasury Stocks (935 KB)</a>",
+        "headingArabic": "بيان من طاقة عربية (TAQA.CA) بخصوص قرارات مجلس إدارة الشركة",
+        "contentArabic": "اسم الشركة: طاقة عربية <br />كود الترقيم الدولي: EGS490S1C014<br />كود رويترز: TAQA.CA<br />مضمون الإعلان :<br />بالإشارة إلي الإعلان المنشور على شاشات التداول بتاريخ 12/08/2026 بخصوص قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 11/08/2026، ورد بيان من الشركة بخصوص إخطار بيع أسهم الخزينة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343891_1.pdf\" target=\"_blank\">إخطار بيع أسهم خزينة (935 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS490S1C014",
+        "companyName": "طاقة عربية",
+        "companyNameArabic": "Taqa Arabia",
+        "sectorId": 17,
+        "attachments": []
+      },
+      {
         "code": 294392,
         "dateStamp": "2026-09-07T09:38:47",
         "heading": " International Agricultural Products (IFAP.CA) Reports its Financial Results (Standalone) for the Period Ending on 30/06/2026 ",
@@ -9581,24 +9635,6 @@
         "isin": "EGS67221C019",
         "companyName": "الملتقي العربي للاستثمارات",
         "companyNameArabic": "Arab Moltaka Investments Co",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 294340,
-        "dateStamp": "2026-09-06T09:46:29",
-        "heading": "Delta Insurance (DEIN.CA) - Decisions of the BoD Meeting ",
-        "content": "Company: Delta Insurance<br />Symbols: EGS63031C016<br />Reuters: DEIN.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343847_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (68 KB)</a>",
-        "headingArabic": "الدلتا للتأمين (DEIN.CA) - قرارات مجلس إدارة الشركة ",
-        "contentArabic": "اسم الشركة: الدلتا للتأمين<br />كود الترقيم الدولي: EGS63031C016<br />كود رويترز: DEIN.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 03/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/343847_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (68 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS63031C016",
-        "companyName": "الدلتا للتأمين",
-        "companyNameArabic": "Delta Insurance",
         "sectorId": 24,
         "attachments": []
       }
