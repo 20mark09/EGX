@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-22 09:46:03 AM",
+  "lastUpdated": "2026-09-22 10:01:26 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-22T09:45:57"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-22T10:01:16"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 54994.31,
-        "close": 54994.31,
+        "change": 107.83,
+        "changePer": 0.19607483028698788,
+        "high": 55104.71,
+        "close": 55102.14,
         "open": 54994.31,
         "low": 54994.31,
-        "ytdPercent": 31.4742,
+        "ytdPercent": 31.732,
         "date": "2026-09-22T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-22T09:58:00",
+          "value": 54994.31
+        },
+        {
+          "time": "2026-09-22T10:00:00",
+          "value": 55104.71
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6605.65,
-        "close": 6605.65,
+        "change": 29.65,
+        "changePer": 0.44885817444157655,
+        "high": 6635.87,
+        "close": 6635.3,
         "open": 6605.65,
         "low": 6605.65,
-        "ytdPercent": 43.6707,
+        "ytdPercent": 44.3156,
         "date": "2026-09-22T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-22T09:58:00",
+          "value": 6605.65
+        },
+        {
+          "time": "2026-09-22T10:00:00",
+          "value": 6633.81
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 20480.58,
-        "close": 20480.58,
+        "change": 70.74,
+        "changePer": 0.3454003744034593,
+        "high": 20551.44,
+        "close": 20551.32,
         "open": 20480.58,
         "low": 20480.58,
-        "ytdPercent": 56.0386,
+        "ytdPercent": 56.5775,
         "date": "2026-09-22T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-22T09:58:00",
+          "value": 20480.58
+        },
+        {
+          "time": "2026-09-22T10:00:00",
+          "value": 20544.86
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 26999.44,
-        "close": 26999.44,
+        "change": 87.38,
+        "changePer": 0.32363634208709513,
+        "high": 27088.61,
+        "close": 27086.82,
         "open": 26999.44,
         "low": 26999.44,
-        "ytdPercent": 54.9387,
+        "ytdPercent": 55.4402,
         "date": "2026-09-22T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-22T09:58:00",
+          "value": 26999.44
+        },
+        {
+          "time": "2026-09-22T10:00:00",
+          "value": 27077.72
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 294950,
+        "dateStamp": "2026-09-22T09:49:20",
+        "heading": "El Nasr Clothes & Textiles (Kabo) (KABO.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: El Nasr Clothes & Textiles (Kabo)<br />Symbols: EGS33061C010<br />Reuters: KABO.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 21/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344479_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (308 KB)</a>",
+        "headingArabic": "النصر للملابس والمنسوجات - كابو (KABO.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: النصر للملابس والمنسوجات - كابو<br />كود الترقيم الدولي: EGS33061C010<br />كود رويترز: KABO.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 21/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344479_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (308 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS33061C010",
+        "companyName": "النصر للملابس والمنسوجات - كابو",
+        "companyNameArabic": "El Nasr Clothes & Textiles (Kabo)",
+        "sectorId": 26,
+        "attachments": []
+      },
+      {
         "code": 294949,
         "dateStamp": "2026-09-22T09:45:39",
         "heading": "First Investment Company And Real Estate Development (FIRE.CA) - AGM Minutes (Notarized) (SMEs Market)",
@@ -9582,24 +9636,6 @@
         "companyName": null,
         "companyNameArabic": null,
         "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 294925,
-        "dateStamp": "2026-09-21T11:40:48",
-        "heading": "South Valley Cement (SVCE.CA) - Board of Directors' Decisions",
-        "content": "Company Name : South Valley Cement<br />ISIN Code : EGS3C351C011<br />Reuters Code : SVCE.CA<br />Content : <br />Board of Directors' decisions held on 20/09/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344435_1.pdf\" target=\"_blank\">Board of Directors' Decisions (25 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344435_2.pdf\" target=\"_blank\">The Audit Committee Meeting Minutes  (63 KB)</a>",
-        "headingArabic": "جنوب الوادى للاسمنت (SVCE.CA) - قرارات مجلس إدارة الشركة",
-        "contentArabic": "اسم الشركة : جنوب الوادى للاسمنت<br />كود الترقيم الدولي : EGS3C351C011<br />كود رويترز : SVCE.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 20/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344435_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (25 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344435_2.pdf\" target=\"_blank\">محضر لجنة المراجعة (63 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3C351C011",
-        "companyName": "جنوب الوادى للاسمنت",
-        "companyNameArabic": "South Valley Cement",
-        "sectorId": 27,
         "attachments": []
       }
     ],
