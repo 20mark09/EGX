@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-23 09:46:02 AM",
+  "lastUpdated": "2026-09-23 10:01:15 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-23T09:45:55"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-23T10:01:07"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 54930.89,
-        "close": 54930.89,
+        "change": 61.59,
+        "changePer": 0.11212270545771241,
+        "high": 55015.67,
+        "close": 54992.48,
         "open": 54930.89,
         "low": 54930.89,
-        "ytdPercent": 31.3226,
+        "ytdPercent": 31.4698,
         "date": "2026-09-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-23T09:58:00",
+          "value": 54930.89
+        },
+        {
+          "time": "2026-09-23T10:00:00",
+          "value": 55015.67
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6650.23,
-        "close": 6650.23,
+        "change": 8.43,
+        "changePer": 0.12676253302517357,
+        "high": 6664.91,
+        "close": 6658.66,
         "open": 6650.23,
         "low": 6650.23,
-        "ytdPercent": 44.6403,
+        "ytdPercent": 44.8237,
         "date": "2026-09-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-23T09:58:00",
+          "value": 6650.23
+        },
+        {
+          "time": "2026-09-23T10:00:00",
+          "value": 6664.91
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 20460.44,
-        "close": 20460.44,
+        "change": 39.2,
+        "changePer": 0.1915892326851231,
+        "high": 20507.84,
+        "close": 20499.64,
         "open": 20460.44,
         "low": 20460.44,
-        "ytdPercent": 55.8851,
+        "ytdPercent": 56.1838,
         "date": "2026-09-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-23T09:58:00",
+          "value": 20460.44
+        },
+        {
+          "time": "2026-09-23T10:00:00",
+          "value": 20507.84
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 26994.7,
-        "close": 26994.7,
+        "change": 42.61,
+        "changePer": 0.15784579936061524,
+        "high": 27044.03,
+        "close": 27037.31,
         "open": 26994.7,
         "low": 26994.7,
-        "ytdPercent": 54.9115,
+        "ytdPercent": 55.1561,
         "date": "2026-09-23T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-23T09:58:00",
+          "value": 26994.7
+        },
+        {
+          "time": "2026-09-23T10:00:00",
+          "value": 27044.03
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 295028,
+        "dateStamp": "2026-09-23T09:59:45",
+        "heading": "Middle Egypt Flour Mills (CEFM.CA) - Company's Reply on the Auditors Reports",
+        "content": "Company: Middle Egypt Flour Mills <br />Symbols: EGS30401C011<br />Reuters: CEFM.CA<br />Content: <br />Company's reply on the Auditors Reports for the financial year ended on 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344496_1.pdf\" target=\"_blank\">Company's Reply on the Auditors Reports (3,439 KB)</a>",
+        "headingArabic": "مطاحن مصر الوسطي (CEFM.CA) - رد الشركة على تقريري السادة مراقبي الحسابات ",
+        "contentArabic": "اسم الشركة: مطاحن مصر الوسطي <br />كود الترقيم الدولي: EGS30401C011<br />كود رويترز: CEFM.CA<br />مضمون الإعلان :<br />رد الشركة على تقريري السادة مراقبي الحسابات عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344496_1.pdf\" target=\"_blank\">رد الشركة على تقريري السادة مراقبي الحسابات (3,439 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30401C011",
+        "companyName": "مطاحن مصر الوسطي",
+        "companyNameArabic": "Middle Egypt Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 295027,
+        "dateStamp": "2026-09-23T09:54:12",
+        "heading": "Release from National Printing (NAPR.CA) Concerning the Stock Price ",
+        "content": "Company: National Printing <br />Symbols: EGS370O1C013<br />Reuters: NAPR.CA<br />Content: <br />Release from the company stating that it has not any information justifying this movement in the stock price.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344569_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (122 KB)</a>",
+        "headingArabic": "بيان من الوطنية للطباعة (NAPR.CA) بخصوص سعر السهم ",
+        "contentArabic": "العنوان : الوطنية للطباعة (NAPR.CA) <br />اسم الشركة: الوطنية للطباعة <br />كود الترقيم الدولي: EGS370O1C013<br />كود رويترز: NAPR.CA<br />مضمون الإعلان :<br />بيان من الشركة تفيد أنه لا يوجد لديها أي معلومات تبرر هذا التحرك لسعر السهم.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344569_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (122 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS370O1C013",
+        "companyName": "الوطنية للطباعة",
+        "companyNameArabic": "National Printing",
+        "sectorId": 28,
+        "attachments": []
+      },
+      {
+        "code": 295026,
+        "dateStamp": "2026-09-23T09:47:10",
+        "heading": "Alexandria Flour Mills (AFMC.CA) Reports its Financial Results for the Period Ending on 30/06/2026 ",
+        "content": "Company Name: Alexandria Flour Mills<br />ISIN Code: EGS30471C014<br />Currency: Egyptian Pound<br />F/S  Period: From 01/07/2025 to 30/06/2026<br />Net profit: 44,414 (value in thousands)<br />F/S  Period: From 01/07/2024 to 30/06/2025<br />Net Comparative profit: 54,165 (value in thousands) <br />Audit Status: Audited<br />Source: Alexandria Flour Mills<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344568_1.pdf\" target=\"_blank\">The Annual BoD Report  (2,018 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344568_3.pdf\" target=\"_blank\">The ESG Report (1,093 KB)</a>",
+        "headingArabic": "مطاحن ومخابز الاسكندرية (AFMC.CA) تعلن نتائج أعمالها عن الفترة المنتهية في 30/06/2026 ",
+        "contentArabic": "اسم الشركة: مطاحن ومخابز الاسكندرية<br />كود الترقيم الدولي: EGS30471C014<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/07/2025 إلى 30/06/2026<br />صافي الربح: 44,414 (القيمة بالألف)<br />أرقام المقارنة  عن الفترة: من 01/07/2024 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 54,165 (القيمة بالألف)<br />تقرير مراقب الحسابات: مرفق<br />المصدر: مطاحن ومخابز الاسكندرية<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344568_1.pdf\" target=\"_blank\">تقرير مجلس الإدارة السنوي (2,018 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344568_3.pdf\" target=\"_blank\">تقرير الاستدامة ESG (1,093 KB)</a>",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30471C014",
+        "companyName": "مطاحن ومخابز الاسكندرية",
+        "companyNameArabic": "Alexandria Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 295025,
         "dateStamp": "2026-09-23T09:43:33",
         "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) Concerning the Purchase of Treasury Stocks ",
@@ -9545,60 +9635,6 @@
         "isin": "EGB69611S2K2",
         "companyName": "سندات كابيتال للتوريق ص 4 ب 7 ش ج مارس 2027 ع.ث",
         "companyNameArabic": "Capital For Securitization 4th Iss 7th Pro Tra C Mar 27 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295007,
-        "dateStamp": "2026-09-22T15:38:48",
-        "heading": "Capital For Securitization The Fourth Issuance - Seventh Program Tranche B September 2026 F.R (EGBCPSC4P7BCF) Declares Bond Dividends for Coupon No. (12) ",
-        "content": "Issuer Name : Capital For Securitization The Fourth Issuance - Seventh Program Tranche B September 2026 F.R<br />ISIN Code : EGB69611S2J4<br />Reuters Code : EGBCPSC4P7BCF<br />Interest Type : Fixed<br />Coupon Interest : 22.15% <br />Coupon Amount : EGP 0.309493151<br />Coupon Number : 12<br />Coupon Date : 29/09/2026<br />Coupon Payment Date : 30/09/2026<br />Notes :  <br />Bond Redemption: EGP 17 ",
-        "headingArabic": "كابيتال للتوريق الاصدار الرابع  برنامج سابع الشريحة ب سبتمبر 2026 (EGBCPSC4P7BCF) يعلن عن توزيع كوبون السند رقم (12)",
-        "contentArabic": "المصدر : كابيتال للتوريق الاصدار الرابع  برنامج سابع الشريحة ب سبتمبر 2026<br />كود الترقيم الدولي : EGB69611S2J4<br />كود رويتيرز : EGBCPSC4P7BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 22.15% <br />قيمة الكوبون : 0.309493151 جم للسند<br />رقم الكوبون : 12<br />تاريخ الاستحقاق : 29/09/2026<br />تاريخ الصرف : 30/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 17 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S2J4",
-        "companyName": "سندات كابيتال للتوريق ص 4 ب 7 ش ب سبتمبر 2026 ع.ث",
-        "companyNameArabic": "Capital For Securitization 4th Iss 7th Pro Tra B Sep 26 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295005,
-        "dateStamp": "2026-09-22T15:37:07",
-        "heading": "Capital For Securitization 7th Issu Tranche C Dec 2026 (CAPSEC07C=CA) Declares Bond Dividends for Coupon No. (45) ",
-        "content": "Issuer Name : Capital For Securitization 7th Issu Tranche C Dec 2026<br />ISIN Code : EGB69611S345<br />Reuters Code : CAPSEC07C=CA<br />Interest Type : Fixed<br />Coupon Interest : 18.5% <br />Coupon Amount : EGP 0.5569182285<br />Coupon Number : 45<br />Coupon Date : 29/09/2026<br />Coupon Payment Date : 30/09/2026<br />Notes :  <br />Bond Redemption: EGP 4.7496790757 ",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار السابع الشريحة ج ديسمبر 2026 (CAPSEC07C=CA) يعلن عن توزيع كوبون السند رقم (45)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار السابع الشريحة ج ديسمبر 2026<br />كود الترقيم الدولي : EGB69611S345<br />كود رويتيرز : CAPSEC07C=CA<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18.5% <br />قيمة الكوبون : 0.5569182285 جم للسند<br />رقم الكوبون : 45<br />تاريخ الاستحقاق : 29/09/2026<br />تاريخ الصرف : 30/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 4.7496790757 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S345",
-        "companyName": "سندات كابيتال للتوريق الاصدار السابع الشريحة ج ديسمبر 2026",
-        "companyNameArabic": "Capital For Securitization 7th Issu Tran C Dec 2026",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295004,
-        "dateStamp": "2026-09-22T15:34:56",
-        "heading": "Capital For Securitization 5th Iss 7th Pro Tranche B Sep 27 FR (EGBCPSC5P7BCF) Declares Bond Dividends for Coupon No. (5) ",
-        "content": "Issuer Name : Capital For Securitization 5th Iss 7th Pro Tranche B Sep 27 FR<br />ISIN Code : EGB69611S4A9<br />Reuters Code : EGBCPSC5P7BCF<br />Interest Type : Fixed<br />Coupon Interest : 18.5% <br />Coupon Amount : EGP 1.5205479446<br />Coupon Number : 5<br />Coupon Date : 29/09/2026<br />Coupon Payment Date : 30/09/2026<br />",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الخامس البرنامج السابع شريحة ب سبتمبر 2027 (EGBCPSC5P7BCF) يعلن عن توزيع كوبون السند رقم (5)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الخامس البرنامج السابع شريحة ب سبتمبر 2027<br />كود الترقيم الدولي : EGB69611S4A9<br />كود رويتيرز : EGBCPSC5P7BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18.5% <br />قيمة الكوبون : 1.5205479446 جم للسند<br />رقم الكوبون : 5<br />تاريخ الاستحقاق : 29/09/2026<br />تاريخ الصرف : 30/09/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S4A9",
-        "companyName": "سندات كابيتال للتوريق ص 5 ب 7 ش ب سبتمبر 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 5th Iss 7th Pro Tra B Sep 27 FR",
         "sectorId": null,
         "attachments": []
       }
