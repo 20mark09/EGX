@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-24 09:46:03 AM",
+  "lastUpdated": "2026-09-24 10:01:16 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-24T09:45:55"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-24T10:01:11"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 54224.93,
-        "close": 54224.93,
+        "change": 51.75,
+        "changePer": 0.09543580784705485,
+        "high": 54283.28,
+        "close": 54276.68,
         "open": 54224.93,
         "low": 54224.93,
-        "ytdPercent": 29.6349,
+        "ytdPercent": 29.7586,
         "date": "2026-09-24T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-24T09:58:00",
+          "value": 54224.93
+        },
+        {
+          "time": "2026-09-24T10:00:00",
+          "value": 54283.28
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6598.53,
-        "close": 6598.53,
+        "change": 4.98,
+        "changePer": 0.07547135498360999,
+        "high": 6605.99,
+        "close": 6603.51,
         "open": 6598.53,
         "low": 6598.53,
-        "ytdPercent": 43.5159,
+        "ytdPercent": 43.6242,
         "date": "2026-09-24T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-24T09:58:00",
+          "value": 6598.53
+        },
+        {
+          "time": "2026-09-24T10:00:00",
+          "value": 6605.99
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 20222.74,
-        "close": 20222.74,
+        "change": -15.73,
+        "changePer": -0.07778372268050719,
+        "high": 20225.37,
+        "close": 20207.01,
         "open": 20222.74,
-        "low": 20222.74,
-        "ytdPercent": 54.0741,
+        "low": 20205.94,
+        "ytdPercent": 53.9543,
         "date": "2026-09-24T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-24T09:58:00",
+          "value": 20222.74
+        },
+        {
+          "time": "2026-09-24T10:00:00",
+          "value": 20225.37
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 26686.9,
-        "close": 26686.9,
+        "change": -7.78,
+        "changePer": -0.02915288025210871,
+        "high": 26697.65,
+        "close": 26679.12,
         "open": 26686.9,
-        "low": 26686.9,
-        "ytdPercent": 53.1452,
+        "low": 26677.91,
+        "ytdPercent": 53.1006,
         "date": "2026-09-24T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-24T09:58:00",
+          "value": 26686.9
+        },
+        {
+          "time": "2026-09-24T10:00:00",
+          "value": 26697.65
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,114 @@
   "news": {
     "disclosure": [
       {
+        "code": 295103,
+        "dateStamp": "2026-09-24T10:01:12",
+        "heading": "Al Ahly Securitization 3rd Iss 6th Pro Tranche C Mar 2028 VR (EGBAHSC3P6CCV) Declares Bond Dividends for Coupon No. (2) ",
+        "content": "Issuer Name : Al Ahly Securitization 3rd Iss 6th Pro Tranche C Mar 2028 VR<br />ISIN Code : EGB69801S532<br />Reuters Code : EGBAHSC3P6CCV<br />Interest Type : Floating<br />Coupon Interest : 20.5% <br />Coupon Amount : EGP 1.68493<br />Coupon Number : 2<br />Coupon Date : 29/09/2026<br />Coupon Payment Date : 30/09/2026",
+        "headingArabic": "سندات الاهلى للتوريق الاصدار الثالث برنامج سادس شريحة  ج مارس 2028 (EGBAHSC3P6CCV) يعلن عن توزيع كوبون السند رقم (2)",
+        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الثالث برنامج سادس شريحة  ج مارس 2028<br />كود الترقيم الدولي : EGB69801S532<br />كود رويتيرز : EGBAHSC3P6CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.5% <br />قيمة الكوبون : 1.68493 جم للسند<br />رقم الكوبون : 2<br />تاريخ الاستحقاق : 29/09/2026<br />تاريخ الصرف : 30/09/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69801S532",
+        "companyName": "سندات الاهلى للتوريق ص 3 ب 6 ش ج مارس 2028 ع.م",
+        "companyNameArabic": "Al Ahly Securitization 3rd Iss 6th Pro Tra C Mar 2028 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 295102,
+        "dateStamp": "2026-09-24T09:59:21",
+        "heading": "QALA For Financial Investments (CCAP.CA - CCAPP.CA) Reports 3 Months Standalone Results",
+        "content": "Company Name : QALA For Financial Investments<br />ISIN Code    : EGS73541C012 - EGS73541P048<br />Currency     : EGP<br />F/S Standalone Period : From 01/01/2026 To 31/03/2026<br />Net Loss   : 1,125,591 Value In Thousand<br />F/S Standalone Period : From 01/01/2025 To 31/03/2025<br />Net Comparative Loss   : 434,865 Value In Thousand<br />Audit Status : Reviewed<br />Source : QALA For Financial Investments<br />",
+        "headingArabic": "القلعة للاستثمارات المالية (CCAP.CA - CCAPP.CA) تعلن نتائج أعمالها غير المجمعة عن 3 أشهر",
+        "contentArabic": "اسم الشركة       : القلعة للاستثمارات المالية<br />كود الترقيم الدولي : EGS73541C012 - EGS73541P048<br />العملة           : جنيه مصري<br />القوائم المالية غير المجمعة عن الفترة :من 01/01/2026 الى 31/03/2026<br />صافي الخسارة   : 1,125,591 القيمة بالالف <br />ارقام المقارنة غير المجمعة عن الفترة  : من 01/01/2025 الى 31/03/2025<br />صافي الخسارة لفترة المقارنة   : 434,865 القيمة بالالف <br />تقرير الفحص المحدود : مرفق<br />المصدر : القلعة للاستثمارات المالية<br />",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS73541C012",
+        "companyName": "القلعة للاستثمارات المالية",
+        "companyNameArabic": "QALAA For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 295100,
+        "dateStamp": "2026-09-24T09:58:38",
+        "heading": "Al Ahly Securitization 3rd Iss 6th Pro Tranche B Jun 2027 VR (EGBAHSC3P6BCV) Declares Bond Dividends for Coupon No. (2) ",
+        "content": "Issuer Name : Al Ahly Securitization 3rd Iss 6th Pro Tranche B Jun 2027 VR<br />ISIN Code : EGB69801S524<br />Reuters Code : EGBAHSC3P6BCV<br />Interest Type : Floating<br />Coupon Interest : 20.25% <br />Coupon Amount : EGP 1.12224<br />Coupon Number : 2<br />Coupon Date : 29/09/2026<br />Coupon Payment Date : 30/09/2026",
+        "headingArabic": "سندات الاهلى للتوريق الاصدار الثالث برنامج سادس شريحة ب يونيو 2027 (EGBAHSC3P6BCV) يعلن عن توزيع كوبون السند رقم (2)",
+        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الثالث برنامج سادس شريحة ب يونيو 2027<br />كود الترقيم الدولي : EGB69801S524<br />كود رويتيرز : EGBAHSC3P6BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.25% <br />قيمة الكوبون : 1.12224 جم للسند<br />رقم الكوبون : 2<br />تاريخ الاستحقاق : 29/09/2026<br />تاريخ الصرف : 30/09/2026<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69801S524",
+        "companyName": "سندات الاهلى للتوريق ص 3 ب 6 ش ب يونيو 2027 ع.م",
+        "companyNameArabic": "Al Ahly Securitization 3rd Iss 6th Pro Tra B Jun 2027 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 295099,
+        "dateStamp": "2026-09-24T09:57:12",
+        "heading": "Al Ahly Securitization 3rd Iss 6th Pro Tranche A Dec 2026 VR (EGBAHSC3P6ACV) Declares Bond Dividends for Coupon No. (2) ",
+        "content": "Issuer Name : Al Ahly Securitization 3rd Iss 6th Pro Tranche A Dec 2026 VR<br />ISIN Code : EGB69801S516<br />Reuters Code : EGBAHSC3P6ACV<br />Interest Type : Floating<br />Coupon Interest : 20.15% <br />Coupon Amount : EGP 0.86374<br />Coupon Number : 2<br />Coupon Date : 29/09/2026<br />Coupon Payment Date : 30/09/2026<br />Notes :  <br />Bond Redemption: EGP 22.72727 <br />",
+        "headingArabic": "سندات الاهلى للتوريق الاصدار الثالث برنامج سادس شريحة أ ديسمبر 2026 (EGBAHSC3P6ACV) يعلن عن توزيع كوبون السند رقم (2)",
+        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الثالث برنامج سادس شريحة أ ديسمبر 2026<br />كود الترقيم الدولي : EGB69801S516<br />كود رويتيرز : EGBAHSC3P6ACV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.15% <br />قيمة الكوبون : 0.86374 جم للسند<br />رقم الكوبون : 2<br />تاريخ الاستحقاق : 29/09/2026<br />تاريخ الصرف : 30/09/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 22.72727 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69801S516",
+        "companyName": "سندات الاهلى للتوريق ص 3 ب 6 ش أ ديسمبر 2026 ع.م",
+        "companyNameArabic": "Al Ahly Securitization 3rd Iss 6th Pro Tra A Dec 2026 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 295098,
+        "dateStamp": "2026-09-24T09:55:01",
+        "heading": "Delta For Printing & Packaging (DTPP.CA) - EGM Minutes (Notarized) ",
+        "content": "Company: Delta For Printing & Packaging<br />Symbols: EGS370W1C013<br />Reuters: DTPP.CA<br />Content: <br />Notarized minutes of the EGM held on 12/08/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344616_1.pdf\" target=\"_blank\">EGM Minutes (Notarized)  (4,945 KB)</a>",
+        "headingArabic": "دلتا للطباعة والتغليف (DTPP.CA) - محضر اجتماع الجمعية العامة غير العادية (موثق) ",
+        "contentArabic": "اسم الشركة: دلتا للطباعة والتغليف<br />كود الترقيم الدولي: EGS370W1C013<br />كود رويترز: DTPP.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة غير العادية التي انعقدت يوم 12/08/2026 (موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344616_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة غير العادية (موثق) (4,945 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS370W1C013",
+        "companyName": "دلتا للطباعة والتغليف",
+        "companyNameArabic": "Delta For Printing & Packaging",
+        "sectorId": 8,
+        "attachments": []
+      },
+      {
+        "code": 295097,
+        "dateStamp": "2026-09-24T09:50:37",
+        "heading": "Cairo Poultry (POUL.CA) - AGM Invitation ",
+        "content": "Company: Cairo Poultry<br />Symbols: EGS02051C018<br />Reuters: POUL.CA<br />Content: <br />Cairo Poultry invites its stakeholders to attend the AGM on 18/10/2026 at 03:00 PM.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344612_1.pdf\" target=\"_blank\">Release from the Company (414 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344612_2.pdf\" target=\"_blank\">Explanatory Release (276 KB)</a>",
+        "headingArabic": "القاهرة للدواجن (POUL.CA) - دعوة الجمعية العامة العادية ",
+        "contentArabic": "اسم الشركة: القاهرة للدواجن<br />كود الترقيم الدولي: EGS02051C018<br />كود رويترز: POUL.CA<br />مضمون الإعلان : <br />تعلن شركة القاهرة للدواجن عن دعوة الجمعية العامة العادية المقرر انعقادها بتاريخ 18/10/2026 في تمام الساعة 03:00 مساءً.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344612_1.pdf\" target=\"_blank\">بيان من الشركة (414 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344612_2.pdf\" target=\"_blank\">بيان توضيحي (276 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS02051C018",
+        "companyName": "القاهرة للدواجن",
+        "companyNameArabic": "Cairo Poultry",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 295096,
         "dateStamp": "2026-09-24T09:38:38",
         "heading": "Release from Northern Upper Egypt Development & Agricultural Production (NEDA.CA) Regarding the Investor Relations Officer ",
@@ -9492,114 +9636,6 @@
         "companyName": "الاهرام للطباعة و التغليف",
         "companyNameArabic": "El Ahram Co. For Printing And Packing",
         "sectorId": 28,
-        "attachments": []
-      },
-      {
-        "code": 295082,
-        "dateStamp": "2026-09-23T14:36:43",
-        "heading": "A.T. Securitization 4th Iss Tranche C Jan 2028 V R (EGALTW04C=CA) Declares Bond Dividends for Coupon No. (37) ",
-        "content": "Issuer Name : A.T. Securitization 4th Iss Tranche C Jan 2028 V R<br />ISIN Code : EGB695R1S127<br />Reuters Code : EGALTW04C=CA<br />Interest Type : Floating<br />Coupon Interest : 20.55% <br />Coupon Amount : EGP 1.3792873683<br />Coupon Number : 37<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026<br />Notes :  <br />Bond Redemption: EGP 3.4907872697 ",
-        "headingArabic": "سندات التوفيق للتوريق الاصدار الرابع  شريحة ج يناير 2028 (EGALTW04C=CA) يعلن عن توزيع كوبون السند رقم (37)",
-        "contentArabic": "المصدر : سندات التوفيق للتوريق الاصدار الرابع  شريحة ج يناير 2028<br />كود الترقيم الدولي : EGB695R1S127<br />كود رويتيرز : EGALTW04C=CA<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.55% <br />قيمة الكوبون : 1.3792873683 جم للسند<br />رقم الكوبون : 37<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 3.4907872697 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB695R1S127",
-        "companyName": "سندات التوفيق للتوريق ص 4 ش ج يناير 2028 ع م",
-        "companyNameArabic": "A.T. Securitization 4th Iss Tran C Jan 2028 V R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295081,
-        "dateStamp": "2026-09-23T14:34:34",
-        "heading": "A.T. Securitization 5th Issuance Tranche A January 2027 (EGBATSC5ACV) Declares Bond Dividends for Coupon No. (20) ",
-        "content": "Issuer Name : A.T. Securitization 5th Issuance Tranche A January 2027<br />ISIN Code : EGB695R1S135<br />Reuters Code : EGBATSC5ACV<br />Interest Type : Floating<br />Coupon Interest : 20.45% <br />Coupon Amount : EGP 0.3903918668<br />Coupon Number : 20<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026<br />Notes :  <br />Bond Redemption: EGP 8.3816425121 ",
-        "headingArabic": "سندات التوفيق للتوريق الاصدار الخامس الشريحة أ يناير 2027 (EGBATSC5ACV) يعلن عن توزيع كوبون السند رقم (20)",
-        "contentArabic": "المصدر : سندات التوفيق للتوريق الاصدار الخامس الشريحة أ يناير 2027<br />كود الترقيم الدولي : EGB695R1S135<br />كود رويتيرز : EGBATSC5ACV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.45% <br />قيمة الكوبون : 0.3903918668 جم للسند<br />رقم الكوبون : 20<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 8.3816425121 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB695R1S135",
-        "companyName": "سندات التوفيق للتوريق ص 5 ش أ يناير 2027 ع.م",
-        "companyNameArabic": "A.T. Securitization 5th Issuance Tranche A January 2027 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295080,
-        "dateStamp": "2026-09-23T14:32:46",
-        "heading": "A.T. Securitization 5th Issuance Tranche B January 2028 VR (EGBATSC5BCV) Declares Bond Dividends for Coupon No. (20) ",
-        "content": "Issuer Name : A.T. Securitization 5th Issuance Tranche B January 2028 VR<br />ISIN Code : EGB695R1S143<br />Reuters Code : EGBATSC5BCV<br />Interest Type : Floating<br />Coupon Interest : 20.55% <br />Coupon Amount : EGP 1.3232950384<br />Coupon Number : 20<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026",
-        "headingArabic": "سندات التوفيق للتوريق الاصدار الخامس الشريحة ب يناير 2028 (EGBATSC5BCV) يعلن عن توزيع كوبون السند رقم (20)",
-        "contentArabic": "المصدر : سندات التوفيق للتوريق الاصدار الخامس الشريحة ب يناير 2028<br />كود الترقيم الدولي : EGB695R1S143<br />كود رويتيرز : EGBATSC5BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.55% <br />قيمة الكوبون : 1.3232950384 جم للسند<br />رقم الكوبون : 20<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB695R1S143",
-        "companyName": "سندات التوفيق للتوريق ص 5 ش ب يناير 2028 ع.م",
-        "companyNameArabic": "A.T. Securitization 5th Issuance Tranche B January 2028 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295079,
-        "dateStamp": "2026-09-23T14:28:57",
-        "heading": "Release from El Ahram Co. For Printing And Packing (EPPK.CA) Concerning the Lawsuit ",
-        "content": "Company Name : El Ahram Co. For Printing And Packing<br />ISIN Code : EGS360A1C011<br />Reuters Code : EPPK.CA<br />Content : <br />Release from the company concerning the lawsuit no. 23 for year 2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344582_1.pdf\" target=\"_blank\">Release from the Company (130 KB)</a>",
-        "headingArabic": "بيان من الاهرام للطباعة و التغليف (EPPK.CA) بخصوص دعوى قضائية",
-        "contentArabic": "اسم الشركة : الاهرام للطباعة و التغليف<br />كود الترقيم الدولي : EGS360A1C011<br />كود رويترز : EPPK.CA<br />مضمون الإعلان : <br />بيان من الشركة تفيد فيه أن الشركة قد قامت برفع دعوى بطلان اجراءات البيع بالمزاد العلني الذي تم يوم 29/08/2026 وقيدت الدعوى برقم 23 لسنة 2026 منازعة تنفيذ محكمة الاسكندرية الاقتصادية ومحدد لها جلسة 28/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344582_1.pdf\" target=\"_blank\">بيان من الشركة (130 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS360A1C011",
-        "companyName": "الاهرام للطباعة و التغليف",
-        "companyNameArabic": "El Ahram Co. For Printing And Packing",
-        "sectorId": 28,
-        "attachments": []
-      },
-      {
-        "code": 295078,
-        "dateStamp": "2026-09-23T14:21:28",
-        "heading": "Iron And Steel for Mines and Quarries (ISMQ.CA) Reports Year Ended on 30/06/2026 Results",
-        "content": "Company Name : Iron And Steel for Mines and Quarries<br />ISIN Code    : EGS102S1C014<br />Currency     : EGP<br />F/S Period : From 01/07/2025 To 30/06/2026<br />Net Profit   : 400,198,934<br />F/S Period: From 01/07/2024 To 30/06/2025<br />Net Comparative Profit   : 697,990,071<br />Audit Status : Audited<br />Source : Iron And Steel for Mines and Quarries<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344579_1.pdf\" target=\"_blank\">The Corporates Governance Report (6,111 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344579_2.pdf\" target=\"_blank\">The BoD Report  (634 KB)</a>",
-        "headingArabic": "الحديد والصلب للمناجم والمحاجر (ISMQ.CA) تعلن نتائج أعمالها عن السنة المالية المنتهية في 30/06/2026",
-        "contentArabic": "اسم الشركة       : الحديد والصلب للمناجم والمحاجر<br />كود الترقيم الدولي : EGS102S1C014<br />العملة           : جنيه مصري<br />القوائم المالية عن الفترة :من 01/07/2025 الى 30/06/2026<br />صافي الربح   : 400,198,934 <br />ارقام المقارنة عن الفترة  : من 01/07/2024 الى 30/06/2025<br />صافي الربح لفترة المقارنة   : 697,990,071 <br />تقرير مراقب الحسابات : مرفق<br />المصدر : الحديد والصلب للمناجم والمحاجر<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344579_1.pdf\" target=\"_blank\">تقرير الحوكمة (6,111 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344579_2.pdf\" target=\"_blank\">تقرير مجلس الإدارة (634 KB)</a>",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS102S1C014",
-        "companyName": "الحديد والصلب للمناجم والمحاجر",
-        "companyNameArabic": "Iron And Steel for Mines and Quarries",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 295077,
-        "dateStamp": "2026-09-23T14:20:23",
-        "heading": "Fitness Prime (FTNS.CA) - Listing Committee Decision (SMEs Market)",
-        "content": "Company Name : Fitness Prime<br />ISIN Code : EGS774M1C017<br />Reuters Code : FTNS.CA<br />Content : <br />With reference to the provisions of Article (46) of the Listing Rules and Article (64) of the executive regulations, related to preparing and providing EGX with the quarterly financial statements for the financial period ending on 30/06/2026.<br />The Listing Committee held on 22/09/2026 decided to impose an EGP 20000 penalty on the company due to the violation of Article (46) of the Listing Rules. Grant the company a period of 15 days from the end of the granted period for the decision of the Listing Committee held on 22/09/2026 to provide EGX with the financial statements for the financial year ending on 30/06/2026. In light of the provisions of Article (64) of the executive regulations.",
-        "headingArabic": "فتنس برايم للاندية الصحية (FTNS.CA) قرار لجنة القيد (سوق الشركات الصغيرة والمتوسطة)",
-        "contentArabic": "اسم الشركة : فتنس برايم للاندية الصحية<br />كود الترقيم الدولي : EGS774M1C017<br />كود رويترز : FTNS.CA<br />مضمون الإعلان : <br />بالإشارة إلى أحكام المادة (46) من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية والمادة (64) من الإجراءات التنفيذية لقواعد قيد وشطب الأوراق المالية والخاصة بإعداد وبموافاة البورصة المصرية بالقوائم المالية المنفردة ربع السنوية عن الفترة المالية المنتهية في  30/06/2026. <br />قررت لجنة القيد بجلستها المنعقدة بتاريخ 22/09/2026 توقيع التزام مالي قدره 20000 جنيه مصري على الشركة وذلك لعدم التزام الشركة بأحكام المادة (46) من قواعد قيد وشطب الأوراق المالية و طبقًا لعقد تنظيم قيد الأوراق المالية بجداول البورصة المصرية و المبرم مع الشركة، على أن تقوم الشركة بسداد الالتزام المالي خلال 15 يوم من تاريخ إخطار الشركة بقرار لجنة القيد وعلى أن يعاد عرض موقف الشركة على لجنة القيد في حالة عدم الالتزام بنهاية المهلة الممنوحة للشركة. منح الشركة مهلة 15 يوم من تاريخ إنتهاء المهلة الممنوحة بقرار لجنة القيد بجلستها المنعقدة بتاريخ 07/09/2026 لموافاة البورصة المصرية بالقوائم المالية ربع السنوية عن الفترة المالية المنتهية في 30/06/2026. وذلك في ضوء أحكام المادة (64) من الإجراءات التنفيذية لقواعد قيد وشطب الأوراق المالية.",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS774M1C017",
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
         "attachments": []
       }
     ],
