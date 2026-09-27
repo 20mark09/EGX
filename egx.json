@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-27 09:46:01 AM",
+  "lastUpdated": "2026-09-27 10:01:15 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-27T09:45:53"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-27T10:01:10"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 53776.69,
-        "close": 53776.69,
+        "change": 322.04,
+        "changePer": 0.5988468237818282,
+        "high": 54098.73,
+        "close": 54098.73,
         "open": 53776.69,
         "low": 53776.69,
-        "ytdPercent": 28.5633,
+        "ytdPercent": 29.3332,
         "date": "2026-09-27T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-27T09:58:00",
+          "value": 53776.69
+        },
+        {
+          "time": "2026-09-27T10:00:00",
+          "value": 54092.59
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6510.64,
-        "close": 6510.64,
+        "change": 28.76,
+        "changePer": 0.4417384466043277,
+        "high": 6539.4,
+        "close": 6539.4,
         "open": 6510.64,
         "low": 6510.64,
-        "ytdPercent": 41.6043,
+        "ytdPercent": 42.2298,
         "date": "2026-09-27T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-27T09:58:00",
+          "value": 6510.64
+        },
+        {
+          "time": "2026-09-27T10:00:00",
+          "value": 6537.72
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 19834.95,
-        "close": 19834.95,
+        "change": 153.34,
+        "changePer": 0.7730798413910799,
+        "high": 19988.29,
+        "close": 19988.29,
         "open": 19834.95,
         "low": 19834.95,
-        "ytdPercent": 51.1196,
+        "ytdPercent": 52.2879,
         "date": "2026-09-27T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-27T09:58:00",
+          "value": 19834.95
+        },
+        {
+          "time": "2026-09-27T10:00:00",
+          "value": 19987.79
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 26232.99,
-        "close": 26232.99,
+        "change": 166.64,
+        "changePer": 0.635230677097807,
+        "high": 26399.63,
+        "close": 26399.63,
         "open": 26232.99,
         "low": 26232.99,
-        "ytdPercent": 50.5404,
+        "ytdPercent": 51.4967,
         "date": "2026-09-27T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-27T09:58:00",
+          "value": 26232.99
+        },
+        {
+          "time": "2026-09-27T10:00:00",
+          "value": 26396.92
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 295184,
+        "dateStamp": "2026-09-27T09:59:54",
+        "heading": "Arab Pharmaceuticals (ADCI.CA) Reports its Financial Results for the Period Ending on 30/06/2026 ",
+        "content": "Company Name: Arab Pharmaceuticals<br />ISIN Code: EGS38321C013<br />Currency: Egyptian Pound<br />F/S  Period: From 01/07/2025 to 30/06/2026<br />Net profit: 264,708,575 <br />F/S  Period: From 01/07/2024 to 30/06/2025<br />Net Comparative profit: 227,857,702  <br />Audit Status: Audited<br />Source: Arab Pharmaceuticals<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344698_1.pdf\" target=\"_blank\">The Annual BoD Report  (768 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344698_3.pdf\" target=\"_blank\">The Annual Corporates Governance Report (789 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344698_4.pdf\" target=\"_blank\">The TCFD & ESG Reports (614 KB)</a>",
+        "headingArabic": "العربية للادوية والصناعات الكيماوية (ADCI.CA) تعلن نتائج أعمالها عن الفترة المنتهية في 30/06/2026 ",
+        "contentArabic": "اسم الشركة: العربية للادوية والصناعات الكيماوية<br />كود الترقيم الدولي: EGS38321C013<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/07/2025 إلى 30/06/2026<br />صافي الربح: 264,708,575 <br />أرقام المقارنة  عن الفترة: من 01/07/2024 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 227,857,702 <br />تقرير مراقب الحسابات: مرفق<br />المصدر: العربية للادوية والصناعات الكيماوية<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344698_1.pdf\" target=\"_blank\">تقرير مجلس الإدارة السنوي  (768 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344698_3.pdf\" target=\"_blank\">تقرير الحوكمة السنوي (789 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344698_4.pdf\" target=\"_blank\">تقريري الإستدامة TCFD و ESG (614 KB)</a>",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38321C013",
+        "companyName": "العربية للادوية والصناعات الكيماوية",
+        "companyNameArabic": "Arab Pharmaceuticals",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 295183,
+        "dateStamp": "2026-09-27T09:55:26",
+        "heading": "Egypt Aluminum (EGAL.CA) - AGM Invitation",
+        "content": "Company: Egypt Aluminum<br />Symbols: EGS3E181C010<br />Reuters: EGAL.CA<br />Content: <br />Egypt Aluminum invites its stakeholders to attend the AGM on 21/10/2026 at 03:00 PM.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344695_1.pdf\" target=\"_blank\">Release from the Company (2,961 KB)</a>",
+        "headingArabic": "مصر للالومنيوم (EGAL.CA) - دعوة الجمعية العامة العادية",
+        "contentArabic": "اسم الشركة: مصر للالومنيوم<br />كود الترقيم الدولي: EGS3E181C010<br />كود رويترز: EGAL.CA<br />مضمون الإعلان : <br />تعلن شركة مصر للالومنيوم عن دعوة الجمعية العامة العادية المقرر انعقادها بتاريخ 21/10/2026 في تمام الساعة 03:00 مساءً.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344695_1.pdf\" target=\"_blank\">بيان من الشركة (2,961 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3E181C010",
+        "companyName": "مصر للالومنيوم",
+        "companyNameArabic": "Egypt Aluminum",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 295182,
+        "dateStamp": "2026-09-27T09:54:30",
+        "heading": "Rubex International for Plastic and Acrylic Manufacturing (RUBX.CA) - Bod Meeting Minutes",
+        "content": "Company Name : Rubex International for Plastic and Acrylic Manufacturing<br />ISIN Code : EGS3A221C018<br />Reuters Code : RUBX.CA<br />Content : <br />The BoD meeting minutes held on 24/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344701_1.pdf\" target=\"_blank\">The Bod Meeting Minutes (9,814 KB)</a>",
+        "headingArabic": "روبكس العالميه لتصنيع البلاستيك والأكريلك (RUBX.CA) - محضر اجتماع مجلس إدارة الشركة",
+        "contentArabic": "اسم الشركة : روبكس العالميه لتصنيع البلاستيك والأكريلك<br />كود الترقيم الدولي : EGS3A221C018<br />كود رويترز : RUBX.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 24/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344701_1.pdf\" target=\"_blank\">محضر اجتماع مجلس ادارة الشركة (9,814 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3A221C018",
+        "companyName": "روبكس العالميه لتصنيع البلاستيك والاكريلك",
+        "companyNameArabic": "Rubex International for Plastic and Acrylic Manufacturing",
+        "sectorId": 27,
+        "attachments": []
+      },
+      {
         "code": 295180,
         "dateStamp": "2026-09-27T09:37:08",
         "heading": "Ibnsina Pharma (ISPH.CA) Declares Cash Dividends",
@@ -9546,60 +9636,6 @@
         "companyName": "الشمس للاسكان والتعمير",
         "companyNameArabic": "El Shams Housing & Urbanization",
         "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 295163,
-        "dateStamp": "2026-09-27T09:01:44",
-        "heading": "Tamweel Securitization 1st Iss 5th Pro Tranche C May 2029 F R (EGBTMSC1P5CCF) Declares Bond Dividends for Coupon No. (17) ",
-        "content": "Issuer Name : Tamweel Securitization 1st Iss 5th Pro Tranche C May 2029 F R<br />ISIN Code : EGB69781S353<br />Reuters Code : EGBTMSC1P5CCF<br />Interest Type : Fixed<br />Coupon Interest : 23.5% <br />Coupon Amount : EGP 1.9315068493<br />Coupon Number : 17<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026",
-        "headingArabic": "سندات تمويل للتوريق الإصدار الأول من البرنامج الخامس الشريحة ج مايو 2029 (EGBTMSC1P5CCF) يعلن عن توزيع كوبون السند رقم (17)",
-        "contentArabic": "المصدر : سندات تمويل للتوريق الاصدار الاول من البرنامج الخامس الشريحة  ج مايو 2029<br />كود الترقيم الدولي : EGB69781S353<br />كود رويتيرز : EGBTMSC1P5CCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 23.5% <br />قيمة الكوبون : 1.9315068493 جم للسند<br />رقم الكوبون : 17<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69781S353",
-        "companyName": "سندات تمويل للتوريق ص 1 ب خامس ش ج مايو 2029 ع.ث",
-        "companyNameArabic": "Tamweel Securitization 1st Iss  5th Pro Tra C May 2029 F R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295162,
-        "dateStamp": "2026-09-27T08:59:47",
-        "heading": "Tamweel Securitization 2nd Iss 1st Pro Tranche H Sep 2023 (TAMSEC2P1H=CA) Declares Bond Dividends for Coupon No. (48) ",
-        "content": "Issuer Name : Tamweel Securitization 2nd Iss 1st Pro Tranche H Sep 2023<br />ISIN Code : EGB69781S114<br />Reuters Code : TAMSEC2P1H=CA<br />Interest Type : Floating<br />Coupon Interest : 21.5% <br />Coupon Amount : EGP 1.7671232877<br />Coupon Number : 48<br />Coupon Date : 07/10/2026<br />Coupon Payment Date : 11/10/2026",
-        "headingArabic": "سندات تمويل للتوريق الإصدار الثانى برنامج اول شريحة ه سبتمبر 2032 (TAMSEC2P1H=CA) يعلن عن توزيع كوبون السند رقم (48)",
-        "contentArabic": "المصدر : سندات تمويل للتوريق الاصدار الثانى  برنامج اول شريحة ه سبتمبر 2032<br />كود الترقيم الدولي : EGB69781S114<br />كود رويتيرز : TAMSEC2P1H=CA<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 21.5% <br />قيمة الكوبون : 1.7671232877 جم للسند<br />رقم الكوبون : 48<br />تاريخ الاستحقاق : 07/10/2026<br />تاريخ الصرف : 11/10/2026",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69781S114",
-        "companyName": "سندات تمويل للتوريق الاصدار2  برنامج اول شريحة ه سبتمبر 2032",
-        "companyNameArabic": "Tamweel Securitization 2nd Iss  1st Pro  Tran H Sep 2032",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295161,
-        "dateStamp": "2026-09-24T15:43:49",
-        "heading": "Capital For Securitization 4th Iss 1st Pro Tranche B Jan 2027 (EGBCPSC4P1BCV) Declares Bond Dividends for Coupon No. (32) ",
-        "content": "Issuer Name : Capital For Securitization 4th Iss 1st Pro Tranche B Jan 2027<br />ISIN Code : EGB69611S790<br />Reuters Code : EGBCPSC4P1BCV<br />Interest Type : Floating<br />Coupon Interest : 20.60% <br />Coupon Amount : EGP 0.0779063633<br />Coupon Number : 32<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026<br />Notes :  <br />Bond Redemption: EGP 2.0253164557",
-        "headingArabic": "سندات كابيتال للتوريق الاصدار الرابع البرنامج الاول شريحة ب يناير 2027 (EGBCPSC4P1BCV) يعلن عن توزيع كوبون السند رقم (32)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الرابع البرنامج الاول شريحة ب يناير 2027<br />كود الترقيم الدولي : EGB69611S790<br />كود رويتيرز : EGBCPSC4P1BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.6% <br />قيمة الكوبون : 0.0779063633 جم للسند<br />رقم الكوبون : 32<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 2.0253164557 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S790",
-        "companyName": "سندات كابيتال للتوريق ص4 ب1 ش ب يناير 2027 ع م",
-        "companyNameArabic": "Capital For Securitization 4th Iss 1st Pro Tra B Jan 2027 VR",
-        "sectorId": null,
         "attachments": []
       }
     ],
