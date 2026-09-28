@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-28 09:46:18 AM",
+  "lastUpdated": "2026-09-28 10:01:23 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-28T09:46:09"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-28T10:01:12"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 53031.69,
-        "close": 53031.69,
+        "change": 1.77,
+        "changePer": 0.003337626992464317,
+        "high": 53045.77,
+        "close": 53033.46,
         "open": 53031.69,
         "low": 53031.69,
-        "ytdPercent": 26.7822,
+        "ytdPercent": 26.7864,
         "date": "2026-09-28T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-28T09:58:00",
+          "value": 53031.69
+        },
+        {
+          "time": "2026-09-28T10:00:00",
+          "value": 53045.77
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -5.39,
+        "changePer": -0.0842433648581695,
         "high": 6398.13,
-        "close": 6398.13,
+        "close": 6392.74,
         "open": 6398.13,
-        "low": 6398.13,
-        "ytdPercent": 39.1572,
+        "low": 6392.74,
+        "ytdPercent": 39.04,
         "date": "2026-09-28T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-28T09:58:00",
+          "value": 6398.13
+        },
+        {
+          "time": "2026-09-28T10:00:00",
+          "value": 6398.13
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -14.99,
+        "changePer": -0.07861655835692967,
         "high": 19067.23,
-        "close": 19067.23,
+        "close": 19052.24,
         "open": 19067.23,
-        "low": 19067.23,
-        "ytdPercent": 45.2705,
+        "low": 19052.22,
+        "ytdPercent": 45.1563,
         "date": "2026-09-28T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-28T09:58:00",
+          "value": 19067.23
+        },
+        {
+          "time": "2026-09-28T10:00:00",
+          "value": 19067.23
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -11.12,
+        "changePer": -0.04392220555829192,
         "high": 25317.49,
-        "close": 25317.49,
+        "close": 25306.37,
         "open": 25317.49,
-        "low": 25317.49,
-        "ytdPercent": 45.2867,
+        "low": 25306.35,
+        "ytdPercent": 45.2229,
         "date": "2026-09-28T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-28T09:58:00",
+          "value": 25317.49
+        },
+        {
+          "time": "2026-09-28T10:00:00",
+          "value": 25317.49
+        }
+      ]
     }
   },
   "constituents": {
