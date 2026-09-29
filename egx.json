@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-09-29 09:46:08 AM",
+  "lastUpdated": "2026-09-29 10:01:32 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-09-29T09:46:01"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-09-29T10:01:22"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 52468.71,
-        "close": 52468.71,
+        "change": 48.88,
+        "changePer": 0.0931602854348811,
+        "high": 52517.59,
+        "close": 52517.59,
         "open": 52468.71,
         "low": 52468.71,
-        "ytdPercent": 25.4363,
+        "ytdPercent": 25.5532,
         "date": "2026-09-29T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-29T09:58:00",
+          "value": 52468.71
+        },
+        {
+          "time": "2026-09-29T10:00:00",
+          "value": 52512.52
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6291.75,
-        "close": 6291.75,
+        "change": 14.29,
+        "changePer": 0.22712281956530378,
+        "high": 6306.04,
+        "close": 6306.04,
         "open": 6291.75,
         "low": 6291.75,
-        "ytdPercent": 36.8435,
+        "ytdPercent": 37.1543,
         "date": "2026-09-29T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-29T09:58:00",
+          "value": 6291.75
+        },
+        {
+          "time": "2026-09-29T10:00:00",
+          "value": 6304.71
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 18516.8,
-        "close": 18516.8,
+        "change": 61.24,
+        "changePer": 0.33072669143696537,
+        "high": 18578.04,
+        "close": 18578.04,
         "open": 18516.8,
         "low": 18516.8,
-        "ytdPercent": 41.0768,
+        "ytdPercent": 41.5434,
         "date": "2026-09-29T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-29T09:58:00",
+          "value": 18516.8
+        },
+        {
+          "time": "2026-09-29T10:00:00",
+          "value": 18575.08
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 24702.56,
-        "close": 24702.56,
+        "change": 66.08,
+        "changePer": 0.26750263940255586,
+        "high": 24768.64,
+        "close": 24768.64,
         "open": 24702.56,
         "low": 24702.56,
-        "ytdPercent": 41.7579,
+        "ytdPercent": 42.1371,
         "date": "2026-09-29T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-09-29T09:58:00",
+          "value": 24702.56
+        },
+        {
+          "time": "2026-09-29T10:00:00",
+          "value": 24763.29
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,42 @@
   "news": {
     "disclosure": [
       {
+        "code": 295259,
+        "dateStamp": "2026-09-29T09:57:10",
+        "heading": "Upper Egypt Flour Mills (UEFM.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Upper Egypt Flour Mills<br />Symbols: EGS30451C016<br />Reuters: UEFM.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 28/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344819_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (1,620 KB)</a>",
+        "headingArabic": "مطاحن مصر العليا (UEFM.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: مطاحن مصر العليا<br />كود الترقيم الدولي: EGS30451C016<br />كود رويترز: UEFM.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 28/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344819_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (1,620 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30451C016",
+        "companyName": "مطاحن مصر العليا",
+        "companyNameArabic": "Upper Egypt Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 295258,
+        "dateStamp": "2026-09-29T09:54:29",
+        "heading": "Barbary Investment Group ( BIG) (BIGP.CA) - AGM Minutes (SMEs Market)",
+        "content": "Company: Barbary Investment Group ( BIG)<br />Symbols: EGS551D1C017<br />Reuters: BIGP.CA<br />Content: <br />Minutes of the AGM held on 23/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344812_1.pdf\" target=\"_blank\">AGM Minutes (before Certification) (1,725 KB)</a>",
+        "headingArabic": " بى اى جى للتجارة والاستثمار (BIGP.CA) - محضر اجتماع الجمعية العامة العادية (غير موثق) (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: بى اى جى للتجارة والاستثمار<br />كود الترقيم الدولي: EGS551D1C017<br />كود رويترز: BIGP.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 23/09/2026 (غير موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344812_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (غير موثق) (1,725 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS551D1C017",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
         "code": 295257,
         "dateStamp": "2026-09-29T09:43:42",
         "heading": "Housing & Development Bank (HDBK.CA) - Minutes of the BoD Meeting ",
@@ -9281,8 +9353,8 @@
       {
         "code": 295255,
         "dateStamp": "2026-09-29T09:34:30",
-        "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) Concerning a Construction Works ",
-        "content": "Company: Madinet Masr For Housing and Development -  <br />Symbols: EGS65571C019<br />Reuters: MASR.CA<br />Content: <br />Release from the company stating that the company awards EGP 1.38 billion in construction works for Origami at Taj city.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344814_1.pdf\" target=\"_blank\">Release from the Company in English (56 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344814_2.pdf\" target=\"_blank\">Release from the Company in Arabic (42 KB)</a>",
+        "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) Concerning a Construction Work",
+        "content": "Company: Madinet Masr For Housing and Development -  <br>Symbols: EGS65571C019<br>Reuters: MASR.CA<br>Content: <br>Release from the company stating that the company awards EGP 1.38 billion in construction works for Origami at Taj city.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344814_1.pdf\" target=\"_blank\">Release from the Company in English (56 KB)</a><br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344814_2.pdf\" target=\"_blank\">Release from the Company in Arabic (42 KB)</a>",
         "headingArabic": "بيان من مدينة مصر للاسكان والتعمير (MASR.CA) بشأن أعمال إنشائية ",
         "contentArabic": "اسم الشركة: مدينة مصر للاسكان والتعمير <br />كود الترقيم الدولي: EGS65571C019<br />كود رويترز: MASR.CA<br />مضمون الإعلان :<br />بيان من الشركة تفيد فيه أن الشركة تسند أعمالًا إنشائية بقيمة 1.38 مليار جنيه بمشروع أوريجامي في تاج سيتي.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344814_1.pdf\" target=\"_blank\">بيان من الشركة باللغة الإنجليزية  (56 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344814_2.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية (42 KB)</a>",
         "section": "General                                           ",
@@ -9564,42 +9636,6 @@
         "companyName": "فالمور القابضة للاستثماربالجنية",
         "companyNameArabic": "Valmore Holding-EGP",
         "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 295239,
-        "dateStamp": "2026-09-28T15:31:13",
-        "heading": "Ceramic & Porcelain (PRCL.CA) - Board of Directors' Report ",
-        "content": "Company Name : Ceramic &amp; Porcelain<br>ISIN Code : EGS3C111C019<br>Reuters Code : PRCL.CA<br>Content : <br>The Board of Directors' annual report on the financial statements for the fiscal year ending on 30/06/2026.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344779_1.pdf\" target=\"_blank\">The Board of Directors' Annual Report  (8,449 KB)</a>",
-        "headingArabic": "العامة لمنتجات الخزف والصيني (PRCL.CA) - تقرير مجلس إدارة الشركة",
-        "contentArabic": "اسم الشركة : العامة لمنتجات الخزف والصيني<br />كود الترقيم الدولي : EGS3C111C019<br />كود رويترز : PRCL.CA<br />مضمون الإعلان : <br />تقرير مجلس الإدارة السنوي عن القوائم المالية عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344779_1.pdf\" target=\"_blank\">تقرير مجلس الإدارة السنوي (8,449 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3C111C019",
-        "companyName": "العامة لمنتجات الخزف والصيني",
-        "companyNameArabic": "Ceramic & Porcelain",
-        "sectorId": 27,
-        "attachments": []
-      },
-      {
-        "code": 295238,
-        "dateStamp": "2026-09-28T15:30:52",
-        "heading": "Release from Lotus For Agricultural Investments And Development (LUTS.CA) Regarding the AGM ",
-        "content": "Company Name : Lotus For Agricultural Investments And Development<br />ISIN Code : EGS07661C019<br />Reuters Code : LUTS.CA<br />Content : <br />Release from the company regarding the lack of a quorum for the AGM, which was scheduled to be held on 24/09/2026, accordingly it was decided to postpone the AGM to a second meeting, scheduled to be held on Thursday 01/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344691_1.pdf\" target=\"_blank\">Release from the Company (563 KB)</a>",
-        "headingArabic": "بيان من لوتس للتنمية والاستثمار الزراعى (LUTS.CA) بخصوص الجمعية العامة العادية",
-        "contentArabic": "اسم الشركة : لوتس للتنمية والاستثمار الزراعى<br />كود الترقيم الدولي : EGS07661C019<br />كود رويترز : LUTS.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص عدم اكتمال النصاب القانوني لانعقاد الجمعية العامة العادية التي كان من المقرر انعقادها بتاريخ 24/09/2026, وعليه فقد تقرر تأجيل انعقاد الجمعية العامة العادية إلى اجتماع ثان والمقرر انعقاده يوم الخميس 01/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344691_1.pdf\" target=\"_blank\">بيان من الشركة (563 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS07661C019",
-        "companyName": "لوتس للتنمية والاستثمار الزراعى",
-        "companyNameArabic": "Lotus For Agricultural Investments And Development",
-        "sectorId": 19,
         "attachments": []
       }
     ],
