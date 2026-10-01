@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-01 09:46:03 AM",
+  "lastUpdated": "2026-10-01 10:01:22 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-01T09:45:59"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-01T10:01:16"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 51894.83,
-        "close": 51894.83,
+        "change": 102.99,
+        "changePer": 0.1984590757884745,
+        "high": 51998.89,
+        "close": 51997.82,
         "open": 51894.83,
         "low": 51894.83,
-        "ytdPercent": 24.0643,
+        "ytdPercent": 24.3105,
         "date": "2026-10-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-01T09:58:00",
+          "value": 51894.83
+        },
+        {
+          "time": "2026-10-01T10:00:00",
+          "value": 51996.62
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6251.8,
-        "close": 6251.8,
+        "change": 4.01,
+        "changePer": 0.06414152724015483,
+        "high": 6255.81,
+        "close": 6255.81,
         "open": 6251.8,
         "low": 6251.8,
-        "ytdPercent": 35.9746,
+        "ytdPercent": 36.0618,
         "date": "2026-10-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-01T09:58:00",
+          "value": 6251.8
+        },
+        {
+          "time": "2026-10-01T10:00:00",
+          "value": 6255.76
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 18625.73,
-        "close": 18625.73,
+        "change": 64.82,
+        "changePer": 0.3480132053884599,
+        "high": 18699.31,
+        "close": 18690.55,
         "open": 18625.73,
         "low": 18625.73,
-        "ytdPercent": 41.9068,
+        "ytdPercent": 42.4006,
         "date": "2026-10-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-01T09:58:00",
+          "value": 18625.73
+        },
+        {
+          "time": "2026-10-01T10:00:00",
+          "value": 18699.31
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 24776.36,
-        "close": 24776.36,
+        "change": 54.43,
+        "changePer": 0.21968521606886565,
+        "high": 24839.77,
+        "close": 24830.79,
         "open": 24776.36,
         "low": 24776.36,
-        "ytdPercent": 42.1814,
+        "ytdPercent": 42.4938,
         "date": "2026-10-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-01T09:58:00",
+          "value": 24776.36
+        },
+        {
+          "time": "2026-10-01T10:00:00",
+          "value": 24839.77
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 295430,
+        "dateStamp": "2026-10-01T10:01:18",
+        "heading": "E-finance For Digital and Financial Investments (EFIH.CA) - EGM Minutes (Notarized) ",
+        "content": "Company: E-finance For Digital and Financial Investments<br />Symbols: EGS743O1C013<br />Reuters: EFIH.CA<br />Content: <br />Notarized minutes of the EGM held on 17/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344918_1.pdf\" target=\"_blank\">EGM Minutes (Notarized)  (3,223 KB)</a>",
+        "headingArabic": "اي فاينانس للاستثمارات المالية والرقمية (EFIH.CA) - محضر إجتماع الجمعية العامة غير العادية (موثق) ",
+        "contentArabic": "اسم الشركة: اي فاينانس للاستثمارات المالية والرقمية<br />كود الترقيم الدولي: EGS743O1C013<br />كود رويترز: EFIH.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة غير العادية التي انعقدت يوم 17/09/2026 (موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344918_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة غير العادية ( موثق ) (3,223 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS743O1C013",
+        "companyName": "اي فاينانس للاستثمارات المالية والرقمية",
+        "companyNameArabic": "E-finance For Digital and Financial Investments",
+        "sectorId": 18,
+        "attachments": []
+      },
+      {
+        "code": 295429,
+        "dateStamp": "2026-10-01T09:53:29",
+        "heading": "International Agricultural Products (IFAP.CA) - EGM Minutes ",
+        "content": "Company: International Agricultural Products<br />Symbols: EGS07061C012<br />Reuters: IFAP.CA<br />Content: <br />Minutes of the EGM held on 30/09/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344917_1.pdf\" target=\"_blank\"> EGM Minutes (before Certification) in English  (2,974 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344917_2.pdf\" target=\"_blank\"> EGM Minutes (before Certification) in Arabic (1,899 KB)</a>",
+        "headingArabic": "الدوليه للمحاصيل الزراعيه (IFAP.CA) - محضر اجتماع الجمعية العامة غير العادية (غير موثق) ",
+        "contentArabic": "اسم الشركة: الدوليه للمحاصيل الزراعيه<br />كود الترقيم الدولي: EGS07061C012<br />كود رويترز: IFAP.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة غير العادية التي انعقدت يوم 30/09/2026 (غير موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344917_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة غير العادية (غير موثق) باللغة الإنجليزية (2,974 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344917_2.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة غير العادية (غير موثق) باللغة العربية (1,899 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS07061C012",
+        "companyName": "الدوليه للمحاصيل الزراعيه",
+        "companyNameArabic": "International Agricultural Products",
+        "sectorId": 21,
+        "attachments": []
+      },
+      {
+        "code": 295428,
+        "dateStamp": "2026-10-01T09:49:56",
+        "heading": "Release from Rowad Tourism (Al Rowad) (ROTO.CA) Regarding Decisions of the BoD Meeting ",
+        "content": "Company: Rowad Tourism (Al Rowad) <br />Symbols: EGS70281C018<br />Reuters: ROTO.CA<br />Content: <br />With reference to the announcement published on the trading screens on 13/08/2026 regarding the decisions of the company’s Board of Directors at its meeting held on 12/08/2026, a release was received from the company. <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344916_1.pdf\" target=\"_blank\">Release from the Company (394 KB)</a>",
+        "headingArabic": "بيان من رواد السياحة - الرواد (ROTO.CA) بخصوص قرارات مجلس إدارة الشركة",
+        "contentArabic": "اسم الشركة: رواد السياحة - الرواد <br />كود الترقيم الدولي: EGS70281C018<br />كود رويترز: ROTO.CA<br />مضمون الإعلان :<br />بالإشارة إلى الإعلان الذي تم نشره على شاشات التداول بتاريخ 13/08/2026 والخاص بقرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 12/08/2026, ورد بيان من الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344916_1.pdf\" target=\"_blank\">بيان من الشركة  (394 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70281C018",
+        "companyName": "رواد السياحة - الرواد",
+        "companyNameArabic": "Rowad Tourism (Al Rowad)",
+        "sectorId": 16,
+        "attachments": []
+      },
+      {
         "code": 295427,
         "dateStamp": "2026-10-01T09:09:29",
         "heading": "South Cairo & Giza Mills & Bakeries (SCFM.CA) - AGM & EGM Minutes ",
@@ -9545,60 +9635,6 @@
         "isin": "EGB69801S391",
         "companyName": "سندات الاهلى للتوريق ص 1 ب 7 ش ج ديسمبر 2026 ع.ث",
         "companyNameArabic": "Al Ahly Securitization 1st Iss 7th Pro Tra C Dec 2026 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295401,
-        "dateStamp": "2026-09-30T12:29:24",
-        "heading": "Al Ahly Securitization 1st Iss 3rd Pro Tranche C Sept 2028 (EGBAHSC1P3CCV) Declares Bond Dividends for Coupon No. (18) ",
-        "content": "Issuer Name : Al Ahly Securitization 1st Iss 3rd Pro Tranche C Sept 2028<br />ISIN Code : EGB69801S151<br />Reuters Code : EGBAHSC1P3CCV<br />Interest Type : Floating<br />Coupon Interest : 20.70% <br />Coupon Amount : EGP 1.70137<br />Coupon Number : 18<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026",
-        "headingArabic": "سندات الاهلى للتوريق الإصدار الاول من البرنامج الثالث الشريحة ج سبتمبر 2028 (EGBAHSC1P3CCV) يعلن عن توزيع كوبون السند رقم (18)",
-        "contentArabic": "المصدر : سندات الاهلى للتوريق الإصدار الاول من البرنامج الثالث الشريحة ج سبتمبر 2028<br />كود الترقيم الدولي : EGB69801S151<br />كود رويتيرز : EGBAHSC1P3CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.7% <br />قيمة الكوبون : 1.70137 جم للسند<br />رقم الكوبون : 18<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69801S151",
-        "companyName": "سندات الاهلى للتوريق ص1 ب3 ش ج سبتمبر 2028 ع م",
-        "companyNameArabic": "Al Ahly Securitization 1st Iss 3rd Pro Tran C Sept 2028 V R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295400,
-        "dateStamp": "2026-09-30T12:27:51",
-        "heading": "Al Ahly Securitization 1st Iss 3rd Pro Tranche B Dec 2026 (EGBAHSC1P3BCV) Declares Bond Dividends for Coupon No. (18) ",
-        "content": "Issuer Name : Al Ahly Securitization 1st Iss 3rd Pro Tranche B Dec 2026<br />ISIN Code : EGB69801S144<br />Reuters Code : EGBAHSC1P3BCV<br />Interest Type : Floating<br />Coupon Interest : 20.50% <br />Coupon Amount : EGP 0.37442<br />Coupon Number : 18<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026<br />Notes :  <br />Bond Redemption: EGP 7.90451 ",
-        "headingArabic": "سندات الاهلى للتوريق الإصدار الاول من البرنامج الثالث الشريحة ب ديسمبر 2026 (EGBAHSC1P3BCV) يعلن عن توزيع كوبون السند رقم (18)",
-        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الاول من البرنامج الثالث الشريحة ب ديسمبر 2026<br />كود الترقيم الدولي : EGB69801S144<br />كود رويتيرز : EGBAHSC1P3BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.5% <br />قيمة الكوبون : 0.37442 جم للسند<br />رقم الكوبون : 18<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 17.90451 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69801S144",
-        "companyName": "سندات الاهلى للتوريق ص1 ب3 ش ب ديسمبر 2026 ع م",
-        "companyNameArabic": "Al Ahly Securitization 1st Iss 3rd Pro Tran B Dec 2026 V R",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295399,
-        "dateStamp": "2026-09-30T12:23:03",
-        "heading": "Al Ahly Securitization 2nd Iss 3rd Pro Tranche A Jan 2027 (EGBAHSC2P3ACV) Declares Bond Dividends for Coupon No. (7) ",
-        "content": "Issuer Name : Al Ahly Securitization 2nd Iss 3rd Pro Tranche A Jan 2027<br />ISIN Code : EGB69801S292<br />Reuters Code : EGBAHSC2P3ACV<br />Interest Type : Floating<br />Coupon Interest : 20.50% <br />Coupon Amount : EGP 1.60185<br />Coupon Number : 7<br />Coupon Date : 06/10/2026<br />Coupon Payment Date : 07/10/2026<br />Notes :  <br />Bond Redemption: EGP 22.50804 ",
-        "headingArabic": "سندات الاهلى للتوريق الإصدار الثاني البرنامج الثالث الشريحة أ يناير 2027 (EGBAHSC2P3ACV) يعلن عن توزيع كوبون السند رقم (7)",
-        "contentArabic": "المصدر : سندات الاهلى للتوريق الاصدار الثاني البرنامج الثالث الشريحة أ يناير 2027<br />كود الترقيم الدولي : EGB69801S292<br />كود رويتيرز : EGBAHSC2P3ACV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.5% <br />قيمة الكوبون : 1.60185 جم للسند<br />رقم الكوبون : 7<br />تاريخ الاستحقاق : 06/10/2026<br />تاريخ الصرف : 07/10/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند: 22.50804 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69801S292",
-        "companyName": "سندات الاهلى للتوريق ص2 ب3 ش أ يناير 2027 ع م",
-        "companyNameArabic": "Al Ahly Securitization 2nd Iss 3rd Pro Tra A Jan 2027 VR",
         "sectorId": null,
         "attachments": []
       }
