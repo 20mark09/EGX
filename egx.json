@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-04 09:46:21 AM",
+  "lastUpdated": "2026-10-04 10:01:20 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-04T09:46:04"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-04T10:01:13"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 53055.03,
-        "close": 53055.03,
+        "change": 288.29,
+        "changePer": 0.5433792045730631,
+        "high": 53344.43,
+        "close": 53343.32,
         "open": 53055.03,
         "low": 53055.03,
-        "ytdPercent": 26.838,
+        "ytdPercent": 27.5272,
         "date": "2026-10-04T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-04T09:58:00",
+          "value": 53055.03
+        },
+        {
+          "time": "2026-10-04T10:00:00",
+          "value": 53322.39
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6447.37,
-        "close": 6447.37,
+        "change": 37.35,
+        "changePer": 0.5793059805781272,
+        "high": 6484.72,
+        "close": 6484.72,
         "open": 6447.37,
         "low": 6447.37,
-        "ytdPercent": 40.2282,
+        "ytdPercent": 41.0405,
         "date": "2026-10-04T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-04T09:58:00",
+          "value": 6447.37
+        },
+        {
+          "time": "2026-10-04T10:00:00",
+          "value": 6479.31
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 19363.53,
-        "close": 19363.53,
+        "change": 63.39,
+        "changePer": 0.3273679954016649,
+        "high": 19427.11,
+        "close": 19426.92,
         "open": 19363.53,
         "low": 19363.53,
-        "ytdPercent": 47.5279,
+        "ytdPercent": 48.0109,
         "date": "2026-10-04T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-04T09:58:00",
+          "value": 19363.53
+        },
+        {
+          "time": "2026-10-04T10:00:00",
+          "value": 19420.67
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 25655.63,
-        "close": 25655.63,
+        "change": 111.81,
+        "changePer": 0.435810775256737,
+        "high": 25767.44,
+        "close": 25767.44,
         "open": 25655.63,
         "low": 25655.63,
-        "ytdPercent": 47.2272,
+        "ytdPercent": 47.8688,
         "date": "2026-10-04T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-04T09:58:00",
+          "value": 25655.63
+        },
+        {
+          "time": "2026-10-04T10:00:00",
+          "value": 25755.03
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,96 @@
   "news": {
     "disclosure": [
       {
+        "code": 295493,
+        "dateStamp": "2026-10-04T10:00:03",
+        "heading": "Minapharm Pharmaceuticals (MIPH.CA) - Minutes of the BoD Meeting ",
+        "content": "Company: Minapharm Pharmaceuticals<br />Symbols: EGS380G1C011<br />Reuters: MIPH.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 01/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344982_1.pdf\" target=\"_blank\">Minutes of the BoD Meeting in Arabic & English (403 KB)</a>",
+        "headingArabic": "مينا فارم للأدوية و الصناعات الكيماوية (MIPH.CA) - محضر اجتماع مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: مينا فارم للأدوية و الصناعات الكيماوية<br />كود الترقيم الدولي: EGS380G1C011<br />كود رويترز: MIPH.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 01/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344982_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة باللغة العربية والإنجليزية (403 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS380G1C011",
+        "companyName": "مينا فارم للأدوية و الصناعات الكيماوية",
+        "companyNameArabic": "Minapharm Pharmaceuticals",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 295492,
+        "dateStamp": "2026-10-04T09:57:40",
+        "heading": "Middle Egypt Flour Mills (CEFM.CA) - AGM Resolutions ",
+        "content": "Company: Middle Egypt Flour Mills<br />Symbols: EGS30401C011<br />Reuters: CEFM.CA<br />Content: <br />AGM resolutions held on 03/10/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344979_1.pdf\" target=\"_blank\">AGM Resolutions  (3,119 KB)</a>",
+        "headingArabic": "مطاحن مصر الوسطي (CEFM.CA) - ملخص قرارات الجمعية العامة العادية ",
+        "contentArabic": "اسم الشركة: مطاحن مصر الوسطي<br />كود الترقيم الدولي: EGS30401C011<br />كود رويترز: CEFM.CA<br />مضمون الإعلان : <br />ملخص قرارات الجمعية العامة العادية المنعقدة بتاريخ 03/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344979_1.pdf\" target=\"_blank\">ملخص قرارات الجمعية العامة العادية (3,119 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30401C011",
+        "companyName": "مطاحن مصر الوسطي",
+        "companyNameArabic": "Middle Egypt Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 295491,
+        "dateStamp": "2026-10-04T09:55:33",
+        "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) Concerning One of the Projects ",
+        "content": "Company: Madinet Masr For Housing and Development - <br />Symbols: EGS65571C019<br />Reuters: MASR.CA<br />Content : <br />Release from the company stating that Madinet Masr launches \"ETAJE\" in Taj City’s final residential plot in New Cairo.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344976_1.pdf\" target=\"_blank\">Release from the Company in English (563 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344976_2.pdf\" target=\"_blank\">Release from the Company in Arabic (580 KB)</a>",
+        "headingArabic": "بيان من مدينة مصر للاسكان والتعمير (MASR.CA) بشأن أحد المشروعات ",
+        "contentArabic": "اسم الشركة: مدينة مصر للاسكان والتعمير <br />كود الترقيم الدولي: EGS65571C019<br />كود رويترز: MASR.CA<br />مضمون الإعلان :<br />بيان من الشركة تفيد فيه إطلاق مشروع \"إيتاج\"  في تاج سيتي بالقاهرة الجديدة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344976_1.pdf\" target=\"_blank\">بيان من الشركة باللغة الإنجليزية (563 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344976_2.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية (580 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65571C019",
+        "companyName": "مدينة مصر للاسكان والتعمير",
+        "companyNameArabic": "Madinet Masr For Housing and Development",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 295490,
+        "dateStamp": "2026-10-04T09:48:46",
+        "heading": "Egyptian for Tourism Resorts (EGTS.CA) - AGM Resolutions ",
+        "content": "Company: Egyptian for Tourism Resorts<br />Symbols: EGS70431C019<br />Reuters: EGTS.CA<br />Content: <br />AGM resolutions held on 02/10/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344973_1.pdf\" target=\"_blank\">AGM Resolutions  (205 KB)</a>",
+        "headingArabic": "المصرية للمنتجعات السياحية (EGTS.CA) - ملخص قرارات الجمعية العامة العادية ",
+        "contentArabic": "اسم الشركة: المصرية للمنتجعات السياحية<br />كود الترقيم الدولي: EGS70431C019<br />كود رويترز: EGTS.CA<br />مضمون الإعلان : <br />ملخص قرارات الجمعية العامة العادية المنعقدة بتاريخ 02/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344973_1.pdf\" target=\"_blank\">ملخص قرارات الجمعية العامة العادية (205 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70431C019",
+        "companyName": "المصرية للمنتجعات السياحية",
+        "companyNameArabic": "Egyptian for Tourism Resorts",
+        "sectorId": 16,
+        "attachments": []
+      },
+      {
+        "code": 295489,
+        "dateStamp": "2026-10-04T09:46:39",
+        "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) Regarding the Purchase of Treasury Stocks ",
+        "content": "Company: Madinet Masr For Housing and Development <br />Symbols: EGS65571C019<br />Reuters: MASR.CA<br />Content: <br />Release from the company regarding the purchase of treasury stocks on 01/10/2026 trading session. <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344972_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (24 KB)</a>",
+        "headingArabic": "بيان من مدينة مصر للاسكان والتعمير (MASR.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: مدينة مصر للاسكان والتعمير <br />كود الترقيم الدولي: EGS65571C019<br />كود رويترز: MASR.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 01/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344972_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية  (24 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65571C019",
+        "companyName": "مدينة مصر للاسكان والتعمير",
+        "companyNameArabic": "Madinet Masr For Housing and Development",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 295488,
         "dateStamp": "2026-10-04T09:41:30",
         "heading": "Release from Raya Holding For Financial Investments (RAYA.CA)  ",
@@ -9510,96 +9636,6 @@
         "companyName": "بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب",
         "companyNameArabic": "Pioneers Properties For Urban Development - PRE Group",
         "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 295470,
-        "dateStamp": "2026-10-01T13:03:56",
-        "heading": "Release from Lotus For Agricultural Investments And Development (LUTS.CA) Regarding the Signing of an Agreement ",
-        "content": "Company Name : Lotus For Agricultural Investments And Development<br />ISIN Code : EGS07661C019<br />Reuters Code : LUTS.CA<br />Content : <br />Release from the company regarding the signing of an agreement to supply, install and operate solar power plants.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344933_1.pdf\" target=\"_blank\">Release from the Company (361 KB)</a>",
-        "headingArabic": "بيان من لوتس للتنمية والاستثمار الزراعى (LUTS.CA) بشأن توقيع إتفاقية ",
-        "contentArabic": "اسم الشركة : لوتس للتنمية والاستثمار الزراعى<br />كود الترقيم الدولي : EGS07661C019<br />كود رويترز : LUTS.CA<br />مضمون الإعلان : <br />بيان من الشركة بشأن توقيع إتفاق لتوريد وتركيب وتشغيل محطات طاقة شمسية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344933_1.pdf\" target=\"_blank\">بيان من الشركة (361 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS07661C019",
-        "companyName": "لوتس للتنمية والاستثمار الزراعى",
-        "companyNameArabic": "Lotus For Agricultural Investments And Development",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 295469,
-        "dateStamp": "2026-10-01T12:28:00",
-        "heading": "Eastern Tobacco (EAST.CA) Reports 3 Months Consolidated Results",
-        "content": "Company Name : Eastern Tobacco<br />ISIN Code: EGS37091C013<br />Currency: EGP<br />F/S Consolidated Period : From 01/01/2026 To 31/03/2026<br />Net Profit: 1,253,236 Value In Thousand<br />F/S Consolidated Period : From 01/01/2025 To 31/03/2025<br />Net Comparative Profit: 1,626,782 Value In Thousand<br />Audit Status : Reviewed<br />Comment : Taking minority into consideration<br />Source : Eastern Tobacco<br />",
-        "headingArabic": "الشرقية - ايسترن كومباني (EAST.CA) تعلن نتائج أعمالها المجمعة عن 3 أشهر",
-        "contentArabic": "اسم الشركة: الشرقية - ايسترن كومباني<br>كود الترقيم الدولي : EGS37091C013<br>العملة: جنيه مصري<br>القوائم المالية المجمعة عن الفترة :من 01/01/2026 الى 31/03/2026<br>صافي الربح: 1,253,236 القيمة بالالف <br>ارقام المقارنة المجمعة عن الفترة: من 01/01/2025 الى 31/03/2025<br>صافي الربح لفترة المقارنة: 1,626,782 القيمة بالالف <br>تقرير الفحص المحدود : مرفق<br>مع الاخذ في الاعتبار حقوق الاقلية<br>المصدر : الشرقية - ايسترن كومباني<br><br>",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS37091C013",
-        "companyName": "الشرقية - ايسترن كومباني",
-        "companyNameArabic": "Eastern Company",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 295467,
-        "dateStamp": "2026-10-01T12:23:07",
-        "heading": "Eastern Tobacco (EAST.CA) Reports 6 Months Consolidated Results",
-        "content": "Company Name : Eastern Tobacco<br />ISIN Code: EGS37091C013<br />Currency: EGP<br />F/S Consolidated Period : From 01/01/2026 To 30/06/2026<br />Net Profit: 4,154,475 Value In Thousand<br />F/S Consolidated Period : From 01/01/2025 To 30/06/2025<br />Net Comparative Profit   : 4,328,318 Value In Thousand<br />Audit Status : Reviewed<br />Comment : Taking minority into consideration<br />Source : Eastern Tobacco<br />",
-        "headingArabic": "الشرقية - ايسترن كومباني (EAST.CA) تعلن نتائج اعمالها المجمعة عن 6 أشهر",
-        "contentArabic": "اسم الشركة: الشرقية - ايسترن كومباني<br />كود الترقيم الدولي : EGS37091C013<br />العملة: جنيه مصري<br />القوائم المالية المجمعة عن الفترة :من 01/01/2026 الى 30/06/2026<br />صافي الربح: 4,154,475 القيمة بالالف <br />ارقام المقارنة المجمعة عن الفترة  : من 01/01/2025 الى 30/06/2025<br />صافي الربح لفترة المقارنة: 4,328,318 القيمة بالالف <br />تقرير الفحص المحدود : مرفق<br />مع الاخذ في الاعتبار حقوق الاقلية<br />المصدر : الشرقية - ايسترن كومباني<br />",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS37091C013",
-        "companyName": "الشرقية - ايسترن كومباني",
-        "companyNameArabic": "Eastern Company",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 295465,
-        "dateStamp": "2026-10-01T12:13:40",
-        "heading": "Release from Certificates Of Odin Egyptian Equity Investment Fund-KASAB (KASABF.CA) Regarding the Net Asset Value",
-        "content": "Company Name : Certificates Of Odin Egyptian Equity Investment Fund-KASAB<br>ISIN Code : EGS696Z1C017<br>Reuters Code : KASABF.CA<br>Content : <br>Release from the company regarding the net asset value of the investment fund “Aden for Investment in Egyptian Equities” as of 30/09/2026.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344928_1.pdf\" target=\"_blank\">Release from the Company (23 KB)</a>",
-        "headingArabic": "بيان من وثائق صندوق استثمار أودن للاستثمار في الاسهم المصرية -كسب (KASABF.CA) بخصوص صافي قيمة الوثيقة",
-        "contentArabic": "اسم الشركة : وثائق صندوق استثمار أودن للاستثمار في الاسهم المصرية -كسب<br />كود الترقيم الدولي : EGS696Z1C017<br />كود رويترز : KASABF.CA<br />مضمون الإعلان : <br />بيان بخصوص صافي قيمة وثيقة وثائق صندوق استثمار أودن للاستثمار في الأسهم المصرية كسب في 30/09/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344928_1.pdf\" target=\"_blank\">بيان من الشركة (23 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS696Z1C017",
-        "companyName": "وثائق صندوق استثمار أودن للاستثمار في الاسهم المصرية -كسب",
-        "companyNameArabic": "Certificates Of Odin Egyptian Equity Investment Fund-KASAB",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 295464,
-        "dateStamp": "2026-10-01T12:03:14",
-        "heading": "El Ahli Investment and Development (AFDI.CA) - Board of Directors' Decisions",
-        "content": "Company Name : El Ahli Investment and Development<br>ISIN Code : EGS69021C011<br>Reuters Code : AFDI.CA<br>Content : <br>The Board of Directors' decisions held on 30/09/2026.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344929_1.pdf\" target=\"_blank\">Board of Directors Decisions (123 KB)</a>",
-        "headingArabic": "الاهلي للتنمية والاستثمار (AFDI.CA) - قرارات مجلس إدارة الشركة",
-        "contentArabic": "اسم الشركة : الاهلي للتنمية والاستثمار<br />كود الترقيم الدولي : EGS69021C011<br />كود رويترز : AFDI.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 30/09/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/344929_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (123 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS69021C011",
-        "companyName": "الاهلي للتنمية والاستثمار",
-        "companyNameArabic": "El Ahli Investment and Development",
-        "sectorId": 24,
         "attachments": []
       }
     ],
