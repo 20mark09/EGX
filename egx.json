@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-06 09:46:25 AM",
+  "lastUpdated": "2026-10-06 10:01:27 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-06T09:46:19"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-06T10:01:18"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 53553.41,
-        "close": 53553.41,
+        "change": 13,
+        "changePer": 0.02427483142530046,
+        "high": 53605.94,
+        "close": 53566.41,
         "open": 53553.41,
         "low": 53553.41,
-        "ytdPercent": 28.0295,
+        "ytdPercent": 28.0606,
         "date": "2026-10-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-06T09:58:00",
+          "value": 53553.41
+        },
+        {
+          "time": "2026-10-06T10:00:00",
+          "value": 53605.94
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6608.43,
-        "close": 6608.43,
+        "change": -7.54,
+        "changePer": -0.11409669164990777,
+        "high": 6612.47,
+        "close": 6600.89,
         "open": 6608.43,
-        "low": 6608.43,
-        "ytdPercent": 43.7312,
+        "low": 6600.89,
+        "ytdPercent": 43.5672,
         "date": "2026-10-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-06T09:58:00",
+          "value": 6608.43
+        },
+        {
+          "time": "2026-10-06T10:00:00",
+          "value": 6612.47
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 19776.31,
-        "close": 19776.31,
+        "change": -0.49,
+        "changePer": -0.0024777119695231315,
+        "high": 19791.02,
+        "close": 19775.82,
         "open": 19776.31,
-        "low": 19776.31,
-        "ytdPercent": 50.6729,
+        "low": 19775.53,
+        "ytdPercent": 50.6691,
         "date": "2026-10-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-06T09:58:00",
+          "value": 19776.31
+        },
+        {
+          "time": "2026-10-06T10:00:00",
+          "value": 19791.02
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 26132.88,
-        "close": 26132.88,
+        "change": 8.66,
+        "changePer": 0.03313832995062159,
+        "high": 26158.47,
+        "close": 26141.54,
         "open": 26132.88,
         "low": 26132.88,
-        "ytdPercent": 49.9659,
+        "ytdPercent": 50.0156,
         "date": "2026-10-06T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-06T09:58:00",
+          "value": 26132.88
+        },
+        {
+          "time": "2026-10-06T10:00:00",
+          "value": 26158.47
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,114 @@
   "news": {
     "disclosure": [
       {
+        "code": 295579,
+        "dateStamp": "2026-10-06T10:01:14",
+        "heading": "Misr Duty Free Shops (MFSC.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Misr Duty Free Shops<br />Symbols: EGS53051C016<br />Reuters: MFSC.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345071_1.pdf\" target=\"_blank\">The Disclosure Form (1,640 KB)</a>",
+        "headingArabic": "مصر للاسواق الحرة (MFSC.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم الشركة: مصر للاسواق الحرة<br />كود الترقيم الدولي: EGS53051C016<br />كود رويترز: MFSC.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345071_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (1,640 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS53051C016",
+        "companyName": "مصر للاسواق الحرة",
+        "companyNameArabic": "Misr Duty Free Shops",
+        "sectorId": 21,
+        "attachments": []
+      },
+      {
+        "code": 295577,
+        "dateStamp": "2026-10-06T09:59:04",
+        "heading": "Middle East Glass Manufacturing (MEGM.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Middle East Glass Manufacturing<br />Symbols: EGS3C001C012<br />Reuters: MEGM.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345070_1.pdf\" target=\"_blank\">The Disclosure Form in Arabic  (665 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345070_2.pdf\" target=\"_blank\">The Disclosure Form in English (744 KB)</a>",
+        "headingArabic": " الشرق الأوسط لصناعة الزجاج (MEGM.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم الشركة: الشرق الأوسط لصناعة الزجاج<br />كود الترقيم الدولي: EGS3C001C012<br />كود رويترز: MEGM.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345070_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغة العربية  (665 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345070_2.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغة الإنجليزية  (744 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3C001C012",
+        "companyName": "الشرق الأوسط لصناعة الزجاج",
+        "companyNameArabic": "Middle East Glass Manufacturing",
+        "sectorId": 28,
+        "attachments": []
+      },
+      {
+        "code": 295576,
+        "dateStamp": "2026-10-06T09:55:05",
+        "heading": "Egyptian Gulf Marseilia For Real Estate Investment (MAAL.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Egyptian Gulf Marseilia For Real Estate Investment<br />Symbols: EGS739Z1C016<br />Reuters: MAAL.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345068_1.pdf\" target=\"_blank\">The Disclosure Form (2,159 KB)</a>",
+        "headingArabic": "مرسيليا المصرية الخليجية للاستثمار العقارى (MAAL.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم الشركة: مرسيليا المصرية الخليجية للاستثمار العقارى<br />كود الترقيم الدولي: EGS739Z1C016<br />كود رويترز: MAAL.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345068_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (2,159 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS739Z1C016",
+        "companyName": "مرسيليا المصرية الخليجية للاستثمار العقارى",
+        "companyNameArabic": "Egyptian Gulf Marseilia For Real Estate Investment",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 295574,
+        "dateStamp": "2026-10-06T09:53:07",
+        "heading": "Misr Duty Free Shops (MFSC.CA) - Audit Committee Report ",
+        "content": "Company: Misr Duty Free Shops <br />Symbols: EGS53051C016<br />Reuters: MFSC.CA<br />Content: <br />Audit Committee Report for the months of July, August, and September 2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345066_1.pdf\" target=\"_blank\">Audit Committee Report  (1,595 KB)</a>",
+        "headingArabic": "مصر للاسواق الحرة (MFSC.CA) - تقرير لجنة المراجعة",
+        "contentArabic": "اسم الشركة: مصر للاسواق الحرة <br />كود الترقيم الدولي: EGS53051C016<br />كود رويترز: MFSC.CA<br />مضمون الإعلان :<br />تقرير لجنة المراجعة عن أشهر يوليو وأغسطس وسبتمبر 2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345066_1.pdf\" target=\"_blank\">تقرير لجنة المراجعة  (1,595 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS53051C016",
+        "companyName": "مصر للاسواق الحرة",
+        "companyNameArabic": "Misr Duty Free Shops",
+        "sectorId": 21,
+        "attachments": []
+      },
+      {
+        "code": 295573,
+        "dateStamp": "2026-10-06T09:50:00",
+        "heading": "Tanmiya for Real Estate Investment (TANM.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Tanmiya for Real Estate Investment<br />Symbols: EGS21EB1C011<br />Reuters: TANM.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345064_1.pdf\" target=\"_blank\">The Disclosure Form (1,157 KB)</a>",
+        "headingArabic": "تنمية للاستثمار العقاري (TANM.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم الشركة: تنمية للاستثمار العقاري<br />كود الترقيم الدولي: EGS21EB1C011<br />كود رويترز: TANM.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345064_1.pdf\" target=\"_blank\">نموذج تقرير الإفصاح  (1,157 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21EB1C011",
+        "companyName": "تنمية للاستثمار العقاري",
+        "companyNameArabic": "Tanmiya for Real Estate Investment",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 295572,
+        "dateStamp": "2026-10-06T09:46:53",
+        "heading": "FERCHEM MISR CO. FOR FERTILLIZERS & CHEMICALS (FERC.CA) - EGM Resolutions   ",
+        "content": "Company: FERCHEM MISR CO. FOR FERTILLIZERS & CHEMICALS<br />Symbols: EGS385S1C012<br />Reuters: FERC.CA<br />Content: <br />EGM resolutions held on 05/10/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345057_1.pdf\" target=\"_blank\">EGM Resolutions in English (626 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345057_2.pdf\" target=\"_blank\">EGM Resolutions in Arabic (691 KB)</a>",
+        "headingArabic": "فيركيم مصر للاسمدة والكيماويات (FERC.CA) - ملخص قرارات الجمعية العامة غير العادية ",
+        "contentArabic": "اسم الشركة: فيركيم مصر للاسمدة والكيماويات<br />كود الترقيم الدولي: EGS385S1C012<br />كود رويترز: FERC.CA<br />مضمون الإعلان : <br />ملخص قرارات الجمعية العامة غير العادية المنعقدة بتاريخ 05/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345057_1.pdf\" target=\"_blank\">ملخص قرارات الجمعية العامة غير العادية باللغة الإنجليزية (626 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345057_2.pdf\" target=\"_blank\">ملخص قرارات الجمعية العامة غير العادية باللغة العربية (691 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS385S1C012",
+        "companyName": "فيركيم مصر للاسمدة والكيماويات",
+        "companyNameArabic": "FERCHEM MISR CO. FOR FERTILLIZERS & CHEMICALS",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
         "code": 295571,
         "dateStamp": "2026-10-06T09:28:08",
         "heading": "Arabia Investments Holding (AIHC.CA) - Decisions of the BoD Meeting ",
@@ -9492,114 +9636,6 @@
         "companyName": "سندات جلوبال كورب للتوريق ص 1 ب 3 ش ج مايو 2030 ع.م",
         "companyNameArabic": "Global Corp Securitization 1st Iss 3rd Pro Tra C May 30 VR",
         "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295556,
-        "dateStamp": "2026-10-05T14:58:34",
-        "heading": "Global Corp Securitization 1st Iss 3rd Pro Tranche B May 29 (EGBGLSC1P3BCV) Declares Bond Dividends for Coupon No. (5) ",
-        "content": "Issuer Name : Global Corp Securitization 1st Iss 3rd Pro Tranche B May 29<br />ISIN Code : EGB69761S314<br />Reuters Code : EGBGLSC1P3BCV<br />Interest Type : Floating<br />Coupon Interest : 20.4% <br />Coupon Amount : EGP 1.6767123288<br />Coupon Number : 5<br />Coupon Date : 14/10/2026<br />Coupon Payment Date : 15/10/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة ب مايو 2029 (EGBGLSC1P3BCV) يعلن عن توزيع كوبون السند رقم (5)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة ب مايو 2029<br />كود الترقيم الدولي : EGB69761S314<br />كود رويتيرز : EGBGLSC1P3BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.4% <br />قيمة الكوبون : 1.6767123288 جم للسند<br />رقم الكوبون : 5<br />تاريخ الإستحقاق : 14/10/2026<br />تاريخ الصرف : 15/10/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S314",
-        "companyName": "سندات جلوبال كورب للتوريق ص 1 ب 3 ش ب مايو 2029 ع.م",
-        "companyNameArabic": "Global Corp Securitization 1st Iss 3rd Pro Tra B May 29 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295555,
-        "dateStamp": "2026-10-05T14:56:29",
-        "heading": "Arab Development & Real Estate Investment (ADRI.CA) - Release Regarding a Disclosure Form (SMEs Market)",
-        "content": "Company Name : Arab Development & Real Estate Investment<br />ISIN Code : EGS65AN1C018<br />Reuters Code : ADRI.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345035_1.pdf\" target=\"_blank\">The Release (334 KB)</a>",
-        "headingArabic": "اراب للتنمية والاستثمار العقاري (ADRI.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ (سوق الشركات الصغيرة والمتوسطة)",
-        "contentArabic": "اسم الشركة : اراب للتنمية والاستثمار العقاري<br />كود الترقيم الدولي : EGS65AN1C018<br />كود رويترز : ADRI.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ، وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345035_1.pdf\" target=\"_blank\">البيان (334 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65AN1C018",
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 295554,
-        "dateStamp": "2026-10-05T14:55:16",
-        "heading": "Alexandria Pharmaceuticals (AXPH.CA) - External Auditor's Report ",
-        "content": "Company Name : Alexandria Pharmaceuticals<br />ISIN Code : EGS38341C011<br />Reuters Code : AXPH.CA<br />Content : <br />External Auditor's Report for the financial year ended on 30/06/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345039_1.pdf\" target=\"_blank\">The External Auditor's Report (255 KB)</a>",
-        "headingArabic": "الاسكندرية للادوية والصناعات الكيماوية (AXPH.CA) - تقرير مراقب الحسابات الخارجي ",
-        "contentArabic": "اسم الشركة : الاسكندرية للادوية والصناعات الكيماوية<br />كود الترقيم الدولي : EGS38341C011<br />كود رويترز : AXPH.CA<br />مضمون الإعلان : <br />تقرير مراقب الحسابات الخارجي عن السنة المالية المنتهية في 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345039_1.pdf\" target=\"_blank\">تقرير مراقب الحسابات الخارجى (255 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38341C011",
-        "companyName": "الاسكندرية للادوية والصناعات الكيماوية",
-        "companyNameArabic": "Alexandria Pharmaceuticals",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 295553,
-        "dateStamp": "2026-10-05T14:53:29",
-        "heading": "The Arab Ceramic CO.- Ceramica Remas (CERA.CA) - Release Regarding a Disclosure Form",
-        "content": "Company Name : The Arab Ceramic CO.- Ceramica Remas<br />ISIN Code : EGS3C151C015<br />Reuters Code : CERA.CA<br />Content : <br />Release regarding the post-implementation disclosure form in accordance with the provisions of Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345034_1.pdf\" target=\"_blank\">The Release (65 KB)</a>",
-        "headingArabic": "العربية للخزف (سيراميكا ريماس (CERA.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : العربية للخزف (سيراميكا ريماس)<br />كود الترقيم الدولي : EGS3C151C015<br />كود رويترز : CERA.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ، وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345034_1.pdf\" target=\"_blank\">البيان (65 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3C151C015",
-        "companyName": "العربية للخزف - سيراميكا ريماس",
-        "companyNameArabic": "The Arab Ceramic CO.- Ceramica Remas",
-        "sectorId": 27,
-        "attachments": []
-      },
-      {
-        "code": 295552,
-        "dateStamp": "2026-10-05T14:52:41",
-        "heading": "El Ezz Porcelain (Gemma) (ECAP.CA) - Release Regarding the Disclosure Form ",
-        "content": "Company Name : El Ezz Porcelain (Gemma)<br />ISIN Code : EGS3C071C015<br />Reuters Code : ECAP.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345032_1.pdf\" target=\"_blank\">The Release (495 KB)</a>",
-        "headingArabic": "العز للسيراميك و البورسلين - الجوهره (ECAP.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : العز للسيراميك و البورسلين - الجوهره<br />كود الترقيم الدولي : EGS3C071C015<br />كود رويترز : ECAP.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345032_1.pdf\" target=\"_blank\">البيان (495 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3C071C015",
-        "companyName": "العز للسيراميك و البورسلين - الجوهره",
-        "companyNameArabic": "El Ezz Porcelain (Gemma)",
-        "sectorId": 27,
-        "attachments": []
-      },
-      {
-        "code": 295550,
-        "dateStamp": "2026-10-05T14:49:36",
-        "heading": "Copper For Commercial Investment & Real Estate Development (COPR.CA) - Release Regarding the Disclosure Form ",
-        "content": "Company Name : Copper For Commercial Investment & Real Estate Development<br />ISIN Code : EGS65511C015<br />Reuters Code : COPR.CA<br />Content : <br />Release regarding the post-implementation disclosure form in accordance with the provisions of Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345037_1.pdf\" target=\"_blank\">The Release (764 KB)</a>",
-        "headingArabic": "كوبر للاستثمار التجارى و التطوير العقارى (COPR.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : كوبر للاستثمار التجارى و التطوير العقارى<br />كود الترقيم الدولي : EGS65511C015<br />كود رويترز : COPR.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345037_1.pdf\" target=\"_blank\">البيان (764 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65511C015",
-        "companyName": "كوبر للاستثمار التجارى و التطوير العقارى",
-        "companyNameArabic": "Copper For Commercial Investment & Real Estate Development",
-        "sectorId": 25,
         "attachments": []
       }
     ],
