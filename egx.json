@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-07 09:51:39 AM",
+  "lastUpdated": "2026-10-07 10:01:36 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-07T09:51:32"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-07T10:01:32"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 53298.14,
-        "close": 53298.14,
+        "change": -9.27,
+        "changePer": -0.017392727025746114,
+        "high": 53335,
+        "close": 53288.87,
         "open": 53298.14,
-        "low": 53298.14,
-        "ytdPercent": 27.4192,
+        "low": 53271.45,
+        "ytdPercent": 27.397,
         "date": "2026-10-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-07T09:58:00",
+          "value": 53298.14
+        },
+        {
+          "time": "2026-10-07T10:00:00",
+          "value": 53335
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6584.07,
-        "close": 6584.07,
+        "change": -15.6,
+        "changePer": -0.23693551253252168,
+        "high": 6587.27,
+        "close": 6568.47,
         "open": 6584.07,
-        "low": 6584.07,
-        "ytdPercent": 43.2014,
+        "low": 6567.87,
+        "ytdPercent": 42.8621,
         "date": "2026-10-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-07T09:58:00",
+          "value": 6584.07
+        },
+        {
+          "time": "2026-10-07T10:00:00",
+          "value": 6587.27
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 19642.65,
-        "close": 19642.65,
+        "change": 4.42,
+        "changePer": 0.022502055476221385,
+        "high": 19653.82,
+        "close": 19647.07,
         "open": 19642.65,
-        "low": 19642.65,
-        "ytdPercent": 49.6545,
+        "low": 19641.07,
+        "ytdPercent": 49.6882,
         "date": "2026-10-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-07T09:58:00",
+          "value": 19642.65
+        },
+        {
+          "time": "2026-10-07T10:00:00",
+          "value": 19653.82
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 25953.13,
-        "close": 25953.13,
+        "change": 3.08,
+        "changePer": 0.011867547382531509,
+        "high": 25968.11,
+        "close": 25956.21,
         "open": 25953.13,
-        "low": 25953.13,
-        "ytdPercent": 48.9344,
+        "low": 25947.97,
+        "ytdPercent": 48.9521,
         "date": "2026-10-07T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-07T09:58:00",
+          "value": 25953.13
+        },
+        {
+          "time": "2026-10-07T10:00:00",
+          "value": 25968.11
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 295643,
+        "dateStamp": "2026-10-07T10:01:08",
+        "heading": "Alexandria Flour Mills (AFMC.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Alexandria Flour Mills<br />Symbols: EGS30471C014<br />Reuters: AFMC.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345121_1.pdf\" target=\"_blank\">The Disclosure Form (569 KB)</a>",
+        "headingArabic": " مطاحن ومخابز الاسكندرية (AFMC.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم الشركة: مطاحن ومخابز الاسكندرية<br />كود الترقيم الدولي: EGS30471C014<br />كود رويترز: AFMC.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345121_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (569 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30471C014",
+        "companyName": "مطاحن ومخابز الاسكندرية",
+        "companyNameArabic": "Alexandria Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 295642,
+        "dateStamp": "2026-10-07T09:57:53",
+        "heading": "Export Development Bank of Egypt (EXPA.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Export Development Bank of Egypt<br />Symbols: EGS60241C014<br />Reuters: EXPA.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345120_1.pdf\" target=\"_blank\">The Disclosure Form in Arabic & English (404 KB)</a>",
+        "headingArabic": "البنك المصري لتنمية الصادرات (EXPA.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم البنك: البنك المصري لتنمية الصادرات<br />كود الترقيم الدولي: EGS60241C014<br />كود رويترز: EXPA.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح البنك عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية البنك.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345120_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغتين العربية والإنجليزية  (404 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS60241C014",
+        "companyName": "البنك المصري لتنمية الصادرات",
+        "companyNameArabic": "Export Development Bank of Egypt",
+        "sectorId": 1,
+        "attachments": []
+      },
+      {
+        "code": 295640,
+        "dateStamp": "2026-10-07T09:54:22",
+        "heading": "Release from GB Corp (GBCO.CA) Concerning the Board of Directors & the Executive Managers",
+        "content": "Company: GB Corp <br />Symbols: EGS673T1C012<br />Reuters: GBCO.CA<br />Content: <br />Release from the company concerning the Board of Directors & the Executive Managers.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345119_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (4,665 KB)</a>",
+        "headingArabic": "بيان من جى بى كوربوريشن (GBCO.CA) بخصوص إطارها التنظيمي",
+        "contentArabic": "اسم الشركة: جى بى كوربوريشن <br />كود الترقيم الدولي: EGS673T1C012<br />كود رويترز: GBCO.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص الإطار التنظيمي للشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345119_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (4,665 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS673T1C012",
+        "companyName": "جى بى كوربوريشن",
+        "companyNameArabic": "GB Corp",
+        "sectorId": 8,
+        "attachments": []
+      },
+      {
         "code": 295636,
         "dateStamp": "2026-10-07T09:43:54",
         "heading": "Release from Arabian Metal Industries And Industrial Investments (AMII.CA) ",
@@ -9545,60 +9635,6 @@
         "isin": "EGS38331C012",
         "companyName": "النيل للادوية والصناعات الكيماوية - النيل",
         "companyNameArabic": "El-Nile Co. For Pharmaceuticals And Chemical Industries",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 295612,
-        "dateStamp": "2026-10-06T15:09:51",
-        "heading": "Engineering Industries (ICON) (ENGC.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: Engineering Industries (ICON)<br />Symbols: EGS3F021C017<br />Reuters: ENGC.CA<br />Content : <br />Disclosure form of the company for the Board of Directors and the Shareholders' structure for the period ended on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345098_1.pdf\" target=\"_blank\">The Disclosure form in Arabic (1,169 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345098_2.pdf\" target=\"_blank\">The Disclosure form in English (1,802 KB)</a>",
-        "headingArabic": "الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون (ENGC.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون<br />كود الترقيم الدولي: EGS3F021C017<br />كود رويترز: ENGC.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026 تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345098_1.pdf\" target=\"_blank\">تقرير الإفصاح باللغة العربية  (1,169 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345098_2.pdf\" target=\"_blank\">تقرير الإفصاح باللغة الانجليزية (1,802 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3F021C017",
-        "companyName": "الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون",
-        "companyNameArabic": "Engineering Industries (ICON)",
-        "sectorId": 25,
-        "attachments": []
-      },
-      {
-        "code": 295611,
-        "dateStamp": "2026-10-06T15:06:33",
-        "heading": "AJWA for Food Industries company Egypt (AJWA.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: AJWA for Food Industries company Egypt<br>Symbols: EGS30211C014<br>Reuters: AJWA.CA<br>Content : <br>Disclosure form of the company for the Board of Directors and the Shareholders' structure for the period ended on 30/09/2026, according to Article 30 of the Listing Rules.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345097_1.pdf\" target=\"_blank\">The Disclosure form (1,965 KB)</a>",
-        "headingArabic": "اجواء للصناعات الغذائية - مصر (AJWA.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: اجواء للصناعات الغذائية - مصر<br />كود الترقيم الدولي: EGS30211C014<br />كود رويترز: AJWA.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026 تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345097_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (1,965 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS30211C014",
-        "companyName": "اجواء للصناعات الغذائية - مصر",
-        "companyNameArabic": "AJWA for Food Industries company    Egypt",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 295610,
-        "dateStamp": "2026-10-06T15:06:08",
-        "heading": "Release from Macro Group Pharmaceuticals -Macro Capital (MCRO.CA) Regarding a Disclosure Form ",
-        "content": "Company Name : Macro Group Pharmaceuticals -Macro Capital<br />ISIN Code : EGS7D971C011<br />Reuters Code : MCRO.CA<br />Content : <br />Release from the company regarding the disclosure form for the use of proceeds from the capital increase subscription for the financial period ending on 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345091_1.pdf\" target=\"_blank\">The Disclosure Form (2,939 KB)</a>",
-        "headingArabic": "بيان من ماكرو جروب للمستحضرات الطبية-ماكرو كابيتال (MCRO.CA) بخصوص نموذج الإفصاح",
-        "contentArabic": "اسم الشركة : ماكرو جروب للمستحضرات الطبية-ماكرو كابيتال<br />كود الترقيم الدولي : EGS7D971C011<br />كود رويترز : MCRO.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص نموذج الإفصاح عن استخدام متحصلات اكتتاب زيادة رأس المال عن الفترة المالية المنتهية في 30/06/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345091_1.pdf\" target=\"_blank\">نموذج الإفصاح  (2,939 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS7D971C011",
-        "companyName": "ماكرو جروب للمستحضرات الطبية-ماكرو كابيتال",
-        "companyNameArabic": "Macro Group Pharmaceuticals -Macro Capital",
         "sectorId": 7,
         "attachments": []
       }
