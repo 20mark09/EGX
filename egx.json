@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-11 09:46:08 AM",
+  "lastUpdated": "2026-10-11 10:01:20 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-11T09:46:02"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-11T10:01:14"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 53265.16,
-        "close": 53265.16,
+        "change": 92.57,
+        "changePer": 0.17379089821564414,
+        "high": 53357.73,
+        "close": 53357.73,
         "open": 53265.16,
         "low": 53265.16,
-        "ytdPercent": 27.3404,
+        "ytdPercent": 27.5617,
         "date": "2026-10-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-11T09:58:00",
+          "value": 53265.16
+        },
+        {
+          "time": "2026-10-11T10:00:00",
+          "value": 53348.35
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6601.5,
-        "close": 6601.5,
+        "change": 5.24,
+        "changePer": 0.0793758994167992,
+        "high": 6607.29,
+        "close": 6606.74,
         "open": 6601.5,
         "low": 6601.5,
-        "ytdPercent": 43.5805,
+        "ytdPercent": 43.6944,
         "date": "2026-10-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-11T09:58:00",
+          "value": 6601.5
+        },
+        {
+          "time": "2026-10-11T10:00:00",
+          "value": 6607.29
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 19695.01,
-        "close": 19695.01,
+        "change": 26.62,
+        "changePer": 0.13516113980140146,
+        "high": 19723.48,
+        "close": 19721.63,
         "open": 19695.01,
         "low": 19695.01,
-        "ytdPercent": 50.0534,
+        "ytdPercent": 50.2563,
         "date": "2026-10-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-11T09:58:00",
+          "value": 19695.01
+        },
+        {
+          "time": "2026-10-11T10:00:00",
+          "value": 19723.48
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 26010,
-        "close": 26010,
+        "change": 42.29,
+        "changePer": 0.16259131103421762,
+        "high": 26052.29,
+        "close": 26052.29,
         "open": 26010,
         "low": 26010,
-        "ytdPercent": 49.2608,
+        "ytdPercent": 49.5034,
         "date": "2026-10-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-11T09:58:00",
+          "value": 26010
+        },
+        {
+          "time": "2026-10-11T10:00:00",
+          "value": 26051.67
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 295721,
+        "dateStamp": "2026-10-11T09:58:06",
+        "heading": "Faisal Islamic Bank of Egypt (FAITA.CA,FAIT.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
+        "content": "Company: Faisal Islamic Bank of Egypt<br />Symbols: EGS60321C014 - EGS60322C012<br />Reuters: FAITA.CA - FAIT.CA<br />Content : <br />Disclosure form of the company for the Board of Directors and the shareholders' structure for the period ended on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345207_1.pdf\" target=\"_blank\">Shareholders' Structure (1,469 KB)</a>",
+        "headingArabic": "بنك فيصل الاسلامي المصري (FAITA.CA,FAIT.CA) - نموذج تقرير إفصاح للبنك عن مجلس الإدارة وهيكل المساهمين ",
+        "contentArabic": "اسم البنك: بنك فيصل الاسلامي المصري<br />كود الترقيم الدولي: EGS60321C014 - EGS60322C012<br />كود رويترز: FAITA.CA - FAIT.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح البنك عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026 تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية البنك.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345207_1.pdf\" target=\"_blank\">هيكل المساهمين  (1,469 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS60321C014",
+        "companyName": "بنك فيصل الاسلامي المصرية بالجنية",
+        "companyNameArabic": "Faisal Islamic Bank of Egypt - In EGP",
+        "sectorId": 1,
+        "attachments": []
+      },
+      {
         "code": 295720,
         "dateStamp": "2026-10-11T09:43:59",
         "heading": "MISR INTERCONTINENTAL FOR GRANITE & MARBLE (EGY-STON) (MISR.CA) - Disclosure Form for the BoD & the Shareholders' Structure (SMEs Market)",
@@ -9582,24 +9636,6 @@
         "companyName": "شركة مستشفي كليوباترا",
         "companyNameArabic": "Cleopatra Hospital Company",
         "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 295701,
-        "dateStamp": "2026-10-07T15:38:03",
-        "heading": "Canal Shipping Agencies (CSAG.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-        "content": "Company: Canal Shipping Agencies<br />Symbols: EGS44031C010<br />Reuters: CSAG.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345156_1.pdf\" target=\"_blank\">The Disclosure Form (3,250 KB)</a>",
-        "headingArabic": "القناة للتوكيلات الملاحية (CSAG.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: القناة للتوكيلات الملاحية<br />كود الترقيم الدولي: EGS44031C010<br />كود رويترز: CSAG.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345156_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح  (3,250 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS44031C010",
-        "companyName": "القناة للتوكيلات الملاحية",
-        "companyNameArabic": "Canal Shipping Agencies",
-        "sectorId": 22,
         "attachments": []
       }
     ],
