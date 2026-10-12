@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-12 09:46:11 AM",
+  "lastUpdated": "2026-10-12 10:01:23 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-12T09:46:01"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-12T10:01:12"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -81.24,
+        "changePer": -0.1556122106932635,
         "high": 52206.7,
-        "close": 52206.7,
+        "close": 52125.46,
         "open": 52206.7,
-        "low": 52206.7,
-        "ytdPercent": 24.8099,
+        "low": 52125.46,
+        "ytdPercent": 24.6157,
         "date": "2026-10-12T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-12T09:58:00",
+          "value": 52206.7
+        },
+        {
+          "time": "2026-10-12T10:00:00",
+          "value": 52206.7
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -18.29,
+        "changePer": -0.28324663518793547,
         "high": 6457.27,
-        "close": 6457.27,
+        "close": 6438.98,
         "open": 6457.27,
-        "low": 6457.27,
-        "ytdPercent": 40.4435,
+        "low": 6438.98,
+        "ytdPercent": 40.0457,
         "date": "2026-10-12T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-12T09:58:00",
+          "value": 6457.27
+        },
+        {
+          "time": "2026-10-12T10:00:00",
+          "value": 6457.27
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -15.55,
+        "changePer": -0.08075719608937822,
         "high": 19255.25,
-        "close": 19255.25,
+        "close": 19239.7,
         "open": 19255.25,
-        "low": 19255.25,
-        "ytdPercent": 46.703,
+        "low": 19239.11,
+        "ytdPercent": 46.5845,
         "date": "2026-10-12T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-12T09:58:00",
+          "value": 19255.25
+        },
+        {
+          "time": "2026-10-12T10:00:00",
+          "value": 19255.25
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -27.81,
+        "changePer": -0.1093945575715903,
         "high": 25421.74,
-        "close": 25421.74,
+        "close": 25393.93,
         "open": 25421.74,
-        "low": 25421.74,
-        "ytdPercent": 45.885,
+        "low": 25393.82,
+        "ytdPercent": 45.7254,
         "date": "2026-10-12T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-12T09:58:00",
+          "value": 25421.74
+        },
+        {
+          "time": "2026-10-12T10:00:00",
+          "value": 25421.74
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 295831,
+        "dateStamp": "2026-10-12T10:00:57",
+        "heading": "Release from Tycoon Investments Holding (ANFI.CA) Concerning the Company's Regulatory Framework",
+        "content": "Company Name : Tycoon Investments Holding<br />ISIN Code : EGS67331C016<br />Reuters Code : ANFI.CA<br />Content : <br />Release from the company concerning the regulatory framework for the company.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345266_1.pdf\" target=\"_blank\">Release from the Company (839 KB)</a>",
+        "headingArabic": "تايكون انفستمنتس هولدنج (TYCN.CA) - ",
+        "contentArabic": "بيان من تايكون أنفستمنتس هولدنج (ANFI.CA) بخصوص إطارها التنظيمي<br />اسم الشركة : تايكون أنفستمنتس هولدنج<br />كود الترقيم الدولي : EGS67331C016<br />كود رويترز : ANFI.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص الإطار التنظيمي للشركة.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345266_1.pdf\" target=\"_blank\">بيان من الشركة (839 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS67331C016",
+        "companyName": "تايكون انفستمنتس هولدنج",
+        "companyNameArabic": "Tycoon Holding Company For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 295830,
+        "dateStamp": "2026-10-12T09:55:30",
+        "heading": "Cairo Pharmaceuticals (CPCI.CA) - Disclosure Form for the BOD & the Shareholders' Structure ",
+        "content": "Company Name : Cairo Pharmaceuticals<br />ISIN Code : EGS38391C016<br />Reuters Code : CPCI.CA<br />Content : <br />The company sent its disclosure form for the BOD & the shareholders' structure for the period ended on 30/09/2026 according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345265_1.pdf\" target=\"_blank\">The Disclosure form (1,185 KB)</a>",
+        "headingArabic": "القاهرة للادوية والصناعات الكيماوية (CPCI.CA) - نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين",
+        "contentArabic": "اسم الشركة : القاهرة للادوية والصناعات الكيماوية<br />كود الترقيم الدولي : EGS38391C016<br />كود رويترز : CPCI.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح للشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026 تنفيذًا للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345265_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (1,185 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38391C016",
+        "companyName": "القاهرة للادوية والصناعات الكيماوية",
+        "companyNameArabic": "Cairo Pharmaceuticals",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 295829,
+        "dateStamp": "2026-10-12T09:48:21",
+        "heading": "Atlas for Investment & Food Industries (AIFI.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
+        "content": "Company Name : Atlas for Investment & Food Industries<br />ISIN Code : EGS071L1C018<br />Reuters Code : AIFI.CA<br />Content : <br />The company sent its disclosure form for the BoD & the shareholders' structure for the period ended on 30/09/2026, according to Article 30 of the Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345260_1.pdf\" target=\"_blank\">The Disclosure form (1,150 KB)</a>",
+        "headingArabic": "اطلس للاستثمار والصناعات الغذائية (AIFI.CA) - نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين",
+        "contentArabic": "اسم الشركة : اطلس للاستثمار والصناعات الغذائية<br />كود الترقيم الدولي : EGS071L1C018<br />كود رويترز : AIFI.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026 تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345260_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (1,150 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS071L1C018",
+        "companyName": "اطلس للاستثمار والصناعات الغذائية",
+        "companyNameArabic": "Atlas For Investment and Food Industries",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 295828,
         "dateStamp": "2026-10-12T09:45:21",
         "heading": "Release from El Ahram Co. For Printing And Packing (EPPK.CA) Concerning the Board of Directors & the Executive Managers",
@@ -9546,60 +9636,6 @@
         "companyName": "سبيد ميديكال",
         "companyNameArabic": "Speed Medical",
         "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 295811,
-        "dateStamp": "2026-10-11T15:45:02",
-        "heading": "AJWA for Food Industries company - Egypt (AJWA.CA) - Listing Committee Decision",
-        "content": "Company Name : AJWA for Food Industries company - Egypt<br />ISIN Code : EGS30211C014<br />Reuters Code : AJWA.CA<br />Content : <br />With reference to the provisions of Article 46, 47 of the Listing Rules, related to preparing and providing EGX with the consolidated financial statements for the financial year ending on 31/12/2025, and the standalone and consolidated financial statements for the financial period ending on 31/03/2026, 30/06/2026 the Listing Committee held on 07/10/2026 decided to impose a EGP 40000 penalty on the company. <br />Granted the company a period of 15 days from the end of the granted period for the decision of the Listing Committee held on 22/09/2026 to provide EGX with the consolidated financial statements for the financial year ending on 30/06/2026. <br />In light of the provisions of Article 64 of the executive regulations.",
-        "headingArabic": "اجواء للصناعات الغذائية - مصر (AJWA.CA) - قرار لجنة القيد ",
-        "contentArabic": "اسم الشركة : اجواء للصناعات الغذائية - مصر<br />كود الترقيم الدولي : EGS30211C014<br />كود رويترز : AJWA.CA<br />مضمون الإعلان : <br />بالإشارة إلى أحكام المادة 46، 47 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية والخاصة بإعداد وبموافاة البورصة المصرية بالقوائم المالية المجمعة عن السنة المالية المنتهية في 31/12/2025 والقوائم المالية المستقلة والمجمعة عن الفترة المالية المنتهية في 31/03/2026 و 30/06/2026، قررت لجنة القيد بجلستها المنعقدة بتاريخ 07/10/2026 توقيع التزام مالي قدره 40000 جنيه على الشركة وذلك لعدم التزام الشركة باحكام المادة 46، 47 من قواعد قيد وشطب الأوراق المالية و طبقًا لعقد تنظيم قيد الأوراق المالية بجداول البورصة المصرية و المبرم مع الشركة، على أن تقوم الشركة بسداد الالتزام المالي خلال 15 يوم من تاريخ إخطار الشركة بقرار لجنة القيد وعلى أن يعاد عرض موقف الشركة على لجنة القيد في حالة عدم الالتزام بنهاية المهلة الممنوحة للشركة.  <br />منح الشركة مهلة 15 يوم من تاريخ إنتهاء المهلة الممنوحة بقرار لجنة القيد بجلستها المنعقدة بتاريخ 22/09/2026 لموافاة البورصة المصرية بالقوائم المالية المجمعة ربع السنوية عن الفترة المالية المنتهية في 30/06/2026. <br />وذلك في ضوء أحكام المادة 64 من الإجراءات التنفيذية لقواعد قيد وشطب الأوراق المالية.<br /><br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS30211C014",
-        "companyName": "اجواء للصناعات الغذائية - مصر",
-        "companyNameArabic": "AJWA for Food Industries company    Egypt",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 295810,
-        "dateStamp": "2026-10-11T15:42:38",
-        "heading": "National Drilling (NDRL.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: National Drilling<br />Symbols: EGS735N2C012<br />Reuters: NDRL.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345267_1.pdf\" target=\"_blank\">The Disclosure Form (812 KB)</a>",
-        "headingArabic": " الحفر الوطنية (NDRL.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: الحفر الوطنية<br />كود الترقيم الدولي: EGS735N2C012<br />كود رويترز: NDRL.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br />هيكل المساهمين<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345267_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح  (812 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS735N2C012",
-        "companyName": "الحفر الوطنية",
-        "companyNameArabic": "National Drilling",
-        "sectorId": 20,
-        "attachments": []
-      },
-      {
-        "code": 295809,
-        "dateStamp": "2026-10-11T15:41:36",
-        "heading": "Digitize for Investment And Technology (DGTZ.CA) - Listing Committee Decision",
-        "content": "Company Name : Digitize for Investment And Technology<br />ISIN Code : EGS74F71C015<br />Reuters Code : DGTZ.CA<br />Content : <br />With reference to the provisions of Article 46, 47 of the Listing Rules, related to preparing and providing EGX with the standalone and consolidated financial statements for the financial year ending on 31/12/2025, and the standalone and consolidated financial statements for the financial period ending on 31/03/2026 and 30/06/2026 the Listing Committee held on 07/10/2026 decided to impose a EGP 40000 penalty on the company. <br />Granted the company a period of 15 days from the end of the granted period for the decision of the Listing Committee held on 22/09/2026 to provide EGX with the consolidated financial statements for the financial year ending on 30/06/2026. <br />In light of the provisions of Article 64 of the executive regulations.",
-        "headingArabic": "ديجيتايز للاستثمار والتقنية (DGTZ.CA) - قرار لجنة القيد",
-        "contentArabic": "اسم الشركة : ديجيتايز للاستثمار والتقنية<br />كود الترقيم الدولي : EGS74F71C015<br />كود رويترز : DGTZ.CA<br />مضمون الإعلان : <br />بالإشارة إلى أحكام المادة 46، 47 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية والخاصة بإعداد وبموافاة البورصة المصرية بالقوائم المالية المستقلة والمجمعة عن السنة المالية المنتهية في 31/12/2025 والقوائم المالية المستقلة والمجمعة عن الفترة المالية المنتهية في 31/03/2026 و 30/06/2026، قررت لجنة القيد بجلستها المنعقدة بتاريخ 07/10/2026 توقيع التزام مالي قدره 40000 جنيه على الشركة وذلك لعدم التزام الشركة باحكام المادة 46، 47 من قواعد قيد وشطب الأوراق المالية و طبقًا لعقد تنظيم قيد الأوراق المالية بجداول البورصة المصرية و المبرم مع الشركة، على ان تقوم الشركة بسداد الالتزام المالي خلال 15 يوم من تاريخ إخطار الشركة بقرار لجنة القيد وعلى أن يعاد عرض موقف الشركة على لجنة القيد في حالة عدم الالتزام بنهاية المهلة الممنوحة للشركة.  <br />منح الشركة مهلة 15 يوم من تاريخ إنتهاء المهلة الممنوحة بقرار لجنة القيد بجلستها المنعقدة بتاريخ 22/09/2026 لموافاة البورصة بالقوائم المالية المجمعة ربع السنوية عن الفترة المالية المنتهية في 30/06/2026. <br />وذلك في ضوء أحكام المادة 64 من الإجراءات التنفيذية لقواعد قيد وشطب الأوراق المالية.<br /><br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS74F71C015",
-        "companyName": "ديجيتايز للاستثمار والتقنية",
-        "companyNameArabic": "Digitize for Investment And Technology",
-        "sectorId": 18,
         "attachments": []
       }
     ],
