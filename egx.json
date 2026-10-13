@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-13 09:46:07 AM",
+  "lastUpdated": "2026-10-13 10:01:31 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-13T09:46:03"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-13T10:01:25"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -87.93,
+        "changePer": -0.1703610188879279,
         "high": 51613.92,
-        "close": 51613.92,
+        "close": 51525.99,
         "open": 51613.92,
-        "low": 51613.92,
-        "ytdPercent": 23.3928,
+        "low": 51525.97,
+        "ytdPercent": 23.1825,
         "date": "2026-10-13T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-13T09:58:00",
+          "value": 51613.92
+        },
+        {
+          "time": "2026-10-13T10:00:00",
+          "value": 51613.92
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -16.7,
+        "changePer": -0.26367768797298174,
         "high": 6333.49,
-        "close": 6333.49,
+        "close": 6316.79,
         "open": 6333.49,
-        "low": 6333.49,
-        "ytdPercent": 37.7513,
+        "low": 6316.66,
+        "ytdPercent": 37.3881,
         "date": "2026-10-13T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-13T09:58:00",
+          "value": 6333.49
+        },
+        {
+          "time": "2026-10-13T10:00:00",
+          "value": 6333.49
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -1.57,
+        "changePer": -0.008522497493462919,
         "high": 18421.83,
-        "close": 18421.83,
+        "close": 18420.26,
         "open": 18421.83,
-        "low": 18421.83,
-        "ytdPercent": 40.3533,
+        "low": 18412.86,
+        "ytdPercent": 40.3413,
         "date": "2026-10-13T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-13T09:58:00",
+          "value": 18421.83
+        },
+        {
+          "time": "2026-10-13T10:00:00",
+          "value": 18421.83
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -10.86,
+        "changePer": -0.04427970256761115,
         "high": 24525.91,
-        "close": 24525.91,
+        "close": 24515.05,
         "open": 24525.91,
-        "low": 24525.91,
-        "ytdPercent": 40.7442,
+        "low": 24512.17,
+        "ytdPercent": 40.6818,
         "date": "2026-10-13T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-13T09:58:00",
+          "value": 24525.91
+        },
+        {
+          "time": "2026-10-13T10:00:00",
+          "value": 24525.91
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 295917,
+        "dateStamp": "2026-10-13T09:46:30",
+        "heading": "Orascom Development Egypt (ORHD.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Orascom Development Egypt<br />Symbols: EGS70321C012<br />Reuters: ORHD.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 12/10/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345368_1.pdf\" target=\"_blank\">The BoD Decisions  (251 KB)</a>",
+        "headingArabic": "اوراسكوم للتنمية مصر (ORHD.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: اوراسكوم للتنمية مصر<br />كود الترقيم الدولي: EGS70321C012<br />كود رويترز: ORHD.CA<br />مضمون الاعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 12/10/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345368_1.pdf\" target=\"_blank\">قرارات مجلس الإدارة  (251 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70321C012",
+        "companyName": "اوراسكوم للتنمية مصر",
+        "companyNameArabic": "Orascom Development Egypt",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 295916,
         "dateStamp": "2026-10-12T20:14:27",
         "heading": "El Ezz Porcelain (Gemma) (ECAP.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
@@ -9582,24 +9636,6 @@
         "companyName": "العالمية للاستثمار والتنمية",
         "companyNameArabic": "International Co For Investment & Development",
         "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 295897,
-        "dateStamp": "2026-10-12T15:43:44",
-        "heading": "Naeem Holding (NAHO.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: Naeem Holding<br />Symbols: EGS69182C011<br />Reuters: NAHO.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345341_1.pdf\" target=\"_blank\">The Disclosure Form (2,153 KB)</a>",
-        "headingArabic": "النعيم القابضة للاستثمارات (NAHO.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: النعيم القابضة للاستثمارات<br />كود الترقيم الدولي: EGS69182C011<br />كود رويترز: NAHO.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345341_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح (2,153 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS69182C011",
-        "companyName": "النعيم القابضة للاستثمارات",
-        "companyNameArabic": "Naeem Holding",
-        "sectorId": 24,
         "attachments": []
       }
     ],
