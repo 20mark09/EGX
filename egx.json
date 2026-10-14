@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-14 09:46:13 AM",
+  "lastUpdated": "2026-10-14 10:01:30 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-14T09:46:09"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-14T10:01:21"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 51265.27,
-        "close": 51265.27,
+        "change": 216.52,
+        "changePer": 0.42235220842492394,
+        "high": 51481.79,
+        "close": 51481.79,
         "open": 51265.27,
         "low": 51265.27,
-        "ytdPercent": 22.5592,
+        "ytdPercent": 23.0769,
         "date": "2026-10-14T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-14T09:58:00",
+          "value": 51265.27
+        },
+        {
+          "time": "2026-10-14T10:00:00",
+          "value": 51471.48
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6297.03,
-        "close": 6297.03,
+        "change": 7.07,
+        "changePer": 0.11227515193670667,
+        "high": 6304.1,
+        "close": 6304.1,
         "open": 6297.03,
         "low": 6297.03,
-        "ytdPercent": 36.9584,
+        "ytdPercent": 37.1121,
         "date": "2026-10-14T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-14T09:58:00",
+          "value": 6297.03
+        },
+        {
+          "time": "2026-10-14T10:00:00",
+          "value": 6303.09
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 17917.04,
-        "close": 17917.04,
+        "change": 40,
+        "changePer": 0.22325116202229833,
+        "high": 17957.22,
+        "close": 17957.04,
         "open": 17917.04,
         "low": 17917.04,
-        "ytdPercent": 36.5073,
+        "ytdPercent": 36.8121,
         "date": "2026-10-14T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-14T09:58:00",
+          "value": 17917.04
+        },
+        {
+          "time": "2026-10-14T10:00:00",
+          "value": 17955.88
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 23997.29,
-        "close": 23997.29,
+        "change": 46.61,
+        "changePer": 0.19423026516744182,
+        "high": 24044.06,
+        "close": 24043.9,
         "open": 23997.29,
         "low": 23997.29,
-        "ytdPercent": 37.7106,
+        "ytdPercent": 37.9781,
         "date": "2026-10-14T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-14T09:58:00",
+          "value": 23997.29
+        },
+        {
+          "time": "2026-10-14T10:00:00",
+          "value": 24040.5
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,96 @@
   "news": {
     "disclosure": [
       {
+        "code": 295978,
+        "dateStamp": "2026-10-14T09:57:35",
+        "heading": "Integrated Engineering Group S.A.E (INEG.CA) - AGM Minutes (Notarized) (SMEs Market)",
+        "content": "Company: Integrated Engineering Group S.A.E<br />Symbols: EGS3E3B1C014<br />Reuters: INEG.CA<br />Content: <br />Notarized minutes of the AGM held on 05/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345481_1.pdf\" target=\"_blank\">AGM Minutes (Notarized)  (1,334 KB)</a>",
+        "headingArabic": "المجموعة المتكاملة للأعمال الهندسية (INEG.CA) - محضر اجتماع الجمعية العامة العادية (موثق) (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: المجموعة المتكاملة للأعمال الهندسية<br />كود الترقيم الدولي: EGS3E3B1C014<br />كود رويترز: INEG.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 05/10/2026 (موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345481_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (موثق) (1,334 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3E3B1C014",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 295977,
+        "dateStamp": "2026-10-14T09:56:03",
+        "heading": "Upper Egypt Flour Mills (UEFM.CA) Reports Its Financial Results (Consolidated) for the Period ending on 30/06/2026",
+        "content": "Company Name: Upper Egypt Flour Mills<br />ISIN Code: EGS30451C016<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/07/2025 to 30/06/2026<br />Net profit: 224,256,693 <br />F/S (Consolidated) Period: From 01/07/2024 to 30/06/2025<br />Net Comparative profit: 278,495,356  <br />Audit Status: Audited<br />Source: Upper Egypt Flour Mills<br />Taking minority rights into consideration",
+        "headingArabic": "مطاحن مصر العليا (UEFM.CA) تعلن نتائج أعمالها المجمعة عن الفترة المنتهية في 30/06/2026 ",
+        "contentArabic": "اسم الشركة: مطاحن مصر العليا<br />كود الترقيم الدولي: EGS30451C016<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/07/2025 إلى 30/06/2026<br />صافي الربح: 224,256,693 <br />أرقام المقارنة المجمعة عن الفترة: من 01/07/2024 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 278,495,356 <br />تقرير مراقب الحسابات: مرفق<br />المصدر: مطاحن مصر العليا<br /><br />مع الأخذ في الإعتبار حقوق الأقلية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30451C016",
+        "companyName": "مطاحن مصر العليا",
+        "companyNameArabic": "Upper Egypt Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 295976,
+        "dateStamp": "2026-10-14T09:55:55",
+        "heading": "Al Fanar Contracting Construction Trade Import And Export Co (FNAR.CA) - EGM Minutes (Notarized) (SMEs Market)",
+        "content": "Company: Al Fanar Contracting Construction Trade Import And Export Co<br />Symbols: EGS221U1C016<br />Reuters: FNAR.CA<br />Content: <br />Notarized minutes of the EGM held on 03/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345480_1.pdf\" target=\"_blank\">EGM Minutes (Notarized) (Second Meeting) (665 KB)</a>",
+        "headingArabic": "الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد (FNAR.CA) - محضر اجتماع الجمعية العامة غير العادية (موثق) (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد<br />كود الترقيم الدولي: EGS221U1C016<br />كود رويترز: FNAR.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة غير العادية التي انعقدت يوم 03/10/2026 (اجتماع ثان) والمتضمن ملاحظات الهيئة العامة للاستثمار بخصوص التوثيق .<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345480_1.pdf\" target=\"_blank\">محضر اجتماع الجمعيه العامة غير العادية (موثق) (اجتماع ثان) (665 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS221U1C016",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 295975,
+        "dateStamp": "2026-10-14T09:52:52",
+        "heading": "Upper Egypt Flour Mills (UEFM.CA) Reports its Financial Results (Standalone) for the Period ending on 30/06/2026 ",
+        "content": "Company Name: Upper Egypt Flour Mills<br />ISIN Code: EGS30451C016<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/07/2025 to 30/06/2026<br />Net profit: 179,554,262 <br />F/S (Standalone) Period: From 01/07/2024 to 30/06/2025<br />Net Comparative profit: 221,859,071  <br />Audit Status: Audited<br />Source: Upper Egypt Flour Mills<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345485_1.pdf\" target=\"_blank\">The TCFD & ESG Reports in Arabic & English (8,519 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345485_2.pdf\" target=\"_blank\">The Annual BoD Report in Arabic & English (3,819 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345485_3.pdf\" target=\"_blank\">The Annual Corporates Governance Report in Arabic & English (7,552 KB)</a>",
+        "headingArabic": "مطاحن مصر العليا (UEFM.CA) تعلن نتائج أعمالها المستقلة عن الفترة المنتهية في 30/06/2026 ",
+        "contentArabic": "اسم الشركة: مطاحن مصر العليا<br />كود الترقيم الدولي: EGS30451C016<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/07/2025 إلى 30/06/2026<br />صافي الربح: 179,554,262 <br />أرقام المقارنة المستقلة  عن الفترة: من 01/07/2024 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 221,859,071 <br />تقرير مراقب الحسابات: مرفق<br />المصدر: مطاحن مصر العليا<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345485_1.pdf\" target=\"_blank\">تقريرى الاستدامة ESG و TCFD باللغة العربية والإنجليزية (8,519 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345485_2.pdf\" target=\"_blank\">تقرير مجلس الادارة السنوى باللغة العربية و الإنجليزية (3,819 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345485_3.pdf\" target=\"_blank\">تقرير الحوكمة السنوى باللغة العربية و الإنجليزية (7,552 KB)</a>",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS30451C016",
+        "companyName": "مطاحن مصر العليا",
+        "companyNameArabic": "Upper Egypt Flour Mills",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 295974,
+        "dateStamp": "2026-10-14T09:50:57",
+        "heading": "Al Fanar Contracting Construction Trade Import And Export Co (FNAR.CA) - Disclosure Form for the BoD & the Shareholders' Structure (SMEs Market)",
+        "content": "Company: Al Fanar Contracting Construction Trade Import And Export Co<br />Symbols: EGS221U1C016<br />Reuters: FNAR.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345438_1.pdf\" target=\"_blank\">The Disclosure Form (2,842 KB)</a>",
+        "headingArabic": "الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد (FNAR.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد<br />كود الترقيم الدولي: EGS221U1C016<br />كود رويترز: FNAR.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345438_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح  (2,842 KB)</a>",
+        "section": "Shareholding Structure                            ",
+        "sectionArabic": "هيكل المساهمين                                    ",
+        "secId": 16,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS221U1C016",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
         "code": 295973,
         "dateStamp": "2026-10-14T09:45:37",
         "heading": "Certificates Of Odin Egyptian Equity Investment Fund-KASAB (KASABF.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
@@ -9510,96 +9636,6 @@
         "companyName": "الوادى العالمية للاستثمار و التنمية",
         "companyNameArabic": "El Wadi For International and Investement Development",
         "sectorId": 16,
-        "attachments": []
-      },
-      {
-        "code": 295958,
-        "dateStamp": "2026-10-14T09:09:19",
-        "heading": "El Obour Real Estate Investment (OBRI.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: El Obour Real Estate Investment<br />Symbols: EGS65551C011<br />Reuters: OBRI.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345433_1.pdf\" target=\"_blank\">The Disclosure Form (1,873 KB)</a>",
-        "headingArabic": "العبور للاستثمار العقارى (OBRI.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: العبور للاستثمار العقارى<br />كود الترقيم الدولي: EGS65551C011<br />كود رويترز: OBRI.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br />هيكل المساهمين<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345433_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح  (1,873 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65551C011",
-        "companyName": "العبور للاستثمار العقارى",
-        "companyNameArabic": "El Obour Real Estate Investment",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 295957,
-        "dateStamp": "2026-10-14T09:06:59",
-        "heading": "Societe Arabe Internationale De Banque S.A.E. (SAIB.CA) - Decisions of the BoD Meeting ",
-        "content": "Company: Societe Arabe Internationale De Banque S.A.E.<br />Symbols: EGS60142C014<br />Reuters: SAIB.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 13/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345432_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting in Arabic & English (4,509 KB)</a>",
-        "headingArabic": "بنك الشركة المصرفية العربية الدولية- شركة مساهمة مصرية (SAIB.CA) - قرارات مجلس الإدارة",
-        "contentArabic": "اسم البنك: بنك الشركة المصرفية العربية الدولية- شركة مساهمة مصرية<br />كود الترقيم الدولي: EGS60142C014<br />كود رويترز: SAIB.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة البنك بجلسته المنعقدة بتاريخ 13/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345432_1.pdf\" target=\"_blank\">قرارات مجلس الإدارة باللغة العربية والإنجليزية  (4,509 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS60142C014",
-        "companyName": "بنك الشركة المصرفية العربية الدولية- شركة مساهمة مصرية",
-        "companyNameArabic": "Societe Arabe Internationale De Banque S.A.E.",
-        "sectorId": 1,
-        "attachments": []
-      },
-      {
-        "code": 295956,
-        "dateStamp": "2026-10-14T09:03:48",
-        "heading": "El Kahera Housing (ELKA.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: El Kahera Housing<br />Symbols: EGS65071C010<br />Reuters: ELKA.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345431_1.pdf\" target=\"_blank\">The Disclosure Form in Arabic & English (5,849 KB)</a>",
-        "headingArabic": "القاهرة للاسكان والتعمير (ELKA.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: القاهرة للاسكان والتعمير<br />كود الترقيم الدولي: EGS65071C010<br />كود رويترز: ELKA.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345431_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغة العربية والإنجليزية (5,849 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65071C010",
-        "companyName": "القاهرة للاسكان والتعمير",
-        "companyNameArabic": "El Kahera Housing",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 295955,
-        "dateStamp": "2026-10-14T09:00:36",
-        "heading": "Arab Pharmaceuticals (ADCI.CA) - Company's Reply on the Central Authority of Accountancy Report",
-        "content": "Company: Arab Pharmaceuticals <br />Symbols: EGS38321C013<br />Reuters: ADCI.CA<br />Content: <br />Company's reply on the Central Authority of Accountancy Report for the year ended on 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345429_1.pdf\" target=\"_blank\">Company's Reply on the Central Authority of Accountancy Report (212 KB)</a>",
-        "headingArabic": "العربية للادوية والصناعات الكيماوية (ADCI.CA) - رد الشركة على تقرير الجهاز المركزي للمحاسبات  ",
-        "contentArabic": "اسم الشركة: العربية للادوية والصناعات الكيماوية <br />كود الترقيم الدولي: EGS38321C013<br />كود رويترز: ADCI.CA<br />مضمون الإعلان :<br />رد الشركة على تقرير الجهاز المركزي للمحاسبات عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345429_1.pdf\" target=\"_blank\">رد الشركة على تقرير الجهاز المركزي للمحاسبات  (212 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38321C013",
-        "companyName": "العربية للادوية والصناعات الكيماوية",
-        "companyNameArabic": "Arab Pharmaceuticals",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 295954,
-        "dateStamp": "2026-10-14T08:56:13",
-        "heading": "Fawry For Banking Technology And Electronic Payment (FWRY.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
-        "content": "Company: Fawry For Banking Technology And Electronic Payment<br />Symbols: EGS745L1C014<br />Reuters: FWRY.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345428_1.pdf\" target=\"_blank\">The Disclosure Form in English (1,576 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345428_2.pdf\" target=\"_blank\">The Disclosure Form in Arabic (1,349 KB)</a>",
-        "headingArabic": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية (FWRY.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين ",
-        "contentArabic": "اسم الشركة: فوري لتكنولوجيا البنوك والمدفوعات الالكترونية<br />كود الترقيم الدولي: EGS745L1C014<br />كود رويترز: FWRY.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345428_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغة الإنجليزية (1,576 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345428_2.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغة العربية  (1,349 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS745L1C014",
-        "companyName": "فوري لتكنولوجيا البنوك والمدفوعات الالكترونية",
-        "companyNameArabic": "Fawry For Banking Technology And Electronic Payment",
-        "sectorId": 18,
         "attachments": []
       }
     ],
