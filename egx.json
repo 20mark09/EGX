@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-15 09:46:02 AM",
+  "lastUpdated": "2026-10-15 10:01:25 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-15T09:45:58"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-15T10:01:17"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 51492.83,
-        "close": 51492.83,
+        "change": 81.73,
+        "changePer": 0.15872112680542125,
+        "high": 51581.6,
+        "close": 51574.56,
         "open": 51492.83,
         "low": 51492.83,
-        "ytdPercent": 23.1033,
+        "ytdPercent": 23.2987,
         "date": "2026-10-15T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-15T09:58:00",
+          "value": 51492.83
+        },
+        {
+          "time": "2026-10-15T10:00:00",
+          "value": 51581.6
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6348.74,
-        "close": 6348.74,
+        "change": -1.48,
+        "changePer": -0.023311712245264415,
+        "high": 6349.4,
+        "close": 6347.26,
         "open": 6348.74,
-        "low": 6348.74,
-        "ytdPercent": 38.083,
+        "low": 6347.26,
+        "ytdPercent": 38.0508,
         "date": "2026-10-15T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-15T09:58:00",
+          "value": 6348.74
+        },
+        {
+          "time": "2026-10-15T10:00:00",
+          "value": 6349.4
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 18330.75,
-        "close": 18330.75,
+        "change": 11.57,
+        "changePer": 0.06311798480695006,
+        "high": 18352.75,
+        "close": 18342.32,
         "open": 18330.75,
         "low": 18330.75,
-        "ytdPercent": 39.6593,
+        "ytdPercent": 39.7475,
         "date": "2026-10-15T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-15T09:58:00",
+          "value": 18330.75
+        },
+        {
+          "time": "2026-10-15T10:00:00",
+          "value": 18352.75
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 24413.26,
-        "close": 24413.26,
+        "change": 10.9,
+        "changePer": 0.044647867593266936,
+        "high": 24435.94,
+        "close": 24424.16,
         "open": 24413.26,
         "low": 24413.26,
-        "ytdPercent": 40.0977,
+        "ytdPercent": 40.1603,
         "date": "2026-10-15T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-15T09:58:00",
+          "value": 24413.26
+        },
+        {
+          "time": "2026-10-15T10:00:00",
+          "value": 24435.94
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,78 @@
   "news": {
     "disclosure": [
       {
+        "code": 296075,
+        "dateStamp": "2026-10-15T09:55:03",
+        "heading": "Release from Alexandria Mineral Oils Company (AMOC.CA) Concerning the Invitation of the EGM",
+        "content": "Company Name : Alexandria Mineral Oils Company<br />ISIN Code : EGS380P1C010<br />Reuters Code : AMOC.CA<br />Content : <br />Release from the company concerning the invitation of the EGM which is scheduled to be held on 14/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345554_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (1,807 KB)</a>",
+        "headingArabic": "بيان من الاسكندرية للزيوت المعدنية - اموك (AMOC.CA) بخصوص دعوة الجمعية العامة غير العادية",
+        "contentArabic": "اسم الشركة :  الاسكندرية للزيوت المعدنية - اموك<br />كود الترقيم الدولي : EGS380P1C010<br />كود رويترز : AMOC.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص دعوة الجمعية العامة غير العادية والمقرر انعقادها يوم 14/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345554_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (1,807 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS380P1C010",
+        "companyName": "الاسكندرية للزيوت المعدنية",
+        "companyNameArabic": "Alexandria Mineral Oils Company",
+        "sectorId": 20,
+        "attachments": []
+      },
+      {
+        "code": 296074,
+        "dateStamp": "2026-10-15T09:52:29",
+        "heading": "Al Fanar Contracting Construction Trade Import And Export Co (FNAR.CA) - EGM Invitation (SMEs Market)",
+        "content": "Company: Al Fanar Contracting Construction Trade Import And Export Co<br />Symbols: EGS221U1C016<br />Reuters: FNAR.CA<br />Content: <br />Al Fanar Contracting Construction Trade Import And Export Co invites its stakeholders to attend the EGM on 07/11/2026 at 01:00 PM.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345551_1.pdf\" target=\"_blank\">Release from the Company (922 KB)</a>",
+        "headingArabic": "الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد (FNAR.CA) - دعوة الجمعية العامة غير العادية (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد<br />كود الترقيم الدولي: EGS221U1C016<br />كود رويترز: FNAR.CA<br />مضمون الإعلان : <br />تعلن شركة الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد عن دعوة الجمعية العامة غير العادية المقرر انعقادها بتاريخ 07/11/2026 في تمام الساعة 01:00 مساءً.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345551_1.pdf\" target=\"_blank\">بيان من الشركة (922 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS221U1C016",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296073,
+        "dateStamp": "2026-10-15T09:51:00",
+        "heading": "Al Fanar Contracting Construction Trade Import And Export Co (FNAR.CA) - Minutes of the BoD Meeting (SMEs Market)",
+        "content": "Company: Al Fanar Contracting Construction Trade Import And Export Co<br />Symbols: EGS221U1C016<br />Reuters: FNAR.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 14/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345550_1.pdf\" target=\"_blank\">Minutes of the BoD Meeting  (589 KB)</a>",
+        "headingArabic": "الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد (FNAR.CA) - محضر اجتماع مجلس إدارة الشركة (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد<br />كود الترقيم الدولي: EGS221U1C016<br />كود رويترز: FNAR.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 14/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345550_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة  (589 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS221U1C016",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296072,
+        "dateStamp": "2026-10-15T09:47:01",
+        "heading": "Golden Pyramids Plaza (GPPL.CA) Reports 6 Months Standalone Results",
+        "content": "Company Name : Golden Pyramids Plaza<br />ISIN Code    : EGS70342C018<br />Currency     : $<br />F/S Standalone Period : From 01/01/2026 To 30/06/2026<br />Net Profit   : 29,973,375<br />F/S Standalone Period : From 01/01/2025 To 30/06/2025<br />Net Comparative Profit   : 14,772,600<br />Audit Status : Reviewed<br />Source : Golden Pyramids Plaza<br />",
+        "headingArabic": "جولدن بيراميدز بلازا (GPPL.CA) تعلن نتائج أعمالها غير المجمعة عن 6 أشهر",
+        "contentArabic": "اسم الشركة       : جولدن بيراميدز بلازا<br />كود الترقيم الدولي : EGS70342C018<br />العملة           : دولار امريكي<br />القوائم المالية غير المجمعة عن الفترة :من 01/01/2026 الى 30/06/2026<br />صافي الربح   : 29,973,375 <br />أرقام المقارنة غير المجمعة عن الفترة  : من 01/01/2025 الى 30/06/2025<br />صافي الربح لفترة المقارنة   : 14,772,600 <br />تقرير الفحص المحدود : مرفق<br />المصدر : جولدن بيراميدز بلازا<br />",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70342C018",
+        "companyName": "جولدن بيراميدز بلازا",
+        "companyNameArabic": "Golden Pyramids Plaza",
+        "sectorId": 16,
+        "attachments": []
+      },
+      {
         "code": 296070,
         "dateStamp": "2026-10-15T09:44:36",
         "heading": "Golden Pyramids Plaza (GPPL.CA) - Board of Directors' Decisions ",
@@ -9527,78 +9635,6 @@
         "isin": "EGB694K1S638",
         "companyName": "سندات اى اف جى للتوريق ص 2 ب 8 ش ب سبتمبر 2027 ع.ث",
         "companyNameArabic": "EFG Securitization 2nd Iss 8th Pro Tra B Sep 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296054,
-        "dateStamp": "2026-10-15T08:58:22",
-        "heading": "EFG Securitization 2nd Iss 8th Pro Tranche A Mar 2027 FR (EGBEFGS2P8ACF) Declares Bond Dividends for Coupon No. (5) ",
-        "content": "Issuer Name : EFG Securitization 2nd Iss 8th Pro Tranche A Mar 2027 FR<br />ISIN Code : EGB694K1S620<br />Reuters Code : EGBEFGS2P8ACF<br />Interest Type : Fixed<br />Coupon Interest : 19.25% <br />Coupon Amount : EGP 0.8902727206<br />Coupon Number : 5<br />Coupon Date : 29/10/2026<br />Coupon Payment Date : 01/11/2026<br />Notes :  <br />Bond Redemption: EGP 9.9164408917 <br />",
-        "headingArabic": "سندات اى اف جى للتوريق الإصدار الثاني البرنامج الثامن الشريحة أ مارس 2027 (EGBEFGS2P8ACF) يعلن عن توزيع كوبون السند رقم (5)",
-        "contentArabic": "المصدر : سندات اى اف جى للتوريق الإصدار الثاني البرنامج الثامن الشريحة أ مارس 2027<br />كود الترقيم الدولي : EGB694K1S620<br />كود رويتيرز : EGBEFGS2P8ACF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 19.25% <br />قيمة الكوبون : 0.8902727206 جم للسند<br />رقم الكوبون : 5<br />تاريخ الإستحقاق : 29/10/2026<br />تاريخ الصرف : 01/11/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 9.9164408917 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB694K1S620",
-        "companyName": "سندات اى اف جى للتوريق ص 2 ب 8 ش أ مارس 2027 ع.ث",
-        "companyNameArabic": "EFG Securitization 2nd Iss 8th Pro Tra A Mar 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296053,
-        "dateStamp": "2026-10-15T08:55:43",
-        "heading": "EFG Securitization 3rd Iss 8th Pro Tranche B Jun 2028 FR (EGBEFGS3P8BCF) Declares Bond Dividends for Coupon No. (4) ",
-        "content": "Issuer Name : EFG Securitization 3rd Iss 8th Pro Tranche B Jun 2028 FR<br />ISIN Code : EGB694K1S653<br />Reuters Code : EGBEFGS3P8BCF<br />Interest Type : Fixed<br />Coupon Interest : 19.35% <br />Coupon Amount : EGP 1.6964383569<br />Coupon Number : 4<br />Coupon Date : 29/10/2026<br />Coupon Payment Date : 01/11/2026<br />",
-        "headingArabic": "سندات اى اف جى للتوريق الإصدار الثالث البرنامج الثامن شريحة ب يونيو 2028 (EGBEFGS3P8BCF) يعلن عن توزيع كوبون السند رقم (4)",
-        "contentArabic": "المصدر : سندات اى اف جى للتوريق الإصدار الثالث البرنامج الثامن شريحة ب يونيو 2028<br />كود الترقيم الدولي : EGB694K1S653<br />كود رويتيرز : EGBEFGS3P8BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 19.35% <br />قيمة الكوبون : 1.6964383569 جم للسند<br />رقم الكوبون : 4<br />تاريخ الإستحقاق : 29/10/2026<br />تاريخ الصرف : 01/11/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB694K1S653",
-        "companyName": "سندات اى اف جى للتوريق ص 3 ب 8 ش ب يونيو 2028 ع.ث",
-        "companyNameArabic": "EFG Securitization 3rd Iss 8th Pro Tra B Jun 2028 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296052,
-        "dateStamp": "2026-10-15T08:52:27",
-        "heading": "EFG Securitization 3rd Iss 8th Pro Tranche A Jun 2027 FR (EGBEFGS3P8ACF) Declares Bond Dividends for Coupon No. (4) ",
-        "content": "Issuer Name : EFG Securitization 3rd Iss 8th Pro Tranche A Jun 2027 FR<br />ISIN Code : EGB694K1S646<br />Reuters Code : EGBEFGS3P8ACF<br />Interest Type : Fixed<br />Coupon Interest : 21% <br />Coupon Amount : EGP 1.1438945612<br />Coupon Number : 4<br />Coupon Date : 29/10/2026<br />Coupon Payment Date : 01/11/2026<br />Notes :  <br />Bond Redemption: EGP 12.6445727483 <br />",
-        "headingArabic": "سندات اى اف جى للتوريق الإصدار الثالث البرنامج الثامن شريحة أ يونيو 2027 (EGBEFGS3P8ACF) يعلن عن توزيع كوبون السند رقم (4)",
-        "contentArabic": "المصدر : سندات اى اف جى للتوريق الإصدار الثالث البرنامج الثامن شريحة أ يونيو 2027<br />كود الترقيم الدولي : EGB694K1S646<br />كود رويتيرز : EGBEFGS3P8ACF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21% <br />قيمة الكوبون : 1.1438945612 جم للسند<br />رقم الكوبون : 4<br />تاريخ الإستحقاق : 29/10/2026<br />تاريخ الصرف : 01/11/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 12.6445727483 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB694K1S646",
-        "companyName": "سندات اى اف جى للتوريق ص 3 ب 8 ش أ يونيو 2027 ع.ث",
-        "companyNameArabic": "EFG Securitization 3rd Iss 8th Pro Tra A Jun 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296051,
-        "dateStamp": "2026-10-14T15:46:21",
-        "heading": "Alkan Finance Sukkuk 1st Iss Feb 2030 VR (EGKALSK01CV) Declares Bond Dividends for Coupon No. (19) ",
-        "content": "Issuer Name : Alkan Finance Sukkuk 1st Iss Feb 2030 VR<br />ISIN Code : EGB67AQ1L013<br />Reuters Code : EGKALSK01CV<br />Interest Type : Floating<br />Coupon Interest : 23.1901277801827% <br />Coupon Amount : EGP 1.90604<br />Coupon Number : 19<br />Coupon Date : 29/10/2026<br />Coupon Payment Date : 01/11/2026<br />",
-        "headingArabic": "صكوك الكان فاينانس صكوك الإصدار الأول فبراير 2030 (EGKALSK01CV) يعلن عن توزيع كوبون السند رقم (19)",
-        "contentArabic": "المصدر : صكوك الكان فاينانس صكوك الإصدار الأول فبراير 2030<br />كود الترقيم الدولي : EGB67AQ1L013<br />كود رويتيرز : EGKALSK01CV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 23.1901277801827% <br />قيمة الكوبون : 1.90604 جم للسند<br />رقم الكوبون : 19<br />تاريخ الاستحقاق : 29/10/2026<br />تاريخ الصرف : 01/11/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB67AQ1L013",
-        "companyName": "صكوك الكان فاينانس صكوك ص 1 فبراير 2030 ع.م",
-        "companyNameArabic": "Alkan Finance Sukkuk 1st Iss Feb 2030 VR",
         "sectorId": null,
         "attachments": []
       }
