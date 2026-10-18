@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-18 09:46:07 AM",
+  "lastUpdated": "2026-10-18 10:01:31 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-18T09:45:58"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-18T10:01:24"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -177.43,
+        "changePer": -0.33942732566926087,
         "high": 52273.34,
-        "close": 52273.34,
+        "close": 52095.91,
         "open": 52273.34,
-        "low": 52273.34,
-        "ytdPercent": 24.9692,
+        "low": 52095.77,
+        "ytdPercent": 24.545,
         "date": "2026-10-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-18T09:58:00",
+          "value": 52273.34
+        },
+        {
+          "time": "2026-10-18T10:00:00",
+          "value": 52273.34
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -30.74,
+        "changePer": -0.4819012682437411,
         "high": 6378.9,
-        "close": 6378.9,
+        "close": 6348.16,
         "open": 6378.9,
-        "low": 6378.9,
-        "ytdPercent": 38.739,
+        "low": 6347.77,
+        "ytdPercent": 38.0704,
         "date": "2026-10-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-18T09:58:00",
+          "value": 6378.9
+        },
+        {
+          "time": "2026-10-18T10:00:00",
+          "value": 6378.9
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 18481.55,
-        "close": 18481.55,
+        "change": -11.42,
+        "changePer": -0.061791354080150206,
+        "high": 18494.05,
+        "close": 18470.13,
         "open": 18481.55,
-        "low": 18481.55,
-        "ytdPercent": 40.8083,
+        "low": 18453.8,
+        "ytdPercent": 40.7213,
         "date": "2026-10-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-18T09:58:00",
+          "value": 18481.55
+        },
+        {
+          "time": "2026-10-18T10:00:00",
+          "value": 18494.05
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 24607.43,
-        "close": 24607.43,
+        "change": -46.82,
+        "changePer": -0.190267736208129,
+        "high": 24610.09,
+        "close": 24560.61,
         "open": 24607.43,
-        "low": 24607.43,
-        "ytdPercent": 41.212,
+        "low": 24547.11,
+        "ytdPercent": 40.9433,
         "date": "2026-10-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-18T09:58:00",
+          "value": 24607.43
+        },
+        {
+          "time": "2026-10-18T10:00:00",
+          "value": 24610.09
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,42 @@
   "news": {
     "disclosure": [
       {
+        "code": 296111,
+        "dateStamp": "2026-10-18T09:58:04",
+        "heading": "B Investments Holding (BINV.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: B Investments Holding<br />Symbols: EGS691T1C010<br />Reuters: BINV.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 15/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345608_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (355 KB)</a>",
+        "headingArabic": "بى انفستمنتس القابضه (BINV.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: بى انفستمنتس القابضه<br />كود الترقيم الدولي: EGS691T1C010<br />كود رويترز: BINV.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 15/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345608_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (355 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS691T1C010",
+        "companyName": "بى انفستمنتس القابضه",
+        "companyNameArabic": "B Investments Holding",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 296110,
+        "dateStamp": "2026-10-18T09:51:53",
+        "heading": "Arab Co. for Asset Management And Development (ACAMD.CA) Reports its Financial Results for the Period from 01/01/2026 to 30/06/2026 ",
+        "content": "Company Name: Arab Co. for Asset Management And Development<br />ISIN Code: EGS72AQ1C016<br />Currency: Egyptian Pound<br />F/S  Period: From 01/01/2026 to 30/06/2026<br />Net profit: 177,125,469 <br />F/S  Period: From 01/01/2025 to 30/06/2025<br />Net Comparative profit: 2,733,050  <br />Audit Status: Reviewed<br />Source: Arab Co. for Asset Management And Development",
+        "headingArabic": "الشركة العربية لادارة وتطوير الاصول (ACAMD.CA) تعلن نتائج أعمالها عن الفترة: من 01/01/2026 إلى 30/06/2026 ",
+        "contentArabic": "اسم الشركة: الشركة العربية لادارة وتطوير الاصول<br />كود الترقيم الدولي: EGS72AQ1C016<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/01/2026 إلى 30/06/2026<br />صافي الربح: 177,125,469 <br />أرقام المقارنة  عن الفترة: من 01/01/2025 إلى 30/06/2025<br />صافي الربح لفترة المقارنة: 2,733,050 <br />تقرير فحص محدود: مرفق<br />المصدر: الشركة العربية لادارة وتطوير الاصول",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS72AQ1C016",
+        "companyName": "الشركة العربية لادارة وتطوير الاصول",
+        "companyNameArabic": "Arab Co. for Asset Management And Development",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 296108,
         "dateStamp": "2026-10-18T09:45:46",
         "heading": "ASEC Company For Mining - ASCOM (ASCM.CA) - Disclosure Form for the BoD & the Shareholders' Structure ",
@@ -9564,42 +9636,6 @@
         "companyName": "بنيان للتنمية والتجارة",
         "companyNameArabic": "Bonyan for Development and Trade",
         "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 296083,
-        "dateStamp": "2026-10-15T14:53:15",
-        "heading": "El Ahram Co. For Printing And Packing (EPPK.CA) - BoD Meeting Minutes",
-        "content": "Company Name : El Ahram Co. For Printing And Packing<br>ISIN Code : EGS360A1C011<br>Reuters Code : EPPK.CA<br>Content : <br>The Board of Directors' meeting minutes held on 09/10/2026.<div><br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345221_1.pdf\" target=\"_blank\">The BoD Meeting Minutes (237 KB)</a></div>",
-        "headingArabic": "الاهرام للطباعة و التغليف (EPPK.CA) - محضر إجتماع مجلس ادارة الشركة ",
-        "contentArabic": "اسم الشركة : الاهرام للطباعة و التغليف<br />كود الترقيم الدولي : EGS360A1C011<br />كود رويترز : EPPK.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 09/10/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345221_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة (237 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS360A1C011",
-        "companyName": "الاهرام للطباعة و التغليف",
-        "companyNameArabic": "El Ahram Co. For Printing And Packing",
-        "sectorId": 28,
-        "attachments": []
-      },
-      {
-        "code": 296082,
-        "dateStamp": "2026-10-15T14:50:31",
-        "heading": "Arabian Food Industries DOMTY (DOMT.CA) - Disclosure Form for the BoD & the Shareholders' Structure",
-        "content": "Company Name : Arabian Food Industries DOMTY<br />ISIN Code : EGS30031C016<br />Reuters Code : DOMT.CA<br />Content : <br />The company sent its disclosure form for the BoD & the shareholders' structure for the period ended on 30/09/2026, according to Article 30 of the Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345364_1.pdf\" target=\"_blank\">The Disclosure form in Arabic & English (3,905 KB)</a>",
-        "headingArabic": "الصناعات الغذائية العربية-دومتى (DOMT.CA) - نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين",
-        "contentArabic": "اسم الشركة : الصناعات الغذائية العربية-دومتى<br />كود الترقيم الدولي : EGS30031C016<br />كود رويترز : DOMT.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026 تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345364_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح باللغة العربية والانجليزية (3,905 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS30031C016",
-        "companyName": "الصناعات الغذائية العربية-دومتى",
-        "companyNameArabic": "Arabian Food Industries DOMTY",
-        "sectorId": 19,
         "attachments": []
       }
     ],
