@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-10-19 09:46:09 AM",
+  "lastUpdated": "2026-10-19 10:01:22 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-10-19T09:46:00"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-10-19T10:01:13"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -68.67,
+        "changePer": -0.13492169060198808,
         "high": 50896.19,
-        "close": 50896.19,
+        "close": 50827.52,
         "open": 50896.19,
-        "low": 50896.19,
-        "ytdPercent": 21.6769,
+        "low": 50823.05,
+        "ytdPercent": 21.5127,
         "date": "2026-10-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-19T09:58:00",
+          "value": 50896.19
+        },
+        {
+          "time": "2026-10-19T10:00:00",
+          "value": 50896.19
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -16.88,
+        "changePer": -0.2751219957427805,
         "high": 6135.46,
-        "close": 6135.46,
+        "close": 6118.58,
         "open": 6135.46,
-        "low": 6135.46,
-        "ytdPercent": 33.4443,
+        "low": 6117.61,
+        "ytdPercent": 33.0771,
         "date": "2026-10-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-19T09:58:00",
+          "value": 6135.46
+        },
+        {
+          "time": "2026-10-19T10:00:00",
+          "value": 6135.46
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 17265.74,
-        "close": 17265.74,
+        "change": -22.19,
+        "changePer": -0.12852041094097327,
+        "high": 17272.89,
+        "close": 17243.55,
         "open": 17265.74,
-        "low": 17265.74,
-        "ytdPercent": 31.5452,
+        "low": 17240.09,
+        "ytdPercent": 31.3761,
         "date": "2026-10-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-19T09:58:00",
+          "value": 17265.74
+        },
+        {
+          "time": "2026-10-19T10:00:00",
+          "value": 17272.89
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -30.3,
+        "changePer": -0.13063959940638745,
         "high": 23193.58,
-        "close": 23193.58,
+        "close": 23163.28,
         "open": 23193.58,
-        "low": 23193.58,
-        "ytdPercent": 33.0985,
+        "low": 23158.84,
+        "ytdPercent": 32.9246,
         "date": "2026-10-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-10-19T09:58:00",
+          "value": 23193.58
+        },
+        {
+          "time": "2026-10-19T10:00:00",
+          "value": 23193.58
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 296175,
+        "dateStamp": "2026-10-19T10:00:47",
+        "heading": "Release from Pioneers Properties For Urban Development - PRE Group (PRDC.CA) Regarding the Purchase of Treasury Stocks",
+        "content": "Company: Pioneers Properties For Urban Development - PRE Group - Release from the company <br>Symbols: EGS21FW1C015<br>Reuters: PRDC.CA<br>Content : <br>A release regarding the purchase of treasury stocks during 18/10/2026 trading session.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345687_1.pdf\" target=\"_blank\">Release from the Company in Arabic &amp; English (344 KB)</a>",
+        "headingArabic": "بيان من بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب (PRDC.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب <br />كود الترقيم الدولي: EGS21FW1C015<br />كود رويترز: PRDC.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 18/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345687_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (344 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21FW1C015",
+        "companyName": "بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب",
+        "companyNameArabic": "Pioneers Properties For Urban Development - PRE Group",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 296174,
+        "dateStamp": "2026-10-19T09:49:19",
+        "heading": "Gadwa For Industrial Development (GDWA.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Gadwa For Industrial Development<br />Symbols: EGS3JM11C012<br />Reuters: GDWA.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 18/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345679_1.pdf\" target=\"_blank\">Board of Directors Decisions in Arabic & English (532 KB)</a>",
+        "headingArabic": "جدوى للتنمية الصناعية (GDWA.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: جدوى للتنمية الصناعية<br />كود الترقيم الدولي: EGS3JM11C012<br />كود رويترز: GDWA.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 18/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345679_1.pdf\" target=\"_blank\">ملخص قرارات مجلس الإدارة باللغة العربية والانجليزية  (532 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3JM11C012",
+        "companyName": "جدوى للتنمية الصناعية",
+        "companyNameArabic": "Gadwa For Industrial Development",
+        "sectorId": 8,
+        "attachments": []
+      },
+      {
+        "code": 296173,
+        "dateStamp": "2026-10-19T09:47:06",
+        "heading": "Cairo Poultry (POUL.CA) - AGM Resolutions",
+        "content": "Title: Cairo Poultry (POUL.CA) - AGM resolutions held on 18/10/2026  <br />Company: Cairo Poultry<br />Symbols: EGS02051C018<br />Reuters: POUL.CA<br />Content: <br />Cairo Poultry AGM resolutions held on 18/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345678_1.pdf\" target=\"_blank\">AGM Resolutions (179 KB)</a>",
+        "headingArabic": "القاهرة للدواجن (POUL.CA) - ملخص قرارات الجمعية العامة العادية",
+        "contentArabic": "اسم الشركة: القاهرة للدواجن<br />كود الترقيم الدولي: EGS02051C018<br />كود رويترز: POUL.CA<br />مضمون الإعلان : <br />ملخص قرارات الجمعية العامة العادية المنعقدة بتاريخ 18/10/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345678_1.pdf\" target=\"_blank\">ملخص قرارات الجمعية العامة العادية  (179 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS02051C018",
+        "companyName": "القاهرة للدواجن",
+        "companyNameArabic": "Cairo Poultry",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 296172,
         "dateStamp": "2026-10-19T09:43:28",
         "heading": "Cairo Poultry (POUL.CA) - Decisions of the BoD Meeting ",
@@ -9546,60 +9636,6 @@
         "companyName": "السادس من اكتوبر للتنميه والاستثمار- سوديك",
         "companyNameArabic": "Six of October Development & Investment (SODIC)",
         "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 296154,
-        "dateStamp": "2026-10-18T15:32:16",
-        "heading": "Egypt Aluminum (EGAL.CA) - Company’s Reply to the Accountability State Authority Report and the Performance Report ",
-        "content": "Company: Egypt Aluminum <br>Symbols: EGS3E181C010<br>Reuters: EGAL.CA<br>Content: <br>Company’s reply to the Accountability State Authority Report and the Performance Report to follow-up and evaluation report for the year ended on 30/06/2026.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345658_1.pdf\" target=\"_blank\">Company’s Reply to the Accountability State Authority Report and the Performance Report  (3,048 KB)</a>",
-        "headingArabic": "مصر للالومنيوم (EGAL.CA) - رد الشركة على تقرير الجهاز المركزي للمحاسبات وتقرير الإدارة المركزية",
-        "contentArabic": "اسم الشركة: مصر للالومنيوم <br />كود الترقيم الدولي: EGS3E181C010<br />كود رويترز: EGAL.CA<br />مضمون الإعلان :<br />رد الشركة على تقرير الجهاز المركزي للمحاسبات وتقرير الإدارة المركزية لمتابعة تنفيذ الخطة وتقويم الأداء بالجهاز المركزي للمحاسبات عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345658_1.pdf\" target=\"_blank\">رد الشركة على تقرير الجهاز المركزي للمحاسبات وتقرير الإدارة المركزية (3,048 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3E181C010",
-        "companyName": "مصر للالومنيوم",
-        "companyNameArabic": "Egypt Aluminum",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 296153,
-        "dateStamp": "2026-10-18T15:25:14",
-        "heading": "Release from Bonyan for Development and Trade (BONY.CA) Regarding the Purchase of Treasury Stocks",
-        "content": "Company Name : Bonyan for Development and Trade<br />ISIN Code : EGS656M1C010<br />Reuters Code : BONY.CA<br />Content : <br />Release from the company regarding the purchase of treasury stocks on 15/10/2026 trading session.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345600_1.pdf\" target=\"_blank\">Release from the Company (24 KB)</a>",
-        "headingArabic": "بيان من بنيان للتنمية والتجارة (BONY.CA) بشأن شراء أسهم خزينة",
-        "contentArabic": "اسم الشركة : بنيان للتنمية والتجارة<br />كود الترقيم الدولي : EGS656M1C010<br />كود رويترز : BONY.CA<br />مضمون الإعلان : <br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 15/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345600_1.pdf\" target=\"_blank\">بيان من الشركة (24 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS656M1C010",
-        "companyName": "بنيان للتنمية والتجارة",
-        "companyNameArabic": "Bonyan for Development and Trade",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 296152,
-        "dateStamp": "2026-10-18T15:20:12",
-        "heading": "First Investment Company And Real Estate Development (FIRE.CA) - Disclosure Form for the BoD & the Shareholders' Structure (SMEs Market)",
-        "content": "Company: First Investment Company And Real Estate Development<br />Symbols: EGS65AL1C010<br />Reuters: FIRE.CA<br />Content : <br />The company sent its disclosure form for the Board of Directors and the shareholders' structure for the period on 30/09/2026, according to Article 30 of the Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345647_1.pdf\" target=\"_blank\">The Disclosure Form (3,307 KB)</a>",
-        "headingArabic": "الاولي للاستثمار والتنمية العقارية (FIRE.CA) - نموذج تقرير إفصاح عن مجلس الإدارة وهيكل المساهمين (سوق الشركات الصغيرة والمتوسطة)",
-        "contentArabic": "اسم الشركة: الاولي للاستثمار والتنمية العقارية<br />كود الترقيم الدولي: EGS65AL1C010<br />كود رويترز: FIRE.CA<br />مضمون الإعلان : <br />ورد نموذج تقرير إفصاح الشركة عن مجلس الإدارة وهيكل المساهمين عن الفترة المنتهية في 30/09/2026, تنفيذاً للمادة 30 من قواعد القيد وذلك على مسئولية الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/345647_1.pdf\" target=\"_blank\">نموذج تقرير إفصاح  (3,307 KB)</a>",
-        "section": "Shareholding Structure                            ",
-        "sectionArabic": "هيكل المساهمين                                    ",
-        "secId": 16,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65AL1C010",
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
         "attachments": []
       }
     ],
