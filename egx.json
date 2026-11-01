@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-01 09:45:55 AM",
+  "lastUpdated": "2026-11-01 10:01:18 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-01T09:45:52"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-01T10:01:13"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -103.01,
+        "changePer": -0.20769761517731017,
         "high": 49596.14,
-        "close": 49596.14,
+        "close": 49493.13,
         "open": 49596.14,
-        "low": 49596.14,
-        "ytdPercent": 18.5689,
+        "low": 49485.25,
+        "ytdPercent": 18.3226,
         "date": "2026-11-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-01T09:58:00",
+          "value": 49596.14
+        },
+        {
+          "time": "2026-11-01T10:00:00",
+          "value": 49596.14
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 5903.61,
-        "close": 5903.61,
+        "change": 0.49,
+        "changePer": 0.00830000626735167,
+        "high": 5907.28,
+        "close": 5904.1,
         "open": 5903.61,
-        "low": 5903.61,
-        "ytdPercent": 28.4016,
+        "low": 5902.55,
+        "ytdPercent": 28.4123,
         "date": "2026-11-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-01T09:58:00",
+          "value": 5903.61
+        },
+        {
+          "time": "2026-11-01T10:00:00",
+          "value": 5907.28
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -20.03,
+        "changePer": -0.11937028746606022,
         "high": 16779.72,
-        "close": 16779.72,
+        "close": 16759.69,
         "open": 16779.72,
-        "low": 16779.72,
-        "ytdPercent": 27.8423,
+        "low": 16759.69,
+        "ytdPercent": 27.6897,
         "date": "2026-11-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-01T09:58:00",
+          "value": 16779.72
+        },
+        {
+          "time": "2026-11-01T10:00:00",
+          "value": 16779.72
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -26.67,
+        "changePer": -0.11780071758172397,
         "high": 22639.93,
-        "close": 22639.93,
+        "close": 22613.26,
         "open": 22639.93,
-        "low": 22639.93,
-        "ytdPercent": 29.9213,
+        "low": 22612.01,
+        "ytdPercent": 29.7683,
         "date": "2026-11-01T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-01T09:58:00",
+          "value": 22639.93
+        },
+        {
+          "time": "2026-11-01T10:00:00",
+          "value": 22639.93
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,114 @@
   "news": {
     "disclosure": [
       {
+        "code": 296799,
+        "dateStamp": "2026-11-01T10:00:32",
+        "heading": "Aur Securitization 1st Iss Tranche C Aug 2027 (AURS01C=CA) Declares Bond Dividends for Coupon No. (42) ",
+        "content": "Issuer Name : Aur Securitization 1st Iss Tranche C Aug 2027<br />ISIN Code : EGB697Q1S035<br />Reuters Code : AURS01C=CA<br />Interest Type : Floating<br />Coupon Interest : 28.95% <br />Coupon Amount : EGP 0.1940227553<br />Coupon Number : 42<br />Coupon Date : 05/11/2026<br />Coupon Payment Date : 08/11/2026<br />Notes :  <br />Bond Redemption: EGP 5.5978723404 <br />",
+        "headingArabic": "سندات اور للتوريق اصدار اول شريحة ج اغسطس 2027 (AURS01C=CA) يعلن عن توزيع كوبون السند رقم (42)",
+        "contentArabic": "المصدر : سندات اور للتوريق اصدار اول شريحة ج اغسطس 2027<br />كود الترقيم الدولي : EGB697Q1S035<br />كود رويتيرز : AURS01C=CA<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 28.95% <br />قيمة الكوبون : 0.1940227553 جم للسند<br />رقم الكوبون : 42<br />تاريخ الاستحقاق : 05/11/2026<br />تاريخ الصرف : 08/11/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 5.5978723404 جم<br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB697Q1S035",
+        "companyName": "سندات اور للتوريق ص 1  ش ج اغسطس 2027 ذات عائد متغير",
+        "companyNameArabic": "Aur Securitization 1st Iss Tran C Aug 2027 Variable Return",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296798,
+        "dateStamp": "2026-11-01T09:59:37",
+        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the Fourth Issuance - Sixth Program Tranche B March 2028 V.R ",
+        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 8) for the listed bonds of Capital for Securitization the Fourth Issuance - Sixth Program Tranche B March 2028 V.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 306,761,593.06 distributed over 4,501,750 bonds at a par value of EGP 68.14274. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (A), at a variable rate lending rate +0.40% paid monthly.<br />ISIN Code: EGB69611S1M0",
+        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار الرابع - برنامج سادس الشريحة ب مارس 2028 ع.م",
+        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار الرابع - برنامج سادس الشريحة ب مارس 2028 ع.م بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"8\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 306,761,593.06 جنيه مصري موزعًا على عدد 4,501,750 سند بقيمة إسمية قدرها 68.14274 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S1M0.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (A) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض المعلن من البنك المركزي المصري +هامش قدرة 0.40% يصرف شهريًا اعتبارًا من الشهر التالي للاصدار. <br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S1M0",
+        "companyName": "سندات كابيتال للتوريق ص 4 ب 6 ش ب مارس 2028 ع.م",
+        "companyNameArabic": "Capital For Securitization 4th Iss 6th Pro Tra B Mar 28 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296796,
+        "dateStamp": "2026-11-01T09:57:18",
+        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the Second Issue-First Program Tranche C December 2026 ",
+        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 22) for the listed bonds of Capital for Securitization the Second Issue-First Program Tranche C December 2026. <br />The total listed value of the bonds after the partial redemption becomes EGP 123,300,000.00 distributed over 7,619,000 bonds at a par value of EGP 16.18322. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (AA-), at a variable rate lending rate +0.45% paid monthly.<br />ISIN Code: EGB69611S238",
+        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار الثاني - برنامج اول الشريحة ج ديسمبر 2026",
+        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار الثاني - رنامج اول الشريحة ج ديسمبر 2026 بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"22\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 123,300,000.00 جنيه مصري موزعًا على عدد 7,619,000 سند بقيمة إسمية قدرها 16.18322 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S238.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (AA-) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض المعلن من البنك المركزي المصري +هامش قدرة 0.45% يصرف شهريًا.<br /> <br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S238",
+        "companyName": "سندات كابيتال للتوريق اصدار ثاني شريحة ج ديسمبر 2026",
+        "companyNameArabic": "Capital For Securitization 2nd Issue 1st Pro Tran C Dec 2026",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296794,
+        "dateStamp": "2026-11-01T09:54:38",
+        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the First Issuance - The Eighteenth Program Tranche A June 2027 F.R ",
+        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 4) for the listed bonds of Capital for Securitization the First Issuance - The Eighteenth Program Tranche A June 2027 F.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 699,206,489.00 distributed over 9,876,000 bonds at a par value of EGP 70.79855. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (P1), at a fixed rate 21.50% paid monthly.<br />ISIN Code: EGB69611S4F8",
+        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار الأول - برنامج ثامن عشر  الشريحة أ يونيو 2027 ع.ث",
+        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار الأول - برنامج ثامن عشر  الشريحة أ يونيو 2027 ع.ث بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"4\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 699,206,489.00 جنيه مصري موزعًا على عدد 9,876,000 سند بقيمة إسمية قدرها 70.79855 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S4F8.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (P1) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي ثابت يبلغ 21.50% يصرف شهريًا اعتبارًا من الشهر التالي للإصدار. <br />",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S4F8",
+        "companyName": "سندات كابيتال للتوريق ص 1 ب 18 ش أ يونيو 2027 ع.ث",
+        "companyNameArabic": "Capital For Securitization 1st Iss 18th Pro Tra A Jun 27 FR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296792,
+        "dateStamp": "2026-11-01T09:51:39",
+        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the First Issuance -The Sixth Program Tranche D May 2030 V.R ",
+        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 8) for the listed bonds of Capital For Securitization the First Issuance -The Sixth Program Tranche D May 2030 V.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 116,513,023.91 distributed over 1,380,000 bonds at a par value of EGP 84.42972. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (A), at a variable rate, Lending rate +1.15% paid nonthly.<br />ISIN Code: EGB69611S774",
+        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار الأول - برنامج سادس الشريحة د مايو 2030 ع.م",
+        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار الأول - برنامج سادس الشريحة د مايو 2030 ع.م بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"8\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 116,513,023.91 جنيه مصري موزعًا على عدد 1,380,000 سند بقيمة إسمية قدرها 84.42972 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S774.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (A) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض المعلن من البنك المركزي المصري +هامش قدرة 1.15% يصرف شهريًا.",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S774",
+        "companyName": "سندات كابيتال للتوريق ص1 ب6 ش د مايو 2030 ع م",
+        "companyNameArabic": "Capital For Securitization 1st Iss 6th Pro Tra D May 2030 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 296790,
+        "dateStamp": "2026-11-01T09:48:16",
+        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the First Issuance -The Sixth Program Tranche B January 2027 V.R ",
+        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 23) for the listed bonds of Capital for Securitization the First Issuance -The Sixth Program Tranche B January 2027 V.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 6,285,057.00 distributed over 3,070,000 bonds at a par value of EGP 2.04724. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (AA), at a variable rate, Lending rate +0.60% paid monthly.<br />ISIN Code: EGB69611S758",
+        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار الأول - برنامج سادس الشريحة ب يناير 2027 ع.م",
+        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار الأول - برنامج سادس الشريحة ب يناير 2027 ع.م بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"23\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 6,285,057.00 جنيه مصري موزعًا على عدد 3,070,000 سند بقيمة إسمية قدرها 2.04724 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S758.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (AA) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض المعلن من البنك المركزي المصري +هامش قدرة 0.6% يصرف شهريًا.",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGB69611S758",
+        "companyName": "سندات كابيتال للتوريق ص1 ب6 ش ب يناير 2027 ع م",
+        "companyNameArabic": "Capital For Securitization 1st Iss 6th Pro Tra B Jan 2027 VR",
+        "sectorId": null,
+        "attachments": []
+      },
+      {
         "code": 296789,
         "dateStamp": "2026-11-01T09:45:24",
         "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the Second Issuance - Sixth Program Tranche D July 2031 V.R ",
@@ -9491,114 +9635,6 @@
         "isin": "EGB69611S4N2",
         "companyName": "سندات كابيتال للتوريق ص 6 ب 7 اكتوبر 2027 ع.ث",
         "companyNameArabic": "Capital For Securitization 6th Iss 7th Pro Oct 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296744,
-        "dateStamp": "2026-10-29T15:39:11",
-        "heading": "Capital for Securitization 4th Iss 14th Pro Jul 2027 FR (EGBCPSC4P14CF) Declares Bond Dividends for Coupon No. (1) ",
-        "content": "Issuer Name : Capital for Securitization 4th Iss 14th Pro Jul 2027 FR<br />ISIN Code : EGB69611S4M4<br />Reuters Code : EGBCPSC4P14CF<br />Interest Type : Fixed<br />Coupon Interest : 21% <br />Coupon Amount : EGP 1.7260273973<br />Coupon Number : 1<br />Coupon Date : 29/10/2026<br />Coupon Payment Date : 01/11/2026<br />Notes :  <br />Bond Redemption: EGP 5.4927452616  <br />",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الرابع برنامج الرابع عشر يوليو 2027 ع.ث (EGBCPSC4P14CF) يعلن عن توزيع كوبون السند رقم (1)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الرابع برنامج الرابع عشر يوليو 2027 ع.ث<br />كود الترقيم الدولي : EGB69611S4M4<br />كود رويتيرز : EGBCPSC4P14CF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21% <br />قيمة الكوبون : 1.7260273973 جم للسند<br />رقم الكوبون : 1<br />تاريخ الإستحقاق : 29/10/2026<br />تاريخ الصرف : 01/11/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 5.4927452616 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S4M4",
-        "companyName": "سندات كابيتال للتوريق ص 4 ب رابع عشر يوليو 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 4th Iss  14th Pro Jul 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296740,
-        "dateStamp": "2026-10-29T15:27:43",
-        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital For Securitization the Third Issuance - Sixth Program Tranche B December 2027 V.R ",
-        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 12) for the listed bonds of Capital For Securitization the Third Issuance - Sixth Program Tranche B December 2027 V.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 322,960,120.95 distributed over 5,697,600 bonds at a par value of EGP 56.68353. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (A), at a variable rate lending rate +0.4% paid monthly.<br />ISIN Code: EGB69611S0T7",
-        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار الثالث - برنامج سادس الشريحة ب ديسمبر 2027 ع.م",
-        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار الثالث - برنامج سادس الشريحة ب ديسمبر 2027 ع.م بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"12\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 322,960,120.95 جنيه مصري موزعًا على عدد 5,697,600 سند بقيمة إسمية قدرها 56.68353 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S0T7.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (A) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض المعلن من البنك المركزي المصري +هامش قدرة 0.4% يصرف شهريًا اعتبارًا من الشهر التالي للإصدار.",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S0T7",
-        "companyName": "سندات كابيتال للتوريق ص3 ب6 ش ب ديسمبر 2027 ع م",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 6th Pro Tra B Dec 2027 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296738,
-        "dateStamp": "2026-10-29T15:24:23",
-        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the Sixth Issuance - Sixth Program Tranche A May 2027 V.R ",
-        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 3) for the listed bonds of Capital For Securitization the Sixth Issuance - Sixth Program Tranche A May 2027 V.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 112,385,312.15 distributed over 2,383,750 bonds at a par value of EGP 47.14643. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (AA), at a variable rate lending rate +0.25% paid monthly.<br />ISIN Code: EGB69611S4B7",
-        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار السادس - برنامج سادس  الشريحة أ مايو 2027 ع.م",
-        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار السادس - برنامج سادس  الشريحة أ مايو 2027 ع.م بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"3\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 112,385,312.15 جنيه مصري موزعًا على عدد 2,383,750 سند بقيمة إسمية قدرها 47.14643 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S4B7.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (AA) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض المعلن من البنك المركزي المصري +هامش قدرة 0.25% يصرف شهريًا اعتبارًا من الشهر التالي للإصدار.",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S4B7",
-        "companyName": "سندات كابيتال للتوريق ص 6 ب 6 ش أ مايو 2027 ع.م",
-        "companyNameArabic": "Capital For Securitization 6th Iss 6th Pro Tra A May 27 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296737,
-        "dateStamp": "2026-10-29T15:21:12",
-        "heading": "Periodic Partial Redemption for the Listed Bonds of Beltone Securitization the First Issuance - Second Program Tranche A July 2027 V.R ",
-        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 13) for the listed bonds of Beltone Securitization the First Issuance - Second Program Tranche A July 2027 V.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 207,403,000.00 distributed over 5,510,000 bonds at a par value of EGP 37.64119. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (AA+), at a variable rate lending rate (corridor) +0.40% paid monthly.<br />ISIN Code: EGB694Z1S094",
-        "headingArabic": "تعديل بيانات قيد سندات بلتون للتوريق الإصدار الأول - برنامج ثاني الشريحة أ يوليو 2027 ع.م",
-        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة بلتون للتوريق الإصدار الأول - برنامج ثاني الشريحة أ يوليو 2027 ع.م بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"13\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 207,403,000.00 جنيه مصري موزعًا على عدد 5,510,000 سند بقيمة إسمية قدرها 37.64119 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB694Z1S094.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (AA+) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي متغير يساوي سعر الاقراض (الكوريدور) المعلن من البنك المركزي المصري +هامش قدرة 0.40% يصرف شهريًا اعتبارًا من الشهر التالي للإصدار.",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB694Z1S094",
-        "companyName": "سندات بلتون للتوريق ص 1 ب 2 ش أ يوليو 2027 ع.م",
-        "companyNameArabic": "Beltone Securitization 1st Iss 2nd Pro Tra A Jul 2027 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296736,
-        "dateStamp": "2026-10-29T15:20:13",
-        "heading": "Release from Egyptian Real Estate Group (AREH.CA) Regarding a Lawsuit ",
-        "content": "Company Name : Egyptian Real Estate Group<br />ISIN Code : EGS65211C012<br />Reuters Code : AREH.CA<br />Content : <br />With reference to the announcement published on the trading screens on 28/10/2026 regarding case no.117 of judicial year 19 grievances, a release has been received from the company.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346463_1.pdf\" target=\"_blank\">Correction from the Company (148 KB)</a>",
-        "headingArabic": "بيان من المجموعه المصريه العقاريه (AREH.CA) بخصوص دعوى قضائية ",
-        "contentArabic": "اسم الشركة : المجموعه المصريه العقاريه<br />كود الترقيم الدولي : EGS65211C012<br />كود رويترز : AREH.CA<br />مضمون الإعلان : <br />بالإشارة إلي الإعلان المنشور على شاشات التداول بتاريخ 28/10/2026 بخصوص الدعوى رقم 117 لسنة 19 ق تظلمات والمحدد لها جلسة 25/11/2026, ورد بيان من الشركة.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346463_1.pdf\" target=\"_blank\">استدراك من الشركة (148 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65211C012",
-        "companyName": "المجموعه المصريه العقاريه",
-        "companyNameArabic": "Egyptian Real Estate Group",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 296735,
-        "dateStamp": "2026-10-29T15:16:31",
-        "heading": "Periodic Partial Redemption for the Listed Bonds of Egyptian Co. for Securitization the Third Issuance - Second Program Tranche B December 2026 F.R ",
-        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 4) for the listed bonds of Egyptian Co. For Securitization the Third Issuance - Second Program Tranche B December 2026 F.R. <br />The total listed value of the bonds after the partial redemption becomes EGP 225,560,984.28 distributed over 4,130,000 bonds at a par value of EGP 54.61525. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (P1), at a fixed rate 21.55% paid monthly.<br />ISIN Code: EGB692C1S507<br />",
-        "headingArabic": "تعديل بيانات قيد سندات المصرية للتوريق الإصدار الثالث - برنامج ثاني الشريحة ب ديسمبر 2026 ع.ث",
-        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة المصرية للتوريق الإصدار الثالث - برنامج ثاني الشريحة ب ديسمبر 2026 ع.ث بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"4\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 225,560,984.28 جنيه مصري موزعًا على عدد 4,130,000 سند بقيمة إسمية قدرها 54.61525 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB692C1S507.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (P1) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي ثابت يبلغ 21.55% يصرف شهريًا بدءًا من الشهر الثاني للإصدار.",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB692C1S507",
-        "companyName": "سندات المصرية للتوريق ص 3 ب 2 ش ب ديسمبر 2026 ع.ث",
-        "companyNameArabic": "Egyptian Co. For Securitization 3rd Is 2nd P T B Dec2026 FR",
         "sectorId": null,
         "attachments": []
       }
