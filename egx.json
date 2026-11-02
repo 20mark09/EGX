@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-02 09:46:07 AM",
+  "lastUpdated": "2026-11-02 10:01:26 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-02T09:45:55"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-02T10:01:14"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 48744.01,
-        "close": 48744.01,
+        "change": 130.35,
+        "changePer": 0.2674174734495582,
+        "high": 48878.47,
+        "close": 48874.36,
         "open": 48744.01,
         "low": 48744.01,
-        "ytdPercent": 16.5317,
+        "ytdPercent": 16.8433,
         "date": "2026-11-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-02T09:58:00",
+          "value": 48744.01
+        },
+        {
+          "time": "2026-11-02T10:00:00",
+          "value": 48878.47
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 5861.52,
-        "close": 5861.52,
+        "change": 18.68,
+        "changePer": 0.31868866778583027,
+        "high": 5881.44,
+        "close": 5880.2,
         "open": 5861.52,
         "low": 5861.52,
-        "ytdPercent": 27.4862,
+        "ytdPercent": 27.8924,
         "date": "2026-11-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-02T09:58:00",
+          "value": 5861.52
+        },
+        {
+          "time": "2026-11-02T10:00:00",
+          "value": 5881.44
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 16665.95,
-        "close": 16665.95,
+        "change": 13.46,
+        "changePer": 0.08076347282933166,
+        "high": 16692.1,
+        "close": 16679.41,
         "open": 16665.95,
         "low": 16665.95,
-        "ytdPercent": 26.9755,
+        "ytdPercent": 27.078,
         "date": "2026-11-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-02T09:58:00",
+          "value": 16665.95
+        },
+        {
+          "time": "2026-11-02T10:00:00",
+          "value": 16692.1
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 22410.52,
-        "close": 22410.52,
+        "change": 21.21,
+        "changePer": 0.09464305156685343,
+        "high": 22442.05,
+        "close": 22431.73,
         "open": 22410.52,
         "low": 22410.52,
-        "ytdPercent": 28.6048,
+        "ytdPercent": 28.7265,
         "date": "2026-11-02T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-02T09:58:00",
+          "value": 22410.52
+        },
+        {
+          "time": "2026-11-02T10:00:00",
+          "value": 22442.05
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 296894,
+        "dateStamp": "2026-11-02T10:01:16",
+        "heading": "EL Orouba Securities Brokerage Co . (EOSB.CA) - Minutes of the BoD Meeting ",
+        "content": "Company: EL Orouba Securities Brokerage Co .<br />Symbols: EGS681I1C015<br />Reuters: EOSB.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 01/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346540_1.pdf\" target=\"_blank\">Minutes of the BoD Meeting  (1,604 KB)</a>",
+        "headingArabic": "العروبة للسمسرة فى الأوراق المالية (EOSB.CA) - محضر اجتماع مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: العروبة للسمسرة فى الأوراق المالية<br />كود الترقيم الدولي: EGS681I1C015<br />كود رويترز: EOSB.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 01/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346540_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة  (1,604 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS681I1C015",
+        "companyName": "العروبة للسمسرة فى الأوراق المالية",
+        "companyNameArabic": "El Orouba Securities Brokerage",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
         "code": 296893,
         "dateStamp": "2026-11-02T09:34:23",
         "heading": "Cairo Poultry (POUL.CA) Declares Cash Dividends",
@@ -9581,24 +9635,6 @@
         "isin": null,
         "companyName": null,
         "companyNameArabic": null,
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296874,
-        "dateStamp": "2026-11-01T13:37:58",
-        "heading": "Periodic Partial Redemption for the Listed Bonds of Capital for Securitization the Seventh Issuance Tranche C December 2026 ",
-        "content": "According to the letter received from the MCDR on 29/10/2026 by the periodical partial redemption (installment no. 10) for the listed bonds of Capital for Securitization the Seventh Issuance Tranche C December 2026. <br />The total listed value of the bonds after the partial redemption becomes EGP 11,631,773.99 distributed over 779,000 bonds at a par value of EGP 14.93167. <br />These modifications will be applied to EGX database effective on 01/11/2026 trading session. This bond tranche has been locally rated by MERIS as (A), at a fixed rate 18.50% paid monthly.<br />ISIN Code: EGB69611S345<br />",
-        "headingArabic": "تعديل بيانات قيد سندات كابيتال للتوريق الإصدار السابع الشريحة ج ديسمبر 2026",
-        "contentArabic": "بالإشارة إلى خطاب شركة مصر للمقاصة بتاريخ 29/10/2026 والخاص بتعديل بيانات قيد سندات شركة كابيتال للتوريق الإصدار السابع الشريحة ج ديسمبر 2026 بموجب الإستهلاك الدوري الجزئي بقيمة القسط رقم \"10\" لتصبح القيمة الإجمالية لتلك الشريحة من السندات بقيمة 11,631,773.99 جنيه مصري موزعًا على عدد 779,000 سند بقيمة إسمية قدرها 14.93167 جنيه مصري للسند الواحد.<br />علمًا بأنه،<br />أولاً: يتم إدراج التعديل بقاعدة البيانات اعتبارًا من بداية جلسة تداول 01/11/2026 تحت كود الترقيم الدولي EGB69611S345.<br />ثانيًا: التصنيف الإئتماني لتلك الشريحة هو (A) طبقًا للتصنيف الإئتماني لشركة ميريس وذات عائد سنوي ثابت يبلغ 18.5% يصرف شهريًا.",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S345",
-        "companyName": "سندات كابيتال للتوريق الاصدار السابع الشريحة ج ديسمبر 2026",
-        "companyNameArabic": "Capital For Securitization 7th Issu Tran C Dec 2026",
         "sectorId": null,
         "attachments": []
       }
