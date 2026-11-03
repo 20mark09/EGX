@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-03 09:46:03 AM",
+  "lastUpdated": "2026-11-03 10:01:26 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-03T09:46:00"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-03T10:01:13"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -75.85,
+        "changePer": -0.15670470965313407,
         "high": 48403.14,
-        "close": 48403.14,
+        "close": 48327.29,
         "open": 48403.14,
-        "low": 48403.14,
-        "ytdPercent": 15.7168,
+        "low": 48327.29,
+        "ytdPercent": 15.5355,
         "date": "2026-11-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-03T09:58:00",
+          "value": 48403.14
+        },
+        {
+          "time": "2026-11-03T10:00:00",
+          "value": 48403.14
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 5796.77,
-        "close": 5796.77,
+        "change": 0.54,
+        "changePer": 0.009315532615577295,
+        "high": 5800.43,
+        "close": 5797.31,
         "open": 5796.77,
         "low": 5796.77,
-        "ytdPercent": 26.0779,
+        "ytdPercent": 26.0896,
         "date": "2026-11-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-03T09:58:00",
+          "value": 5796.77
+        },
+        {
+          "time": "2026-11-03T10:00:00",
+          "value": 5800.43
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 16293.71,
-        "close": 16293.71,
+        "change": -7.8,
+        "changePer": -0.04787123374602838,
+        "high": 16306.79,
+        "close": 16285.91,
         "open": 16293.71,
-        "low": 16293.71,
-        "ytdPercent": 24.1394,
+        "low": 16285.72,
+        "ytdPercent": 24.08,
         "date": "2026-11-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-03T09:58:00",
+          "value": 16293.71
+        },
+        {
+          "time": "2026-11-03T10:00:00",
+          "value": 16306.79
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 21912.4,
-        "close": 21912.4,
+        "change": -22.73,
+        "changePer": -0.10373122067870247,
+        "high": 21914.29,
+        "close": 21889.67,
         "open": 21912.4,
-        "low": 21912.4,
-        "ytdPercent": 25.7463,
+        "low": 21889.13,
+        "ytdPercent": 25.6159,
         "date": "2026-11-03T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-03T09:58:00",
+          "value": 21912.4
+        },
+        {
+          "time": "2026-11-03T10:00:00",
+          "value": 21914.29
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,114 @@
   "news": {
     "disclosure": [
       {
+        "code": 296967,
+        "dateStamp": "2026-11-03T10:00:41",
+        "heading": "Abu Dhabi Islamic Bank- Egypt (ADIB.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Abu Dhabi Islamic Bank- Egypt<br />ISIN Code: EGS60111C019<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 11,258,079 (value in thousands)<br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 9,177,863 (value in thousands) <br />Audit Status: Reviewed<br />Source: Abu Dhabi Islamic Bank- Egypt",
+        "headingArabic": " مصرف أبو ظبي الأسلامي- مصر (ADIB.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم البنك: مصرف أبو ظبي الأسلامي- مصر<br />كود الترقيم الدولي: EGS60111C019<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 11,258,079 (القيمة بالألف)<br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 9,177,863 (القيمة بالألف)<br />تقرير فحص محدود: مرفق<br />المصدر: مصرف أبو ظبي الأسلامي- مصر",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS60111C019",
+        "companyName": "مصرف أبو ظبي الأسلامي- مصر",
+        "companyNameArabic": "Abu Dhabi Islamic Bank- Egypt",
+        "sectorId": 1,
+        "attachments": []
+      },
+      {
+        "code": 296965,
+        "dateStamp": "2026-11-03T09:57:54",
+        "heading": "Alexandria Pharmaceuticals (AXPH.CA) - AGM Minutes (before Certification) ",
+        "content": "Company: Alexandria Pharmaceuticals<br />Symbols: EGS38341C011<br />Reuters: AXPH.CA<br />Content: <br />Minutes of the AGM held on 29/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346610_1.pdf\" target=\"_blank\">AGM Minutes (before Certification) in Arabic & English (3,490 KB)</a>",
+        "headingArabic": " الاسكندرية للادوية والصناعات الكيماوية (AXPH.CA) - محضر اجتماع الجمعية العامة العادية (غير موثق) ",
+        "contentArabic": "اسم الشركة: الاسكندرية للادوية والصناعات الكيماوية<br />كود الترقيم الدولي: EGS38341C011<br />كود رويترز: AXPH.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 29/10/2026 (غير موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346610_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (غير موثق) باللغة العربية والإنجليزية (3,490 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38341C011",
+        "companyName": "الاسكندرية للادوية والصناعات الكيماوية",
+        "companyNameArabic": "Alexandria Pharmaceuticals",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 296964,
+        "dateStamp": "2026-11-03T09:54:54",
+        "heading": "Grand Investment Capital (GRCA.CA) - Minutes of the BoD Meeting ",
+        "content": "Company: Grand Investment Capital<br />Symbols: EGS69261C013<br />Reuters: GRCA.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 02/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346609_1.pdf\" target=\"_blank\">Minutes of the BoD Meeting  (353 KB)</a>",
+        "headingArabic": "جراند انفستمنت القابضة للاستثمارات المالية (GRCA.CA) - محضر اجتماع مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: جراند انفستمنت القابضة للاستثمارات المالية<br />كود الترقيم الدولي: EGS69261C013<br />كود رويترز: GRCA.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 02/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346609_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة (353 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS69261C013",
+        "companyName": "جراند انفستمنت القابضة للاستثمارات المالية",
+        "companyNameArabic": "Grand Investment Capital",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 296963,
+        "dateStamp": "2026-11-03T09:49:46",
+        "heading": "Taqa Arabia (TAQA.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Taqa Arabia<br />Symbols: EGS490S1C014<br />Reuters: TAQA.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 02/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346607_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting in Arabic & English (764 KB)</a>",
+        "headingArabic": "طاقة عربية (TAQA.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: طاقة عربية<br />كود الترقيم الدولي: EGS490S1C014<br />كود رويترز: TAQA.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 02/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346607_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة باللغتين العربية والإنجليزية (764 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS490S1C014",
+        "companyName": "طاقة عربية",
+        "companyNameArabic": "Taqa Arabia",
+        "sectorId": 17,
+        "attachments": []
+      },
+      {
+        "code": 296962,
+        "dateStamp": "2026-11-03T09:49:35",
+        "heading": "Release from Misr Fertilizers Production Company - Mopco (MFPC.CA) Concerning the Company's' Natural Gas Supplements",
+        "content": "Company: Misr Fertilizers Production Company - Mopco <br />Symbols: EGS39061C014<br />Reuters: MFPC.CA<br />Content : <br />Release from the company concerning the natural gas supplements to the company<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346621_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (307 KB)</a>",
+        "headingArabic": "بيان من مصر لإنتاج الأسمدة - موبكو (MFPC.CA) بشأن امدادات الغاز الطبيعي للشركة",
+        "contentArabic": "<div style=\"direction: rtl;\">اسم الشركة: مصر لإنتاج الأسمدة - موبكو</div><div style=\"direction: rtl;\">كود الترقيم الدولي: EGS39061C014</div><div style=\"direction: rtl;\">كود رويترز: MFPC.CA</div><div style=\"direction: rtl;\">مضمون الإعلان :</div><div style=\"direction: rtl;\">بيان من الشركة بشأن امدادات الغاز الطبيعي للشركة.</div><div style=\"direction: rtl;\"><img src=\"/images/pdf.gif\" style=\"vertical-align: middle; padding: 3px;\"> <a href=\"/downloads/Bulletins/346621_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية واللغة الإنجليزية (307 KB)</a></div>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS39061C014",
+        "companyName": "مصر لإنتاج الأسمدة - موبكو",
+        "companyNameArabic": "Misr Fertilizers Production Company - Mopco",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 296961,
+        "dateStamp": "2026-11-03T09:46:59",
+        "heading": "Release from Arab Cotton Ginning (ACGC.CA) Regarding the Purchase of Treasury Stocks",
+        "content": "Company: Arab Cotton Ginning -  the company <br />Symbols: EGS32221C011<br />Reuters: ACGC.CA<br />Content :<br />Release from the company regarding the purchase of treasury stocks during the session on 02/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346620_1.pdf\" target=\"_blank\">Release from the Company in English (453 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346620_2.pdf\" target=\"_blank\">Release from the Company in Arabic (420 KB)</a>",
+        "headingArabic": "بيان من العربية لحليج الأقطان (ACGC.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: العربية لحليج الأقطان <br />كود الترقيم الدولي: EGS32221C011<br />كود رويترز: ACGC.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 02/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346620_1.pdf\" target=\"_blank\">بيان من الشركة باللغة الإنجليزية  (453 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346620_2.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية  (420 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS32221C011",
+        "companyName": "العربية لحليج الأقطان",
+        "companyNameArabic": "Arab Cotton Ginning",
+        "sectorId": 26,
+        "attachments": []
+      },
+      {
         "code": 296960,
         "dateStamp": "2026-11-03T09:44:12",
         "heading": "Release from South Cairo & Giza Mills & Bakeries (SCFM.CA) Concerning the Two Public Auctions ",
@@ -9492,114 +9636,6 @@
         "companyName": "الاسماعيلية الوطنية للصناعات الغذائية (فوديكو)",
         "companyNameArabic": "Ismailia National Food Industries",
         "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 296942,
-        "dateStamp": "2026-11-02T15:29:50",
-        "heading": "Global Corp Securitization 1st Iss 3rd Pro Tranche A May 28 (EGBGLSC1P3ACV) Declares Bond Dividends for Coupon No. (6) ",
-        "content": "Issuer Name : Global Corp Securitization 1st Iss 3rd Pro Tranche A May 28<br />ISIN Code : EGB69761S306<br />Reuters Code : EGBGLSC1P3ACV<br />Interest Type : Floating<br />Coupon Interest : 20.3% <br />Coupon Amount : EGP 1.6013825744<br />Coupon Number : 6<br />Coupon Date : 12/11/2026<br />Coupon Payment Date : 15/11/2026<br />Notes :  <br />Bond Redemption: EGP  8.6728646203 ",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة أ مايو 2028 (EGBGLSC1P3AC) يعلن عن توزيع كوبون السند رقم (6)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الأول البرنامج الثالث الشريحة أ مايو 2028<br />كود الترقيم الدولي : EGB69761S306<br />كود رويتيرز : EGBGLSC1P3AC<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.3% <br />قيمة الكوبون : 1.6013825744 جم للسند<br />رقم الكوبون : 6<br />تاريخ الاستحقاق : 12/11/2026<br />تاريخ الصرف : 15/11/2026<br />ملاحظات :  <br />الإستهلاك من أصل السند : 8.6728646203 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S306",
-        "companyName": "سندات جلوبال كورب للتوريق ص 1 ب 3 ش أ مايو 2028 ع.م",
-        "companyNameArabic": "Global Corp Securitization 1st Iss 3rd Pro Tra A May 28 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296937,
-        "dateStamp": "2026-11-02T15:11:25",
-        "heading": "Release from International Co For Investment & Development (ICID.CA) Concerning the Board of Directors & the Executive Managers ",
-        "content": "Company: International Co For Investment & Development <br />Symbols: EGS67191C014<br />Reuters: ICID.CA<br />Content: <br />Release from the company concerning the Board of Directors & the Executive Managers.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346595_1.pdf\" target=\"_blank\">Release from the Company (2,551 KB)</a>",
-        "headingArabic": "بيان من العالمية للاستثمار والتنمية (ICID.CA) بخصوص إطارها التنظيمي",
-        "contentArabic": "اسم الشركة: العالمية للاستثمار والتنمية <br />كود الترقيم الدولي: EGS67191C014<br />كود رويترز: ICID.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص الإطار التنظيمي للشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346595_1.pdf\" target=\"_blank\">بيان من الشركة  (2,551 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS67191C014",
-        "companyName": "العالمية للاستثمار والتنمية",
-        "companyNameArabic": "International Co For Investment & Development",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 296936,
-        "dateStamp": "2026-11-02T15:08:37",
-        "heading": "Release from Raya Holding For Financial Investments (RAYA.CA) Concerning a Circulated News",
-        "content": "Company: Raya Holding For Financial Investments <br>Symbols: EGS690C1C010<br>Reuters: RAYA.CA<br>Content: <br>With reference to the news article published under the title “Raya Holding leads an international consortium to establish a digital bank in Egypt”,  a release was issued from the company. <br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346593_1.pdf\" target=\"_blank\">Release from the Company (1,123 KB)</a>",
-        "headingArabic": "بيان من راية القابضة للأستثمارات المالية (RAYA.CA) بخصوص أحد الأخبار المنشورة ",
-        "contentArabic": "اسم الشركة: راية القابضة للأستثمارات المالية <br />كود الترقيم الدولي: EGS690C1C010<br />كود رويترز: RAYA.CA<br />مضمون الإعلان :<br />بالإشارة إلى الخبر المنشور تحت عنوان \"راية القابضة تقود تحالفًا دوليًا لتأسيس بنك رقمي في مصر\", ورد بيان من الشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346593_1.pdf\" target=\"_blank\">بيان من الشركة  (1,123 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS690C1C010",
-        "companyName": "راية القابضة للأستثمارات المالية",
-        "companyNameArabic": "Raya Holding For Financial Investments",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 296934,
-        "dateStamp": "2026-11-02T15:04:04",
-        "heading": "Release from Taaleem Management Services (TALM.CA) Regarding the Purchase of Treasury Stocks",
-        "content": "Company Name : Taaleem Management Services<br>ISIN Code : EGS597R1C017<br>Reuters Code : TALM.CA<br>Content : <br>Referring to the announcement posted on the trading screens on 01/11/2026 regarding the decisions of the company's Board of Directors in its meeting held on 29/10/2026, the company has responded with a notice to buy back treasury stocks.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346584_1.pdf\" target=\"_blank\">Notification of Treasury Stocks (228 KB)</a>",
-        "headingArabic": "بيان من Taaleem Management Services تعليم لخدمات الإدارة (TALM.CA) بشأن شراء أسهم خزينة",
-        "contentArabic": "اسم الشركة : Taaleem Management Services تعليم لخدمات الإدارة<br>كود الترقيم الدولي : EGS597R1C017<br>كود رويترز : TALM.CA<br>مضمون الإعلان : <br>بالإشارة إلى الإعلان المنشور على شاشات التداول بتاريخ 01/11/2026 بخصوص قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 29/10/2026، ورد من الشركة إخطار شراء أسهم الخزينة.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346584_1.pdf\" target=\"_blank\">إخطار أسهم خزينة (228 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS597R1C017",
-        "companyName": "Taaleem Management Services تعليم لخدمات الإدارة",
-        "companyNameArabic": "Taaleem Management Services",
-        "sectorId": 23,
-        "attachments": []
-      },
-      {
-        "code": 296933,
-        "dateStamp": "2026-11-02T15:01:20",
-        "heading": "Global Corp Securitization 2nd Iss 2nd Pro Tranche C Jan 2030 (EGBGLSC2P2CCV) Declares Bond Dividends for Coupon No. (13) ",
-        "content": "Issuer Name : Global Corp Securitization 2nd Iss 2nd Pro Tranche C Jan 2030<br />ISIN Code : EGB69761S223<br />Reuters Code : EGBGLSC2P2CCV<br />Interest Type : Floating<br />Coupon Interest : 20.6% <br />Coupon Amount : EGP 1.6699838906<br />Coupon Number : 13<br />Coupon Date : 12/11/2026<br />Coupon Payment Date : 15/11/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الثاني البرنامج الثاني الشريحة ج يناير 2030 (EGBGLSC2P2CCV) يعلن عن توزيع كوبون السند رقم (13)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الثاني البرنامج الثاني الشريحة ج يناير 2030<br />كود الترقيم الدولي : EGB69761S223<br />كود رويتيرز : EGBGLSC2P2CCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.6% <br />قيمة الكوبون : 1.6699838906 جم للسند<br />رقم الكوبون : 13<br />تاريخ الإستحقاق : 12/11/2026<br />تاريخ الصرف : 15/11/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S223",
-        "companyName": "سندات جلوبال كورب للتوريق ص 2 ب 2 ش ج يناير 2030 ع.م",
-        "companyNameArabic": "Global Corp Securitization 2nd Iss 2nd Pro Tra C Jan 2030 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 296932,
-        "dateStamp": "2026-11-02T14:58:51",
-        "heading": "Global Corp Securitization 2nd Iss 2nd Pro Tranche B Sep 28 (EGBGLSC2P2BCV) Declares Bond Dividends for Coupon No. (13) ",
-        "content": "Issuer Name : Global Corp Securitization 2nd Iss 2nd Pro Tranche B Sep 28<br />ISIN Code : EGB69761S215<br />Reuters Code : EGBGLSC2P2BCV<br />Interest Type : Floating<br />Coupon Interest : 20.45% <br />Coupon Amount : EGP 1.6587994372<br />Coupon Number : 13<br />Coupon Date : 12/11/2026<br />Coupon Payment Date : 15/11/2026<br />",
-        "headingArabic": "سندات جلوبال كورب للتوريق الإصدار الثاني البرنامج الثاني شريحة ب سبتمبر 2028 (EGBGLSC2P2BCV) يعلن عن توزيع كوبون السند رقم (13)",
-        "contentArabic": "المصدر : سندات جلوبال كورب للتوريق الإصدار الثاني البرنامج الثاني شريحة ب سبتمبر 2028<br />كود الترقيم الدولي : EGB69761S215<br />كود رويتيرز : EGBGLSC2P2BCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 20.45% <br />قيمة الكوبون : 1.6587994372 جم للسند<br />رقم الكوبون : 13<br />تاريخ الإستحقاق : 12/11/2026<br />تاريخ الصرف : 15/11/2026<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69761S215",
-        "companyName": "سندات جلوبال كورب للتوريق ص 2 ب 2 ش ب سبتمبر 2028 ع.م",
-        "companyNameArabic": "Global Corp Securitization 2nd Iss 2nd Pro Tra B Sep 28 VR",
-        "sectorId": null,
         "attachments": []
       }
     ],
