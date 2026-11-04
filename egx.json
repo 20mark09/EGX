@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-04 10:01:23 AM",
+  "lastUpdated": "2026-11-04 10:15:56 AM",
   "marketStatus": {
     "status": "Open",
     "status_ar": "مفتوح",
-    "statusDate": "2026-11-04T10:01:15"
+    "statusDate": "2026-11-04T10:15:51"
   },
   "indices": {
     "EGX30": null,
@@ -15,13 +15,13 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 392.51,
-        "changePer": 0.7968830384162957,
-        "high": 49648.17,
-        "close": 49648.17,
+        "change": 583.11,
+        "changePer": 1.1838436435528426,
+        "high": 49875.33,
+        "close": 49838.77,
         "open": 49255.66,
         "low": 49255.66,
-        "ytdPercent": 18.6933,
+        "ytdPercent": 19.1489,
         "date": "2026-11-04T00:00:00"
       },
       "points": [
@@ -32,18 +32,30 @@
         {
           "time": "2026-11-04T10:00:00",
           "value": 49637.15
+        },
+        {
+          "time": "2026-11-04T10:05:00",
+          "value": 49831.24
+        },
+        {
+          "time": "2026-11-04T10:10:00",
+          "value": 49848.19
+        },
+        {
+          "time": "2026-11-04T10:15:00",
+          "value": 49863.93
         }
       ]
     },
     "SHARIAH": {
       "live": {
-        "change": 54.44,
-        "changePer": 0.9215185759457245,
-        "high": 5962.08,
-        "close": 5962.08,
+        "change": 70.9,
+        "changePer": 1.2001408345803062,
+        "high": 5985.89,
+        "close": 5978.54,
         "open": 5907.64,
         "low": 5907.64,
-        "ytdPercent": 29.6733,
+        "ytdPercent": 30.0313,
         "date": "2026-11-04T00:00:00"
       },
       "points": [
@@ -54,18 +66,30 @@
         {
           "time": "2026-11-04T10:00:00",
           "value": 5956.67
+        },
+        {
+          "time": "2026-11-04T10:05:00",
+          "value": 5979.43
+        },
+        {
+          "time": "2026-11-04T10:10:00",
+          "value": 5983.19
+        },
+        {
+          "time": "2026-11-04T10:15:00",
+          "value": 5982.9
         }
       ]
     },
     "EGX70": {
       "live": {
-        "change": 111.21,
-        "changePer": 0.6680017491422475,
-        "high": 16759.81,
-        "close": 16759.37,
+        "change": 250.59,
+        "changePer": 1.5052113867238182,
+        "high": 16901.93,
+        "close": 16898.75,
         "open": 16648.16,
         "low": 16648.16,
-        "ytdPercent": 27.6872,
+        "ytdPercent": 28.7491,
         "date": "2026-11-04T00:00:00"
       },
       "points": [
@@ -76,18 +100,30 @@
         {
           "time": "2026-11-04T10:00:00",
           "value": 16744.36
+        },
+        {
+          "time": "2026-11-04T10:05:00",
+          "value": 16845.53
+        },
+        {
+          "time": "2026-11-04T10:10:00",
+          "value": 16894.33
+        },
+        {
+          "time": "2026-11-04T10:15:00",
+          "value": 16900.75
         }
       ]
     },
     "EGX100": {
       "live": {
-        "change": 176.42,
-        "changePer": 0.789559660044486,
-        "high": 22520.92,
-        "close": 22520.52,
+        "change": 338.73,
+        "changePer": 1.515970658921147,
+        "high": 22687.92,
+        "close": 22682.83,
         "open": 22344.1,
         "low": 22344.1,
-        "ytdPercent": 29.2361,
+        "ytdPercent": 30.1675,
         "date": "2026-11-04T00:00:00"
       },
       "points": [
@@ -98,6 +134,18 @@
         {
           "time": "2026-11-04T10:00:00",
           "value": 22502.39
+        },
+        {
+          "time": "2026-11-04T10:05:00",
+          "value": 22631.48
+        },
+        {
+          "time": "2026-11-04T10:10:00",
+          "value": 22678.98
+        },
+        {
+          "time": "2026-11-04T10:15:00",
+          "value": 22686.81
         }
       ]
     }
@@ -9279,6 +9327,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 297015,
+        "dateStamp": "2026-11-04T10:04:06",
+        "heading": "Cairo Poultry (POUL.CA) - AGM Minutes (Notarized) ",
+        "content": "Company: Cairo Poultry<br />Symbols: EGS02051C018<br />Reuters: POUL.CA<br />Content: <br />Notarized minutes of the AGM held on 18/10/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346702_1.pdf\" target=\"_blank\">AGM Minutes (Notarized)  (1,921 KB)</a>",
+        "headingArabic": " القاهرة للدواجن (POUL.CA) - محضر اجتماع الجمعية العامة العادية (موثق) ",
+        "contentArabic": "اسم الشركة: القاهرة للدواجن<br />كود الترقيم الدولي: EGS02051C018<br />كود رويترز: POUL.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية التي انعقدت يوم 18/10/2026 (موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346702_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية (موثق) (1,921 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS02051C018",
+        "companyName": "القاهرة للدواجن",
+        "companyNameArabic": "Cairo Poultry",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 297014,
         "dateStamp": "2026-11-04T09:33:02",
         "heading": "Egyptian Media Production City (MPRC.CA) - Decisions of the Board of Directors' Meeting ",
@@ -9617,24 +9683,6 @@
         "isin": "EGS38191C010",
         "companyName": "ابوقير للاسمدة والصناعات الكيماوية",
         "companyNameArabic": "Abou Kir Fertilizers",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 296993,
-        "dateStamp": "2026-11-03T15:09:59",
-        "heading": "Release from Misr Chemical Industries (MICH.CA) Concerning the Company's Natural Gas Supplements",
-        "content": "Company Name : Misr Chemical Industries<br />ISIN Code : EGS38211C016<br />Reuters Code : MICH.CA<br />Content : <br />Release from the company concerning the natural gas supplements.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346649_1.pdf\" target=\"_blank\">Release from the Company (4,220 KB)</a>",
-        "headingArabic": "بيان من مصر لصناعة الكيماويات (MICH.CA) بشأن امدادات الغاز الطبيعي للشركة",
-        "contentArabic": "اسم الشركة : مصر لصناعة الكيماويات<br />كود الترقيم الدولي : EGS38211C016<br />كود رويترز : MICH.CA<br />مضمون الإعلان : <br />بيان من الشركة بشأن امدادات الغاز الطبيعي للشركة.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346649_1.pdf\" target=\"_blank\">بيان من الشركة (4,220 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38211C016",
-        "companyName": "مصر لصناعة الكيماويات",
-        "companyNameArabic": "Misr Chemical Industries",
         "sectorId": 2,
         "attachments": []
       }
