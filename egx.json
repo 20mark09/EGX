@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-05 09:45:54 AM",
+  "lastUpdated": "2026-11-05 10:01:29 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-05T09:45:50"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-05T10:01:20"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 50650.18,
-        "close": 50650.18,
+        "change": 323.33,
+        "changePer": 0.6383590344595024,
+        "high": 50973.51,
+        "close": 50973.51,
         "open": 50650.18,
         "low": 50650.18,
-        "ytdPercent": 21.0888,
+        "ytdPercent": 21.8617,
         "date": "2026-11-05T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-05T09:58:00",
+          "value": 50650.18
+        },
+        {
+          "time": "2026-11-05T10:00:00",
+          "value": 50857.36
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6054.72,
-        "close": 6054.72,
+        "change": 50.54,
+        "changePer": 0.8347206807251203,
+        "high": 6105.26,
+        "close": 6105.26,
         "open": 6054.72,
         "low": 6054.72,
-        "ytdPercent": 31.6882,
+        "ytdPercent": 32.7874,
         "date": "2026-11-05T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-05T09:58:00",
+          "value": 6054.72
+        },
+        {
+          "time": "2026-11-05T10:00:00",
+          "value": 6102.42
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 17151.55,
-        "close": 17151.55,
+        "change": 68.15,
+        "changePer": 0.3973401820826689,
+        "high": 17219.7,
+        "close": 17219.7,
         "open": 17151.55,
         "low": 17151.55,
-        "ytdPercent": 30.6752,
+        "ytdPercent": 31.1944,
         "date": "2026-11-05T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-05T09:58:00",
+          "value": 17151.55
+        },
+        {
+          "time": "2026-11-05T10:00:00",
+          "value": 17217.07
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 23011.03,
-        "close": 23011.03,
+        "change": 94.24,
+        "changePer": 0.4095427279874043,
+        "high": 23105.27,
+        "close": 23105.27,
         "open": 23011.03,
         "low": 23011.03,
-        "ytdPercent": 32.0509,
+        "ytdPercent": 32.5917,
         "date": "2026-11-05T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-05T09:58:00",
+          "value": 23011.03
+        },
+        {
+          "time": "2026-11-05T10:00:00",
+          "value": 23096.24
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,60 @@
   "news": {
     "disclosure": [
       {
+        "code": 297084,
+        "dateStamp": "2026-11-05T09:54:38",
+        "heading": "Telecom Egypt (ETEL.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Telecom Egypt<br />Symbols: EGS48031C016<br />Reuters: ETEL.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 04/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346753_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (921 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346753_2.pdf\" target=\"_blank\">Board of Directors Decisions in English (706 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346753_3.pdf\" target=\"_blank\">Board of Directors Decisions in Arabic (251 KB)</a>",
+        "headingArabic": "المصرية للاتصالات (ETEL.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: المصرية للاتصالات<br />كود الترقيم الدولي: EGS48031C016<br />كود رويترز: ETEL.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 04/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346753_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية و الإنجليزية  (921 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346753_2.pdf\" target=\"_blank\">ملخص قرارات مجلس الإدارة باللغة الإنجليزية (706 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346753_3.pdf\" target=\"_blank\">ملخص قرارات مجلس الإدارة باللغة العربية (251 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS48031C016",
+        "companyName": "المصرية للاتصالات",
+        "companyNameArabic": "Telecom Egypt",
+        "sectorId": 18,
+        "attachments": []
+      },
+      {
+        "code": 297083,
+        "dateStamp": "2026-11-05T09:51:28",
+        "heading": "Extracted Oils (ZEOT.CA) - Corporate Governance Report",
+        "content": "Company: Extracted Oils - <br>Symbols: EGS38251C012<br>Reuters: ZEOT.CA<br>Content: <br>Release concerning the Corporate Governance Report for the fiscal year ended on 30/06/2026.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346752_1.pdf\" target=\"_blank\">Corporate Governance Report in Arabic &amp; English (6,595 KB)</a>",
+        "headingArabic": "الزيوت المستخلصة ومنتجاتها (ZEOT.CA) - تقرير الحوكمة",
+        "contentArabic": "اسم الشركة: الزيوت المستخلصة ومنتجاتها <br />كود الترقيم الدولي: EGS38251C012<br />كود رويترز: ZEOT.CA<br />مضمون الإعلان :<br />تقرير الحوكمة عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346752_1.pdf\" target=\"_blank\">تقرير الحوكمة باللغة العربية و الإنجليزية (6,595 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38251C012",
+        "companyName": "الزيوت المستخلصة ومنتجاتها",
+        "companyNameArabic": "Extracted Oils",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
+        "code": 297082,
+        "dateStamp": "2026-11-05T09:48:52",
+        "heading": "Extracted Oils (ZEOT.CA) - External Auditor's Report",
+        "content": "Company: Extracted Oils - <br />Symbols: EGS38251C012<br />Reuters: ZEOT.CA<br />Content : <br />Release concerning the external auditor's report for the financial year ended 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346751_1.pdf\" target=\"_blank\">The Audit Committee Report  (582 KB)</a>",
+        "headingArabic": "الزيوت المستخلصة ومنتجاتها (ZEOT.CA) - تقرير مراقب الحسابات الخارجي",
+        "contentArabic": "اسم الشركة: الزيوت المستخلصة ومنتجاتها <br />كود الترقيم الدولي: EGS38251C012<br />كود رويترز: ZEOT.CA<br />مضمون الإعلان :<br />تقرير مراقب الحسابات الخارجي عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346751_1.pdf\" target=\"_blank\">تقرير مراقب الحسابات (582 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38251C012",
+        "companyName": "الزيوت المستخلصة ومنتجاتها",
+        "companyNameArabic": "Extracted Oils",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 297081,
         "dateStamp": "2026-11-05T09:43:02",
         "heading": "Tycoon Holding Company For Financial Investments (TYCN.CA) - EGM Resolutions ",
@@ -9546,60 +9636,6 @@
         "companyName": "ديجيتايز للاستثمار والتقنية",
         "companyNameArabic": "Digitize for Investment And Technology",
         "sectorId": 18,
-        "attachments": []
-      },
-      {
-        "code": 297051,
-        "dateStamp": "2026-11-04T13:47:38",
-        "heading": "Iron And Steel for Mines and Quarries (ISMQ.CA) Declares Cash Dividends",
-        "content": "Company Name : Iron And Steel for Mines and Quarries<br />ISIN Code: EGS102S1C014<br />Reuters Code: ISMQ.CA<br />Type of Dividend : Cash<br />Coupon No. : 5<br />Dividend per Share : EGP 0.3499999996 <br />Payment Date : 19/11/2026<br />Dividend Date : 16/11/2026<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346695_1.pdf\" target=\"_blank\">News Attachment (470 KB)</a>",
-        "headingArabic": "الحديد والصلب للمناجم والمحاجر (ISMQ.CA) تعلن عن توزيع نقدي ",
-        "contentArabic": "اسم الشركة : الحديد والصلب للمناجم والمحاجر<br />كود الترقيم الدولي  :EGS102S1C014<br />كود رويترز  :ISMQ.CA<br />نوع التوزيع : نقدي<br />رقم الكوبون : 5<br />قيمة الكوبون : 0.3499999996 جنيه<br />تاريخ التوزيع  :19/11/2026<br />تاريخ نهاية الحق  :16/11/2026<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346695_1.pdf\" target=\"_blank\">مرفق الإعلان (470 KB)</a>",
-        "section": "Corporate Actions                                 ",
-        "sectionArabic": "قرارات المساهمين                                  ",
-        "secId": 4,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS102S1C014",
-        "companyName": "الحديد والصلب للمناجم والمحاجر",
-        "companyNameArabic": "Iron And Steel for Mines and Quarries",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 297050,
-        "dateStamp": "2026-11-04T11:58:36",
-        "heading": "Listing Committee Decision Concerning Some Bonds",
-        "content": "The Listing Committee held on 03/11/2026 decided to impose EGP 10000 penalty on the issuer of the issuance specified below, due to the violation of Article (47) of the executive regulations.<br>The Listing Committee also decided to grant the issuing company a one-month grace period to provide the EGX with a recent certificate of credit rating.<br>AL Rehab For Securitization 5th Issue 1st Pro Tranche C Jun2028  EGREHB5P1C=CA - EGB69471S468<br>AL Rehab For Securitization Twelvth Iss Tranche JUL 2029 VR EGBREHB12CCV - EGB69471S492<br>",
-        "headingArabic": "قرار لجنة القيد بخصوص بعض السندات",
-        "contentArabic": "قررت لجنة القيد بجلستها المنعقدة بتاريخ 03/11/2026 توقيع التزام مالي قدره 10000 جنيه على الشركة المصدرة للإصدارات الموضحة أدناه وذلك لعدم التزام الشركة بأحكام المادة (47) من الإجراءات التنفيذية لقواعد قيد وشطب الأوراق المالية وطبقا لعقد تنظيم قيد الأوراق المالية بجداول البورصة المصرية والمبرم مع الشركة، على أن تقوم الشركة بسداد الالتزام المالي خلال 15 يوم من تاريخ إخطار الشركة بقرار لجنة القيد.<br>منح الشركة المصدرة مهلة شهر لموافاة إدارة البورصة بشهادة حديثة بالتصنيف الإئتماني مع إعادة عرضها على لجنة القيد في حالة عدم الالتزام.<br>سندات الرحاب للتوريق الإصدار الخامس - برنامج أول الشريحة ج يونيو 2028 EGREHB5P1C=CA - EGB69471S468<br>سندات الرحاب للتوريق ص 12 ش ج يوليو 2029 عائد متغير EGBREHB12CCV - EGB69471S492<br>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": null,
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 297049,
-        "dateStamp": "2026-11-04T11:56:06",
-        "heading": "Elwadi For International Investment & Development (ELWA.CA) Reports 9 Months Results",
-        "content": "Company Name : Elwadi For International Investment &amp; Development<br>ISIN Code: EGS70R91C016<br>Currency : EGP<br>F/S Period: From 01/01/2026 to 30/09/2026<br>Net Loss: 4,812,459<br>F/S Period: From 01/01/2025 to 30/09/2025<br>Net Comparative Profit: 78,414,832<br>Audit Status : Reviewed<br>Source : Elwadi For International Investment &amp; Development<br>",
-        "headingArabic": "الوادى العالمية للاستثمار و التنمية (ELWA.CA) تعلن نتائج أعمالها  عن 9 أشهر",
-        "contentArabic": "اسم الشركة: الوادى العالمية للاستثمار و التنمية<br />كود الترقيم الدولي : EGS70R91C016<br />العملة: جنيه مصري<br />القوائم المالية عن الفترة :من 01/01/2026 إلى 30/09/2026<br />صافي الخسارة 4,812,459 <br />ارقام المقارنة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 78,414,832 <br />تقرير الفحص المحدود : مرفق<br />المصدر : الوادى العالمية للاستثمار و التنمية<br />",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS70R91C016",
-        "companyName": "الوادى العالمية للاستثمار و التنمية",
-        "companyNameArabic": "El Wadi For International and Investement Development",
-        "sectorId": 16,
         "attachments": []
       }
     ],
