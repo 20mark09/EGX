@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-08 09:46:02 AM",
+  "lastUpdated": "2026-11-08 10:01:18 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-08T09:45:56"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-08T10:01:11"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -200.77,
+        "changePer": -0.39249127074938134,
         "high": 51152.73,
-        "close": 51152.73,
+        "close": 50951.96,
         "open": 51152.73,
-        "low": 51152.73,
-        "ytdPercent": 22.2902,
+        "low": 50951.96,
+        "ytdPercent": 21.8102,
         "date": "2026-11-08T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-08T09:58:00",
+          "value": 51152.73
+        },
+        {
+          "time": "2026-11-08T10:00:00",
+          "value": 51152.73
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -11.22,
+        "changePer": -0.18361415498212952,
         "high": 6110.64,
-        "close": 6110.64,
+        "close": 6099.42,
         "open": 6110.64,
-        "low": 6110.64,
-        "ytdPercent": 32.9044,
+        "low": 6099.42,
+        "ytdPercent": 32.6604,
         "date": "2026-11-08T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-08T09:58:00",
+          "value": 6110.64
+        },
+        {
+          "time": "2026-11-08T10:00:00",
+          "value": 6110.64
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -108.6,
+        "changePer": -0.6181964942680206,
         "high": 17567.23,
-        "close": 17567.23,
+        "close": 17458.63,
         "open": 17567.23,
-        "low": 17567.23,
-        "ytdPercent": 33.8422,
+        "low": 17458.63,
+        "ytdPercent": 33.0148,
         "date": "2026-11-08T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-08T09:58:00",
+          "value": 17567.23
+        },
+        {
+          "time": "2026-11-08T10:00:00",
+          "value": 17567.23
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -135.07,
+        "changePer": -0.5757142936300604,
         "high": 23461.29,
-        "close": 23461.29,
+        "close": 23326.22,
         "open": 23461.29,
-        "low": 23461.29,
-        "ytdPercent": 34.6348,
+        "low": 23326.22,
+        "ytdPercent": 33.8596,
         "date": "2026-11-08T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-08T09:58:00",
+          "value": 23461.29
+        },
+        {
+          "time": "2026-11-08T10:00:00",
+          "value": 23461.29
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,114 @@
   "news": {
     "disclosure": [
       {
+        "code": 297160,
+        "dateStamp": "2026-11-08T09:58:00",
+        "heading": "Credit Agricole Egypt (CIEB.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Credit Agricole Egypt<br />Symbols: EGS60041C018<br />Reuters: CIEB.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346818_1.pdf\" target=\"_blank\">Board of Directors Decisions in Arabic & English (536 KB)</a>",
+        "headingArabic": "بنك كريدي اجريكول مصر (CIEB.CA) - قرارات مجلس إدارة البنك ",
+        "contentArabic": "اسم البنك: بنك كريدي اجريكول مصر<br />كود الترقيم الدولي: EGS60041C018<br />كود رويترز: CIEB.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة البنك بجلسته المنعقدة بتاريخ 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346818_1.pdf\" target=\"_blank\">ملخص قرارات مجلس الإدارة باللغة العربية والإنجليزية (536 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS60041C018",
+        "companyName": "بنك كريدي اجريكول مصر",
+        "companyNameArabic": "Credit Agricole Egypt",
+        "sectorId": 1,
+        "attachments": []
+      },
+      {
+        "code": 297159,
+        "dateStamp": "2026-11-08T09:55:19",
+        "heading": "Gourmet Egypt.Com Foods (GOUR.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Gourmet Egypt.Com Foods<br />Symbols: EGS540S1C014<br />Reuters: GOUR.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346814_1.pdf\" target=\"_blank\">Board of Directors Decisions in Arabic & English (565 KB)</a>",
+        "headingArabic": "جورميه ايجيبت دوت كوم للاغذية (GOUR.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: جورميه ايجيبت دوت كوم للاغذية<br />كود الترقيم الدولي: EGS540S1C014<br />كود رويترز: GOUR.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346814_1.pdf\" target=\"_blank\">قرارات مجلس الإدارة باللغة العربية والإنجليزية (565 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS540S1C014",
+        "companyName": "جورميه ايجيبت دوت كوم للاغذية",
+        "companyNameArabic": "Gourmet Egypt.Com Foods",
+        "sectorId": 21,
+        "attachments": []
+      },
+      {
+        "code": 297158,
+        "dateStamp": "2026-11-08T09:53:46",
+        "heading": "Egypt Aluminum (EGAL.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Egypt Aluminum<br />Symbols: EGS3E181C010<br />Reuters: EGAL.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 05/11/2026 and the company's unaudited financial indicators for the period ending on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346813_1.pdf\" target=\"_blank\">The Audit Committee Report in Arabic & English (419 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346813_2.pdf\" target=\"_blank\">Board of Directors Decisions in Arabic & English (2,090 KB)</a>",
+        "headingArabic": "مصر للالومنيوم (EGAL.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: مصر للالومنيوم<br />كود الترقيم الدولي: EGS3E181C010<br />كود رويترز: EGAL.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 05/11/2026 والمتضمن مؤشرات نتائج الأعمال غير المدققة عن الفترة المنتهية في 30/09/2026.<br />المصدر: مصر للالومنيوم<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346813_1.pdf\" target=\"_blank\">تقرير لجنة المراجعه باللغة العربية والإنجليزية  (419 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346813_2.pdf\" target=\"_blank\">قرارات مجلس الإدارة باللغة العربية والإنجليزية (2,090 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3E181C010",
+        "companyName": "مصر للالومنيوم",
+        "companyNameArabic": "Egypt Aluminum",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 297157,
+        "dateStamp": "2026-11-08T09:50:39",
+        "heading": "Egyptians Real Estate Fund Certificates (EGREF.CA) Reports its Financial Results for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Egyptians Real Estate Fund Certificates<br />ISIN Code: EGS694B1C017<br />Currency: Egyptian Pound<br />F/S  Period: From 01/01/2026 to 30/09/2026<br />Net profit: 44,521,061 <br />F/S  Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 22,932,233  <br />Audit Status: Reviewed<br />Source: Egyptians Real Estate Fund Certificates",
+        "headingArabic": "وثائق شركة صندوق استثمار المصريين للاستثمار العقارى (EGREF.CA) تعلن نتائج أعمالها عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: وثائق شركة صندوق استثمار المصريين للاستثمار العقارى<br />كود الترقيم الدولي: EGS694B1C017<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 44,521,061 <br />أرقام المقارنة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 22,932,233 <br />تقرير فحص محدود: مرفق<br />المصدر: وثائق شركة صندوق استثمار المصريين للاستثمار العقارى",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS694B1C017",
+        "companyName": "وثائق شركة صندوق استثمار المصريين للاستثمار العقارى",
+        "companyNameArabic": "Egyptians Real Estate Fund Certificates",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 297155,
+        "dateStamp": "2026-11-08T09:46:52",
+        "heading": "Al Fanar Contracting Construction Trade Import And Export Co (FNAR.CA) - EGM Resolutions (SMEs Market)",
+        "content": "Company: Al Fanar Contracting Construction Trade Import And Export Co<br />Symbols: EGS221U1C016<br />Reuters: FNAR.CA<br />Content: <br />Al Fanar Contracting Construction Trade Import And Export Co EGM resolutions held on 07/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346796_1.pdf\" target=\"_blank\">EGM Resolutions (153 KB)</a>",
+        "headingArabic": "الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد (FNAR.CA) - ملخص قرارات الجمعية العامة غير العادية (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة: الفنار للمقاولات العمومية والإنشاءات والتجارة والاستيراد<br />كود الترقيم الدولي: EGS221U1C016<br />كود رويترز: FNAR.CA<br />مضمون الإعلان : <br />ملخص قرارات الجمعية العامة غير العادية المنعقدة بتاريخ 07/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346796_1.pdf\" target=\"_blank\">ملخص قرارات الجمعية العامة غير العادية  (153 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS221U1C016",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 297154,
+        "dateStamp": "2026-11-08T09:46:20",
+        "heading": "Egyptians Real Estate Fund Certificates (EGREF.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Egyptians Real Estate Fund Certificates<br />Symbols: EGS694B1C017<br />Reuters: EGREF.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 05/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346809_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting  (507 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346809_2.pdf\" target=\"_blank\">News Attachment (1,232 KB)</a>",
+        "headingArabic": "وثائق شركة صندوق استثمار المصريين للاستثمار العقارى (EGREF.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: وثائق شركة صندوق استثمار المصريين للاستثمار العقارى<br />كود الترقيم الدولي: EGS694B1C017<br />كود رويترز: EGREF.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 05/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346809_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة  (507 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346809_2.pdf\" target=\"_blank\">مرفق الإعلان (1,232 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS694B1C017",
+        "companyName": "وثائق شركة صندوق استثمار المصريين للاستثمار العقارى",
+        "companyNameArabic": "Egyptians Real Estate Fund Certificates",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
         "code": 297153,
         "dateStamp": "2026-11-08T09:45:23",
         "heading": "Vertika for Industry & Trade (VERT.CA) - Decisions of the Board of Directors' Meeting (SMEs Market)",
@@ -9492,114 +9636,6 @@
         "companyName": "مطاحن ومخابز الاسكندرية",
         "companyNameArabic": "Alexandria Flour Mills",
         "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 297126,
-        "dateStamp": "2026-11-05T15:42:16",
-        "heading": "Sues Canal Company For Technology Settling (SCTS.CA) - AGM Invitation ",
-        "content": "Company: Sues Canal Company For Technology Settling<br />Symbols: EGS740C1C010<br />Reuters: SCTS.CA<br />Content: <br />Sues Canal Company For Technology Settling invites its stakeholder to attend the AGM on 29/11/2026 at 02:30 PM.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346788_1.pdf\" target=\"_blank\">Release from the Company (559 KB)</a>",
-        "headingArabic": "قناة السويس لتوطين التكنولوجيا (SCTS.CA) - دعوة الجمعية العامة العادية",
-        "contentArabic": "اسم الشركة: قناة السويس لتوطين التكنولوجيا<br />كود الترقيم الدولي: EGS740C1C010<br />كود رويترز: SCTS.CA<br />مضمون الإعلان : <br />تعلن شركة قناة السويس لتوطين التكنولوجيا عن دعوة الجمعية العامة العادية المقرر انعقادها بتاريخ 29/11/2026 في تمام الساعة 02:30 مساءً.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346788_1.pdf\" target=\"_blank\">بيان من الشركة  (559 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS740C1C010",
-        "companyName": "قناة السويس لتوطين التكنولوجيا",
-        "companyNameArabic": "Sues Canal Company For Technology Settling",
-        "sectorId": 23,
-        "attachments": []
-      },
-      {
-        "code": 297125,
-        "dateStamp": "2026-11-05T15:40:45",
-        "heading": "Release from Ibnsina Pharma (ISPH.CA) Regarding the Purchase of Treasury Stocks",
-        "content": "Company: Ibnsina Pharma -  the company <br />Symbols: EGS512O1C012<br />Reuters: ISPH.CA<br />Content : <br />Release from the company regarding the purchase of treasury stocks during the session on 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346787_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (188 KB)</a>",
-        "headingArabic": "بيان من ابن سينا فارما (ISPH.CA) بشأن شراء أسهم خزينة ",
-        "contentArabic": "اسم الشركة: ابن سينا فارما <br />كود الترقيم الدولي: EGS512O1C012<br />كود رويترز: ISPH.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346787_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (188 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS512O1C012",
-        "companyName": "ابن سينا فارما",
-        "companyNameArabic": "Ibnsina Pharma",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 297123,
-        "dateStamp": "2026-11-05T15:39:06",
-        "heading": "Release from Pioneers Properties For Urban Development - PRE Group (PRDC.CA) Regarding the Purchase of Treasury Stocks",
-        "content": "Company: Pioneers Properties For Urban Development - PRE Group<br />Symbols: EGS21FW1C015<br />Reuters: PRDC.CA<br />Content :<br />Release from the company regarding the purchase of treasury stocks on the session of 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346786_1.pdf\" target=\"_blank\">Release from the Company (336 KB)</a>",
-        "headingArabic": "بيان من بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب (PRDC.CA) بشأن شراء أسهم خزينة",
-        "contentArabic": "اسم الشركة: بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب <br />كود الترقيم الدولي: EGS21FW1C015<br />كود رويترز: PRDC.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346786_1.pdf\" target=\"_blank\">بيان من الشركة  (336 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS21FW1C015",
-        "companyName": "بايونيرز بروبرتيز للتنمية العمرانية بي ار اي جروب",
-        "companyNameArabic": "Pioneers Properties For Urban Development - PRE Group",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 297121,
-        "dateStamp": "2026-11-05T15:36:13",
-        "heading": "Bonyan for Development and Trade (BONY.CA) Concerning the Purchase of Treasury Stocks",
-        "content": "Company: Bonyan for Development and Trade<br>Symbols: EGS656M1C010<br>Reuters: BONY.CA<br>Content : <br>Release concerning the purchase of treasury stocks on 05/11/2026 trading session.<br><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346784_1.pdf\" target=\"_blank\">Release from the Company (21 KB)</a>",
-        "headingArabic": "بيان من بنيان للتنمية والتجارة (BONY.CA) بشأن شراء أسهم خزينة",
-        "contentArabic": "اسم الشركة: بنيان للتنمية والتجارة <br />كود الترقيم الدولي: EGS656M1C010<br />كود رويترز: BONY.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 05/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346784_1.pdf\" target=\"_blank\">بيان من الشركة (21 KB)</a>",
-        "section": "Insider Trading Executions/Treasury Stocks        ",
-        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
-        "secId": 7,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS656M1C010",
-        "companyName": "بنيان للتنمية والتجارة",
-        "companyNameArabic": "Bonyan for Development and Trade",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 297118,
-        "dateStamp": "2026-11-05T15:33:40",
-        "heading": "Release from Ismailia National Food Industries (INFI.CA) Regarding the Company's Response to the Auditor's Reservations",
-        "content": "Company: Ismailia National Food Industries -  the company  <br />Symbols: EGS01041C010<br />Reuters: INFI.CA<br />Content :<br />Release from the company regarding the company's response to the auditor's reservations about the financial statements for the fiscal period ending on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346783_1.pdf\" target=\"_blank\">Release from the Company (519 KB)</a>",
-        "headingArabic": "بيان من الاسماعيلية الوطنية للصناعات الغذائية (فوديكو)  (INFI.CA) بخصوص رد الشركة على تحفظات مراقب الحسابات",
-        "contentArabic": "اسم الشركة: الاسماعيلية الوطنية للصناعات الغذائية (فوديكو)  <br />كود الترقيم الدولي: EGS01041C010<br />كود رويترز: INFI.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص رد الشركة على تحفظات مراقب الحسابات عن القوائم المالية عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346783_1.pdf\" target=\"_blank\">بيان من الشركة (519 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS01041C010",
-        "companyName": "الاسماعيلية الوطنية للصناعات الغذائية (فوديكو)",
-        "companyNameArabic": "Ismailia National Food Industries",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 297102,
-        "dateStamp": "2026-11-05T15:01:45",
-        "heading": "Release from Sues Canal Company For Technology Settling (SCTS.CA) Concerning the Board of Directors & the Executive Managers",
-        "content": "Company: Sues Canal Company For Technology Settling <br />Symbols: EGS740C1C010<br />Reuters: SCTS.CA<br />Content: <br />Release from the company concerning the Board of Directors & the Executive Managers.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346782_1.pdf\" target=\"_blank\">Release from the Company (965 KB)</a>",
-        "headingArabic": "بيان من قناة السويس لتوطين التكنولوجيا (SCTS.CA) بخصوص إطارها التنظيمي",
-        "contentArabic": "اسم الشركة: قناة السويس لتوطين التكنولوجيا <br />كود الترقيم الدولي: EGS740C1C010<br />كود رويترز: SCTS.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص الإطار التنظيمي للشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346782_1.pdf\" target=\"_blank\">بيان من الشركة  (965 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS740C1C010",
-        "companyName": "قناة السويس لتوطين التكنولوجيا",
-        "companyNameArabic": "Sues Canal Company For Technology Settling",
-        "sectorId": 23,
         "attachments": []
       }
     ],
