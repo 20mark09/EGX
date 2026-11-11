@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-11 09:46:05 AM",
+  "lastUpdated": "2026-11-11 10:01:16 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-11T09:46:00"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-11T10:01:10"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 52483.46,
-        "close": 52483.46,
+        "change": 41.71,
+        "changePer": 0.07947265671889772,
+        "high": 52543.49,
+        "close": 52525.17,
         "open": 52483.46,
         "low": 52483.46,
-        "ytdPercent": 25.4716,
+        "ytdPercent": 25.5713,
         "date": "2026-11-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-11T09:58:00",
+          "value": 52483.46
+        },
+        {
+          "time": "2026-11-11T10:00:00",
+          "value": 52543.49
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6331.33,
-        "close": 6331.33,
+        "change": 12.1,
+        "changePer": 0.19111308366488558,
+        "high": 6344.53,
+        "close": 6343.43,
         "open": 6331.33,
         "low": 6331.33,
-        "ytdPercent": 37.7044,
+        "ytdPercent": 37.9675,
         "date": "2026-11-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-11T09:58:00",
+          "value": 6331.33
+        },
+        {
+          "time": "2026-11-11T10:00:00",
+          "value": 6344.53
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 18495.97,
-        "close": 18495.97,
+        "change": 46.06,
+        "changePer": 0.24902722052425474,
+        "high": 18548.25,
+        "close": 18542.03,
         "open": 18495.97,
         "low": 18495.97,
-        "ytdPercent": 40.9181,
+        "ytdPercent": 41.2691,
         "date": "2026-11-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-11T09:58:00",
+          "value": 18495.97
+        },
+        {
+          "time": "2026-11-11T10:00:00",
+          "value": 18548.25
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 24495.46,
-        "close": 24495.46,
+        "change": 57.83,
+        "changePer": 0.2360845642417003,
+        "high": 24558.62,
+        "close": 24553.29,
         "open": 24495.46,
         "low": 24495.46,
-        "ytdPercent": 40.5694,
+        "ytdPercent": 40.9013,
         "date": "2026-11-11T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-11T09:58:00",
+          "value": 24495.46
+        },
+        {
+          "time": "2026-11-11T10:00:00",
+          "value": 24558.62
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,96 @@
   "news": {
     "disclosure": [
       {
+        "code": 297374,
+        "dateStamp": "2026-11-11T10:00:49",
+        "heading": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda (RMDA.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda<br />ISIN Code: EGS381B1C015<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 335,695,362 <br />F/S (Consolidated) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 280,795,313  <br />Audit Status: Reviewed<br />Source: Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda<br />Taking minority rights into consideration",
+        "headingArabic": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا (RMDA.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا<br />كود الترقيم الدولي: EGS381B1C015<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 335,695,362 <br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 280,795,313 <br />تقرير فحص محدود: مرفق<br />المصدر: العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا<br />مع الأخذ في الإعتبار حقوق الأقلية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS381B1C015",
+        "companyName": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا",
+        "companyNameArabic": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 297372,
+        "dateStamp": "2026-11-11T09:58:32",
+        "heading": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda (RMDA.CA) - Decisions of the BoD Meeting ",
+        "content": "Company: Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda<br />Symbols: EGS381B1C015<br />Reuters: RMDA.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 10/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347014_1.pdf\" target=\"_blank\">Decisions of the BoD Meeting in Arabic & English (133 KB)</a>",
+        "headingArabic": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا (RMDA.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا<br />كود الترقيم الدولي: EGS381B1C015<br />كود رويترز: RMDA.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 10/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347014_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة باللغة العربية والإنجليزية (133 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS381B1C015",
+        "companyName": "العاشر من رمضان للصناعات الدوائية والمستحضرات تشخيصية-راميدا",
+        "companyNameArabic": "Tenth Of Ramadan Pharmaceutical Industries&Diagnostic-Rameda",
+        "sectorId": 7,
+        "attachments": []
+      },
+      {
+        "code": 297371,
+        "dateStamp": "2026-11-11T09:55:20",
+        "heading": "Release from Orascom Development Egypt (ORHD.CA) Concerning the Financial Indicators ",
+        "content": "Company: Orascom Development Egypt <br />Symbols: EGS70321C012<br />Reuters: ORHD.CA<br />Content: <br />Release form the company concerning the financial indicators for the financial period ended on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347007_1.pdf\" target=\"_blank\">Release from the Company in Arabic  (566 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347007_2.pdf\" target=\"_blank\">Release from the Company in English  (472 KB)</a>",
+        "headingArabic": "بيان من اوراسكوم للتنمية مصر (ORHD.CA) بخصوص نتائج أعمال الشركة",
+        "contentArabic": "اسم الشركة: اوراسكوم للتنمية مصر <br />كود الترقيم الدولي: EGS70321C012<br />كود رويترز: ORHD.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص نتائج أعمال الشركة عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347007_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية (566 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347007_2.pdf\" target=\"_blank\">بيان من الشركة باللغة الإنجليزية (472 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70321C012",
+        "companyName": "اوراسكوم للتنمية مصر",
+        "companyNameArabic": "Orascom Development Egypt",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 297370,
+        "dateStamp": "2026-11-11T09:49:19",
+        "heading": "Orascom Development Egypt (ORHD.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Orascom Development Egypt<br />ISIN Code: EGS70321C012<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 4,708,934,680 <br />F/S (Consolidated) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 3,807,383,629  <br />Audit Status: Reviewed<br />Source: Orascom Development Egypt<br />Taking minority rights into consideration",
+        "headingArabic": "اوراسكوم للتنمية مصر (ORHD.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: اوراسكوم للتنمية مصر<br />كود الترقيم الدولي: EGS70321C012<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 4,708,934,680 <br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 3,807,383,629 <br />تقرير فحص محدود: مرفق<br />المصدر: اوراسكوم للتنمية مصر<br />مع الأخذ في الإعتبار حقوق الأقلية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70321C012",
+        "companyName": "اوراسكوم للتنمية مصر",
+        "companyNameArabic": "Orascom Development Egypt",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 297368,
+        "dateStamp": "2026-11-11T09:47:06",
+        "heading": "Orascom Development Egypt (ORHD.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Orascom Development Egypt<br />ISIN Code: EGS70321C012<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 3,186,780,703 <br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 3,605,819,436  <br />Audit Status: Reviewed<br />Source: Orascom Development Egypt",
+        "headingArabic": "اوراسكوم للتنمية مصر (ORHD.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: اوراسكوم للتنمية مصر<br />كود الترقيم الدولي: EGS70321C012<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 3,186,780,703 <br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 3,605,819,436 <br />تقرير فحص محدود: مرفق<br />المصدر: اوراسكوم للتنمية مصر",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS70321C012",
+        "companyName": "اوراسكوم للتنمية مصر",
+        "companyNameArabic": "Orascom Development Egypt",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
         "code": 297366,
         "dateStamp": "2026-11-11T09:44:24",
         "heading": "Juhayna Food Industries (JUFO.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
@@ -9509,96 +9635,6 @@
         "isin": "EGS600K1C019",
         "companyName": "بنك القاهرة",
         "companyNameArabic": "Banque Du Caire",
-        "sectorId": 1,
-        "attachments": []
-      },
-      {
-        "code": 297343,
-        "dateStamp": "2026-11-11T08:51:49",
-        "heading": "Housing & Development Bank (HDBK.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
-        "content": "Company Name: Housing & Development Bank<br />ISIN Code: EGS60301C016<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 16,241,345,610 <br />F/S (Consolidated) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 14,453,833,127  <br />Audit Status: Reviewed<br />Source: Housing & Development Bank<br />Taking minority rights into consideration",
-        "headingArabic": "بنك التعمير والاسكان (HDBK.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
-        "contentArabic": "اسم البنك: بنك التعمير والاسكان<br />كود الترقيم الدولي: EGS60301C016<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 16,241,345,610 <br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 14,453,833,127 <br />تقرير فحص محدود: مرفق<br />المصدر: بنك التعمير والاسكان<br />مع الأخذ في الإعتبار حقوق الأقلية",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS60301C016",
-        "companyName": "بنك التعمير والاسكان",
-        "companyNameArabic": "Housing & Development Bank",
-        "sectorId": 1,
-        "attachments": []
-      },
-      {
-        "code": 297341,
-        "dateStamp": "2026-11-11T08:47:14",
-        "heading": "Release from Juhayna Food Industries (JUFO.CA) Concerning the Board of Directors & the Executive Managers ",
-        "content": "Company: Juhayna Food Industries <br />Symbols: EGS30901C010<br />Reuters: JUFO.CA<br />Content: <br />Release from the company concerning the Board of Directors & the Executive Managers.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346981_1.pdf\" target=\"_blank\">Release from the Company in English (1,560 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346981_2.pdf\" target=\"_blank\">Release from the Company in Arabic (1,527 KB)</a>",
-        "headingArabic": "بيان من جهينة للصناعات الغذائية (JUFO.CA) بخصوص إطارها التنظيمي ",
-        "contentArabic": "اسم الشركة: جهينة للصناعات الغذائية <br />كود الترقيم الدولي: EGS30901C010<br />كود رويترز: JUFO.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص الإطار التنظيمي للشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346981_1.pdf\" target=\"_blank\">بيان من الشركة باللغة الإنجليزية (1,560 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346981_2.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية  (1,527 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS30901C010",
-        "companyName": "جهينة للصناعات الغذائية",
-        "companyNameArabic": "Juhayna Food Industries",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 297340,
-        "dateStamp": "2026-11-10T15:35:12",
-        "heading": "Egyptian Iron & Steel (IRON.CA) - AGM & EGM Minutes (after Certification)",
-        "content": "Company Name : Egyptian Iron & Steel<br />ISIN Code : EGS3D061C015<br />Reuters Code : IRON.CA<br />Content : <br />AGM & EGM minutes (after certification)<br />Assembly Date : 19/10/2026<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346967_1.pdf\" target=\"_blank\">AGM & EGM Minutes (after Certification) (9,225 KB)</a>",
-        "headingArabic": "الحديد والصلب المصرية (IRON.CA) - محضر اجتماع الجمعية العامة العادية وغير العادية (موثق)",
-        "contentArabic": "اسم الشركة : الحديد والصلب المصرية<br />كود الترقيم الدولي : EGS3D061C015<br />كود رويترز : IRON.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة العادية وغير العادية التي انعقدت في 19/10/2026 (موثق)<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346967_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة العادية وغير العادية (موثق) (9,225 KB)</a>",
-        "section": "General Assemblies                                ",
-        "sectionArabic": "الجمعيات العامة                                   ",
-        "secId": 5,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3D061C015",
-        "companyName": "الحديد والصلب المصرية",
-        "companyNameArabic": "Egyptian Iron & Steel",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 297339,
-        "dateStamp": "2026-11-10T15:32:35",
-        "heading": "Release from Medinet MASR Housing (MASR.CA) Concerning the Financial Results",
-        "content": "Company Name : Medinet MASR Housing<br />ISIN Code : EGS65571C019<br />Reuters Code : MASR.CA<br />Content : <br />Release from the company concerning the financial results for the ended period on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346929_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (5,147 KB)</a>",
-        "headingArabic": "بيان من مدينة مصر للإسكان والتعمير (MASR.CA) بخصوص نتائج أعمال الشركة",
-        "contentArabic": "اسم الشركة : مدينة مصر للإسكان والتعمير<br />كود الترقيم الدولي : EGS65571C019<br />كود رويترز : MASR.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص نتائج أعمال الشركة عن الفترة المالية المنتهية في 30/09/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/346929_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإانجليزية (5,147 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65571C019",
-        "companyName": "مدينة مصر للاسكان والتعمير",
-        "companyNameArabic": "Madinet Masr For Housing and Development",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 297338,
-        "dateStamp": "2026-11-10T15:29:49",
-        "heading": "Title: Housing & Development Bank (HDBK.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
-        "content": "Company Name: Housing & Development Bank<br />ISIN Code: EGS60301C016<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 14,842,791,053 <br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 13,439,425,353  <br />Audit Status: Reviewed<br />Source: Housing & Development Bank",
-        "headingArabic": "بنك التعمير والاسكان (HDBK.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
-        "contentArabic": "اسم البنك: بنك التعمير والاسكان<br />كود الترقيم الدولي: EGS60301C016<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 14,842,791,053 <br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 13,439,425,353 <br />تقرير فحص محدود: مرفق<br />المصدر: بنك التعمير والاسكان",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS60301C016",
-        "companyName": "بنك التعمير والاسكان",
-        "companyNameArabic": "Housing & Development Bank",
         "sectorId": 1,
         "attachments": []
       }
