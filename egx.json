@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-16 09:46:02 AM",
+  "lastUpdated": "2026-11-16 10:01:20 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-16T09:45:54"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-16T10:01:14"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 52187.21,
-        "close": 52187.21,
+        "change": 101.7,
+        "changePer": 0.19487533439706778,
+        "high": 52292.35,
+        "close": 52288.91,
         "open": 52187.21,
         "low": 52187.21,
-        "ytdPercent": 24.7633,
+        "ytdPercent": 25.0064,
         "date": "2026-11-16T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-16T09:58:00",
+          "value": 52187.21
+        },
+        {
+          "time": "2026-11-16T10:00:00",
+          "value": 52292.2
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6322.3,
-        "close": 6322.3,
+        "change": 20.57,
+        "changePer": 0.32535627856950794,
+        "high": 6342.91,
+        "close": 6342.87,
         "open": 6322.3,
         "low": 6322.3,
-        "ytdPercent": 37.508,
+        "ytdPercent": 37.9554,
         "date": "2026-11-16T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-16T09:58:00",
+          "value": 6322.3
+        },
+        {
+          "time": "2026-11-16T10:00:00",
+          "value": 6342.87
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -17.46,
+        "changePer": -0.09320694343683789,
         "high": 18732.51,
-        "close": 18732.51,
+        "close": 18715.05,
         "open": 18732.51,
-        "low": 18732.51,
-        "ytdPercent": 42.7203,
+        "low": 18714.35,
+        "ytdPercent": 42.5873,
         "date": "2026-11-16T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-16T09:58:00",
+          "value": 18732.51
+        },
+        {
+          "time": "2026-11-16T10:00:00",
+          "value": 18732.51
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 24737.02,
-        "close": 24737.02,
+        "change": 7.41,
+        "changePer": 0.029955103727126387,
+        "high": 24748.08,
+        "close": 24744.43,
         "open": 24737.02,
         "low": 24737.02,
-        "ytdPercent": 41.9556,
+        "ytdPercent": 41.9982,
         "date": "2026-11-16T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-16T09:58:00",
+          "value": 24737.02
+        },
+        {
+          "time": "2026-11-16T10:00:00",
+          "value": 24748.08
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,132 @@
   "news": {
     "disclosure": [
       {
+        "code": 297859,
+        "dateStamp": "2026-11-16T10:00:30",
+        "heading": "Rubex International for Plastic and Acrylic Manufacturing (RUBX.CA) Reports its Financial Results for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Rubex International for Plastic and Acrylic Manufacturing<br />ISIN Code: EGS3A221C018<br />Currency: Egyptian Pound<br />F/S  Period: From 01/01/2026 to 30/09/2026<br />Net loss: 10,779,956 <br />F/S  Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 4,026,405  <br />Audit Status: Reviewed<br />Source: Rubex International for Plastic and Acrylic Manufacturing",
+        "headingArabic": "روبكس العالميه لتصنيع البلاستيك والاكريلك (RUBX.CA) تعلن نتائج أعمالها عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: روبكس العالميه لتصنيع البلاستيك والاكريلك<br />كود الترقيم الدولي: EGS3A221C018<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الخسارة: 10,779,956 <br />أرقام المقارنة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 4,026,405 <br />تقرير فحص محدود: مرفق<br />المصدر: روبكس العالميه لتصنيع البلاستيك والاكريلك",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3A221C018",
+        "companyName": "روبكس العالميه لتصنيع البلاستيك والاكريلك",
+        "companyNameArabic": "Rubex International for Plastic and Acrylic Manufacturing",
+        "sectorId": 27,
+        "attachments": []
+      },
+      {
+        "code": 297857,
+        "dateStamp": "2026-11-16T09:58:38",
+        "heading": "Rubex International for Plastic and Acrylic Manufacturing (RUBX.CA) - Minutes of the Board of Directors' Meeting ",
+        "content": "Company: Rubex International for Plastic and Acrylic Manufacturing<br />Symbols: EGS3A221C018<br />Reuters: RUBX.CA<br />Content: <br />Minutes of the Board of Directors' meeting held on 15/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347402_1.pdf\" target=\"_blank\">Minutes of the BoD Meeting  (7,213 KB)</a>",
+        "headingArabic": "روبكس العالميه لتصنيع البلاستيك والاكريلك (RUBX.CA) - محضر اجتماع مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: روبكس العالميه لتصنيع البلاستيك والاكريلك<br />كود الترقيم الدولي: EGS3A221C018<br />كود رويترز: RUBX.CA<br />مضمون الإعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 15/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347402_1.pdf\" target=\"_blank\">محضر اجتماع مجلس الإدارة (7,213 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3A221C018",
+        "companyName": "روبكس العالميه لتصنيع البلاستيك والاكريلك",
+        "companyNameArabic": "Rubex International for Plastic and Acrylic Manufacturing",
+        "sectorId": 27,
+        "attachments": []
+      },
+      {
+        "code": 297856,
+        "dateStamp": "2026-11-16T09:57:01",
+        "heading": "Release from Misr Fertilizers Production Company - Mopco (MFPC.CA) Concerning a Loan",
+        "content": "Company: Misr Fertilizers Production Company - Mopco <br />Symbols: EGS39061C014<br />Reuters: MFPC.CA<br />Content: <br />Release from the company stating that the company got a loan that amounted $165 Million.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347391_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (348 KB)</a>",
+        "headingArabic": "بيان من مصر لإنتاج الأسمدة - موبكو (MFPC.CA) بخصوص قرض",
+        "contentArabic": "اسم الشركة: مصر لإنتاج الأسمدة - موبكو <br />كود الترقيم الدولي: EGS39061C014<br />كود رويترز: MFPC.CA<br />مضمون الإعلان :<br />بيان من الشركة تفيد فيه انه تمت الموافقة على حصول الشركة على تمويل بقيمة اجمالية قدرها 165 مليون دولار أمريكي.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347391_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (348 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS39061C014",
+        "companyName": "مصر لإنتاج الأسمدة - موبكو",
+        "companyNameArabic": "Misr Fertilizers Production Company - Mopco",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 297855,
+        "dateStamp": "2026-11-16T09:54:18",
+        "heading": "Tanmiya for Real Estate Investment (TANM.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Tanmiya for Real Estate Investment<br />ISIN Code: EGS21EB1C011<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 23,464,968 <br />F/S (Consolidated) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 30,205,843  <br />Audit Status: Reviewed<br />Source: Tanmiya for Real Estate Investment<br />Taking minority rights into consideration",
+        "headingArabic": "تنمية للاستثمار العقاري (TANM.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: تنمية للاستثمار العقاري<br />كود الترقيم الدولي: EGS21EB1C011<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 23,464,968 <br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 30,205,843 <br />تقرير فحص محدود: مرفق<br />المصدر: تنمية للاستثمار العقاري<br />مع الأخذ في الإعتبار حقوق الأقلية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21EB1C011",
+        "companyName": "تنمية للاستثمار العقاري",
+        "companyNameArabic": "Tanmiya for Real Estate Investment",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 297853,
+        "dateStamp": "2026-11-16T09:52:48",
+        "heading": "Tanmiya for Real Estate Investment (TANM.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: Tanmiya for Real Estate Investment<br />ISIN Code: EGS21EB1C011<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 15,218,370 <br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 31,603,181  <br />Audit Status: Reviewed<br />Source: Tanmiya for Real Estate Investment",
+        "headingArabic": "تنمية للاستثمار العقاري (TANM.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: تنمية للاستثمار العقاري<br />كود الترقيم الدولي: EGS21EB1C011<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 15,218,370 <br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 31,603,181 <br />تقرير فحص محدود: مرفق<br />المصدر: تنمية للاستثمار العقاري",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21EB1C011",
+        "companyName": "تنمية للاستثمار العقاري",
+        "companyNameArabic": "Tanmiya for Real Estate Investment",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 297851,
+        "dateStamp": "2026-11-16T09:51:14",
+        "heading": "Tanmiya for Real Estate Investment (TANM.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Tanmiya for Real Estate Investment<br />Symbols: EGS21EB1C011<br />Reuters: TANM.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 15/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347387_1.pdf\" target=\"_blank\">Board of Directors Decisions (228 KB)</a>",
+        "headingArabic": "تنمية للاستثمار العقاري (TANM.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: تنمية للاستثمار العقاري<br />كود الترقيم الدولي: EGS21EB1C011<br />كود رويترز: TANM.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 15/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347387_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (228 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21EB1C011",
+        "companyName": "تنمية للاستثمار العقاري",
+        "companyNameArabic": "Tanmiya for Real Estate Investment",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 297850,
+        "dateStamp": "2026-11-16T09:47:27",
+        "heading": "Extracted Oils (ZEOT.CA) - Company's Response on the Auditors Reports",
+        "content": "Company: Extracted Oils <br />Symbols: EGS38251C012<br />Reuters: ZEOT.CA<br />Content : <br />Company's response on the auditors reports for the financial year ended on 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347382_1.pdf\" target=\"_blank\">Company's Response on the Auditors Reports (909 KB)</a>",
+        "headingArabic": "الزيوت المستخلصة ومنتجاتها (ZEOT.CA) - رد الشركة على تقريرى السادة مراقبي الحسابات",
+        "contentArabic": "اسم الشركة: الزيوت المستخلصة ومنتجاتها <br />كود الترقيم الدولي: EGS38251C012<br />كود رويترز: ZEOT.CA<br />مضمون الإعلان :<br />رد الشركة على تقريري السادة مراقبي الحسابات عن السنة المالية المنتهية في 30/06/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347382_1.pdf\" target=\"_blank\">رد الشركة على تقريري مراقبي الحسابات (909 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38251C012",
+        "companyName": "الزيوت المستخلصة ومنتجاتها",
+        "companyNameArabic": "Extracted Oils",
+        "sectorId": 19,
+        "attachments": []
+      },
+      {
         "code": 297849,
         "dateStamp": "2026-11-16T09:40:26",
         "heading": "East Delta Flour Mills (EDFM.CA) Reports its Financial Results for the Period from 01/07/2026 to 30/09/2026 ",
@@ -9474,132 +9636,6 @@
         "companyName": "بنك قناة السويس شركة مساهمة مصرية",
         "companyNameArabic": "Suez Canal Bank S.A.E",
         "sectorId": 1,
-        "attachments": []
-      },
-      {
-        "code": 297831,
-        "dateStamp": "2026-11-15T17:01:46",
-        "heading": "Arabia Investments Holding (AIHC.CA) - EGM Invitation ",
-        "content": "Company: Arabia Investments Holding<br />Symbols: EGS21351C019<br />Reuters: AIHC.CA<br />Content: <br />Arabia Investments Holding invites its stakeholder to attend the EGM on 09/12/2026 at 03:00 PM. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347339_1.pdf\" target=\"_blank\">Release from the Company  (1,090 KB)</a>",
-        "headingArabic": "ارابيا انفستمنتس هولدنج (AIHC.CA) - دعوة الجمعية العامة غير العادية ",
-        "contentArabic": "اسم الشركة: ارابيا انفستمنتس هولدنج<br />كود الترقيم الدولي: EGS21351C019<br />كود رويترز: AIHC.CA<br />مضمون الاعلان : <br />تعلن شركة ارابيا انفستمنتس هولدنج عن دعوة الجمعية العامة غير العادية المقرر انعقادها بتاريخ 09/12/2026 في تمام الساعة 03:00 مساءً.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347339_1.pdf\" target=\"_blank\">بيان من الشركة (1,090 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS21351C019",
-        "companyName": "ارابيا انفستمنتس هولدنج",
-        "companyNameArabic": "Arabia Investments Holding",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 297830,
-        "dateStamp": "2026-11-15T16:53:03",
-        "heading": "Release from Abou Kir Fertilizers (ABUK.CA) Concerning a Periodic Maintenance",
-        "content": "Company: Abou Kir Fertilizers - Release from the company <br />Symbols: EGS38191C010<br />Reuters: ABUK.CA<br />Content: <br />Release from the company announcing that it has been decided to commence periodic maintenance and equipment upgrades at the Abu Qir 2 plant, effective from the evening of Thursday, November 12, 2026, for a duration of two weeks.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347336_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English  (513 KB)</a>",
-        "headingArabic": "بيان من ابوقير للاسمدة والصناعات الكيماوية (ABUK.CA) بخصوص أعمال الصيانة الدورية",
-        "contentArabic": "اسم الشركة: ابوقير للاسمدة والصناعات الكيماوية <br />كود الترقيم الدولي: EGS38191C010<br />كود رويترز: ABUK.CA<br />مضمون الاعلان :<br />بيان من الشركة تفيد فيه بأنه قد تقرر البدء في تنفيذ أعمال الصيانة الدورية وإجراء أعمال تحديث لبعض المعدات بمصنع أبوقير 2، وذلك إعتبارًا من مساء يوم الخميس الموافق 12 نوفمبر2026 ولمدة أسبوعين. <br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347336_1.pdf\" target=\"_blank\">بيان من الشركة باللغتين العربية و الإنجليزية (513 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38191C010",
-        "companyName": "ابوقير للاسمدة والصناعات الكيماوية",
-        "companyNameArabic": "Abou Kir Fertilizers",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 297829,
-        "dateStamp": "2026-11-15T16:47:39",
-        "heading": "El-Nile Co. For Pharmaceuticals And Chemical Industries (NIPH.CA) Reports its Financial Results for the Period from 01/07/2026 to 30/09/2026 ",
-        "content": "Company Name: El-Nile Co. For Pharmaceuticals And Chemical Industries<br />ISIN Code: EGS38331C012<br />Currency: Egyptian Pound<br />F/S  Period: From 01/07/2026 to 30/09/2026<br />Net profit: 74,066,966 <br />F/S  Period: From 01/07/2025 to 30/09/2025<br />Net Comparative profit: 106,524,598  <br />Audit Status: Reviewed<br />Source: El-Nile Co. For Pharmaceuticals And Chemical Industries",
-        "headingArabic": " النيل للادوية والصناعات الكيماوية - النيل (NIPH.CA) تعلن نتائج أعمالها عن الفترة من 01/07/2026 إلى 30/09/2026 ",
-        "contentArabic": "اسم الشركة: النيل للادوية والصناعات الكيماوية - النيل<br />كود الترقيم الدولي: EGS38331C012<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/07/2026 إلى 30/09/2026<br />صافي الربح: 74,066,966 <br />أرقام المقارنة  عن الفترة: من 01/07/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 106,524,598 <br />تقرير فحص محدود: مرفق<br />المصدر: النيل للادوية والصناعات الكيماوية - النيل",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38331C012",
-        "companyName": "النيل للادوية والصناعات الكيماوية - النيل",
-        "companyNameArabic": "El-Nile Co. For Pharmaceuticals And Chemical Industries",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 297827,
-        "dateStamp": "2026-11-15T16:45:05",
-        "heading": " Misr Duty Free Shops (MFSC.CA) Reports its Financial Results (Consolidated) for the Period from 01/07/2026 to 30/09/2026 ",
-        "content": "Company Name: Misr Duty Free Shops<br />ISIN Code: EGS53051C016<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/07/2026 to 30/09/2026<br />Net profit: 102,749,124 <br />F/S (Consolidated) Period: From 01/07/2025 to 30/09/2025<br />Net Comparative profit: 89,356,764  <br />Audit Status: Reviewed<br />Source: Misr Duty Free Shops<br /><br />Taking minority rights into consideration",
-        "headingArabic": " مصر للاسواق الحرة (MFSC.CA) تعلن نتائج أعمالها المجمعة عن الفترة من 01/07/2026 إلى 30/09/2026 ",
-        "contentArabic": "اسم الشركة: مصر للاسواق الحرة<br />كود الترقيم الدولي: EGS53051C016<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/07/2026 إلى 30/09/2026<br />صافي الربح: 102,749,124 <br />أرقام المقارنة المجمعة عن الفترة: من 01/07/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 89,356,764 <br />تقرير فحص محدود: مرفق<br />المصدر: مصر للاسواق الحرة<br />مع الأخذ في الإعتبار حقوق الأقلية",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS53051C016",
-        "companyName": "مصر للاسواق الحرة",
-        "companyNameArabic": "Misr Duty Free Shops",
-        "sectorId": 21,
-        "attachments": []
-      },
-      {
-        "code": 297825,
-        "dateStamp": "2026-11-15T16:43:15",
-        "heading": "Abou Kir Fertilizers (ABUK.CA) Reports its Financial Results for the Period from 01/01/2026 to 30/09/2026 ",
-        "content": "Company Name: Abou Kir Fertilizers<br />ISIN Code: EGS38191C010<br />Currency: Egyptian Pound<br />F/S  Period: From 01/01/2026 to 30/09/2026<br />Net profit: 12,969,606,637 <br />F/S  Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 6,395,982,775  <br />Audit Status: Reviewed<br />Source: Abou Kir Fertilizers<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347325_2.pdf\" target=\"_blank\">The Business Results  (3,097 KB)</a>",
-        "headingArabic": " ابوقير للاسمدة والصناعات الكيماوية (ABUK.CA) تعلن نتائج أعمالها عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
-        "contentArabic": "اسم الشركة: ابوقير للاسمدة والصناعات الكيماوية<br />كود الترقيم الدولي: EGS38191C010<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 12,969,606,637 <br />أرقام المقارنة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 6,395,982,775 <br />تقرير فحص محدود: مرفق<br />المصدر: ابوقير للاسمدة والصناعات الكيماوية<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347325_2.pdf\" target=\"_blank\">نتائج أعمال الشركة  (3,097 KB)</a>",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38191C010",
-        "companyName": "ابوقير للاسمدة والصناعات الكيماوية",
-        "companyNameArabic": "Abou Kir Fertilizers",
-        "sectorId": 2,
-        "attachments": []
-      },
-      {
-        "code": 297823,
-        "dateStamp": "2026-11-15T16:41:00",
-        "heading": "Osool ESB Securities Brokerage (EBSC.CA) - Minutes of the Board of Directors' Meeting ",
-        "content": "Company: Osool ESB Securities Brokerage<br />Symbols: EGS68181C014<br />Reuters: EBSC.CA<br />Content:<br />Minutes of the Board of Directors' meeting held on 14/11/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347303_1.pdf\" target=\"_blank\">The BoD Meeting Minutes (757 KB)</a>",
-        "headingArabic": "اصول E.S.B. للوساطة في الاوراق المالية (EBSC.CA) - محضر اجتماع مجلس إدارة الشركة ",
-        "contentArabic": "اسم الشركة: اصول E.S.B. للوساطة في الاوراق المالية<br />كود الترقيم الدولي: EGS68181C014<br />كود رويترز: EBSC.CA<br />مضمون الاعلان : <br />محضر اجتماع مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 14/11/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347303_1.pdf\" target=\"_blank\">محضر اجتماع مجلس إدارة الشركة (757 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS68181C014",
-        "companyName": "اصول E.S.B. للوساطة في الاوراق المالية",
-        "companyNameArabic": "Osool ESB Securities Brokerage",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 297822,
-        "dateStamp": "2026-11-15T16:38:27",
-        "heading": " Ibnsina Pharma (ISPH.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
-        "content": "Company Name: Ibnsina Pharma<br />ISIN Code: EGS512O1C012<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 851,106,536 <br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 638,916,863  <br />Audit Status: Reviewed<br />Source: Ibnsina Pharma",
-        "headingArabic": " ابن سينا فارما (ISPH.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
-        "contentArabic": "اسم الشركة: ابن سينا فارما<br />كود الترقيم الدولي: EGS512O1C012<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 851,106,536 <br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 638,916,863 <br />تقرير فحص محدود: مرفق<br />المصدر: ابن سينا فارما",
-        "section": "Financial Results                                 ",
-        "sectionArabic": "النتائج المالية                                   ",
-        "secId": 6,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS512O1C012",
-        "companyName": "ابن سينا فارما",
-        "companyNameArabic": "Ibnsina Pharma",
-        "sectorId": 7,
         "attachments": []
       }
     ],
