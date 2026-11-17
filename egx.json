@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-17 02:46:39 PM",
+  "lastUpdated": "2026-11-17 03:01:24 PM",
   "marketStatus": {
     "status": "Closed",
     "status_ar": "مغلق",
-    "statusDate": "2026-11-17T14:46:02"
+    "statusDate": "2026-11-17T15:01:16"
   },
   "indices": {
     "EGX30": {
@@ -296,6 +296,14 @@
         {
           "time": "2026-11-17T14:45:00",
           "value": 51681.62
+        },
+        {
+          "time": "2026-11-17T14:50:00",
+          "value": 51681.62
+        },
+        {
+          "time": "2026-11-17T14:55:00",
+          "value": 51681.62
         }
       ]
     },
@@ -545,6 +553,14 @@
         },
         {
           "time": "2026-11-17T14:45:00",
+          "value": 6268.27
+        },
+        {
+          "time": "2026-11-17T14:50:00",
+          "value": 6268.27
+        },
+        {
+          "time": "2026-11-17T14:55:00",
           "value": 6268.27
         }
       ]
@@ -796,6 +812,14 @@
         {
           "time": "2026-11-17T14:45:00",
           "value": 17592.75
+        },
+        {
+          "time": "2026-11-17T14:50:00",
+          "value": 17592.75
+        },
+        {
+          "time": "2026-11-17T14:55:00",
+          "value": 17592.75
         }
       ]
     },
@@ -1045,6 +1069,14 @@
         },
         {
           "time": "2026-11-17T14:45:00",
+          "value": 23535.06
+        },
+        {
+          "time": "2026-11-17T14:50:00",
+          "value": 23535.06
+        },
+        {
+          "time": "2026-11-17T14:55:00",
           "value": 23535.06
         }
       ]
@@ -9729,7 +9761,7 @@
       "value": 1177140659.27,
       "volume": 564749109,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9779,7 +9811,7 @@
       "value": 634636135.9,
       "volume": 4947808,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -9829,7 +9861,7 @@
       "value": 549294586.42,
       "volume": 3827173,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9879,7 +9911,7 @@
       "value": 514708283.34,
       "volume": 82086318,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9929,7 +9961,7 @@
       "value": 466684188.83,
       "volume": 10315738,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -9979,7 +10011,7 @@
       "value": 361959852.68,
       "volume": 177308894,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10029,7 +10061,7 @@
       "value": 254552691.68,
       "volume": 818035,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10079,7 +10111,7 @@
       "value": 212181458.71,
       "volume": 15755667,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10129,7 +10161,7 @@
       "value": 211991366.12,
       "volume": 1563182,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10179,7 +10211,7 @@
       "value": 160978057.86,
       "volume": 1039284,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10229,7 +10261,7 @@
       "value": 158178402.46,
       "volume": 447627,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10279,7 +10311,7 @@
       "value": 147172517.84,
       "volume": 429354,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10329,7 +10361,7 @@
       "value": 141220081.9,
       "volume": 368515,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10379,7 +10411,7 @@
       "value": 137220902.08,
       "volume": 1658655,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10429,7 +10461,7 @@
       "value": 116366932.07,
       "volume": 58802300,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10479,7 +10511,7 @@
       "value": 116305441.43,
       "volume": 143074,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10529,7 +10561,7 @@
       "value": 111320570.68,
       "volume": 43780083,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10579,7 +10611,7 @@
       "value": 108970026.01,
       "volume": 14097704,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10629,7 +10661,7 @@
       "value": 94435891.74,
       "volume": 1213260,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10679,7 +10711,7 @@
       "value": 85752012.42,
       "volume": 3642584,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10729,7 +10761,7 @@
       "value": 85302482.55,
       "volume": 273101,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10779,7 +10811,7 @@
       "value": 82750307.1,
       "volume": 7996177,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10829,7 +10861,7 @@
       "value": 79467632.68,
       "volume": 4632784,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10879,7 +10911,7 @@
       "value": 77212019.22,
       "volume": 639013,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -10929,7 +10961,7 @@
       "value": 70389526.63,
       "volume": 7680635,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -10979,7 +11011,7 @@
       "value": 67293500.92,
       "volume": 12181558,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11029,7 +11061,7 @@
       "value": 67119672.01,
       "volume": 9921442,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11079,7 +11111,7 @@
       "value": 65941322.56,
       "volume": 33602158,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11129,7 +11161,7 @@
       "value": 63661678.33,
       "volume": 2835954,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11179,7 +11211,7 @@
       "value": 63101087.041,
       "volume": 251110513,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11229,7 +11261,7 @@
       "value": 62742837.24,
       "volume": 5405555,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11279,7 +11311,7 @@
       "value": 60524724.5,
       "volume": 4737390,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11329,7 +11361,7 @@
       "value": 57835088.1,
       "volume": 317368,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11379,7 +11411,7 @@
       "value": 57726040.67,
       "volume": 1512397,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11429,7 +11461,7 @@
       "value": 54349660.6,
       "volume": 13042561,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11479,7 +11511,7 @@
       "value": 53695486.57,
       "volume": 22953800,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11529,7 +11561,7 @@
       "value": 53594784.736,
       "volume": 74452710,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11579,7 +11611,7 @@
       "value": 52873843.75,
       "volume": 5054644,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11629,7 +11661,7 @@
       "value": 52264274.26,
       "volume": 497685,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11679,7 +11711,7 @@
       "value": 48353868.54,
       "volume": 1011444,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11729,7 +11761,7 @@
       "value": 46577873.67,
       "volume": 6887562,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11779,7 +11811,7 @@
       "value": 46307514.79,
       "volume": 30434210,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11829,7 +11861,7 @@
       "value": 43109574.62,
       "volume": 2103016,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -11879,7 +11911,7 @@
       "value": 41090590.12,
       "volume": 1707989,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11929,7 +11961,7 @@
       "value": 41033831.8,
       "volume": 4056999,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -11979,7 +12011,7 @@
       "value": 38893524.06,
       "volume": 999409,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12029,7 +12061,7 @@
       "value": 38567890.98,
       "volume": 647155,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12079,7 +12111,7 @@
       "value": 38434408.44,
       "volume": 356751,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12129,7 +12161,7 @@
       "value": 38257901.39,
       "volume": 4093228,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12179,7 +12211,7 @@
       "value": 34617867.03,
       "volume": 354492,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12229,7 +12261,7 @@
       "value": 34417542.01,
       "volume": 5297075,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12279,7 +12311,7 @@
       "value": 33994340.89,
       "volume": 1699372,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12329,7 +12361,7 @@
       "value": 33581155.41,
       "volume": 1785933,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12379,7 +12411,7 @@
       "value": 33016164.95,
       "volume": 968430,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12429,7 +12461,7 @@
       "value": 32664885.14,
       "volume": 2426616,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12479,7 +12511,7 @@
       "value": 32574993.04,
       "volume": 31111268,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12529,7 +12561,7 @@
       "value": 32134762.31,
       "volume": 219075,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12579,7 +12611,7 @@
       "value": 30956842.5,
       "volume": 789738,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12629,7 +12661,7 @@
       "value": 30840686.27,
       "volume": 4657011,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12679,7 +12711,7 @@
       "value": 30526485.99,
       "volume": 5459738,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12729,7 +12761,7 @@
       "value": 30208844.58,
       "volume": 441462,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12779,7 +12811,7 @@
       "value": 29840329.68,
       "volume": 6832090,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12829,7 +12861,7 @@
       "value": 28922319.98,
       "volume": 1167393,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12879,7 +12911,7 @@
       "value": 28630352.75,
       "volume": 16842548,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -12929,7 +12961,7 @@
       "value": 28581406.29,
       "volume": 5494325,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -12979,7 +13011,7 @@
       "value": 27982696.01,
       "volume": 16921067,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13029,7 +13061,7 @@
       "value": 27437325.467,
       "volume": 33091267,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13079,7 +13111,7 @@
       "value": 25670760.08,
       "volume": 11174593,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13129,7 +13161,7 @@
       "value": 25202953.53,
       "volume": 2746952,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13179,7 +13211,7 @@
       "value": 24492629.06,
       "volume": 18203080,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13229,7 +13261,7 @@
       "value": 24484868.64,
       "volume": 967915,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13279,7 +13311,7 @@
       "value": 23641707.5,
       "volume": 271292,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13329,7 +13361,7 @@
       "value": 23578588.96,
       "volume": 2244280,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13379,7 +13411,7 @@
       "value": 23545086.41,
       "volume": 2521792,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13429,7 +13461,7 @@
       "value": 22427490.119,
       "volume": 32485586,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13479,7 +13511,7 @@
       "value": 21610485.63,
       "volume": 903652,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13529,7 +13561,7 @@
       "value": 21037780.3,
       "volume": 3283045,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13579,7 +13611,7 @@
       "value": 20814347.47,
       "volume": 12640132,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13629,7 +13661,7 @@
       "value": 19732780.41,
       "volume": 2968909,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13679,7 +13711,7 @@
       "value": 19411472.65,
       "volume": 3373088,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13729,7 +13761,7 @@
       "value": 19126463.078,
       "volume": 58805983,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13779,7 +13811,7 @@
       "value": 18837579.73,
       "volume": 1264363,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13829,7 +13861,7 @@
       "value": 18816400.84,
       "volume": 190270,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13879,7 +13911,7 @@
       "value": 18668158.93,
       "volume": 3323269,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -13929,7 +13961,7 @@
       "value": 18252328.35,
       "volume": 11837799,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -13979,7 +14011,7 @@
       "value": 18232398.96,
       "volume": 1667004,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14029,7 +14061,7 @@
       "value": 17880167.44,
       "volume": 337793,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14079,7 +14111,7 @@
       "value": 16954576.96,
       "volume": 777907,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14129,7 +14161,7 @@
       "value": 16872831.434,
       "volume": 30356042,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14179,7 +14211,7 @@
       "value": 16803062.8,
       "volume": 1158590,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14229,7 +14261,7 @@
       "value": 16436212.06,
       "volume": 3123718,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14279,7 +14311,7 @@
       "value": 16434170.1,
       "volume": 480692,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14329,7 +14361,7 @@
       "value": 16372854.55,
       "volume": 63909,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14379,7 +14411,7 @@
       "value": 16293015.38,
       "volume": 608835,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14429,7 +14461,7 @@
       "value": 16102851.94,
       "volume": 1124325,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14479,7 +14511,7 @@
       "value": 16076998.43,
       "volume": 1157502,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14529,7 +14561,7 @@
       "value": 15232250.73,
       "volume": 15161850,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14579,7 +14611,7 @@
       "value": 14987941.59,
       "volume": 293020,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14629,7 +14661,7 @@
       "value": 14285038.55,
       "volume": 603420,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14679,7 +14711,7 @@
       "value": 14170246.39,
       "volume": 2793769,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14729,7 +14761,7 @@
       "value": 13995602.67,
       "volume": 9382829,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -14779,7 +14811,7 @@
       "value": 13784589.48,
       "volume": 426013,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14829,7 +14861,7 @@
       "value": 13669119.87,
       "volume": 1022708,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14879,7 +14911,7 @@
       "value": 13592948.84,
       "volume": 1923645,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14929,7 +14961,7 @@
       "value": 13590608.73,
       "volume": 6946309,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -14979,7 +15011,7 @@
       "value": 13580274.39,
       "volume": 1207821,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15029,7 +15061,7 @@
       "value": 13487374.46,
       "volume": 1038010,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15079,7 +15111,7 @@
       "value": 13293968.25,
       "volume": 6694211,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15129,7 +15161,7 @@
       "value": 13290677.107,
       "volume": 38582203,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15179,7 +15211,7 @@
       "value": 13096447.81,
       "volume": 17880297,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15229,7 +15261,7 @@
       "value": 13013625.42,
       "volume": 570754,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15279,7 +15311,7 @@
       "value": 12117625.86,
       "volume": 823987,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15329,7 +15361,7 @@
       "value": 12061386.85,
       "volume": 5555939,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15379,7 +15411,7 @@
       "value": 11956249.6,
       "volume": 50066,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15429,7 +15461,7 @@
       "value": 11878394.72,
       "volume": 5051776,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15479,7 +15511,7 @@
       "value": 11867953.11,
       "volume": 260885,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15529,7 +15561,7 @@
       "value": 11864940.66,
       "volume": 696025,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15579,7 +15611,7 @@
       "value": 11696169.09,
       "volume": 468752,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15629,7 +15661,7 @@
       "value": 11114070.44,
       "volume": 285520,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15679,7 +15711,7 @@
       "value": 10548217.29,
       "volume": 65775,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15729,7 +15761,7 @@
       "value": 10086656.685,
       "volume": 273996,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15779,7 +15811,7 @@
       "value": 9921891.15,
       "volume": 117261,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15829,7 +15861,7 @@
       "value": 9839006.3,
       "volume": 251781,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -15879,7 +15911,7 @@
       "value": 9696241.85,
       "volume": 3288635,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15929,7 +15961,7 @@
       "value": 9667455.16,
       "volume": 1504378,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -15979,7 +16011,7 @@
       "value": 9581933.83,
       "volume": 1391081,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16029,7 +16061,7 @@
       "value": 9562025.04,
       "volume": 18822948,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16079,7 +16111,7 @@
       "value": 9534098.3,
       "volume": 65212,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16129,7 +16161,7 @@
       "value": 9477599.74,
       "volume": 183644,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16179,7 +16211,7 @@
       "value": 9466138.758,
       "volume": 17365103,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16229,7 +16261,7 @@
       "value": 9111862.609,
       "volume": 23293074,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16279,7 +16311,7 @@
       "value": 8922052.11,
       "volume": 1629227,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16329,7 +16361,7 @@
       "value": 8897346.64,
       "volume": 656350,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16379,7 +16411,7 @@
       "value": 8655993,
       "volume": 208574,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16429,7 +16461,7 @@
       "value": 8646593.237,
       "volume": 26261865,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16479,7 +16511,7 @@
       "value": 8466428.65,
       "volume": 186799,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16529,7 +16561,7 @@
       "value": 8317064.53,
       "volume": 590400,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16579,7 +16611,7 @@
       "value": 8133783.69,
       "volume": 6229989,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16629,7 +16661,7 @@
       "value": 8076071.79,
       "volume": 223119,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -16679,7 +16711,7 @@
       "value": 7964981.38,
       "volume": 389098,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16729,7 +16761,7 @@
       "value": 7293767.528,
       "volume": 15084455,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16779,7 +16811,7 @@
       "value": 6968016.201,
       "volume": 88905484,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16829,7 +16861,7 @@
       "value": 6836391.47,
       "volume": 608210,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16879,7 +16911,7 @@
       "value": 6815098.82,
       "volume": 294409,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16929,7 +16961,7 @@
       "value": 6741624.56,
       "volume": 263918,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -16979,7 +17011,7 @@
       "value": 6712462.2,
       "volume": 145040,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17029,7 +17061,7 @@
       "value": 6574936.62,
       "volume": 2439232,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17079,7 +17111,7 @@
       "value": 6550768.81,
       "volume": 207676,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17129,7 +17161,7 @@
       "value": 6461533.33,
       "volume": 3125816,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17179,7 +17211,7 @@
       "value": 6170893.31,
       "volume": 4609360,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17229,7 +17261,7 @@
       "value": 6154633.46,
       "volume": 35530,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17279,7 +17311,7 @@
       "value": 6073977.31,
       "volume": 373720,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17329,7 +17361,7 @@
       "value": 6014500.65,
       "volume": 4122,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17379,7 +17411,7 @@
       "value": 5650655.97,
       "volume": 172572,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17429,7 +17461,7 @@
       "value": 5645487.13,
       "volume": 99725,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17479,7 +17511,7 @@
       "value": 5642979.33,
       "volume": 5386369,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17529,7 +17561,7 @@
       "value": 5627518.97,
       "volume": 450893,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17579,7 +17611,7 @@
       "value": 5611841.014,
       "volume": 212647,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17629,7 +17661,7 @@
       "value": 5459412.335,
       "volume": 17566021,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17679,7 +17711,7 @@
       "value": 5419098.15,
       "volume": 79737,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17729,7 +17761,7 @@
       "value": 5418599.62,
       "volume": 90372,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17779,7 +17811,7 @@
       "value": 5413707.73,
       "volume": 344230,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17829,7 +17861,7 @@
       "value": 5343791.24,
       "volume": 720937,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17879,7 +17911,7 @@
       "value": 5309190.61,
       "volume": 6791,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17929,7 +17961,7 @@
       "value": 5126991.48,
       "volume": 78223,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -17979,7 +18011,7 @@
       "value": 5050750.819,
       "volume": 144727,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18029,7 +18061,7 @@
       "value": 4918309.57,
       "volume": 150842,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18079,7 +18111,7 @@
       "value": 4883917.22,
       "volume": 755362,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18129,7 +18161,7 @@
       "value": 4824712.57,
       "volume": 20424,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18179,7 +18211,7 @@
       "value": 4756102.79,
       "volume": 294899,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18229,7 +18261,7 @@
       "value": 4727765.16,
       "volume": 7963,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18279,7 +18311,7 @@
       "value": 4571748.59,
       "volume": 196564,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -18329,7 +18361,7 @@
       "value": 4551476.69,
       "volume": 142442,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18379,7 +18411,7 @@
       "value": 4364413.74,
       "volume": 19629,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18429,7 +18461,7 @@
       "value": 4273470.6,
       "volume": 208447,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18479,7 +18511,7 @@
       "value": 4097568.52,
       "volume": 509247,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18529,7 +18561,7 @@
       "value": 4015880.63,
       "volume": 13394,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18579,7 +18611,7 @@
       "value": 3919555.61,
       "volume": 1843217,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": "Y",
       "tamayuz": null
     },
@@ -18629,7 +18661,7 @@
       "value": 3870696.48,
       "volume": 962106,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18679,7 +18711,7 @@
       "value": 3362780.76,
       "volume": 310360,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18729,7 +18761,7 @@
       "value": 3306483.76,
       "volume": 15283,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18779,7 +18811,7 @@
       "value": 3284365.42,
       "volume": 163540,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18829,7 +18861,7 @@
       "value": 3037821.77,
       "volume": 15295,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18879,7 +18911,7 @@
       "value": 2918177.08,
       "volume": 479058,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18929,7 +18961,7 @@
       "value": 2842506.47,
       "volume": 187768,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -18979,7 +19011,7 @@
       "value": 2783739.02,
       "volume": 10288,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19029,7 +19061,7 @@
       "value": 2516327.28,
       "volume": 146213,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19079,7 +19111,7 @@
       "value": 2304260.73,
       "volume": 269450,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19129,7 +19161,7 @@
       "value": 2259769.33,
       "volume": 219292,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19179,7 +19211,7 @@
       "value": 2245390.35,
       "volume": 45604,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19229,7 +19261,7 @@
       "value": 1894977.92,
       "volume": 31676,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19279,7 +19311,7 @@
       "value": 1739875.66,
       "volume": 3525,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19329,7 +19361,7 @@
       "value": 1580611.89,
       "volume": 218748,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19379,7 +19411,7 @@
       "value": 1578637.36,
       "volume": 3004,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19429,7 +19461,7 @@
       "value": 1571017.11,
       "volume": 1012534,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19479,7 +19511,7 @@
       "value": 1549066.38,
       "volume": 3209,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19529,7 +19561,7 @@
       "value": 1492770.64,
       "volume": 43560,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19579,7 +19611,7 @@
       "value": 1489543.68,
       "volume": 11658,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19629,7 +19661,7 @@
       "value": 1410665.9,
       "volume": 4190,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19679,7 +19711,7 @@
       "value": 1361873.122,
       "volume": 25333,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19729,7 +19761,7 @@
       "value": 1313618.57,
       "volume": 5010,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19779,7 +19811,7 @@
       "value": 1288927.36,
       "volume": 45247,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19829,7 +19861,7 @@
       "value": 1202156.15,
       "volume": 26057,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19879,7 +19911,7 @@
       "value": 1138500.07,
       "volume": 4320,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19929,7 +19961,7 @@
       "value": 1132828.54,
       "volume": 25578,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -19979,7 +20011,7 @@
       "value": 906653.41,
       "volume": 36881,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20029,7 +20061,7 @@
       "value": 771642.2,
       "volume": 46611,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20079,7 +20111,7 @@
       "value": 560079.93,
       "volume": 473313,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20129,7 +20161,7 @@
       "value": 408346.65,
       "volume": 1124,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20179,7 +20211,7 @@
       "value": 354062.338,
       "volume": 61604,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20229,7 +20261,7 @@
       "value": 281067.939,
       "volume": 40666,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20279,7 +20311,7 @@
       "value": 279701.24,
       "volume": 7059,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20329,7 +20361,7 @@
       "value": 237398.79,
       "volume": 51315,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20379,7 +20411,7 @@
       "value": 169860.94,
       "volume": 22477,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20429,7 +20461,7 @@
       "value": 166119.57,
       "volume": 7733,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20479,7 +20511,7 @@
       "value": 163797.447,
       "volume": 51713,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20529,7 +20561,7 @@
       "value": 148776.17,
       "volume": 62589,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20579,7 +20611,7 @@
       "value": 138808.712,
       "volume": 63390,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20629,7 +20661,7 @@
       "value": 108021.04,
       "volume": 1032,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20679,7 +20711,7 @@
       "value": 107983.68,
       "volume": 64276,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20729,7 +20761,7 @@
       "value": 106727.1,
       "volume": 63980,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20779,7 +20811,7 @@
       "value": 82505.53,
       "volume": 5578,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     }
@@ -20831,7 +20863,7 @@
       "value": 160978057.86,
       "volume": 1039284,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20881,7 +20913,7 @@
       "value": 25670760.08,
       "volume": 11174593,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20931,7 +20963,7 @@
       "value": 85752012.42,
       "volume": 3642584,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -20981,7 +21013,7 @@
       "value": 5309190.61,
       "volume": 6791,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21031,7 +21063,7 @@
       "value": 4015880.63,
       "volume": 13394,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     }
@@ -21083,7 +21115,7 @@
       "value": 1177140659.27,
       "volume": 564749109,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21133,7 +21165,7 @@
       "value": 466684188.83,
       "volume": 10315738,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21183,7 +21215,7 @@
       "value": 13669119.87,
       "volume": 1022708,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21233,7 +21265,7 @@
       "value": 6836391.47,
       "volume": 608210,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     },
@@ -21283,38 +21315,38 @@
       "value": 5419098.15,
       "volume": 79737,
       "withHistory": "N",
-      "writeTime": "202611171431",
+      "writeTime": "202611171446",
       "volatility": null,
       "tamayuz": null
     }
   ],
   "investorActivity": {
     "invsetorsStatistics": {
-      "buyCom": 282506160022.1142,
-      "buyEg": 244805242028.428,
-      "buyF": 45609467784.7957,
-      "buyRet": 7908549791.1095,
-      "egTotal": 244852718821.87344,
-      "forTotal": 45561990991.35025,
-      "ratBuyCom": 97.27,
+      "buyCom": 282503693133.7942,
+      "buyEg": 244824680698.4165,
+      "buyF": 45611522154.9757,
+      "buyRet": 7932509719.598,
+      "egTotal": 244871532678.83694,
+      "forTotal": 45564670174.55525,
+      "ratBuyCom": 97.26,
       "ratBuyEg": 84.29,
       "ratBuyFor": 15.7,
-      "ratBuyRat": 2.72,
-      "ratCom": 97.43,
+      "ratBuyRat": 2.73,
+      "ratCom": 97.42,
       "ratEg": 84.31,
       "ratFor": 15.68,
-      "ratRet": 2.56,
-      "ratSellCom": 97.59,
+      "ratRet": 2.57,
+      "ratSellCom": 97.58,
       "ratSellEg": 84.32,
       "ratSellFor": 15.67,
-      "ratSellRat": 2.4,
-      "sellCom": 283430868715.5887,
-      "sellEg": 244900340300.1189,
-      "sellF": 45514514197.9048,
-      "sellRet": 6983985782.435,
-      "totalValue": 290414709813.2237,
-      "tradeDate": "2026-11-17T14:28:27",
-      "tradeTime": "142827"
+      "ratSellRat": 2.41,
+      "sellCom": 283432624681.3187,
+      "sellEg": 244918384659.2574,
+      "sellF": 45517818194.1348,
+      "sellRet": 7003578172.0735,
+      "totalValue": 290436202853.3922,
+      "tradeDate": "2026-11-17T14:29:59",
+      "tradeTime": "142959"
     },
     "investorsType": [
       {
