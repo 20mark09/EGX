@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-18 09:46:07 AM",
+  "lastUpdated": "2026-11-18 10:01:21 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-18T09:46:03"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-18T10:01:14"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 51681.62,
-        "close": 51681.62,
+        "change": 46.38,
+        "changePer": 0.08974176893061789,
+        "high": 51728,
+        "close": 51728,
         "open": 51681.62,
         "low": 51681.62,
-        "ytdPercent": 23.5546,
+        "ytdPercent": 23.6655,
         "date": "2026-11-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-18T09:58:00",
+          "value": 51681.62
+        },
+        {
+          "time": "2026-11-18T10:00:00",
+          "value": 51716.14
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6268.27,
-        "close": 6268.27,
+        "change": 12.06,
+        "changePer": 0.19239758338425117,
+        "high": 6283.01,
+        "close": 6280.33,
         "open": 6268.27,
         "low": 6268.27,
-        "ytdPercent": 36.3328,
+        "ytdPercent": 36.5951,
         "date": "2026-11-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-18T09:58:00",
+          "value": 6268.27
+        },
+        {
+          "time": "2026-11-18T10:00:00",
+          "value": 6279.79
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 17592.75,
-        "close": 17592.75,
+        "change": -4.6,
+        "changePer": -0.026147134473007348,
+        "high": 17599.86,
+        "close": 17588.15,
         "open": 17592.75,
-        "low": 17592.75,
-        "ytdPercent": 34.0366,
+        "low": 17588.15,
+        "ytdPercent": 34.0016,
         "date": "2026-11-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-18T09:58:00",
+          "value": 17592.75
+        },
+        {
+          "time": "2026-11-18T10:00:00",
+          "value": 17599.86
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 23535.06,
-        "close": 23535.06,
+        "change": 2.5,
+        "changePer": 0.01062245008085809,
+        "high": 23542.9,
+        "close": 23537.56,
         "open": 23535.06,
         "low": 23535.06,
-        "ytdPercent": 35.0581,
+        "ytdPercent": 35.0724,
         "date": "2026-11-18T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-18T09:58:00",
+          "value": 23535.06
+        },
+        {
+          "time": "2026-11-18T10:00:00",
+          "value": 23542.9
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,78 @@
   "news": {
     "disclosure": [
       {
+        "code": 298165,
+        "dateStamp": "2026-11-18T09:59:59",
+        "heading": "Misr Chemical Industries (MICH.CA) - Company's Reply on the Auditors Reports ",
+        "content": "Company: Misr Chemical Industries - <br />Symbols: EGS38211C016<br />Reuters: MICH.CA<br />Content: <br />Company's reply on the Auditors Reports for the financial period ended on 30/06/2019.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347629_1.pdf\" target=\"_blank\">Company's Reply on the Auditors Reports  (12,337 KB)</a>",
+        "headingArabic": "مصر لصناعة الكيماويات (MICH.CA) - رد الشركة على تقريري السادة مراقبي الحسابات ",
+        "contentArabic": "اسم الشركة: مصر لصناعة الكيماويات <br />كود الترقيم الدولي: EGS38211C016<br />كود رويترز: MICH.CA<br />مضمون الإعلان :<br />رد الشركة على تقريري السادة مراقبي الحسابات عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347629_1.pdf\" target=\"_blank\">رد الشركة على تقريري مراقبي الحسابات  (12,337 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38211C016",
+        "companyName": "مصر لصناعة الكيماويات",
+        "companyNameArabic": "Misr Chemical Industries",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 298164,
+        "dateStamp": "2026-11-18T09:55:47",
+        "heading": "Release from Misr Fertilizers Production Company - Mopco (MFPC.CA) Concerning the Company's Natural Gas Supplements ",
+        "content": "Company: Misr Fertilizers Production Company - Mopco <br />Symbols: EGS39061C014<br />Reuters: MFPC.CA<br />Content: <br />Release from the company concerning the company's natural gas supplements.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347628_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (298 KB)</a>",
+        "headingArabic": "بيان من مصر لإنتاج الأسمدة - موبكو (MFPC.CA) بشأن إمدادات الغاز الطبيعي للشركة",
+        "contentArabic": "اسم الشركة: مصر لإنتاج الأسمدة - موبكو <br />كود الترقيم الدولي: EGS39061C014<br />كود رويترز: MFPC.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن إمدادات الغاز الطبيعي للشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347628_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (298 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS39061C014",
+        "companyName": "مصر لإنتاج الأسمدة - موبكو",
+        "companyNameArabic": "Misr Fertilizers Production Company - Mopco",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 298163,
+        "dateStamp": "2026-11-18T09:49:57",
+        "heading": "EFG Holding (HRHO.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: EFG Holding<br />ISIN Code: EGS69101C011<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 4,025,629 (value in thousands)<br />F/S (Consolidated) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 4,601,456 (value in thousands) <br />Audit Status: Reviewed<br />Source: EFG Holding<br />Taking minority rights into consideration<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347626_3.pdf\" target=\"_blank\">The BoD Report in Arabic & English (514 KB)</a>",
+        "headingArabic": "مجموعة اي اف جي القابضة (HRHO.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: مجموعة اي اف جي القابضة<br />كود الترقيم الدولي: EGS69101C011<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 4,025,629 (القيمة بالألف)<br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 4,601,456 (القيمة بالألف)<br />تقرير فحص محدود: مرفق<br />المصدر: مجموعة اي اف جي القابضة<br />مع الأخذ في الإعتبار حقوق الأقلية<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347626_3.pdf\" target=\"_blank\">تقرير مجلس الإدارة باللغتين العربية والإنجليزية (514 KB)</a>",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS69101C011",
+        "companyName": "مجموعة اي اف جي القابضة",
+        "companyNameArabic": "EFG Holding",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 298161,
+        "dateStamp": "2026-11-18T09:46:20",
+        "heading": "EFG Holding (HRHO.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: EFG Holding<br />ISIN Code: EGS69101C011<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 1,331,406 (value in thousands)<br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 1,664,989 (value in thousands) <br />Audit Status: Reviewed<br />Source: EFG Holding",
+        "headingArabic": "مجموعة اي اف جي القابضة (HRHO.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: مجموعة اي اف جي القابضة<br />كود الترقيم الدولي: EGS69101C011<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 1,331,406 (القيمة بالألف)<br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 1,664,989 (القيمة بالألف)<br />تقرير فحص محدود: مرفق<br />المصدر: مجموعة اي اف جي القابضة",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS69101C011",
+        "companyName": "مجموعة اي اف جي القابضة",
+        "companyNameArabic": "EFG Holding",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
         "code": 298159,
         "dateStamp": "2026-11-18T09:43:18",
         "heading": "EFG Holding (HRHO.CA) - Decisions of the BoD Meeting ",
@@ -9519,78 +9627,6 @@
         "content": "Company: MISR INTERCONTINENTAL FOR GRANITE & MARBLE (EGY-STON)<br />Symbols: EGS3C4P1C011<br />Reuters: MISR.CA<br />Content: <br />MISR INTERCONTINENTAL FOR GRANITE & MARBLE (EGY-STON) invites its stakeholders to attend the EGM on 16/12/2026 at 03:30 PM.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347596_1.pdf\" target=\"_blank\">Release from the Company (1,739 KB)</a>",
         "headingArabic": "مصر انتركوننتال لصناعة الجرانيت والرخام (ايجى ستون) (MISR.CA) - دعوة الجمعية العامة غير العادية (سوق الشركات الصغيرة والمتوسطة)",
         "contentArabic": "اسم الشركة: مصر انتركوننتال لصناعة الجرانيت والرخام (ايجى ستون)<br />كود الترقيم الدولي: EGS3C4P1C011<br />كود رويترز: MISR.CA<br />مضمون الإعلان : <br />تعلن شركة مصر انتركوننتال لصناعة الجرانيت والرخام (ايجى ستون) عن دعوة الجمعية العامة غير العادية المقرر انعقادها بتاريخ 16/12/2026 في تمام الساعة 03:30 مساءً.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347596_1.pdf\" target=\"_blank\">بيان من الشركة (1,739 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS3C4P1C011",
-        "companyName": null,
-        "companyNameArabic": null,
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298139,
-        "dateStamp": "2026-11-18T08:50:36",
-        "heading": "Release from International Co For Investment & Development (ICID.CA) Regarding a Disclosure Form ",
-        "content": "Company: International Co For Investment & Development <br />Symbols: EGS67191C014<br />Reuters: ICID.CA<br />Content: <br />Release from the company regarding the disclosure form for the use of proceeds from the capital increase subscription for the period ended on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347591_1.pdf\" target=\"_blank\">Release from the Company (723 KB)</a>",
-        "headingArabic": "بيان من العالمية للاستثمار والتنمية (ICID.CA) بخصوص نموذج الإفصاح ",
-        "contentArabic": "اسم الشركة: العالمية للاستثمار والتنمية <br />كود الترقيم الدولي: EGS67191C014<br />كود رويترز: ICID.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص نموذج الإفصاح عن استخدام متحصلات اكتتاب زيادة رأس المال عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347591_1.pdf\" target=\"_blank\">بيان من الشركة  (723 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS67191C014",
-        "companyName": "العالمية للاستثمار والتنمية",
-        "companyNameArabic": "International Co For Investment & Development",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 298138,
-        "dateStamp": "2026-11-18T08:48:15",
-        "heading": "Release from TAWASOA For Factoring (TWSA.CA) Regarding a Disclosure Form ",
-        "content": "Company: TAWASOA For Factoring <br />Symbols: EGS7D231C010<br />Reuters: TWSA.CA<br />Content: <br />Release from the company regarding the disclosure form for the use of proceeds from the capital increase subscription for the financial period ended on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347590_1.pdf\" target=\"_blank\">The Disclosure Form (202 KB)</a>",
-        "headingArabic": "بيان من توسع للتخصيم (TWSA.CA) بخصوص نموذج الإفصاح ",
-        "contentArabic": "اسم الشركة: توسع للتخصيم <br />كود الترقيم الدولي: EGS7D231C010<br />كود رويترز: TWSA.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص نموذج الإفصاح عن استخدام متحصلات اكتتاب زيادة رأس المال عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347590_1.pdf\" target=\"_blank\">نموذج الإفصاح  (202 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS7D231C010",
-        "companyName": "توسع للتخصيم",
-        "companyNameArabic": "TAWASOA For Factoring",
-        "sectorId": 24,
-        "attachments": []
-      },
-      {
-        "code": 298137,
-        "dateStamp": "2026-11-17T16:39:36",
-        "heading": "Release from Egyptian International Pharmaceuticals (EIPICO) (PHAR.CA) Regarding its Response to the Auditor’s Reservations",
-        "content": "Company Name : Egyptian International Pharmaceuticals (EIPICO)<br />ISIN Code : EGS38081C013<br />Reuters Code : PHAR.CA<br />Content : <br />Release from the company regarding its response to the auditor’s reservations concerning the consolidated financial statements for the financial period ended on 30/09/2026. <br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347588_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English  (69 KB)</a>",
-        "headingArabic": "بيان من المصرية الدولية للصناعات الدوائية - ايبيكو (PHAR.CA) بخصوص رد الشركة على تحفظات مراقب الحسابات ",
-        "contentArabic": "اسم الشركة : المصرية الدولية للصناعات الدوائية - ايبيكو<br />كود الترقيم الدولي : EGS38081C013<br />كود رويترز : PHAR.CA<br />مضمون الاعلان : <br />بيان من الشركة بخصوص رد الشركة على تحفظات مراقب الحسابات عن القوائم المالية المجمعة عن الفترة المالية المنتهية في 30/09/2026. <br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347588_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (69 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38081C013",
-        "companyName": "المصرية الدولية للصناعات الدوائية - ايبيكو",
-        "companyNameArabic": "Egyptian International Pharmaceuticals (EIPICO)",
-        "sectorId": 7,
-        "attachments": []
-      },
-      {
-        "code": 298136,
-        "dateStamp": "2026-11-17T16:34:12",
-        "heading": "Release from MISR INTERCONTINENTAL FOR GRANITE & MARBLE (EGY-STON) (MISR.CA) Regarding the the Financial Statements (SMEs Market)",
-        "content": "Company Name : MISR INTERCONTINENTAL FOR GRANITE & MARBLE (EGY-STON)<br />ISIN Code : EGS3C4P1C011<br />Reuters Code : MISR.CA<br />Content : <br />Release from the company regarding the reasons for the delay in submitting the financial statements for the financial period ended on 30/09/2026 beyond the scheduled deadline.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347589_1.pdf\" target=\"_blank\">Release from the Company  (455 KB)</a>",
-        "headingArabic": "بيان من مصر انتركوننتال لصناعة الجرانيت والرخام (ايجى ستون) (MISR.CA) بخصوص القوائم المالية (سوق الشركات الصغيرة والمتوسطة)",
-        "contentArabic": "اسم الشركة : (مصر انتركوننتال لصناعة الجرانيت والرخام (ايجى ستون<br />كود الترقيم الدولي : EGS3C4P1C011<br />كود رويترز : MISR.CA<br />مضمون الاعلان : <br />بيان من الشركة بخصوص مبررات التأخير في إرسال القوائم المالية عن الفترة المالية المنتهية في 30/09/2026 عن موعدها. <br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347589_1.pdf\" target=\"_blank\">بيان من الشركة (455 KB)</a>",
         "section": "General                                           ",
         "sectionArabic": "الأخبار العامة                                    ",
         "secId": 3,
