@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-19 09:47:05 AM",
+  "lastUpdated": "2026-11-19 10:01:35 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-19T09:46:59"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-19T10:01:23"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 51544.82,
-        "close": 51544.82,
+        "change": 2.04,
+        "changePer": 0.003957720678818938,
+        "high": 51558.24,
+        "close": 51546.86,
         "open": 51544.82,
-        "low": 51544.82,
-        "ytdPercent": 23.2276,
+        "low": 51534.19,
+        "ytdPercent": 23.2324,
         "date": "2026-11-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-19T09:58:00",
+          "value": 51544.82
+        },
+        {
+          "time": "2026-11-19T10:00:00",
+          "value": 51558.24
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
+        "change": -2.66,
+        "changePer": -0.04258064309577283,
         "high": 6246.97,
-        "close": 6246.97,
+        "close": 6244.31,
         "open": 6246.97,
-        "low": 6246.97,
-        "ytdPercent": 35.8696,
+        "low": 6239.22,
+        "ytdPercent": 35.8117,
         "date": "2026-11-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-19T09:58:00",
+          "value": 6246.97
+        },
+        {
+          "time": "2026-11-19T10:00:00",
+          "value": 6246.97
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 17564.29,
-        "close": 17564.29,
+        "change": 18.56,
+        "changePer": 0.10566894534307962,
+        "high": 17584.13,
+        "close": 17582.85,
         "open": 17564.29,
         "low": 17564.29,
-        "ytdPercent": 33.8198,
+        "ytdPercent": 33.9612,
         "date": "2026-11-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-19T09:58:00",
+          "value": 17564.29
+        },
+        {
+          "time": "2026-11-19T10:00:00",
+          "value": 17584.13
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 23456.45,
-        "close": 23456.45,
+        "change": 15.73,
+        "changePer": 0.0670604460606784,
+        "high": 23477.62,
+        "close": 23472.18,
         "open": 23456.45,
         "low": 23456.45,
-        "ytdPercent": 34.607,
+        "ytdPercent": 34.6972,
         "date": "2026-11-19T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-19T09:58:00",
+          "value": 23456.45
+        },
+        {
+          "time": "2026-11-19T10:00:00",
+          "value": 23477.62
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,168 @@
   "news": {
     "disclosure": [
       {
+        "code": 298246,
+        "dateStamp": "2026-11-19T09:59:05",
+        "heading": "First Investment Company And Real Estate Development (FIRE.CA) - Release Regarding a Disclosure Form (SMEs Market)",
+        "content": "Company Name : First Investment Company And Real Estate Development<br />ISIN Code : EGS65AL1C010<br />Reuters Code : FIRE.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347694_1.pdf\" target=\"_blank\">The Release  (152 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347694_2.pdf\" target=\"_blank\">The Investment Plan (178 KB)</a>",
+        "headingArabic": "الاولى للاستثمار والتنمية العقارية (FIRE.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ (سوق الشركات الصغيرة والمتوسطة)",
+        "contentArabic": "اسم الشركة : الاولى للاستثمار والتنمية العقارية<br />كود الترقيم الدولي : EGS65AL1C010<br />كود رويترز : FIRE.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347694_1.pdf\" target=\"_blank\">البيان (152 KB)</a><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347694_2.pdf\" target=\"_blank\">الخطة الاستثمارية (178 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65AL1C010",
+        "companyName": null,
+        "companyNameArabic": null,
+        "sectorId": null,
+        "attachments": []
+      },
+      {
+        "code": 298245,
+        "dateStamp": "2026-11-19T09:59:03",
+        "heading": "Copper For Commercial Investment & Real Estate Development (COPR.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Copper For Commercial Investment & Real Estate Development<br />Symbols: EGS65511C015<br />Reuters: COPR.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347678_1.pdf\" target=\"_blank\">Board of Directors Decisions (226 KB)</a>",
+        "headingArabic": "كوبر للاستثمار التجارى و التطوير العقارى (COPR.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: كوبر للاستثمار التجارى و التطوير العقارى<br />كود الترقيم الدولي: EGS65511C015<br />كود رويترز: COPR.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347678_1.pdf\" target=\"_blank\">قرارات مجلس الإدارة (226 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65511C015",
+        "companyName": "كوبر للاستثمار التجارى و التطوير العقارى",
+        "companyNameArabic": "Copper For Commercial Investment & Real Estate Development",
+        "sectorId": 25,
+        "attachments": []
+      },
+      {
+        "code": 298244,
+        "dateStamp": "2026-11-19T09:57:33",
+        "heading": "Release from Arab Cotton Ginning (ACGC.CA) Regarding the Purchase of Treasury Stocks",
+        "content": "Company: Arab Cotton Ginning <br />Symbols: EGS32221C011<br />Reuters: ACGC.CA<br />Content : <br />Release from the company regarding the purchase of treasury stocks on 18/11/2026 trading session.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347677_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (895 KB)</a>",
+        "headingArabic": "بيان من العربية لحليج الأقطان (ACGC.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: العربية لحليج الأقطان <br />كود الترقيم الدولي: EGS32221C011<br />كود رويترز: ACGC.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347677_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (895 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS32221C011",
+        "companyName": "العربية لحليج الأقطان",
+        "companyNameArabic": "Arab Cotton Ginning",
+        "sectorId": 26,
+        "attachments": []
+      },
+      {
+        "code": 298243,
+        "dateStamp": "2026-11-19T09:55:04",
+        "heading": "Release from Taaleem Management Services (TALM.CA) Concerning the Purchase of Treasury Stocks",
+        "content": "Company: Taaleem Management Services<br />Symbols: EGS597R1C017<br />Reuters: TALM.CA<br />Content : <br />Release concerning the purchase of treasury stocks on the 18/11/2026 trading session.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347676_1.pdf\" target=\"_blank\">Release from the Company (46 KB)</a>",
+        "headingArabic": "بيان من Taaleem Management Services تعليم لخدمات الإدارة (TALM.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: Taaleem Management Services تعليم لخدمات الإدارة <br />كود الترقيم الدولي: EGS597R1C017<br />كود رويترز: TALM.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347676_1.pdf\" target=\"_blank\">بيان من الشركة (46 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS597R1C017",
+        "companyName": "Taaleem Management Services تعليم لخدمات الإدارة",
+        "companyNameArabic": "Taaleem Management Services",
+        "sectorId": 23,
+        "attachments": []
+      },
+      {
+        "code": 298242,
+        "dateStamp": "2026-11-19T09:54:29",
+        "heading": "Release from Engineering Industries (ICON) (ENGC.CA) Regarding the Financial Statements ",
+        "content": "Company Name : Engineering Industries (ICON)<br />ISIN Code : EGS3F021C017<br />Reuters Code : ENGC.CA<br />Content : <br />Release from the company regarding the reasons for the delay in submitting the financial statements for the financial period ended on 30/09/2026 beyond the scheduled deadline.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347688_1.pdf\" target=\"_blank\">Release from the Company (118 KB)</a>",
+        "headingArabic": "بيان من الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون (ENGC.CA) بخصوص القوائم المالية",
+        "contentArabic": "اسم الشركة : الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون<br />كود الترقيم الدولي : EGS3F021C017<br />كود رويترز : ENGC.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص مبررات التأخير في إرسال القوائم المالية عن الفترة المالية المنتهية في 30/09/2026 عن موعدها.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347688_1.pdf\" target=\"_blank\">بيان من الشركة (118 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3F021C017",
+        "companyName": "الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون",
+        "companyNameArabic": "Engineering Industries (ICON)",
+        "sectorId": 25,
+        "attachments": []
+      },
+      {
+        "code": 298241,
+        "dateStamp": "2026-11-19T09:52:20",
+        "heading": "Maridive & oil services (MOIL.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Maridive & oil services<br />Symbols: EGS44012C010<br />Reuters: MOIL.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347675_1.pdf\" target=\"_blank\">Board of Directors Decisions (1,736 KB)</a>",
+        "headingArabic": "الخدمات الملاحية والبترولية  - ماريديف (MOIL.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: الخدمات الملاحية والبترولية  - ماريديف<br />كود الترقيم الدولي: EGS44012C010<br />كود رويترز: MOIL.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347675_1.pdf\" target=\"_blank\">قرارات مجلس الإدارة (1,736 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS44012C010",
+        "companyName": "الخدمات الملاحية والبترولية  - ماريديف",
+        "companyNameArabic": "Maridive & oil services",
+        "sectorId": 20,
+        "attachments": []
+      },
+      {
+        "code": 298240,
+        "dateStamp": "2026-11-19T09:51:14",
+        "heading": "Release from Arabian Cement Company (ARCC.CA) Regarding the Board of Directors' Decisions",
+        "content": "Company Name : Arabian Cement Company<br />ISIN Code : EGS3C0O1C016<br />Reuters Code : ARCC.CA<br />Content : <br />Referring to the announcement published on the trading screens on 18/11/2026 regarding the Board of Directors' decisions held on 17/11/2026, a explanatory release was received from the company.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347686_1.pdf\" target=\"_blank\">Release from the Company (178 KB)</a>",
+        "headingArabic": "بيان من العربية للاسمنت (ARCC.CA) بخصوص قرارات مجلس إدارة الشركة",
+        "contentArabic": "اسم الشركة : العربية للاسمنت<br />كود الترقيم الدولي : EGS3C0O1C016<br />كود رويترز : ARCC.CA<br />مضمون الإعلان : <br />بالإشارة إلى الإعلان المنشور على شاشات التداول بتاريخ 18/11/2026 بخصوص قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 17/11/2026, ورد بيان توضيحي من الشركة.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347686_1.pdf\" target=\"_blank\">بيان من الشركة (178 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3C0O1C016",
+        "companyName": "العربية للاسمنت",
+        "companyNameArabic": "Arabian Cement Company",
+        "sectorId": 27,
+        "attachments": []
+      },
+      {
+        "code": 298239,
+        "dateStamp": "2026-11-19T09:50:50",
+        "heading": "O G Capital For Investments SPAC (OCAP.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: O G Capital For Investments SPAC<br />Symbols: EGS699Z1C014<br />Reuters: OCAP.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 18/11/2026.<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347668_1.pdf\" target=\"_blank\">Board of Directors Decisions (21 KB)</a>",
+        "headingArabic": "او جى كابيتال للاستثمارات ذات غرض اللاستحواذ (OCAP.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: او جى كابيتال للاستثمارات ذات غرض اللاستحواذ<br />كود الترقيم الدولي: EGS699Z1C014<br />كود رويترز: OCAP.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 18/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347668_1.pdf\" target=\"_blank\">قرارات مجلس الإدارة  (21 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS699Z1C014",
+        "companyName": "او جى كابيتال للاستثمارات ذات غرض اللاستحواذ",
+        "companyNameArabic": "O G Capital For Investments SPAC",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 298238,
+        "dateStamp": "2026-11-19T09:49:19",
+        "heading": "Electro Cable Egypt (ELEC.CA) - EGM Minutes (before Certification)",
+        "content": "Company: Electro Cable Egypt<br />Symbols: EGS3G231C011<br />Reuters: ELEC.CA<br />Content: <br />Minutes of the EGM held on 16/11/2026 (before certification).<br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347666_1.pdf\" target=\"_blank\">EGM Minutes (before Certification) (2,565 KB)</a>",
+        "headingArabic": "الكابلات الكهربائية المصرية (ELEC.CA) - محضر اجتماع الجمعية العامة غير العادية (غير موثق) ",
+        "contentArabic": "اسم الشركة: الكابلات الكهربائية المصرية<br />كود الترقيم الدولي: EGS3G231C011<br />كود رويترز: ELEC.CA<br />مضمون الإعلان : <br />محضر اجتماع الجمعية العامة غير العادية التي انعقدت يوم 16/11/2026 (غير موثق).<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347666_1.pdf\" target=\"_blank\">محضر اجتماع الجمعية العامة غير العادية (غير موثق) (2,565 KB)</a>",
+        "section": "General Assemblies                                ",
+        "sectionArabic": "الجمعيات العامة                                   ",
+        "secId": 5,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS3G231C011",
+        "companyName": "الكابلات الكهربائية المصرية",
+        "companyNameArabic": "Electro Cable Egypt",
+        "sectorId": 8,
+        "attachments": []
+      },
+      {
         "code": 298237,
         "dateStamp": "2026-11-19T09:45:28",
         "heading": "Musharaka Sukuks Al Ahly SUKUK 3rd Iss Sep 2032 (EGAHLSK3CV) Declares Bond Dividends for Coupon No. (12) ",
@@ -9438,168 +9636,6 @@
         "companyName": "الصناعات الغذائية العربية-دومتى",
         "companyNameArabic": "Arabian Food Industries DOMTY",
         "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 298226,
-        "dateStamp": "2026-11-19T08:58:11",
-        "heading": "Release from Egyptian Real Estate Group (AREH.CA) Concerning the Company's Reply on the Central Auditing Organization Report",
-        "content": "Company: Egyptian Real Estate Group <br />Symbols: EGS65211C012<br />Reuters: AREH.CA<br />Content : <br />Release concerning the company's reply on the Central Auditing Organization Report for the year ended on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347663_1.pdf\" target=\"_blank\">Release from the Company (340 KB)</a>",
-        "headingArabic": "بيان من المجموعه المصريه العقاريه (AREH.CA) بخصوص رد الشركة على تقرير مراقب الحسابات",
-        "contentArabic": "اسم الشركة : المجموعه المصريه العقاريه<br />كود الترقيم الدولي : EGS65211C012<br />كود رويترز : AREH.CA<br />مضمون الإعلان : <br />رد الشركة على تقرير مراقب الحسابات عن القوائم المالية عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347663_1.pdf\" target=\"_blank\">بيان من الشركة  (340 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65211C012",
-        "companyName": "المجموعه المصريه العقاريه",
-        "companyNameArabic": "Egyptian Real Estate Group",
-        "sectorId": 11,
-        "attachments": []
-      },
-      {
-        "code": 298225,
-        "dateStamp": "2026-11-19T08:53:22",
-        "heading": "Release from Telecom Egypt (ETEL.CA) Concerning the Board of Directors & the Executive Managers",
-        "content": "Company Name : Telecom Egypt<br />ISIN Code : EGS48031C016<br />Reuters Code : ETEL.CA<br />Content : <br />Release from the company concerning the Board of Directors & the Executive Managers.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347665_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (610 KB)</a>",
-        "headingArabic": "بيان من المصرية للاتصالات (ETEL.CA) بخصوص إطارها التنظيمي",
-        "contentArabic": "اسم الشركة : المصرية للاتصالات<br />كود الترقيم الدولي : EGS48031C016<br />كود رويترز : ETEL.CA<br />مضمون الإعلان : <br />بيان من الشركة بخصوص الإطار التنظيمي للشركة.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347665_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية (610 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS48031C016",
-        "companyName": "المصرية للاتصالات",
-        "companyNameArabic": "Telecom Egypt",
-        "sectorId": 18,
-        "attachments": []
-      },
-      {
-        "code": 298224,
-        "dateStamp": "2026-11-19T08:51:15",
-        "heading": "Creast Mark For Contracting And Real Estate Development (CRST.CA) - Release Regarding a Disclosure Form",
-        "content": "Company Name : Creast Mark For Contracting And Real Estate Development<br />ISIN Code : EGS23141C012<br />Reuters Code : CRST.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347655_1.pdf\" target=\"_blank\">The Release (318 KB)</a>",
-        "headingArabic": "كرستمارك للمقاولات والتطوير العقاري (CRST.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : كرستمارك للمقاولات والتطوير العقاري<br />كود الترقيم الدولي : EGS23141C012<br />كود رويترز : CRST.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ، وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347655_1.pdf\" target=\"_blank\">البيان (318 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS23141C012",
-        "companyName": "كرستمارك للمقاولات والتطوير العقاري",
-        "companyNameArabic": "Creast Mark For Contracting And Real Estate Development",
-        "sectorId": 25,
-        "attachments": []
-      },
-      {
-        "code": 298223,
-        "dateStamp": "2026-11-19T08:49:12",
-        "heading": "Creast Mark For Contracting And Real Estate Development (CRST.CA) - Release Regarding a Disclosure Form",
-        "content": "Company Name : Creast Mark For Contracting And Real Estate Development<br />ISIN Code : EGS23141C012<br />Reuters Code : CRST.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347672_1.pdf\" target=\"_blank\">The Release (83 KB)</a>",
-        "headingArabic": "كرستمارك للمقاولات والتطوير العقاري (CRST.CA) - بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : كرستمارك للمقاولات والتطوير العقاري<br />كود الترقيم الدولي : EGS23141C012<br />كود رويترز : CRST.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ، وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347672_1.pdf\" target=\"_blank\">البيان (83 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS23141C012",
-        "companyName": "كرستمارك للمقاولات والتطوير العقاري",
-        "companyNameArabic": "Creast Mark For Contracting And Real Estate Development",
-        "sectorId": 25,
-        "attachments": []
-      },
-      {
-        "code": 298222,
-        "dateStamp": "2026-11-19T08:45:40",
-        "heading": "Creast Mark For Contracting And Real Estate Development (CRST.CA) - Release Regarding a Disclosure Form",
-        "content": "Company Name : Creast Mark For Contracting And Real Estate Development<br />ISIN Code : EGS23141C012<br />Reuters Code : CRST.CA<br />Content : <br />Release regarding the disclosure form according to the Article 29 of EGX Listing Rules.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347652_1.pdf\" target=\"_blank\">The Release (554 KB)</a>",
-        "headingArabic": "كرستمارك للمقاولات والتطوير العقاري (CRST.CA) بيان بخصوص نموذج إفصاح بعد التنفيذ",
-        "contentArabic": "اسم الشركة : كرستمارك للمقاولات والتطوير العقاري<br />كود الترقيم الدولي : EGS23141C012<br />كود رويترز : CRST.CA<br />مضمون الإعلان : <br />بيان بخصوص نموذج إفصاح بعد التنفيذ، وقد تم الإفصاح وفقًا لأحكام المادة 29 من قواعد قيد وشطب الأوراق المالية بالبورصة المصرية.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347652_1.pdf\" target=\"_blank\">البيان (554 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS23141C012",
-        "companyName": "كرستمارك للمقاولات والتطوير العقاري",
-        "companyNameArabic": "Creast Mark For Contracting And Real Estate Development",
-        "sectorId": 25,
-        "attachments": []
-      },
-      {
-        "code": 298221,
-        "dateStamp": "2026-11-18T15:34:53",
-        "heading": "Egyptian Media Production City (MPRC.CA) - Company's Reply on the Central Authority of Accountancy Report",
-        "content": "Company: Egyptian Media Production City <br />Symbols: EGS78021C010<br />Reuters: MPRC.CA<br />Content: <br />Company’s reply on the Accountability State Authority standalone report for the period ended on 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347661_1.pdf\" target=\"_blank\">Company's Reply on the Central Authority of Accountancy Report  (1,228 KB)</a>",
-        "headingArabic": "المصريه لمدينة الانتاج الاعلامى (MPRC.CA) - رد الشركة على تقرير الجهاز المركزي للمحاسبات",
-        "contentArabic": "اسم الشركة: المصريه لمدينة الانتاج الاعلامى <br />كود الترقيم الدولي: EGS78021C010<br />كود رويترز: MPRC.CA<br />مضمون الإعلان :<br />رد الشركة على تقرير الجهاز المركزي للمحاسبات عن القوائم المالية المستقلة عن الفترة المالية المنتهية في 30/09/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347661_1.pdf\" target=\"_blank\">رد الشركة على تقرير الجهاز المركزي للمحاسبات  (1,228 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS78021C010",
-        "companyName": "المصريه لمدينة الانتاج الاعلامى",
-        "companyNameArabic": "Egyptian Media Production City",
-        "sectorId": 18,
-        "attachments": []
-      },
-      {
-        "code": 298220,
-        "dateStamp": "2026-11-18T15:12:38",
-        "heading": "Release from General Silos & Storage (GSSC.CA) Regarding the Financial Statements ",
-        "content": "Company: General Silos & Storage <br />Symbols: EGS30441C017<br />Reuters: GSSC.CA<br />Content: <br />Release from the company regarding the reasons for the delay in submitting the financial statements for the financial period ended on 30/09/2026 beyond the scheduled deadline.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347660_1.pdf\" target=\"_blank\">Release from the Company (200 KB)</a>",
-        "headingArabic": "بيان من العامة للصوامع والتخزين (GSSC.CA) بخصوص القوائم المالية ",
-        "contentArabic": "اسم الشركة: العامة للصوامع والتخزين <br />كود الترقيم الدولي: EGS30441C017<br />كود رويترز: GSSC.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص مبررات التأخير في إرسال القوائم المالية عن الفترة المالية المنتهية في 30/09/2026 عن موعدها.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347660_1.pdf\" target=\"_blank\">بيان من الشركة  (200 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS30441C017",
-        "companyName": "العامة للصوامع والتخزين",
-        "companyNameArabic": "General Silos & Storage",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 298219,
-        "dateStamp": "2026-11-18T15:10:05",
-        "heading": "Release from Misr Oils & Soap (MOSC.CA) Regarding the Financial Statements ",
-        "content": "Company: Misr Oils & Soap<br />Symbols: EGS38421C011<br />Reuters: MOSC.CA<br />Content: <br />Release from the company regarding the justifications for the delay in sending the financial statements for the financial period ended on 30/09/2026 after its due date.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347658_1.pdf\" target=\"_blank\">Release from the Company in Arabic  (344 KB)</a>",
-        "headingArabic": "بيان من مصر للزيوت و الصابون (MOSC.CA) بخصوص القوائم المالية",
-        "contentArabic": "اسم الشركة: مصر للزيوت و الصابون <br />كود الترقيم الدولي: EGS38421C011<br />كود رويترز: MOSC.CA<br />مضمون الإعلان :<br />بيان من الشركة بخصوص مبررات التأخير في إرسال القوائم المالية عن الفترة المالية المنتهية في 30/09/2026 عن موعدها.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347658_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية (344 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS38421C011",
-        "companyName": "مصر للزيوت و الصابون",
-        "companyNameArabic": "Misr Oils & Soap",
-        "sectorId": 19,
-        "attachments": []
-      },
-      {
-        "code": 298218,
-        "dateStamp": "2026-11-18T15:07:35",
-        "heading": "Arabia for Investment and Development (AIDC.CA) Board of Directors' Decisions",
-        "content": "Company Name : Arabia for Investment and Development<br />ISIN Code : EGS65R01C015<br />Reuters Code : AIDC.CA<br />Content : <br />The Board of Directors' decisions held on 12/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347249_1.pdf\" target=\"_blank\">Board of Directors Decisions (869 KB)</a>",
-        "headingArabic": "ارابيا للاستثمار والتنمية (AIDC.CA) - قرارات مجلس إدارة الشركة",
-        "contentArabic": "اسم الشركة : ارابيا للاستثمار والتنمية<br />كود الترقيم الدولي : EGS65R01C015<br />كود رويترز : AIDC.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 12/11/2026.<br /><br /><br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/347249_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة (869 KB)</a>",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGS65R01C015",
-        "companyName": "ارابيا للاستثمار والتنمية",
-        "companyNameArabic": "Arabia for Investment and Development",
-        "sectorId": 24,
         "attachments": []
       }
     ],
