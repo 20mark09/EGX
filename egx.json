@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-25 10:01:39 AM",
+  "lastUpdated": "2026-11-25 10:15:59 AM",
   "marketStatus": {
     "status": "Open",
     "status_ar": "مفتوح",
-    "statusDate": "2026-11-25T10:01:30"
+    "statusDate": "2026-11-25T10:15:53"
   },
   "indices": {
     "EGX30": null,
@@ -15,13 +15,13 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 70.68,
-        "changePer": 0.13890054363408866,
-        "high": 50956.33,
-        "close": 50956.01,
+        "change": -106.96,
+        "changePer": -0.2101981062125371,
+        "high": 50962.97,
+        "close": 50778.37,
         "open": 50885.33,
-        "low": 50877.82,
-        "ytdPercent": 21.8199,
+        "low": 50706.84,
+        "ytdPercent": 21.3952,
         "date": "2026-11-25T00:00:00"
       },
       "points": [
@@ -32,18 +32,30 @@
         {
           "time": "2026-11-25T10:00:00",
           "value": 50955.61
+        },
+        {
+          "time": "2026-11-25T10:05:00",
+          "value": 50896.23
+        },
+        {
+          "time": "2026-11-25T10:10:00",
+          "value": 50713.57
+        },
+        {
+          "time": "2026-11-25T10:15:00",
+          "value": 50778.37
         }
       ]
     },
     "SHARIAH": {
       "live": {
-        "change": 1.54,
-        "changePer": 0.02503246906295666,
+        "change": -30.27,
+        "changePer": -0.4920343107374663,
         "high": 6154.72,
-        "close": 6153.55,
+        "close": 6121.74,
         "open": 6152.01,
-        "low": 6150.73,
-        "ytdPercent": 33.8377,
+        "low": 6109.83,
+        "ytdPercent": 33.1459,
         "date": "2026-11-25T00:00:00"
       },
       "points": [
@@ -54,18 +66,30 @@
         {
           "time": "2026-11-25T10:00:00",
           "value": 6154.72
+        },
+        {
+          "time": "2026-11-25T10:05:00",
+          "value": 6139.64
+        },
+        {
+          "time": "2026-11-25T10:10:00",
+          "value": 6112.12
+        },
+        {
+          "time": "2026-11-25T10:15:00",
+          "value": 6121.74
         }
       ]
     },
     "EGX70": {
       "live": {
-        "change": -0.14,
-        "changePer": -0.00081810250473769,
+        "change": -53.11,
+        "changePer": -0.3103530287615623,
         "high": 17119.12,
-        "close": 17112.63,
+        "close": 17059.66,
         "open": 17112.77,
-        "low": 17111.85,
-        "ytdPercent": 30.3787,
+        "low": 17055.95,
+        "ytdPercent": 29.9751,
         "date": "2026-11-25T00:00:00"
       },
       "points": [
@@ -76,18 +100,30 @@
         {
           "time": "2026-11-25T10:00:00",
           "value": 17118.3
+        },
+        {
+          "time": "2026-11-25T10:05:00",
+          "value": 17097.91
+        },
+        {
+          "time": "2026-11-25T10:10:00",
+          "value": 17071.06
+        },
+        {
+          "time": "2026-11-25T10:15:00",
+          "value": 17059.66
         }
       ]
     },
     "EGX100": {
       "live": {
-        "change": 4.23,
-        "changePer": 0.018437582680353774,
+        "change": -74.78,
+        "changePer": -0.3259485656824717,
         "high": 22952.47,
-        "close": 22946.5,
+        "close": 22867.49,
         "open": 22942.27,
-        "low": 22942.27,
-        "ytdPercent": 31.6806,
+        "low": 22857.49,
+        "ytdPercent": 31.2272,
         "date": "2026-11-25T00:00:00"
       },
       "points": [
@@ -98,6 +134,18 @@
         {
           "time": "2026-11-25T10:00:00",
           "value": 22950.2
+        },
+        {
+          "time": "2026-11-25T10:05:00",
+          "value": 22923.26
+        },
+        {
+          "time": "2026-11-25T10:10:00",
+          "value": 22865.32
+        },
+        {
+          "time": "2026-11-25T10:15:00",
+          "value": 22867.49
         }
       ]
     }
@@ -9279,6 +9327,24 @@
   "news": {
     "disclosure": [
       {
+        "code": 298524,
+        "dateStamp": "2026-11-25T10:03:01",
+        "heading": "Giza General Contracting (GGCC.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: Giza General Contracting<br />Symbols: EGS21541C015<br />Reuters: GGCC.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 24/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348054_1.pdf\" target=\"_blank\">Board of Directors Decisions (345 KB)</a>",
+        "headingArabic": " الجيزة العامة للمقاولات والاستثمار العقارى (GGCC.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: الجيزة العامة للمقاولات والاستثمار العقارى<br />كود الترقيم الدولي: EGS21541C015<br />كود رويترز: GGCC.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 24/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348054_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة  (345 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS21541C015",
+        "companyName": "الجيزةالعامة للمقاولات والاستثمارالعقارى",
+        "companyNameArabic": "Giza General Contracting",
+        "sectorId": 25,
+        "attachments": []
+      },
+      {
         "code": 298523,
         "dateStamp": "2026-11-25T10:01:00",
         "heading": "CI Capital Holding For Financial Investments (CICH.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
@@ -9617,24 +9683,6 @@
         "isin": "EGB69611S4I2",
         "companyName": "سندات كابيتال للتوريق ص 3 ب 9 ش أ يوليو 2027 ع.ث",
         "companyNameArabic": "Capital For Securitization 3rd Iss 9th Pro Tra A Jul 27 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298501,
-        "dateStamp": "2026-11-25T09:12:03",
-        "heading": "Capital For Securitization 3rd Iss 4th Pro Tranche W May 2027 (EGBCPSC3P4WCV) Declares Bond Dividends for Coupon No. (25) ",
-        "content": "Issuer Name : Capital For Securitization 3rd Iss 4th Pro Tranche W May 2027<br />ISIN Code : EGB69611S0O8<br />Reuters Code : EGBCPSC3P4WCV<br />Interest Type : Floating<br />Coupon Interest : 26% <br />Coupon Amount : EGP 2.0657534242<br />Coupon Number : 25<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026<br />Notes :  <br />Bond Redemption: EGP 1 ",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثالث البرنامج الرابع شريحة و مايو 2027 (EGBCPSC3P4WCV) يعلن عن توزيع كوبون السند رقم (25)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثالث البرنامج الرابع شريحة و مايو 2027<br />كود الترقيم الدولي : EGB69611S0O8<br />كود رويتيرز : EGBCPSC3P4WCV<br />نوع الفائدة : متغيرة<br />معدل فائدة الكوبون : 26% <br />قيمة الكوبون : 2.0657534242 جم للسند<br />رقم الكوبون : 25<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026<br />ملاحظات :  <br />الاستهلاك من أصل السند: 1 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S0O8",
-        "companyName": "سندات كابيتال للتوريق ص3 ب4 ش و مايو 2027 ع م",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 4th Pro Tra W May 2027 VR",
         "sectorId": null,
         "attachments": []
       }
