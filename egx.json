@@ -1,10 +1,10 @@
 {
   "source": "https://beta.egx.com.eg",
-  "lastUpdated": "2026-11-25 09:46:01 AM",
+  "lastUpdated": "2026-11-25 10:01:39 AM",
   "marketStatus": {
-    "status": "Closed",
-    "status_ar": "مغلق",
-    "statusDate": "2026-11-25T09:45:53"
+    "status": "Open",
+    "status_ar": "مفتوح",
+    "statusDate": "2026-11-25T10:01:30"
   },
   "indices": {
     "EGX30": null,
@@ -15,55 +15,91 @@
   "indexCharts": {
     "EGX30": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 50885.33,
-        "close": 50885.33,
+        "change": 70.68,
+        "changePer": 0.13890054363408866,
+        "high": 50956.33,
+        "close": 50956.01,
         "open": 50885.33,
-        "low": 50885.33,
-        "ytdPercent": 21.6509,
+        "low": 50877.82,
+        "ytdPercent": 21.8199,
         "date": "2026-11-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-25T09:58:00",
+          "value": 50885.33
+        },
+        {
+          "time": "2026-11-25T10:00:00",
+          "value": 50955.61
+        }
+      ]
     },
     "SHARIAH": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 6152.01,
-        "close": 6152.01,
+        "change": 1.54,
+        "changePer": 0.02503246906295666,
+        "high": 6154.72,
+        "close": 6153.55,
         "open": 6152.01,
-        "low": 6152.01,
-        "ytdPercent": 33.8042,
+        "low": 6150.73,
+        "ytdPercent": 33.8377,
         "date": "2026-11-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-25T09:58:00",
+          "value": 6152.01
+        },
+        {
+          "time": "2026-11-25T10:00:00",
+          "value": 6154.72
+        }
+      ]
     },
     "EGX70": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 17112.77,
-        "close": 17112.77,
+        "change": -0.14,
+        "changePer": -0.00081810250473769,
+        "high": 17119.12,
+        "close": 17112.63,
         "open": 17112.77,
-        "low": 17112.77,
-        "ytdPercent": 30.3797,
+        "low": 17111.85,
+        "ytdPercent": 30.3787,
         "date": "2026-11-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-25T09:58:00",
+          "value": 17112.77
+        },
+        {
+          "time": "2026-11-25T10:00:00",
+          "value": 17118.3
+        }
+      ]
     },
     "EGX100": {
       "live": {
-        "change": 0,
-        "changePer": 0,
-        "high": 22942.27,
-        "close": 22942.27,
+        "change": 4.23,
+        "changePer": 0.018437582680353774,
+        "high": 22952.47,
+        "close": 22946.5,
         "open": 22942.27,
         "low": 22942.27,
-        "ytdPercent": 31.6563,
+        "ytdPercent": 31.6806,
         "date": "2026-11-25T00:00:00"
       },
-      "points": []
+      "points": [
+        {
+          "time": "2026-11-25T09:58:00",
+          "value": 22942.27
+        },
+        {
+          "time": "2026-11-25T10:00:00",
+          "value": 22950.2
+        }
+      ]
     }
   },
   "constituents": {
@@ -9243,6 +9279,132 @@
   "news": {
     "disclosure": [
       {
+        "code": 298523,
+        "dateStamp": "2026-11-25T10:01:00",
+        "heading": "CI Capital Holding For Financial Investments (CICH.CA) Reports its Financial Results (Consolidated) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: CI Capital Holding For Financial Investments<br />ISIN Code: EGS691D1C018<br />Currency: Egyptian Pound<br />F/S (Consolidated) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 1,166,239,267 <br />F/S (Consolidated) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 1,112,357,541  <br />Audit Status: Reviewed<br />Source: CI  Capital Holding For Financial Investments<br />Taking minority rights into consideration",
+        "headingArabic": "سي أي كابيتال القابضة للاستثمارات المالية (CICH.CA) تعلن نتائج أعمالها المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: سي أي كابيتال القابضة للاستثمارات المالية<br />كود الترقيم الدولي: EGS691D1C018<br />العملة: جنيه مصرى<br />القوائم المالية المجمعة عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 1,166,239,267 <br />أرقام المقارنة المجمعة عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 1,112,357,541 <br />تقرير فحص محدود: مرفق<br />المصدر: سي أي كابيتال القابضة للاستثمارات المالية<br />مع الأخذ في الإعتبار حقوق الأقلية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS691D1C018",
+        "companyName": "سى اى كابيتال القابضة للاستثمارات المالية",
+        "companyNameArabic": "CI Capital Holding For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 298521,
+        "dateStamp": "2026-11-25T09:57:24",
+        "heading": "Release from Madinet Masr For Housing and Development (MASR.CA) - ",
+        "content": "Company: Madinet Masr For Housing and Development <br />Symbols: EGS65571C019<br />Reuters: MASR.CA<br />Content: <br />Release from the company regarding the purchase of treasury stocks on the 24/11/2026 trading sessions.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348052_1.pdf\" target=\"_blank\">Release from the Company in Arabic & English (23 KB)</a>",
+        "headingArabic": "بيان من مدينة مصر للاسكان والتعمير (MASR.CA) بشأن شراء أسهم خزينة",
+        "contentArabic": "اسم الشركة: مدينة مصر للاسكان والتعمير <br />كود الترقيم الدولي: EGS65571C019<br />كود رويترز: MASR.CA<br />مضمون الإعلان :<br />بيان من الشركة بشأن شراء أسهم خزينة بجلسة 24/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348052_1.pdf\" target=\"_blank\">بيان من الشركة باللغة العربية والإنجليزية  (23 KB)</a>",
+        "section": "Insider Trading Executions/Treasury Stocks        ",
+        "sectionArabic": "تعاملات أعضاء الشركات وأسهم الخزينة               ",
+        "secId": 7,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS65571C019",
+        "companyName": "مدينة مصر للاسكان والتعمير",
+        "companyNameArabic": "Madinet Masr For Housing and Development",
+        "sectorId": 11,
+        "attachments": []
+      },
+      {
+        "code": 298520,
+        "dateStamp": "2026-11-25T09:53:47",
+        "heading": "CI  Capital Holding For Financial Investments (CICH.CA) Reports its Financial Results (Standalone) for the Period from 01/01/2026 to 30/09/2026 ",
+        "content": "Company Name: CI  Capital Holding For Financial Investments<br />ISIN Code: EGS691D1C018<br />Currency: Egyptian Pound<br />F/S (Standalone) Period: From 01/01/2026 to 30/09/2026<br />Net profit: 711,656,318 <br />F/S (Standalone) Period: From 01/01/2025 to 30/09/2025<br />Net Comparative profit: 673,563,229  <br />Audit Status: Reviewed<br />Source: CI  Capital Holding For Financial Investments",
+        "headingArabic": "سي أي كابيتال القابضة للاستثمارات المالية (CICH.CA) تعلن نتائج أعمالها المستقلة عن الفترة: من 01/01/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: سي أي كابيتال القابضة للاستثمارات المالية<br />كود الترقيم الدولي: EGS691D1C018<br />العملة: جنيه مصرى<br />القوائم المالية المستقلة  عن الفترة: من 01/01/2026 إلى 30/09/2026<br />صافي الربح: 711,656,318 <br />أرقام المقارنة المستقلة  عن الفترة: من 01/01/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 673,563,229 <br />تقرير فحص محدود: مرفق<br />المصدر: سي أي كابيتال القابضة للاستثمارات المالية",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS691D1C018",
+        "companyName": "سى اى كابيتال القابضة للاستثمارات المالية",
+        "companyNameArabic": "CI Capital Holding For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 298518,
+        "dateStamp": "2026-11-25T09:51:59",
+        "heading": "CI Capital Holding For Financial Investments (CICH.CA) - Decisions of the Board of Directors' Meeting ",
+        "content": "Company: CI  Capital Holding For Financial Investments<br />Symbols: EGS691D1C018<br />Reuters: CICH.CA<br />Content: <br />Decisions of the Board of Directors' meeting held on 24/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348043_1.pdf\" target=\"_blank\">Board of Directors Decisions (55 KB)</a>",
+        "headingArabic": "سي أي كابيتال القابضة للاستثمارات المالية (CICH.CA) - قرارات مجلس إدارة الشركة ",
+        "contentArabic": "اسم الشركة: سي أي كابيتال القابضة للاستثمارات المالية<br />كود الترقيم الدولي: EGS691D1C018<br />كود رويترز: CICH.CA<br />مضمون الإعلان : <br />قرارات مجلس إدارة الشركة بجلسته المنعقدة بتاريخ 24/11/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348043_1.pdf\" target=\"_blank\">قرارات مجلس إدارة الشركة باللغة العربية والإنجليزية (55 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS691D1C018",
+        "companyName": "سى اى كابيتال القابضة للاستثمارات المالية",
+        "companyNameArabic": "CI Capital Holding For Financial Investments",
+        "sectorId": 24,
+        "attachments": []
+      },
+      {
+        "code": 298517,
+        "dateStamp": "2026-11-25T09:49:58",
+        "heading": "Egyptian Financial & Industrial (EFIC.CA) - Central Auditing Organization Report ",
+        "content": "Company: Egyptian Financial & Industrial <br />Symbols: EGS38381C017<br />Reuters: EFIC.CA<br />Content : <br />The Central Auditing Organization Report for the standalone financial statements for period ended on 30/09/2026, and company's reply on the report.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348041_1.pdf\" target=\"_blank\">Central Auditing Organization Report   (4,664 KB)</a>",
+        "headingArabic": "المالية و الصناعية المصرية (EFIC.CA) - تقرير الجهاز المركزي للمحاسبات ",
+        "contentArabic": "اسم الشركة: المالية و الصناعية المصرية <br />كود الترقيم الدولي: EGS38381C017<br />كود رويترز: EFIC.CA<br />مضمون الإعلان :<br />تقرير الجهاز المركزي للمحاسبات عن القوائم المالية المستقلة عن الفترة المالية المنتهية في 30/09/2026 ورد الشركة علية.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348041_1.pdf\" target=\"_blank\">تقرير الجهاز المركزي للمحاسبات (4,664 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS38381C017",
+        "companyName": "المالية و الصناعية المصرية",
+        "companyNameArabic": "Egyptian Financial & Industrial",
+        "sectorId": 2,
+        "attachments": []
+      },
+      {
+        "code": 298516,
+        "dateStamp": "2026-11-25T09:47:56",
+        "heading": "GPI For Urban Growth (GPIM.CA) - EGM Invitation",
+        "content": "Company: GPI For Urban Growth<br />Symbols: EGS213S1C010<br />Reuters: GPIM.CA<br />Content: <br />GPI For Urban Growth invites its stakeholders to attend the EGM on 19/12/2026 at 10:00 AM.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348040_1.pdf\" target=\"_blank\">Release from the Company (424 KB)</a>",
+        "headingArabic": "جى بى اى للنمو العمرانى (GPIM.CA) - دعوة الجمعية العامة غير العادية",
+        "contentArabic": "اسم الشركة: جى بى اى للنمو العمرانى<br />كود الترقيم الدولي: EGS213S1C010<br />كود رويترز: GPIM.CA<br />مضمون الإعلان : <br />تعلن شركة جى بى اى للنمو العمرانى عن دعوة الجمعية العامة غير العادية المقرر انعقادها بتاريخ 19/12/2026.<br /><img style=\"vertical-align: middle;padding:3px;\" src=\"/images/pdf.gif\"> <a href=\"/downloads/Bulletins/348040_1.pdf\" target=\"_blank\">بيان من الشركة (424 KB)</a>",
+        "section": "General                                           ",
+        "sectionArabic": "الأخبار العامة                                    ",
+        "secId": 3,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS213S1C010",
+        "companyName": "جى بى اى للنمو العمرانى",
+        "companyNameArabic": "GPI For Urban Growth",
+        "sectorId": 25,
+        "attachments": []
+      },
+      {
+        "code": 298515,
+        "dateStamp": "2026-11-25T09:46:28",
+        "heading": "The Egyptian Modern Education Systems (MOED.CA) Reports its Financial Results for the Period from 01/07/2026 to 30/09/2026 ",
+        "content": "Company Name: The Egyptian Modern Education Systems<br />ISIN Code: EGS729F1C012<br />Currency: Egyptian Pound<br />F/S  Period: From 01/07/2026 to 30/09/2026<br />Net profit: 5,411,502 <br />F/S  Period: From 01/07/2025 to 30/09/2025<br />Net Comparative profit: 1,592,591  <br />Audit Status: Reviewed<br />Source: The Egyptian Modern Education Systems",
+        "headingArabic": "المصرية لنظم التعليم الحديثة (MOED.CA) تعلن نتائج أعمالها عن الفترة من 01/07/2026 إلى 30/09/2026 ",
+        "contentArabic": "اسم الشركة: المصرية لنظم التعليم الحديثة<br />كود الترقيم الدولي: EGS729F1C012<br />العملة: جنيه مصرى<br />القوائم المالية  عن الفترة: من 01/07/2026 إلى 30/09/2026<br />صافي الربح: 5,411,502 <br />أرقام المقارنة  عن الفترة: من 01/07/2025 إلى 30/09/2025<br />صافي الربح لفترة المقارنة: 1,592,591 <br />تقرير فحص محدود: مرفق<br />المصدر: المصرية لنظم التعليم الحديثة",
+        "section": "Financial Results                                 ",
+        "sectionArabic": "النتائج المالية                                   ",
+        "secId": 6,
+        "material": null,
+        "egx": 0,
+        "isin": "EGS729F1C012",
+        "companyName": "المصرية لنظم التعليم الحديثة",
+        "companyNameArabic": "The Egyptian Modern Education Systems",
+        "sectorId": 23,
+        "attachments": []
+      },
+      {
         "code": 298513,
         "dateStamp": "2026-11-25T09:44:53",
         "heading": "GPI For Urban Growth (GPIM.CA) - Minutes of the Board of Directors' Meeting ",
@@ -9473,132 +9635,6 @@
         "isin": "EGB69611S0O8",
         "companyName": "سندات كابيتال للتوريق ص3 ب4 ش و مايو 2027 ع م",
         "companyNameArabic": "Capital For Securitization 3rd Iss 4th Pro Tra W May 2027 VR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298500,
-        "dateStamp": "2026-11-25T09:10:45",
-        "heading": "Capital For Securitization 2nd Iss 19th Pro Oct 2027 FR (EGBCPSC2P19CF) Declares Bond Dividends for Coupon No. (2) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 19th Pro Oct 2027 FR<br />ISIN Code : EGB69611S4K8<br />Reuters Code : EGBCPSC2P19CF<br />Interest Type : Fixed<br />Coupon Interest : 21% <br />Coupon Amount : EGP 1.6684931509<br />Coupon Number : 2<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026<br />Notes :  <br />Bond Redemption: EGP 1 ",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني البرنامج التاسع عشر اكتوبر 2027 (EGBCPSC2P19CF) يعلن عن توزيع كوبون السند رقم (2)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني البرنامج التاسع عشر اكتوبر 2027<br />كود الترقيم الدولي : EGB69611S4K8<br />كود رويتيرز : EGBCPSC2P19CF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21% <br />قيمة الكوبون : 1.6684931509 جم للسند<br />رقم الكوبون : 2<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026<br />ملاحظات :  <br />الاستهلاك من أصل السند: 1 جم<br />",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S4K8",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 19 اكتوبر 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 19th Pro Oct 2027 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298499,
-        "dateStamp": "2026-11-25T09:08:58",
-        "heading": "Capital For Securitization 2nd Iss 16th Pro Tranche C Jan 31 FR (EGBCPSC2P16CCF) Declares Bond Dividends for Coupon No. (7) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 16th Pro Tranche C Jan 31 FR<br />ISIN Code : EGB69611S3Y1<br />Reuters Code : EGBCPSC2P16CCF<br />Interest Type : Fixed<br />Coupon Interest : 18 % <br />Coupon Amount : EGP 1.4794520554<br />Coupon Number : 7<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني برنامج سادس عشر شريحة ج يناير 2031 (EGBCPSC2P16CCF) يعلن عن توزيع كوبون السند رقم (7)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني برنامج سادس عشر شريحة ج يناير 2031<br />كود الترقيم الدولي : EGB69611S3Y1<br />كود رويتيرز : EGBCPSC2P16CCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 18% <br />قيمة الكوبون : 1.4794520554 جم للسند<br />رقم الكوبون : 7<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S3Y1",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 6 عشر ش ج يناير 2031 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 16th Pro Tra C Jan 31 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298498,
-        "dateStamp": "2026-11-25T09:07:52",
-        "heading": "Capital For Securitization 3rd Iss 9th Pro Tranche B May 28 FR (EGBCPSC3P9BCF) Declares Bond Dividends for Coupon No. (3) ",
-        "content": "Issuer Name : Capital For Securitization 3rd Iss 9th Pro Tranche B May 28 FR<br />ISIN Code : EGB69611S4J0<br />Reuters Code : EGBCPSC3P9BCF<br />Interest Type : Fixed<br />Coupon Interest : 20.15% <br />Coupon Amount : EGP 1.6009589016<br />Coupon Number : 3<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثالث البرنامج التاسع الشريحة ب مايو 2028 (EGBCPSC3P9BCF) يعلن عن توزيع كوبون السند رقم (3)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثالث البرنامج التاسع الشريحة ب مايو 2028<br />كود الترقيم الدولي : EGB69611S4J0<br />كود رويتيرز : EGBCPSC3P9BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 20.15% <br />قيمة الكوبون : 1.6009589016 جم للسند<br />رقم الكوبون : 3<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S4J0",
-        "companyName": "سندات كابيتال للتوريق ص 3 ب 9 ش ب مايو 2028 ع.ث",
-        "companyNameArabic": "Capital For Securitization 3rd Iss 9th Pro Tra B May 28 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298497,
-        "dateStamp": "2026-11-25T09:06:20",
-        "heading": "Capital For Securitization 2nd Iss 16th Pro Tranche A Apr 27 FR (EGBCPSC2P16ACF) Declares Bond Dividends for Coupon No. (7) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 16th Pro Tranche A Apr 27 FR<br />ISIN Code : EGB69611S3W5<br />Reuters Code : EGBCPSC2P16ACF<br />Interest Type : Fixed<br />Coupon Interest : 19.5% <br />Coupon Amount : EGP 0.8470713656<br />Coupon Number : 7<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026<br />Notes :  <br />Bond Redemption: EGP 9.9124749552 ",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني برنامج السادس عشر شريحة أ ابريل 2027 (EGBCPSC2P16ACF) يعلن عن توزيع كوبون السند رقم (7)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني برنامج السادس عشر شريحة أ ابريل 2027<br />كود الترقيم الدولي : EGB69611S3W5<br />كود رويتيرز : EGBCPSC2P16ACF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 19.5 % <br />قيمة الكوبون : 0.8470713656 جم للسند<br />رقم الكوبون : 7<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026<br />ملاحظات :  <br />الاستهلاك من أصل السند: 9.9124749552 جم",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S3W5",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 6 عشر ش أ ابريل 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 16th Pro Tra A Apr 27 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298496,
-        "dateStamp": "2026-11-25T09:04:52",
-        "heading": "Capital For Securitization 2nd Iss 9th Pro Tranche C Nov 28 FR (EGBCPSC2P9CCF) Declares Bond Dividends for Coupon No. (12) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 9th Pro Tranche C Nov 28 FR<br />ISIN Code : EGB69611S2Y3<br />Reuters Code : EGBCPSC2P9CCF<br />Interest Type : Fixed<br />Coupon Interest : 20.8% <br />Coupon Amount : EGP 1.6526027416<br />Coupon Number : 12<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني برنامج التاسع شريحة  ج نوفمبر 2028 (EGBCPSC2P9CCF) يعلن عن توزيع كوبون السند رقم (12)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الاصدار الثانى برنامج التاسع شريحة  ج نوفمبر 2028<br />كود الترقيم الدولي : EGB69611S2Y3<br />كود رويتيرز : EGBCPSC2P9CCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 20.8% <br />قيمة الكوبون : 1.6526027416 جم للسند<br />رقم الكوبون : 12<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S2Y3",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 9 ش ج نوفمبر 2028 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 9th Pro Tra C Nov 28 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298495,
-        "dateStamp": "2026-11-24T15:50:30",
-        "heading": "Capital For Securitization 2nd Iss 9th Pro Tranche B Nov 27 FR (EGBCPSC2P9BCF) Declares Bond Dividends for Coupon No. (12) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 9th Pro Tranche B Nov 27 FR<br />ISIN Code : EGB69611S2X5<br />Reuters Code : EGBCPSC2P9BCF<br />Interest Type : Fixed<br />Coupon Interest : 21.05% <br />Coupon Amount : EGP 1.6724657533<br />Coupon Number : 12<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني برنامج التاسع شريحة ب نوفمبر 2027 (EGBCPSC2P9BCF) يعلن عن توزيع كوبون السند رقم (12)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني برنامج التاسع شريحة ب نوفمبر 2027<br />كود الترقيم الدولي : EGB69611S2X5<br />كود رويتيرز : EGBCPSC2P9BCF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.05% <br />قيمة الكوبون : 1.6724657533 جم للسند<br />رقم الكوبون : 12<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S2X5",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 9 ش ب نوفمبر 2027 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 9th Pro Tra B Nov 27 FR",
-        "sectorId": null,
-        "attachments": []
-      },
-      {
-        "code": 298494,
-        "dateStamp": "2026-11-24T15:48:53",
-        "heading": "Capital For Securitization 2nd Iss 9th Pro Tranche A Nov 26 FR (EGBCPSC2P9ACF) Declares Bond Dividends for Coupon No. (12) ",
-        "content": "Issuer Name : Capital For Securitization 2nd Iss 9th Pro Tranche A Nov 26 FR<br />ISIN Code : EGB69611S2W7<br />Reuters Code : EGBCPSC2P9ACF<br />Interest Type : Fixed<br />Coupon Interest : 21.55% <br />Coupon Amount : EGP 0.0482925897<br />Coupon Number : 12<br />Coupon Date : 29/11/2026<br />Coupon Payment Date : 30/11/2026<br />Notes :  <br />Bond Redemption: EGP 2.8205128205 ",
-        "headingArabic": "سندات كابيتال للتوريق الإصدار الثاني برنامج التاسع شريحة أ نوفمبر 2026 (EGBCPSC2P9ACF) يعلن عن توزيع كوبون السند رقم (12)",
-        "contentArabic": "المصدر : سندات كابيتال للتوريق الإصدار الثاني برنامج التاسع شريحة أ نوفمبر 2026<br />كود الترقيم الدولي : EGB69611S2W7<br />كود رويتيرز : EGBCPSC2P9ACF<br />نوع الفائدة : ثابتة<br />معدل فائدة الكوبون : 21.55% <br />قيمة الكوبون : 0.0482925897 جم للسند<br />رقم الكوبون : 12<br />تاريخ الاستحقاق : 29/11/2026<br />تاريخ الصرف : 30/11/2026<br />ملاحظات :  <br />الاستهلاك من أصل السند: 2.8205128205 جم",
-        "section": "General                                           ",
-        "sectionArabic": "الأخبار العامة                                    ",
-        "secId": 3,
-        "material": null,
-        "egx": 0,
-        "isin": "EGB69611S2W7",
-        "companyName": "سندات كابيتال للتوريق ص 2 ب 9 ش أ نوفمبر 2026 ع.ث",
-        "companyNameArabic": "Capital For Securitization 2nd Iss 9th Pro Tra A Nov 26 FR",
         "sectorId": null,
         "attachments": []
       }
